@@ -1,0 +1,826 @@
+
+ Start         Length     Name                   Class
+ 0001:00000000 00005CE4H .text                   CODE
+ 0002:00000000 00000050H .data                   DATA
+ 0002:00000050 000000B1H .bss                    BSS
+
+
+Detailed map of segments
+
+ 0001:00000000 000000DE C=CODE     S=.text    G=(none)   M=System   ACBP=A9
+ 0001:000000E0 00000016 C=CODE     S=.text    G=(none)   M=Types    ACBP=A9
+ 0001:000000F8 00000038 C=CODE     S=.text    G=(none)   M=Windows  ACBP=A9
+ 0001:00000130 00000038 C=CODE     S=.text    G=(none)   M=Messages ACBP=A9
+ 0001:00000168 0000000E C=CODE     S=.text    G=(none)   M=SysConst ACBP=A9
+ 0001:00000178 0000005E C=CODE     S=.text    G=(none)   M=SysUtils ACBP=A9
+ 0001:000001D8 0000000E C=CODE     S=.text    G=(none)   M=VarUtils ACBP=A9
+ 0001:000001E8 0000000E C=CODE     S=.text    G=(none)   M=Variants ACBP=A9
+ 0001:000001F8 0000000E C=CODE     S=.text    G=(none)   M=ActiveX  ACBP=A9
+ 0001:00000208 0000000E C=CODE     S=.text    G=(none)   M=RTLConsts ACBP=A9
+ 0001:00000218 0000000E C=CODE     S=.text    G=(none)   M=TypInfo  ACBP=A9
+ 0001:00000228 0000003E C=CODE     S=.text    G=(none)   M=Classes  ACBP=A9
+ 0001:00000268 0000000E C=CODE     S=.text    G=(none)   M=Consts   ACBP=A9
+ 0001:00000278 00000026 C=CODE     S=.text    G=(none)   M=Graphics ACBP=A9
+ 0001:000002A0 0000000E C=CODE     S=.text    G=(none)   M=Math     ACBP=A9
+ 0001:000002B0 0000000E C=CODE     S=.text    G=(none)   M=Contnrs  ACBP=A9
+ 0001:000002C0 00000038 C=CODE     S=.text    G=(none)   M=CommCtrl ACBP=A9
+ 0001:000002F8 0000000E C=CODE     S=.text    G=(none)   M=HelpIntfs ACBP=A9
+ 0001:00000308 0000000E C=CODE     S=.text    G=(none)   M=MultiMon ACBP=A9
+ 0001:00000318 00000038 C=CODE     S=.text    G=(none)   M=Imm      ACBP=A9
+ 0001:00000350 0000000E C=CODE     S=.text    G=(none)   M=SyncObjs ACBP=A9
+ 0001:00000360 0000000E C=CODE     S=.text    G=(none)   M=UxTheme  ACBP=A9
+ 0001:00000370 00000038 C=CODE     S=.text    G=(none)   M=UrlMon   ACBP=A9
+ 0001:000003A8 00000038 C=CODE     S=.text    G=(none)   M=WinInet  ACBP=A9
+ 0001:000003E0 00000038 C=CODE     S=.text    G=(none)   M=RegStr   ACBP=A9
+ 0001:00000418 00000038 C=CODE     S=.text    G=(none)   M=ShellAPI ACBP=A9
+ 0001:00000450 00000038 C=CODE     S=.text    G=(none)   M=ShlObj   ACBP=A9
+ 0001:00000488 0000000E C=CODE     S=.text    G=(none)   M=WinHelpViewer ACBP=A9
+ 0001:00000498 00000038 C=CODE     S=.text    G=(none)   M=WinSpool ACBP=A9
+ 0001:000004D0 0000000E C=CODE     S=.text    G=(none)   M=Printers ACBP=A9
+ 0001:000004E0 00000038 C=CODE     S=.text    G=(none)   M=CommDlg  ACBP=A9
+ 0001:00000518 00000038 C=CODE     S=.text    G=(none)   M=Dlgs     ACBP=A9
+ 0001:00000550 0000000E C=CODE     S=.text    G=(none)   M=Dialogs  ACBP=A9
+ 0001:00000560 0000000E C=CODE     S=.text    G=(none)   M=StrUtils ACBP=A9
+ 0001:00000570 0000000E C=CODE     S=.text    G=(none)   M=Clipbrd  ACBP=A9
+ 0001:00000580 0000000E C=CODE     S=.text    G=(none)   M=StdActns ACBP=A9
+ 0001:00000590 0000000E C=CODE     S=.text    G=(none)   M=FlatSB   ACBP=A9
+ 0001:000005A0 0000000E C=CODE     S=.text    G=(none)   M=StdCtrls ACBP=A9
+ 0001:000005B0 0000000E C=CODE     S=.text    G=(none)   M=ExtCtrls ACBP=A9
+ 0001:000005C0 0000000E C=CODE     S=.text    G=(none)   M=ToolWin  ACBP=A9
+ 0001:000005D0 00000038 C=CODE     S=.text    G=(none)   M=RichEdit ACBP=A9
+ 0001:00000608 0000000E C=CODE     S=.text    G=(none)   M=IniFiles ACBP=A9
+ 0001:00000618 0000000E C=CODE     S=.text    G=(none)   M=Registry ACBP=A9
+ 0001:00000628 0000000E C=CODE     S=.text    G=(none)   M=Buttons  ACBP=A9
+ 0001:00000638 0000000E C=CODE     S=.text    G=(none)   M=ExtDlgs  ACBP=A9
+ 0001:00000648 0000000E C=CODE     S=.text    G=(none)   M=Mapi     ACBP=A9
+ 0001:00000658 0000000E C=CODE     S=.text    G=(none)   M=ExtActns ACBP=A9
+ 0001:00000668 0000000E C=CODE     S=.text    G=(none)   M=ComStrs  ACBP=A9
+ 0001:00000678 0000000E C=CODE     S=.text    G=(none)   M=ListActns ACBP=A9
+ 0001:00000688 0000003E C=CODE     S=.text    G=(none)   M=ComCtrls ACBP=A9
+ 0001:000006C8 0000000E C=CODE     S=.text    G=(none)   M=Themes   ACBP=A9
+ 0001:000006D8 0000000E C=CODE     S=.text    G=(none)   M=Menus    ACBP=A9
+ 0001:000006E8 0000012E C=CODE     S=.text    G=(none)   M=Forms    ACBP=A9
+ 0001:00000818 0000000E C=CODE     S=.text    G=(none)   M=ImgList  ACBP=A9
+ 0001:00000828 0000000E C=CODE     S=.text    G=(none)   M=ActnList ACBP=A9
+ 0001:00000838 000000EE C=CODE     S=.text    G=(none)   M=Controls ACBP=A9
+ 0001:00000928 0000000E C=CODE     S=.text    G=(none)   M=dxCommon ACBP=A9
+ 0001:00000938 0000000E C=CODE     S=.text    G=(none)   M=dxUtils  ACBP=A9
+ 0001:00000948 0000000E C=CODE     S=.text    G=(none)   M=dxEdStr  ACBP=A9
+ 0001:00000958 0000000E C=CODE     S=.text    G=(none)   M=dxCntner ACBP=A9
+ 0001:00000968 0000000E C=CODE     S=.text    G=(none)   M=dxGrDate ACBP=A9
+ 0001:00000978 0000000E C=CODE     S=.text    G=(none)   M=dxCalc   ACBP=A9
+ 0001:00000988 0000000E C=CODE     S=.text    G=(none)   M=MaskUtils ACBP=A9
+ 0001:00000998 0000000E C=CODE     S=.text    G=(none)   M=Mask     ACBP=A9
+ 0001:000009A8 00000016 C=CODE     S=.text    G=(none)   M=dxEditor ACBP=A9
+ 0001:000009C0 0000000E C=CODE     S=.text    G=(none)   M=dxExEdtr ACBP=A9
+ 0001:000009D0 0000000E C=CODE     S=.text    G=(none)   M=dxTLStr  ACBP=A9
+ 0001:000009E0 0000002E C=CODE     S=.text    G=(none)   M=dxTL     ACBP=A9
+ 0001:00000A10 0000000E C=CODE     S=.text    G=(none)   M=DBConsts ACBP=A9
+ 0001:00000A20 0000000E C=CODE     S=.text    G=(none)   M=FMTBcd   ACBP=A9
+ 0001:00000A30 0000000E C=CODE     S=.text    G=(none)   M=DateUtils ACBP=A9
+ 0001:00000A40 0000000E C=CODE     S=.text    G=(none)   M=SqlTimSt ACBP=A9
+ 0001:00000A50 0000000E C=CODE     S=.text    G=(none)   M=ComConst ACBP=A9
+ 0001:00000A60 0000000E C=CODE     S=.text    G=(none)   M=ComObj   ACBP=A9
+ 0001:00000A70 000000AE C=CODE     S=.text    G=(none)   M=DB       ACBP=A9
+ 0001:00000B20 0000000E C=CODE     S=.text    G=(none)   M=dxGrFCmn ACBP=A9
+ 0001:00000B30 0000000E C=CODE     S=.text    G=(none)   M=VDBConsts ACBP=A9
+ 0001:00000B40 0000000E C=CODE     S=.text    G=(none)   M=DBPWDlg  ACBP=A9
+ 0001:00000B50 0000000E C=CODE     S=.text    G=(none)   M=DBLogDlg ACBP=A9
+ 0001:00000B60 0000000E C=CODE     S=.text    G=(none)   M=DBCtrls  ACBP=A9
+ 0001:00000B70 0000000E C=CODE     S=.text    G=(none)   M=dxDBEdtr ACBP=A9
+ 0001:00000B80 0000001E C=CODE     S=.text    G=(none)   M=dxDBCtrl ACBP=A9
+ 0001:00000BA0 0000000E C=CODE     S=.text    G=(none)   M=dxFilter ACBP=A9
+ 0001:00000BB0 0000000E C=CODE     S=.text    G=(none)   M=dxGrExpt ACBP=A9
+ 0001:00000BC0 0000000E C=CODE     S=.text    G=(none)   M=dxGrFDlg ACBP=A9
+ 0001:00000BD0 0000000E C=CODE     S=.text    G=(none)   M=dxGrFltr ACBP=A9
+ 0001:00000BE0 00000026 C=CODE     S=.text    G=(none)   M=dxDBGrid ACBP=A9
+ 0001:00000C08 0000000E C=CODE     S=.text    G=(none)   M=dxEdLib  ACBP=A9
+ 0001:00000C18 0000000E C=CODE     S=.text    G=(none)   M=dxDBELib ACBP=A9
+ 0001:00000C28 0000000E C=CODE     S=.text    G=(none)   M=DBCommon ACBP=A9
+ 0001:00000C38 0000000E C=CODE     S=.text    G=(none)   M=IBUtils  ACBP=A9
+ 0001:00000C48 0000000E C=CODE     S=.text    G=(none)   M=IBXConst ACBP=A9
+ 0001:00000C58 0000000E C=CODE     S=.text    G=(none)   M=IBExternals ACBP=A9
+ 0001:00000C68 0000000E C=CODE     S=.text    G=(none)   M=IBInstallHeader ACBP=A9
+ 0001:00000C78 0000000E C=CODE     S=.text    G=(none)   M=IBIntf   ACBP=A9
+ 0001:00000C88 0000000E C=CODE     S=.text    G=(none)   M=IBHeader ACBP=A9
+ 0001:00000C98 0000000E C=CODE     S=.text    G=(none)   M=IB       ACBP=A9
+ 0001:00000CA8 0000000E C=CODE     S=.text    G=(none)   M=IBErrorCodes ACBP=A9
+ 0001:00000CB8 0000000E C=CODE     S=.text    G=(none)   M=IBBlob   ACBP=A9
+ 0001:00000CC8 00000016 C=CODE     S=.text    G=(none)   M=IBCustomDataSet ACBP=A9
+ 0001:00000CE0 0000000E C=CODE     S=.text    G=(none)   M=IBServices ACBP=A9
+ 0001:00000CF0 0000000E C=CODE     S=.text    G=(none)   M=IBSQLMonitor ACBP=A9
+ 0001:00000D00 0000000E C=CODE     S=.text    G=(none)   M=IBDatabaseInfo ACBP=A9
+ 0001:00000D10 0000000E C=CODE     S=.text    G=(none)   M=IBDatabase ACBP=A9
+ 0001:00000D20 00000016 C=CODE     S=.text    G=(none)   M=IBSQL    ACBP=A9
+ 0001:00000D38 0000000E C=CODE     S=.text    G=(none)   M=IBQuery  ACBP=A9
+ 0001:00000D48 0000000E C=CODE     S=.text    G=(none)   M=IBTable  ACBP=A9
+ 0001:00000D58 0000000E C=CODE     S=.text    G=(none)   M=UGeral   ACBP=A9
+ 0001:00000D68 00000026 C=CODE     S=.text    G=(none)   M=UDM      ACBP=A9
+ 0001:00000D90 0000000E C=CODE     S=.text    G=(none)   M=uRelatorioWEB ACBP=A9
+ 0001:00000DA0 0000000E C=CODE     S=.text    G=(none)   M=StdVCL   ACBP=A9
+ 0001:00000DB0 0000000E C=CODE     S=.text    G=(none)   M=AxCtrls  ACBP=A9
+ 0001:00000DC0 0000000E C=CODE     S=.text    G=(none)   M=OleConst ACBP=A9
+ 0001:00000DD0 0000000E C=CODE     S=.text    G=(none)   M=OleCtrls ACBP=A9
+ 0001:00000DE0 0000000E C=CODE     S=.text    G=(none)   M=OleServer ACBP=A9
+ 0001:00000DF0 0000000E C=CODE     S=.text    G=(none)   M=MSHTML   ACBP=A9
+ 0001:00000E00 00000016 C=CODE     S=.text    G=(none)   M=SHDocVw  ACBP=A9
+ 0001:00000E18 0000000E C=CODE     S=.text    G=(none)   M=uFuncaoGrid ACBP=A9
+ 0001:00000E28 0000000E C=CODE     S=.text    G=(none)   M=uPermissao ACBP=A9
+ 0001:00000E38 0000000E C=CODE     S=.text    G=(none)   M=JConsts  ACBP=A9
+ 0001:00000E48 0000000E C=CODE     S=.text    G=(none)   M=jpeg     ACBP=A9
+ 0001:00000E58 0000000E C=CODE     S=.text    G=(none)   M=RpDefine ACBP=A9
+ 0001:00000E68 0000000E C=CODE     S=.text    G=(none)   M=RpCon    ACBP=A9
+ 0001:00000E78 0000000E C=CODE     S=.text    G=(none)   M=RpConDS  ACBP=A9
+ 0001:00000E88 0000000E C=CODE     S=.text    G=(none)   M=RpBase   ACBP=A9
+ 0001:00000E98 0000000E C=CODE     S=.text    G=(none)   M=RpDevice ACBP=A9
+ 0001:00000EA8 0000000E C=CODE     S=.text    G=(none)   M=RpFont   ACBP=A9
+ 0001:00000EB8 0000000E C=CODE     S=.text    G=(none)   M=RpRPTF   ACBP=A9
+ 0001:00000EC8 0000000E C=CODE     S=.text    G=(none)   M=RpSystem ACBP=A9
+ 0001:00000ED8 0000000E C=CODE     S=.text    G=(none)   M=RpFiler  ACBP=A9
+ 0001:00000EE8 0000000E C=CODE     S=.text    G=(none)   M=RpRender ACBP=A9
+ 0001:00000EF8 0000000E C=CODE     S=.text    G=(none)   M=RpMBCS   ACBP=A9
+ 0001:00000F08 0000000E C=CODE     S=.text    G=(none)   M=RpRenderPrinter ACBP=A9
+ 0001:00000F18 0000000E C=CODE     S=.text    G=(none)   M=RpRenderCanvas ACBP=A9
+ 0001:00000F28 0000000E C=CODE     S=.text    G=(none)   M=RpRenderPreview ACBP=A9
+ 0001:00000F38 0000000E C=CODE     S=.text    G=(none)   M=RpFormSetup ACBP=A9
+ 0001:00000F48 0000000E C=CODE     S=.text    G=(none)   M=RpFormPreview ACBP=A9
+ 0001:00000F58 0000000E C=CODE     S=.text    G=(none)   M=RpFormStatus ACBP=A9
+ 0001:00000F68 0000000E C=CODE     S=.text    G=(none)   M=RpRave   ACBP=A9
+ 0001:00000F78 0000000E C=CODE     S=.text    G=(none)   M=RvDefine ACBP=A9
+ 0001:00000F88 0000000E C=CODE     S=.text    G=(none)   M=RvClass  ACBP=A9
+ 0001:00000F98 0000000E C=CODE     S=.text    G=(none)   M=RvUtil   ACBP=A9
+ 0001:00000FA8 0000000E C=CODE     S=.text    G=(none)   M=RvCmHuff ACBP=A9
+ 0001:00000FB8 0000000E C=CODE     S=.text    G=(none)   M=RvProj   ACBP=A9
+ 0001:00000FC8 0000000E C=CODE     S=.text    G=(none)   M=RvData   ACBP=A9
+ 0001:00000FD8 0000000E C=CODE     S=.text    G=(none)   M=RvDataField ACBP=A9
+ 0001:00000FE8 0000000E C=CODE     S=.text    G=(none)   M=RvSecurity ACBP=A9
+ 0001:00000FF8 0000000E C=CODE     S=.text    G=(none)   M=RvDirectDataView ACBP=A9
+ 0001:00001008 0000000E C=CODE     S=.text    G=(none)   M=RvCsStd  ACBP=A9
+ 0001:00001018 0000000E C=CODE     S=.text    G=(none)   M=RpMemo   ACBP=A9
+ 0001:00001028 0000000E C=CODE     S=.text    G=(none)   M=RvCsRpt  ACBP=A9
+ 0001:00001038 0000000E C=CODE     S=.text    G=(none)   M=RvCsDraw ACBP=A9
+ 0001:00001048 0000000E C=CODE     S=.text    G=(none)   M=RvCsData ACBP=A9
+ 0001:00001058 0000000E C=CODE     S=.text    G=(none)   M=RvDatabase ACBP=A9
+ 0001:00001068 0000000E C=CODE     S=.text    G=(none)   M=RvDataLink ACBP=A9
+ 0001:00001078 0000000E C=CODE     S=.text    G=(none)   M=RvDLCommon ACBP=A9
+ 0001:00001088 0000000E C=CODE     S=.text    G=(none)   M=RvDLBase ACBP=A9
+ 0001:00001098 0000000E C=CODE     S=.text    G=(none)   M=RvDriverDataView ACBP=A9
+ 0001:000010A8 0000000E C=CODE     S=.text    G=(none)   M=RvLEModule ACBP=A9
+ 0001:000010B8 0000000E C=CODE     S=.text    G=(none)   M=RvLEDefine ACBP=A9
+ 0001:000010C8 0000000E C=CODE     S=.text    G=(none)   M=RvLEID   ACBP=A9
+ 0001:000010D8 0000000E C=CODE     S=.text    G=(none)   M=RvLEUtil ACBP=A9
+ 0001:000010E8 0000000E C=CODE     S=.text    G=(none)   M=RvLEType ACBP=A9
+ 0001:000010F8 0000000E C=CODE     S=.text    G=(none)   M=RvLERun  ACBP=A9
+ 0001:00001108 0000000E C=CODE     S=.text    G=(none)   M=RvLESystem ACBP=A9
+ 0001:00001118 0000000E C=CODE     S=.text    G=(none)   M=RvCsBars ACBP=A9
+ 0001:00001128 0000000E C=CODE     S=.text    G=(none)   M=RpBars   ACBP=A9
+ 0001:00001138 0000000E C=CODE     S=.text    G=(none)   M=RpRenderRTF ACBP=A9
+ 0001:00001148 0000000E C=CODE     S=.text    G=(none)   M=RpRenderHTML ACBP=A9
+ 0001:00001158 0000000E C=CODE     S=.text    G=(none)   M=RpRenderPDF ACBP=A9
+ 0001:00001168 0000000E C=CODE     S=.text    G=(none)   M=UDMGERAL ACBP=A9
+ 0001:00001178 0000000E C=CODE     S=.text    G=(none)   M=Midas    ACBP=A9
+ 0001:00001188 0000000E C=CODE     S=.text    G=(none)   M=MidConst ACBP=A9
+ 0001:00001198 0000000E C=CODE     S=.text    G=(none)   M=DSIntf   ACBP=A9
+ 0001:000011A8 0000000E C=CODE     S=.text    G=(none)   M=DataBkr  ACBP=A9
+ 0001:000011B8 0000000E C=CODE     S=.text    G=(none)   M=Provider ACBP=A9
+ 0001:000011C8 0000000E C=CODE     S=.text    G=(none)   M=DBClient ACBP=A9
+ 0001:000011D8 0000000E C=CODE     S=.text    G=(none)   M=uFuncoesWeb ACBP=A9
+ 0001:000011E8 0000000E C=CODE     S=.text    G=(none)   M=CHILKATHTTPLib_TLB ACBP=A9
+ 0001:000011F8 0000000E C=CODE     S=.text    G=(none)   M=CHILKATUPLOADLib_TLB ACBP=A9
+ 0001:00001208 0000000E C=CODE     S=.text    G=(none)   M=ULogSQL  ACBP=A9
+ 0001:00001218 0000000E C=CODE     S=.text    G=(none)   M=UGeralSQL ACBP=A9
+ 0001:00001228 0000001E C=CODE     S=.text    G=(none)   M=Grids    ACBP=A9
+ 0001:00001248 0000000E C=CODE     S=.text    G=(none)   M=DBGrids  ACBP=A9
+ 0001:00001258 0000000E C=CODE     S=.text    G=(none)   M=dxDBTLCl ACBP=A9
+ 0001:00001268 0000000E C=CODE     S=.text    G=(none)   M=dxGrClms ACBP=A9
+ 0001:00001278 0000000E C=CODE     S=.text    G=(none)   M=frxExportImage ACBP=A9
+ 0001:00001288 0000000E C=CODE     S=.text    G=(none)   M=frxClass ACBP=A9
+ 0001:00001298 0000000E C=CODE     S=.text    G=(none)   M=frxVariables ACBP=A9
+ 0001:000012A8 0000000E C=CODE     S=.text    G=(none)   M=frxXML   ACBP=A9
+ 0001:000012B8 0000000E C=CODE     S=.text    G=(none)   M=FileCtrl ACBP=A9
+ 0001:000012C8 0000000E C=CODE     S=.text    G=(none)   M=frxXMLSerializer ACBP=A9
+ 0001:000012D8 0000000E C=CODE     S=.text    G=(none)   M=frxProgress ACBP=A9
+ 0001:000012E8 0000000E C=CODE     S=.text    G=(none)   M=frxRes   ACBP=A9
+ 0001:000012F8 0000000E C=CODE     S=.text    G=(none)   M=frxUnicodeUtils ACBP=A9
+ 0001:00001308 0000000E C=CODE     S=.text    G=(none)   M=frxUtils ACBP=A9
+ 0001:00001318 0000000E C=CODE     S=.text    G=(none)   M=fs_iinterpreter ACBP=A9
+ 0001:00001328 0000000E C=CODE     S=.text    G=(none)   M=fs_xml   ACBP=A9
+ 0001:00001338 0000000E C=CODE     S=.text    G=(none)   M=fs_isysrtti ACBP=A9
+ 0001:00001348 0000000E C=CODE     S=.text    G=(none)   M=fs_itools ACBP=A9
+ 0001:00001358 0000000E C=CODE     S=.text    G=(none)   M=fs_iparser ACBP=A9
+ 0001:00001368 0000000E C=CODE     S=.text    G=(none)   M=fs_iconst ACBP=A9
+ 0001:00001378 0000000E C=CODE     S=.text    G=(none)   M=fs_iexpression ACBP=A9
+ 0001:00001388 0000000E C=CODE     S=.text    G=(none)   M=fs_iilparser ACBP=A9
+ 0001:00001398 0000000E C=CODE     S=.text    G=(none)   M=fs_idisp ACBP=A9
+ 0001:000013A8 0000000E C=CODE     S=.text    G=(none)   M=frxEngine ACBP=A9
+ 0001:000013B8 0000000E C=CODE     S=.text    G=(none)   M=frxAggregate ACBP=A9
+ 0001:000013C8 0000000E C=CODE     S=.text    G=(none)   M=frxDMPClass ACBP=A9
+ 0001:000013D8 0000000E C=CODE     S=.text    G=(none)   M=frxDsgnIntf ACBP=A9
+ 0001:000013E8 0000000E C=CODE     S=.text    G=(none)   M=frxPreviewPages ACBP=A9
+ 0001:000013F8 0000000E C=CODE     S=.text    G=(none)   M=frxPictureCache ACBP=A9
+ 0001:00001408 0000000E C=CODE     S=.text    G=(none)   M=frxPreview ACBP=A9
+ 0001:00001418 0000000E C=CODE     S=.text    G=(none)   M=frxCtrls ACBP=A9
+ 0001:00001428 0000000E C=CODE     S=.text    G=(none)   M=frxPrinter ACBP=A9
+ 0001:00001438 0000000E C=CODE     S=.text    G=(none)   M=frxDock  ACBP=A9
+ 0001:00001448 0000000E C=CODE     S=.text    G=(none)   M=frxSearchDialog ACBP=A9
+ 0001:00001458 0000000E C=CODE     S=.text    G=(none)   M=frxPreviewPageSettings ACBP=A9
+ 0001:00001468 0000000E C=CODE     S=.text    G=(none)   M=frxPrintDialog ACBP=A9
+ 0001:00001478 0000000E C=CODE     S=.text    G=(none)   M=frxPassw ACBP=A9
+ 0001:00001488 0000000E C=CODE     S=.text    G=(none)   M=frxGraphicUtils ACBP=A9
+ 0001:00001498 0000000E C=CODE     S=.text    G=(none)   M=frxDialogForm ACBP=A9
+ 0001:000014A8 0000000E C=CODE     S=.text    G=(none)   M=frxrcClass ACBP=A9
+ 0001:000014B8 0000000E C=CODE     S=.text    G=(none)   M=frxClassRTTI ACBP=A9
+ 0001:000014C8 0000000E C=CODE     S=.text    G=(none)   M=fs_iformsrtti ACBP=A9
+ 0001:000014D8 0000000E C=CODE     S=.text    G=(none)   M=fs_ievents ACBP=A9
+ 0001:000014E8 0000000E C=CODE     S=.text    G=(none)   M=fs_iclassesrtti ACBP=A9
+ 0001:000014F8 0000000E C=CODE     S=.text    G=(none)   M=fs_igraphicsrtti ACBP=A9
+ 0001:00001508 0000000E C=CODE     S=.text    G=(none)   M=frxpngimage ACBP=A9
+ 0001:00001518 0000000E C=CODE     S=.text    G=(none)   M=frxZLib  ACBP=A9
+ 0001:00001528 0000000E C=CODE     S=.text    G=(none)   M=frxpnglang ACBP=A9
+ 0001:00001538 0000000E C=CODE     S=.text    G=(none)   M=frxInheritError ACBP=A9
+ 0001:00001548 0000000E C=CODE     S=.text    G=(none)   M=fs_ipascal ACBP=A9
+ 0001:00001558 0000000E C=CODE     S=.text    G=(none)   M=fs_icpp  ACBP=A9
+ 0001:00001568 0000000E C=CODE     S=.text    G=(none)   M=fs_ibasic ACBP=A9
+ 0001:00001578 0000000E C=CODE     S=.text    G=(none)   M=fs_ijs   ACBP=A9
+ 0001:00001588 0000000E C=CODE     S=.text    G=(none)   M=fs_idialogsrtti ACBP=A9
+ 0001:00001598 0000000E C=CODE     S=.text    G=(none)   M=fs_iinirtti ACBP=A9
+ 0001:000015A8 0000000E C=CODE     S=.text    G=(none)   M=frxChm   ACBP=A9
+ 0001:000015B8 0000000E C=CODE     S=.text    G=(none)   M=frxGZip  ACBP=A9
+ 0001:000015C8 0000000E C=CODE     S=.text    G=(none)   M=frxFileUtils ACBP=A9
+ 0001:000015D8 0000000E C=CODE     S=.text    G=(none)   M=frxrcExports ACBP=A9
+ 0001:000015E8 0000000E C=CODE     S=.text    G=(none)   M=GIF      ACBP=A9
+ 0001:000015F8 0000000E C=CODE     S=.text    G=(none)   M=frxExportRTF ACBP=A9
+ 0001:00001608 0000000E C=CODE     S=.text    G=(none)   M=frxExportMatrix ACBP=A9
+ 0001:00001618 0000000E C=CODE     S=.text    G=(none)   M=frxImageConverter ACBP=A9
+ 0001:00001628 0000000E C=CODE     S=.text    G=(none)   M=frxGML   ACBP=A9
+ 0001:00001638 0000000E C=CODE     S=.text    G=(none)   M=frxExportHTML ACBP=A9
+ 0001:00001648 0000000E C=CODE     S=.text    G=(none)   M=frxExportPDF ACBP=A9
+ 0001:00001658 0000000E C=CODE     S=.text    G=(none)   M=frxRC4   ACBP=A9
+ 0001:00001668 0000000E C=CODE     S=.text    G=(none)   M=frxmd5   ACBP=A9
+ 0001:00001678 0000000E C=CODE     S=.text    G=(none)   M=frxChBox ACBP=A9
+ 0001:00001688 0000000E C=CODE     S=.text    G=(none)   M=frxChBoxRTTI ACBP=A9
+ 0001:00001698 0000000E C=CODE     S=.text    G=(none)   M=frxCrypto ACBP=A9
+ 0001:000016A8 0000000E C=CODE     S=.text    G=(none)   M=frxExportXLS ACBP=A9
+ 0001:000016B8 0000000E C=CODE     S=.text    G=(none)   M=frxDBSet ACBP=A9
+ 0001:000016C8 000001EC C=CODE     S=.text    G=(none)   M=SysInit  ACBP=A9
+ 0001:000018B4 00000438 C=CODE     S=.text    G=(none)   M=UfrmCadBase ACBP=A9
+ 0001:00001CEC 00000F78 C=CODE     S=.text    G=(none)   M=UfrmCadPad ACBP=A9
+ 0001:00002C64 000002C0 C=CODE     S=.text    G=(none)   M=UfrmRelPad ACBP=A9
+ 0001:00002F24 000002C4 C=CODE     S=.text    G=(none)   M=UfrmLocPad ACBP=A9
+ 0001:000031E8 00000C88 C=CODE     S=.text    G=(none)   M=UfrmLocalizar ACBP=A9
+ 0001:00003E70 00000224 C=CODE     S=.text    G=(none)   M=UfrmConfPad ACBP=A9
+ 0001:00004094 000006E0 C=CODE     S=.text    G=(none)   M=UConPad  ACBP=A9
+ 0001:00004774 000003A4 C=CODE     S=.text    G=(none)   M=UfrmCadPadSG ACBP=A9
+ 0001:00004B18 00000650 C=CODE     S=.text    G=(none)   M=UfrmCadPadFichas ACBP=A9
+ 0001:00005168 000002F4 C=CODE     S=.text    G=(none)   M=UfrmRelPadFast ACBP=A9
+ 0001:0000545C 00000885 C=CODE     S=.text    G=(none)   M=SISPadrao ACBP=A9
+ 0002:00000000 0000002C C=DATA     S=.data    G=DGROUP   M=SysInit  ACBP=A9
+ 0002:00001000 00000004 C=BSS      S=.bss     G=DGROUP   M=Windows  ACBP=A9
+ 0002:00001004 00000004 C=BSS      S=.bss     G=DGROUP   M=Messages ACBP=A9
+ 0002:00001008 00000004 C=BSS      S=.bss     G=DGROUP   M=CommCtrl ACBP=A9
+ 0002:0000100C 00000004 C=BSS      S=.bss     G=DGROUP   M=Imm      ACBP=A9
+ 0002:00001010 00000004 C=BSS      S=.bss     G=DGROUP   M=UrlMon   ACBP=A9
+ 0002:00001014 00000004 C=BSS      S=.bss     G=DGROUP   M=WinInet  ACBP=A9
+ 0002:00001018 00000004 C=BSS      S=.bss     G=DGROUP   M=RegStr   ACBP=A9
+ 0002:0000101C 00000004 C=BSS      S=.bss     G=DGROUP   M=ShellAPI ACBP=A9
+ 0002:00001020 00000004 C=BSS      S=.bss     G=DGROUP   M=ShlObj   ACBP=A9
+ 0002:00001024 00000004 C=BSS      S=.bss     G=DGROUP   M=WinSpool ACBP=A9
+ 0002:00001028 00000004 C=BSS      S=.bss     G=DGROUP   M=CommDlg  ACBP=A9
+ 0002:0000102C 00000004 C=BSS      S=.bss     G=DGROUP   M=Dlgs     ACBP=A9
+ 0002:00001030 00000004 C=BSS      S=.bss     G=DGROUP   M=RichEdit ACBP=A9
+ 0002:00001034 00000010 C=BSS      S=.bss     G=DGROUP   M=SysInit  ACBP=A9
+ 0002:00001044 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmCadBase ACBP=A9
+ 0002:0000104C 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmCadPad ACBP=A9
+ 0002:00001054 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelPad ACBP=A9
+ 0002:0000105C 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmLocPad ACBP=A9
+ 0002:00001064 00000020 C=BSS      S=.bss     G=DGROUP   M=UfrmLocalizar ACBP=A9
+ 0002:00001084 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmConfPad ACBP=A9
+ 0002:0000108C 00000008 C=BSS      S=.bss     G=DGROUP   M=UConPad  ACBP=A9
+ 0002:00001094 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmCadPadSG ACBP=A9
+ 0002:0000109C 0000000C C=BSS      S=.bss     G=DGROUP   M=UfrmCadPadFichas ACBP=A9
+ 0002:000010A8 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelPadFast ACBP=A9
+
+
+  Address         Publics by Name
+
+ 0002:0000102C       .1
+ 0002:00001030       .1
+ 0002:00001018       .1
+ 0002:00001020       .1
+ 0002:00001028       .1
+ 0002:00001014       .1
+ 0002:00001004       .1
+ 0002:00001008       .1
+ 0002:00001010       .1
+ 0002:0000100C       .1
+ 0002:0000103C       .1
+ 0002:0000101C       .1
+ 0002:00001060       .2
+ 0002:00001098       .2
+ 0002:000010AC       .2
+ 0002:00001050       .2
+ 0002:00001088       .2
+ 0002:000010A4       .2
+ 0002:00001058       .2
+ 0002:00001090       .2
+ 0002:00001048       .2
+ 0002:00001000       .3
+ 0002:00001080       .3
+ 0002:00001024       .3
+ 0001:00005CBC       @GetPackageInfoTable
+ 0001:00001800       @InitPkg
+ 0001:00005CC4       @PackageLoad
+ 0001:00001864       @PackageLoad
+ 0001:00001870       @PackageUnload
+ 0001:00005CD0       @PackageUnload
+ 0001:00001700       AllocTlsBuffer
+ 0002:00001074       Campo
+ 0001:000002F0       CommCtrl
+ 0001:00000510       CommDlg
+ 0001:00000548       Dlgs
+ 0001:000022CC       exclusao
+ 0001:000017AC       ExitProcessTLS
+ 0001:00001784       ExitThreadTLS
+ 0001:00003E00       Finalization
+ 0001:00002EEC       Finalization
+ 0001:00000318       Finalization
+ 0001:00002C2C       Finalization
+ 0001:00001CB4       Finalization
+ 0001:00005130       Finalization
+ 0001:000002C0       Finalization
+ 0001:0000405C       Finalization
+ 0001:00000130       Finalization
+ 0001:00004AE0       Finalization
+ 0001:0000473C       Finalization
+ 0001:0000187C       Finalization
+ 0001:000000F8       Finalization
+ 0001:000004E0       Finalization
+ 0001:00000370       Finalization
+ 0001:000003A8       Finalization
+ 0001:000005D0       Finalization
+ 0001:000003E0       Finalization
+ 0001:00000518       Finalization
+ 0001:00000418       Finalization
+ 0001:00000450       Finalization
+ 0001:000031B0       Finalization
+ 0001:00005424       Finalization
+ 0001:00000498       Finalization
+ 0001:000016C8       FreeLibrary
+ 0002:00001044       frmCadBase
+ 0002:0000104C       frmCadPad
+ 0002:0000109C       frmCadPadFichas
+ 0002:00001094       frmCadPadSG
+ 0002:00001084       frmConfPad
+ 0002:0000108C       frmConPad
+ 0002:00001064       frmLocalizar
+ 0002:0000105C       frmLocPad
+ 0002:00001054       frmRelPad
+ 0002:000010A8       frmRelPadFast
+ 0001:0000170C       GetTlsSize
+ 0002:00001038       HInstance
+ 0001:00000348       Imm
+ 0001:000017D0       InitializeModule
+ 0001:00001758       InitProcessTLS
+ 0001:00001714       InitThreadTLS
+ 0001:00002170       Insercao
+ 0001:000016D0       LocalAlloc
+ 0001:000016D8       LocalFree
+ 0001:00000160       Messages
+ 0002:00000004       Module
+ 0002:00001034       ModuleIsLib
+ 0002:00001035       ModuleIsPackage
+ 0002:000010A0       nRelatorio
+ 0001:00000410       RegStr
+ 0001:00000600       RichEdit
+ 0001:00000448       ShellAPI
+ 0001:00000480       ShlObj
+ 0001:00005CDC       SISPadrao
+ 0001:000018AC       SysInit
+ 0001:00001A40       TfrmCadBase.DesenhaBordas
+ 0001:00001B80       TfrmCadBase.FormCreate
+ 0001:00001B88       TfrmCadBase.ObjetosEditEmMaiusculos
+ 0001:00002AE0       TfrmCadPad.AtualizaLista
+ 0001:00002C00       TfrmCadPad.AtualizarLista1Click
+ 0001:00002514       TfrmCadPad.btAnteriorClick
+ 0001:00002954       TfrmCadPad.btCancelarClick
+ 0001:000023DC       TfrmCadPad.bteditarClick
+ 0001:00002364       TfrmCadPad.btexcluirClick
+ 0001:00002168       TfrmCadPad.btfecharClick
+ 0001:000024C8       TfrmCadPad.btgravarClick
+ 0001:000025A8       TfrmCadPad.btimprimirClick
+ 0001:00002254       TfrmCadPad.btIncluirClick
+ 0001:00002534       TfrmCadPad.btProximoClick
+ 0001:00002BF8       TfrmCadPad.CriaGrid
+ 0001:00002B48       TfrmCadPad.dsControleStateChange
+ 0001:00002B24       TfrmCadPad.FocoControle
+ 0001:00002A28       TfrmCadPad.FormClose
+ 0001:00002A54       TfrmCadPad.FormCreate
+ 0001:00002554       TfrmCadPad.FormShow
+ 0001:00002A40       TfrmCadPad.grDadosDblClick
+ 0001:00002998       TfrmCadPad.InicializaControles
+ 0001:00002BFC       TfrmCadPad.Limpar
+ 0001:00002B28       TfrmCadPad.pgGeralChange
+ 0001:00002A9C       TfrmCadPad.pgGeralChanging
+ 0001:00004FC4       TfrmCadPadFichas.btImpVersaoClick
+ 0001:00004E8C       TfrmCadPadFichas.btIncVersaoClick
+ 0001:0000510C       TfrmCadPadFichas.btSalvarVersaoClick
+ 0001:000050E8       TfrmCadPadFichas.dsVersaoStateChange
+ 0001:00004E28       TfrmCadPadFichas.FormCreate
+ 0001:00004FC0       TfrmCadPadFichas.GeraXML
+ 0001:00004930       TfrmCadPadSG.btexcluirClick
+ 0001:00004A40       TfrmCadPadSG.CMDialogKey
+ 0001:00004720       TfrmConPad.btAnteriorClick
+ 0001:00004350       TfrmConPad.btfecharClick
+ 0001:00004358       TfrmConPad.btimprimirClick
+ 0001:00004704       TfrmConPad.btProximoClick
+ 0001:00003DB8       TfrmLocalizar.edLocalizarKeyDown
+ 0001:00003DCC       TfrmLocalizar.FormClose
+ 0001:00003DE8       TfrmLocalizar.FormCreate
+ 0001:00003D08       TfrmLocalizar.FormShow
+ 0001:00003DAC       TfrmLocalizar.gridDblClick
+ 0001:00003D94       TfrmLocalizar.gridKeyDown
+ 0001:00003764       TfrmLocalizar.Pesquisa
+ 0001:0000345C       TfrmLocalizar.PropriedadeColuna
+ 0001:00003A0C       TfrmLocalizar.TabControl1Change
+ 0001:0000319C       TfrmLocPad.FormCreate
+ 0001:000031A0       TfrmLocPad.FormShow
+ 0001:000031A4       TfrmLocPad.grDadosDblClick
+ 0002:00001078       Tipo_Campo
+ 0001:000016E0       TlsAlloc
+ 0002:00001040       tlsBuffer
+ 0001:000016E8       TlsFree
+ 0001:000016F0       TlsGetValue
+ 0002:00000000       TlsIndex
+ 0002:FFBF9000       TlsLast
+ 0002:0000001C       TlsProc
+ 0001:000016F8       TlsSetValue
+ 0002:00001070       Tx_OrderBy
+ 0002:00001068       Tx_SQL
+ 0002:0000106C       Tx_Where
+ 0001:0000476C       UConPad
+ 0001:00001CE4       UfrmCadBase
+ 0001:00002C5C       UfrmCadPad
+ 0001:00005160       UfrmCadPadFichas
+ 0001:00004B10       UfrmCadPadSG
+ 0001:0000408C       UfrmConfPad
+ 0001:00003E68       UfrmLocalizar
+ 0001:000031E0       UfrmLocPad
+ 0001:00002F1C       UfrmRelPad
+ 0001:00005454       UfrmRelPadFast
+ 0001:000017DC       UninitializeModule
+ 0001:000003A0       UrlMon
+ 0002:0000107C       VCampo
+ 0001:00000128       Windows
+ 0001:000003D8       WinInet
+ 0001:000004C8       WinSpool
+
+
+  Address         Publics by Value
+
+ 0002:FFBF9000       TlsLast
+ 0001:000000F8       Finalization
+ 0001:00000128       Windows
+ 0001:00000130       Finalization
+ 0001:00000160       Messages
+ 0001:000002C0       Finalization
+ 0001:000002F0       CommCtrl
+ 0001:00000318       Finalization
+ 0001:00000348       Imm
+ 0001:00000370       Finalization
+ 0001:000003A0       UrlMon
+ 0001:000003A8       Finalization
+ 0001:000003D8       WinInet
+ 0001:000003E0       Finalization
+ 0001:00000410       RegStr
+ 0001:00000418       Finalization
+ 0001:00000448       ShellAPI
+ 0001:00000450       Finalization
+ 0001:00000480       ShlObj
+ 0001:00000498       Finalization
+ 0001:000004C8       WinSpool
+ 0001:000004E0       Finalization
+ 0001:00000510       CommDlg
+ 0001:00000518       Finalization
+ 0001:00000548       Dlgs
+ 0001:000005D0       Finalization
+ 0001:00000600       RichEdit
+ 0001:000016C8       FreeLibrary
+ 0001:000016D0       LocalAlloc
+ 0001:000016D8       LocalFree
+ 0001:000016E0       TlsAlloc
+ 0001:000016E8       TlsFree
+ 0001:000016F0       TlsGetValue
+ 0001:000016F8       TlsSetValue
+ 0001:00001700       AllocTlsBuffer
+ 0001:0000170C       GetTlsSize
+ 0001:00001714       InitThreadTLS
+ 0001:00001758       InitProcessTLS
+ 0001:00001784       ExitThreadTLS
+ 0001:000017AC       ExitProcessTLS
+ 0001:000017D0       InitializeModule
+ 0001:000017DC       UninitializeModule
+ 0001:00001800       @InitPkg
+ 0001:00001864       @PackageLoad
+ 0001:00001870       @PackageUnload
+ 0001:0000187C       Finalization
+ 0001:000018AC       SysInit
+ 0001:00001A40       TfrmCadBase.DesenhaBordas
+ 0001:00001B80       TfrmCadBase.FormCreate
+ 0001:00001B88       TfrmCadBase.ObjetosEditEmMaiusculos
+ 0001:00001CB4       Finalization
+ 0001:00001CE4       UfrmCadBase
+ 0001:00002168       TfrmCadPad.btfecharClick
+ 0001:00002170       Insercao
+ 0001:00002254       TfrmCadPad.btIncluirClick
+ 0001:000022CC       exclusao
+ 0001:00002364       TfrmCadPad.btexcluirClick
+ 0001:000023DC       TfrmCadPad.bteditarClick
+ 0001:000024C8       TfrmCadPad.btgravarClick
+ 0001:00002514       TfrmCadPad.btAnteriorClick
+ 0001:00002534       TfrmCadPad.btProximoClick
+ 0001:00002554       TfrmCadPad.FormShow
+ 0001:000025A8       TfrmCadPad.btimprimirClick
+ 0001:00002954       TfrmCadPad.btCancelarClick
+ 0001:00002998       TfrmCadPad.InicializaControles
+ 0001:00002A28       TfrmCadPad.FormClose
+ 0001:00002A40       TfrmCadPad.grDadosDblClick
+ 0001:00002A54       TfrmCadPad.FormCreate
+ 0001:00002A9C       TfrmCadPad.pgGeralChanging
+ 0001:00002AE0       TfrmCadPad.AtualizaLista
+ 0001:00002B24       TfrmCadPad.FocoControle
+ 0001:00002B28       TfrmCadPad.pgGeralChange
+ 0001:00002B48       TfrmCadPad.dsControleStateChange
+ 0001:00002BF8       TfrmCadPad.CriaGrid
+ 0001:00002BFC       TfrmCadPad.Limpar
+ 0001:00002C00       TfrmCadPad.AtualizarLista1Click
+ 0001:00002C2C       Finalization
+ 0001:00002C5C       UfrmCadPad
+ 0001:00002EEC       Finalization
+ 0001:00002F1C       UfrmRelPad
+ 0001:0000319C       TfrmLocPad.FormCreate
+ 0001:000031A0       TfrmLocPad.FormShow
+ 0001:000031A4       TfrmLocPad.grDadosDblClick
+ 0001:000031B0       Finalization
+ 0001:000031E0       UfrmLocPad
+ 0001:0000345C       TfrmLocalizar.PropriedadeColuna
+ 0001:00003764       TfrmLocalizar.Pesquisa
+ 0001:00003A0C       TfrmLocalizar.TabControl1Change
+ 0001:00003D08       TfrmLocalizar.FormShow
+ 0001:00003D94       TfrmLocalizar.gridKeyDown
+ 0001:00003DAC       TfrmLocalizar.gridDblClick
+ 0001:00003DB8       TfrmLocalizar.edLocalizarKeyDown
+ 0001:00003DCC       TfrmLocalizar.FormClose
+ 0001:00003DE8       TfrmLocalizar.FormCreate
+ 0001:00003E00       Finalization
+ 0001:00003E68       UfrmLocalizar
+ 0001:0000405C       Finalization
+ 0001:0000408C       UfrmConfPad
+ 0001:00004350       TfrmConPad.btfecharClick
+ 0001:00004358       TfrmConPad.btimprimirClick
+ 0001:00004704       TfrmConPad.btProximoClick
+ 0001:00004720       TfrmConPad.btAnteriorClick
+ 0001:0000473C       Finalization
+ 0001:0000476C       UConPad
+ 0001:00004930       TfrmCadPadSG.btexcluirClick
+ 0001:00004A40       TfrmCadPadSG.CMDialogKey
+ 0001:00004AE0       Finalization
+ 0001:00004B10       UfrmCadPadSG
+ 0001:00004E28       TfrmCadPadFichas.FormCreate
+ 0001:00004E8C       TfrmCadPadFichas.btIncVersaoClick
+ 0001:00004FC0       TfrmCadPadFichas.GeraXML
+ 0001:00004FC4       TfrmCadPadFichas.btImpVersaoClick
+ 0001:000050E8       TfrmCadPadFichas.dsVersaoStateChange
+ 0001:0000510C       TfrmCadPadFichas.btSalvarVersaoClick
+ 0001:00005130       Finalization
+ 0001:00005160       UfrmCadPadFichas
+ 0001:00005424       Finalization
+ 0001:00005454       UfrmRelPadFast
+ 0001:00005CBC       @GetPackageInfoTable
+ 0001:00005CC4       @PackageLoad
+ 0001:00005CD0       @PackageUnload
+ 0001:00005CDC       SISPadrao
+ 0002:00000000       TlsIndex
+ 0002:00000004       Module
+ 0002:0000001C       TlsProc
+ 0002:00001000       .3
+ 0002:00001004       .1
+ 0002:00001008       .1
+ 0002:0000100C       .1
+ 0002:00001010       .1
+ 0002:00001014       .1
+ 0002:00001018       .1
+ 0002:0000101C       .1
+ 0002:00001020       .1
+ 0002:00001024       .3
+ 0002:00001028       .1
+ 0002:0000102C       .1
+ 0002:00001030       .1
+ 0002:00001034       ModuleIsLib
+ 0002:00001035       ModuleIsPackage
+ 0002:00001038       HInstance
+ 0002:0000103C       .1
+ 0002:00001040       tlsBuffer
+ 0002:00001044       frmCadBase
+ 0002:00001048       .2
+ 0002:0000104C       frmCadPad
+ 0002:00001050       .2
+ 0002:00001054       frmRelPad
+ 0002:00001058       .2
+ 0002:0000105C       frmLocPad
+ 0002:00001060       .2
+ 0002:00001064       frmLocalizar
+ 0002:00001068       Tx_SQL
+ 0002:0000106C       Tx_Where
+ 0002:00001070       Tx_OrderBy
+ 0002:00001074       Campo
+ 0002:00001078       Tipo_Campo
+ 0002:0000107C       VCampo
+ 0002:00001080       .3
+ 0002:00001084       frmConfPad
+ 0002:00001088       .2
+ 0002:0000108C       frmConPad
+ 0002:00001090       .2
+ 0002:00001094       frmCadPadSG
+ 0002:00001098       .2
+ 0002:0000109C       frmCadPadFichas
+ 0002:000010A0       nRelatorio
+ 0002:000010A4       .2
+ 0002:000010A8       frmRelPadFast
+ 0002:000010AC       .2
+
+
+Line numbers for SysInit(SysInit.pas) segment .text
+
+    93 0001:000016C8   102 0001:000016D0   105 0001:000016D8   108 0001:000016E0
+   111 0001:000016E8   114 0001:000016F0   117 0001:000016F8   128 0001:00001700
+   129 0001:00001708   285 0001:0000170C   286 0001:00001711   293 0001:00001714
+   294 0001:00001715   295 0001:0000171C   299 0001:00001720   300 0001:00001733
+   301 0001:0000173A   302 0001:0000173E   304 0001:0000174A   305 0001:00001756
+   310 0001:00001758   312 0001:00001761   313 0001:0000176B   314 0001:00001770
+   315 0001:00001780   321 0001:00001784   323 0001:0000178D   324 0001:00001796
+   325 0001:000017A1   326 0001:000017A5   328 0001:000017AB   332 0001:000017AC
+   334 0001:000017B5   335 0001:000017BA   336 0001:000017C3   337 0001:000017CE
+   423 0001:000017D0   424 0001:000017DA   428 0001:000017DC   429 0001:000017E6
+   430 0001:000017F7   431 0001:000017FD   495 0001:00001800   496 0001:0000180B
+   497 0001:00001812   498 0001:00001819   499 0001:0000181E   500 0001:00001826
+   501 0001:0000182E   502 0001:00001833   503 0001:0000183C   504 0001:00001845
+   505 0001:0000184A   506 0001:00001851   507 0001:00001855   508 0001:0000185A
+   509 0001:0000185D   540 0001:00001864   541 0001:0000186E   545 0001:00001870
+   546 0001:0000187A   840 0001:000018AC   840 0001:000018B3
+
+Line numbers for UfrmCadBase(..\PADRAO\UfrmCadBase.pas) segment .text
+
+    31 0001:00001A40    32 0001:00001A52    35 0001:00001A5C    36 0001:00001A6B
+    38 0001:00001A78    39 0001:00001ACF    40 0001:00001ADC    41 0001:00001B2C
+    43 0001:00001B78    47 0001:00001B80    48 0001:00001B87    52 0001:00001B88
+    54 0001:00001B90    56 0001:00001BA5    57 0001:00001BBD    59 0001:00001BD8
+    60 0001:00001BF0    62 0001:00001C0B    63 0001:00001C23    65 0001:00001C3E
+    66 0001:00001C56    68 0001:00001C71    69 0001:00001C89    70 0001:00001CA6
+    54 0001:00001CA7    71 0001:00001CAE    73 0001:00001CE4    73 0001:00001CEB
+
+Line numbers for UfrmCadPad(..\PADRAO\UfrmCadPad.pas) segment .text
+
+    76 0001:00002168    77 0001:0000216D    81 0001:00002170    82 0001:0000217A
+    83 0001:00002185    84 0001:00002197    85 0001:000021A6    86 0001:000021B5
+    87 0001:000021C4    88 0001:000021D3    89 0001:000021E2    90 0001:000021F1
+    91 0001:00002200    92 0001:0000220F    93 0001:0000221E    94 0001:00002235
+    95 0001:00002245    96 0001:0000224F    98 0001:00002254    99 0001:0000225B
+   101 0001:0000226E   102 0001:00002285   103 0001:00002297   105 0001:000022A0
+   107 0001:000022A5   111 0001:000022B4   113 0001:000022BB   117 0001:000022CC
+   118 0001:000022D0   121 0001:000022FC   122 0001:00002317   123 0001:0000232B
+   124 0001:00002336   125 0001:00002344   127 0001:0000235F   128 0001:00002364
+   130 0001:0000236B   132 0001:0000237E   133 0001:00002395   134 0001:000023A7
+   136 0001:000023B0   138 0001:000023B5   142 0001:000023C4   145 0001:000023CB
+   148 0001:000023DC   149 0001:000023E0   152 0001:0000240B   153 0001:00002414
+   154 0001:00002424   155 0001:00002431   156 0001:0000243E   157 0001:0000244B
+   158 0001:00002458   159 0001:00002465   160 0001:00002472   161 0001:0000247F
+   162 0001:0000248C   163 0001:00002499   164 0001:000024AE   167 0001:000024BF
+   168 0001:000024C4   171 0001:000024C8   172 0001:000024CC   173 0001:000024E1
+   174 0001:000024EB   175 0001:000024F5   176 0001:0000250A   177 0001:00002511
+   181 0001:00002514   182 0001:0000252B   183 0001:00002532   187 0001:00002534
+   188 0001:0000254B   189 0001:00002552   192 0001:00002554   193 0001:00002557
+   194 0001:00002568   195 0001:00002575   196 0001:0000257C   197 0001:00002588
+   199 0001:00002596   201 0001:000025A4   205 0001:000025A8   206 0001:000025C8
+   207 0001:000025E4   208 0001:000025F3   209 0001:00002601   210 0001:0000260E
+   211 0001:00002641   212 0001:0000264E   213 0001:0000265E   214 0001:00002669
+   215 0001:00002676   216 0001:0000269A   217 0001:000026C8   218 0001:000026D5
+   221 0001:00002717   222 0001:00002745   224 0001:00002750   225 0001:00002770
+   227 0001:0000278C   228 0001:00002798   229 0001:000027A4   230 0001:000027AC
+   232 0001:00002818   235 0001:00002954   236 0001:00002958   237 0001:0000295F
+   239 0001:00002974   240 0001:0000297E   242 0001:00002993   245 0001:00002998
+   246 0001:0000299B   247 0001:000029A4   248 0001:000029B1   249 0001:000029BE
+   250 0001:000029CB   251 0001:000029D8   252 0001:000029E5   253 0001:000029F2
+   254 0001:000029FF   255 0001:00002A0C   256 0001:00002A19   257 0001:00002A26
+   261 0001:00002A28   262 0001:00002A31   263 0001:00002A3F   267 0001:00002A40
+   268 0001:00002A51   271 0001:00002A54   272 0001:00002A57   273 0001:00002A5E
+   274 0001:00002A82   275 0001:00002A89   279 0001:00002A9C   280 0001:00002AA3
+   281 0001:00002AB7   282 0001:00002AC1   283 0001:00002ADB   286 0001:00002AE0
+   288 0001:00002AE3   290 0001:00002B06   292 0001:00002B22   297 0001:00002B24
+   300 0001:00002B28   306 0001:00002B2B   307 0001:00002B39   308 0001:00002B43
+   311 0001:00002B48   313 0001:00002B4B   314 0001:00002B58   315 0001:00002B77
+   316 0001:00002B7B   318 0001:00002B9A   319 0001:00002BB7   325 0001:00002BF8
+   330 0001:00002BFC   333 0001:00002C00   334 0001:00002C03   336 0001:00002C12
+   337 0001:00002C1C   339 0001:00002C29   341 0001:00002C5C   341 0001:00002C63
+
+Line numbers for UfrmRelPad(..\PADRAO\UfrmRelPad.pas) segment .text
+
+    43 0001:00002F1C    43 0001:00002F23
+
+Line numbers for UfrmLocPad(..\PADRAO\UfrmLocPad.pas) segment .text
+
+    45 0001:0000319C    50 0001:000031A0    54 0001:000031A4    55 0001:000031AE
+    57 0001:000031E0    57 0001:000031E7
+
+Line numbers for UfrmLocalizar(..\GERAL\UfrmLocalizar.pas) segment .text
+
+    62 0001:0000345C    63 0001:0000347F    64 0001:00003496    67 0001:000034B0
+    69 0001:000034D0    70 0001:000034E4    71 0001:00003502    72 0001:00003517
+    73 0001:0000352C    75 0001:0000353C    76 0001:00003549    80 0001:00003564
+    81 0001:00003586    82 0001:00003596    83 0001:000035B8    85 0001:000035DA
+    87 0001:00003609    89 0001:00003636    91 0001:00003665    93 0001:00003692
+    95 0001:000036C1    97 0001:000036EE    98 0001:0000370A    99 0001:00003736
+    64 0001:00003737   100 0001:0000375D   104 0001:00003764   106 0001:00003781
+   108 0001:0000379A   110 0001:000037AB   111 0001:000037B4   114 0001:000037FC
+   119 0001:00003841   120 0001:0000384A   122 0001:00003873   126 0001:0000389A
+   127 0001:000038A0   128 0001:000038AC   129 0001:000038D2   130 0001:000038FF
+   131 0001:0000390B   132 0001:0000391C   135 0001:00003955   139 0001:00003A0C
+   140 0001:00003A2F   141 0001:00003A39   142 0001:00003A3F   143 0001:00003A52
+   145 0001:00003A71   147 0001:00003AB4   148 0001:00003AE3   149 0001:00003B27
+   150 0001:00003B3C   152 0001:00003B51   153 0001:00003B6F   154 0001:00003B88
+   156 0001:00003B8A   143 0001:00003B8D   160 0001:00003B96   161 0001:00003B9C
+   162 0001:00003BA8   164 0001:00003BB1   165 0001:00003BC6   169 0001:00003BD3
+   170 0001:00003BE2   172 0001:00003C06   174 0001:00003C15   175 0001:00003C37
+   176 0001:00003C43   177 0001:00003C54   178 0001:00003C5D   179 0001:00003C67
+   181 0001:00003C7B   182 0001:00003C98   185 0001:00003CC1   188 0001:00003D08
+   189 0001:00003D1E   191 0001:00003D25   192 0001:00003D46   193 0001:00003D4F
+   194 0001:00003D56   195 0001:00003D5F   196 0001:00003D8D   200 0001:00003D94
+   202 0001:00003D97   203 0001:00003D9D   204 0001:00003DA7   209 0001:00003DAC
+   210 0001:00003DB6   214 0001:00003DB8   216 0001:00003DBB   217 0001:00003DC1
+   218 0001:00003DC6   224 0001:00003DCC   225 0001:00003DE5   228 0001:00003DE8
+   229 0001:00003DEB   230 0001:00003DF2   231 0001:00003DFD   233 0001:00003E68
+   233 0001:00003E6F
+
+Line numbers for UfrmConfPad(..\PADRAO\UfrmConfPad.pas) segment .text
+
+    33 0001:0000408C    33 0001:00004093
+
+Line numbers for UConPad(..\PADRAO\UConPad.pas) segment .text
+
+    47 0001:00004350    48 0001:00004355    52 0001:00004358    53 0001:00004378
+    54 0001:00004394    55 0001:000043A3    56 0001:000043B1    57 0001:000043BE
+    58 0001:000043F1    59 0001:000043FE    60 0001:0000440E    61 0001:00004419
+    62 0001:00004426    63 0001:0000444A    64 0001:00004478    65 0001:00004485
+    68 0001:000044C7    69 0001:000044F5    71 0001:00004500    72 0001:00004520
+    74 0001:0000453C    75 0001:00004548    76 0001:00004554    77 0001:0000455C
+    79 0001:000045C8    83 0001:00004704    84 0001:00004716    86 0001:0000471D
+    90 0001:00004720    91 0001:00004732    93 0001:00004739    95 0001:0000476C
+    95 0001:00004773
+
+Line numbers for UfrmCadPadSG(..\PADRAO\UfrmCadPadSG.pas) segment .text
+
+    28 0001:00004930    29 0001:0000493A    30 0001:00004948    31 0001:00004956
+    32 0001:0000496E    34 0001:00004981    33 0001:00004986    36 0001:0000499B
+    38 0001:000049C2    39 0001:000049DA    42 0001:000049F1    43 0001:00004A13
+    44 0001:00004A1B    45 0001:00004A26    47 0001:00004A39    50 0001:00004A40
+    51 0001:00004A47    53 0001:00004A5E    55 0001:00004A65    57 0001:00004A74
+    58 0001:00004A85    60 0001:00004A91    62 0001:00004AA2    63 0001:00004AAC
+    67 0001:00004ABB    68 0001:00004AC8    72 0001:00004AD5    76 0001:00004ADC
+    78 0001:00004B10    78 0001:00004B17
+
+Line numbers for UfrmCadPadFichas(..\PADRAO\UfrmCadPadFichas.pas) segment .text
+
+    49 0001:00004E28    50 0001:00004E2D    51 0001:00004E3F    52 0001:00004E61
+    53 0001:00004E73    56 0001:00004E8C    58 0001:00004EA2    59 0001:00004EDF
+    60 0001:00004EE9    61 0001:00004EFB    62 0001:00004F16    63 0001:00004F31
+    64 0001:00004F49    65 0001:00004F7B    70 0001:00004FC0    73 0001:00004FC4
+    75 0001:00004FDE    76 0001:00004FFA    77 0001:00005008    78 0001:0000502D
+    79 0001:00005048    80 0001:0000506E    82 0001:0000508A    83 0001:00005096
+    84 0001:000050A8    86 0001:000050E3    91 0001:000050E8    92 0001:0000510B
+    95 0001:0000510C    97 0001:0000510D    98 0001:00005124    99 0001:0000512E
+   101 0001:00005160   101 0001:00005167
+
+Line numbers for UfrmRelPadFast(..\PADRAO\UfrmRelPadFast.pas) segment .text
+
+    44 0001:00005454    44 0001:0000545B
+
+Line numbers for SISPadrao(SISPadrao.dpk) segment .text
+
+    63 0001:00005CDC
+
+Bound resource files
+
+q:\lib\padrao\UfrmCadBase.dfm
+q:\lib\padrao\UfrmCadPad.dfm
+q:\lib\padrao\UfrmRelPad.dfm
+q:\lib\padrao\UfrmLocPad.dfm
+UfrmLocalizar.dfm
+q:\lib\padrao\UfrmConfPad.dfm
+q:\lib\padrao\UConPad.dfm
+q:\lib\padrao\UfrmCadPadSG.dfm
+q:\lib\padrao\UfrmCadPadFichas.dfm
+q:\lib\padrao\UfrmRelPadFast.dfm
+SISPadrao.res
+SISPadrao.drf
+
+
+Program entry point at 0001:00005CDC

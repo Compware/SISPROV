@@ -1,0 +1,252 @@
+unit uCadMunicipio;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UfrmCadPad, dxExEdtr, DB, dxCntner, dxTL, dxDBCtrl, dxDBGrid,
+  ComCtrls, StdCtrls, Buttons, ExtCtrls, Mask, DBCtrls, dxEditor, dxEdLib,
+  dxDBELib, Grids, DBGrids, Menus;
+
+type
+  TfrmCadMunicipio = class(TfrmCadPad)
+    grDadosColumn2: TdxDBGridColumn;
+    edCodigo: TDBEdit;
+    Label1: TLabel;
+    grDadosColumn3: TdxDBGridColumn;
+    grDadosColumn4: TdxDBGridColumn;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit4: TDBEdit;
+    btLocPais: TdxDBButtonEdit;
+    grDadosColumn5: TdxDBGridColumn;
+    Label2: TLabel;
+    btLocProvincia: TdxDBButtonEdit;
+    edProvincia: TdxDBEdit;
+    procedure btLocPaisButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure btLocPaisChange(Sender: TObject);
+    procedure btLocProvinciaButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure btLocProvinciaChange(Sender: TObject);
+    procedure btLocPaisExit(Sender: TObject);
+    procedure btLocProvinciaExit(Sender: TObject);
+    procedure btgravarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadMunicipio: TfrmCadMunicipio;
+
+implementation
+
+uses UDMGERAL, UfrmLocalizar, UGeralSQL, uFuncaoContraSenha, UGeral;
+
+{$R *.dfm}
+
+procedure TfrmCadMunicipio.btLocPaisButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+  frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar País';
+  frmLocalizar.qyDados := SelectDadosPais;
+
+  try
+    frmLocalizar.Where := false;
+    SetLength(VCampo,2);
+    frmLocalizar.KeyField := 'cd_Pais';
+    VCampo[0].Titulo  := 'Código';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'País';
+    VCampo[1].Width := 25;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    dmGeral.TB_MUNICIPIOCD_PAIS.AsInteger := frmLocalizar.qyDados.FieldByname('cd_pais').AsInteger;
+    dmGeral.TB_MUNICIPIODS_PAIS.AsString := frmLocalizar.qyDados.FieldByname('ds_pais').AsString;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+end;
+end;
+
+procedure TfrmCadMunicipio.btLocPaisChange(Sender: TObject);
+begin
+  inherited;
+  if btLocPais.Text = ''  then
+    dmGeral.TB_MUNICIPIODS_PAIS.Clear
+  else if btLocPais.Modified then
+  begin
+    try
+      dmGeral.TB_MUNICIPIODS_PAIS.AsString :=
+        PegaValor('DS_PAIS','PAIS',['CD_PAIS'],
+        [btLocPais.Text],nil);
+    except
+      begin
+        dmGeral.TB_MUNICIPIODS_PAIS.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadMunicipio.btLocProvinciaButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+  frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Provincia';
+  frmLocalizar.qyDados := SelectDadosProvincia;
+
+  try
+    frmLocalizar.Where := false;
+    SetLength(VCampo,2);
+    frmLocalizar.KeyField := 'cd_provincia';
+    VCampo[0].Titulo  := 'Prov';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'Nome da Provincia';
+    VCampo[1].Width := 25;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    dmGeral.TB_MUNICIPIOCD_PROVINCIA.AsInteger := frmLocalizar.qyDados.FieldByname('cd_provincia').AsInteger;
+    dmGeral.TB_MUNICIPIODS_PROVINCIA.AsString := frmLocalizar.qyDados.FieldByname('ds_provincia').AsString;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+end;
+end;
+
+procedure TfrmCadMunicipio.btLocProvinciaChange(Sender: TObject);
+begin
+  inherited;
+  if btLocProvincia.Text = ''  then
+    DMGERAL.TB_MUNICIPIODS_PROVINCIA.Clear
+  else if btLocProvincia.Modified then
+  begin
+    try
+      DMGERAL.TB_MUNICIPIODS_PROVINCIA.AsString :=
+        PegaValor('DS_PROVINCIA','PROVINCIA',['CD_PROVINCIA'],
+        [btLocProvincia.Text],nil);
+    except
+      begin
+        DMGERAL.TB_MUNICIPIODS_PROVINCIA.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadMunicipio.btLocPaisExit(Sender: TObject);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+    if btLocPais.Text <> ''  then
+    begin
+      try
+        dmGeral.TB_MUNICIPIODS_PAIS.AsString :=
+          PegaValor('DS_PAIS','PAIS',['CD_PAIS'],
+          [btLocPais.Text],nil);
+      except
+        begin
+          MessageDlg('Pais não encontrado!',mtWarning,[mbOK],0);
+          dmGeral.TB_MUNICIPIOCD_PAIS.Clear;
+          dmGeral.TB_MUNICIPIODS_PAIS.Clear;
+        end;
+      end;
+    end;
+  end;
+end;
+
+procedure TfrmCadMunicipio.btLocProvinciaExit(Sender: TObject);
+begin
+  inherited;
+  if btLocProvincia.Text <> ''  then
+  begin
+    try
+      DMGERAL.TB_MUNICIPIODS_PROVINCIA.AsString :=
+        PegaValor('DS_PROVINCIA','PROVINCIA',['CD_PROVINCIA'],
+        [btLocProvincia.Text],nil);
+    except
+      begin
+        MessageDlg('Provincia não encontrada!',mtWarning,[mbOK],0);
+        DMGERAL.TB_MUNICIPIOCD_PROVINCIA.Clear;
+        DMGERAL.TB_MUNICIPIODS_PROVINCIA.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadMunicipio.btgravarClick(Sender: TObject);
+var sOperacao:string;
+begin
+  if DMGERAL.TB_MUNICIPIO.State in [dsInsert] then
+  begin
+    if DMGERAL.TB_MUNICIPIOCD_PAIS.AsInteger < 1 then
+    begin
+      MessageDlg('É necessário incluir Pais!',mtInformation,
+       [mbOK],0);
+
+      btLocPais.SetFocus;
+      abort;
+    end;
+
+    if DMGERAL.TB_MUNICIPIOCD_PROVINCIA.AsInteger < 1 then
+    begin
+      MessageDlg('É necessário incluir Provincia!',mtInformation,
+       [mbOK],0);
+
+      btLocProvincia.SetFocus;
+      abort;
+    end;
+
+    if PegaValor('CD_MUNICIPIO','MUNICIPIO',['CD_MUNICIPIO'],
+            [DMGERAL.TB_MUNICIPIOCD_MUNICIPIO.AsInteger],nil) > 0 then
+    begin
+      MessageDlg('Código Existente!',mtInformation,
+       [mbOK],0);
+
+      edCodigo.SetFocus;
+      abort;
+    end
+    else
+      if DMGERAL.TB_MUNICIPIOCD_MUNICIPIO.AsInteger < 1 then
+      begin
+        MessageDlg('É necessário incluir o Código do Municipio!',mtInformation,
+         [mbOK],0);
+
+        edCodigo.SetFocus;
+        abort;
+      end;
+  end;
+
+  sOperacao := 'Gravar Municipio!';
+  if (prmSistemaUnidades=cvNao) then
+     inherited
+  else if (prmSistemaUnidades=cvSim) and ValidaContraSenha(sOperacao) then
+    inherited
+  else
+    btCancelarClick(Sender);
+
+end;
+
+end.

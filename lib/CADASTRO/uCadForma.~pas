@@ -1,0 +1,25 @@
+unit uCadForma;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UfrmCadPad, dxExEdtr, Menus, DB, dxCntner, dxTL, dxDBCtrl,
+  dxDBGrid, ComCtrls, StdCtrls, Buttons, ExtCtrls;
+
+type
+  TfrmCadForma = class(TfrmCadPad)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadForma: TfrmCadForma;
+
+implementation
+
+{$R *.dfm}
+
+end.

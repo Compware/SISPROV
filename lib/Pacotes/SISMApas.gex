@@ -1,0 +1,13 @@
+[General]
+Name=SISMApas
+Project=1
+[Classes]
+Count=8
+Class0="TDummyDBGrid","TCustomdxDBGrid","uCadMapaLaboratorio","0","Q:\lib\CADASTRO\uCadMapaLaboratorio.pas"
+Class1="TDummyDBGridFilter","TdxDBGridFilter","uCadMapaLaboratorio","0","Q:\lib\CADASTRO\uCadMapaLaboratorio.pas"
+Class2="TfrmCadMapaLaboratorio","TfrmCadPad","uCadMapaLaboratorio","0","Q:\lib\CADASTRO\uCadMapaLaboratorio.pas"
+Class3="TfrmCadMapaFarmacia","TfrmCadPad","uCadMapaFarmacia","0","Q:\lib\CADASTRO\uCadMapaFarmacia.pas"
+Class4="TfrmCadMapaTestagem","TfrmCadPad","uCadMapaTestagem","0","Q:\lib\CADASTRO\uCadMapaTestagem.pas"
+Class5="TfrmCadMapaTesteRapido","TfrmCadPad","uCadMapaTesteRapido","0","Q:\lib\CADASTRO\uCadMapaTesteRapido.pas"
+Class6="TfrmCadMapaMedico","TfrmCadPad","uCadMapaMedico","15","Q:\lib\CADASTRO\uCadMapaMedico.pas"
+Class7="TfrmCadMapaCriancaExposta","TfrmCadPad","uCadMapaCriancaExposta","0","Q:\lib\cadastro\uCadMapaCriancaExposta.pas"

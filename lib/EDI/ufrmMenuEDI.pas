@@ -1,0 +1,917 @@
+unit ufrmMenuEDI;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, OleCtrls, CHILKATUPLOADLib_TLB, CHILKATHTTPLib_TLB, Grids,
+  DBGrids, Db, DBClient, SHDocVw, ExtCtrls, ImgList, Menus, ComCtrls,
+  RXCtrls, jpeg, DBLocal, DBLocalI, uFrmEDI, ugeral, FileCtrl, shellApi,
+  pngimage, pngextra, IBQuery, ZipMstr, IniFiles, ExcMagic;
+
+type
+
+  TNewDialogFilter = class( TInterfacedObject, IExcMagicFilter )
+    function ShowException( ExceptionObject: TObject; Title: String; ExceptionMessage: String; CallStack: TStrings; Registers: TStrings; CustomInfo: TStrings ): Integer;
+    function LogException(  ExceptionObject: TObject; Buffer: PChar; BufferSize: Integer; CallStack: TStrings; Registers: TStrings; CustomInfo: TStrings ): Integer;
+    function ExceptionMessage( ExceptionObject: TObject; MessageInfo: TExceptionMessageInfo; Buffer: PChar; BufferSize: Integer; CustomInfo: TStrings ): Integer;
+  end;
+
+  TfrmMenuEDI = class(TForm)
+    OpenDialog1: TOpenDialog;
+    DataSource1: TDataSource;
+    pbGeral: TProgressBar;
+    PopupMenu1: TPopupMenu;
+    Importar1: TMenuItem;
+    Exportar1: TMenuItem;
+    Log1: TMenuItem;
+    N1: TMenuItem;
+    Minimizar1: TMenuItem;
+    Maximizar1: TMenuItem;
+    Sair1: TMenuItem;
+    ImageList1: TImageList;
+    tmIcon: TTimer;
+    tmEDI: TTimer;
+    Enviar1: TMenuItem;
+    Receber1: TMenuItem;
+    cds: TIBClientDataSet;
+    StatusBar1: TStatusBar;
+    N2: TMenuItem;
+    SQL1: TMenuItem;
+    Aplicao1: TMenuItem;
+    VersaoUnidades1: TMenuItem;
+    Memo1: TMemo;
+    N3: TMenuItem;
+    Email1: TMenuItem;
+    Protocolo1: TMenuItem;
+    este1: TMenuItem;
+    DePara1: TMenuItem;
+    Image1: TImage;
+    RxLabel2: TRxLabel;
+    Image2: TImage;
+    RxLabel3: TRxLabel;
+    PNGButton2: TPNGButton;
+    PNGButton1: TPNGButton;
+    ZipMaster1: TZipMaster;
+    procedure btnEnviarArquivoClick(Sender: TObject);
+    procedure btnReceberArquivoClick(Sender: TObject);
+    procedure Importar1Click(Sender: TObject);
+    procedure Exportar1Click(Sender: TObject);
+    procedure tmEDITimer(Sender: TObject);
+    procedure Receber1Click(Sender: TObject);
+    procedure Enviar1Click(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+    procedure Minimizar1Click(Sender: TObject);
+    procedure Maximizar1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure StatusBar1DrawPanel(StatusBar: TStatusBar;
+      Panel: TStatusPanel; const Rect: TRect);
+    procedure SQL1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure Aplicao1Click(Sender: TObject);
+    procedure Protocolo1Click(Sender: TObject);
+    procedure este1Click(Sender: TObject);
+    procedure DePara1Click(Sender: TObject);
+    procedure PNGButton2Click(Sender: TObject);
+    procedure PNGButton1Click(Sender: TObject);
+    procedure VersaoUnidades1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+    function ReceberArquivo(sFName:String):string;
+    function EnviarArquivo(sFName:String):string;
+    function EnviarArquivoProtocolo(sFName:String; bProtocolo:boolean):string;
+  public
+    { Public declarations }
+    bAtivo,bImportando,bExportando,bEnviando, bRecebendo:Boolean;
+    MyFilter: IExcMagicFilter;
+    procedure AtualizaStatus;
+    procedure AtualizaUpdate;
+    function Get(sURL:String):string;
+    function Descompactar(sFileZ,sDestino:string):Boolean;
+    procedure Juntar(sFile, sFileD, sExec:string);
+    function DeleteRefEDI_UNIDADE(sFName:String):string;
+  end;
+
+var
+  frmMenuEDI: TfrmMenuEDI;
+  EDIERRO:boolean;
+implementation
+
+uses ufrmSQLWeb, DateUtils, UDM, UDMGERAL, ufrmProtocoloEnvio,
+  ufrmDePara, uEmail, uGeralSQL;
+
+{$R *.DFM}
+
+{ TNewDialogFilter }
+
+function TNewDialogFilter.ExceptionMessage(ExceptionObject: TObject;
+  MessageInfo: TExceptionMessageInfo; Buffer: PChar; BufferSize: Integer;
+  CustomInfo: TStrings): Integer;
+begin
+//
+end;
+
+function TNewDialogFilter.LogException(ExceptionObject: TObject;
+  Buffer: PChar; BufferSize: Integer; CallStack, Registers,
+  CustomInfo: TStrings): Integer;
+begin
+//
+end;
+
+function TNewDialogFilter.ShowException(ExceptionObject: TObject; Title,
+  ExceptionMessage: String; CallStack, Registers,
+  CustomInfo: TStrings): Integer;
+begin
+ if FileExists(ExceptionHook.LogFile) then
+ begin
+   frmEmail := TfrmEmail.Create(nil);
+   frmEmail.mmMsg.Lines.Clear;
+   frmEmail.mmMsg.Lines.LoadFromFile(ExceptionHook.LogFile);
+   frmEmail.mmMsg.Lines.Add('Computer:' + sLogComputer);
+   frmEmail.mmMsg.Lines.Add('Unidade:'  + sLogUnidade);
+   frmEmail.mmMsg.Lines.Add('Usuário:'  + sLogUsuario);
+   frmEmail.mmMsg.Lines.Add('Sistema:'  + sLogSistema);
+   frmEmail.mmMsg.Lines.Add('Local:'    + sPath);
+   frmEmail.sSubject := 'SIS PROV - Erro';
+   if frmEmail.Enviar then
+     DeleteFile(ExceptionHook.LogFile)
+   else
+     frmEmail.mmMsg.Lines.SaveToFile(ExceptionHook.LogFile);
+   frmEmail.Free;
+ end;
+end;
+
+function TfrmMenuEDI.Descompactar(sFileZ,sDestino:string):Boolean;
+begin
+  try
+    with ZipMaster1 do
+    begin
+     ZipFileName := sFileZ;
+     ValidaDiretorio(sDestino);
+     ExtrBaseDir := sDestino;
+     { if the file to be extracted already exists, overwrite it }
+     ExtrOptions:=ExtrOptions+[ExtrOverwrite];
+     Result := Extract > 0;
+     FSpecArgs.Clear;
+    end;
+  except
+    Result := False;
+  end;
+end;
+
+function TfrmMenuEDI.DeleteRefEDI_UNIDADE(sFName:String):string;
+var
+  http: TChilkatHttp;
+  success: integer;
+begin
+  http := TChilkatHttp.Create(Self);
+  http.Login := 'vertrou';
+  http.Password := 'lilian';
+
+  //  Any string unlocks the component for the 1st 30-days.
+  success := http.UnlockComponent('30277129240'); //Anything for 30-day trial');
+  if (success <> 1) then
+  begin
+    frmMenuEDI.StatusBar1.Panels[2].Text := http.LastErrorText;
+    Exit;
+  end
+  else
+  begin
+    Get(sDominio + '/dbArquivo.php?op=D&nome=' +
+        sFName + '&unidade=' +
+        prmUnidade);
+    frmMenuEDI.StatusBar1.Panels[2].Text := 'Referencia corrigida com sucesso!';
+    Result := 'OK';
+  end;
+end;
+
+procedure TfrmMenuEDI.btnEnviarArquivoClick(Sender: TObject);
+var i:Integer; sNome,sNomeTo,sPath:string;    fl:TFileListBox;
+begin
+  fl := TFileListBox.Create(Application);
+  try
+    fl.Parent := self;
+    fl.Directory := sPathOut;
+    for i := fl.Items.Count-1 downto 0 do
+    begin
+        sNome := fl.Items[i];
+        sNomeTo := StringReplace(sNome,'.xml','.bkp',[]);
+        sPath := sPathOut + FormatDateTime('ddmmyy',date) + '\';
+        if not DirectoryExists(sPath) then
+           CreateDir(sPath);
+        sNomeTo := sPath + ExtractFileName(sNomeTo);
+        if EnviarArquivo(sNome) <> 'Erro' then
+        begin
+          //Rename
+          if FileExists(sNomeTo) then DeleteFile(sNomeTo);
+          MoveFile(pchar(sNome), pchar(sNomeTo));
+        end;
+    end;
+  finally
+    FreeAndNil(fl);
+  end;
+end;
+
+function TfrmMenuEDI.EnviarArquivo(sFName:String):string;
+var
+  upload: TChilkatUpload;
+  success: integer;
+begin
+  //if not OpenDialog1.Execute then Exit;
+
+  upload := TChilkatUpload.Create(Self);
+
+  //  Specify the page (ASP, ASP.NET, Perl, Python, Ruby, CGI, etc)
+  //  that will process the HTTP Upload.
+  upload.Hostname := sDominio;
+  upload.Path := '/edi/ReceiveUpload.aspx';
+  upload.Login := 'vertrou';
+  upload.Password := 'lilian';
+
+  //  Add one or more files to be uploaded.
+  upload.AddFileReference('file1', sFName);
+
+  //  Do the upload.  The method returns when the upload
+  //  is completed.
+  //  This component also includes asynchronous upload capability,
+  //  which is demonstrated in another example.
+  success := upload.BlockingUpload();
+  if (success <> 1) then
+  begin
+    frmMenuEDI.StatusBar1.Panels[2].Text := upload.LastErrorText;
+    Result := 'Erro';
+  end
+  else
+  begin
+    Get(sDominio + '/dbArquivo.php?op=I&nome=' +
+        sFName + '&unidade=' +
+        prmUnidade);
+    frmMenuEDI.StatusBar1.Panels[2].Text := 'Arquivo enviado com sucesso!';
+    Result := 'OK';
+  end;
+end;
+
+function TfrmMenuEDI.EnviarArquivoProtocolo(sFName:String; bProtocolo:boolean):string;
+var
+  upload: TChilkatUpload;
+  success: integer;
+  sTo:String;
+begin
+  //if not OpenDialog1.Execute then Exit;
+
+  upload := TChilkatUpload.Create(Self);
+
+  //  Specify the page (ASP, ASP.NET, Perl, Python, Ruby, CGI, etc)
+  //  that will process the HTTP Upload.
+  upload.Hostname := sDominio;
+  //upload.Path := '/edi/ReceiveUploadProtocolo.aspx';
+  upload.Path := '/edi/ReceiveUpload.aspx';
+  upload.Login := 'vertrou';
+  upload.Password := 'lilian';
+
+  //  Add one or more files to be uploaded.
+  upload.AddFileReference('file1', sFName);
+
+  //  Do the upload.  The method returns when the upload
+  //  is completed.
+  //  This component also includes asynchronous upload capability,
+  //  which is demonstrated in another example.
+  success := upload.BlockingUpload();
+  if (success <> 1) then
+  begin
+    frmMenuEDI.StatusBar1.Panels[2].Text := upload.LastErrorText;
+    Result := 'Erro';
+  end
+  else
+  begin
+    sTo := ExtractFilePath(sFName) + 'bk\' + ExtractFileName(sFName);
+    if FileExists(sTo) then DeleteFile(sTo);
+    MoveFile(pChar(sFName),pChar(sTo));
+
+    if bProtocolo then
+      Get(sDominio + '/dbArquivoProtocolo.php?op=I&nome=' +
+          ExtractFileName(sFName) + '&unidade=' +
+          prmUnidade);
+    frmMenuEDI.StatusBar1.Panels[2].Text := 'Arquivo enviado com sucesso!';
+    Result := 'OK';
+  end;
+end;
+
+procedure TfrmMenuEDI.btnReceberArquivoClick(Sender: TObject);
+var sFile:string;  str:TStrings;
+begin
+  //Gera o arquivos.xml
+  //WebBrowser1.Navigate
+  str := TStringList.Create;
+  str.Text := Get(sDominio + '/dbArquivo.php?op=S&unidade=' + prmUnidade);
+  //Get(sDominio + '/edi/FileList.aspx');
+  //Faz Download do arquivo
+  //sFile := ReceberArquivo(sDominio + '/edi/central/arquivos.xml');
+  //Percorre a lista de arquivos fazendo download individual
+  //cds.LoadFromStream(str);
+  sFile := sPathIn + 'arquivos.xml';
+  str.SaveToFile(sFile);
+  cds.LoadFromFile(sFile);
+  while not cds.Eof do
+  begin
+    sFile := cds.Fields[1].AsString;
+    if ExtractFileExt(sFile)='.xml' then
+    begin
+      sFile := StringReplace(sFile,'E:\Home\vertrou\Web','vertrou.info',[]);
+      sFile := StringReplace(sFile,'\','/',[rfReplaceAll]);
+      sFile := ReceberArquivo(sFile);
+      sFile := Copy(sFile,1,Length(sFile)-4);
+
+      //Renomeia arquivo no servidor
+      //WebBrowser1.Navigate
+      //Get(sDominio + '/edi/DelFile.aspx?arquivo='+sFile);
+      Get(sDominio + '/dbArquivo.php?op=A&edi=' +
+        cds.Fields[0].AsString + '&unidade=' +
+        prmUnidade);
+    end;
+    cds.Next;
+  end;
+  str.Free;
+end;
+
+function TfrmMenuEDI.Get(sURL:String):string;
+var
+  http: TChilkatHttp;
+  success: Integer;
+begin
+  http := TChilkatHttp.Create(Self);
+  http.Login := 'vertrou';
+  http.Password := 'lilian';
+
+  //  Any string unlocks the component for the 1st 30-days.
+  success := http.UnlockComponent('30277129240');
+  //success := http.UnlockComponent('Anything for 30-day trial');
+  if (success <> 1) then
+  begin
+    frmMenuEDI.StatusBar1.Panels[2].Text := http.LastErrorText;
+    Exit;
+  end;
+  //http.QuickGet(sURL);
+  result := http.QuickGetStr(sURL);
+  {success := http.Download(sFName,sPathIn+sFNameTo);
+  if (success <> 1) then
+    begin
+      ShowMessage(http.LastErrorText);
+    end
+  else
+  begin
+    Result := sFNameTo;
+    ShowMessage('Arquivo Recebido com Sucesso!');
+  end;}
+end;
+
+function TfrmMenuEDI.ReceberArquivo(sFName:String):string;
+var
+  http: TChilkatHttp;
+  success: Integer;
+  sFNameTo:string;
+  sList:TStrings;
+
+  function PegaNome:String;
+  var sAux:string; i:Integer;
+  begin
+	  for i:=1 to Length(sFName) do
+	  begin
+		if sFName[i] = '/' then
+		begin
+		   sList.Add(sAux);
+		   sAux := '';
+		end
+		else
+		   sAux := sAux + sFName[i];
+	  end;
+	  if sAux <> '' then
+		sList.Add(sAux);
+
+	  result := sAux;
+  end;
+
+begin
+  http := TChilkatHttp.Create(Self);
+  http.Login := 'vertrou';
+  http.Password := 'lilian';
+
+  //  Any string unlocks the component for the 1st 30-days.
+  success := http.UnlockComponent('30277129240'); //Anything for 30-day trial');
+  if (success <> 1) then
+  begin
+    frmMenuEDI.StatusBar1.Panels[2].Text := http.LastErrorText;
+    Exit;
+  end;
+
+  //  Download
+  sList := TStringList.Create;
+  try
+    sFNameTo := PegaNome;
+  finally
+    FreeAndNil(sList);
+  end;
+  //http.MaxResponseSize := 10000;
+  //http.ConnectTimeout := 60;
+  success := http.Download(sFName,sPathIn+sFNameTo);
+  if (success <> 1) then
+    begin
+      frmMenuEDI.StatusBar1.Panels[2].Text := http.LastErrorText;
+      //Memo1.Text := http.LastErrorText;
+      //memo1.Lines.SaveToFile('C:\Compware\EDI\IN\log.txt');
+    end
+  else
+  begin
+    Result := sFNameTo;
+    frmMenuEDI.StatusBar1.Panels[2].Text := 'Arquivo Recebido com Sucesso!';
+  end;
+end;
+
+procedure TfrmMenuEDI.Importar1Click(Sender: TObject);
+begin
+  if not bImportando then
+  begin
+    bImportando := True;
+    AtualizaStatus;
+    with TIBQuery.Create(nil) do
+    begin
+      Database := DM.DB;
+      sql.Add('Update PARAMETRO set VALOR = ''Importar!'' ');
+      sql.Add('where CD_PARAMETRO = 29');
+      ExecSQL;
+      DM.Commit(DMGERAL.TB_PARAMETRO);
+      close;
+      free;
+    end;
+    frmEDI.btImportarClick(Self);
+    with TIBQuery.Create(nil) do
+    begin
+      Database := DM.DB;
+      sql.Add('Update PARAMETRO set VALOR = ''EDI - Fim:'' ');
+      sql.Add('where CD_PARAMETRO = 29');
+      ExecSQL;
+      DM.Commit(DMGERAL.TB_PARAMETRO);
+      close;
+      free;
+    end;
+    bImportando := False;
+    AtualizaStatus;
+  end;
+
+
+end;
+
+procedure TfrmMenuEDI.Exportar1Click(Sender: TObject);
+begin
+  if not bExportando then
+  begin
+    bExportando := True;
+    AtualizaStatus;
+    frmEDI.btExportarClick(self);
+    with TIBQuery.Create(nil) do
+    begin
+      Database := DM.DB;
+      sql.Add('Update PARAMETRO set VALOR = ''Exportar!'' ');
+      sql.Add('where CD_PARAMETRO = 29');
+      ExecSQL;
+      DM.Commit(DMGERAL.TB_PARAMETRO);
+      close;
+      free;
+    end;
+    bExportando := False;
+    AtualizaStatus;
+  end;
+end;
+
+procedure TfrmMenuEDI.tmEDITimer(Sender: TObject);
+var hora:TTime;
+begin
+  tmEDI.Enabled := false;
+  try
+    if bImportar then
+    begin
+      Receber1Click(self);
+      Importar1Click(self);
+    end;
+
+    if bExportar then
+    begin
+      Exportar1Click(self);
+      Enviar1Click(self);
+    end;
+
+    //LHL - 200615 - Atualizacao Obrigatoria
+    //if bAtualizar then
+      Aplicao1Click(self);
+  finally
+    tmEDI.Enabled := true;
+    hora := IncMilliSecond(now,tmEDI.Interval);
+    StatusBar1.Panels[2].Text := 'Próxima execução ' + FormatDateTime('hh:n:ss' ,hora);
+  end;
+end;
+
+procedure TfrmMenuEDI.Receber1Click(Sender: TObject);
+begin
+   if not dm.EstaNaInternet then
+   begin
+      with TIBQuery.Create(nil) do
+      begin
+        Database := DM.DB;
+        sql.Add('Update PARAMETRO set VALOR = ''Erro:'' ');
+        sql.Add('where CD_PARAMETRO = 29');
+        ExecSQL;
+        DM.Commit(DMGERAL.TB_PARAMETRO);
+        close;
+        free;
+      end;
+     EDIERRO := true;
+     Application.MessageBox('Não foi possivel efetuar a comunicação com o Servidor WEB.' +#13#10+
+                            'Verifique a conexão com a Internet e Tente novamente!', 'Atenção', MB_ICONWARNING + MB_OK);
+     Exit;
+   end;
+
+   if not bRecebendo then
+   begin
+     bRecebendo := True;
+     AtualizaStatus;
+     DMGERAL.GetVersaoUnidadesWeb;
+     btnReceberArquivoClick(self);
+     bRecebendo := False;
+     AtualizaStatus;
+      with TIBQuery.Create(nil) do
+      begin
+        Database := DM.DB;
+        sql.Add('Update PARAMETRO set VALOR = ''Receber!'' ');
+        sql.Add('where CD_PARAMETRO = 29');
+        ExecSQL;
+        DM.Commit(DMGERAL.TB_PARAMETRO);
+        close;
+        free;
+      end;
+   end;
+end;
+
+procedure TfrmMenuEDI.Enviar1Click(Sender: TObject);
+begin
+   if not dm.EstaNaInternet then
+   begin
+      with TIBQuery.Create(nil) do
+      begin
+        Database := DM.DB;
+        sql.Add('Update PARAMETRO set VALOR = ''Erro:'' ');
+        sql.Add('where CD_PARAMETRO = 29');
+        ExecSQL;
+        DM.Commit(DMGERAL.TB_PARAMETRO);
+        close;
+        free;
+      end;
+     EDIERRO := true;
+     Application.MessageBox('Não foi possivel efetuar a comunicação com o Servidor WEB.' +#13#10+
+                            'Verifique a conexão com a Internet e Tente novamente!', 'Atenção', MB_ICONWARNING + MB_OK);
+     Exit;
+   end;
+
+   if not bEnviando then
+   begin
+     bEnviando := True;
+     AtualizaStatus;
+     btnEnviarArquivoClick(self);
+     {TODO:Enviar Protocolo}
+     bEnviando := False;
+     AtualizaStatus;
+      with TIBQuery.Create(nil) do
+      begin
+        Database := DM.DB;
+        sql.Add('Update PARAMETRO set VALOR = ''Enviar!'' ');
+        sql.Add('where CD_PARAMETRO = 29');
+        ExecSQL;
+        DM.Commit(DMGERAL.TB_PARAMETRO);
+        close;
+        free;
+      end;
+   end;
+end;
+
+procedure TfrmMenuEDI.Sair1Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfrmMenuEDI.Minimizar1Click(Sender: TObject);
+begin
+  Application.Minimize;
+end;
+
+procedure TfrmMenuEDI.Maximizar1Click(Sender: TObject);
+begin
+  frmMenuEDI.Show;
+end;
+
+procedure TfrmMenuEDI.FormCreate(Sender: TObject);
+begin
+  ExceptionHook.LogFile := 'EDICompware.log';
+  MyFilter := TNewDialogFilter.Create;
+  ExceptionHook.RegisterExceptionFilter( Exception, MyFilter, False );
+
+  StatusBar1.Panels[0].Style := psOwnerDraw;
+end;
+
+procedure TfrmMenuEDI.StatusBar1DrawPanel(StatusBar: TStatusBar;
+  Panel: TStatusPanel; const Rect: TRect);
+begin
+ with StatusBar.Canvas do
+   begin
+     case Panel.Index of
+       0: //fist panel
+       begin
+         if bAtivo then
+           Brush.Color := clRed
+         else
+           Brush.Color := clGreen;
+         Font.Color := clNavy;
+         Font.Style := [fsBold];
+       end;
+     end;
+     //Panel background color
+     FillRect(Rect) ;
+
+     //Panel Text
+     //TextRect(Rect,2 + ImageList1.Width + Rect.Left, 2 + Rect.Top,Panel.Text) ;
+   end;
+
+   //draw graphics
+   //ImageList1.Draw(StatusBar1.Canvas, Rect.Left, Rect.Top, Panel.Index) ;
+end;
+
+procedure TfrmMenuEDI.AtualizaStatus;
+begin
+  if bExportando then
+    StatusBar1.Panels[1].Text := 'Exportando...'
+  else if bImportando then
+    StatusBar1.Panels[1].Text := 'Importando...'
+  else if bEnviando then
+    StatusBar1.Panels[1].Text := 'Enviando...'
+  else if bRecebendo then
+    StatusBar1.Panels[1].Text := 'Recebendo...'
+  else
+    StatusBar1.Panels[1].Text := '';
+  bAtivo := bExportando or bImportando or bEnviando or bRecebendo;
+  Repaint;
+  Sleep(2000);
+end;
+
+procedure TfrmMenuEDI.SQL1Click(Sender: TObject);
+begin
+  frmSQL := TfrmSQL.Create(nil);
+  frmSQL.ShowModal;
+  frmSQL.Free;
+end;
+
+procedure TfrmMenuEDI.FormShow(Sender: TObject);
+begin
+
+  sPath := ExtractFilePath(Application.ExeName);
+  sLogComputer := NomeDoComputador;
+  sLogUnidade  := SelectNomeUnidadeParametro;
+  sLogUsuario  := DM.qyLoginCD_USUARIO.AsString + '-' +
+    DM.qyLoginNM_USUARIO.AsString;
+  sLogSistema  := 'EDI - ( Versão: ' + prmVersao + ' )';
+
+  sPathTemp := sPath+'Temp\';
+  StatusBar1.Panels[3].Text := prmUnidade;
+
+  EDIERRO := false;
+  //if bExportar then
+  //begin
+    Exportar1Click(sender);
+    Enviar1Click(Sender);
+  //end;
+
+  //if bImportar then
+  //begin
+    Receber1Click(Sender);
+    Importar1Click(sender);
+    Aplicao1Click(sender);
+  //end;
+
+  with TIBQuery.Create(nil) do
+  begin
+    Database := DM.DB;
+    sql.Add('Update PARAMETRO set VALOR = ''EDI - Inicio:'' ');
+    sql.Add('where CD_PARAMETRO = 29');
+    ExecSQL;
+    DM.Commit(DMGERAL.TB_PARAMETRO);
+    close;
+    free;
+  end;
+
+end;
+
+procedure TfrmMenuEDI.Aplicao1Click(Sender: TObject);
+var sFile,sNome,sDestino:string;  str:TStrings;
+begin
+  //Gera o arquivosApp.xml
+  str := TStringList.Create;
+  str.Text := Get(sDominio + '/dbArquivo.php?op=APP&data=' + QuotedStr(prmDataUpdate));
+  sFile := sPathIn + 'arquivosApp.xml';
+  str.SaveToFile(sFile);
+  cds.LoadFromFile(sFile);
+  pbGeral.Max := cds.RecordCount;
+  while not cds.Eof do
+  begin
+    sFile := cds.FieldByName('NOME').AsString;
+    StatusBar1.Panels[2].Text := 'Update....'+ ExtractFileName(sFile);
+    pbGeral.StepIt;
+    Application.ProcessMessages;
+    sDestino := cds.FieldByName('DESTINO').AsString;
+    begin
+      sFile := StringReplace(sFile,'E:\Home\vertrou\Web','vertrou.info',[]);
+      sFile := StringReplace(sFile,'\','/',[rfReplaceAll]);
+      sFile := ReceberArquivo(sFile);
+      sNome := sPathIn + sFile;
+
+      sDestino := StringReplace(sDestino, '/*APP*/', sPathApp,[]);
+
+      if cds.FieldByName('TIPO').AsString = '1' then
+      begin
+        RenameFile(PChar(sDestino),PChar(sDestino+'_'));
+        if Descompactar(sNome,ExtractFilePath(sDestino)) then
+          DeleteFile(sNome);
+      end;
+
+      if cds.FieldByName('EXEC').AsString = '1' then
+         WinExec(pChar(sDestino),SW_SHOW);
+
+    end;
+    cds.Next;
+  end;
+  str.Free;
+  AtualizaUpdate;
+  StatusBar1.Panels[2].Text := 'Update conlcuido!'
+end;
+
+procedure TfrmMenuEDI.Juntar(sFile,sFileD,sExec: string);
+var sCmd,sPath,sNome, sExt, sNomeEdi:string;
+begin
+  sPath := ExtractFilePath(Application.ExeName);
+  sCmd := sPath+'Hjsplit.exe -j '+ sFile;
+  WinExec(pchar(sCmd),0);
+
+  sFile := ExtractFileName(sFile);
+  sExt := ExtractFileExt(sFileD);
+  sNome := StringReplace(sFileD,sExt,'.bkp',[]);
+  sNome := spath + sNome;
+  if FileExists(sNome) then
+    DeleteFile(sNome);
+  RenameFile(sPath + sFileD, sNome);
+  sNome := sPath + sFileD;
+  CopyFile(pChar(sPath + 'edi\in\' + sFile), Pchar(sNome), false);
+
+  sNomeEdi := sPath + 'edi\in\' + sFile + '.*';
+  sCmd := 'Command.com /c del ' + sNomeEdi;
+  WinExec(pchar(sCmd),0);
+
+  if sExec = '1' then //Executar
+  begin
+     sCmd := sNome;
+     WinExec(pchar(sCmd),0);
+  end;
+end;
+
+procedure TfrmMenuEDI.Protocolo1Click(Sender: TObject);
+var   sArq:string;
+begin
+  Memo1.Clear;
+  dm.qyGeral.SQL.Clear;
+  dm.qyGeral.SQL.Add('SELECT PE.*, ' +
+   ' U.DS_UNIDADE, ' +
+   ' M.DS_MUNICIPIO,  ' +
+   ' P.DS_PROVINCIA   ' +
+   ' from PROTOCOLO_ENVIO PE  ' +
+   ' left outer join MUNICIPIO M on   ' +
+   '   PE.CD_MUNICIPIO = M.CD_MUNICIPIO    ' +
+   ' left outer join PROVINCIA P on    ' +
+   '   PE.CD_PROVINCIA = P.CD_PROVINCIA   ' +
+   ' left outer join UNIDADE U on    ' +
+   '   PE.CD_UNIDADE = U.CD_UNIDADE   ' +
+   ' WHERE ((PE.FL_ENVIADO IS NULL) OR (PE.FL_ENVIADO=''N''))');
+
+  dm.qyGeral.Open;
+  if not dm.qyGeral.IsEmpty then
+  begin
+      Memo1.Lines.Add('<table>');
+      Memo1.Lines.Add('<tr>');
+      Memo1.Lines.Add('<td>Protocolo</td>');
+      Memo1.Lines.Add('<td>Provincia</td>');
+      Memo1.Lines.Add('<td>Municipio</td>');
+      Memo1.Lines.Add('<td>Unidade</td>');
+      Memo1.Lines.Add('<td>Mes/Ano</td>');
+      Memo1.Lines.Add('<td>Excluido</td>');
+      Memo1.Lines.Add('<td></td>');
+      Memo1.Lines.Add('</tr>');
+
+      while not dm.qyGeral.Eof do
+      begin
+         sArq := 'Protocolo' +
+           dm.qyGeral.FieldByName('CD_UND').AsString + '_' +
+           dm.qyGeral.FieldByName('CD_PROTOCOLO').AsString + '.xml';
+         TBlobField(dm.qyGeral.FieldByName('BL_PROTOCOLO')).SaveToFile(sPathProt + sArq);
+         EnviarArquivoProtocolo(sPathProt + sArq, false);
+
+         DMGERAL.TB_PROTOCOLO_ENVIO.Close;
+         DMGERAL.TB_PROTOCOLO_ENVIO.ParamByName('CD_UNIDADE').AsString :=
+           dm.qyGeral.FieldByName('CD_UNIDADE').AsString;
+         DMGERAL.TB_PROTOCOLO_ENVIO.ParamByName('CD_PROVINCIA').AsString :=
+           dm.qyGeral.FieldByName('CD_PROVINCIA').AsString;
+         DMGERAL.TB_PROTOCOLO_ENVIO.ParamByName('CD_MUNICIPIO').AsString :=
+           dm.qyGeral.FieldByName('CD_MUNICIPIO').AsString;
+         DMGERAL.TB_PROTOCOLO_ENVIO.ParamByName('VL_MESANO').AsString :=
+           dm.qyGeral.FieldByName('VL_MESANO').AsString;
+         DMGERAL.TB_PROTOCOLO_ENVIO.ParamByName('TP_PROTOCOLO').AsString :=
+           dm.qyGeral.FieldByName('TP_PROTOCOLO').AsString;
+         DMGERAL.TB_PROTOCOLO_ENVIO.Open;
+         if not DMGERAL.TB_PROTOCOLO_ENVIO.IsEmpty then
+         begin
+           DMGERAL.TB_PROTOCOLO_ENVIO.Edit;
+           DMGERAL.TB_PROTOCOLO_ENVIOFL_ENVIADO.AsString := cvSim;
+           DMGERAL.TB_PROTOCOLO_ENVIO.Post;
+           DMGERAL.TB_PROTOCOLO_ENVIO.Close;
+         end;
+         Memo1.Lines.Add('<tr>');
+         Memo1.Lines.Add('<td>'+Protocolo[dm.qyGeral.FieldByName('TP_PROTOCOLO').AsInteger]+'</td>');
+         Memo1.Lines.Add('<td>'+dm.qyGeral.FieldByName('DS_PROVINCIA').AsString+'</td>');
+         Memo1.Lines.Add('<td>'+dm.qyGeral.FieldByName('DS_MUNICIPIO').AsString+'</td>');
+         Memo1.Lines.Add('<td>'+dm.qyGeral.FieldByName('DS_UNIDADE').AsString+'</td>');
+         Memo1.Lines.Add('<td>'+dm.qyGeral.FieldByName('VL_MESANO').AsString+'</td>');
+         Memo1.Lines.Add('<td>'+dm.qyGeral.FieldByName('DT_EXCLUSAO').AsString+'</td>');
+         Memo1.Lines.Add('<td><a href="http://www.vertrou.info/edi/central/in/'+ sArq +'"> Ver </a></td>');
+         Memo1.Lines.Add('</tr>');
+         dm.qyGeral.Next;
+      end;
+      Memo1.Lines.Add('</table>');
+      sArq := 'Protocolo' + prmUnidade + '_' +
+        FormatDateTime('ddmmyyhhnnss',dm.GetDateTime) + '.html';
+      Memo1.Lines.SaveToFile(sPathProt + sArq);
+      EnviarArquivoProtocolo(sPathProt + sArq, true);
+      //Dispara Processo de Envio de emails
+      //ShowMessage(Get(sDominio + '/email.php'));
+  end;
+end;
+
+procedure TfrmMenuEDI.este1Click(Sender: TObject);
+//var mt : TThreadedCDSOpen;
+begin
+  //mt := TThreadedCDSOpen.Create(false);
+  //mt.FreeOnTerminate := true;
+  //bValidarCampoChave := false;
+  //frmEDi.btImportarClick(Sender);
+
+  RenameFile(PChar('q:\bin\edi.exe'),PChar('q:\bin\edi.old'));
+  if CopyFile(PChar('q:\bin\edi\in\edi.exe'),PChar('q:\bin\edi.exe'),False) then
+    ShowMessage('Sucesso!')
+  else
+    ShowMessage('Erro!');
+end;
+
+procedure TfrmMenuEDI.DePara1Click(Sender: TObject);
+begin
+  frmDePara.ShowModal;
+end;
+
+procedure TfrmMenuEDI.PNGButton2Click(Sender: TObject);
+begin
+  Exportar1Click(sender);
+  Enviar1Click(Sender);
+end;
+
+procedure TfrmMenuEDI.PNGButton1Click(Sender: TObject);
+begin
+  Receber1Click(Sender);
+  Importar1Click(sender);
+
+end;
+
+procedure TfrmMenuEDI.AtualizaUpdate;
+var sArq:String; ini:TiniFile;
+begin
+  sArq := ExtractFilePath(Application.ExeName) + 'ris.ini';
+  ini := TIniFile.Create(sArq);
+  prmDataUpdate := FormatDateTime('yyyy-mm-dd hh:nn:ss',Now);
+  ini.WriteString('EDI','Update',prmDataUpdate);
+  ini.Free;
+end;
+
+
+procedure TfrmMenuEDI.VersaoUnidades1Click(Sender: TObject);
+begin
+  dmgeral.GetVersaoUnidadesWeb;
+end;
+
+procedure TfrmMenuEDI.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Application.Terminate;
+end;
+
+end.
+

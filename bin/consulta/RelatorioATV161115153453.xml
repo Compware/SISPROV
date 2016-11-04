@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="PTV.xslt"?>
+<Programa>
+  <Parametros>
+    <MUNICIPIO>LUANDA - DISTRITO DE RANGEL</MUNICIPIO>
+    <PROVINCIA>Luanda</PROVINCIA>
+    <UNIDADE>HOSPITAL ESPERANÇA</UNIDADE>
+    <PERIODO>11/2015</PERIODO>
+    <USU></USU>
+    <VERSAO>2.1.0-21</VERSAO>
+  </Parametros>
+  <Dados>
+<sgGestantes_L1C1>Programa do PTV</sgGestantes_L1C1>
+<sgGestantes_L1C2>Momento do Parto</sgGestantes_L1C2>
+<sgGestantes_L1C3>Programa Pós-Parto</sgGestantes_L1C3>
+<sgGestantes_L1C4></sgGestantes_L1C4>
+<sgGestantes_L1C5></sgGestantes_L1C5>
+<sgGestantes_L2C1>1</sgGestantes_L2C1>
+<sgGestantes_L2C2>0</sgGestantes_L2C2>
+<sgGestantes_L2C3>0</sgGestantes_L2C3>
+<sgGestantes_L2C4>1</sgGestantes_L2C4>
+<sgGestantes_L2C5></sgGestantes_L2C5>
+<sgGestantes_L3C1>1</sgGestantes_L3C1>
+<sgGestantes_L3C2>0</sgGestantes_L3C2>
+<sgGestantes_L3C3>0</sgGestantes_L3C3>
+<sgGestantes_L3C4>1</sgGestantes_L3C4>
+<sgGestantes_L3C5></sgGestantes_L3C5>
+<sgGestantes_L4C1>0</sgGestantes_L4C1>
+<sgGestantes_L4C2>0</sgGestantes_L4C2>
+<sgGestantes_L4C3>0</sgGestantes_L4C3>
+<sgGestantes_L4C4>0</sgGestantes_L4C4>
+<sgGestantes_L4C5></sgGestantes_L4C5>
+<sgGestantes_L5C1>0</sgGestantes_L5C1>
+<sgGestantes_L5C2>0</sgGestantes_L5C2>
+<sgGestantes_L5C3>0</sgGestantes_L5C3>
+<sgGestantes_L5C4>0</sgGestantes_L5C4>
+<sgGestantes_L5C5></sgGestantes_L5C5>
+<sgGestantes_L6C1>2</sgGestantes_L6C1>
+<sgGestantes_L6C2>0</sgGestantes_L6C2>
+<sgGestantes_L6C3>0</sgGestantes_L6C3>
+<sgGestantes_L6C4>2</sgGestantes_L6C4>
+<sgGestantes_L6C5>0</sgGestantes_L6C5>
+<sgGestantes_L7C1></sgGestantes_L7C1>
+<sgGestantes_L7C2></sgGestantes_L7C2>
+<sgGestantes_L7C3></sgGestantes_L7C3>
+<sgGestantes_L7C4></sgGestantes_L7C4>
+<sgGestantes_L7C5></sgGestantes_L7C5>
+<sgPartos_L1C1>Terapia Completa (AZT+3TC+NEP)</sgPartos_L1C1>
+<sgPartos_L1C2>Outro tipo de terapia</sgPartos_L1C2>
+<sgPartos_L1C3>Nenhum tipo de terapia</sgPartos_L1C3>
+<sgPartos_L1C4></sgPartos_L1C4>
+<sgPartos_L2C1>0</sgPartos_L2C1>
+<sgPartos_L2C2>0</sgPartos_L2C2>
+<sgPartos_L2C3>0</sgPartos_L2C3>
+<sgPartos_L2C4></sgPartos_L2C4>
+<sgPartos_L3C1>0</sgPartos_L3C1>
+<sgPartos_L3C2>0</sgPartos_L3C2>
+<sgPartos_L3C3>0</sgPartos_L3C3>
+<sgPartos_L3C4></sgPartos_L3C4>
+<sgPartos_L4C1>0</sgPartos_L4C1>
+<sgPartos_L4C2>0</sgPartos_L4C2>
+<sgPartos_L4C3>0</sgPartos_L4C3>
+<sgPartos_L4C4>0</sgPartos_L4C4>
+<sgPartos_L5C1></sgPartos_L5C1>
+<sgPartos_L5C2></sgPartos_L5C2>
+<sgPartos_L5C3></sgPartos_L5C3>
+<sgPartos_L5C4></sgPartos_L5C4>
+<sgCriancas_L1C1>Total</sgCriancas_L1C1>
+<sgCriancas_L1C2></sgCriancas_L1C2>
+<sgCriancas_L2C1>0</sgCriancas_L2C1>
+<sgCriancas_L2C2></sgCriancas_L2C2>
+<sgCriancas_L3C1>0</sgCriancas_L3C1>
+<sgCriancas_L3C2></sgCriancas_L3C2>
+<sgCriancas_L4C1>0</sgCriancas_L4C1>
+<sgCriancas_L4C2>0</sgCriancas_L4C2>
+<sgCriancas_L5C1></sgCriancas_L5C1>
+<sgCriancas_L5C2></sgCriancas_L5C2>
+  </Dados>
+ </Programa>

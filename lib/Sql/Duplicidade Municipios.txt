@@ -1,0 +1,45 @@
+select * from municipio
+where cd_municipio in (
+select cd_municipio
+from (
+ select count(*) ct, cd_municipio, cd_provincia, ds_municipio
+ from municipio
+ group by cd_municipio, cd_provincia, ds_municipio
+ having count(*)>1 )
+ )order by 1
+ 
+******************************************************************
+delete from municipio
+where cd_municipio in (
+select cd_municipio
+from (
+ select count(*) ct, cd_municipio, cd_provincia, ds_municipio
+ from municipio
+ group by cd_municipio, cd_provincia, ds_municipio
+ having count(*)>1 ) )
+and cd_und <> 31 
+***************************
+
+insert into MUNICIPIO
+select
+      MUNICIPIO.CD_MUNICIPIO
+     , 910
+     , MUNICIPIO.CD_PROVINCIA
+     , MUNICIPIO.DS_MUNICIPIO
+     , MUNICIPIO.DT_EXP
+     , MUNICIPIO.CD_EDI
+     , MUNICIPIO.CD_USU_INCLUSAO
+     , MUNICIPIO.DT_INCLUSAO
+     , MUNICIPIO.CD_USU_ALTERACAO
+     , MUNICIPIO.DT_ALTERACAO
+from MUNICIPIO
+where CD_MUNICIPIO = 519
+
+**********************
+
+
+select
+*
+from MUNICIPIO
+where CD_MUNICIPIO = 519
+ 

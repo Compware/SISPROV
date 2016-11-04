@@ -1,0 +1,1256 @@
+unit uCadCaracterizacao;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UfrmCadPad, dxExEdtr, dxDBCtrl, dxDBGrid, dxTL, DB, dxCntner,
+  ComCtrls, StdCtrls, Buttons, ExtCtrls, dxEditor, dxEdLib, dxDBELib,
+  RxDBComb, Mask, ToolEdit, RXDBCtrl, ImgList, IBCustomDataSet, IBQuery,
+  uFramePaciente, Menus;
+
+type
+  TfrmCadCaracterizacao = class(TfrmCadPad)
+    grDadosColumn1: TdxDBGridColumn;
+    grDadosColumn2: TdxDBGridColumn;
+    grDadosColumn3: TdxDBGridColumn;
+    grDadosColumn5: TdxDBGridMaskColumn;
+    pgCaracterizacao: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    TabSheet5: TTabSheet;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    dxDBEdit1: TdxDBEdit;
+    DBDateEdit1: TDBDateEdit;
+    RxDBComboBox1: TRxDBComboBox;
+    btLocProvincia: TdxDBButtonEdit;
+    btLocMunicipio: TdxDBButtonEdit;
+    btLocUnidade: TdxDBButtonEdit;
+    btLocInvestigador: TdxDBButtonEdit;
+    dxDBEdit2: TdxDBEdit;
+    dxDBEdit3: TdxDBEdit;
+    GroupBox2: TGroupBox;
+    Label12: TLabel;
+    Label14: TLabel;
+    Label17: TLabel;
+    Label10: TLabel;
+    RxDBComboBox2: TRxDBComboBox;
+    RxDBComboBox4: TRxDBComboBox;
+    RxDBComboBox5: TRxDBComboBox;
+    dxDBEdit5: TdxDBEdit;
+    Label11: TLabel;
+    dxDBEdit6: TdxDBEdit;
+    Label13: TLabel;
+    RxDBComboBox3: TRxDBComboBox;
+    Label15: TLabel;
+    dxDBEdit7: TdxDBEdit;
+    Label16: TLabel;
+    RxDBComboBox6: TRxDBComboBox;
+    Label18: TLabel;
+    cbEscolaridade: TRxDBComboBox;
+    Label19: TLabel;
+    cbOcupacao: TRxDBComboBox;
+    lbOutrosEscolaridade: TLabel;
+    edOutrosEscolaridade: TdxDBEdit;
+    lbOutrosOcupacao: TLabel;
+    edOutrosOcupacao: TdxDBEdit;
+    Label9: TLabel;
+    RxDBComboBox9: TRxDBComboBox;
+    Label22: TLabel;
+    RxDBComboBox10: TRxDBComboBox;
+    GroupBox3: TGroupBox;
+    RxDBComboBox14: TRxDBComboBox;
+    Label28: TLabel;
+    RxDBComboBox15: TRxDBComboBox;
+    Label29: TLabel;
+    RxDBComboBox16: TRxDBComboBox;
+    Label30: TLabel;
+    RxDBComboBox17: TRxDBComboBox;
+    Label31: TLabel;
+    Label32: TLabel;
+    dxDBEdit11: TdxDBEdit;
+    Label33: TLabel;
+    dxDBEdit12: TdxDBEdit;
+    Label34: TLabel;
+    RxDBComboBox18: TRxDBComboBox;
+    Label35: TLabel;
+    dxDBEdit13: TdxDBEdit;
+    Label36: TLabel;
+    RxDBComboBox19: TRxDBComboBox;
+    Label37: TLabel;
+    RxDBComboBox20: TRxDBComboBox;
+    Label38: TLabel;
+    RxDBComboBox21: TRxDBComboBox;
+    Label39: TLabel;
+    RxDBComboBox22: TRxDBComboBox;
+    Label40: TLabel;
+    RxDBComboBox23: TRxDBComboBox;
+    Label41: TLabel;
+    cbtipoSintomas: TRxDBComboBox;
+    lbOutrostipoSintomas: TLabel;
+    edOutrostipoSintomas: TdxDBEdit;
+    Label43: TLabel;
+    dxDBEdit15: TdxDBEdit;
+    Label44: TLabel;
+    RxDBComboBox25: TRxDBComboBox;
+    Label45: TLabel;
+    RxDBComboBox26: TRxDBComboBox;
+    Label46: TLabel;
+    RxDBComboBox27: TRxDBComboBox;
+    GroupBox4: TGroupBox;
+    Label47: TLabel;
+    RxDBComboBox28: TRxDBComboBox;
+    Label48: TLabel;
+    cbOndeVIH: TRxDBComboBox;
+    Label49: TLabel;
+    DBDateEdit2: TDBDateEdit;
+    Label50: TLabel;
+    RxDBComboBox30: TRxDBComboBox;
+    lbOutrosOndeVIH: TLabel;
+    edOutrosOndeVIH: TdxDBEdit;
+    Label52: TLabel;
+    RxDBComboBox31: TRxDBComboBox;
+    Label53: TLabel;
+    RxDBComboBox32: TRxDBComboBox;
+    Label54: TLabel;
+    cbSintomas: TRxDBComboBox;
+    lbOutrosSintomas: TLabel;
+    edOutrosSintomas: TdxDBEdit;
+    GroupBox5: TGroupBox;
+    Label56: TLabel;
+    RxDBComboBox34: TRxDBComboBox;
+    Label57: TLabel;
+    RxDBComboBox35: TRxDBComboBox;
+    Label58: TLabel;
+    RxDBComboBox36: TRxDBComboBox;
+    Label59: TLabel;
+    cbQuem: TRxDBComboBox;
+    lbOutrosQuem: TLabel;
+    edOutrosQuem: TdxDBEdit;
+    Label61: TLabel;
+    RxDBComboBox38: TRxDBComboBox;
+    Label62: TLabel;
+    cbQual: TRxDBComboBox;
+    lbOutrosQual: TLabel;
+    edOutrosQual: TdxDBEdit;
+    Label64: TLabel;
+    RxDBComboBox40: TRxDBComboBox;
+    Label65: TLabel;
+    RxDBComboBox41: TRxDBComboBox;
+    Label66: TLabel;
+    cbOnde: TRxDBComboBox;
+    edOutrosOnde: TdxDBEdit;
+    lbOutrosOnde: TLabel;
+    Label70: TLabel;
+    Label68: TLabel;
+    Label69: TLabel;
+    Label71: TLabel;
+    Label72: TLabel;
+    ImageList1: TImageList;
+    grDadosColumn6: TdxDBGridColumn;
+    Panel5: TPanel;
+    pOutros: TPanel;
+    edOutrosRazao: TdxDBEdit;
+    lbOutrosRazao: TLabel;
+    pServicos: TPanel;
+    lbServicoRazao: TLabel;
+    edServicoRazao: TRxDBComboBox;
+    Panel6: TPanel;
+    Label23: TLabel;
+    cbRazao: TRxDBComboBox;
+    Panel7: TPanel;
+    Label26: TLabel;
+    lbOutrosIndicacao: TLabel;
+    cbIndicacao: TRxDBComboBox;
+    edOutrosIndicacao: TdxDBEdit;
+    Label20: TLabel;
+    RxDBComboBox7: TRxDBComboBox;
+    edProvincia: TdxDBEdit;
+    edMunicipio: TdxDBEdit;
+    edUnidade: TdxDBEdit;
+    qyCaracterizacao: TIBQuery;
+    tbPessoais: TTabSheet;
+    framPaciente1: TframPaciente;
+    Panel8: TPanel;
+    dsPacienteExistente: TDataSource;
+    qyPacienteExistente: TIBQuery;
+    qyPacienteExistenteCD_PACIENTE: TIntegerField;
+    qyPacienteExistenteNM_PACIENTE: TIBStringField;
+    qyPacienteExistenteDT_NASCIMENTO: TDateField;
+    qyPacienteExistenteNM_MAE: TIBStringField;
+    framPaciente2: TframPaciente;
+    grDadosColumn9: TdxDBGridColumn;
+    Label21: TLabel;
+    Label24: TLabel;
+    grDadosColumn12: TdxDBGridColumn;
+    Label25: TLabel;
+    qyCaracterizacaoCD_CARACTERIZACAO: TIntegerField;
+    qyCaracterizacaoCD_PROVINCIA: TIntegerField;
+    qyCaracterizacaoCD_MUNICIPIO: TIntegerField;
+    qyCaracterizacaoCD_UNIDADE: TIntegerField;
+    qyCaracterizacaoCD_LOCAL: TIntegerField;
+    qyCaracterizacaoCD_UTENTE: TIntegerField;
+    qyCaracterizacaoCD_INVESTIGADOR: TIntegerField;
+    qyCaracterizacaoDT_VISITA: TDateTimeField;
+    qyCaracterizacaoFL_SEXO: TIntegerField;
+    qyCaracterizacaoNR_IDADE: TIntegerField;
+    qyCaracterizacaoTP_SESSAO: TIntegerField;
+    qyCaracterizacaoCD_ESTADO_CIVIL: TIntegerField;
+    qyCaracterizacaoNR_FILHOS: TIntegerField;
+    qyCaracterizacaoFL_GESTANTE: TIntegerField;
+    qyCaracterizacaoNR_SEMANAS_GESTANTE: TIntegerField;
+    qyCaracterizacaoFL_AMAMENTA: TIntegerField;
+    qyCaracterizacaoCD_ESCOLARIDADE: TIntegerField;
+    qyCaracterizacaoDS_ESCORALIDADE: TIBStringField;
+    qyCaracterizacaoCD_OCUPACAO: TIntegerField;
+    qyCaracterizacaoDS_OCUPACAO: TIBStringField;
+    qyCaracterizacaoFL_EMPREGADA: TIntegerField;
+    qyCaracterizacaoFL_OUVIU_FALAR: TIntegerField;
+    qyCaracterizacaoCD_RAZAO: TIntegerField;
+    qyCaracterizacaoDS_RAZAO: TIBStringField;
+    qyCaracterizacaoCD_INDICACAO: TIntegerField;
+    qyCaracterizacaoDS_INDICACAO: TIBStringField;
+    qyCaracterizacaoFL_TRANSFUSAO: TIntegerField;
+    qyCaracterizacaoFL_TATUAGEM: TIntegerField;
+    qyCaracterizacaoFL_CIRURGIA: TIntegerField;
+    qyCaracterizacaoFL_CIRCUNCISAO: TIntegerField;
+    qyCaracterizacaoNR_PARTOS: TIntegerField;
+    qyCaracterizacaoNR_ABORTOS: TIntegerField;
+    qyCaracterizacaoFL_AMAMENTOU_OUTROS: TIntegerField;
+    qyCaracterizacaoNR_IDADE_EXPERIENCIA: TIntegerField;
+    qyCaracterizacaoFL_SEXO_ALCOOL: TIntegerField;
+    qyCaracterizacaoFL_SEXO_DROGAS: TIntegerField;
+    qyCaracterizacaoFL_SEXO_DINHEIRO: TIntegerField;
+    qyCaracterizacaoFL_SEXO_MATERIAL: TIntegerField;
+    qyCaracterizacaoFL_SINAIS_ITS: TIntegerField;
+    qyCaracterizacaoCD_SINAIS_ITS: TIntegerField;
+    qyCaracterizacaoDS_SINAIS_ITS: TIBStringField;
+    qyCaracterizacaoNR_PARCEIROS_SEXUAIS: TIntegerField;
+    qyCaracterizacaoFL_PARCEIRO_SEXUAL: TIntegerField;
+    qyCaracterizacaoFL_PRESERVATIVO: TIntegerField;
+    qyCaracterizacaoFL_PRESERVATIVO_NAO_REGULAR: TIntegerField;
+    qyCaracterizacaoFL_TESTE: TIntegerField;
+    qyCaracterizacaoCD_TESTE: TIntegerField;
+    qyCaracterizacaoDS_TESTE: TIBStringField;
+    qyCaracterizacaoDT_TESTE: TDateTimeField;
+    qyCaracterizacaoFL_TESTE_RECENTES: TIntegerField;
+    qyCaracterizacaoFL_TESTE_PARCEIROS: TIntegerField;
+    qyCaracterizacaoFL_ITS: TIntegerField;
+    qyCaracterizacaoCD_SINTOMAS_ITS: TIntegerField;
+    qyCaracterizacaoDS_SINTOMAS_ITS: TIBStringField;
+    qyCaracterizacaoFL_TESTE_HOJE: TIntegerField;
+    qyCaracterizacaoFL_TESTE_RESULTADOS: TIntegerField;
+    qyCaracterizacaoFL_PARCEIROS_RESULTADOS: TIntegerField;
+    qyCaracterizacaoFL_REVELAR: TIntegerField;
+    qyCaracterizacaoCD_REVELAR: TIntegerField;
+    qyCaracterizacaoDS_REVELAR: TIBStringField;
+    qyCaracterizacaoFL_PLANO_REDUCAO: TIntegerField;
+    qyCaracterizacaoCD_PLANO_REDUCAO: TIntegerField;
+    qyCaracterizacaoDS_PLANO_REDUCAO: TIBStringField;
+    qyCaracterizacaoFL_RECEBEU_PRESERVATIVOS: TIntegerField;
+    qyCaracterizacaoFL_TRANSFERENCIA: TIntegerField;
+    qyCaracterizacaoCD_TRANSFERENCIA: TIntegerField;
+    qyCaracterizacaoDS_TRANSFERENCIA: TIBStringField;
+    qyCaracterizacaoFL_SERVICO_SAUDE: TIntegerField;
+    qyCaracterizacaoCD_PACIENTE: TIntegerField;
+    qyCaracterizacaoDS_PROVINCIA: TIBStringField;
+    qyCaracterizacaoDS_MUNICIPIO: TIBStringField;
+    qyCaracterizacaoDS_UNIDADE: TIBStringField;
+    qyCaracterizacaoDS_INVESTIGADOR: TIBStringField;
+    qyCaracterizacaoSEXO: TStringField;
+    qyCaracterizacaoTESTE_HOJE: TStringField;
+    grDadosColumn10: TdxDBGridColumn;
+    procedure StatusBar1DrawPanel(StatusBar: TStatusBar;
+      Panel: TStatusPanel; const Rect: TRect);
+    procedure btLocProvinciaButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure btLocProvinciaChange(Sender: TObject);
+    procedure btLocProvinciaExit(Sender: TObject);
+    procedure btLocMunicipioButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure btLocMunicipioChange(Sender: TObject);
+    procedure btLocMunicipioExit(Sender: TObject);
+    procedure btLocUnidadeButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure btLocUnidadeChange(Sender: TObject);
+    procedure btLocUnidadeExit(Sender: TObject);
+    procedure btLocInvestigadorButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure btLocInvestigadorChange(Sender: TObject);
+    procedure btLocInvestigadorExit(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure btgravarClick(Sender: TObject);
+    procedure dsControleDataChange(Sender: TObject; Field: TField);
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure tabListaShow(Sender: TObject);
+    procedure btAnteriorClick(Sender: TObject);
+    procedure btProximoClick(Sender: TObject);
+    procedure btIncluirClick(Sender: TObject);
+    procedure btCancelarClick(Sender: TObject);
+    procedure bteditarClick(Sender: TObject);
+    procedure framPaciente1dxDBEdit2Exit(Sender: TObject);
+    procedure framPaciente1DBDateEdit3Exit(Sender: TObject);
+    procedure framPaciente1dxDBEdit5Exit(Sender: TObject);
+    procedure qyPacienteExistenteAfterOpen(DataSet: TDataSet);
+    procedure qyCaracterizacaoCalcFields(DataSet: TDataSet);
+    procedure framPaciente2dxDBEdit16Exit(Sender: TObject);
+    procedure btPesquisarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure VerificarCampos;
+    procedure AbreConsultas;
+    procedure VerificarPaciente;
+    procedure ConsultaPaciente;
+    procedure PacienteExistente;
+    function VerificarNrProcesso:Double;
+  end;
+
+var
+  frmCadCaracterizacao: TfrmCadCaracterizacao;
+  strSQL, strConsulta,sPSQL,sNSQL,sCSQL:String;
+implementation
+
+uses UDM, UDMGERAL, UfrmLocalizar, UGeralSQL, UPacienteExistente,
+  UProcessoExistente, uFrmLocCaracterizacao;
+
+{$R *.dfm}
+
+function TfrmCadCaracterizacao.VerificarNrProcesso:Double;
+var
+  bLibera, bEXIT:Boolean;
+begin
+  Result := 0;
+  if DMGERAL.TB_PACIENTENR_PROCESSO.AsString <> '' then
+  begin
+    bLibera := false;
+    bEXIT := true;
+    qyPacienteExistente.Close;
+    qyPacienteExistente.SQL.Text := sPSQL;
+    if (DMGERAL.TB_PACIENTENR_PROCESSO.AsInteger <> null) then
+    begin
+       qyPacienteExistente.SQL.Add('WHERE NR_PROCESSO =:processo');
+       qyPacienteExistente.ParamByName('processo').AsInteger :=
+          DMGERAL.TB_PACIENTENR_PROCESSO.AsInteger;
+
+    end;
+    qyPacienteExistente.Open;
+    qyPacienteExistente.First;
+
+    while not qyPacienteExistente.Eof do
+    begin
+      bEXIT := false;
+      if qyPacienteExistenteCD_PACIENTE.AsInteger = DMGERAL.TB_PACIENTECD_PACIENTE.AsInteger then
+      begin
+        bLibera := true;
+        qyPacienteExistente.Next;
+      end
+      else
+        qyPacienteExistente.Next;
+    end;
+
+    if bLibera then
+      bEXIT := true;
+
+    if not bEXIT then
+    begin
+      framPaciente2dxDBEdit16Exit(Self);
+      Result := 1;
+    end;
+
+  end;
+end;
+
+procedure TfrmCadCaracterizacao.PacienteExistente;
+begin
+  if not qyPacienteExistente.Eof then
+  begin
+    frmProcessoExistente := TfrmProcessoExistente.Create(application);
+    frmProcessoExistente.DBGrid1.DataSource := dsPacienteExistente;
+    if frmProcessoExistente.ShowModal=mrok then
+      begin
+        DMGERAL.TB_CARACTERIZACAOCD_PACIENTE.AsInteger :=
+          qyPacienteExistente.FieldByname('cd_paciente').AsInteger;
+        DMGERAL.TB_PACIENTE.Cancel;
+        DMGERAL.TB_PACIENTE.Close;
+        DMGERAL.TB_PACIENTE.Open;
+        DMGERAL.TB_PACIENTE.Edit;
+        strConsulta := '';
+        framPaciente1.RxDBLookupCombo1.SetFocus;
+      end;
+    qyPacienteExistente.Close;
+    frmProcessoExistente.Free;
+  end;
+end;
+
+procedure TfrmCadCaracterizacao.ConsultaPaciente;
+var sWhere:string;
+begin
+  if (DMGERAL.TB_CARACTERIZACAO.State in [dsEdit, dsInsert]) then
+  begin
+    try
+      sWhere := 'WHERE';
+      qyPacienteExistente.Close;
+      qyPacienteExistente.SQL.Text := sPSQL;
+      if (DMGERAL.TB_PACIENTENM_PACIENTE.AsString <> '') then
+      begin
+         qyPacienteExistente.SQL.Add(sWhere + ' Upper(NM_PACIENTE) like('''+ UpperCase(DMGERAL.TB_PACIENTENM_PACIENTE.AsString) + '%'')');
+         sWhere := 'AND';
+      end;
+
+      if (DMGERAL.TB_PACIENTENM_MAE.AsString <> '') then
+      begin
+         qyPacienteExistente.SQL.Add(sWhere +' Upper(NM_MAE) like('''+ UpperCase(DMGERAL.TB_PACIENTENM_MAE.AsString)+ '%'')');
+         sWhere := 'AND';
+      end;
+
+      if (DMGERAL.TB_PACIENTEDT_NASCIMENTO.AsString <> '') then
+      begin
+         qyPacienteExistente.SQL.Add(sWhere + ' DT_NASCIMENTO = :DATA');
+         qyPacienteExistente.ParamByName('DATA').AsDate := DMGERAL.TB_PACIENTEDT_NASCIMENTO.AsDateTime;
+         sWhere := 'AND';
+      end;
+
+      qyPacienteExistente.Open;
+      PacienteExistente;
+    except
+      qyPacienteExistente.close;
+    end;
+  end;
+end;
+
+
+procedure TfrmCadCaracterizacao.VerificarCampos;
+begin
+
+  if DMGERAL.TB_CARACTERIZACAODT_VISITA.AsString = '' then
+  begin
+    MessageDlg('É necessário incluir a Data da Visita!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 0;
+    DBDateEdit1.SetFocus;
+    abort;
+  end;
+
+  if DMGERAL.TB_CARACTERIZACAOCD_PROVINCIA.AsInteger < 1 then
+  begin
+    MessageDlg('É necessário incluir a Provincia da Caracterização!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 0;
+    btLocProvincia.SetFocus;
+    abort;
+  end;
+
+  if DMGERAL.TB_CARACTERIZACAOCD_MUNICIPIO.AsInteger < 1 then
+  begin
+    MessageDlg('É necessário incluir o Municipio da Caracterização!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 0;
+    btLocMunicipio.SetFocus;
+    abort;
+  end;
+
+  if DMGERAL.TB_CARACTERIZACAOCD_UNIDADE.AsInteger < 1 then
+  begin
+    MessageDlg('É necessário incluir a Unidade da Caracterização!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 0;
+    btLocUnidade.SetFocus;
+    abort;
+  end;
+
+  if DMGERAL.TB_CARACTERIZACAOCD_INVESTIGADOR.AsInteger < 1 then
+  begin
+    MessageDlg('É necessário incluir o Conselheiro/a!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 0;
+    btLocInvestigador.SetFocus;
+    abort;
+  end;
+
+  if DMGERAL.TB_CARACTERIZACAOFL_SEXO.AsString = '' then
+  begin
+    MessageDlg('É necessário incluir o Sexo!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 1;
+    RxDBComboBox2.SetFocus;
+    abort;
+  end;
+
+  if DMGERAL.TB_CARACTERIZACAONR_IDADE.AsInteger < 1 then
+  begin
+    MessageDlg('É necessário incluir a Idade!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 1;
+    dxDBEdit5.SetFocus;
+    abort;
+  end;
+
+  if DMGERAL.TB_CARACTERIZACAOFL_TESTE_HOJE.AsString = '' then
+  begin
+    MessageDlg('É necessário incluir o Resultado do teste hoje!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 3;
+    RxDBComboBox7.SetFocus;
+    abort;
+  end;
+
+end;
+procedure TfrmCadCaracterizacao.VerificarPaciente;
+begin
+  //**Paciente
+
+  if DMGERAL.TB_PACIENTETP_SEXO.AsString = '' then
+  begin
+    MessageDlg('É necessário incluir o Sexo do Utente, na aba Dados Pessoais!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 5;
+    framPaciente1.RxDBComboBox2.SetFocus;
+    Abort;
+  end;
+
+  if (DMGERAL.TB_PACIENTEIDADE.AsString = '') then
+  begin
+    MessageDlg('É necessário incluir a Idade ou Meses do Utente, na aba Dados Pessoais!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 5;
+    framPaciente1.dxDBEdit3.SetFocus;
+    Abort;
+  end;
+
+  if DMGERAL.TB_PACIENTENM_MAE.AsString = '' then
+  begin
+    MessageDlg('É necessário incluir o Nome da Mãe do Utente, na aba Dados Pessoais!',mtInformation,
+     [mbOK],0);
+
+    pgGeral.TabIndex := 1;
+    pgCaracterizacao.TabIndex := 5;
+    framPaciente1.dxDBEdit5.SetFocus;
+    Abort;
+  end;
+  //Paciente**
+
+
+end;
+
+procedure TfrmCadCaracterizacao.StatusBar1DrawPanel(StatusBar: TStatusBar;
+  Panel: TStatusPanel; const Rect: TRect);
+begin
+  inherited;
+  sbPadrao.Canvas.Brush.Color:=$00FFEECC;
+  sbPadrao.Canvas.FillRect(Rect);
+  sbPadrao.Canvas.TextOut(Rect.Left+18,Rect.Top,'Todos os campos que estiverem com * são obrigatórios.');
+  ImageList1.Draw(StatusBar.Canvas,Rect.Left,Rect.top, 2);
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocProvinciaButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+  if not Assigned(frmLocalizar) then
+    frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Provincia';
+  frmLocalizar.qyDados := SelectDadosProvincia;
+
+  try
+    frmLocalizar.Where := false;
+    SetLength(VCampo,2);
+    frmLocalizar.KeyField := 'cd_provincia';
+    VCampo[0].Titulo  := 'Prov';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'Nome da Provincia';
+    VCampo[1].Width := 25;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    dmGeral.TB_CARACTERIZACAOCD_PROVINCIA.AsInteger := frmLocalizar.qyDados.FieldByname('cd_provincia').AsInteger;
+    dmGeral.TB_CARACTERIZACAODS_PROVINCIA.AsString := frmLocalizar.qyDados.FieldByname('ds_provincia').AsString;
+    DMGERAL.TB_CARACTERIZACAOCD_MUNICIPIO.Clear;
+    DMGERAL.TB_CARACTERIZACAODS_MUNICIPIO.Clear;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocProvinciaChange(Sender: TObject);
+begin
+  inherited;
+  if dsControle.DataSet.State in [dsEdit, dsInsert] then
+  begin
+    if btLocProvincia.Text = ''  then
+      DMGERAL.TB_CARACTERIZACAODS_PROVINCIA.Clear
+    else if btLocProvincia.Modified then
+    begin
+      try
+        DMGERAL.TB_CARACTERIZACAODS_PROVINCIA.AsString :=
+          PegaValor('DS_PROVINCIA','PROVINCIA',['CD_PROVINCIA'],
+          [btLocProvincia.Text],nil);
+      except
+        begin
+          DMGERAL.TB_CARACTERIZACAODS_PROVINCIA.Clear;
+        end;
+      end;
+        DMGERAL.TB_CARACTERIZACAOCD_MUNICIPIO.Clear;
+        DMGERAL.TB_CARACTERIZACAODS_MUNICIPIO.Clear;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocProvinciaExit(Sender: TObject);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+    if btLocProvincia.Text <> ''  then
+    begin
+      try
+        DMGERAL.TB_CARACTERIZACAODS_PROVINCIA.AsString :=
+          PegaValor('DS_PROVINCIA','PROVINCIA',['CD_PROVINCIA'],
+          [btLocProvincia.Text],nil);
+      except
+        begin
+          MessageDlg('Provincia não encontrada!',mtWarning,[mbOK],0);
+          DMGERAL.TB_CARACTERIZACAOCD_PROVINCIA.Clear;
+          DMGERAL.TB_CARACTERIZACAODS_PROVINCIA.Clear;
+        end;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocMunicipioButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+  if not Assigned(frmLocalizar) then
+    frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Municipio';
+  try
+    if(dsControle.DataSet.FieldByName('CD_PROVINCIA').AsString<>'')then
+    begin
+      frmLocalizar.qyDados := SelectDadosMunicipio(dsControle.DataSet.FieldByName('CD_PROVINCIA').AsInteger);
+      frmLocalizar.Where := true;
+    end;
+    SetLength(VCampo,2);
+    frmLocalizar.KeyField := 'cd_municipio';
+    VCampo[0].Titulo  := 'Municipio';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'Nome do Municipio';
+    VCampo[1].Width := 25;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    dmGeral.TB_CARACTERIZACAOCD_MUNICIPIO.AsInteger := frmLocalizar.qyDados.FieldByname('cd_municipio').AsInteger;
+    dmGeral.TB_CARACTERIZACAODS_MUNICIPIO.AsString := frmLocalizar.qyDados.FieldByname('ds_municipio').AsString;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+
+end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocMunicipioChange(Sender: TObject);
+begin
+  inherited;
+  if btLocMunicipio.Text = '' then
+    DMGERAL.TB_CARACTERIZACAODS_MUNICIPIO.Clear
+  else if btLocMunicipio.Modified then
+  begin
+    if btLocProvincia.text <> '' then
+    begin
+      try
+        DMGERAL.TB_CARACTERIZACAODS_MUNICIPIO.AsString :=
+          PegaValor('DS_MUNICIPIO','MUNICIPIO',['CD_MUNICIPIO'],
+           [btLocMunicipio.Text],nil);
+       except
+          begin
+            DMGERAL.TB_CARACTERIZACAODS_MUNICIPIO.Clear;
+          end;
+       end;
+      end
+    else
+      begin
+        DMGERAL.TB_NOTIFICACAOCD_MUNICIPIO.Clear;
+        DMGERAL.TB_NOTIFICACAODS_MUNICIPIO_NOT.Clear;
+        MessageDlg('É necessário incluir uma Provincia!',mtInformation,[mbOK],0);
+      end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocMunicipioExit(Sender: TObject);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+    if btLocMunicipio.Text <> '' then
+    begin
+        try
+          DMGERAL.TB_CARACTERIZACAODS_MUNICIPIO.AsString :=
+            PegaValor('DS_MUNICIPIO','MUNICIPIO',['CD_MUNICIPIO'],
+             [btLocMunicipio.Text],nil);
+         except
+            begin
+              MessageDlg('Municipio não encontrado!',mtWarning,[mbOK],0);
+              DMGERAL.TB_CARACTERIZACAOCD_MUNICIPIO.Clear;
+              DMGERAL.TB_CARACTERIZACAODS_MUNICIPIO.Clear;
+            end;
+         end;
+     end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocUnidadeButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+  if not Assigned(frmLocalizar) then
+    frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Unidade';
+  frmLocalizar.qyDados := SelectDadosUnidade;
+
+  try
+    frmLocalizar.Where := false;
+    SetLength(VCampo,2);
+    frmLocalizar.KeyField := 'cd_unidade';
+    VCampo[0].Titulo  := 'Unidade';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'Nome';
+    VCampo[1].Width := 25;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    dmGeral.TB_CARACTERIZACAOCD_UNIDADE.AsInteger := frmLocalizar.qyDados.FieldByname('cd_unidade').AsInteger;
+    dmGeral.TB_CARACTERIZACAODS_UNIDADE.AsString := frmLocalizar.qyDados.FieldByname('ds_unidade').AsString;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+
+end;
+
+end;
+procedure TfrmCadCaracterizacao.btLocUnidadeChange(Sender: TObject);
+begin
+  inherited;
+  if btLocUnidade.Text = '' then
+    DMGERAL.TB_CARACTERIZACAODS_UNIDADE.Clear
+  else if btLocUnidade.Modified then
+  begin
+    try
+      DMGERAL.TB_CARACTERIZACAODS_UNIDADE.AsString :=
+        PegaValor('DS_UNIDADE','UNIDADE',['CD_UNIDADE'],
+        [btLocUnidade.Text],nil);
+    except
+      begin
+        DMGERAL.TB_CARACTERIZACAODS_UNIDADE.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocUnidadeExit(Sender: TObject);
+begin
+  inherited;
+  if (dsControle.DataSet.State in [dsEdit, dsInsert]) then
+  begin
+    if btLocUnidade.Text <> '' then
+    begin
+      try
+        DMGERAL.TB_CARACTERIZACAODS_UNIDADE.AsString :=
+          PegaValor('DS_UNIDADE','UNIDADE',['CD_UNIDADE'],
+          [btLocUnidade.Text],nil);
+      except
+        begin
+          MessageDlg('Unidade não encontrada!',mtWarning,[mbOK],0);
+          DMGERAL.TB_CARACTERIZACAOCD_UNIDADE.Clear;
+          DMGERAL.TB_CARACTERIZACAODS_UNIDADE.Clear;
+        end;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocInvestigadorButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  inherited;
+  if dsControle.DataSet.State in [dsEdit, dsInsert] then
+  begin
+    if not Assigned(frmLocalizar) then
+      frmLocalizar := TfrmLocalizar.Create(application);
+    frmLocalizar.Caption := 'Localizar Médico';
+    frmLocalizar.qyDados := SelectDadosInvestigador;
+
+    try
+      frmLocalizar.Where := false;
+      SetLength(VCampo,4);
+      frmLocalizar.KeyField := 'cd_investigador';
+      VCampo[0].Titulo  := 'Cód.';
+      VCampo[0].Width := 5;
+      VCampo[1].Titulo  := 'Nome';
+      VCampo[1].Width := 25;
+      VCampo[2].Titulo  := 'Função';
+      VCampo[2].Width := 25;
+      VCampo[0].Visivel := True;
+      VCampo[1].Visivel := True;
+      VCampo[2].Visivel := True;
+      VCampo[3].Visivel := false;
+    except
+      ShowMessage(frmLocalizar.qyDados.Sql.Text);
+    end;
+    if frmLocalizar.ShowModal=mrok then
+    begin
+      DMGERAL.TB_CARACTERIZACAOCD_INVESTIGADOR.AsString := frmLocalizar.qyDados.FieldByname('cd_investigador').AsString;
+      DMGERAL.TB_CARACTERIZACAODS_INVESTIGADOR.AsString := frmLocalizar.qyDados.FieldByname('nm_investigador').AsString;
+    end;
+    frmLocalizar.qyDados.Close;
+    FreeAndNil(frmLocalizar);
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocInvestigadorChange(Sender: TObject);
+begin
+  inherited;
+  if dsControle.DataSet.State in [dsEdit,dsInsert] then
+  begin
+    if btLocInvestigador.Text = '' then
+      DMGERAL.TB_CARACTERIZACAODS_INVESTIGADOR.Clear
+    else if btLocInvestigador.Modified then
+    begin
+      try
+        DMGERAL.TB_CARACTERIZACAODS_INVESTIGADOR.AsString := PegaValor('NM_INVESTIGADOR','INVESTIGADOR',['CD_INVESTIGADOR'],
+          [btLocInvestigador.Text],nil);
+      except
+        begin
+          DMGERAL.TB_CARACTERIZACAODS_INVESTIGADOR.Clear;
+        end;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btLocInvestigadorExit(Sender: TObject);
+begin
+  inherited;
+  if dsControle.DataSet.State in [dsEdit,dsInsert] then
+  begin
+    if btLocInvestigador.Text <> '' then
+    begin
+      try
+        DMGERAL.TB_CARACTERIZACAODS_INVESTIGADOR.AsString := PegaValor('NM_INVESTIGADOR','INVESTIGADOR',['CD_INVESTIGADOR'],
+          [btLocInvestigador.Text],nil);
+
+      except
+        begin
+          MessageDlg('Conselheiro não encontrado!',mtWarning,[mbOK],0);
+          DMGERAL.TB_CARACTERIZACAODS_INVESTIGADOR.Clear;
+          DMGERAL.TB_CARACTERIZACAOCD_INVESTIGADOR.Clear;
+        end;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.FormShow(Sender: TObject);
+begin
+  inherited;
+  sCSQL := qyCaracterizacao.SQL.Text;
+  qyCaracterizacao.Open;
+  pgGeral.ActivePage := tabGeral;
+  AbreConsultas;
+  framPaciente1.AbreConsultas;
+
+  tbPessoais.TabVisible := false;
+end;
+
+procedure TfrmCadCaracterizacao.btgravarClick(Sender: TObject);
+begin
+  if VerificarNrProcesso = 1  then
+    abort;
+
+  VerificarCampos;
+
+  if DMGERAL.TB_PACIENTENM_PACIENTE.AsString = '' then
+  begin
+    DMGERAL.TB_PACIENTE.Cancel;
+  end
+  else
+    verificarPaciente;
+
+
+  if dsControle.DataSet.State in [dsEdit, dsInsert] then
+    begin
+      InicializaControles;
+      dsControle.DataSet.Post;
+      DM.Commit(dsControle.DataSet);
+    end;
+
+  pgGeral.TabIndex := 1;
+  pgCaracterizacao.TabIndex := 0;
+
+end;
+
+procedure TfrmCadCaracterizacao.dsControleDataChange(Sender: TObject;
+  Field: TField);
+begin
+  inherited;
+  if cbEscolaridade.Text = 'Outros' then
+    begin
+      lbOutrosEscolaridade.Visible := true;
+      edOutrosEscolaridade.Visible := true;
+    end
+  else
+    begin
+      lbOutrosEscolaridade.Visible := false;
+      edOutrosEscolaridade.Visible := false;
+    end;
+
+  if cbOcupacao.Text = 'Outros' then
+    begin
+      lbOutrosOcupacao.Visible := true;
+      edOutrosOcupacao.Visible := true;
+    end
+  else
+    begin
+      lbOutrosOcupacao.Visible := false;
+      edOutrosOcupacao.Visible := false;
+    end;
+
+  if cbRazao.Text = 'Outros' then
+      pOutros.Visible := true
+  else
+      pOutros.Visible := false;
+
+  if cbRazao.Text = 'Referenciado por um Serviço de Saúde' then
+      pServicos.Visible := true
+  else
+      pServicos.Visible := false;
+
+  if cbIndicacao.Text = 'Outros' then
+    begin
+      lbOutrosIndicacao.Visible := true;
+      edOutrosIndicacao.Visible := true;
+    end
+  else
+    begin
+      lbOutrosIndicacao.Visible := false;
+      edOutrosIndicacao.Visible := false;
+    end;
+
+  if cbtipoSintomas.Text = 'Outros' then
+    begin
+      lbOutrostipoSintomas.Visible := true;
+      edOutrostipoSintomas.Visible := true;
+    end
+  else
+    begin
+      lbOutrostipoSintomas.Visible := false;
+      edOutrostipoSintomas.Visible := false;
+    end;
+
+  if cbOndeVIH.Text = 'Outros' then
+    begin
+      lbOutrosOndeVIH.Visible := true;
+      edOutrosOndeVIH.Visible := true;
+    end
+  else
+    begin
+      lbOutrosOndeVIH.Visible := false;
+      edOutrosOndeVIH.Visible := false;
+    end;
+
+  if cbSintomas.Text = 'Outros' then
+    begin
+      lbOutrosSintomas.Visible := true;
+      edOutrosSintomas.Visible := true;
+    end
+  else
+    begin
+      lbOutrosSintomas.Visible := false;
+      edOutrosSintomas.Visible := false;
+    end;
+
+  if cbQuem.Text = 'Outros' then
+    begin
+      lbOutrosQuem.Visible := true;
+      edOutrosQuem.Visible := true;
+    end
+  else
+    begin
+      lbOutrosQuem.Visible := false;
+      edOutrosQuem.Visible := false;
+    end;
+
+  if cbQual.Text = 'Outros' then
+    begin
+      lbOutrosQual.Visible := true;
+      edOutrosQual.Visible := true;
+    end
+  else
+    begin
+      lbOutrosQual.Visible := false;
+      edOutrosQual.Visible := false;
+    end;
+
+  if cbOnde.Text = 'Outros' then
+    begin
+      lbOutrosOnde.Visible := true;
+      edOutrosOnde.Visible := true;
+    end
+  else
+    begin
+      lbOutrosOnde.Visible := false;
+      edOutrosOnde.Visible := false;
+    end;
+
+  btLocMunicipio.Enabled := (btLocProvincia.Text<>'')and(btLocProvincia.Text<>'0');
+end;
+
+procedure TfrmCadCaracterizacao.FormCreate(Sender: TObject);
+begin
+  inherited;
+  DMGERAL.TB_CARACTERIZACAO.DataSource := dsGrid;
+  sPSQL := qyPacienteExistente.SQL.Text;
+end;
+
+procedure TfrmCadCaracterizacao.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  inherited;
+  qyCaracterizacao.Close;
+  framPaciente1.FechaConsultas;
+end;
+
+procedure TfrmCadCaracterizacao.tabListaShow(Sender: TObject);
+var chave: integer;
+begin
+  inherited;    
+  if not (DMGERAL.TB_CARACTERIZACAO.State in [dsEdit, dsInsert]) then
+    begin
+      chave := DMGERAL.TB_CARACTERIZACAOCD_CARACTERIZACAO.AsInteger;
+      DMGERAL.TB_CARACTERIZACAO.Close;
+      DMGERAL.TB_CARACTERIZACAO.Open;
+      DMGERAL.TB_CARACTERIZACAO.Locate('CD_CARACTERIZACAO', chave, []);
+    end;
+end;
+
+procedure TfrmCadCaracterizacao.btAnteriorClick(Sender: TObject);
+begin
+  inherited;
+  dsGrid.DataSet.Prior;
+end;
+
+procedure TfrmCadCaracterizacao.btProximoClick(Sender: TObject);
+begin
+  inherited;
+  dsGrid.DataSet.Next;
+end;
+
+procedure TfrmCadCaracterizacao.AbreConsultas;
+begin
+  DMGERAL.TB_PACIENTE.DataSource := dsControle;
+  DMGERAL.TB_PACIENTE.Open;
+end;
+
+procedure TfrmCadCaracterizacao.btIncluirClick(Sender: TObject);
+begin
+  inherited;
+  if not (framPaciente1.dsPaciente.DataSet.State in [dsEdit, dsInsert]) then
+    begin
+      dm.Transacao(framPaciente1.dsPaciente.DataSet);
+      framPaciente1.dsPaciente.DataSet.Insert;
+      //DMGERAL.TB_PACIENTEFL_RESULTADO.AsInteger := 0;
+    end;
+end;
+
+procedure TfrmCadCaracterizacao.btCancelarClick(Sender: TObject);
+begin
+  if (framPaciente1.dsPaciente.DataSet.State in [dsEdit, dsInsert]) then
+    begin
+      dm.Transacao(framPaciente1.dsPaciente.DataSet);
+      framPaciente1.dsPaciente.DataSet.Cancel;
+    end;
+  inherited;
+end;
+
+procedure TfrmCadCaracterizacao.bteditarClick(Sender: TObject);
+begin
+  inherited;
+  if not (framPaciente1.dsPaciente.DataSet.State in [dsEdit, dsInsert]) then
+    begin
+      dm.Transacao(framPaciente1.dsPaciente.DataSet);
+      framPaciente1.dsPaciente.DataSet.Edit;
+    end;
+end;
+
+procedure TfrmCadCaracterizacao.framPaciente1dxDBEdit2Exit(
+  Sender: TObject);
+begin
+  inherited;
+  if DMGERAL.TB_CARACTERIZACAO.State in [dsEdit, dsInsert] then
+  begin
+    ConsultaPaciente;
+  end;
+end;
+
+procedure TfrmCadCaracterizacao.framPaciente1DBDateEdit3Exit(
+  Sender: TObject);
+begin
+  inherited;
+  if DMGERAL.TB_CARACTERIZACAO.State in [dsEdit, dsInsert] then
+  begin
+    framPaciente1.DBDateEdit3Exit(Sender);
+    ConsultaPaciente;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.framPaciente1dxDBEdit5Exit(
+  Sender: TObject);
+begin
+  inherited;
+  if DMGERAL.TB_CARACTERIZACAO.State in [dsEdit, dsInsert] then
+  begin
+    ConsultaPaciente;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.qyPacienteExistenteAfterOpen(
+  DataSet: TDataSet);
+begin
+  inherited;
+  if not qyPacienteExistente.Eof then
+    begin
+      frmPacienteExistente := TfrmPacienteExistente.Create(application);
+      frmPacienteExistente.DBGrid1.DataSource := dsPacienteExistente;
+      if frmPacienteExistente.ShowModal=mrok then
+        begin
+          DMGERAL.TB_CARACTERIZACAOCD_PACIENTE.AsInteger :=
+            qyPacienteExistente.FieldByname('cd_paciente').AsInteger;
+          DMGERAL.TB_PACIENTE.Cancel;
+          DMGERAL.TB_PACIENTE.Close;
+          DMGERAL.TB_PACIENTE.Open;
+          DMGERAL.TB_PACIENTE.Edit;
+          strConsulta := '';
+        end;
+      qyPacienteExistente.Close;
+      frmPacienteExistente.Free;
+    end;
+
+end;
+
+procedure TfrmCadCaracterizacao.qyCaracterizacaoCalcFields(
+  DataSet: TDataSet);
+begin
+  inherited;
+  case qyCaracterizacaoFL_SEXO.AsInteger of
+    1:qyCaracterizacaoSEXO.AsString := 'M';
+    2:qyCaracterizacaoSEXO.AsString := 'F';
+  end;
+
+  case qyCaracterizacaoFL_TESTE_HOJE.AsInteger of
+    1:qyCaracterizacaoTESTE_HOJE.AsString := 'NEGATIVO';
+    2:qyCaracterizacaoTESTE_HOJE.AsString := 'POSITIVO';
+    3:qyCaracterizacaoTESTE_HOJE.AsString := 'INDETERMINADO';
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.framPaciente2dxDBEdit16Exit(
+  Sender: TObject);
+begin
+  inherited;
+  if (DMGERAL.TB_CARACTERIZACAO.State in [dsEdit, dsInsert]) then
+  begin
+    try
+      qyPacienteExistente.Close;
+      qyPacienteExistente.SQL.Text := sPSQL;
+      if (DMGERAL.TB_PACIENTENR_PROCESSO.AsInteger <> null) then
+      begin
+         qyPacienteExistente.SQL.Add('WHERE NR_PROCESSO =:processo');
+         qyPacienteExistente.ParamByName('processo').AsInteger :=
+            DMGERAL.TB_PACIENTENR_PROCESSO.AsInteger;
+
+      end;
+      qyPacienteExistente.Open;
+      PacienteExistente;
+    except
+      qyPacienteExistente.close;
+    end;
+  end;
+
+end;
+
+procedure TfrmCadCaracterizacao.btPesquisarClick(Sender: TObject);
+begin
+  inherited;
+  frmLocCaracterizacao := TfrmLocCaracterizacao.Create(self);
+  frmLocCaracterizacao.ShowModal;
+  frmLocCaracterizacao.Free;
+  pgGeral.ActivePage := tabLista;
+end;
+
+end.

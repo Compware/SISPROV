@@ -1,0 +1,291 @@
+unit uFrmLocAgendamento;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, dxEdLib, dxExEdtr, dxCntner, dxEditor, StdCtrls, Buttons,
+  ExtCtrls;
+
+type
+  TfrmLocAgendamento = class(TForm)
+    Panel2: TPanel;
+    Panel1: TPanel;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    GroupBox3: TGroupBox;
+    Label5: TLabel;
+    Label8: TLabel;
+    dtde: TdxDateEdit;
+    dtate: TdxDateEdit;
+    GroupBox1: TGroupBox;
+    Label3: TLabel;
+    Label4: TLabel;
+    btLocMedico: TdxButtonEdit;
+    edMedico: TdxEdit;
+    btLocUtente: TdxButtonEdit;
+    edUtente: TdxEdit;
+    Label1: TLabel;
+    edprocesso: TdxEdit;
+    cbatendimento: TCheckBox;
+    ckConfirmado: TCheckBox;
+    ckRemarcado: TCheckBox;
+    ckRealizado: TCheckBox;
+    ckTransferido: TCheckBox;
+    ckNaoConfirmado: TCheckBox;
+    ednrproccriancaexp: TdxEdit;
+    Label2: TLabel;
+    procedure btLocMedicoButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure btLocUtenteButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure btLocMedicoChange(Sender: TObject);
+    procedure btLocUtenteChange(Sender: TObject);
+    procedure btLocMedicoExit(Sender: TObject);
+    procedure btLocUtenteExit(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLocAgendamento: TfrmLocAgendamento;
+
+implementation
+
+Uses UCadAgenda, UgeralSQL, UfrmLocalizar;
+
+{$R *.dfm}
+
+procedure TfrmLocAgendamento.btLocMedicoButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Médico';
+  frmLocalizar.qyDados := SelectDadosMedico;
+
+  try
+    frmLocalizar.Where := false;
+    SetLength(VCampo,3);
+    frmLocalizar.KeyField := 'cd_medico';
+    VCampo[0].Titulo  := 'Cód.';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'Nome';
+    VCampo[1].Width := 25;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+    VCampo[2].Visivel := false;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    btLocMedico.Text := frmLocalizar.qyDados.FieldByname('cd_medico').AsString;
+    edMedico.Text := frmLocalizar.qyDados.FieldByname('nm_medico').AsString;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+
+end;
+
+procedure TfrmLocAgendamento.btLocUtenteButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Utente';
+  frmLocalizar.qyDados := SelectDadosPaciente;
+
+  try
+    frmLocalizar.Where := false;
+    SetLength(VCampo,5);
+    frmLocalizar.KeyField := 'cd_paciente';
+    VCampo[0].Titulo  := 'Cód.';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'Nome Utente';
+    VCampo[1].Width := 25;
+    VCampo[2].Titulo  := 'Nome Mae';
+    VCampo[2].Width := 25;
+    VCampo[3].Titulo  := 'Data Nasc.';
+    VCampo[3].Width := 25;
+    VCampo[4].Titulo  := 'Nr. Processo';
+    VCampo[4].Width := 10;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+    VCampo[2].Visivel := True;
+    VCampo[3].Visivel := True;
+    VCampo[4].Visivel := True;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    btLocUtente.Text := frmLocalizar.qyDados.FieldByname('cd_paciente').AsString;
+    edUtente.Text := frmLocalizar.qyDados.FieldByname('nm_paciente').AsString;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+
+end;
+
+procedure TfrmLocAgendamento.BitBtn1Click(Sender: TObject);
+var
+  sWHERE :string;
+begin
+  frmCadAgenda.qyAgenda.Close;
+  frmCadAgenda.qyAgenda.SQL.Text := strSQL;
+
+  sWHERE := 'AND ';
+
+  If btLocMedico.Text <> '' then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' AGENDA.CD_MEDICO = ''' +
+                            btLocMedico.Text + '''');
+    sWHERE := 'AND';
+  end;
+
+  If btLocUtente.Text <> '' then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' PACIENTE.CD_PACIENTE = ''' +
+                            btLocUtente.Text + '''');
+    sWHERE := 'AND';
+  end;
+
+  If edprocesso.Text <> '' then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' PACIENTE.NR_PROCESSO = ''' +
+                            edprocesso.Text + '''');
+    sWHERE := 'AND';
+  end;
+  
+  If ednrproccriancaexp.Text <> '' then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' PACIENTE.NR_PROCESSO_CRIANCA_EXP like('''+
+                            UpperCase(ednrproccriancaexp.Text) + '%'')');
+    sWHERE := 'AND';
+  end;
+
+  If ckNaoConfirmado.Checked then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' ((AGENDA.FL_CONFIRMADO <> 1)');
+    frmCadAgenda.qyAgenda.SQL.Add('OR (AGENDA.FL_CONFIRMADO IS NULL))');
+    sWHERE := 'AND';
+  end;
+
+  If ckConfirmado.Checked then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' AGENDA.FL_CONFIRMADO = 1');
+    sWHERE := 'AND';
+  end;
+
+  If ckRemarcado.Checked then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' AGENDA.FL_REMARCADO = 1');
+    sWHERE := 'AND';
+  end;
+
+  If ckRealizado.Checked then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' AGENDA.FL_REALIZADO = 1');
+    sWHERE := 'AND';
+  end;
+
+  If ckTransferido.Checked then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' AGENDA.FL_TRANSFERIDO = 1');
+    sWHERE := 'AND';
+  end;
+
+  if (dtDe.Text <> '  /  /    ') and (dtAte.Text <> '  /  /    ') then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE + ' AGENDA.DT_AGENDA between :de and :ate');
+    frmCadAgenda.qyAgenda.ParamByName('de').AsDateTime := dtde.Date;
+    frmCadAgenda.qyAgenda.ParamByName('ate').AsDateTime := dtate.Date;
+    sWHERE := 'AND';
+  end;
+
+  if cbatendimento.Checked then
+  begin
+    frmCadAgenda.qyAgenda.SQL.Add(sWHERE +
+    ' AGENDA.DT_AGENDA in (select MAX(DT_AGENDA) from AGENDA A, PACIENTE P where'+
+    ' A.CD_PACIENTE = P.CD_PACIENTE AND P.NR_PROCESSO = PACIENTE.NR_PROCESSO)');
+    sWHERE := 'AND';
+  end;
+
+  frmCadAgenda.qyAgenda.Open;
+end;
+
+procedure TfrmLocAgendamento.btLocMedicoChange(Sender: TObject);
+begin
+  if btLocMedico.Text = '' then
+    edMedico.Clear
+  else if btLocMedico.Modified then
+  begin
+    try
+      edMedico.Text := PegaValor('NM_MEDICO','MEDICO',['CD_MEDICO'],
+        [btLocMedico.Text],nil);
+    except
+      begin
+        edMedico.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmLocAgendamento.btLocUtenteChange(Sender: TObject);
+begin
+  if btLocUtente.Text = '' then
+    edUtente.Clear
+  else if btLocUtente.Modified then
+  begin
+    try
+      edUtente.Text := PegaValor('NM_PACIENTE','PACIENTE',['CD_PACIENTE'],
+        [btLocUtente.Text],nil);
+    except
+      begin
+        edUtente.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmLocAgendamento.btLocMedicoExit(Sender: TObject);
+begin
+  if btLocMedico.Text <> '' then
+  begin
+    try
+      edMedico.Text := PegaValor('NM_MEDICO','MEDICO',['CD_MEDICO'],
+        [btLocMedico.Text],nil);
+    except
+      begin
+        MessageDlg('Medico não encontrado!',mtWarning,[mbOK],0);
+        btLocMedico.Clear;
+        edMedico.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmLocAgendamento.btLocUtenteExit(Sender: TObject);
+begin
+  if btLocUtente.Text <> '' then
+  begin
+    try
+      edUtente.Text := PegaValor('NM_PACIENTE','PACIENTE',['CD_PACIENTE'],
+        [btLocUtente.Text],nil);
+    except
+      begin
+        MessageDlg('Utente não encontrado!',mtWarning,[mbOK],0);
+        btLocUtente.Clear;
+        edUtente.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+end.

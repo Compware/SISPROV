@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="programa.xslt"?>
+<Programa>
+  <Parametros>
+    <MUNICIPIO>Alto Zambeze</MUNICIPIO>
+    <PROVINCIA>Moxico</PROVINCIA>
+    <UNIDADE>HOSPITAL MUNICIPAL  ALTO ZAMBEZE</UNIDADE>
+    <PERIODO>10/2013</PERIODO>
+    <PERIODO2></PERIODO2>
+    <USU></USU>
+    <VERSAO></VERSAO>
+  </Parametros>
+  <Dados>
+<sg1_L1C1></sg1_L1C1>
+<sg1_L1C2>Aconselhados</sg1_L1C2>
+<sg1_L1C3>Positivos</sg1_L1C3>
+<sg1_L1C4>Negativos</sg1_L1C4>
+<sg1_L1C5>Indeterminados</sg1_L1C5>
+<sg1_L1C6></sg1_L1C6>
+<sg1_L2C1></sg1_L2C1>
+<sg1_L2C2>189</sg1_L2C2>
+<sg1_L2C3>0</sg1_L2C3>
+<sg1_L2C4>189</sg1_L2C4>
+<sg1_L2C5>0</sg1_L2C5>
+<sg1_L2C6></sg1_L2C6>
+<sg1_L3C1></sg1_L3C1>
+<sg1_L3C2></sg1_L3C2>
+<sg1_L3C3></sg1_L3C3>
+<sg1_L3C4></sg1_L3C4>
+<sg1_L3C5></sg1_L3C5>
+<sg1_L3C6></sg1_L3C6>
+<sg1_L4C1>Feminino</sg1_L4C1>
+<sg1_L4C2>25</sg1_L4C2>
+<sg1_L4C3>0</sg1_L4C3>
+<sg1_L4C4>25</sg1_L4C4>
+<sg1_L4C5>0</sg1_L4C5>
+<sg1_L4C6></sg1_L4C6>
+<sg1_L5C1>Masculino</sg1_L5C1>
+<sg1_L5C2>50</sg1_L5C2>
+<sg1_L5C3>0</sg1_L5C3>
+<sg1_L5C4>50</sg1_L5C4>
+<sg1_L5C5>0</sg1_L5C5>
+<sg1_L5C6></sg1_L5C6>
+<sg1_L6C1>Total</sg1_L6C1>
+<sg1_L6C2>75</sg1_L6C2>
+<sg1_L6C3>0</sg1_L6C3>
+<sg1_L6C4>75</sg1_L6C4>
+<sg1_L6C5>0</sg1_L6C5>
+<sg1_L6C6>0</sg1_L6C6>
+<sg1_L7C1></sg1_L7C1>
+<sg1_L7C2></sg1_L7C2>
+<sg1_L7C3></sg1_L7C3>
+<sg1_L7C4></sg1_L7C4>
+<sg1_L7C5></sg1_L7C5>
+<sg1_L7C6></sg1_L7C6>
+<sg1_L8C1>Feminino</sg1_L8C1>
+<sg1_L8C2>18</sg1_L8C2>
+<sg1_L8C3>0</sg1_L8C3>
+<sg1_L8C4>18</sg1_L8C4>
+<sg1_L8C5>0</sg1_L8C5>
+<sg1_L8C6></sg1_L8C6>
+<sg1_L9C1>Masculino</sg1_L9C1>
+<sg1_L9C2>15</sg1_L9C2>
+<sg1_L9C3>0</sg1_L9C3>
+<sg1_L9C4>15</sg1_L9C4>
+<sg1_L9C5>0</sg1_L9C5>
+<sg1_L9C6></sg1_L9C6>
+<sg1_L10C1>Total</sg1_L10C1>
+<sg1_L10C2>33</sg1_L10C2>
+<sg1_L10C3>0</sg1_L10C3>
+<sg1_L10C4>33</sg1_L10C4>
+<sg1_L10C5>0</sg1_L10C5>
+<sg1_L10C6>0</sg1_L10C6>
+<sg1_L11C1></sg1_L11C1>
+<sg1_L11C2>297</sg1_L11C2>
+<sg1_L11C3>0</sg1_L11C3>
+<sg1_L11C4>297</sg1_L11C4>
+<sg1_L11C5>0</sg1_L11C5>
+<sg1_L11C6>0</sg1_L11C6>
+<sg1_L12C1></sg1_L12C1>
+<sg1_L12C2></sg1_L12C2>
+<sg1_L12C3></sg1_L12C3>
+<sg1_L12C4></sg1_L12C4>
+<sg1_L12C5></sg1_L12C5>
+<sg1_L12C6></sg1_L12C6>
+<sg2_L1C1></sg2_L1C1>
+<sg2_L1C2>Feminino</sg2_L1C2>
+<sg2_L1C3>Masculino</sg2_L1C3>
+<sg2_L1C4>Total</sg2_L1C4>
+<sg2_L1C5></sg2_L1C5>
+<sg2_L2C1>Menor de 18 meses (critério clínico)</sg2_L2C1>
+<sg2_L2C2>0</sg2_L2C2>
+<sg2_L2C3>0</sg2_L2C3>
+<sg2_L2C4>0</sg2_L2C4>
+<sg2_L2C5></sg2_L2C5>
+<sg2_L3C1>18 meses a 4 anos</sg2_L3C1>
+<sg2_L3C2>0</sg2_L3C2>
+<sg2_L3C3>0</sg2_L3C3>
+<sg2_L3C4>0</sg2_L3C4>
+<sg2_L3C5></sg2_L3C5>
+<sg2_L4C1>5 a 14 anos</sg2_L4C1>
+<sg2_L4C2>0</sg2_L4C2>
+<sg2_L4C3>0</sg2_L4C3>
+<sg2_L4C4>0</sg2_L4C4>
+<sg2_L4C5></sg2_L4C5>
+<sg2_L5C1>15 a 19 anos</sg2_L5C1>
+<sg2_L5C2>0</sg2_L5C2>
+<sg2_L5C3>0</sg2_L5C3>
+<sg2_L5C4>0</sg2_L5C4>
+<sg2_L5C5></sg2_L5C5>
+<sg2_L6C1>20 a 29 anos</sg2_L6C1>
+<sg2_L6C2>0</sg2_L6C2>
+<sg2_L6C3>0</sg2_L6C3>
+<sg2_L6C4>0</sg2_L6C4>
+<sg2_L6C5></sg2_L6C5>
+<sg2_L7C1>30 a 39 anos</sg2_L7C1>
+<sg2_L7C2>0</sg2_L7C2>
+<sg2_L7C3>0</sg2_L7C3>
+<sg2_L7C4>0</sg2_L7C4>
+<sg2_L7C5></sg2_L7C5>
+<sg2_L8C1>40 a 49</sg2_L8C1>
+<sg2_L8C2>0</sg2_L8C2>
+<sg2_L8C3>0</sg2_L8C3>
+<sg2_L8C4>0</sg2_L8C4>
+<sg2_L8C5></sg2_L8C5>
+<sg2_L9C1>50 a 59 anos</sg2_L9C1>
+<sg2_L9C2>0</sg2_L9C2>
+<sg2_L9C3>0</sg2_L9C3>
+<sg2_L9C4>0</sg2_L9C4>
+<sg2_L9C5></sg2_L9C5>
+<sg2_L10C1>60 e mais</sg2_L10C1>
+<sg2_L10C2>0</sg2_L10C2>
+<sg2_L10C3>0</sg2_L10C3>
+<sg2_L10C4>0</sg2_L10C4>
+<sg2_L10C5></sg2_L10C5>
+<sg2_L11C1></sg2_L11C1>
+<sg2_L11C2>0</sg2_L11C2>
+<sg2_L11C3>0</sg2_L11C3>
+<sg2_L11C4>0</sg2_L11C4>
+<sg2_L11C5>0</sg2_L11C5>
+<sg2_L12C1></sg2_L12C1>
+<sg2_L12C2></sg2_L12C2>
+<sg2_L12C3></sg2_L12C3>
+<sg2_L12C4></sg2_L12C4>
+<sg2_L12C5></sg2_L12C5>
+<sg3_L1C1></sg3_L1C1>
+<sg3_L1C2></sg3_L1C2>
+<sg3_L1C3>0</sg3_L1C3>
+<sg3_L1C4>0</sg3_L1C4>
+<sg3_L1C5></sg3_L1C5>
+<sg3_L2C1>Menor de 15 anos</sg3_L2C1>
+<sg3_L2C2></sg3_L2C2>
+<sg3_L2C3>0</sg3_L2C3>
+<sg3_L2C4>0</sg3_L2C4>
+<sg3_L2C5></sg3_L2C5>
+<sg3_L3C1>15 anos ou mais</sg3_L3C1>
+<sg3_L3C2></sg3_L3C2>
+<sg3_L3C3>0</sg3_L3C3>
+<sg3_L3C4>0</sg3_L3C4>
+<sg3_L3C5></sg3_L3C5>
+<sg3_L4C1>Total de partos ocorridos neste periodo</sg3_L4C1>
+<sg3_L4C2></sg3_L4C2>
+<sg3_L4C3>0</sg3_L4C3>
+<sg3_L4C4>0</sg3_L4C4>
+<sg3_L4C5></sg3_L4C5>
+<sg3_L5C1>Local</sg3_L5C1>
+<sg3_L5C2>a. Nesta Instituição</sg3_L5C2>
+<sg3_L5C3>0</sg3_L5C3>
+<sg3_L5C4>0</sg3_L5C4>
+<sg3_L5C5></sg3_L5C5>
+<sg3_L6C1></sg3_L6C1>
+<sg3_L6C2>b. Outras que não tem PTV</sg3_L6C2>
+<sg3_L6C3>0</sg3_L6C3>
+<sg3_L6C4>0</sg3_L6C4>
+<sg3_L6C5></sg3_L6C5>
+<sg3_L7C1></sg3_L7C1>
+<sg3_L7C2>c. Domiciliares</sg3_L7C2>
+<sg3_L7C3>0</sg3_L7C3>
+<sg3_L7C4>0</sg3_L7C4>
+<sg3_L7C5></sg3_L7C5>
+<sg3_L8C1>Tipo</sg3_L8C1>
+<sg3_L8C2>a. Normal ou trans-pelvico</sg3_L8C2>
+<sg3_L8C3>0</sg3_L8C3>
+<sg3_L8C4>0</sg3_L8C4>
+<sg3_L8C5></sg3_L8C5>
+<sg3_L9C1></sg3_L9C1>
+<sg3_L9C2>b. Cesariana</sg3_L9C2>
+<sg3_L9C3>0</sg3_L9C3>
+<sg3_L9C4>0</sg3_L9C4>
+<sg3_L9C5></sg3_L9C5>
+<sg3_L10C1>Terapia recebida</sg3_L10C1>
+<sg3_L10C2>a. Algum tipo de terapia</sg3_L10C2>
+<sg3_L10C3>0</sg3_L10C3>
+<sg3_L10C4>0</sg3_L10C4>
+<sg3_L10C5></sg3_L10C5>
+<sg3_L11C1></sg3_L11C1>
+<sg3_L11C2>b. Nenhum tipo de terapia</sg3_L11C2>
+<sg3_L11C3>0</sg3_L11C3>
+<sg3_L11C4>0</sg3_L11C4>
+<sg3_L11C5></sg3_L11C5>
+<sg3_L12C1></sg3_L12C1>
+<sg3_L12C2></sg3_L12C2>
+<sg3_L12C3></sg3_L12C3>
+<sg3_L12C4></sg3_L12C4>
+<sg3_L12C5></sg3_L12C5>
+<sg4_L1C1>0</sg4_L1C1>
+<sg4_L1C2></sg4_L1C2>
+<sg4_L2C1>0</sg4_L2C1>
+<sg4_L2C2></sg4_L2C2>
+<sg4_L3C1>0</sg4_L3C1>
+<sg4_L3C2></sg4_L3C2>
+<sg4_L4C1></sg4_L4C1>
+<sg4_L4C2></sg4_L4C2>
+<sg51_L1C1>0</sg51_L1C1>
+<sg51_L1C2></sg51_L1C2>
+<sg51_L2C1>0</sg51_L2C1>
+<sg51_L2C2></sg51_L2C2>
+<sg51_L3C1>0</sg51_L3C1>
+<sg51_L3C2></sg51_L3C2>
+<sg51_L4C1></sg51_L4C1>
+<sg51_L4C2></sg51_L4C2>
+<sg52_L1C1></sg52_L1C1>
+<sg52_L1C2>Feminino</sg52_L1C2>
+<sg52_L1C3>Masculino</sg52_L1C3>
+<sg52_L1C4>Total</sg52_L1C4>
+<sg52_L1C5></sg52_L1C5>
+<sg52_L2C1>Menor de 18 meses (critério clínico)</sg52_L2C1>
+<sg52_L2C2>0</sg52_L2C2>
+<sg52_L2C3>0</sg52_L2C3>
+<sg52_L2C4>0</sg52_L2C4>
+<sg52_L2C5></sg52_L2C5>
+<sg52_L3C1>18 meses a 4 anos</sg52_L3C1>
+<sg52_L3C2>0</sg52_L3C2>
+<sg52_L3C3>0</sg52_L3C3>
+<sg52_L3C4>0</sg52_L3C4>
+<sg52_L3C5></sg52_L3C5>
+<sg52_L4C1>5 a 14 anos</sg52_L4C1>
+<sg52_L4C2>0</sg52_L4C2>
+<sg52_L4C3>0</sg52_L4C3>
+<sg52_L4C4>0</sg52_L4C4>
+<sg52_L4C5></sg52_L4C5>
+<sg52_L5C1>15 a 19 anos</sg52_L5C1>
+<sg52_L5C2>0</sg52_L5C2>
+<sg52_L5C3>0</sg52_L5C3>
+<sg52_L5C4>0</sg52_L5C4>
+<sg52_L5C5></sg52_L5C5>
+<sg52_L6C1>20 a 29 anos</sg52_L6C1>
+<sg52_L6C2>0</sg52_L6C2>
+<sg52_L6C3>0</sg52_L6C3>
+<sg52_L6C4>0</sg52_L6C4>
+<sg52_L6C5></sg52_L6C5>
+<sg52_L7C1>30 a 39 anos</sg52_L7C1>
+<sg52_L7C2>0</sg52_L7C2>
+<sg52_L7C3>0</sg52_L7C3>
+<sg52_L7C4>0</sg52_L7C4>
+<sg52_L7C5></sg52_L7C5>
+<sg52_L8C1>40 a 49</sg52_L8C1>
+<sg52_L8C2>0</sg52_L8C2>
+<sg52_L8C3>0</sg52_L8C3>
+<sg52_L8C4>0</sg52_L8C4>
+<sg52_L8C5></sg52_L8C5>
+<sg52_L9C1>50 a 59 anos</sg52_L9C1>
+<sg52_L9C2>0</sg52_L9C2>
+<sg52_L9C3>0</sg52_L9C3>
+<sg52_L9C4>0</sg52_L9C4>
+<sg52_L9C5></sg52_L9C5>
+<sg52_L10C1>60 e mais</sg52_L10C1>
+<sg52_L10C2>0</sg52_L10C2>
+<sg52_L10C3>0</sg52_L10C3>
+<sg52_L10C4>0</sg52_L10C4>
+<sg52_L10C5></sg52_L10C5>
+<sg52_L11C1></sg52_L11C1>
+<sg52_L11C2>0</sg52_L11C2>
+<sg52_L11C3>0</sg52_L11C3>
+<sg52_L11C4>0</sg52_L11C4>
+<sg52_L11C5>0</sg52_L11C5>
+<sg52_L12C1></sg52_L12C1>
+<sg52_L12C2></sg52_L12C2>
+<sg52_L12C3></sg52_L12C3>
+<sg52_L12C4></sg52_L12C4>
+<sg52_L12C5></sg52_L12C5>
+<sg53_L1C1>Esquema</sg53_L1C1>
+<sg53_L1C2>Nr. Pacientes</sg53_L1C2>
+<sg53_L1C3></sg53_L1C3>
+<sg53_L1C4>Esquema</sg53_L1C4>
+<sg53_L1C5>Nr. Pacientes</sg53_L1C5>
+<sg53_L1C6></sg53_L1C6>
+<sg53_L2C1>Esquemas de Adultos</sg53_L2C1>
+<sg53_L2C2>0</sg53_L2C2>
+<sg53_L2C3></sg53_L2C3>
+<sg53_L2C4></sg53_L2C4>
+<sg53_L2C5>0</sg53_L2C5>
+<sg53_L2C6></sg53_L2C6>
+<sg53_L3C1>AZT + 3TC + NVP</sg53_L3C1>
+<sg53_L3C2>0</sg53_L3C2>
+<sg53_L3C3>f.</sg53_L3C3>
+<sg53_L3C4></sg53_L3C4>
+<sg53_L3C5>0</sg53_L3C5>
+<sg53_L3C6></sg53_L3C6>
+<sg53_L4C1>D4T + 3TC + NVP</sg53_L4C1>
+<sg53_L4C2>0</sg53_L4C2>
+<sg53_L4C3>g.</sg53_L4C3>
+<sg53_L4C4></sg53_L4C4>
+<sg53_L4C5>0</sg53_L4C5>
+<sg53_L4C6></sg53_L4C6>
+<sg53_L5C1>AZT + 3TC + EFV</sg53_L5C1>
+<sg53_L5C2>0</sg53_L5C2>
+<sg53_L5C3>h.</sg53_L5C3>
+<sg53_L5C4></sg53_L5C4>
+<sg53_L5C5>0</sg53_L5C5>
+<sg53_L5C6></sg53_L5C6>
+<sg53_L6C1>D4T + 3TC + EFV</sg53_L6C1>
+<sg53_L6C2>0</sg53_L6C2>
+<sg53_L6C3>i.</sg53_L6C3>
+<sg53_L6C4></sg53_L6C4>
+<sg53_L6C5>0</sg53_L6C5>
+<sg53_L6C6></sg53_L6C6>
+<sg53_L7C1>AZT + 3TC + IDV</sg53_L7C1>
+<sg53_L7C2>0</sg53_L7C2>
+<sg53_L7C3>j.</sg53_L7C3>
+<sg53_L7C4></sg53_L7C4>
+<sg53_L7C5>0</sg53_L7C5>
+<sg53_L7C6></sg53_L7C6>
+<sg53_L8C1>Esquemas Pediátricos</sg53_L8C1>
+<sg53_L8C2>0</sg53_L8C2>
+<sg53_L8C3></sg53_L8C3>
+<sg53_L8C4></sg53_L8C4>
+<sg53_L8C5>0</sg53_L8C5>
+<sg53_L8C6></sg53_L8C6>
+<sg53_L9C1></sg53_L9C1>
+<sg53_L9C2>0</sg53_L9C2>
+<sg53_L9C3>d.</sg53_L9C3>
+<sg53_L9C4></sg53_L9C4>
+<sg53_L9C5>0</sg53_L9C5>
+<sg53_L9C6></sg53_L9C6>
+<sg53_L10C1></sg53_L10C1>
+<sg53_L10C2>0</sg53_L10C2>
+<sg53_L10C3>e.</sg53_L10C3>
+<sg53_L10C4></sg53_L10C4>
+<sg53_L10C5>0</sg53_L10C5>
+<sg53_L10C6></sg53_L10C6>
+<sg53_L11C1></sg53_L11C1>
+<sg53_L11C2>0</sg53_L11C2>
+<sg53_L11C3>f.</sg53_L11C3>
+<sg53_L11C4></sg53_L11C4>
+<sg53_L11C5>0</sg53_L11C5>
+<sg53_L11C6></sg53_L11C6>
+<sg53_L12C1></sg53_L12C1>
+<sg53_L12C2></sg53_L12C2>
+<sg53_L12C3></sg53_L12C3>
+<sg53_L12C4></sg53_L12C4>
+<sg53_L12C5></sg53_L12C5>
+<sg53_L12C6></sg53_L12C6>
+<sg54_L1C1>Crianças</sg54_L1C1>
+<sg54_L1C2>0</sg54_L1C2>
+<sg54_L1C3>0</sg54_L1C3>
+<sg54_L1C4>0</sg54_L1C4>
+<sg54_L1C5></sg54_L1C5>
+<sg54_L2C1>Adultos</sg54_L2C1>
+<sg54_L2C2>0</sg54_L2C2>
+<sg54_L2C3>0</sg54_L2C3>
+<sg54_L2C4>0</sg54_L2C4>
+<sg54_L2C5></sg54_L2C5>
+<sg54_L3C1>Crianças</sg54_L3C1>
+<sg54_L3C2>0</sg54_L3C2>
+<sg54_L3C3>0</sg54_L3C3>
+<sg54_L3C4>0</sg54_L3C4>
+<sg54_L3C5></sg54_L3C5>
+<sg54_L4C1>Adultos</sg54_L4C1>
+<sg54_L4C2>0</sg54_L4C2>
+<sg54_L4C3>0</sg54_L4C3>
+<sg54_L4C4>0</sg54_L4C4>
+<sg54_L4C5></sg54_L4C5>
+<sg54_L5C1></sg54_L5C1>
+<sg54_L5C2>0</sg54_L5C2>
+<sg54_L5C3>0</sg54_L5C3>
+<sg54_L5C4>0</sg54_L5C4>
+<sg54_L5C5>0</sg54_L5C5>
+<sg54_L6C1></sg54_L6C1>
+<sg54_L6C2></sg54_L6C2>
+<sg54_L6C3></sg54_L6C3>
+<sg54_L6C4></sg54_L6C4>
+<sg54_L6C5></sg54_L6C5>
+<sg6_L1C1>Crianças</sg6_L1C1>
+<sg6_L1C2>0</sg6_L1C2>
+<sg6_L1C3>0</sg6_L1C3>
+<sg6_L1C4></sg6_L1C4>
+<sg6_L1C5></sg6_L1C5>
+<sg6_L2C1>Adultos</sg6_L2C1>
+<sg6_L2C2>0</sg6_L2C2>
+<sg6_L2C3>0</sg6_L2C3>
+<sg6_L2C4></sg6_L2C4>
+<sg6_L2C5></sg6_L2C5>
+<sg6_L3C1>Crianças</sg6_L3C1>
+<sg6_L3C2>0</sg6_L3C2>
+<sg6_L3C3>0</sg6_L3C3>
+<sg6_L3C4></sg6_L3C4>
+<sg6_L3C5></sg6_L3C5>
+<sg6_L4C1>Adultos</sg6_L4C1>
+<sg6_L4C2>0</sg6_L4C2>
+<sg6_L4C3>0</sg6_L4C3>
+<sg6_L4C4></sg6_L4C4>
+<sg6_L4C5></sg6_L4C5>
+<sg6_L5C1></sg6_L5C1>
+<sg6_L5C2>0</sg6_L5C2>
+<sg6_L5C3>0</sg6_L5C3>
+<sg6_L5C4>0</sg6_L5C4>
+<sg6_L5C5>0</sg6_L5C5>
+<sg6_L6C1></sg6_L6C1>
+<sg6_L6C2></sg6_L6C2>
+<sg6_L6C3></sg6_L6C3>
+<sg6_L6C4></sg6_L6C4>
+<sg6_L6C5></sg6_L6C5>
+  </Dados>
+ </Programa>

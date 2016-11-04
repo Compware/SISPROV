@@ -1,0 +1,658 @@
+ <html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<link rel=Stylesheet href="./css/stylesheet.css">
+	
+</head>
+
+<body>  
+<style>
+			button{
+			   cursor:pointer;
+			   border: 0px none;
+			   background-color: transparent;
+			   padding: 0px 0px 0px 0px;
+			}
+			button.img{
+				border: 0px none;
+			}
+	</style>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1257 style='border-collapse:
+ collapse;table-layout:fixed;width:946pt'>
+ <col class=xl66 width=31 style='mso-width-source:userset;mso-width-alt:1133;
+ width:23pt'>
+ <col class=xl65 width=86 style='mso-width-source:userset;mso-width-alt:3145;
+ width:65pt'>
+ <col class=xl65 width=108 style='mso-width-source:userset;mso-width-alt:3949;
+ width:81pt'>
+ <col class=xl65 width=302 style='mso-width-source:userset;mso-width-alt:11044;
+ width:227pt'>
+ <col class=xl65 width=24 span=2 style='mso-width-source:userset;mso-width-alt:
+ 877;width:18pt'>
+ <col class=xl65 width=36 style='mso-width-source:userset;mso-width-alt:1316;
+ width:27pt'>
+ <col class=xl65 width=34 span=2 style='mso-width-source:userset;mso-width-alt:
+ 1243;width:26pt'>
+ <col class=xl65 width=31 style='mso-width-source:userset;mso-width-alt:1133;
+ width:23pt'>
+ <col class=xl65 width=158 style='mso-width-source:userset;mso-width-alt:5778;
+ width:119pt'>
+ <col class=xl65 width=96 style='mso-width-source:userset;mso-width-alt:3510;
+ width:72pt'>
+ <col class=xl65 width=23 style='mso-width-source:userset;mso-width-alt:841;
+ width:17pt'>
+ <col class=xl65 width=25 span=4 style='mso-width-source:userset;mso-width-alt:
+ 914;width:19pt'>
+ <col class=xl65 width=170 style='mso-width-source:userset;mso-width-alt:6217;
+ width:128pt'>
+ <tr class=xl67 height=22 style='mso-height-source:userset;height:16.5pt'>
+  <td colspan=4 height=22 class=xl68 width=551>Médico: <label id="lbmedico"></label></td>
+  
+  <td class=xl70 width=24 style='width:18pt'><input type="radio" name="rbtipo" id="rbtipoR" value="R" />&nbsp;</td>
+  <td class=xl68 colspan=2 width=70 style='mso-ignore:colspan;width:53pt'>Rotina</td>
+  <td class=xl70 width=34 style='width:26pt'><input type="radio" name="rbtipo" id="rbtipoP" value="P" />&nbsp;</td>
+  <td class=xl68 colspan=1 width=70 style='mso-ignore:colspan;width:53pt'>PA</td>
+  <td class=xl70 width=34 style='width:26pt'><input type="radio" name="rbtipo" id="rbtipoT" value="T" />&nbsp;</td>  
+  <td class=xl71 colspan=2 width=189 style='mso-ignore:colspan;width:142pt'>Triagem</td>
+  <td class=xl67 width=96 style='width:72pt'></td>
+  <td colspan=3 class=xl74 width="53" style="width:55pt">DATA <span
+  style='mso-spacerun:yes'> </span></td>  
+  <td colspan=3 class=xl74 width=220 style='width:166pt; border-right:.5pt solid black;'><label id="lbdtagenda"></label></td>
+ </tr>
+ <tr class=xl67 height=7 style='mso-height-source:userset;height:5.25pt'>
+  <td height=7 colspan=3 class=xl68 style='height:5.25pt;mso-ignore:colspan'></td>
+  <td class=xl69></td>
+  <td colspan=2 class=xl67 style='mso-ignore:colspan'></td>
+  <td colspan=3 class=xl68 style='mso-ignore:colspan'></td>
+  <td colspan=3 class=xl69 style='mso-ignore:colspan'></td>
+  <td colspan=3 class=xl72 style='mso-ignore:colspan'></td>
+  <td colspan=3 class=xl66 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+  <td colspan=7 height=23 class=xl74 style='border-right:.5pt solid black;
+  height:17.25pt'>IDENTIFICAÇÃO DO PACIENTE</td>
+  <td colspan=2 class=xl77 style='border-right:.5pt solid black;border-left:
+  none'>Tp de Consulta</td>
+  <td colspan=9 class=xl74 style='border-right:.5pt solid black;border-left:
+  none'>Informação sobre a consulta realizada</td>
+ </tr>
+ <tr class=xl79 height=45 style='mso-height-source:userset;height:33.75pt'>
+  <td rowspan=2 height=90 class=xl81 style='border-bottom:.5pt solid black;
+  height:67.5pt;border-top:none'>Nr.</td>
+  <td rowspan=2 class=xl81 style='border-bottom:.5pt solid black;border-top:
+  none'>Processo Nº</td>
+  <td rowspan=2 class=xl84 width=108 style='border-bottom:.5pt solid black;
+  border-top:none;width:81pt'>Província<br>
+    Municipio</td>
+  <td rowspan=2 class=xl81 style='border-bottom:.5pt solid black;border-top:
+  none'>Nome do Paciente</td>
+  <td rowspan=2 class=xl86 style='border-bottom:.5pt solid black;border-top:
+  none; writing-mode: tb-rl; filter: flipv fliph;'>SEXO</td>
+  <td rowspan=2 class=xl86 style='border-bottom:.5pt solid black;border-top:
+  none; writing-mode: tb-rl; filter: flipv fliph;'>IDADE</td>
+  <td rowspan=2 class=xl86 style='border-bottom:.5pt solid black;border-top:
+  none; writing-mode: tb-rl; filter: flipv fliph;'>PESO (KG)</td>
+  <td rowspan=2 class=xl86 style='border-bottom:.5pt solid black;border-top:
+  none; writing-mode: tb-rl; filter: flipv fliph;'>1ª VEZ</td>
+  <td rowspan=2 class=xl86 style='border-bottom:.5pt solid black;border-top:
+  none; writing-mode: tb-rl; filter: flipv fliph;'>RETORNO</td>
+  <td rowspan=2 class=xl88 width=31 style='border-bottom:.5pt solid black;
+  border-top:none; width:23pt; writing-mode: tb-rl; filter: flipv fliph;'>Estadio OMS</td>
+  <td colspan=3 class=xl90 style='border-right:.5pt solid black;border-left:
+  none'>Diagnóstico</td>
+  <td colspan=4 class=xl90 style='border-right:.5pt solid black;border-left:
+  none'>TARV</td>
+  <td class=xl83 width=170 style='border-top:none;border-left:none;width:128pt'>Tipo
+  Esquema <br>
+    usado (ARV)</td>
+ </tr>
+ <tr class=xl79 height=45 style='mso-height-source:userset;height:33.75pt'>
+  <td height=45 class=xl83 width=158 style='height:33.75pt;border-top:none;
+  border-left:none;width:119pt'>Diagnóstico realizado<br>
+    na consulta</td>
+  <td class=xl93 width=96 style='border-top:none;border-left:none;width:72pt'>Resultado
+  CD4 (nº de células)</td>
+  <td class=xl80 style='border-top:none;border-left:none'>TB</td>
+  <td class=xl80 style='border-top:none;border-left:none'>N</td>
+  <td class=xl80 style='border-top:none;border-left:none'>I</td>
+  <td class=xl80 style='border-top:none;border-left:none'>T</td>
+  <td class=xl80 style='border-top:none;border-left:none'>M</td>
+  <td class=xl80 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha1"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc1"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni1"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci1"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo1"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade1"></label></td>
+  
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso1" style="width:30" type="text" id="txpeso1"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta1" id="rbtpconsultaP1" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta1" id="rbtpconsultaR1" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS1" style="width:25" type="text" id="txoms1"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD1" style="width:110" type="text" readonly="true" id="edSG1" />
+	<button id="btCID1"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL1"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>
+	</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD41" style="width:80" type="text" id="txcd41"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB1" id="ckTB1" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN1" id="ckN1" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI1" id="ckI1" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT1" id="ckT1" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM1" id="ckM1" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema1" style="width:120" type="text" readonly="true" id="txesquema1"/>
+   <button id="btm1"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl1"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+   
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha2"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc2"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni2"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci2"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo2"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade2"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso2" style="width:30" type="text" id="txpeso2"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta2" id="rbtpconsultaP2" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta2" id="rbtpconsultaR2" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS2" style="width:25" type="text" id="txoms2"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD2" style="width:110" type="text" readonly="true" id="edSG2" />
+	<button id="btCID2"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL2"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD42" style="width:80" type="text" id="txcd42"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB2" id="ckTB2" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN2" id="ckN2" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI2" id="ckI2" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT2" id="ckT2" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM2" id="ckM2" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema2" style="width:120" type="text" readonly="true" id="txesquema2"/>
+   <button id="btm2"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl2"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha3"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc3"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni3"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci3"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo3"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade3"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso3" style="width:30" type="text" id="txpeso3"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta3" id="rbtpconsultaP3" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta3" id="rbtpconsultaR3" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS3" style="width:25" type="text" id="txoms3"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD3" style="width:110" type="text" readonly="true" id="edSG3" />
+	<button id="btCID3"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL3"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD43" style="width:80" type="text" id="txcd43"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB3" id="ckTB3" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN3" id="ckN3" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI3" id="ckI3" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT3" id="ckT3" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM3" id="ckM3" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema3" style="width:120" type="text" readonly="true" id="txesquema3"/>
+   <button id="btm3"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl3"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha4"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc4"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni4"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci4"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo4"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade4"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso4" style="width:30" type="text" id="txpeso4"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta4" id="rbtpconsultaP4" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta4" id="rbtpconsultaR4" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS4" style="width:25" type="text" id="txoms4"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD4" style="width:110" type="text" readonly="true" id="edSG4" />
+	<button id="btCID4"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL4"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD44" style="width:80" type="text" id="txcd44"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB4" id="ckTB4" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN4" id="ckN4" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI4" id="ckI4" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT4" id="ckT4" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM4" id="ckM4" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema4" style="width:120" type="text" readonly="true" id="txesquema4"/>
+   <button id="btm4"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl4"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha5"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc5"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni5"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci5"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo5"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade5"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso5" style="width:30" type="text" id="txpeso5"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta5" id="rbtpconsultaP5" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta5" id="rbtpconsultaR5" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS5" style="width:25" type="text" id="txoms5"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD5" style="width:110" type="text" readonly="true" id="edSG5" />
+	<button id="btCID5"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL5"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD45" style="width:80" type="text" id="txcd45"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB5" id="ckTB5" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN5" id="ckN5" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI5" id="ckI5" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT5" id="ckT5" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM5" id="ckM5" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema5" style="width:120" type="text" readonly="true" id="txesquema5"/>
+   <button id="btm5"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl5"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha6"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc6"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni6"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci6"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo6"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade6"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso6" style="width:30" type="text" id="txpeso6"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta6" id="rbtpconsultaP6" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta6" id="rbtpconsultaR6" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS6" style="width:25" type="text" id="txoms6"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD6" style="width:110" type="text" readonly="true" id="edSG6" />
+	<button id="btCID6"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL6"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD46" style="width:80" type="text" id="txcd46"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB6" id="ckTB6" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN6" id="ckN6" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI6" id="ckI6" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT6" id="ckT6" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM6" id="ckM6" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema6" style="width:120" type="text" readonly="true" id="txesquema6"/>
+   <button id="btm6"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl6"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha7"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc7"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni7"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci7"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo7"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade7"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso7" style="width:30" type="text" id="txpeso7"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta7" id="rbtpconsultaP7" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta7" id="rbtpconsultaR7" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS7" style="width:25" type="text" id="txoms7"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD7" style="width:110" type="text" readonly="true" id="edSG7" />
+	<button id="btCID7"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL7"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD47" style="width:80" type="text" id="txcd47"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB7" id="ckTB7" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN7" id="ckN7" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI7" id="ckI7" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT7" id="ckT7" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM7" id="ckM7" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema7" style="width:120" type="text" readonly="true" id="txesquema7"/>
+   <button id="btm7"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl7"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha8"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc8"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni8"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci8"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo8"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade8"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso8" style="width:30" type="text" id="txpeso8"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta8" id="rbtpconsultaP8" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta8" id="rbtpconsultaR8" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS8" style="width:25" type="text" id="txoms8"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD8" style="width:110" type="text" readonly="true" id="edSG8" />
+	<button id="btCID8"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL8"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD48" style="width:80" type="text" id="txcd48"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB8" id="ckTB8" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN8" id="ckN8" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI8" id="ckI8" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT8" id="ckT8" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM8" id="ckM8" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema8" style="width:120" type="text" readonly="true" id="txesquema8"/>
+   <button id="btm8"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl8"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha9"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc9"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni9"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci9"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo9"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade9"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso9" style="width:30" type="text" id="txpeso9"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta10" id="rbtpconsultaP9" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta10" id="rbtpconsultaR9" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS9" style="width:25" type="text" id="txoms9"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD9" style="width:110" type="text" readonly="true" id="edSG9" />
+	<button id="btCID9"><img src="loc1.jpg" alt="CID10" title="CID10"></button>&nbsp;
+	<button id="btCIDL9"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD49" style="width:80" type="text" id="txcd49"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB9" id="ckTB9" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN9" id="ckN9" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI9" id="ckI9" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT9" id="ckT9" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM9" id="ckM9" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema9" style="width:120" type="text" readonly="true" id="txesquema9"/>
+   <button id="btm9"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl9"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha10"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc10"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni10"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci10"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo10"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade10"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso10" style="width:30" type="text" id="txpeso10"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta10" id="rbtpconsultaP10" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta10" id="rbtpconsultaR10" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS10" style="width:25" type="text" id="txoms10"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD10" style="width:110" type="text" readonly="true" id="edSG10" />
+	<button id="btCID10"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL10"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD410" style="width:80" type="text" id="txcd410"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB10" id="ckTB10" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN10" id="ckN10" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI10" id="ckI10" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT10" id="ckT10" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM10" id="ckM10" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema10" style="width:120" type="text" readonly="true" id="txesquema10"/>
+   <button id="btm10"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl10"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha11"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc11"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni11"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci11"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo11"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade11"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso11" style="width:30" type="text" id="txpeso11"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta11" id="rbtpconsultaP11" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta11" id="rbtpconsultaR11" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS11" style="width:25" type="text" id="txoms11"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD11" style="width:110" type="text" readonly="true" id="edSG11" />
+	<button id="btCID11"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL11"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD411" style="width:80" type="text" id="txcd411"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB11" id="ckTB11" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN11" id="ckN11" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI11" id="ckI11" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT11" id="ckT11" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM11" id="ckM11" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema11" style="width:120" type="text" readonly="true" id="txesquema11"/>
+   <button id="btm11"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl11"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha12"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc12"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni12"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci12"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo12"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade12"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso12" style="width:30" type="text" id="txpeso12"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta12" id="rbtpconsultaP12" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta12" id="rbtpconsultaR12" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS12" style="width:25" type="text" id="txoms12"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD12" style="width:110" type="text" readonly="true" id="edSG12" />
+	<button id="btCID12"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL12"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD412" style="width:80" type="text" id="txcd412"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB12" id="ckTB12" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN12" id="ckN12" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI12" id="ckI12" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT12" id="ckT12" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM12" id="ckM12" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema12" style="width:120" type="text" readonly="true" id="txesquema12"/>
+   <button id="btm12"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl12"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha13"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc13"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni13"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci13"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo13"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade13"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso13" style="width:30" type="text" id="txpeso13"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta13" id="rbtpconsultaP13" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta13" id="rbtpconsultaR13" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS13" style="width:25" type="text" id="txoms13"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD13" style="width:110" type="text" readonly="true" id="edSG13" />
+	<button id="btCID13"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL13"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD413" style="width:80" type="text" id="txcd413"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB13" id="ckTB13" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN13" id="ckN13" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI13" id="ckI13" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT13" id="ckT13" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM13" id="ckM13" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema13" style="width:120" type="text" readonly="true" id="txesquema13"/>
+   <button id="btm13"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl13"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha14"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc14"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni14"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci14"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo14"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade14"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso14" style="width:30" type="text" id="txpeso14"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta14" id="rbtpconsultaP14" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta14" id="rbtpconsultaR14" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS14" style="width:25" type="text" id="txoms14"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD14" style="width:110" type="text" readonly="true" id="edSG14" />
+	<button id="btCID14"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL14"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD414" style="width:80" type="text" id="txcd414"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB14" id="ckTB14" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN14" id="ckN14" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI14" id="ckI14" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT14" id="ckT14" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM14" id="ckM14" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema14" style="width:120" type="text" readonly="true" id="txesquema14"/>
+   <button id="btm14"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl14"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha15"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc15"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni15"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci15"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo15"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade15"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso15" style="width:30" type="text" id="txpeso15"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta15" id="rbtpconsultaP15" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta15" id="rbtpconsultaR15" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS15" style="width:25" type="text" id="txoms15"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD15" style="width:110" type="text" readonly="true" id="edSG15" />
+	<button id="btCID15"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL15"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD415" style="width:80" type="text" id="txcd415"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB15" id="ckTB15" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN15" id="ckN15" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI15" id="ckI15" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT15" id="ckT15" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM15" id="ckM15" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema15" style="width:120" type="text" readonly="true" id="txesquema15"/>
+   <button id="btm15"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl15"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha16"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc16"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni16"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci16"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo16"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade16"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso16" style="width:30" type="text" id="txpeso16"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta16" id="rbtpconsultaP16" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta16" id="rbtpconsultaR16" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS16" style="width:25" type="text" id="txoms16"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD16" style="width:110" type="text" readonly="true" id="edSG16" />
+	<button id="btCID16"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL16"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD416" style="width:80" type="text" id="txcd416"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB16" id="ckTB16" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN16" id="ckN16" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI16" id="ckI16" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT16" id="ckT16" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM16" id="ckM16" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema16" style="width:120" type="text" readonly="true" id="txesquema16"/>
+   <button id="btm16"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl16"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha17"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc17"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni17"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci17"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo17"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade17"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso17" style="width:30" type="text" id="txpeso17"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta17" id="rbtpconsultaP17" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta17" id="rbtpconsultaR17" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS17" style="width:25" type="text" id="txoms17"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD17" style="width:110" type="text" readonly="true" id="edSG17" />
+	<button id="btCID17"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL17"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD417" style="width:80" type="text" id="txcd417"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB17" id="ckTB17" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN17" id="ckN17" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI17" id="ckI17" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT17" id="ckT17" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM17" id="ckM17" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema17" style="width:120" type="text" readonly="true" id="txesquema17"/>
+   <button id="btm17"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl17"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha18"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc18"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni18"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci18"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo18"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade18"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso18" style="width:30" type="text" id="txpeso18"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta18" id="rbtpconsultaP18" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta18" id="rbtpconsultaR18" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS18" style="width:25" type="text" id="txoms18"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD18" style="width:110" type="text" readonly="true" id="edSG18" />
+	<button id="btCID18"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL18"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD418" style="width:80" type="text" id="txcd418"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB18" id="ckTB18" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN18" id="ckN18" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI18" id="ckI18" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT18" id="ckT18" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM18" id="ckM18" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema18" style="width:120" type="text" readonly="true" id="txesquema18"/>
+   <button id="btm18"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl18"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha19"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc19"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni19"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci19"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo19"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade19"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso19" style="width:30" type="text" id="txpeso19"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta19" id="rbtpconsultaP19" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta19" id="rbtpconsultaR19" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS19" style="width:25" type="text" id="txoms19"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD19" style="width:110" type="text" readonly="true" id="edSG19" />
+	<button id="btCID19"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL19"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD419" style="width:80" type="text" id="txcd419"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB19" id="ckTB19" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN19" id="ckN19" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI19" id="ckI19" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT19" id="ckT19" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM19" id="ckM19" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema19" style="width:120" type="text" readonly="true" id="txesquema19"/>
+   <button id="btm19"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl19"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl73 style='height:24.95pt;border-top:none'><label id="lblinha20"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbproc20"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbmuni20"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbpaci20"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbsexo20"></label></td>
+  <td class=xl94 style='border-top:none;border-left:none'><label id="lbidade20"></label></td>
+
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txPeso20" style="width:30" type="text" id="txpeso20"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta20" id="rbtpconsultaP20" value="P" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="radio" name="rbconsulta20" id="rbtpconsultaR20" value="R" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txOMS20" style="width:25" type="text" id="txoms20"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'>
+    <input name="txCD20" style="width:110" type="text" readonly="true" id="edSG20" />
+	<button id="btCID20"><img src="loc1.jpg" alt="CID10" title="CID10"></button>
+	<button id="btCIDL20"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txCD420" style="width:80" type="text" id="txcd420"/>&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckTB20" id="ckTB20" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckN20" id="ckN20" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckI20" id="ckI20" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckT20" id="ckT20" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input type="checkbox" name="ckM20" id="ckM20" />&nbsp;</td>
+  <td class=xl94 style='border-top:none;border-left:none'><input name="txEsquema20" style="width:120" type="text" readonly="true" id="txesquema20"/>
+   <button id="btm20"><img src="loc1.jpg" alt="Montar" title="Montar"></button>
+   <button id="btl20"><img src="loc2.jpg" alt="Limpar" title="Limpar"></button>&nbsp;</td>
+ </tr>
+
+ <tr height=19 style='mso-height-source:userset;height:14.25pt'>
+  <td colspan=18 height=19 class=xl95 style='border-right:.5pt solid black;
+  height:14.25pt'>LEGENDA DO TARV: (N) Não faz TARV<span
+  style='mso-spacerun:yes'>     </span>(I) Iniciou o TARV<span
+  style='mso-spacerun:yes'>     </span>(T) Trocou de Esquema<span
+  style='mso-spacerun:yes'>     </span>(M) Mantém o esquema</td>
+ </tr>
+ 
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+package SISCadastros;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  vcldb,
+  ibxpress,
+  dsnap,
+  Rave50VCL,
+  bdertl,
+  vcljpg,
+  dxEdtrD7,
+  dxComnD7,
+  EQTLD7,
+  ECQDBCD7,
+  dxDBEdD7,
+  EQGridD7,
+  dxELibD7,
+  vclie,
+  RxCtl7,
+  vclx,
+  VclSmp,
+  RxDB7,
+  SISPadrao,
+  frx7,
+  fs7,
+  fqb70,
+  frxDB7,
+  fsDB7,
+  frxe7;
+
+contains
+  UCadPessoa in '..\CADPESSOA\UCadPessoa.pas' {frmCadPessoa},
+  uCadMunicipio in '..\CADASTRO\uCadMunicipio.pas' {frmCadMunicipio},
+  uCadPais in '..\CADASTRO\uCadPais.pas' {frmCadPais},
+  uCadProvincia in '..\CADASTRO\uCadProvincia.pas' {frmCadProvincia},
+  uCadUnidade in '..\CADASTRO\uCadUnidade.pas' {frmCadUnidade},
+  UCadEsquema in '..\CADASTRO\UCadEsquema.pas' {frmCadEsquema},
+  uCadInvestigador in '..\CADASTRO\uCadInvestigador.pas' {frmCadInvestigador},
+  UCadMedico in '..\CADASTRO\UCadMedico.pas' {frmCadMedico},
+  UCadOcupacao in '..\CADASTRO\UCadOcupacao.pas' {frmCadOcupacao},
+  uCadCID10 in '..\CADASTRO\uCadCID10.pas' {frmCID10},
+  UCadUsuario in '..\CADPESSOA\UCadUsuario.pas' {frmCadUsuario},
+  uCadServicos in '..\CADASTRO\uCadServicos.pas' {frmCadServicos},
+  UCadAtendimento in '..\CADASTRO\UCadAtendimento.pas' {frmCadAtendimentos},
+  uCadExame in '..\CADASTRO\uCadExame.pas' {frmCadExame},
+  UCadTipoDocumento in '..\CADASTRO\UCadTipoDocumento.pas' {frmCadTipoDocumento},
+  uCadForma in '..\CADASTRO\uCadForma.pas' {frmCadForma};
+
+end.

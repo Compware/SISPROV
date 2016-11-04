@@ -1,0 +1,362 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<link href="css/ConsultaXML.css" type="text/css" rel="stylesheet"/>
+<link href="css/grafico.css" type="text/css" rel="stylesheet"/>
+<script type="text/JavaScript"  language="javascript" src="scripts/ConsultaXML.js"></script>
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script language="javascript"> DetectFlashVer = 0;</script>
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+var requiredMajorVersion = 10;
+var requiredMinorVersion = 0;
+var requiredRevision = 45;
+-->
+</script>
+</head>
+<body>
+<div id="dv">
+	  <img onmouseover="this.style.cursor='pointer'" onclick="ExportHTMLTableToExcel()"          height="23" src="imagens/excel.jpg" width="23" border="0"/>
+<table align="center" height="23" cellSpacing="0" cellPadding="0" width="100%" >
+<tr>
+  <td width="23">
+	  <img onmouseover="this.style.cursor='pointer'" onclick="AbreFecha(rel1)" height="23" src="imagens/Dados.gif" width="23" border="0"/>
+  </td>
+  <td class="ExpTit" colspan="11" background="imagens/PastaFundo.gif">
+    Distribuição de adultos * testadas e positivas por províncias
+  </td>
+</tr>
+<tr id="rel1" style="display:none"><td></td><td colspan="12">
+<table class="sample" align="center" height="23"  width="100%" >
+<tr class="TabTit"><td class="ExpSubTit" rowspan="3" align="center">Provincia</td>
+<td colspan="12" class="ExpSubTit" align="center">Mês do Relatorio</td></tr>
+<tr class="TabTit">
+<td colspan="3" class="ExpSubTit" align="center">Janeiro</td>
+<td colspan="3" class="ExpSubTit" align="center">Fevereiro</td>
+<td colspan="3" class="ExpSubTit" align="center">Marco</td>
+<td colspan="3" class="ExpSubTit" align="center">Total</td>
+</tr><tr>
+<td class="ExpSubTit" align="center">Posit.</td><td class="ExpSubTit" align="center">Test.</td><td class="ExpSubTit" align="center">%</td>
+<td class="ExpSubTit" align="center">Posit.</td><td class="ExpSubTit" align="center">Test.</td><td class="ExpSubTit" align="center">%</td>
+<td class="ExpSubTit" align="center">Posit.</td><td class="ExpSubTit" align="center">Test.</td><td class="ExpSubTit" align="center">%</td>
+<td class="ExpSubTit" align="center">Posit.</td><td class="ExpSubTit" align="center">Test.</td><td class="ExpSubTit" align="center">%</td>
+</tr>
+<tr><td class="ExpSubTit">Bengo</td>
+<td class="ExpCabLn2">      33</td>
+<td class="ExpCabLn2">     186</td>
+<td class="ExpCabLn2">   17,74</td>
+<td class="ExpCabLn2">      22</td>
+<td class="ExpCabLn2">     346</td>
+<td class="ExpCabLn2">    6,35</td>
+<td class="ExpCabLn2">      38</td>
+<td class="ExpCabLn2">     489</td>
+<td class="ExpCabLn2">    7,77</td>
+<td class="TabCabVlr">      93</td>
+<td class="TabCabVlr">    1021</td>
+<td class="TabCabVlr">    9,11</td>
+  </tr>
+<tr><td class="ExpSubTit">Benguela</td>
+<td class="ExpCabLn2">     170</td>
+<td class="ExpCabLn2">    1763</td>
+<td class="ExpCabLn2">    9,64</td>
+<td class="ExpCabLn2">      99</td>
+<td class="ExpCabLn2">    1403</td>
+<td class="ExpCabLn2">    7,05</td>
+<td class="ExpCabLn2">       7</td>
+<td class="ExpCabLn2">    1423</td>
+<td class="ExpCabLn2">    0,49</td>
+<td class="TabCabVlr">     276</td>
+<td class="TabCabVlr">    4589</td>
+<td class="TabCabVlr">    6,01</td>
+  </tr>
+<tr><td class="ExpSubTit">Bie</td>
+<td class="ExpCabLn2">      18</td>
+<td class="ExpCabLn2">     202</td>
+<td class="ExpCabLn2">    8,91</td>
+<td class="ExpCabLn2">      21</td>
+<td class="ExpCabLn2">     699</td>
+<td class="ExpCabLn2">    3,00</td>
+<td class="ExpCabLn2">      12</td>
+<td class="ExpCabLn2">     160</td>
+<td class="ExpCabLn2">    7,50</td>
+<td class="TabCabVlr">      51</td>
+<td class="TabCabVlr">    1061</td>
+<td class="TabCabVlr">    4,81</td>
+  </tr>
+<tr><td class="ExpSubTit">Cabinda</td>
+<td class="ExpCabLn2">      41</td>
+<td class="ExpCabLn2">    1499</td>
+<td class="ExpCabLn2">    2,73</td>
+<td class="ExpCabLn2">      35</td>
+<td class="ExpCabLn2">     973</td>
+<td class="ExpCabLn2">    3,59</td>
+<td class="ExpCabLn2">      70</td>
+<td class="ExpCabLn2">     391</td>
+<td class="ExpCabLn2">   17,90</td>
+<td class="TabCabVlr">     146</td>
+<td class="TabCabVlr">    2863</td>
+<td class="TabCabVlr">    5,10</td>
+  </tr>
+<tr><td class="ExpSubTit">Cunene</td>
+<td class="ExpCabLn2">      64</td>
+<td class="ExpCabLn2">     640</td>
+<td class="ExpCabLn2">   10,00</td>
+<td class="ExpCabLn2">      35</td>
+<td class="ExpCabLn2">     400</td>
+<td class="ExpCabLn2">    8,75</td>
+<td class="ExpCabLn2">      21</td>
+<td class="ExpCabLn2">     261</td>
+<td class="ExpCabLn2">    8,04</td>
+<td class="TabCabVlr">     120</td>
+<td class="TabCabVlr">    1301</td>
+<td class="TabCabVlr">    9,22</td>
+  </tr>
+<tr><td class="ExpSubTit">Huambo</td>
+<td class="ExpCabLn2">      63</td>
+<td class="ExpCabLn2">    2303</td>
+<td class="ExpCabLn2">    2,73</td>
+<td class="ExpCabLn2">      68</td>
+<td class="ExpCabLn2">    2179</td>
+<td class="ExpCabLn2">    3,12</td>
+<td class="ExpCabLn2">     168</td>
+<td class="ExpCabLn2">    1297</td>
+<td class="ExpCabLn2">   12,95</td>
+<td class="TabCabVlr">     299</td>
+<td class="TabCabVlr">    5779</td>
+<td class="TabCabVlr">    5,17</td>
+  </tr>
+<tr><td class="ExpSubTit">Huila</td>
+<td class="ExpCabLn2">      14</td>
+<td class="ExpCabLn2">     178</td>
+<td class="ExpCabLn2">    7,86</td>
+<td class="ExpCabLn2">       1</td>
+<td class="ExpCabLn2">      50</td>
+<td class="ExpCabLn2">    2,00</td>
+<td class="ExpCabLn2">     187</td>
+<td class="ExpCabLn2">     931</td>
+<td class="ExpCabLn2">   20,08</td>
+<td class="TabCabVlr">     202</td>
+<td class="TabCabVlr">    1159</td>
+<td class="TabCabVlr">   17,43</td>
+  </tr>
+<tr><td class="ExpSubTit">Kuando Kubango</td>
+<td class="ExpCabLn2">      22</td>
+<td class="ExpCabLn2">     211</td>
+<td class="ExpCabLn2">   10,42</td>
+<td class="ExpCabLn2">      28</td>
+<td class="ExpCabLn2">     237</td>
+<td class="ExpCabLn2">   11,81</td>
+<td class="ExpCabLn2">      51</td>
+<td class="ExpCabLn2">     249</td>
+<td class="ExpCabLn2">   20,48</td>
+<td class="TabCabVlr">     101</td>
+<td class="TabCabVlr">     697</td>
+<td class="TabCabVlr">   14,49</td>
+  </tr>
+<tr><td class="ExpSubTit">Kwanza Norte</td>
+<td class="ExpCabLn2">      26</td>
+<td class="ExpCabLn2">     917</td>
+<td class="ExpCabLn2">    2,83</td>
+<td class="ExpCabLn2">      30</td>
+<td class="ExpCabLn2">     927</td>
+<td class="ExpCabLn2">    3,23</td>
+<td class="ExpCabLn2">      17</td>
+<td class="ExpCabLn2">     940</td>
+<td class="ExpCabLn2">    1,80</td>
+<td class="TabCabVlr">      73</td>
+<td class="TabCabVlr">    2784</td>
+<td class="TabCabVlr">    2,62</td>
+  </tr>
+<tr><td class="ExpSubTit">Kwanza Sul</td>
+<td class="ExpCabLn2">      27</td>
+<td class="ExpCabLn2">     737</td>
+<td class="ExpCabLn2">    3,66</td>
+<td class="ExpCabLn2">      19</td>
+<td class="ExpCabLn2">     482</td>
+<td class="ExpCabLn2">    3,94</td>
+<td class="ExpCabLn2">      26</td>
+<td class="ExpCabLn2">     561</td>
+<td class="ExpCabLn2">    4,63</td>
+<td class="TabCabVlr">      72</td>
+<td class="TabCabVlr">    1780</td>
+<td class="TabCabVlr">    4,04</td>
+  </tr>
+<tr><td class="ExpSubTit">Luanda</td>
+<td class="ExpCabLn2">     733</td>
+<td class="ExpCabLn2">    4146</td>
+<td class="ExpCabLn2">   17,67</td>
+<td class="ExpCabLn2">     609</td>
+<td class="ExpCabLn2">    2931</td>
+<td class="ExpCabLn2">   20,77</td>
+<td class="ExpCabLn2">    1458</td>
+<td class="ExpCabLn2">    7317</td>
+<td class="ExpCabLn2">   19,92</td>
+<td class="TabCabVlr">    2800</td>
+<td class="TabCabVlr">   14394</td>
+<td class="TabCabVlr">   19,45</td>
+  </tr>
+<tr><td class="ExpSubTit">Lunda Norte</td>
+<td class="ExpCabLn2">      57</td>
+<td class="ExpCabLn2">     394</td>
+<td class="ExpCabLn2">   14,46</td>
+<td class="ExpCabLn2">      10</td>
+<td class="ExpCabLn2">     235</td>
+<td class="ExpCabLn2">    4,25</td>
+<td class="ExpCabLn2">      14</td>
+<td class="ExpCabLn2">     171</td>
+<td class="ExpCabLn2">    8,18</td>
+<td class="TabCabVlr">      81</td>
+<td class="TabCabVlr">     800</td>
+<td class="TabCabVlr">   10,13</td>
+  </tr>
+<tr><td class="ExpSubTit">Lunda Sul</td>
+<td class="ExpCabLn2">       9</td>
+<td class="ExpCabLn2">      77</td>
+<td class="ExpCabLn2">   11,68</td>
+<td class="ExpCabLn2">       8</td>
+<td class="ExpCabLn2">      95</td>
+<td class="ExpCabLn2">    8,42</td>
+<td class="ExpCabLn2">      45</td>
+<td class="ExpCabLn2">     346</td>
+<td class="ExpCabLn2">   13,00</td>
+<td class="TabCabVlr">      62</td>
+<td class="TabCabVlr">     518</td>
+<td class="TabCabVlr">   11,97</td>
+  </tr>
+<tr><td class="ExpSubTit">Malange</td>
+<td class="ExpCabLn2">      60</td>
+<td class="ExpCabLn2">    1049</td>
+<td class="ExpCabLn2">    5,71</td>
+<td class="ExpCabLn2">      19</td>
+<td class="ExpCabLn2">     769</td>
+<td class="ExpCabLn2">    2,47</td>
+<td class="ExpCabLn2">      19</td>
+<td class="ExpCabLn2">     322</td>
+<td class="ExpCabLn2">    5,90</td>
+<td class="TabCabVlr">      98</td>
+<td class="TabCabVlr">    2140</td>
+<td class="TabCabVlr">    4,58</td>
+  </tr>
+<tr><td class="ExpSubTit">Moxico</td>
+<td class="ExpCabLn2">      32</td>
+<td class="ExpCabLn2">     321</td>
+<td class="ExpCabLn2">    9,96</td>
+<td class="ExpCabLn2">      47</td>
+<td class="ExpCabLn2">     164</td>
+<td class="ExpCabLn2">   28,65</td>
+<td class="ExpCabLn2">      84</td>
+<td class="ExpCabLn2">     690</td>
+<td class="ExpCabLn2">   12,17</td>
+<td class="TabCabVlr">     163</td>
+<td class="TabCabVlr">    1175</td>
+<td class="TabCabVlr">   13,87</td>
+  </tr>
+<tr><td class="ExpSubTit">Namibe</td>
+<td class="ExpCabLn2">      35</td>
+<td class="ExpCabLn2">     666</td>
+<td class="ExpCabLn2">    5,25</td>
+<td class="ExpCabLn2">      45</td>
+<td class="ExpCabLn2">     623</td>
+<td class="ExpCabLn2">    7,22</td>
+<td class="ExpCabLn2">      43</td>
+<td class="ExpCabLn2">    1603</td>
+<td class="ExpCabLn2">    2,68</td>
+<td class="TabCabVlr">     123</td>
+<td class="TabCabVlr">    2892</td>
+<td class="TabCabVlr">    4,25</td>
+  </tr>
+<tr><td class="ExpSubTit">Uige</td>
+<td class="ExpCabLn2">       0</td>
+<td class="ExpCabLn2">       0</td>
+<td class="ExpCabLn2">    0,00</td>
+<td class="ExpCabLn2">       0</td>
+<td class="ExpCabLn2">       0</td>
+<td class="ExpCabLn2">    0,00</td>
+<td class="ExpCabLn2">     155</td>
+<td class="ExpCabLn2">    3341</td>
+<td class="ExpCabLn2">    4,63</td>
+<td class="TabCabVlr">     155</td>
+<td class="TabCabVlr">    3341</td>
+<td class="TabCabVlr">    4,64</td>
+  </tr>
+<tr><td class="ExpSubTit">Zaire</td>
+<td class="ExpCabLn2">      31</td>
+<td class="ExpCabLn2">     856</td>
+<td class="ExpCabLn2">    3,62</td>
+<td class="ExpCabLn2">       7</td>
+<td class="ExpCabLn2">     770</td>
+<td class="ExpCabLn2">    0,90</td>
+<td class="ExpCabLn2">      25</td>
+<td class="ExpCabLn2">    1087</td>
+<td class="ExpCabLn2">    2,29</td>
+<td class="TabCabVlr">      63</td>
+<td class="TabCabVlr">    2713</td>
+<td class="TabCabVlr">    2,32</td>
+  </tr>
+  <tr><td class="ExpSubTit">Total</td>
+<td class="TabCabVlr">    1435</td>
+<td class="TabCabVlr">   16145</td>
+<td class="TabCabVlr">    8,88</td>
+<td class="TabCabVlr">    1103</td>
+<td class="TabCabVlr">   13283</td>
+<td class="TabCabVlr">    8,30</td>
+<td class="TabCabVlr">    2440</td>
+<td class="TabCabVlr">   21579</td>
+<td class="TabCabVlr">   11,30</td>
+<td class="TabCabVlr">    4978</td>
+<td class="TabCabVlr">   51007</td>
+<td class="TabCabVlr">    9,76</td>
+   </tr>
+<tr class="TabTit">
+  <td width="20">
+	  <img onmouseover="this.style.cursor='pointer'" onclick="AbreFecha(Grel1)" height="20" src="imagens/grafico.jpg" width="20" border="0"/>
+  </td>
+  <td colspan="12">Gráfico</tr>
+</tr>
+<tr class="TabTit" id="Grel1" style="display:none"><td colspan="13">
+<div align="center">
+<script language="JavaScript" type="text/javascript">
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,45,2',
+			'width', '400',
+			'height', '250',
+			'scale', 'noscale',
+			'salign', 'TL',
+			'bgcolor', '#777788',
+			'wmode', 'opaque',
+			'movie', 'charts',
+			'src', 'charts',
+			'FlashVars', 'library_path=charts_library&xml_source=Graficorel1.xml',
+			'id', 'my_chart',
+			'name', 'my_chart',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'quality', 'high',
+			'align', 'middle',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'play', 'true',
+			'devicefont', 'false'
+			);
+	} else {
+		var alternateContent = 'This content requires the Adobe Flash Player. '
+		+ '<u><a href=http://www.macromedia.com/go/getflash/>Get Flash</a></u>.';
+		document.write(alternateContent);
+	}
+}
+</script>
+</div>
+</td></tr>   
+  </table>
+ </td></tr>
+</table>
+
+</div>
+</body>
+</html>

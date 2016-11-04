@@ -1,0 +1,117 @@
+unit UfrmRelCriancaExpDPIAlto;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, DB, IBCustomDataSet, IBQuery, dxExEdtr,
+  dxEdLib, dxCntner, dxEditor, Buttons, frxClass, frxExportPDF, frxDBSet;
+
+type
+  TfrmRelCriancaExpDPIAlto = class(TForm)
+    Panel1: TPanel;
+    Image1: TImage;
+    Label1: TLabel;
+    Panel2: TPanel;
+    GroupBox2: TGroupBox;
+    Label3: TLabel;
+    Label4: TLabel;
+    dtde: TdxDateEdit;
+    dtate: TdxDateEdit;
+    qyRelCriancaExp: TIBQuery;
+    btImprimir: TBitBtn;
+    btCancelar: TBitBtn;
+    qyRelCriancaExpDT_MAPA: TDateTimeField;
+    qyRelCriancaExpNR_PROCESSO_CRIANCA_EXP: TIBStringField;
+    qyRelCriancaExpNM_PACIENTE: TIBStringField;
+    qyRelCriancaExpTP_SEXO: TIBStringField;
+    qyRelCriancaExpIDADE: TSmallintField;
+    fxRelatorio: TfrxReport;
+    fxdbUnidade: TfrxDBDataset;
+    fxdbRelatorio: TfrxDBDataset;
+    frxPDFExport1: TfrxPDFExport;
+    qyUnidade: TIBQuery;
+    qyUnidadeDS_UNIDADE: TIBStringField;
+    qyUnidadeDS_MUNICIPIO: TIBStringField;
+    qyUnidadeDS_PROVINCIA: TIBStringField;
+    dsUnidade: TDataSource;
+    dsRelatorio: TDataSource;
+    qyRelCriancaExpCODIGO: TIntegerField;
+    qyRelCriancaExpDT_INICIO_CRIANCA_EXP: TDateField;
+    qyRelCriancaExpNM_MAE: TIBStringField;
+    qyRelCriancaExpVL_DPI_UC: TIntegerField;
+    procedure FormCreate(Sender: TObject);
+    procedure btImprimirClick(Sender: TObject);
+    procedure qyRelCriancaExpCalcFields(DataSet: TDataSet);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRelCriancaExpDPIAlto: TfrmRelCriancaExpDPIAlto;
+
+implementation
+
+uses  UDM, UGeral, UGeralSQL, UfrmLocalizar;
+
+{$R *.dfm}
+
+procedure TfrmRelCriancaExpDPIAlto.FormCreate(Sender: TObject);
+begin
+  dtde.Date := Date;
+  dtate.Date := Date;
+end;
+
+procedure TfrmRelCriancaExpDPIAlto.btImprimirClick(Sender: TObject);
+var sRel:string;
+begin
+  if dtDe.Date < 1 then
+  begin
+    MessageDlg('É necessário, incluir o período INICIO!',mtWarning,[mbOK],0);
+    abort;
+  end;
+  if dtAte.Date < 1 then
+  begin
+    MessageDlg('É necessário, incluir o período FINAL!',mtWarning,[mbOK],0);
+    abort;
+  end;
+
+  if dtde.Date > dtAte.Date then
+  begin
+    MessageDlg('Data FINAL não pode ser menor que a data INICIO!',mtWarning,[mbOK],0);
+    abort;
+  end;
+  try
+  with qyRelCriancaExp do
+    begin
+      Close;
+      ParamByName('dt_de').AsDate := dtDe.Date;
+      ParamByName('dt_ate').AsDate := dtate.Date;
+      ParamByName('cd_unidade').AsString := prmUnidade;
+      Open;
+
+      qyUnidade.Close;
+      qyUnidade.ParamByName('cd_unidade').AsString := prmUnidade;
+      qyUnidade.Open;
+
+      sRel := '\RelCriancaExpDPIAlto.fr3';
+      fxRelatorio.LoadFromFile(sPathLayOut + sRel);
+      fxRelatorio.ShowReport;
+
+      qyUnidade.Close;
+      Close;
+    end;
+  except
+    ShowMessage(qyRelCriancaExp.SQL.Text);
+  end;
+end;
+
+procedure TfrmRelCriancaExpDPIAlto.qyRelCriancaExpCalcFields(
+  DataSet: TDataSet);
+begin
+  qyRelCriancaExpCODIGO.AsInteger := qyRelCriancaExp.RecNo;
+end;
+
+end.

@@ -1,0 +1,220 @@
+unit UfrmRelQuantitativo;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UfrmRelPadFast, frxExportImage, frxExportRTF, frxExportHTML,
+  frxExportPDF, frxClass, frxExportXLS, frxDBSet, DB, IBCustomDataSet,
+  IBQuery, StdCtrls, Buttons, ExtCtrls, ComCtrls, Mask, ToolEdit, DBCtrls;
+
+type
+  TfrmRelQuantitativo = class(TfrmRelPadFast)
+    pgFiltro: TTabSheet;
+    Label2: TLabel;
+    GroupBox1: TGroupBox;
+    edDataInicio: TDateEdit;
+    edDataFinal: TDateEdit;
+    Label3: TLabel;
+    Label4: TLabel;
+    dsRelatorio: TDataSource;
+    frxDBCasosNovos: TfrxDBDataset;
+    qyGeralFAIXA: TIBStringField;
+    qyGeralFL_SEXO: TIBStringField;
+    qyGeralTESTAGEM_ACONSELHADOS: TLargeintField;
+    qyGeralTESTAGEM_TESTADOS: TLargeintField;
+    qyGeralTESTAGEM_NEGATIVO: TLargeintField;
+    qyGeralTESTAGEM_POSITIVO: TLargeintField;
+    qyGeralTESTAGEM_INDETERMINADO: TLargeintField;
+    qyGeralTESTAGEM_TOTAL: TLargeintField;
+    qyGeralPACIENTES_COM_IDENTIFICACAO: TLargeintField;
+    qyGeralPACIENTES_COM_1_CONSULTA: TLargeintField;
+    qyGeralPACIENTES_COM_1_CONSULTA_E_TARV: TLargeintField;
+    qyGeralPACIENTES_COM_1_CONSULTA_SEM_TA: TLargeintField;
+    qyGeralCN_CD4_MENOR_350: TLargeintField;
+    qyGeralCN_CD4_351_500: TLargeintField;
+    qyGeralCN_CD4_MAIOR_500: TLargeintField;
+    qyGeralCN_CD4_NULLO: TLargeintField;
+    qyGeralCN_OMS_I: TLargeintField;
+    qyGeralCN_OMS_II: TLargeintField;
+    qyGeralCN_OMS_III: TLargeintField;
+    qyGeralCN_OMS_IV: TLargeintField;
+    qyGeralCN_OMS_NULLO: TLargeintField;
+    qyGeralCN_SEM_CD4_E_OMS: TLargeintField;
+    qyUnidade: TIBQuery;
+    dsUnidade: TDataSource;
+    qyUnidadeDS_UNIDADE: TIBStringField;
+    qyTransferencia: TIBQuery;
+    dsTransferencia: TDataSource;
+    frxDBTransferidos: TfrxDBDataset;
+    qyTransferenciaFAIXA: TIBStringField;
+    qyTransferenciaFL_SEXO: TIBStringField;
+    qyTransferenciaPACIENTES_COM_1_CONSULTA: TLargeintField;
+    qyTransferenciaPACIENTES_COM_1_CONSULTA_E_TARV: TLargeintField;
+    qyTransferenciaPACIENTES_COM_1_CONSULTA_E_TAR1: TLargeintField;
+    qyTransferenciaPACIENTES_COM_1_CONSULTA_SEM_TA: TLargeintField;
+    qyTransferenciaTRANSF_CD4_MENOR_350: TLargeintField;
+    qyTransferenciaTRANSF_CD4_351_500: TLargeintField;
+    qyTransferenciaTRANSF_CD4_MAIOR_500: TLargeintField;
+    qyTransferenciaTRANSF_CD4_NULLO: TLargeintField;
+    qyTransferenciaTRANSF_OMS_I: TLargeintField;
+    qyTransferenciaTRANSF_OMS_II: TLargeintField;
+    qyTransferenciaTRANSF_OMS_III: TLargeintField;
+    qyTransferenciaTRANSF_OMS_IV: TLargeintField;
+    qyTransferenciaTRANSF_OMS_NULLO: TLargeintField;
+    qyTransferenciaTRANSF_SEM_CD4_E_OMS: TLargeintField;
+    frxDBAcompanhados: TfrxDBDataset;
+    qyAcompanhados: TIBQuery;
+    dsAcompanhados: TDataSource;
+    qyAcompanhadosFAIXA: TIBStringField;
+    qyAcompanhadosFL_SEXO: TIBStringField;
+    qyAcompanhadosPACIENTES_INICIARAM_TARV: TLargeintField;
+    qyAcompanhadosPACIENTES_TARV_ANTERIOR: TLargeintField;
+    qyAcompanhadosPACIENTES_PRE_TARV: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_CD4_MENOR_350: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_CD4_351_500: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_CD4_MAIOR_500: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_CD4_NULLO: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_OMS_I: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_OMS_II: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_OMS_III: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_OMS_IV: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_OMS_NULLO: TLargeintField;
+    qyAcompanhadosACOMPANHADOS_SEM_CD4_E_OMS: TLargeintField;
+    qyConsolidados: TIBQuery;
+    frxDBConsolidados: TfrxDBDataset;
+    dsConsolidados: TDataSource;
+    qyConsolidadosFAIXA: TIBStringField;
+    qyConsolidadosFL_SEXO: TIBStringField;
+    qyConsolidadosTOTAL_ATENDIMENTOS: TLargeintField;
+    qyConsolidadosTOTAL_1_CONSULTA: TLargeintField;
+    qyConsolidadosPACIENTES_INICIARAM_TARV: TLargeintField;
+    qyConsolidadosPACIENTES_TARV_ANTERIOR: TLargeintField;
+    qyConsolidadosPACIENTES_PRE_TARV: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_CD4_MENOR_350: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_CD4_351_500: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_CD4_MAIOR_500: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_CD4_NULLO: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_OMS_I: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_OMS_II: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_OMS_III: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_OMS_IV: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_OMS_NULLO: TLargeintField;
+    qyConsolidadosCONSOLIDADOS_SEM_CD4_E_OMS: TLargeintField;
+    qyConsolidadosCV_MENOR_1000: TLargeintField;
+    qyConsolidadosCV_MAIOR_IGUAL_1000: TLargeintField;
+    qyConsolidadosCV_IGUAL_LDL: TLargeintField;
+    qyConsolidadosCV_DETERMINADO: TLargeintField;
+    qyConsolidadosCV_INDETERMINADO: TLargeintField;
+    qyConsolidadosCV_NULLO: TLargeintField;
+    qyConsolidadosABANDONO: TLargeintField;
+    qyConsolidadosOBITOS: TLargeintField;
+    qyConsolidadosTRANSFERIDOS: TLargeintField;
+    dsAcumulados: TDataSource;
+    qyAcumulados: TIBQuery;
+    frxDBAcumulados: TfrxDBDataset;
+    qyAcumuladosFAIXA: TIBStringField;
+    qyAcumuladosFL_SEXO: TIBStringField;
+    qyAcumuladosTOTAL_IDENTIFICADOS: TLargeintField;
+    qyAcumuladosPCTS_COM_PROCESSO: TLargeintField;
+    qyAcumuladosPCTS_ATIVOS: TLargeintField;
+    qyAcumuladosPCTS_ABANDONO: TLargeintField;
+    qyAcumuladosPCTS_OBITO: TLargeintField;
+    qyAcumuladosPCTS_TRANSFERIDOS: TLargeintField;
+    qyAcumuladosPCTS_COM_TARV: TLargeintField;
+    qyAcumuladosPCTS_PRE_TARV: TLargeintField;
+    procedure FormCreate(Sender: TObject);
+    procedure btImprimirClick(Sender: TObject);
+  private
+    { Private declarations }
+    procedure validaFiltro;
+  public
+    { Public declarations }
+    procedure gerarRelatorio;
+  end;
+
+var
+  frmRelQuantitativo: TfrmRelQuantitativo;
+
+
+implementation
+
+uses UGeral, UGeralSQL;
+
+{$R *.dfm}
+
+procedure TfrmRelQuantitativo.validaFiltro;
+begin
+  if edDataInicio.Text = '  /  /    ' then
+  begin
+    ShowMessage('Digite a data de início!');
+    Abort;
+  end;
+
+  if edDataFinal.Text = '  /  /    ' then
+  begin
+    ShowMessage('Digite a data final!');
+    Abort;
+  end;
+
+  if edDataInicio.Date > edDataFinal.Date then
+  begin
+    ShowMessage('A data final deve ser maior que a data início!');
+    Abort;
+  end;
+end;
+
+procedure TfrmRelQuantitativo.FormCreate(Sender: TObject);
+begin
+  inherited;
+  edDataInicio.Date := IncMonth(Now, -1);
+  edDataFinal.Date := Now;
+  qyUnidade.ParamByName('prmUnidade').Value := prmUnidade;
+  qyUnidade.Open;
+end;
+
+procedure TfrmRelQuantitativo.btImprimirClick(Sender: TObject);
+begin
+  inherited;
+  validaFiltro;
+  gerarRelatorio;
+
+end;
+
+procedure TfrmRelQuantitativo.gerarRelatorio;
+begin
+  // executa rotina para atualizar pacientes em abandono
+  AtualizaTodosAbandono;
+
+  qyGeral.Close;
+  qyTransferencia.Close;
+  qyAcompanhados.Close;
+  qyConsolidados.Close;
+  qyAcumulados.Close;
+
+  qyGeral.ParamByName('data_inicio').AsDateTime := edDataInicio.Date;
+  qyGeral.ParamByName('data_fim').AsDateTime := edDataFinal.Date;
+  qyTransferencia.ParamByName('data_inicio').AsDateTime := edDataInicio.Date;
+  qyTransferencia.ParamByName('data_fim').AsDateTime := edDataFinal.Date;
+  qyAcompanhados.ParamByName('data_inicio').AsDateTime := edDataInicio.Date;
+  qyAcompanhados.ParamByName('data_fim').AsDateTime := edDataFinal.Date;
+  qyConsolidados.ParamByName('data_inicio').AsDateTime := edDataInicio.Date;
+  qyConsolidados.ParamByName('data_fim').AsDateTime := edDataFinal.Date;
+  qyAcumulados.ParamByName('data_fim').AsDateTime := edDataFinal.Date;
+
+  qyGeral.Open;
+  qyTransferencia.Open;
+  qyAcompanhados.Open;
+  qyConsolidados.Open;
+  qyAcumulados.Open;
+
+  frxReport1.LoadFromFile(sPathLayOut + '\RelQuantitativo.fr3');
+  TfrxMemoView(frxReport1.FindObject('MemoPeriodo')).Text  := 'Peíodo de '+edDataInicio.Text + ' até '+ edDataFinal.Text;
+  TfrxMemoView(frxReport1.FindObject('MemoPeriodo2')).Text  := 'Peíodo de '+edDataInicio.Text + ' até '+ edDataFinal.Text;
+  TfrxMemoView(frxReport1.FindObject('MemoPeriodo3')).Text  := 'Peíodo de '+edDataInicio.Text + ' até '+ edDataFinal.Text;
+  TfrxMemoView(frxReport1.FindObject('MemoPeriodo4')).Text  := 'Peíodo de '+edDataInicio.Text + ' até '+ edDataFinal.Text;
+  TfrxMemoView(frxReport1.FindObject('MemoPeriodo5')).Text  := 'Peíodo de '+edDataInicio.Text + ' até '+ edDataFinal.Text;
+  frxReport1.ShowReport;
+end;
+
+end.

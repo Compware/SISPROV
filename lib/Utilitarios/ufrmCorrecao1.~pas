@@ -1,0 +1,86 @@
+unit ufrmCorrecao1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, uDM, StdCtrls, Buttons, DB, IBCustomDataSet, IBQuery, IBSQL;
+
+type
+  TfrmCorrecao = class(TForm)
+    Label1: TLabel;
+    Memo1: TMemo;
+    IBQuery2: TIBQuery;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    IBSQL1: TIBSQL;
+    IBSQL2: TIBSQL;
+    IBSQL3: TIBSQL;
+    procedure BitBtn2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCorrecao: TfrmCorrecao;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCorrecao.BitBtn2Click(Sender: TObject);
+var i:integer;
+begin
+  try
+   IBSQL3.SQL.Text := 'DROP PROCEDURE PROC_CORRIGE_MAPA_MEDICO';
+   IBSQL3.ExecQuery;
+  except
+  end;
+
+  try
+   IBSQL3.SQL.Text := 'DROP PROCEDURE PROC_CORRIGE_MAPA_MEDICO2';
+   IBSQL3.ExecQuery;
+  except
+  end;
+
+  try
+   IBSQL1.ExecQuery;
+  except
+  end;
+
+  try
+   IBSQL2.ExecQuery;
+  except
+  end;
+
+  Memo1.Lines.Clear;
+  Memo1.Lines.Add('MAPA    DATA     MEDIDO    PROCESSO');
+  for i:=1 to 2 do
+  begin
+    IBQuery2.Close;
+    if i=1 then
+     IBQuery2.SQL.Text := 'SELECT * FROM PROC_CORRIGE_MAPA_MEDICO';
+    if i=2 then
+     IBQuery2.SQL.Text := 'SELECT * FROM PROC_CORRIGE_MAPA_MEDICO2';
+
+    IBQuery2.Open;
+    IBQuery2.First;
+    Memo1.Lines.Add('--------------------------------');
+    while not IBQuery2.Eof do
+    begin
+       Memo1.Lines.Add(
+         IBQuery2.FieldByName('CD_MAPA').AsString + ' ' +
+         IBQuery2.FieldByName('DT_MAPA').AsString + ' ' +
+         IBQuery2.FieldByName('CD_MEDICO').AsString + ' '+
+         IBQuery2.FieldByName('NR_PROCESSO').AsString
+       );
+       IBQuery2.Next;
+    end;
+    IBQuery2.Close;
+  end;
+
+end;
+
+end.

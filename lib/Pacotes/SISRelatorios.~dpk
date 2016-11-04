@@ -1,0 +1,96 @@
+package SISRelatorios;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  IBO40CRT_D7,
+  vcl,
+  dbrtl,
+  ibxpress,
+  dsnap,
+  Rave50VCL,
+  bdertl,
+  vcljpg,
+  dxEdtrD7,
+  dxComnD7,
+  dxELibD7,
+  dxDBEdD7,
+  vcldb,
+  frx7,
+  fs7,
+  vclx,
+  fqb70,
+  frxDB7,
+  fsDB7,
+  SISPadrao,
+  vclie,
+  RxCtl7,
+  VclSmp,
+  EQTLD7,
+  ECQDBCD7,
+  EQGridD7,
+  SISBI,
+  frxe7,
+  dclusr,
+  designide,
+  vclactnband,
+  rxdb7,
+  phgdelphi7,
+  SISNotificacao;
+
+contains
+  ufrmRelGeralAgenda in '..\CADASTRO\ufrmRelGeralAgenda.pas' {frmRelGeralAgenda},
+  ufrmRelGeralCaracterizacao in '..\CADASTRO\ufrmRelGeralCaracterizacao.pas' {frmRelGeralCaracterizacao},
+  ufrmRelGeralNotificacao in '..\CADASTRO\ufrmRelGeralNotificacao.pas' {frmRelGeralNotificacao},
+  ufrmRelGeralPrograma in '..\CADASTRO\ufrmRelGeralPrograma.pas' {frmRelGeralPrograma},
+  ufrmRelListagemGeralExames in '..\CADASTRO\ufrmRelListagemGeralExames.pas' {frmRelListagemGeralExames},
+  UfrmConEsquemaTotal in '..\DIG\UfrmConEsquemaTotal.pas' {frmConEsquemaTotal},
+  UfrmConEsquemaProcessoTotal in '..\DIG\UfrmConEsquemaProcessoTotal.pas' {frmConEsquemaProcessoTotal},
+  UfrmConfRelatorio in '..\GERAL\UfrmConfRelatorio.pas' {frmConfRelatorio},
+  UfrmFiltroEsquemaTotal in '..\DIG\UfrmFiltroEsquemaTotal.pas' {frmFiltroEsquemaTotal},
+  UfrmFiltroEsquemaProcessoTotal in '..\DIG\UfrmFiltroEsquemaProcessoTotal.pas' {frmFiltroEsquemaProcessoTotal},
+  ufrmRelSerieCronologica in '..\RELATORIOS\ufrmRelSerieCronologica.pas' {frmRelSerieCronologica},
+  UfrmRelUnidades in '..\RELATORIOS\UfrmRelUnidades.pas' {frmRelUnidades},
+  UfrmRR in '..\RELATORIOS\UfrmRR.pas' {frmRR},
+  uSplash in '..\RELATORIOS\uSplash.pas' {frmSplash},
+  UfrmPainelAR in '..\RELATORIOS\UfrmPainelAR.pas' {frmPainelAR},
+  UfrmAuditoriaRelatorios in '..\RELATORIOS\UfrmAuditoriaRelatorios.pas' {frmAuditoriaRelatorios},
+  UfrmRelUnidadesImp in '..\RELATORIOS\UfrmRelUnidadesImp.pas' {frmRelUnidadesImp},
+  UfrmRelMapa in '..\RELATORIOS\UfrmRelMapa.pas' {frmRelMapa},
+  UfrmRelNotificacao in '..\RELATORIOS\UfrmRelNotificacao.pas' {frmRelNotificacao},
+  UfrmRelMapaMedicoPeriodo in '..\RELATORIOS\UfrmRelMapaMedicoPeriodo.pas' {frmRelMapaMedicoPeriodo},
+  UfrmRelExtratoPaciente in '..\RELATORIOS\UfrmRelExtratoPaciente.pas' {frmRelExtratoPaciente},
+  UfrmRelGestante in '..\RELATORIOS\UfrmRelGestante.pas' {frmRelGestante},
+  UfrmRelCriancaExpDPIAlto in '..\RELATORIOS\UfrmRelCriancaExpDPIAlto.pas' {Form1},
+  UfrmRelCriancaExpFechamento in '..\RELATORIOS\UfrmRelCriancaExpFechamento.pas' {frmRelCriancaExpFechamento},
+  UframeControleGestante in '..\RELATORIOS\UframeControleGestante.pas' {frameControleGestante: TFrame},
+  UfrmControleGestantes in 'D:\DESENVOLVIMENTO\SISPROV\lib\RELATORIOS\UfrmControleGestantes.pas' {frmControleGestantes},
+  UfrmRelProdFarmacia in '..\RELATORIOS\UfrmRelProdFarmacia.pas' {frmRelProdFarmacia},
+  UfrmRelProdAgendas in '..\RELATORIOS\UfrmRelProdAgendas.pas' {frmRelProdAgendas},
+  UfrmRelProdLaboratorio in '..\RELATORIOS\UfrmRelProdLaboratorio.pas' {frmRelProdLaboratorio},
+  UfrmRelQuantitativo in '..\RELATORIOS\UfrmRelQuantitativo.pas' {frmRelQuantitativo};
+
+end.

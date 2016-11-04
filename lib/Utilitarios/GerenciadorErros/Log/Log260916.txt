@@ -1,0 +1,227 @@
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 31
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+ExpungeMailBox erro: Unrecognized IMAP4 Response Header.
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 31
+[1/31] SIS PROV - Erro UID: 8118
+Email deletado!
+[2/31] SIS PROV - Erro UID: 8119
+Email deletado!
+[3/31] SIS PROV - Erro UID: 8120
+Email deletado!
+[4/31] SIS PROV - Erro UID: 8121
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[5/31] SIS PROV - Erro UID: 8127
+Email deletado!
+[6/31] SIS PROV - Erro UID: 8128
+Email deletado!
+[7/31] SIS PROV - Erro UID: 8129
+Email deletado!
+[8/31] SIS PROV - Erro UID: 8130
+Email deletado!
+[9/31] SIS PROV - Erro UID: 8131
+Email deletado!
+[10/31] SIS PROV - Erro UID: 8132
+Email deletado!
+[11/31] SIS PROV - Erro UID: 8133
+Email deletado!
+[12/31] SIS PROV - Erro UID: 8137
+Email deletado!
+[13/31] SIS PROV - Erro UID: 8138
+Email deletado!
+[14/31] SIS PROV - Erro UID: 8139
+Email deletado!
+[15/31] SIS PROV - Erro UID: 8140
+Email deletado!
+[16/31] SIS PROV - Erro UID: 8141
+Email deletado!
+[17/31] SIS PROV - Erro UID: 8142
+Email deletado!
+[18/31] SIS PROV - Erro UID: 8143
+Email deletado!
+[19/31] SIS PROV - Erro UID: 8144
+Email deletado!
+[20/31] SIS PROV - Erro UID: 8145
+Email deletado!
+[21/31] SIS PROV - Erro UID: 8149
+Email deletado!
+[22/31] SIS PROV - Erro UID: 8154
+Email deletado!
+[23/31] SIS PROV - Erro UID: 8158
+Email deletado!
+[24/31] SIS PROV - Erro UID: 8159
+Email deletado!
+[25/31] SIS PROV - Erro UID: 8160
+Email deletado!
+[26/31] SIS PROV - Erro UID: 8161
+Email deletado!
+[27/31] SIS PROV - Erro UID: 8162
+Email deletado!
+[28/31] SIS PROV - Erro UID: 8170
+Email deletado!
+[29/31] SIS PROV - Erro UID: 8171
+Email deletado!
+[30/31] SIS PROV - Erro UID: 8172
+Email deletado!
+[31/31] SIS PROV - Erro UID: 8173
+Email deletado!
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 31
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+ExpungeMailBox erro: Unrecognized IMAP4 Response Header.
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 31
+[1/31] SIS PROV - Erro UID: 8118
+Email deletado!
+[2/31] SIS PROV - Erro UID: 8119
+Email deletado!
+[3/31] SIS PROV - Erro UID: 8120
+Email deletado!
+[4/31] SIS PROV - Erro UID: 8121
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[5/31] SIS PROV - Erro UID: 8127
+Email deletado!
+[6/31] SIS PROV - Erro UID: 8128
+Email deletado!
+[7/31] SIS PROV - Erro UID: 8129
+Email deletado!
+[8/31] SIS PROV - Erro UID: 8130
+Email deletado!
+[9/31] SIS PROV - Erro UID: 8131
+Email deletado!
+[10/31] SIS PROV - Erro UID: 8132
+Email deletado!
+[11/31] SIS PROV - Erro UID: 8133
+Email deletado!
+[12/31] SIS PROV - Erro UID: 8137
+Email deletado!
+[13/31] SIS PROV - Erro UID: 8138
+Email deletado!
+[14/31] SIS PROV - Erro UID: 8139
+Email deletado!
+[15/31] SIS PROV - Erro UID: 8140
+Email deletado!
+[16/31] SIS PROV - Erro UID: 8141
+Email deletado!
+[17/31] SIS PROV - Erro UID: 8142
+Email deletado!
+[18/31] SIS PROV - Erro UID: 8143
+Email deletado!
+[19/31] SIS PROV - Erro UID: 8144
+Email deletado!
+[20/31] SIS PROV - Erro UID: 8145
+Email deletado!
+[21/31] SIS PROV - Erro UID: 8149
+Email deletado!
+[22/31] SIS PROV - Erro UID: 8154
+Email deletado!
+[23/31] SIS PROV - Erro UID: 8158
+Email deletado!
+[24/31] SIS PROV - Erro UID: 8159
+Email deletado!
+[25/31] SIS PROV - Erro UID: 8160
+Email deletado!
+[26/31] SIS PROV - Erro UID: 8161
+Email deletado!
+[27/31] SIS PROV - Erro UID: 8162
+Email deletado!
+[28/31] SIS PROV - Erro UID: 8170
+Email deletado!
+[29/31] SIS PROV - Erro UID: 8171
+Email deletado!
+[30/31] SIS PROV - Erro UID: 8172
+Email deletado!
+[31/31] SIS PROV - Erro UID: 8173
+Email deletado!
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 0
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+

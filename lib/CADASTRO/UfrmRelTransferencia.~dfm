@@ -1,0 +1,565 @@
+inherited frmRelTransferencia: TfrmRelTransferencia
+  Left = 202
+  Top = 81
+  Caption = 'Relat'#243'rio'
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Label1: TLabel
+    Width = 272
+    Height = 48
+    Caption = 'Relat'#243'rio de Transfer'#234'ncia '#13#10'por Paciente'
+  end
+  inherited pgFiltros: TPageControl
+    ActivePage = TabSheet1
+    object TabSheet1: TTabSheet
+      Caption = 'Filtros'
+      object GroupBox1: TGroupBox
+        Left = 8
+        Top = 8
+        Width = 417
+        Height = 121
+        Caption = 'Utente'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+        object Label2: TLabel
+          Left = 9
+          Top = 21
+          Width = 57
+          Height = 13
+          Caption = 'Processo:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label3: TLabel
+          Left = 9
+          Top = 44
+          Width = 37
+          Height = 13
+          Caption = 'Nome:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label4: TLabel
+          Left = 9
+          Top = 68
+          Width = 92
+          Height = 13
+          Caption = 'Dt. Nascimento:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label5: TLabel
+          Left = 9
+          Top = 92
+          Width = 65
+          Height = 13
+          Caption = 'Nome M'#227'e:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object btLocProcesso: TdxButtonEdit
+          Left = 69
+          Top = 16
+          Width = 148
+          TabOrder = 0
+          OnExit = btLocProcessoExit
+          Buttons = <
+            item
+              Default = True
+              Glyph.Data = {
+                36050000424D3605000000000000360400002800000010000000100000000100
+                0800000000000001000000000000000000000001000000000000D4600600E06A
+                0600AB500B00481C11006A381100AB58110060311600B66A1600A1502A00A158
+                31007B583800484040007B584000584848007B58480098734800605850006A58
+                5000735850007B6050008F6A50007B50580084505800845858006A6058007360
+                5800CA7B58008F6A6000AB7B6A00AB846A00E0AB6A00737373007B7373008F73
+                7300A1847B00AB987B00EAB67B0084848400CAAB8400EAC08400F4CA84008F8F
+                8F0098988F00CAAB8F00CAB68F00E0B68F00D4C08F00EAC08F00EACA8F00A198
+                9800CAAB9800D4B69800D4C09800D4CA9800E0CA9800EAD49800487BA1008F98
+                A100A1A1A100ABA1A100F4EAA100ABA1AB00B6A1AB00ABABAB00C0ABAB00B6B6
+                AB00CAB6AB00D4D4AB00E0D4AB00E0E0AB00EAE0AB00FFEAAB0084A1B600D4C0
+                B600D4E0B600F4F4B600506AC000B6B6C000D4E0C000F4F4C000FFFFC000586A
+                CA0073ABCA0098B6CA00B6B6CA00B6C0CA00C0C0CA00EAF4CA005073D400607B
+                D400ABCAD400B6CAD400B6D4D400C0D4D400D4E0D400EAF4D400B6CAE000C0CA
+                E000C0D4E000C0E0E000E0E0E000C0E0EA00FFFFEA00CAEAF400D4F4F400EAF4
+                F400FF00FF0016A1FF002AA1FF0023ABFF008FE0FF00C0EAFF00CAEAFF00CAF4
+                FF00D4F4FF00E0F4FF00D4FFFF00E0FFFF00F4FFFF00FFFFFF00000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                0000000000000000000000000000000000000000000000000000000000000000
+                00000000000000000000000000000000000000000000000000006A3A102A6A6A
+                6A6A6A6A6A6A6A6A6A6A3A535916256A6A6A6A6A6A6A6A6A6A6A6A6E6C511729
+                6A6A6A6A6A6A6A6A6A6A6A6A6E6D58153F6A6A6A6A6A6A6A6A6A6A6A6A386B4C
+                0B2011190D1F6A6A6A6A6A09090852481C476677771B031A066A6A2775756840
+                2F4B4F5F76771871136A6A1E6F5B552B362E4A5E64662339126A6A1E6F5B5532
+                2E2C434A4E5726390E6A6A1E6F5B5B324534354344501D5B0E6A6A1E705D5D41
+                496944303C2721760C6A6A1E6F5B5B5B3B4236302D225B770C6A6A1E70616262
+                654D313D4D6772770C6A6A247165656767677271706768770C6A6A0205050505
+                0505050507070714046A6A000101010101010101010101010F6A}
+              Kind = bkGlyph
+            end>
+          OnButtonClick = btLocProcessoButtonClick
+          ExistButtons = True
+        end
+        object edNome: TdxEdit
+          Left = 50
+          Top = 39
+          Width = 359
+          Color = cl3DLight
+          TabOrder = 1
+          TabStop = False
+          ReadOnly = True
+          StoredValues = 64
+        end
+        object edData: TdxEdit
+          Left = 105
+          Top = 63
+          Width = 120
+          Color = cl3DLight
+          TabOrder = 2
+          TabStop = False
+          ReadOnly = True
+          StoredValues = 64
+        end
+        object edNomeMae: TdxEdit
+          Left = 77
+          Top = 87
+          Width = 332
+          Color = cl3DLight
+          TabOrder = 3
+          TabStop = False
+          ReadOnly = True
+          StoredValues = 64
+        end
+        object edCodigo: TdxEdit
+          Left = 329
+          Top = 15
+          Width = 79
+          Color = clYellow
+          TabOrder = 4
+          TabStop = False
+          Visible = False
+          ReadOnly = True
+          StoredValues = 64
+        end
+      end
+    end
+  end
+  inherited Panel2: TPanel
+    inherited btImprimir: TBitBtn
+      OnClick = btImprimirClick
+    end
+  end
+  inherited rvGeral: TRvProject
+    ProjectFile = 'C:\Compware\Layout\RelTransferencia.rav'
+  end
+  object qyPaciente: TIBQuery
+    Database = DM.DB
+    Transaction = DM.TS
+    BufferChunks = 1000
+    CachedUpdates = False
+    SQL.Strings = (
+      'SELECT '
+      'NR_PROCESSO, '
+      'NM_PACIENTE, '
+      'DT_NASCIMENTO,'
+      'NM_MAE,'
+      'CD_PACIENTE,'
+      'IDADE,'
+      'TP_SEXO,'
+      '(SELECT DS_PROVINCIA FROM PROVINCIA '
+      'WHERE CD_PROVINCIA = PACIENTE.CD_NAR_PROVINCIA)DS_PROVINCIA'
+      'FROM PACIENTE '
+      'WHERE NR_PROCESSO IS NOT NULL'
+      'AND CD_UND = :UNIDADE'
+      'AND NR_PROCESSO =:PROCESSO')
+    Left = 164
+    Top = 270
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'UNIDADE'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'PROCESSO'
+        ParamType = ptUnknown
+      end>
+    object qyPacienteNR_PROCESSO: TIntegerField
+      FieldName = 'NR_PROCESSO'
+      Origin = 'PACIENTE.NR_PROCESSO'
+    end
+    object qyPacienteNM_PACIENTE: TIBStringField
+      FieldName = 'NM_PACIENTE'
+      Origin = 'PACIENTE.NM_PACIENTE'
+      Required = True
+      Size = 50
+    end
+    object qyPacienteDT_NASCIMENTO: TDateField
+      FieldName = 'DT_NASCIMENTO'
+      Origin = 'PACIENTE.DT_NASCIMENTO'
+      Required = True
+    end
+    object qyPacienteNM_MAE: TIBStringField
+      FieldName = 'NM_MAE'
+      Origin = 'PACIENTE.NM_MAE'
+      Required = True
+      Size = 50
+    end
+    object qyPacienteCD_PACIENTE: TIntegerField
+      FieldName = 'CD_PACIENTE'
+      Origin = 'PACIENTE.CD_PACIENTE'
+      Required = True
+    end
+    object qyPacienteIDADE: TSmallintField
+      FieldName = 'IDADE'
+      Origin = 'PACIENTE.IDADE'
+      Required = True
+    end
+    object qyPacienteTP_SEXO: TIBStringField
+      FieldName = 'TP_SEXO'
+      Origin = 'PACIENTE.TP_SEXO'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object qyPacienteDS_PROVINCIA: TIBStringField
+      FieldName = 'DS_PROVINCIA'
+      Size = 50
+    end
+  end
+  object rvdtNotificacao: TRvDataSetConnection
+    RuntimeVisibility = rtDeveloper
+    DataSet = qyNotificacao
+    Left = 192
+    Top = 376
+  end
+  object rvdtAgenda: TRvDataSetConnection
+    RuntimeVisibility = rtDeveloper
+    DataSet = qyAgenda
+    Left = 232
+    Top = 376
+  end
+  object qyNotificacao: TIBQuery
+    Database = DM.DB
+    Transaction = DM.TS
+    BufferChunks = 1000
+    CachedUpdates = False
+    SQL.Strings = (
+      'SELECT'
+      'N.DT_DIAGNOSTICO,'
+      'P.NR_PROCESSO'
+      'FROM NOTIFICACAO N, PACIENTE P'
+      'WHERE P.CD_PACIENTE = N.CD_PACIENTE'
+      'AND P.CD_UND = N.CD_UND'
+      
+        'AND N.DT_DIAGNOSTICO = (SELECT MIN(DT_DIAGNOSTICO) FROM NOTIFICA' +
+        'CAO'
+      'WHERE CD_PACIENTE = N.CD_PACIENTE)'
+      'AND N.CD_PACIENTE = :PACIENTE'
+      'AND N.CD_UND = :UND')
+    Left = 164
+    Top = 310
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'PACIENTE'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'UND'
+        ParamType = ptUnknown
+      end>
+    object qyNotificacaoDT_DIAGNOSTICO: TDateField
+      FieldName = 'DT_DIAGNOSTICO'
+      Origin = 'NOTIFICACAO.DT_DIAGNOSTICO'
+      Required = True
+    end
+    object qyNotificacaoNR_PROCESSO: TIntegerField
+      FieldName = 'NR_PROCESSO'
+      Origin = 'PACIENTE.NR_PROCESSO'
+    end
+  end
+  object qyAgenda: TIBQuery
+    Database = DM.DB
+    Transaction = DM.TS
+    BufferChunks = 1000
+    CachedUpdates = False
+    SQL.Strings = (
+      'select'
+      'agenda.dt_agenda,'
+      'agenda.ds_esquema,'
+      'paciente.nr_processo,'
+      '(select r.nr_cd4 from resultado_cd4 r'
+      '  where r.fl_refazer is null '
+      '  and r.cd_agenda = (select y.cd_agenda from agenda y'
+      '  where y.cd_medico = :MEDICO'
+      '  and y.cd_paciente = agenda.cd_paciente'
+      '  and y.dt_agenda = (select max(z.dt_agenda) from agenda z'
+      '    where z.cd_paciente = agenda.cd_paciente'
+      '    and z.cd_medico = :MEDICO'
+      '    and z.dt_agenda < agenda.dt_agenda)))CD4,'
+      
+        '(select CAST(AVG(((r1.nr_cd4 * 100) / r1.nr_cd3))AS DECIMAL (10,' +
+        '2))  from resultado_cd4 r1'
+      '  where r1.fl_refazer is null '
+      '  and r1.cd_agenda = (select y.cd_agenda from agenda y'
+      '  where y.cd_medico = :MEDICO'
+      '  and y.cd_paciente = agenda.cd_paciente'
+      '  and y.dt_agenda = (select max(z.dt_agenda) from agenda z'
+      '    where z.cd_paciente = agenda.cd_paciente'
+      '    and z.cd_medico = :MEDICO'
+      '    and z.dt_agenda < agenda.dt_agenda)))PROC_CD4,'
+      '(select r2.dt_resultado from resultado_cd4 r2'
+      '  where r2.fl_refazer is null '
+      '  and r2.cd_agenda = (select y.cd_agenda from agenda y'
+      '  where y.cd_medico = :MEDICO'
+      '  and y.cd_paciente = agenda.cd_paciente'
+      '  and y.dt_agenda = (select max(z.dt_agenda) from agenda z'
+      '    where z.cd_paciente = agenda.cd_paciente'
+      '    and z.cd_medico = :MEDICO'
+      '    and z.dt_agenda < agenda.dt_agenda)))dt_resultado'
+      'from agenda'
+      'left outer join paciente'
+      'on paciente.cd_paciente = agenda.cd_paciente'
+      'where agenda.dt_agenda = (select max(x.dt_agenda) from agenda x'
+      '  where x.cd_paciente = agenda.cd_paciente'
+      '  and x.ds_esquema <> '#39#39')'
+      'and agenda.cd_paciente = :PACIENTE'
+      'and agenda.ds_esquema <> '#39#39
+      ''
+      ''
+      '')
+    Left = 204
+    Top = 310
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'MEDICO'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'MEDICO'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'MEDICO'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'MEDICO'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'MEDICO'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'MEDICO'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'PACIENTE'
+        ParamType = ptUnknown
+      end>
+    object qyAgendaDT_AGENDA: TDateTimeField
+      FieldName = 'DT_AGENDA'
+      Origin = 'AGENDA.DT_AGENDA'
+    end
+    object qyAgendaDS_ESQUEMA: TIBStringField
+      FieldName = 'DS_ESQUEMA'
+      Origin = 'AGENDA.DS_ESQUEMA'
+      Size = 30
+    end
+    object qyAgendaNR_PROCESSO: TIntegerField
+      FieldName = 'NR_PROCESSO'
+      Origin = 'PACIENTE.NR_PROCESSO'
+    end
+    object qyAgendaCD4: TIBBCDField
+      FieldName = 'CD4'
+      Precision = 18
+      Size = 4
+    end
+    object qyAgendaPROC_CD4: TIBBCDField
+      FieldName = 'PROC_CD4'
+      Precision = 18
+      Size = 2
+    end
+    object qyAgendaDT_RESULTADO: TDateField
+      FieldName = 'DT_RESULTADO'
+    end
+  end
+  object qyCD4: TIBQuery
+    Database = DM.DB
+    Transaction = DM.TS
+    OnCalcFields = qyCD4CalcFields
+    BufferChunks = 1000
+    CachedUpdates = False
+    SQL.Strings = (
+      '/* Rel Transferencia Listagem de Exames*/'
+      'SELECT'
+      'a.cd_agenda,'
+      
+        '(select a2.dt_agenda from agenda a2 where a2.cd_agenda = a.cd_ag' +
+        'enda) as DATA_AGENDA,'
+      '(select r.dt_resultado from resultado_cd4 r'
+      
+        '  where r.cd_agenda = a.cd_agenda and r.fl_refazer is null) as "' +
+        'DT_CD4",'
+      
+        '(select CAST(AVG(((r1.nr_cd4 * 100) / r1.nr_cd3))AS DECIMAL (10,' +
+        '2))  from resultado_cd4 r1'
+      
+        '  where r1.cd_agenda = a.cd_agenda and r1.fl_refazer is null) as' +
+        ' "PROC_CD4",'
+      '(select r2.nr_cd4  from resultado_cd4 r2'
+      
+        '  where r2.cd_agenda = a.cd_agenda and r2.fl_refazer is null) as' +
+        ' "CD4",'
+      
+        '(select case when count(*) >= 1 then '#39'S'#39' else null end from exam' +
+        'es_agenda ea where ea.cd_agenda = a.cd_agenda and ea.cd_exames =' +
+        ' 22) as "HGB",'
+      
+        '(select case when count(*) >= 1 then '#39'S'#39' else null end from exam' +
+        'es_agenda ea where ea.cd_agenda = a.cd_agenda and ea.cd_exames =' +
+        ' 24) as "CV",'
+      
+        '(select case when count(*) >= 1 then '#39'S'#39' else null end from exam' +
+        'es_agenda ea where ea.cd_agenda = a.cd_agenda and ea.cd_exames =' +
+        ' 19) as "VDRL",'
+      
+        '(select case when count(*) >= 1 then '#39'S'#39' else null end from exam' +
+        'es_agenda ea where ea.cd_agenda = a.cd_agenda and ea.cd_exames =' +
+        ' 20) as "HBsAg",'
+      
+        '(select case when count(*) >= 1 then '#39'S'#39' else null end from exam' +
+        'es_agenda ea where ea.cd_agenda = a.cd_agenda and ea.cd_exames =' +
+        ' 21) as "VHC"'
+      'FROM agenda a'
+      'where a.cd_paciente = :PACIENTE'
+      'and a.cd_medico = :MEDICO'
+      'GROUP BY a.cd_agenda'
+      'ORDER BY a.cd_agenda desc')
+    Left = 244
+    Top = 310
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'PACIENTE'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'MEDICO'
+        ParamType = ptUnknown
+      end>
+    object qyCD4CD_AGENDA: TIntegerField
+      FieldName = 'CD_AGENDA'
+      Origin = 'AGENDA.CD_AGENDA'
+      Required = True
+    end
+    object qyCD4DT_CD4: TDateField
+      FieldName = 'DT_CD4'
+    end
+    object qyCD4PROC_CD4: TIBBCDField
+      FieldName = 'PROC_CD4'
+      Precision = 18
+      Size = 2
+    end
+    object qyCD4CD4: TIBBCDField
+      FieldName = 'CD4'
+      Precision = 18
+      Size = 4
+    end
+    object qyCD4HGB: TIBStringField
+      FieldName = 'HGB'
+      FixedChar = True
+      Size = 1
+    end
+    object qyCD4CV: TIBStringField
+      FieldName = 'CV'
+      FixedChar = True
+      Size = 1
+    end
+    object qyCD4VDRL: TIBStringField
+      FieldName = 'VDRL'
+      FixedChar = True
+      Size = 1
+    end
+    object qyCD4HBsAg: TIBStringField
+      FieldName = 'HBsAg'
+      FixedChar = True
+      Size = 1
+    end
+    object qyCD4VHC: TIBStringField
+      FieldName = 'VHC'
+      FixedChar = True
+      Size = 1
+    end
+    object qyCD4RESULTADO: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'RESULTADO'
+      Size = 10
+      Calculated = True
+    end
+    object qyCD4DATA_AGENDA: TDateTimeField
+      FieldName = 'DATA_AGENDA'
+    end
+  end
+  object rvdtcd4: TRvDataSetConnection
+    RuntimeVisibility = rtDeveloper
+    DataSet = qyCD4
+    Left = 264
+    Top = 376
+  end
+  object rvdtPaciente: TRvDataSetConnection
+    RuntimeVisibility = rtDeveloper
+    DataSet = qyPaciente
+    Left = 204
+    Top = 270
+  end
+end

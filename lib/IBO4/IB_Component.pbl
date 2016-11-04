@@ -1,0 +1,12 @@
+
+{                                                                              }
+{ IB_Component.pbl                                                             }
+{                                                                              }
+
+{$IFNDEF HELPSCAN}
+
+published
+
+  property OnError;
+
+{$ENDIF}

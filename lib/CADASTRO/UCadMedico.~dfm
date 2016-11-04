@@ -1,0 +1,135 @@
+inherited frmCadMedico: TfrmCadMedico
+  Left = 132
+  Top = 142
+  Caption = 'M'#233'dico'
+  OldCreateOrder = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel2: TPanel
+    inherited pgGeral: TPageControl
+      inherited tabLista: TTabSheet
+        inherited Panel3: TPanel
+          inherited grDados: TdxDBGrid
+            KeyField = 'CD_MEDICO'
+            Filter.AutoDataSetFilter = True
+            Filter.Criteria = {00000000}
+            object grDadosCD_MEDICO: TdxDBGridMaskColumn
+              Caption = 'C'#243'digo'
+              BandIndex = 0
+              RowIndex = 0
+              FieldName = 'CD_MEDICO'
+            end
+            object grDadosNM_MEDICO: TdxDBGridMaskColumn
+              Caption = 'Nome M'#233'dico'
+              BandIndex = 0
+              RowIndex = 0
+              FieldName = 'NM_MEDICO'
+            end
+          end
+        end
+      end
+      inherited tabGeral: TTabSheet
+        inherited Panel4: TPanel
+          object Label1: TLabel
+            Left = 109
+            Top = 16
+            Width = 81
+            Height = 13
+            Caption = 'Nome do M'#233'dico'
+          end
+          object Label2: TLabel
+            Left = 32
+            Top = 16
+            Width = 33
+            Height = 13
+            Caption = 'C'#243'digo'
+          end
+          object Label3: TLabel
+            Left = 32
+            Top = 56
+            Width = 59
+            Height = 13
+            Caption = 'Nr. Telefone'
+          end
+          object Label4: TLabel
+            Left = 240
+            Top = 56
+            Width = 81
+            Height = 13
+            Caption = 'Nr. Atendimentos'
+          end
+          object DBEdit1: TDBEdit
+            Left = 109
+            Top = 32
+            Width = 400
+            Height = 21
+            CharCase = ecUpperCase
+            DataField = 'NM_MEDICO'
+            DataSource = dsControle
+            TabOrder = 0
+          end
+          object DBEdit2: TDBEdit
+            Left = 32
+            Top = 32
+            Width = 76
+            Height = 21
+            TabStop = False
+            Color = cl3DLight
+            DataField = 'CD_MEDICO'
+            DataSource = dsControle
+            ReadOnly = True
+            TabOrder = 1
+          end
+          object DBEdit3: TDBEdit
+            Left = 32
+            Top = 72
+            Width = 208
+            Height = 21
+            CharCase = ecUpperCase
+            DataField = 'NR_TELEFONE'
+            DataSource = dsControle
+            TabOrder = 2
+          end
+          object DBCheckBox1: TDBCheckBox
+            Left = 33
+            Top = 106
+            Width = 115
+            Height = 17
+            Caption = 'Tornar Inativo em'
+            DataField = 'FL_ATIVO'
+            DataSource = dsControle
+            TabOrder = 3
+            ValueChecked = '1'
+            ValueUnchecked = '0'
+          end
+          object DBDateEdit1: TDBDateEdit
+            Left = 152
+            Top = 104
+            Width = 121
+            Height = 21
+            DataField = 'DT_ATIVO'
+            DataSource = dsControle
+            NumGlyphs = 2
+            TabOrder = 4
+          end
+          object DBEdit4: TDBEdit
+            Left = 240
+            Top = 72
+            Width = 87
+            Height = 21
+            CharCase = ecUpperCase
+            DataField = 'NR_ATENDIMENTO'
+            DataSource = dsControle
+            TabOrder = 5
+          end
+        end
+      end
+    end
+  end
+  inherited dsControle: TDataSource
+    DataSet = DMGERAL.TB_MEDICO
+  end
+  inherited dsGrid: TDataSource
+    DataSet = DMGERAL.TB_MEDICO
+  end
+end

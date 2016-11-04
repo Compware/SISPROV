@@ -1,0 +1,39 @@
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 4
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 4
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 4
+[1/4] SIS PROV - Erro UID: 8019
+Email deletado!
+[2/4] SIS PROV - Erro UID: 8020
+Email deletado!
+[3/4] SIS PROV - Erro UID: 8021
+Email deletado!
+[4/4] SIS PROV - Erro UID: 8022
+Email deletado!
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+

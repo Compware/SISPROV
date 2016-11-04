@@ -1,0 +1,79 @@
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 14
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 14
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 14
+[1/14] SIS PROV - Erro UID: 8002
+Email deletado!
+[2/14] SIS PROV - Erro UID: 8003
+Email deletado!
+[3/14] SIS PROV - Erro UID: 8004
+Email deletado!
+[4/14] SIS PROV - Erro UID: 8005
+Email deletado!
+[5/14] SIS PROV - Erro UID: 8006
+Email deletado!
+[6/14] SIS PROV - Erro UID: 8007
+Email deletado!
+[7/14] SIS PROV - Erro UID: 8008
+Email deletado!
+[8/14] SIS PROV - Erro UID: 8009
+Email deletado!
+[9/14] SIS PROV - Erro UID: 8010
+Email deletado!
+[10/14] SIS PROV - Erro UID: 8014
+Email deletado!
+[11/14] SIS PROV - Erro UID: 8015
+Email deletado!
+[12/14] SIS PROV - Erro UID: 8016
+Email deletado!
+[13/14] SIS PROV - Erro UID: 8017
+Email deletado!
+[14/14] SIS PROV - Erro UID: 8018
+Email deletado!
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+

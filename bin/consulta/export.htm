@@ -1,0 +1,139 @@
+
+<SCRIPT Language=Javascript>
+var GPageURL = "";
+var GPageNo = 4;
+var GPageCount = 4;
+
+function GotoPage(APageNo) {
+  location.href = GPageURL.replace(/{%PAGENO%}/,APageNo);
+}
+
+function NextPage() {
+  if (GPageNo < GPageCount)
+    {GotoPage(GPageNo + 1);}
+  else
+    {window.alert("This is the last page.")}
+}
+
+function PrevPage() {
+  if (GPageNo > 1)
+    {GotoPage(GPageNo - 1);}
+  else
+    {window.alert("This is the first page.")}
+}
+
+</SCRIPT>
+<HTML><HEAD><script type="text/JavaScript"  language="javascript" src="scripts/ConsultaXML.js"></script>
+<STYLE TYPE="text/css">
+<!--
+DIV {position:absolute}
+-->
+</STYLE>
+</HEAD>
+<BODY>  <img onmouseover="this.style.cursor='pointer'" onclick="ExportHTMLTableToExcel()"  height="23" src="imagens/excel.jpg" width="23" border="0"/>  <DIV ID="dv">
+<DIV STYLE="left:49;top:11;width:288;font:normal normal 10pt 'Arial';color:#000000">162</DIV>
+<DIV STYLE="left:163;top:11;width:1056;font:normal normal 10pt 'Arial';color:#000000">Reino Unido</DIV>
+<DIV STYLE="left:49;top:30;width:288;font:normal normal 10pt 'Arial';color:#000000">163</DIV>
+<DIV STYLE="left:163;top:30;width:1248;font:normal normal 10pt 'Arial';color:#000000">Romnia (Romni</DIV>
+<DIV STYLE="left:49;top:50;width:288;font:normal normal 10pt 'Arial';color:#000000">164</DIV>
+<DIV STYLE="left:163;top:50;width:576;font:normal normal 10pt 'Arial';color:#000000">Ruanda</DIV>
+<DIV STYLE="left:49;top:69;width:288;font:normal normal 10pt 'Arial';color:#000000">165</DIV>
+<DIV STYLE="left:163;top:69;width:480;font:normal normal 10pt 'Arial';color:#000000">Rssia</DIV>
+<DIV STYLE="left:49;top:88;width:288;font:normal normal 10pt 'Arial';color:#000000">166</DIV>
+<DIV STYLE="left:163;top:88;width:1152;font:normal normal 10pt 'Arial';color:#000000">Ilhas Salomo</DIV>
+<DIV STYLE="left:49;top:107;width:288;font:normal normal 10pt 'Arial';color:#000000">167</DIV>
+<DIV STYLE="left:163;top:107;width:480;font:normal normal 10pt 'Arial';color:#000000">Samoa</DIV>
+<DIV STYLE="left:49;top:126;width:288;font:normal normal 10pt 'Arial';color:#000000">168</DIV>
+<DIV STYLE="left:163;top:126;width:960;font:normal normal 10pt 'Arial';color:#000000">Santa Lcia</DIV>
+<DIV STYLE="left:49;top:146;width:288;font:normal normal 10pt 'Arial';color:#000000">169</DIV>
+<DIV STYLE="left:163;top:146;width:1440;font:normal normal 10pt 'Arial';color:#000000">So Cristvo e Ne</DIV>
+<DIV STYLE="left:49;top:165;width:288;font:normal normal 10pt 'Arial';color:#000000">170</DIV>
+<DIV STYLE="left:163;top:165;width:1344;font:normal normal 10pt 'Arial';color:#000000">So Marinho (Sa</DIV>
+<DIV STYLE="left:49;top:184;width:288;font:normal normal 10pt 'Arial';color:#000000">171</DIV>
+<DIV STYLE="left:163;top:184;width:1344;font:normal normal 10pt 'Arial';color:#000000">So Tom e Prnci</DIV>
+<DIV STYLE="left:49;top:203;width:288;font:normal normal 10pt 'Arial';color:#000000">172</DIV>
+<DIV STYLE="left:163;top:203;width:1440;font:normal normal 10pt 'Arial';color:#000000">So Vicente e Gr</DIV>
+<DIV STYLE="left:49;top:222;width:288;font:normal normal 10pt 'Arial';color:#000000">173</DIV>
+<DIV STYLE="left:163;top:222;width:1440;font:normal normal 10pt 'Arial';color:#000000">Saara Ocidental</DIV>
+<DIV STYLE="left:49;top:242;width:288;font:normal normal 10pt 'Arial';color:#000000">174</DIV>
+<DIV STYLE="left:163;top:242;width:672;font:normal normal 10pt 'Arial';color:#000000">Senegal</DIV>
+<DIV STYLE="left:49;top:261;width:288;font:normal normal 10pt 'Arial';color:#000000">175</DIV>
+<DIV STYLE="left:163;top:261;width:1536;font:normal normal 10pt 'Arial';color:#000000">Seri Lanca (Sri </DIV>
+<DIV STYLE="left:49;top:280;width:288;font:normal normal 10pt 'Arial';color:#000000">176</DIV>
+<DIV STYLE="left:163;top:280;width:960;font:normal normal 10pt 'Arial';color:#000000">Serra Leoa</DIV>
+<DIV STYLE="left:49;top:299;width:288;font:normal normal 10pt 'Arial';color:#000000">177</DIV>
+<DIV STYLE="left:163;top:299;width:480;font:normal normal 10pt 'Arial';color:#000000">Srvia</DIV>
+<DIV STYLE="left:49;top:318;width:288;font:normal normal 10pt 'Arial';color:#000000">178</DIV>
+<DIV STYLE="left:163;top:318;width:1440;font:normal normal 10pt 'Arial';color:#000000">Seicheles (Seyc</DIV>
+<DIV STYLE="left:49;top:338;width:288;font:normal normal 10pt 'Arial';color:#000000">179</DIV>
+<DIV STYLE="left:163;top:338;width:1440;font:normal normal 10pt 'Arial';color:#000000">Singapura (Cing</DIV>
+<DIV STYLE="left:49;top:357;width:288;font:normal normal 10pt 'Arial';color:#000000">180</DIV>
+<DIV STYLE="left:163;top:357;width:384;font:normal normal 10pt 'Arial';color:#000000">Sria</DIV>
+<DIV STYLE="left:49;top:376;width:288;font:normal normal 10pt 'Arial';color:#000000">181</DIV>
+<DIV STYLE="left:163;top:376;width:576;font:normal normal 10pt 'Arial';color:#000000">Somlia</DIV>
+<DIV STYLE="left:49;top:395;width:288;font:normal normal 10pt 'Arial';color:#000000">182</DIV>
+<DIV STYLE="left:163;top:395;width:1056;font:normal normal 10pt 'Arial';color:#000000">Somalilndia</DIV>
+<DIV STYLE="left:49;top:414;width:288;font:normal normal 10pt 'Arial';color:#000000">183</DIV>
+<DIV STYLE="left:163;top:414;width:960;font:normal normal 10pt 'Arial';color:#000000">Suazilndia</DIV>
+<DIV STYLE="left:49;top:434;width:288;font:normal normal 10pt 'Arial';color:#000000">184</DIV>
+<DIV STYLE="left:163;top:434;width:384;font:normal normal 10pt 'Arial';color:#000000">Sudo</DIV>
+<DIV STYLE="left:49;top:453;width:288;font:normal normal 10pt 'Arial';color:#000000">185</DIV>
+<DIV STYLE="left:163;top:453;width:480;font:normal normal 10pt 'Arial';color:#000000">Sucia</DIV>
+<DIV STYLE="left:49;top:472;width:288;font:normal normal 10pt 'Arial';color:#000000">186</DIV>
+<DIV STYLE="left:163;top:472;width:288;font:normal normal 10pt 'Arial';color:#000000">Sua</DIV>
+<DIV STYLE="left:49;top:491;width:288;font:normal normal 10pt 'Arial';color:#000000">187</DIV>
+<DIV STYLE="left:163;top:491;width:768;font:normal normal 10pt 'Arial';color:#000000">Suriname</DIV>
+<DIV STYLE="left:49;top:510;width:288;font:normal normal 10pt 'Arial';color:#000000">188</DIV>
+<DIV STYLE="left:163;top:510;width:768;font:normal normal 10pt 'Arial';color:#000000">Tailndia</DIV>
+<DIV STYLE="left:49;top:530;width:288;font:normal normal 10pt 'Arial';color:#000000">189</DIV>
+<DIV STYLE="left:163;top:530;width:1440;font:normal normal 10pt 'Arial';color:#000000">Taiwan: ver For</DIV>
+<DIV STYLE="left:49;top:549;width:288;font:normal normal 10pt 'Arial';color:#000000">190</DIV>
+<DIV STYLE="left:163;top:549;width:960;font:normal normal 10pt 'Arial';color:#000000">Tajiquisto</DIV>
+<DIV STYLE="left:49;top:568;width:288;font:normal normal 10pt 'Arial';color:#000000">191</DIV>
+<DIV STYLE="left:163;top:568;width:672;font:normal normal 10pt 'Arial';color:#000000">Tanznia</DIV>
+<DIV STYLE="left:49;top:587;width:288;font:normal normal 10pt 'Arial';color:#000000">192</DIV>
+<DIV STYLE="left:163;top:587;width:1056;font:normal normal 10pt 'Arial';color:#000000">Timor-Leste</DIV>
+<DIV STYLE="left:49;top:606;width:288;font:normal normal 10pt 'Arial';color:#000000">193</DIV>
+<DIV STYLE="left:163;top:606;width:384;font:normal normal 10pt 'Arial';color:#000000">Togo</DIV>
+<DIV STYLE="left:49;top:626;width:288;font:normal normal 10pt 'Arial';color:#000000">194</DIV>
+<DIV STYLE="left:163;top:626;width:480;font:normal normal 10pt 'Arial';color:#000000">Tonga</DIV>
+<DIV STYLE="left:49;top:645;width:288;font:normal normal 10pt 'Arial';color:#000000">195</DIV>
+<DIV STYLE="left:163;top:645;width:1056;font:normal normal 10pt 'Arial';color:#000000">Transnstria</DIV>
+<DIV STYLE="left:49;top:664;width:288;font:normal normal 10pt 'Arial';color:#000000">196</DIV>
+<DIV STYLE="left:163;top:664;width:1344;font:normal normal 10pt 'Arial';color:#000000">Trindade e Tob</DIV>
+<DIV STYLE="left:49;top:683;width:288;font:normal normal 10pt 'Arial';color:#000000">197</DIV>
+<DIV STYLE="left:163;top:683;width:576;font:normal normal 10pt 'Arial';color:#000000">Tunsia</DIV>
+<DIV STYLE="left:49;top:702;width:288;font:normal normal 10pt 'Arial';color:#000000">198</DIV>
+<DIV STYLE="left:163;top:702;width:1152;font:normal normal 10pt 'Arial';color:#000000">Turcomanisto</DIV>
+<DIV STYLE="left:49;top:722;width:288;font:normal normal 10pt 'Arial';color:#000000">199</DIV>
+<DIV STYLE="left:163;top:722;width:672;font:normal normal 10pt 'Arial';color:#000000">Turquia</DIV>
+<DIV STYLE="left:49;top:741;width:288;font:normal normal 10pt 'Arial';color:#000000">200</DIV>
+<DIV STYLE="left:163;top:741;width:576;font:normal normal 10pt 'Arial';color:#000000">Tuvalu</DIV>
+<DIV STYLE="left:49;top:760;width:288;font:normal normal 10pt 'Arial';color:#000000">201</DIV>
+<DIV STYLE="left:163;top:760;width:576;font:normal normal 10pt 'Arial';color:#000000">Ucrnia</DIV>
+<DIV STYLE="left:49;top:779;width:288;font:normal normal 10pt 'Arial';color:#000000">202</DIV>
+<DIV STYLE="left:163;top:779;width:576;font:normal normal 10pt 'Arial';color:#000000">Uganda</DIV>
+<DIV STYLE="left:49;top:798;width:288;font:normal normal 10pt 'Arial';color:#000000">203</DIV>
+<DIV STYLE="left:163;top:798;width:672;font:normal normal 10pt 'Arial';color:#000000">Uruguai</DIV>
+<DIV STYLE="left:49;top:818;width:288;font:normal normal 10pt 'Arial';color:#000000">204</DIV>
+<DIV STYLE="left:163;top:818;width:960;font:normal normal 10pt 'Arial';color:#000000">Usbequisto</DIV>
+<DIV STYLE="left:49;top:837;width:288;font:normal normal 10pt 'Arial';color:#000000">205</DIV>
+<DIV STYLE="left:163;top:837;width:672;font:normal normal 10pt 'Arial';color:#000000">Vanuatu</DIV>
+<DIV STYLE="left:49;top:856;width:288;font:normal normal 10pt 'Arial';color:#000000">206</DIV>
+<DIV STYLE="left:163;top:856;width:1440;font:normal normal 10pt 'Arial';color:#000000">Cidade do Vatic</DIV>
+<DIV STYLE="left:49;top:875;width:288;font:normal normal 10pt 'Arial';color:#000000">207</DIV>
+<DIV STYLE="left:163;top:875;width:864;font:normal normal 10pt 'Arial';color:#000000">Venezuela</DIV>
+<DIV STYLE="left:49;top:894;width:288;font:normal normal 10pt 'Arial';color:#000000">208</DIV>
+<DIV STYLE="left:163;top:894;width:1440;font:normal normal 10pt 'Arial';color:#000000">Vietname (Vietn</DIV>
+<DIV STYLE="left:49;top:914;width:288;font:normal normal 10pt 'Arial';color:#000000">209</DIV>
+<DIV STYLE="left:163;top:914;width:1344;font:normal normal 10pt 'Arial';color:#000000">Ymen: ver Imen</DIV>
+<DIV STYLE="left:49;top:933;width:288;font:normal normal 10pt 'Arial';color:#000000">210</DIV>
+<DIV STYLE="left:163;top:933;width:480;font:normal normal 10pt 'Arial';color:#000000">Zmbia</DIV>
+<DIV STYLE="left:49;top:952;width:288;font:normal normal 10pt 'Arial';color:#000000">211</DIV>
+<DIV STYLE="left:163;top:952;width:672;font:normal normal 10pt 'Arial';color:#000000">Zimbabu</DIV>
+<DIV style="COLOR: #000000; FONT: 10pt 'Arial'; LEFT: 0px; TOP: 1048px">
+<HR><P ALIGN=CENTER>
+<A HREF="javascript:PrevPage();">Previous Page</A>
+ --------- 
+<A HREF="javascript:NextPage();">Next Page</A>
+</P></DIV></DIV></BODY></HTML>

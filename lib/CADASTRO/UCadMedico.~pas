@@ -1,0 +1,39 @@
+unit UCadMedico;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UfrmCadPad, dxExEdtr, StdCtrls, Mask, DBCtrls, DB, dxCntner,
+  dxTL, dxDBCtrl, dxDBGrid, ComCtrls, Buttons, ExtCtrls, ToolEdit, RXDBCtrl;
+
+type
+  TfrmCadMedico = class(TfrmCadPad)
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    grDadosCD_MEDICO: TdxDBGridMaskColumn;
+    grDadosNM_MEDICO: TdxDBGridMaskColumn;
+    DBEdit2: TDBEdit;
+    Label2: TLabel;
+    DBEdit3: TDBEdit;
+    Label3: TLabel;
+    DBCheckBox1: TDBCheckBox;
+    DBDateEdit1: TDBDateEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadMedico: TfrmCadMedico;
+
+implementation
+
+uses UDM, UDMGERAL;
+
+{$R *.dfm}
+
+end.

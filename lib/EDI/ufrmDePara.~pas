@@ -1,0 +1,186 @@
+unit ufrmDePara;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, Buttons, IBDatabase, DB, Grids, DBGrids,
+  IBCustomDataSet, ComCtrls, CheckLst;
+
+type
+  TfrmDePara = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    ibDe: TIBDatabase;
+    ibPara: TIBDatabase;
+    tsDe: TIBTransaction;
+    tsPara: TIBTransaction;
+    Panel3: TPanel;
+    Label3: TLabel;
+    edTabela: TEdit;
+    Label4: TLabel;
+    edProvincia: TEdit;
+    Label5: TLabel;
+    edMunicipio: TEdit;
+    Label6: TLabel;
+    edUnidade: TEdit;
+    Label7: TLabel;
+    edMesAno: TEdit;
+    Label1: TLabel;
+    edDe: TEdit;
+    btDe: TSpeedButton;
+    Label2: TLabel;
+    edPara: TEdit;
+    btPara: TSpeedButton;
+    Label8: TLabel;
+    Label9: TLabel;
+    tbDe: TIBDataSet;
+    tbPara: TIBDataSet;
+    grDe: TDBGrid;
+    grPara: TDBGrid;
+    dsDe: TDataSource;
+    dsPara: TDataSource;
+    btAbrir: TButton;
+    btDelPara: TButton;
+    btDePara: TButton;
+    pb: TProgressBar;
+    mLog: TMemo;
+    btComparar: TButton;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    ckTabelas: TCheckListBox;
+    procedure btDeClick(Sender: TObject);
+    procedure btParaClick(Sender: TObject);
+    procedure btAbrirClick(Sender: TObject);
+    procedure btDelParaClick(Sender: TObject);
+    procedure btDeParaClick(Sender: TObject);
+    procedure btCompararClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmDePara: TfrmDePara;
+
+implementation
+
+uses ufrmEDI, UDM;
+
+{$R *.dfm}
+
+procedure TfrmDePara.btDeClick(Sender: TObject);
+begin
+  ibDe.Close;
+  ibDe.DatabaseName := edDe.Text;
+  ibDe.Open;
+  mLog.Lines.add('DB De - Aberto');
+end;
+
+procedure TfrmDePara.btParaClick(Sender: TObject);
+begin
+  ibPara.Close;
+  ibPara.DatabaseName := edPara.Text;
+  ibPara.Open;
+  mLog.Lines.add('DB Para - Aberto');
+end;
+
+procedure TfrmDePara.btAbrirClick(Sender: TObject);
+var sSQL:string;
+begin
+  sSQL:= 'select * from ' + edTabela.Text +
+         ' where (1=1)  ';
+
+  if (edProvincia.Text<>'') then
+    sSQL := sSQL +
+         ' and cd_provincia = ' + edProvincia.Text;
+
+  if(edMesAno.Text <>'') then
+    sSQL := sSQL +
+         ' and vl_mesano in (' + edMesAno.Text + ')';
+
+  if edMunicipio.Text <> '' then
+    sSQL := sSQL +
+         ' and cd_municipio = ' + edMunicipio.Text ;
+  if edUnidade.Text <> '' then
+    sSQL := sSQL +
+         ' and cd_unidade = ' + edUnidade.Text ;
+
+  tbDe.Close;
+  tbDe.SelectSQL.Text := sSQL;
+  tbDe.Open;
+  tbDe.Last;
+
+  tbPara.Close;
+  frmEdi.MontaDataSet(edTabela.Text,tbPara);
+  tbPara.SelectSQL.Text := sSQL;
+  tbPara.Open;
+  tbPara.Last;
+  
+  mLog.Lines.add('Tabela: ' + edTabela.Text +
+   ' De: ' + intToStr(tbDe.RecordCount) +
+   ' Para: ' + intToStr(tbPara.RecordCount));
+
+end;
+
+procedure TfrmDePara.btDelParaClick(Sender: TObject);
+begin
+  tbPara.First;
+  while Not tbPara.Eof do
+    tbPara.Delete;
+  dm.Commit(tbPara);
+  mLog.Lines.add('Exclusao Para - Realizado');
+end;
+
+procedure TfrmDePara.btDeParaClick(Sender: TObject);
+var
+  i:integer;
+begin
+  tbDe.First;
+  pb.Max:=tbDe.RecordCount;
+  while Not tbDe.Eof do
+  begin
+    try
+      tbPara.Insert;
+      for i:=0 to tbDe.FieldCount-1 do
+        tbPara.FieldByName(tbDe.Fields[i].FieldName).Value := tbDe.Fields[i].value;
+      tbPara.Post;
+      pb.Position:=tbPara.RecordCount;
+      tbDe.Next;
+      dm.Commit(tbPara);
+    except
+      on E:Exception do
+      begin
+        mLog.lines.add('RecNo:' +  intToStr(tbDe.RecNo) + 'Erro: ' + e.Message);
+        tbPara.Cancel;
+        tbDe.Next;
+      end;
+    end;
+  end;
+end;
+
+procedure TfrmDePara.btCompararClick(Sender: TObject);
+begin
+ edTabela.Text := 'REGISTRO_ATV';
+ btAbrirClick(Sender);
+ edTabela.Text := 'REGISTRO_COINFECCAO';
+ btAbrirClick(Sender);
+ edTabela.Text := 'REGISTRO_PROGRAMA';
+ btAbrirClick(Sender);
+ edTabela.Text := 'REGISTRO_PTV';
+ btAbrirClick(Sender);
+ edTabela.Text := 'REGISTRO_TARV';
+ btAbrirClick(Sender);
+ edTabela.Text := 'REGISTRO_TARV_ACOMP';
+ btAbrirClick(Sender);
+ edTabela.Text := 'REGISTRO_TARV_CD4';
+ btAbrirClick(Sender);
+ edTabela.Text := 'REGISTRO_TARV_ESQUEMA';
+ btAbrirClick(Sender);
+ edTabela.Text := 'REGISTRO_TESTES_POSITIVOS';
+ btAbrirClick(Sender);
+end;
+
+end.

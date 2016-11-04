@@ -1,0 +1,32 @@
+unit udmClienteEDI;
+
+interface
+
+uses
+  SysUtils, Classes, DB, DBClient, MConnect;
+
+type
+  TdmClienteEDI = class(TDataModule)
+    dcmEDI: TDCOMConnection;
+    procedure dcmEDIBeforeConnect(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dmClienteEDI: TdmClienteEDI;
+
+uses udm;  
+
+implementation
+
+{$R *.dfm}
+
+procedure TdmClienteEDI.dcmEDIBeforeConnect(Sender: TObject);
+begin
+  dcmEDI.ComputerName := dm.sComputerName;
+end;
+
+end.

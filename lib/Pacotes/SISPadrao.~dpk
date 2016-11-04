@@ -1,0 +1,64 @@
+package SISPadrao;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  dxEdtrD7,
+  dxComnD7,
+  EQTLD7,
+  ECQDBCD7,
+  dxDBEdD7,
+  vcldb,
+  EQGridD7,
+  dxELibD7,
+  vcljpg,
+  vclie,
+  ibxpress,
+  SISGeral,
+  SISDM,
+  dsnap,
+  Rave50VCL,
+  bdertl,
+  fs7,
+  frx7,
+  frxDB7,
+  frxe7;
+
+contains
+  UfrmCadPad in '..\PADRAO\UfrmCadPad.pas' {frmCadPad},
+  UfrmCadBase in '..\PADRAO\UfrmCadBase.pas' {frmCadBase},
+  UfrmRelPad in '..\PADRAO\UfrmRelPad.pas' {frmRelPad},
+  UfrmLocPad in '..\PADRAO\UfrmLocPad.pas' {frmLocPad},
+  UfrmLocalizar in '..\GERAL\UfrmLocalizar.pas' {frmLocalizar},
+  UfrmConfPad in '..\PADRAO\UfrmConfPad.pas' {frmConfPad},
+  UConPad in '..\PADRAO\UConPad.pas' {frmConPad},
+  UfrmCadPadFichas in '..\PADRAO\UfrmCadPadFichas.pas' {frmCadPadFichas},
+  UfrmCadPadSG in '..\PADRAO\UfrmCadPadSG.pas' {frmCadPadSG},
+  UfrmRelPadFast in '..\PADRAO\UfrmRelPadFast.pas' {frmRelPadFast};
+
+end.

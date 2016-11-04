@@ -1,0 +1,4452 @@
+---------------------------23/03/2016 01:12:28---------------------------
+Exception 'EVariantTypeCastError' in module EDI.exe at 000120E0
+Could not convert variant of type (Null) into type (String)
+
+Module: Variants, Source: variants.pas, Line 525
+Procedure: Variants::VarCastError
+
+Call stack:
+:004130E0 [EDI.exe] Variants::VarCastError (variants.pas, line 525)
+:7C812AEB [kernel32.dll]
+:004130E0 [EDI.exe] Variants::VarCastError (variants.pas, line 525)
+:0040F199 [EDI.exe] Sysutils::Exception::CreateFmt (sysutils.pas, line 13258)
+:0040F1A7 [EDI.exe] Sysutils::Exception::CreateFmt (sysutils.pas, line 13258)
+:00403DBE [EDI.exe] System::__linkproc__ AfterConstruction (system.pas, line 9074)
+:0040F1D2 [EDI.exe] Sysutils::Exception::CreateFmt (sysutils.pas, line 13258)
+Recursive call (2 times):
+:004130E0 [EDI.exe] Variants::VarCastError (variants.pas, line 525)
+:00416FE7 [EDI.exe] Variants::__linkproc__ VarToLStr (variants.pas, line 2281)
+:0053E5E9 [EDI.exe] Ugeralsql::InicializaDados (UGeralSQL.pas, line 43)
+:0057D0F0 [EDI.exe] Udmgeral::TDMGERAL::DataModuleCreate
+:0042DA1E [EDI.exe] Classes::TDataModule::DoCreate (classes.pas, line 10792)
+:0042D8B0 [EDI.exe] Classes::TDataModule::AfterConstruction (classes.pas, line 10756)
+:00403DBE [EDI.exe] System::__linkproc__ AfterConstruction (system.pas, line 9074)
+:0042D883 [EDI.exe] Classes::TDataModule::Create (classes.pas, line 10750)
+:00403D85 [EDI.exe] System::__linkproc__ ClassCreate (system.pas, line 9042)
+:00404A08 [EDI.exe] System::__linkproc__ LStrFromPCharLen (system.pas, line 11920)
+:0042DE8E [EDI.exe] Classes::StdWndProc (classes.pas, line 10966)
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:00402240 [EDI.exe] System::TryHarder (GETMEM.INC, line 955)
+:004023CC [EDI.exe] System::SysGetMem (GETMEM.INC, line 1035)
+:004023EF [EDI.exe] System::SysGetMem (GETMEM.INC, line 1038)
+:0049A98F [EDI.exe] Forms::TApplication::CreateForm (Forms.pas, line 6946)
+:0060AAC8 [EDI.exe] initialization (EDI.dpr, line 30)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,00209C00) Q:\bin\EDI.exe
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+
+Main Thread ID = 00000464, Current Thread ID = 00000464
+Registers:
+EAX = 0012FC34  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000001  SS = 0023  ESP = 0012FC30    EBP = 0012FC84
+ECX = 00000000  DS = 0023  ESI = 0012FCB8    FS  = 003B
+EDX = 004130E0  ES = 0023  EDI = 0012FDB8    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+00000100 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 00403905 0188CCE0 0043440B 
+01889FD0 01521E0B 00000000 015B1360 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------05/04/2016 19:19:18---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\RISDIVINA.GDB"
+Error while trying to open file
+O sistema não conseguiu localizar o ficheiro especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00A74614 [vcl70.bpl]
+:00A8F4D7 [vcl70.bpl]
+:00A71343 [vcl70.bpl]
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:00A74530 [vcl70.bpl]
+:00A8E00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:009FB241 [vcl70.bpl]
+:00A741AB [vcl70.bpl]
+:00A741C2 [vcl70.bpl]
+:00A74530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00A8E00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:009FB241 [vcl70.bpl]
+:00A741AB [vcl70.bpl]
+:00A741C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7E378623 [user32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+:7E378EAB [user32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:4003D0BE [rtl70.bpl]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:7E36885A [user32.dll]
+:10000000 [gds32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E368BD9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+Recursive call (2 times):
+:7E379E6B [user32.dll]
+:773D706B [comctl32.dll]
+:773D8E90 [comctl32.dll]
+:773D97CB [comctl32.dll]
+:773D99C0 [comctl32.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00A74614 [vcl70.bpl]
+:00A71343 [vcl70.bpl]
+:00A8E00A [vcl70.bpl]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$009F0000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$773B0000 (773B0000,00001000,00090C00) C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll
+
+Main Thread ID = 00000344, Current Thread ID = 00000344
+Registers:
+EAX = 0012AD10  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AD0C    EBP = 0012AD60
+ECX = 00000000  DS = 0023  ESI = 0012AD94    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C915F55 40005705 03DBC69C 0040810B 
+00000002 03D11E00 00000000 03DB5548 7C915F55 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------05/04/2016 19:20:19---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\RISDIVINA.GDB"
+Error while trying to open file
+O sistema não conseguiu localizar o ficheiro especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00A74614 [vcl70.bpl]
+:00A8F4D7 [vcl70.bpl]
+:00A71343 [vcl70.bpl]
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:00A74530 [vcl70.bpl]
+:00A8E00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:009FB241 [vcl70.bpl]
+:00A741AB [vcl70.bpl]
+:00A741C2 [vcl70.bpl]
+:00A74530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00A8E00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:009FB241 [vcl70.bpl]
+:00A741AB [vcl70.bpl]
+:00A741C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7E378623 [user32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+:7E378EAB [user32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:4003D0BE [rtl70.bpl]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:7E36885A [user32.dll]
+:10000000 [gds32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E368BD9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+Recursive call (2 times):
+:7E379E6B [user32.dll]
+:773D706B [comctl32.dll]
+:773D8E90 [comctl32.dll]
+:773D97CB [comctl32.dll]
+:773D99C0 [comctl32.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00A74614 [vcl70.bpl]
+:00A71343 [vcl70.bpl]
+:00A8E00A [vcl70.bpl]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$009F0000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$773B0000 (773B0000,00001000,00090C00) C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll
+
+Main Thread ID = 000006A4, Current Thread ID = 000006A4
+Registers:
+EAX = 0012AD10  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AD0C    EBP = 0012AD60
+ECX = 00000000  DS = 0023  ESI = 0012AD94    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C915F55 40005705 03DBC69C 0040810B 
+00000002 03D11E00 00000000 03DB5548 7C915F55 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------05/07/2016 01:31:05---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "servidor".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00C64614 [vcl70.bpl]
+:00C7F4D7 [vcl70.bpl]
+:00C61343 [vcl70.bpl]
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:00C64530 [vcl70.bpl]
+:00C7E00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00BEB241 [vcl70.bpl]
+:00C641AB [vcl70.bpl]
+:00C641C2 [vcl70.bpl]
+:00C64530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00C7E00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00BEB241 [vcl70.bpl]
+:00C641AB [vcl70.bpl]
+:00C641C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7E378623 [user32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+:7E378EAB [user32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:4003D0BE [rtl70.bpl]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:7E36885A [user32.dll]
+:10000000 [gds32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E368BD9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+Recursive call (2 times):
+:7E379E6B [user32.dll]
+:773D706B [comctl32.dll]
+:773D8E90 [comctl32.dll]
+:773D97CB [comctl32.dll]
+:773D99C0 [comctl32.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00C64614 [vcl70.bpl]
+:00C61343 [vcl70.bpl]
+:00C7E00A [vcl70.bpl]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0007E600) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00BE0000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$773B0000 (773B0000,00001000,00090C00) C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll
+
+Main Thread ID = 000009DC, Current Thread ID = 000009DC
+Registers:
+EAX = 0012AD10  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AD0C    EBP = 0012AD60
+ECX = 00000000  DS = 0023  ESI = 0012AD94    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C915F55 40005705 040DEC04 0040810B 
+00000002 04031E00 00000000 040DE9D8 7C915F55 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------5/7/2016 01:32:30---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "servidor".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:77EA42C2 [SHLWAPI.dll]
+:7C916FC5 [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00C64614 [vcl70.bpl]
+:00C7F4D7 [vcl70.bpl]
+:00C61343 [vcl70.bpl]
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:00C64530 [vcl70.bpl]
+:00C7E00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00BEB241 [vcl70.bpl]
+:00C641AB [vcl70.bpl]
+:00C641C2 [vcl70.bpl]
+:00C64530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00C7E00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00BEB241 [vcl70.bpl]
+:00C641AB [vcl70.bpl]
+:00C641C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7E378623 [user32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+:7E378EAB [user32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:4003D0BE [rtl70.bpl]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:7E36885A [user32.dll]
+:10000000 [gds32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E368BD9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+Recursive call (2 times):
+:7E379E6B [user32.dll]
+:773D706B [comctl32.dll]
+:773D8E90 [comctl32.dll]
+:773D97CB [comctl32.dll]
+:773D99C0 [comctl32.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00C64614 [vcl70.bpl]
+:00C61343 [vcl70.bpl]
+:00C7E00A [vcl70.bpl]
+:7C915219 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0007E600) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00BE0000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$773B0000 (773B0000,00001000,00090C00) C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+
+Main Thread ID = 000009DC, Current Thread ID = 000009DC
+Registers:
+EAX = 0012AB04  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AB00    EBP = 0012AB54
+ECX = 00000000  DS = 0023  ESI = 0012AB88    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C915219 40005705 04511924 0040810B 
+00000002 04031E00 00000000 040DE9D8 7C915219 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------11/07/2016 11:28:05---------------------------
+Exception 'EReadError' in module rtl70.bpl at 00033B6B
+Error reading StatusBar1.Left: A janela não tem barras de rolamento.
+
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:40034B6B [rtl70.bpl]
+:7C812AEB [kernel32.dll]
+:40034B6B [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068F6 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:400158EA [rtl70.bpl]
+Recursive call (2 times):
+:40034B6B [rtl70.bpl]
+:5B1C46F6 [uxtheme.dll]
+:7C9192EF [ntdll.dll]
+:7C96D160 [ntdll.dll]
+:7C96D144 [ntdll.dll]
+:5B1C5C1C [uxtheme.dll]
+Recursive call (2 times):
+:7C812AEB [kernel32.dll]
+:40000000 [rtl70.bpl]
+:7C910365 [ntdll.dll]
+:40000000 [rtl70.bpl]
+:7C910303 [ntdll.dll]
+:40005C04 [rtl70.bpl]
+:40034D21 [rtl70.bpl]
+:00BB796C [vcl70.bpl]
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:7C92A9EF [ntdll.dll]
+:7C90E46A [ntdll.dll]
+:7C812AEB [kernel32.dll]
+Recursive call (2 times):
+:00BB796C [vcl70.bpl]
+:7C812AEB [kernel32.dll]
+:7C9158DF [ntdll.dll]
+:7C915BD8 [ntdll.dll]
+:7C915C3D [ntdll.dll]
+:7C812AEB [kernel32.dll]
+:00BB796C [vcl70.bpl]
+:40005758 [rtl70.bpl]
+Recursive call (2 times):
+:00BB796C [vcl70.bpl]
+:7C90CF5C [ntdll.dll]
+:7C809B32 [kernel32.dll]
+:7C809B49 [kernel32.dll]
+:77E59ABE [GDI32.dll]
+:77E5AEC1 [GDI32.dll]
+:77E5AE44 [GDI32.dll]
+:00BB8216 [vcl70.bpl]
+:00BB79A4 [vcl70.bpl]
+:00BB821B [vcl70.bpl]
+:00BB85B0 [vcl70.bpl]
+:00C4D907 [vcl70.bpl]
+:00C2F7A7 [vcl70.bpl]
+:00C4B74A [vcl70.bpl]
+:00BBE38C [vcl70.bpl]
+:00C4C2AF [vcl70.bpl]
+:00BBE2E2 [vcl70.bpl]
+:00C4FB17 [vcl70.bpl]
+:00C4F1E0 [vcl70.bpl]
+:00C33E7C [vcl70.bpl]
+:00C36BCE [vcl70.bpl]
+:00C36BDA [vcl70.bpl]
+:00C4D891 [vcl70.bpl]
+:00C2F7A7 [vcl70.bpl]
+:4000594F [rtl70.bpl]
+:00BF47C4 [vcl70.bpl]
+:00BF4766 [vcl70.bpl]
+:00C2F4F5 [vcl70.bpl]
+:40026AE8 [rtl70.bpl]
+:40035043 [rtl70.bpl]
+:40034CCE [rtl70.bpl]
+:400346BE [rtl70.bpl]
+:400346A0 [rtl70.bpl]
+:4003BB5A [rtl70.bpl]
+:00C2F1DA [vcl70.bpl]
+:00C329DE [vcl70.bpl]
+:40034518 [rtl70.bpl]
+:40034732 [rtl70.bpl]
+:40034671 [rtl70.bpl]
+:4003BB5A [rtl70.bpl]
+:00C2F1DA [vcl70.bpl]
+:00C329DE [vcl70.bpl]
+:00C4D38A [vcl70.bpl]
+:40035470 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:4003247F [rtl70.bpl]
+:4002DDC0 [rtl70.bpl]
+:4002DF4A [rtl70.bpl]
+:5B1C153D [uxtheme.dll]
+:5B1C4A1C [uxtheme.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C4A1C [uxtheme.dll]
+:7E368BD9 [user32.dll]
+:7E37DF2C [user32.dll]
+:7E37DF06 [user32.dll]
+:4000294B [rtl70.bpl]
+:40006126 [rtl70.bpl]
+:400028CA [rtl70.bpl]
+:4000294C [rtl70.bpl]
+:40005758 [rtl70.bpl]
+:40005B46 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4000578D [rtl70.bpl]
+:4002DFDB [rtl70.bpl]
+:00C4CD22 [vcl70.bpl]
+:40005B9E [rtl70.bpl]
+
+Modules:
+$00400000 (00400000,00001000,0007EE00) Q:\bin\SISCompware.exe
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00BB0000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$77E50000 (77E50000,00001000,00042600) C:\WINDOWS\system32\GDI32.dll
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+
+Main Thread ID = 00000DF4, Current Thread ID = 00000DF4
+Registers:
+EAX = 0012F0F4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 0458CF34  SS = 0023  ESP = 0012F0F0    EBP = 0012F144
+ECX = 00000000  DS = 0023  ESI = 0012F178    FS  = 003B
+EDX = 40034B6B  ES = 0023  EDI = 0012FA60    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+00000000 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 40005B9E 40005705 04A97320 0040810B 
+00000002 04031E00 00000000 0442CE94 40005B9E 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------12/07/2016 13:12:49---------------------------
+Exception 'EVariantTypeCastError' in module EDI.exe at 000120E0
+Could not convert variant of type (Null) into type (String)
+
+Module: Variants, Source: variants.pas, Line 525
+Procedure: Variants::VarCastError
+
+Call stack:
+:004130E0 [EDI.exe] Variants::VarCastError (variants.pas, line 525)
+:7C812AEB [kernel32.dll]
+:004130E0 [EDI.exe] Variants::VarCastError (variants.pas, line 525)
+:0040F199 [EDI.exe] Sysutils::Exception::CreateFmt (sysutils.pas, line 13258)
+:0040F1A7 [EDI.exe] Sysutils::Exception::CreateFmt (sysutils.pas, line 13258)
+:00403DBE [EDI.exe] System::__linkproc__ AfterConstruction (system.pas, line 9074)
+:0040F1D2 [EDI.exe] Sysutils::Exception::CreateFmt (sysutils.pas, line 13258)
+Recursive call (2 times):
+:004130E0 [EDI.exe] Variants::VarCastError (variants.pas, line 525)
+:00416FE7 [EDI.exe] Variants::__linkproc__ VarToLStr (variants.pas, line 2281)
+:0053E6D9 [EDI.exe] Ugeralsql::InicializaDados (UGeralSQL.pas, line 44)
+:0057D300 [EDI.exe] Udmgeral::TDMGERAL::DataModuleCreate
+:0042DA1E [EDI.exe] Classes::TDataModule::DoCreate (classes.pas, line 10792)
+:0042D8B0 [EDI.exe] Classes::TDataModule::AfterConstruction (classes.pas, line 10756)
+:00403DBE [EDI.exe] System::__linkproc__ AfterConstruction (system.pas, line 9074)
+:0042D883 [EDI.exe] Classes::TDataModule::Create (classes.pas, line 10750)
+:00403D85 [EDI.exe] System::__linkproc__ ClassCreate (system.pas, line 9042)
+:00404A08 [EDI.exe] System::__linkproc__ LStrFromPCharLen (system.pas, line 11920)
+:0042DE8E [EDI.exe] Classes::StdWndProc (classes.pas, line 10966)
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:00402240 [EDI.exe] System::TryHarder (GETMEM.INC, line 955)
+:004023CC [EDI.exe] System::SysGetMem (GETMEM.INC, line 1035)
+:004023EF [EDI.exe] System::SysGetMem (GETMEM.INC, line 1038)
+:0049A98F [EDI.exe] Forms::TApplication::CreateForm (Forms.pas, line 6946)
+:0060B00C [EDI.exe] initialization (EDI.dpr, line 30)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0020A200) Q:\bin\EDI.exe
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+
+Main Thread ID = 00000FFC, Current Thread ID = 00000FFC
+Registers:
+EAX = 0012FC34  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000001  SS = 0023  ESP = 0012FC30    EBP = 0012FC84
+ECX = 00000000  DS = 0023  ESI = 0012FCB8    FS  = 003B
+EDX = 004130E0  ES = 0023  EDI = 0012FDB8    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+00000100 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 00403905 01853154 0043440B 
+01883C44 01521E0B 00000000 015D8BEC 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------12/07/2016 13:13:00---------------------------
+Exception 'EAccessViolation' in module EDI.exe at 00000000
+Access violation at address 00000000. Read of address 00000000
+
+Module: System, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:00403A03 [EDI.exe] System::TObject::Free (system.pas, line 8393)
+:004041B8 [EDI.exe] System::__linkproc__ HandleFinally (system.pas, line 10073)
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:7C92ACAD [ntdll.dll]
+:7E3794E2 [user32.dll]
+:7E37AF85 [user32.dll]
+:5B1DE5EB [uxtheme.dll]
+:5B1DE5AC [uxtheme.dll]
+:7C90D99C [ntdll.dll]
+:7C90E59B [ntdll.dll]
+:7E37947C [user32.dll]
+:7E37934B [user32.dll]
+:7C927764 [ntdll.dll]
+:7C927553 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C812AEB [kernel32.dll]
+:7C912CE4 [ntdll.dll]
+:7C912D51 [ntdll.dll]
+:7C912D58 [ntdll.dll]
+:00403FB0 [EDI.exe] System::__linkproc__ HandleAnyException (system.pas, line 9579)
+:0040BB51 [EDI.exe] Sysutils::Format (sysutils.pas, line 7556)
+:0040F199 [EDI.exe] Sysutils::Exception::CreateFmt (sysutils.pas, line 13258)
+:0040F1A7 [EDI.exe] Sysutils::Exception::CreateFmt (sysutils.pas, line 13258)
+:0040256D [EDI.exe] System::SysFreeMem (GETMEM.INC, line 1135)
+:00402595 [EDI.exe] System::SysFreeMem (GETMEM.INC, line 1139)
+:00402873 [EDI.exe] System::__linkproc__ FreeMem (system.pas, line 2474)
+:00404911 [EDI.exe] System::__linkproc__ LStrClr (system.pas, line 11671)
+:0040F849 [EDI.exe] CreateAVObject (sysutils.pas, line 13644)
+:7E37BC90 [user32.dll]
+:7E37BCB7 [user32.dll]
+:5B1C1B3D [uxtheme.dll]
+Recursive call (2 times):
+:7C812AEB [kernel32.dll]
+:00403B97 [EDI.exe] System::__linkproc__ IsClass (system.pas, line 8638)
+Recursive call (2 times):
+:00403FB0 [EDI.exe] System::__linkproc__ HandleAnyException (system.pas, line 9579)
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:00403D85 [EDI.exe] System::__linkproc__ ClassCreate (system.pas, line 9042)
+:7C92A9EF [ntdll.dll]
+:00403D85 [EDI.exe] System::__linkproc__ ClassCreate (system.pas, line 9042)
+:7E37B83B [user32.dll]
+:7E37B5D6 [user32.dll]
+:7C90E46A [ntdll.dll]
+:10000000 [gds32.dll]
+:7C915CC9 [ntdll.dll]
+:7C915D27 [ntdll.dll]
+:7C9158DF [ntdll.dll]
+:7C915BD8 [ntdll.dll]
+:7C915C3D [ntdll.dll]
+:0052AC9B [EDI.exe] Ibsqlmonitor::TIBCustomSQLMonitor::MonitorWndProc (IBSQLMonitor.pas, line 300)
+:0042DE8E [EDI.exe] Classes::StdWndProc (classes.pas, line 10966)
+:7E368734 [user32.dll]
+:7E368816 [user32.dll]
+:7E3689CD [user32.dll]
+:7E368A10 [user32.dll]
+:7E377721 [user32.dll]
+:7E3749C4 [user32.dll]
+:00400000 [EDI.exe]
+:7E374A06 [user32.dll]
+:00400000 [EDI.exe]
+:7E38B190 [user32.dll]
+:00400000 [EDI.exe]
+:00432B6C [EDI.exe] Excmagicdlg::ExcMagicErrorDlg
+:00400000 [EDI.exe]
+:00404DE1 [EDI.exe] System::__linkproc__ LStrToPChar (system.pas, line 12661)
+:00436181 [EDI.exe] Excmagic::TExcMagic::DefaultErrorDialog
+:00433295 [EDI.exe] Excmagicdefaultfilter::TDefaultExcMagicFilter::ShowException
+:00434C8E [EDI.exe] Excmagic::HookedShowException
+:7C90D99C [ntdll.dll]
+:7C90E59B [ntdll.dll]
+:7C9192EF [ntdll.dll]
+:7C96D160 [ntdll.dll]
+:7C96D144 [ntdll.dll]
+:1002BECA [gds32.dll]
+:7C812AEB [kernel32.dll]
+:1002BECA [gds32.dll]
+:10029EE4 [gds32.dll]
+:00403FB0 [EDI.exe] System::__linkproc__ HandleAnyException (system.pas, line 9579)
+:10029EE4 [gds32.dll]
+:10029EF6 [gds32.dll]
+:10039848 [gds32.dll]
+:10039A81 [gds32.dll]
+:1003A945 [gds32.dll]
+:1003B405 [gds32.dll]
+:10029D38 [gds32.dll]
+:1003B59B [gds32.dll]
+:100307AB [gds32.dll]
+:7C910303 [ntdll.dll]
+:00400000 [EDI.exe]
+:7C910365 [ntdll.dll]
+:00400000 [EDI.exe]
+:7C912224 [ntdll.dll]
+:7C910303 [ntdll.dll]
+:00400000 [EDI.exe]
+:7C910365 [ntdll.dll]
+Recursive call (2 times):
+:00400000 [EDI.exe]
+:7C912445 [ntdll.dll]
+:00400000 [EDI.exe]
+:7C912489 [ntdll.dll]
+:00400000 [EDI.exe]
+
+Modules:
+$00400000 (00400000,00001000,0020A200) Q:\bin\EDI.exe
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+
+Main Thread ID = 00000FFC, Current Thread ID = 00000FFC
+Registers:
+EAX = 01D12140  CS = 001B  EIP = 00000000  Flags = 00010202
+EBX = 00000000  SS = 0023  ESP = 0012E8B4    EBP = 0012FE2C
+ECX = 01D1213C  DS = 0023  ESI = 00000000    FS  = 003B
+EDX = 00000001  ES = 0023  EDI = 00000000    GS  = 0000
+Stack:
+00403A03 004041B8 0012E8EC 00000000 00000000 
+00000000 00400000 00403905 0157A0F4 0043440B 
+00000002 01521E00 00000000 01523594 00400000 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------29/07/2016 09:14:49---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GDB"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E37B401 [user32.dll]
+:1960BF6C [tv_w32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:19601011 [tv_w32.dll]
+:7E37B372 [user32.dll]
+:7E3A661E [user32.dll]
+:10000000 [gds32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7C912847 [ntdll.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9101BB [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:76D40000 [iphlpapi.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$19600000 (19600000,00001000,0002A400) C:\Arquivos de programas\TeamViewer\tv_w32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+
+Main Thread ID = 000006E0, Current Thread ID = 000006E0
+Registers:
+EAX = 0012AD10  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AD0C    EBP = 0012AD60
+ECX = 00000000  DS = 0023  ESI = 0012AD94    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C9160E4 40005705 0442CC3C 0040810B 
+00000002 04381E00 00000000 0442BF50 7C9160E4 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------29/07/2016 09:15:36---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GDB"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C912FA3 [ntdll.dll]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E37B401 [user32.dll]
+:1960BF6C [tv_w32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:19601011 [tv_w32.dll]
+:7E37B372 [user32.dll]
+:7E3A661E [user32.dll]
+:10000000 [gds32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7C912847 [ntdll.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9101BB [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$19600000 (19600000,00001000,0002A400) C:\Arquivos de programas\TeamViewer\tv_w32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+
+Main Thread ID = 000006E0, Current Thread ID = 000006E0
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C91540B 40005705 0489958C 0040810B 
+00000002 04381E00 00000000 0442BF50 7C91540B 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------29/07/2016 09:24:55---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E37B401 [user32.dll]
+:1960BF6C [tv_w32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:19601011 [tv_w32.dll]
+:7E37B372 [user32.dll]
+:7E3A661E [user32.dll]
+:10000000 [gds32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7C912847 [ntdll.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9101BB [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:76D40000 [iphlpapi.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$19600000 (19600000,00001000,0002A400) C:\Arquivos de programas\TeamViewer\tv_w32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+
+Main Thread ID = 00000370, Current Thread ID = 00000370
+Registers:
+EAX = 0012AD10  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AD0C    EBP = 0012AD60
+ECX = 00000000  DS = 0023  ESI = 0012AD94    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C9160E4 40005705 0442CC20 0040810B 
+00000002 04381E00 00000000 0442BF4C 7C9160E4 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------29/07/2016 09:25:02---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+Recursive call (2 times):
+:7C91003D [ntdll.dll]
+:7C912FA3 [ntdll.dll]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:196080F5 [tv_w32.dll]
+:19608103 [tv_w32.dll]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E37B401 [user32.dll]
+:1960BF6C [tv_w32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:19601011 [tv_w32.dll]
+:7E37B372 [user32.dll]
+:7E3A661E [user32.dll]
+:10000000 [gds32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7C912847 [ntdll.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9101BB [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$19600000 (19600000,00001000,0002A400) C:\Arquivos de programas\TeamViewer\tv_w32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+
+Main Thread ID = 00000370, Current Thread ID = 00000370
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C915219 40005705 0489958C 0040810B 
+00000002 04381E00 00000000 0442BF4C 7C915219 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:54:11---------------------------
+Exception 'EIBClientError' in module ibxpress70.bpl at 000046D4
+Cannot perform operation -- DB is not open
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409556D4 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409556D4 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955BBA [ibxpress70.bpl]
+Recursive call (2 times):
+:409556D4 [ibxpress70.bpl]
+:4097227B [ibxpress70.bpl]
+:40971FF0 [ibxpress70.bpl]
+:00C84A77 [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 245)
+:4003CD26 [rtl70.bpl]
+:4003CBD3 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4003CBB5 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9114CA [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068CD [rtl70.bpl]
+:00BC4B0D [vcl70.bpl]
+:0046F95F [SISCompware.exe] initialization (SISCompware.dpr, line 60)
+:0046FB2D [SISCompware.exe] initialization (SISCompware.dpr, line 93)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,0001DC00) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+
+Main Thread ID = 000001BC, Current Thread ID = 000001BC
+Registers:
+EAX = 0012FD14  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 0000000F  SS = 0023  ESP = 0012FD10    EBP = 0012FD64
+ECX = 00000000  DS = 0023  ESI = 0012FD98    FS  = 003B
+EDX = 409556D4  ES = 0023  EDI = 0012FDDC    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+0000000F 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 40005705 04487A84 0040810B 
+04487C58 043C1E0B 00000000 0445ED98 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:54:12---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C912FA3 [ntdll.dll]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+:7E37C1E9 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E37C23C [user32.dll]
+:7E37C1E9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+:7E379E6B [user32.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C910202 [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7E36882A [user32.dll]
+:7C90D26C [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A15F9F [mswsock.dll]
+:71A12C78 [mswsock.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,0001DC00) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$71A10000 (71A10000,00001000,00035200) C:\WINDOWS\System32\mswsock.dll
+
+Main Thread ID = 000001BC, Current Thread ID = 000001BC
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 71A12C78 40005705 043C07D8 0040810B 
+00000002 043C1E00 00000000 046E2ACC 71A12C78 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:55:24---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7C910202 [ntdll.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:76D40000 [iphlpapi.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A15F9F [mswsock.dll]
+:71A12C78 [mswsock.dll]
+:71A12C66 [mswsock.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+$71A10000 (71A10000,00001000,00035200) C:\WINDOWS\System32\mswsock.dll
+
+Main Thread ID = 00000820, Current Thread ID = 00000820
+Registers:
+EAX = 0012AD10  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AD0C    EBP = 0012AD60
+ECX = 00000000  DS = 0023  ESI = 0012AD94    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 71A12C66 40005705 0446A45C 0040810B 
+00000002 043C1E00 00000000 04457468 71A12C66 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:55:38---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:77EA796D [SHLWAPI.dll]
+:77EA7AAB [SHLWAPI.dll]
+:77EA7AC4 [SHLWAPI.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7C910202 [ntdll.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C910202 [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A15F9F [mswsock.dll]
+:71A12C78 [mswsock.dll]
+:71A12C66 [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A1440B [mswsock.dll]
+:71A144A8 [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A1440B [mswsock.dll]
+Recursive call (2 times):
+:71A144A8 [mswsock.dll]
+:71A767DE [WS2_32.dll]
+:71A72E1F [WS2_32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+$71A10000 (71A10000,00001000,00035200) C:\WINDOWS\System32\mswsock.dll
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$71A70000 (71A70000,00001000,00012200) C:\WINDOWS\system32\WS2_32.dll
+
+Main Thread ID = 00000820, Current Thread ID = 00000820
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 71A72E1F 40005705 047BD9C8 0040810B 
+00000002 043C1E00 00000000 0448C890 71A72E1F 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:56:10---------------------------
+Exception 'EIBClientError' in module ibxpress70.bpl at 000046D4
+Cannot perform operation -- DB is not open
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409556D4 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409556D4 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955BBA [ibxpress70.bpl]
+Recursive call (2 times):
+:409556D4 [ibxpress70.bpl]
+:4097227B [ibxpress70.bpl]
+:40971FF0 [ibxpress70.bpl]
+:00C84A6F [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 245)
+:4003CD26 [rtl70.bpl]
+:4003CBD3 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4003CBB5 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9114CA [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068CD [rtl70.bpl]
+:00BC4B0D [vcl70.bpl]
+:0046F95F [SISCompware.exe] initialization (SISCompware.dpr, line 60)
+:0046FB2D [SISCompware.exe] initialization (SISCompware.dpr, line 93)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,0001DC00) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+
+Main Thread ID = 00000954, Current Thread ID = 00000954
+Registers:
+EAX = 0012FD14  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 0000000F  SS = 0023  ESP = 0012FD10    EBP = 0012FD64
+ECX = 00000000  DS = 0023  ESI = 0012FD98    FS  = 003B
+EDX = 409556D4  ES = 0023  EDI = 0012FDDC    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+0000000F 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 40005705 04487AE4 0040810B 
+04487CB8 043C1E0B 00000000 0440C130 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:56:11---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:77EA796D [SHLWAPI.dll]
+:77EA7AAB [SHLWAPI.dll]
+:77EA7AC4 [SHLWAPI.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+Recursive call (2 times):
+:746E0000 [MSCTF.dll]
+:7C915F8C [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:7C915219 [ntdll.dll]
+:5B1C48E1 [uxtheme.dll]
+:7C9160E4 [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C910303 [ntdll.dll]
+:7C800000 [kernel32.dll]
+:7C910365 [ntdll.dll]
+:7C800000 [kernel32.dll]
+:7C912224 [ntdll.dll]
+:7C910303 [ntdll.dll]
+Recursive call (3 times):
+:7C800000 [kernel32.dll]
+:7C910365 [ntdll.dll]
+Recursive call (2 times):
+:7C800000 [kernel32.dll]
+:7C912445 [ntdll.dll]
+:7C800000 [kernel32.dll]
+:7C912489 [ntdll.dll]
+Recursive call (2 times):
+:7C800000 [kernel32.dll]
+:7C910303 [ntdll.dll]
+Recursive call (3 times):
+:7C800000 [kernel32.dll]
+:7C912489 [ntdll.dll]
+:7C91273F [ntdll.dll]
+:7C800000 [kernel32.dll]
+:7C912407 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,0001DC00) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$746E0000 (746E0000,00001000,00041800) C:\WINDOWS\system32\MSCTF.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+
+Main Thread ID = 00000954, Current Thread ID = 00000954
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C912407 40005705 048B417C 0040810B 
+00000003 043C1E00 00000000 044879B4 7C912407 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:57:35---------------------------
+Exception 'EAccessViolation' in module SISCompware.exe at 0009E76B
+Access violation at address 0445F76B. Write of address 00000000
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:400057B3 [rtl70.bpl]
+:40005F98 [rtl70.bpl]
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:7C92ACAD [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C912CAE [ntdll.dll]
+:7C912CE4 [ntdll.dll]
+:7C912D51 [ntdll.dll]
+:40005D90 [rtl70.bpl]
+:40006126 [rtl70.bpl]
+:400028CA [rtl70.bpl]
+:4000294C [rtl70.bpl]
+:4000F6F7 [rtl70.bpl]
+:400156DD [rtl70.bpl]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068CD [rtl70.bpl]
+:40016012 [rtl70.bpl]
+:51000000 [dclusr70.bpl]
+:7C910415 [ntdll.dll]
+:7C91041E [ntdll.dll]
+:7C914202 [ntdll.dll]
+:7C910440 [ntdll.dll]
+:7C9142C7 [ntdll.dll]
+:7C91428F [ntdll.dll]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:7C910303 [ntdll.dll]
+:40005B65 [rtl70.bpl]
+Recursive call (2 times):
+:40000000 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:7C910365 [ntdll.dll]
+:40000000 [rtl70.bpl]
+:7C910303 [ntdll.dll]
+:40000000 [rtl70.bpl]
+Recursive call (2 times):
+:40005D90 [rtl70.bpl]
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:40005B65 [rtl70.bpl]
+:7C92A9EF [ntdll.dll]
+:40005B65 [rtl70.bpl]
+:7C90E46A [ntdll.dll]
+:77EA796D [SHLWAPI.dll]
+:77EA7AAB [SHLWAPI.dll]
+:77EA7AC4 [SHLWAPI.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:4000594F [rtl70.bpl]
+:00BC509C [vcl70.bpl]
+:4003D00C [rtl70.bpl]
+:4003CD41 [rtl70.bpl]
+:00C84A5C [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 242)
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:7C92A9EF [ntdll.dll]
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:40970A38 [ibxpress70.bpl]
+:7C92ACAD [ntdll.dll]
+:7C90D04C [ntdll.dll]
+:7C92ACD6 [ntdll.dll]
+:7C90E46A [ntdll.dll]
+:7C812AEB [kernel32.dll]
+Recursive call (2 times):
+:00C84A5C [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 242)
+:7C812AEB [kernel32.dll]
+:77EA796D [SHLWAPI.dll]
+:77EA7AAB [SHLWAPI.dll]
+:77EA7AC4 [SHLWAPI.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:00C84A5C [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 242)
+:7C910365 [ntdll.dll]
+:00C80000 [SISDM.bpl]
+Recursive call (2 times):
+:00C84A5C [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 242)
+:409558B6 [ibxpress70.bpl]
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:7C92A9EF [ntdll.dll]
+:7C80189C [kernel32.dll]
+:10051D5B [gds32.dll]
+:7C90E46A [ntdll.dll]
+:7C812AEB [kernel32.dll]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:77EA796D [SHLWAPI.dll]
+:77EA7AAB [SHLWAPI.dll]
+:77EA7AC4 [SHLWAPI.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$51000000 (51000000,00001000,0002D200) Q:\bin\dclusr70.bpl
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$00C80000 (00400000,00001000,0001DC00) Q:\bin\SISDM.bpl
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+
+Main Thread ID = 000006FC, Current Thread ID = 000006FC
+Registers:
+EAX = 0445F644  CS = 001B  EIP = 0445F76B  Flags = 00010A82
+EBX = 00000000  SS = 0023  ESP = 00129C38    EBP = 0012FE4C
+ECX = 0445F6F1  DS = 0023  ESI = 00000001    FS  = 003B
+EDX = 00000001  ES = 0023  EDI = 00000000    GS  = 0000
+Code at CS:EIP
+00 17 00 00 00 01 00 00 00 05 00 00 00 68 68 3A 
+Stack:
+400057B3 40005F98 00129C70 00000000 00000000 
+00000000 40005B9E 40005705 044A29DC 0040810B 
+00000002 043C1E00 00000000 0446A338 40005B9E 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:59:04---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7C910202 [ntdll.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:76D40000 [iphlpapi.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A15F9F [mswsock.dll]
+:71A12C78 [mswsock.dll]
+:71A12C66 [mswsock.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+$71A10000 (71A10000,00001000,00035200) C:\WINDOWS\System32\mswsock.dll
+
+Main Thread ID = 00000A1C, Current Thread ID = 00000A1C
+Registers:
+EAX = 0012ACFC  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012ACF8    EBP = 0012AD4C
+ECX = 00000000  DS = 0023  ESI = 0012AD80    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 71A12C66 40005705 0446C710 0040810B 
+00000002 043C1E00 00000000 04468C84 71A12C66 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 10:59:08---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:77EA796D [SHLWAPI.dll]
+:77EA7AAB [SHLWAPI.dll]
+:77EA7AC4 [SHLWAPI.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7C910202 [ntdll.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C91540B [ntdll.dll]
+:7C90D26C [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A15F9F [mswsock.dll]
+:71A12C78 [mswsock.dll]
+:71A12C66 [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A1440B [mswsock.dll]
+:71A144A8 [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A1440B [mswsock.dll]
+Recursive call (2 times):
+:71A144A8 [mswsock.dll]
+:71A767DE [WS2_32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+$71A10000 (71A10000,00001000,00035200) C:\WINDOWS\System32\mswsock.dll
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$71A70000 (71A70000,00001000,00012200) C:\WINDOWS\system32\WS2_32.dll
+
+Main Thread ID = 00000A1C, Current Thread ID = 00000A1C
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 71A767DE 40005705 043C07D8 0040810B 
+00000002 043C1E00 00000000 044825F4 71A767DE 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 11:08:51---------------------------
+Exception 'EIBClientError' in module ibxpress70.bpl at 000046D4
+Cannot perform operation -- DB is not open
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409556D4 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409556D4 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955BBA [ibxpress70.bpl]
+Recursive call (2 times):
+:409556D4 [ibxpress70.bpl]
+:4097227B [ibxpress70.bpl]
+:40971FF0 [ibxpress70.bpl]
+:00C84A82 [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 245)
+:4003CD26 [rtl70.bpl]
+:4003CBD3 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4003CBB5 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9114CA [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068CD [rtl70.bpl]
+:00BC4B0D [vcl70.bpl]
+:0046F95F [SISCompware.exe] initialization (SISCompware.dpr, line 60)
+:0046FB2D [SISCompware.exe] initialization (SISCompware.dpr, line 93)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,0001DC00) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+
+Main Thread ID = 00000638, Current Thread ID = 00000638
+Registers:
+EAX = 0012FD14  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 0000000F  SS = 0023  ESP = 0012FD10    EBP = 0012FD64
+ECX = 00000000  DS = 0023  ESI = 0012FD98    FS  = 003B
+EDX = 409556D4  ES = 0023  EDI = 0012FDDC    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+0000000F 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 40005705 04487B0C 0040810B 
+04487C9C 043C1E0B 00000000 0445B0D0 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 11:08:51---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+I/O error during "CreateFile (open)" operation for file "C:\COMPWARE\BASES\SISPROV\DATA\DESEN\RIS.GD"
+Error while trying to open file
+O sistema não pode encontrar o arquivo especificado. 
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:77EA796D [SHLWAPI.dll]
+:77EA7AAB [SHLWAPI.dll]
+:77EA7AC4 [SHLWAPI.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+:7E37C1E9 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E37C23C [user32.dll]
+:7E37C1E9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+:7E379E6B [user32.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C910202 [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7E36882A [user32.dll]
+:7C90D26C [ntdll.dll]
+:7C90DF3C [ntdll.dll]
+:71A13C9C [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A15F9F [mswsock.dll]
+:71A12C78 [mswsock.dll]
+:71A12C66 [mswsock.dll]
+:7C90D26C [ntdll.dll]
+:71A1440B [mswsock.dll]
+:71A144A8 [mswsock.dll]
+:7C90D26C [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,0001DC00) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$71A10000 (71A10000,00001000,00035200) C:\WINDOWS\System32\mswsock.dll
+
+Main Thread ID = 00000638, Current Thread ID = 00000638
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000018    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C90D26C 40005705 04928708 0040810B 
+00000002 043C1E00 00000000 044879DC 7C90D26C 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------31/07/2016 11:15:29---------------------------
+Exception 'EIBClientError' in module ibxpress70.bpl at 000046D4
+Cannot perform operation -- DB is not open
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409556D4 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409556D4 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955BBA [ibxpress70.bpl]
+Recursive call (2 times):
+:409556D4 [ibxpress70.bpl]
+:4097227B [ibxpress70.bpl]
+:40971FF0 [ibxpress70.bpl]
+:00C84A82 [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 245)
+:4003CD26 [rtl70.bpl]
+:4003CBD3 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4003CBB5 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9114CA [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068CD [rtl70.bpl]
+:00BC4B0D [vcl70.bpl]
+:0046F95F [SISCompware.exe] initialization (SISCompware.dpr, line 60)
+:0046FB2D [SISCompware.exe] initialization (SISCompware.dpr, line 93)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,0001DC00) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+
+Main Thread ID = 000002D4, Current Thread ID = 000002D4
+Registers:
+EAX = 0012FD14  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 0000000F  SS = 0023  ESP = 0012FD10    EBP = 0012FD64
+ECX = 00000000  DS = 0023  ESI = 0012FD98    FS  = 003B
+EDX = 409556D4  ES = 0023  EDI = 0012FDDC    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+0000000F 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 40005705 04497AE4 0040810B 
+04497AA0 043D1E0B 00000000 0446EE80 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------19/08/2016 11:44:11---------------------------
+Exception 'EReadError' in module rtl70.bpl at 00033B6B
+Error reading StatusBar1.Left: A janela não tem barras de rolamento.
+
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:40034B6B [rtl70.bpl]
+:7C812AEB [kernel32.dll]
+:40034B6B [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068F6 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:400158EA [rtl70.bpl]
+Recursive call (2 times):
+:40034B6B [rtl70.bpl]
+:5B1C46F6 [uxtheme.dll]
+:7C9192EF [ntdll.dll]
+:7C96D160 [ntdll.dll]
+:7C96D144 [ntdll.dll]
+:5B1C5C1C [uxtheme.dll]
+Recursive call (2 times):
+:7C812AEB [kernel32.dll]
+:40000000 [rtl70.bpl]
+:7C910365 [ntdll.dll]
+:40000000 [rtl70.bpl]
+:7C910303 [ntdll.dll]
+:40005C04 [rtl70.bpl]
+:40034D21 [rtl70.bpl]
+:00A1796C [vcl70.bpl]
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:7C92A9EF [ntdll.dll]
+:7C90E46A [ntdll.dll]
+:7C812AEB [kernel32.dll]
+Recursive call (2 times):
+:00A1796C [vcl70.bpl]
+:7C812AEB [kernel32.dll]
+:7C915CC9 [ntdll.dll]
+:7C915D27 [ntdll.dll]
+:7C9158DF [ntdll.dll]
+:7C915BD8 [ntdll.dll]
+:7C915C3D [ntdll.dll]
+:7C812AEB [kernel32.dll]
+:00A1796C [vcl70.bpl]
+:40005758 [rtl70.bpl]
+Recursive call (2 times):
+:00A1796C [vcl70.bpl]
+:7C90CF5C [ntdll.dll]
+:7C809B32 [kernel32.dll]
+:7C809B49 [kernel32.dll]
+:77E59ABE [GDI32.dll]
+:77E5AEC1 [GDI32.dll]
+:77E5AE44 [GDI32.dll]
+:00A18216 [vcl70.bpl]
+:00A179A4 [vcl70.bpl]
+:00A1821B [vcl70.bpl]
+:00A185B0 [vcl70.bpl]
+:00AAD907 [vcl70.bpl]
+:00A8F7A7 [vcl70.bpl]
+:00AAB74A [vcl70.bpl]
+:00A1E38C [vcl70.bpl]
+:00AAC2AF [vcl70.bpl]
+:00A1E2E2 [vcl70.bpl]
+:00AAFB17 [vcl70.bpl]
+:00AAF1E0 [vcl70.bpl]
+:00A93E7C [vcl70.bpl]
+:00A96BCE [vcl70.bpl]
+:00A96BDA [vcl70.bpl]
+:00AAD891 [vcl70.bpl]
+:00A8F7A7 [vcl70.bpl]
+:4000594F [rtl70.bpl]
+:00A547C4 [vcl70.bpl]
+:00A54766 [vcl70.bpl]
+:00A8F4F5 [vcl70.bpl]
+:40026AE8 [rtl70.bpl]
+:40035043 [rtl70.bpl]
+:40034CCE [rtl70.bpl]
+:400346BE [rtl70.bpl]
+:400346A0 [rtl70.bpl]
+:4003BB5A [rtl70.bpl]
+:00A8F1DA [vcl70.bpl]
+:00A929DE [vcl70.bpl]
+:40034518 [rtl70.bpl]
+:40034732 [rtl70.bpl]
+:40034671 [rtl70.bpl]
+:4003BB5A [rtl70.bpl]
+:00A8F1DA [vcl70.bpl]
+:00A929DE [vcl70.bpl]
+:00AAD38A [vcl70.bpl]
+:40035470 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:4003247F [rtl70.bpl]
+:4002DDC0 [rtl70.bpl]
+:4002DF4A [rtl70.bpl]
+:5B1C153D [uxtheme.dll]
+:5B1C4A1C [uxtheme.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C4A1C [uxtheme.dll]
+:7E368BD9 [user32.dll]
+:7E37DF2C [user32.dll]
+:7E37DF06 [user32.dll]
+:4000294B [rtl70.bpl]
+:40006126 [rtl70.bpl]
+:400028CA [rtl70.bpl]
+:4000294C [rtl70.bpl]
+:40005758 [rtl70.bpl]
+:40005B46 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4000578D [rtl70.bpl]
+:4002DFDB [rtl70.bpl]
+
+Modules:
+$00400000 (00400000,00001000,0006D000) Q:\bin\SISCompware.exe
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00A10000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$77E50000 (77E50000,00001000,00042600) C:\WINDOWS\system32\GDI32.dll
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+
+Main Thread ID = 00000954, Current Thread ID = 00000954
+Registers:
+EAX = 0012F0F4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 04868C90  SS = 0023  ESP = 0012F0F0    EBP = 0012F144
+ECX = 00000000  DS = 0023  ESI = 0012F178    FS  = 003B
+EDX = 40034B6B  ES = 0023  EDI = 0012FA60    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+00000000 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 4002DFDB 40005705 04DC5014 0040810B 
+00000002 042E1E00 00000000 043DD024 4002DFDB 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------23/08/2016 12:12:32---------------------------
+Exception 'EReadError' in module rtl70.bpl at 00033B6B
+Error reading StatusBar1.Left: A janela não tem barras de rolamento.
+
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:40034B6B [rtl70.bpl]
+:7C812AEB [kernel32.dll]
+:40034B6B [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068F6 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:400158EA [rtl70.bpl]
+Recursive call (2 times):
+:40034B6B [rtl70.bpl]
+:7E368FFB [user32.dll]
+:5B1C46F6 [uxtheme.dll]
+Recursive call (2 times):
+:5B1C4729 [uxtheme.dll]
+:5B1C46AD [uxtheme.dll]
+:5B1C46C1 [uxtheme.dll]
+:5B1C5C1C [uxtheme.dll]
+:5B1C5C2D [uxtheme.dll]
+:7C910303 [ntdll.dll]
+Recursive call (2 times):
+:40000000 [rtl70.bpl]
+:7C910365 [ntdll.dll]
+:40000000 [rtl70.bpl]
+:7C910303 [ntdll.dll]
+:00408B63 [SISCompware.exe] Excmagic::CopyContextAndLog
+:40005F18 [rtl70.bpl]
+:40034D21 [rtl70.bpl]
+:00B2796C [vcl70.bpl]
+:7C9032A8 [ntdll.dll]
+:7C90327A [ntdll.dll]
+:7C92A9EF [ntdll.dll]
+:7C90E46A [ntdll.dll]
+:7C812AEB [kernel32.dll]
+Recursive call (2 times):
+:00B2796C [vcl70.bpl]
+:7C812AEB [kernel32.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C912FA3 [ntdll.dll]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:00B2796C [vcl70.bpl]
+:40005758 [rtl70.bpl]
+Recursive call (2 times):
+:00B2796C [vcl70.bpl]
+:7C90CF5C [ntdll.dll]
+:7C809B32 [kernel32.dll]
+:7C809B49 [kernel32.dll]
+:77E59ABE [GDI32.dll]
+:77E5AEC1 [GDI32.dll]
+:77E5AE44 [GDI32.dll]
+:00B28216 [vcl70.bpl]
+:00B279A4 [vcl70.bpl]
+:00B2821B [vcl70.bpl]
+:00B285B0 [vcl70.bpl]
+:00BBD907 [vcl70.bpl]
+:00B9F7A7 [vcl70.bpl]
+:00BBB74A [vcl70.bpl]
+:00B2E38C [vcl70.bpl]
+:00BBC2AF [vcl70.bpl]
+:00B2E2E2 [vcl70.bpl]
+:00BBFB17 [vcl70.bpl]
+:00BBF1E0 [vcl70.bpl]
+:00BA3E7C [vcl70.bpl]
+:00BA6BCE [vcl70.bpl]
+:00BA6BDA [vcl70.bpl]
+:00BBD891 [vcl70.bpl]
+:00B9F7A7 [vcl70.bpl]
+:4000594F [rtl70.bpl]
+:00B647C4 [vcl70.bpl]
+:00B64766 [vcl70.bpl]
+:00B9F4F5 [vcl70.bpl]
+:40026AE8 [rtl70.bpl]
+:40035043 [rtl70.bpl]
+:40034CCE [rtl70.bpl]
+:400346BE [rtl70.bpl]
+:400346A0 [rtl70.bpl]
+:4003BB5A [rtl70.bpl]
+:00B9F1DA [vcl70.bpl]
+:00BA29DE [vcl70.bpl]
+:40034518 [rtl70.bpl]
+:40034732 [rtl70.bpl]
+:40034671 [rtl70.bpl]
+:4003BB5A [rtl70.bpl]
+:00B9F1DA [vcl70.bpl]
+:00BA29DE [vcl70.bpl]
+:00BBD38A [vcl70.bpl]
+:40035470 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:4003247F [rtl70.bpl]
+:4002DDC0 [rtl70.bpl]
+:4002DF4A [rtl70.bpl]
+:5B1C153D [uxtheme.dll]
+:5B1C4A1C [uxtheme.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C4A1C [uxtheme.dll]
+:7E368BD9 [user32.dll]
+:7E37DF2C [user32.dll]
+:7E37DF06 [user32.dll]
+:4000294B [rtl70.bpl]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$77E50000 (77E50000,00001000,00042600) C:\WINDOWS\system32\GDI32.dll
+
+Main Thread ID = 00000688, Current Thread ID = 00000688
+Registers:
+EAX = 0012F0F4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 04463A8C  SS = 0023  ESP = 0012F0F0    EBP = 0012F144
+ECX = 00000000  DS = 0023  ESI = 0012F178    FS  = 003B
+EDX = 40034B6B  ES = 0023  EDI = 0012FA60    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+00000000 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 4000294B 40005705 04E541D8 0040810B 
+00000002 04371E00 00000000 04974408 4000294B 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------06/10/2016 10:45:41---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "10.0.2.2".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7C910202 [ntdll.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C9155CD [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C90F63C [ntdll.dll]
+:7C90F641 [ntdll.dll]
+:7C90D95C [ntdll.dll]
+:7C90F641 [ntdll.dll]
+:77F56FDB [advapi32.dll]
+:77F56FE6 [advapi32.dll]
+:00410025 [SISCompware.exe] Ufrmgridfilter::TfrmGridFilter::btInsertClick (ufrmGridFilter.pas, line 293)
+Recursive call (3 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+:7C910202 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$77F50000 (77F50000,00001000,00074600) C:\WINDOWS\system32\advapi32.dll
+
+Main Thread ID = 000006E4, Current Thread ID = 000006E4
+Registers:
+EAX = 0012ACC0  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012ACBC    EBP = 0012AD10
+ECX = 00000000  DS = 0023  ESI = 0012AD44    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C910202 40005705 0446C828 0040810B 
+00000003 043C1E00 00000000 04468BA0 7C910202 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------06/10/2016 10:45:51---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "10.0.2.2".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+Recursive call (2 times):
+:7C91003D [ntdll.dll]
+:7C912FA3 [ntdll.dll]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7C910202 [ntdll.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C911066 [ntdll.dll]
+:7C9101BB [ntdll.dll]
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C910202 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006EE00) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$77F50000 (77F50000,00001000,00074600) C:\WINDOWS\system32\advapi32.dll
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+
+Main Thread ID = 000006E4, Current Thread ID = 000006E4
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C910202 40005705 044125B8 0040810B 
+00000002 043C1E00 00000000 04468BA0 7C910202 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------26/10/2016 07:12:13---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "10.0.2.2".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:76D40000 [iphlpapi.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7C910202 [ntdll.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C9155CD [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C90F63C [ntdll.dll]
+:7C90F641 [ntdll.dll]
+:7C90D95C [ntdll.dll]
+:7C90F641 [ntdll.dll]
+:77F56FDB [advapi32.dll]
+:77F56FE6 [advapi32.dll]
+:00410025 [SISCompware.exe] Ufrmgridfilter::TfrmGridFilter::btInsertClick (ufrmGridFilter.pas, line 293)
+:7C910415 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$77F50000 (77F50000,00001000,00074600) C:\WINDOWS\system32\advapi32.dll
+
+Main Thread ID = 0000019C, Current Thread ID = 0000019C
+Registers:
+EAX = 0012ACC0  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012ACBC    EBP = 0012AD10
+ECX = 00000000  DS = 0023  ESI = 0012AD44    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C910415 40005705 044848B4 0040810B 
+044897FC 043E1E0B 00000000 044842A4 7C910415 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------26/10/2016 07:12:16---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "10.0.2.2".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C912FA3 [ntdll.dll]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:76D40000 [iphlpapi.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7C910202 [ntdll.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+:7C9155CD [ntdll.dll]
+:7C915219 [ntdll.dll]
+:7C91540B [ntdll.dll]
+:7C9160E4 [ntdll.dll]
+:7C91532A [ntdll.dll]
+:7C915F55 [ntdll.dll]
+:7C915F8C [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$76D40000 (76D40000,00001000,00012E00) C:\WINDOWS\system32\iphlpapi.dll
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$77F50000 (77F50000,00001000,00074600) C:\WINDOWS\system32\advapi32.dll
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+
+Main Thread ID = 0000019C, Current Thread ID = 0000019C
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C915F8C 40005705 04488C58 0040810B 
+00000002 043E1E00 00000000 044842A4 7C915F8C 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------04/11/2016 15:48:56---------------------------
+Exception 'EIBClientError' in module ibxpress70.bpl at 000046D4
+Cannot perform operation -- DB is not open
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409556D4 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409556D4 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955BBA [ibxpress70.bpl]
+Recursive call (2 times):
+:409556D4 [ibxpress70.bpl]
+:4097227B [ibxpress70.bpl]
+:40971FF0 [ibxpress70.bpl]
+:00C84B4A [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 245)
+:4003CD26 [rtl70.bpl]
+:4003CBD3 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4003CBB5 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9114CA [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068CD [rtl70.bpl]
+:00BC4B0D [vcl70.bpl]
+:0046FBFB [SISCompware.exe] initialization (SISCompware.dpr, line 60)
+:0046FDC9 [SISCompware.exe] initialization (SISCompware.dpr, line 93)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,00020000) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+
+Main Thread ID = 00000464, Current Thread ID = 00000464
+Registers:
+EAX = 0012FD14  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 0000000F  SS = 0023  ESP = 0012FD10    EBP = 0012FD64
+ECX = 00000000  DS = 0023  ESI = 0012FD98    FS  = 003B
+EDX = 409556D4  ES = 0023  EDI = 0012FDDC    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+0000000F 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 40005705 0453FB24 0040810B 
+0453FAE0 04471E0B 00000000 04516E80 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------04/11/2016 15:48:58---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "10.0.2.0".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:02BCD824 [SISAgenda.bpl] Ucadagenda::TfrmCadAgenda::DataDaCelula (uCadAgenda.pas, line 1728)
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C912FA3 [ntdll.dll]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7E378623 [user32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+:7E378EAB [user32.dll]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:4003D0BE [rtl70.bpl]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:7E36885A [user32.dll]
+:10000000 [gds32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E368BD9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+:7E379E6B [user32.dll]
+:773D706B [comctl32.dll]
+:773D8E90 [comctl32.dll]
+:773D97CB [comctl32.dll]
+:773D99C0 [comctl32.dll]
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,00020000) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$02BC0000 (00400000,00001000,0001C800) Q:\bin\SISAgenda.bpl
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$773B0000 (773B0000,00001000,00090C00) C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll
+
+Main Thread ID = 00000464, Current Thread ID = 00000464
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7E36885A 40005705 0454E980 0040810B 
+00000002 04471E00 00000000 0453F978 7E36885A 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------04/11/2016 15:58:11---------------------------
+Exception 'EIBClientError' in module ibxpress70.bpl at 000046D4
+Cannot perform operation -- DB is not open
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409556D4 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409556D4 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955BBA [ibxpress70.bpl]
+Recursive call (2 times):
+:409556D4 [ibxpress70.bpl]
+:4097227B [ibxpress70.bpl]
+:40971FF0 [ibxpress70.bpl]
+:00C84B5D [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 246)
+:4003CD26 [rtl70.bpl]
+:4003CBD3 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4003CBB5 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9114CA [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068CD [rtl70.bpl]
+:00BC4B0D [vcl70.bpl]
+:0046FBFB [SISCompware.exe] initialization (SISCompware.dpr, line 60)
+:0046FDC9 [SISCompware.exe] initialization (SISCompware.dpr, line 93)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,00020000) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+
+Main Thread ID = 0000017C, Current Thread ID = 0000017C
+Registers:
+EAX = 0012FD14  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 0000000F  SS = 0023  ESP = 0012FD10    EBP = 0012FD64
+ECX = 00000000  DS = 0023  ESI = 0012FD98    FS  = 003B
+EDX = 409556D4  ES = 0023  EDI = 0012FDDC    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+0000000F 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 40005705 0453FBBC 0040810B 
+0453FCDC 04471E0B 00000000 045239E0 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------04/11/2016 15:58:14---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "10.0.2.0".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:77EA796D [SHLWAPI.dll]
+:77EA7AAB [SHLWAPI.dll]
+:77EA7AC4 [SHLWAPI.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+:7E37C1E9 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E368BD9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+:7E379E6B [user32.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C910202 [ntdll.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+:7E378EAB [user32.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C90E453 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7E378DD9 [user32.dll]
+:7C9101BB [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77C0C2DE [msvcrt.dll]
+:77C0C2E3 [msvcrt.dll]
+:7C809AC6 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,00020000) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+$77BF0000 (77BF0000,00001000,0004BE00) C:\WINDOWS\system32\msvcrt.dll
+
+Main Thread ID = 0000017C, Current Thread ID = 0000017C
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C809AC6 40005705 044C29A8 0040810B 
+00000002 04471E00 00000000 045239E0 7C809AC6 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------04/11/2016 16:00:52---------------------------
+Exception 'EIBClientError' in module ibxpress70.bpl at 000046D4
+Cannot perform operation -- DB is not open
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409556D4 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409556D4 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955BBA [ibxpress70.bpl]
+Recursive call (2 times):
+:409556D4 [ibxpress70.bpl]
+:4097227B [ibxpress70.bpl]
+:40971FF0 [ibxpress70.bpl]
+:00C84B5F [SISDM.bpl] Udm::TDM::DataModuleCreate (UDM.pas, line 246)
+:4003CD26 [rtl70.bpl]
+:4003CBD3 [rtl70.bpl]
+:40005B9E [rtl70.bpl]
+:4003CBB5 [rtl70.bpl]
+:40005B65 [rtl70.bpl]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C9114CA [ntdll.dll]
+:7E36882A [user32.dll]
+:7E37927B [user32.dll]
+:40002AC9 [rtl70.bpl]
+:40002AF1 [rtl70.bpl]
+:4000306B [rtl70.bpl]
+:400068CD [rtl70.bpl]
+:00BC4B0D [vcl70.bpl]
+:0046FBFB [SISCompware.exe] initialization (SISCompware.dpr, line 60)
+:0046FDC9 [SISCompware.exe] initialization (SISCompware.dpr, line 93)
+:7C90DC9C [ntdll.dll]
+:7C817067 [kernel32.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,00020000) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+
+Main Thread ID = 000005E4, Current Thread ID = 000005E4
+Registers:
+EAX = 0012FD14  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 0000000F  SS = 0023  ESP = 0012FD10    EBP = 0012FD64
+ECX = 00000000  DS = 0023  ESI = 0012FD98    FS  = 003B
+EDX = 409556D4  ES = 0023  EDI = 0012FDDC    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+0000000F 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C817067 40005705 0453FBBC 0040810B 
+0453FCDC 04471E0B 00000000 045239E0 7C817067 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+
+---------------------------04/11/2016 16:00:54---------------------------
+Exception 'EIBInterBaseError' in module ibxpress70.bpl at 000048B6
+Unable to complete network request to host "10.0.2.0".
+Failed to establish a connection
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:409558B6 [ibxpress70.bpl]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:02BCD824 [SISAgenda.bpl] Ucadagenda::TfrmCadAgenda::DataDaCelula (uCadAgenda.pas, line 1728)
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+Recursive call (2 times):
+:7C91003D [ntdll.dll]
+:7C912FA3 [ntdll.dll]
+:7C914F67 [ntdll.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:77EA43D0 [SHLWAPI.dll]
+:77EA43DD [SHLWAPI.dll]
+:7C812AEB [kernel32.dll]
+:409558B6 [ibxpress70.bpl]
+:40015687 [rtl70.bpl]
+:40955C32 [ibxpress70.bpl]
+:40005B9E [rtl70.bpl]
+Recursive call (2 times):
+:409558B6 [ibxpress70.bpl]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E37C228 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+Recursive call (2 times):
+:7E37C1E9 [user32.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+Recursive call (2 times):
+:7E36882A [user32.dll]
+:7E37A013 [user32.dll]
+:7E37A998 [user32.dll]
+:00BA4614 [vcl70.bpl]
+:00BBF4D7 [vcl70.bpl]
+:00BA1343 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:00BBE00A [vcl70.bpl]
+:4002F0AD [rtl70.bpl]
+:00B2B241 [vcl70.bpl]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:00BA4530 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:00BBE00A [vcl70.bpl]
+:7C946A64 [ntdll.dll]
+:7C912847 [ntdll.dll]
+:00BA41AB [vcl70.bpl]
+:00BA41C2 [vcl70.bpl]
+:4003D0BE [rtl70.bpl]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:10000000 [gds32.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+Recursive call (2 times):
+:7E378EAB [user32.dll]
+:7E378623 [user32.dll]
+:7E378639 [user32.dll]
+:7E3694BE [user32.dll]
+:7E368CC3 [user32.dll]
+:7E369EF0 [user32.dll]
+:5B1C48E1 [uxtheme.dll]
+:7E368BD9 [user32.dll]
+:7E37C23C [user32.dll]
+:7E37C1E9 [user32.dll]
+:7E3694BE [user32.dll]
+:7E378E0D [user32.dll]
+:7E37C23C [user32.dll]
+:7E37C1E9 [user32.dll]
+:5B1C153D [uxtheme.dll]
+:5B1C497C [uxtheme.dll]
+:7E379E5F [user32.dll]
+:7E379E6B [user32.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+Recursive call (2 times):
+:7C910202 [ntdll.dll]
+:7C91017B [ntdll.dll]
+:7C9101BB [ntdll.dll]
+:7E368734 [user32.dll]
+:7E368BD9 [user32.dll]
+:7E36885A [user32.dll]
+:7E36882A [user32.dll]
+:7C910202 [ntdll.dll]
+:7E36882A [user32.dll]
+:7E378EA0 [user32.dll]
+:7E378EAB [user32.dll]
+:7C910098 [ntdll.dll]
+:7C910021 [ntdll.dll]
+:7C91003D [ntdll.dll]
+:7C90E453 [ntdll.dll]
+:7C910021 [ntdll.dll]
+
+Modules:
+$00400000 (00400000,00001000,0006F000) Q:\bin\SISCompware.exe
+$40950000 (40950000,00001000,0003D200) C:\WINDOWS\system32\ibxpress70.bpl
+$7C800000 (7C800000,00001000,00083200) C:\WINDOWS\system32\kernel32.dll
+$40000000 (40000000,00001000,00070800) C:\WINDOWS\system32\rtl70.bpl
+$00C80000 (00400000,00001000,00020000) Q:\bin\SISDM.bpl
+$7E360000 (7E360000,00001000,0005F400) C:\WINDOWS\system32\user32.dll
+$7C900000 (7C900000,00001000,0007A000) C:\WINDOWS\system32\ntdll.dll
+$00B20000 (400C0000,00001000,000D2800) C:\WINDOWS\system32\vcl70.bpl
+$02BC0000 (00400000,00001000,0001C800) Q:\bin\SISAgenda.bpl
+$77EA0000 (77EA0000,00001000,0006BC00) C:\WINDOWS\system32\SHLWAPI.dll
+$10000000 (10000000,00001000,00059000) C:\WINDOWS\system32\gds32.dll
+$5B1C0000 (5B1C0000,00001000,0002F200) C:\WINDOWS\system32\uxtheme.dll
+
+Main Thread ID = 000005E4, Current Thread ID = 000005E4
+Registers:
+EAX = 0012AAF4  CS = 001B  EIP = 7C812AEB  Flags = 00000202
+EBX = 00000002  SS = 0023  ESP = 0012AAF0    EBP = 0012AB44
+ECX = 00000000  DS = 0023  ESI = 0012AB78    FS  = 003B
+EDX = 409558B6  ES = 0023  EDI = 14000191    GS  = 0000
+Code at CS:EIP
+5E C9 C2 10 00 85 FF 0F 8E 36 93 FF FF 8B 55 FC 
+Stack:
+FFFFFC7A 0EEDFADE 00000001 00000000 7C812AEB 
+00000000 7C910021 40005705 04514C78 0040810B 
+00000002 04471E00 00000000 0453FA20 7C910021 
+FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000001 
+

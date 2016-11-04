@@ -1,0 +1,2175 @@
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 233
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+ExpungeMailBox erro: Unrecognized IMAP4 Response Header.
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 233
+[1/233] SIS PROV - Erro UID: 8236
+Email deletado!
+[2/233] SIS PROV - Erro UID: 8238
+Email deletado!
+[3/233] SIS PROV - Erro UID: 8239
+Email deletado!
+[4/233] SIS PROV - Erro UID: 8240
+Email deletado!
+[5/233] SIS PROV - Erro UID: 8241
+Email deletado!
+[6/233] SIS PROV - Erro UID: 8243
+Email deletado!
+[7/233] SIS PROV - Erro UID: 8244
+Email deletado!
+[8/233] SIS PROV - Erro UID: 8245
+Email deletado!
+[9/233] SIS PROV - Erro UID: 8246
+Email deletado!
+[10/233] SIS PROV - Erro UID: 8247
+Email deletado!
+[11/233] SIS PROV - Erro UID: 8248
+Email deletado!
+[12/233] SIS PROV - Erro UID: 8249
+Email deletado!
+[13/233] SIS PROV - Erro UID: 8250
+Email deletado!
+[14/233] SIS PROV - Erro UID: 8251
+Email deletado!
+[15/233] SIS PROV - Erro UID: 8252
+Email deletado!
+[16/233] SIS PROV - Erro UID: 8253
+Email deletado!
+[17/233] SIS PROV - Erro UID: 8254
+Email deletado!
+[18/233] SIS PROV - Erro UID: 8255
+Email deletado!
+[19/233] SIS PROV - Erro UID: 8256
+Email deletado!
+[20/233] SIS PROV - Erro UID: 8257
+Email deletado!
+[21/233] SIS PROV - Erro UID: 8260
+Email deletado!
+[22/233] SIS PROV - Erro UID: 8268
+Email deletado!
+[23/233] SIS PROV - Erro UID: 8269
+Email deletado!
+[24/233] SIS PROV - Erro UID: 8270
+Email deletado!
+[25/233] SIS PROV - Erro UID: 8271
+Email deletado!
+[26/233] SIS PROV - Erro UID: 8273
+Email deletado!
+[27/233] SIS PROV - Erro UID: 8276
+Email deletado!
+[28/233] SIS PROV - Erro UID: 8277
+Email deletado!
+[29/233] SIS PROV - Erro UID: 8279
+Email deletado!
+[30/233] SIS PROV - Erro UID: 8280
+Email deletado!
+[31/233] SIS PROV - Erro UID: 8281
+Email deletado!
+[32/233] SIS PROV - Erro UID: 8286
+Email deletado!
+[33/233] SIS PROV - Erro UID: 8287
+Email deletado!
+[34/233] SIS PROV - Erro UID: 8288
+Email deletado!
+[35/233] SIS PROV - Erro UID: 8290
+Email deletado!
+[36/233] SIS PROV - Erro UID: 8291
+Email deletado!
+[37/233] SIS PROV - Erro UID: 8292
+Email deletado!
+[38/233] SIS PROV - Erro UID: 8293
+Email deletado!
+[39/233] SIS PROV - Erro UID: 8294
+Email deletado!
+[40/233] SIS PROV - Erro UID: 8297
+Email deletado!
+[41/233] SIS PROV - Erro UID: 8299
+Email deletado!
+[42/233] SIS PROV - Erro UID: 8300
+Email deletado!
+[43/233] SIS PROV - Erro UID: 8301
+Email deletado!
+[44/233] SIS PROV - Erro UID: 8302
+Email deletado!
+[45/233] SIS PROV - Erro UID: 8303
+Email deletado!
+[46/233] SIS PROV - Erro UID: 8306
+Email deletado!
+[47/233] SIS PROV - Erro UID: 8308
+Email deletado!
+[48/233] SIS PROV - Erro UID: 8315
+Email deletado!
+[49/233] SIS PROV - Erro UID: 8316
+Email deletado!
+[50/233] SIS PROV - Erro UID: 8317
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[51/233] SIS PROV - Erro UID: 8323
+Email deletado!
+[52/233] SIS PROV - Erro UID: 8324
+Email deletado!
+[53/233] SIS PROV - Erro UID: 8325
+Email deletado!
+[54/233] SIS PROV - Erro UID: 8326
+Email deletado!
+[55/233] SIS PROV - Erro UID: 8327
+Email deletado!
+[56/233] SIS PROV - Erro UID: 8328
+Email deletado!
+[57/233] SIS PROV - Erro UID: 8329
+Email deletado!
+[58/233] SIS PROV - Erro UID: 8330
+Email deletado!
+[59/233] SIS PROV - Erro UID: 8331
+Email deletado!
+[60/233] SIS PROV - Erro UID: 8332
+Email deletado!
+[61/233] SIS PROV - Erro UID: 8333
+Email deletado!
+[62/233] SIS PROV - Erro UID: 8334
+Email deletado!
+[63/233] SIS PROV - Erro UID: 8335
+Email deletado!
+[64/233] SIS PROV - Erro UID: 8336
+Email deletado!
+[65/233] SIS PROV - Erro UID: 8337
+Email deletado!
+[66/233] SIS PROV - Erro UID: 8339
+Email deletado!
+[67/233] SIS PROV - Erro UID: 8341
+Email deletado!
+[68/233] SIS PROV - Erro UID: 8343
+Email deletado!
+[69/233] SIS PROV - Erro UID: 8344
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[70/233] SIS PROV - Erro UID: 8345
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[71/233] SIS PROV - Erro UID: 8349
+Email deletado!
+[72/233] SIS PROV - Erro UID: 8350
+Email deletado!
+[73/233] SIS PROV - Erro UID: 8351
+Email deletado!
+[74/233] SIS PROV - Erro UID: 8352
+Email deletado!
+[75/233] SIS PROV - Erro UID: 8353
+Email deletado!
+[76/233] SIS PROV - Erro UID: 8354
+Email deletado!
+[77/233] SIS PROV - Erro UID: 8355
+Email deletado!
+[78/233] SIS PROV - Erro UID: 8356
+Email deletado!
+[79/233] SIS PROV - Erro UID: 8357
+Email deletado!
+[80/233] SIS PROV - Erro UID: 8358
+Email deletado!
+[81/233] SIS PROV - Erro UID: 8359
+Email deletado!
+[82/233] SIS PROV - Erro UID: 8360
+Email deletado!
+[83/233] SIS PROV - Erro UID: 8361
+Email deletado!
+[84/233] SIS PROV - Erro UID: 8362
+Email deletado!
+[85/233] SIS PROV - Erro UID: 8363
+Email deletado!
+[86/233] SIS PROV - Erro UID: 8364
+Email deletado!
+[87/233] SIS PROV - Erro UID: 8365
+Email deletado!
+[88/233] SIS PROV - Erro UID: 8366
+Email deletado!
+[89/233] SIS PROV - Erro UID: 8367
+Email deletado!
+[90/233] SIS PROV - Erro UID: 8368
+Email deletado!
+[91/233] SIS PROV - Erro UID: 8369
+Email deletado!
+[92/233] SIS PROV - Erro UID: 8370
+Email deletado!
+[93/233] SIS PROV - Erro UID: 8371
+Email deletado!
+[94/233] SIS PROV - Erro UID: 8372
+Email deletado!
+[95/233] SIS PROV - Erro UID: 8375
+Email deletado!
+[96/233] SIS PROV - Erro UID: 8376
+Email deletado!
+[97/233] SIS PROV - Erro UID: 8377
+Email deletado!
+[98/233] SIS PROV - Erro UID: 8378
+Email deletado!
+[99/233] SIS PROV - Erro UID: 8379
+Email deletado!
+[100/233] SIS PROV - Erro UID: 8380
+Email deletado!
+[101/233] SIS PROV - Erro UID: 8381
+Email deletado!
+[102/233] SIS PROV - Erro UID: 8383
+Email deletado!
+[103/233] SIS PROV - Erro UID: 8385
+Email deletado!
+[104/233] SIS PROV - Erro UID: 8392
+Email deletado!
+[105/233] SIS PROV - Erro UID: 8393
+Email deletado!
+[106/233] SIS PROV - Erro UID: 8394
+Email deletado!
+[107/233] SIS PROV - Erro UID: 8395
+Email deletado!
+[108/233] SIS PROV - Erro UID: 8396
+Email deletado!
+[109/233] SIS PROV - Erro UID: 8397
+Email deletado!
+[110/233] SIS PROV - Erro UID: 8398
+Email deletado!
+[111/233] SIS PROV - Erro UID: 8399
+Email deletado!
+[112/233] SIS PROV - Erro UID: 8400
+Email deletado!
+[113/233] SIS PROV - Erro UID: 8401
+Email deletado!
+[114/233] SIS PROV - Erro UID: 8402
+Email deletado!
+[115/233] SIS PROV - Erro UID: 8404
+Email deletado!
+[116/233] SIS PROV - Erro UID: 8405
+Email deletado!
+[117/233] SIS PROV - Erro UID: 8406
+Email deletado!
+[118/233] SIS PROV - Erro UID: 8407
+Email deletado!
+[119/233] SIS PROV - Erro UID: 8408
+Email deletado!
+[120/233] SIS PROV - Erro UID: 8409
+Email deletado!
+[121/233] SIS PROV - Erro UID: 8410
+Email deletado!
+[122/233] SIS PROV - Erro UID: 8411
+Email deletado!
+[123/233] SIS PROV - Erro UID: 8412
+Email deletado!
+[124/233] SIS PROV - Erro UID: 8413
+Email deletado!
+[125/233] SIS PROV - Erro UID: 8414
+Email deletado!
+[126/233] SIS PROV - Erro UID: 8415
+Email deletado!
+[127/233] SIS PROV - Erro UID: 8416
+Email deletado!
+[128/233] SIS PROV - Erro UID: 8417
+Email deletado!
+[129/233] SIS PROV - Erro UID: 8418
+Email deletado!
+[130/233] SIS PROV - Erro UID: 8419
+Email deletado!
+[131/233] SIS PROV - Erro UID: 8420
+Email deletado!
+[132/233] SIS PROV - Erro UID: 8422
+Email deletado!
+[133/233] SIS PROV - Erro UID: 8423
+Email deletado!
+[134/233] SIS PROV - Erro UID: 8424
+Email deletado!
+[135/233] SIS PROV - Erro UID: 8425
+Email deletado!
+[136/233] SIS PROV - Erro UID: 8426
+Email deletado!
+[137/233] SIS PROV - Erro UID: 8427
+Email deletado!
+[138/233] SIS PROV - Erro UID: 8428
+Email deletado!
+[139/233] SIS PROV - Erro UID: 8429
+Email deletado!
+[140/233] SIS PROV - Erro UID: 8430
+Email deletado!
+[141/233] SIS PROV - Erro UID: 8431
+Email deletado!
+[142/233] SIS PROV - Erro UID: 8432
+Email deletado!
+[143/233] SIS PROV - Erro UID: 8433
+Email deletado!
+[144/233] SIS PROV - Erro UID: 8434
+Email deletado!
+[145/233] SIS PROV - Erro UID: 8435
+Email deletado!
+[146/233] SIS PROV - Erro UID: 8436
+Email deletado!
+[147/233] SIS PROV - Erro UID: 8437
+Email deletado!
+[148/233] SIS PROV - Erro UID: 8438
+Email deletado!
+[149/233] SIS PROV - Erro UID: 8439
+Email deletado!
+[150/233] SIS PROV - Erro UID: 8440
+Email deletado!
+[151/233] SIS PROV - Erro UID: 8441
+Email deletado!
+[152/233] SIS PROV - Erro UID: 8442
+Email deletado!
+[153/233] SIS PROV - Erro UID: 8443
+Email deletado!
+[154/233] SIS PROV - Erro UID: 8444
+Email deletado!
+[155/233] SIS PROV - Erro UID: 8445
+Email deletado!
+[156/233] SIS PROV - Erro UID: 8446
+Email deletado!
+[157/233] SIS PROV - Erro UID: 8447
+Email deletado!
+[158/233] SIS PROV - Erro UID: 8448
+Email deletado!
+[159/233] SIS PROV - Erro UID: 8449
+Email deletado!
+[160/233] SIS PROV - Erro UID: 8450
+Email deletado!
+[161/233] SIS PROV - Erro UID: 8451
+Email deletado!
+[162/233] SIS PROV - Erro UID: 8452
+Email deletado!
+[163/233] SIS PROV - Erro UID: 8454
+Email deletado!
+[164/233] SIS PROV - Erro UID: 8455
+Email deletado!
+[165/233] SIS PROV - Erro UID: 8456
+Email deletado!
+[166/233] SIS PROV - Erro UID: 8457
+Email deletado!
+[167/233] SIS PROV - Erro UID: 8458
+Email deletado!
+[168/233] SIS PROV - Erro UID: 8459
+Email deletado!
+[169/233] SIS PROV - Erro UID: 8460
+Email deletado!
+[170/233] SIS PROV - Erro UID: 8461
+Email deletado!
+[171/233] SIS PROV - Erro UID: 8462
+Email deletado!
+[172/233] SIS PROV - Erro UID: 8463
+Email deletado!
+[173/233] SIS PROV - Erro UID: 8464
+Email deletado!
+[174/233] SIS PROV - Erro UID: 8465
+Email deletado!
+[175/233] SIS PROV - Erro UID: 8466
+Email deletado!
+[176/233] SIS PROV - Erro UID: 8467
+Email deletado!
+[177/233] SIS PROV - Erro UID: 8468
+Email deletado!
+[178/233] SIS PROV - Erro UID: 8469
+Email deletado!
+[179/233] SIS PROV - Erro UID: 8470
+Email deletado!
+[180/233] SIS PROV - Erro UID: 8471
+Email deletado!
+[181/233] SIS PROV - Erro UID: 8472
+Email deletado!
+[182/233] SIS PROV - Erro UID: 8473
+Email deletado!
+[183/233] SIS PROV - Erro UID: 8474
+Email deletado!
+[184/233] SIS PROV - Erro UID: 8475
+Email deletado!
+[185/233] SIS PROV - Erro UID: 8476
+Email deletado!
+[186/233] SIS PROV - Erro UID: 8477
+Email deletado!
+[187/233] SIS PROV - Erro UID: 8478
+Email deletado!
+[188/233] SIS PROV - Erro UID: 8479
+Email deletado!
+[189/233] SIS PROV - Erro UID: 8480
+Email deletado!
+[190/233] SIS PROV - Erro UID: 8481
+Email deletado!
+[191/233] SIS PROV - Erro UID: 8482
+Email deletado!
+[192/233] SIS PROV - Erro UID: 8483
+Email deletado!
+[193/233] SIS PROV - Erro UID: 8484
+Email deletado!
+[194/233] SIS PROV - Erro UID: 8485
+Email deletado!
+[195/233] SIS PROV - Erro UID: 8486
+Email deletado!
+[196/233] SIS PROV - Erro UID: 8487
+Email deletado!
+[197/233] SIS PROV - Erro UID: 8488
+Email deletado!
+[198/233] SIS PROV - Erro UID: 8489
+Email deletado!
+[199/233] SIS PROV - Erro UID: 8490
+Email deletado!
+[200/233] SIS PROV - Erro UID: 8491
+Email deletado!
+[201/233] SIS PROV - Erro UID: 8492
+Email deletado!
+[202/233] SIS PROV - Erro UID: 8493
+Email deletado!
+[203/233] SIS PROV - Erro UID: 8494
+Email deletado!
+[204/233] SIS PROV - Erro UID: 8495
+Email deletado!
+[205/233] SIS PROV - Erro UID: 8499
+Email deletado!
+[206/233] SIS PROV - Erro UID: 8500
+Email deletado!
+[207/233] SIS PROV - Erro UID: 8501
+Email deletado!
+[208/233] SIS PROV - Erro UID: 8503
+Email deletado!
+[209/233] SIS PROV - Erro UID: 8504
+Email deletado!
+[210/233] SIS PROV - Erro UID: 8505
+Email deletado!
+[211/233] SIS PROV - Erro UID: 8506
+Email deletado!
+[212/233] SIS PROV - Erro UID: 8507
+Email deletado!
+[213/233] SIS PROV - Erro UID: 8508
+Email deletado!
+[214/233] SIS PROV - Erro UID: 8509
+Email deletado!
+[215/233] SIS PROV - Erro UID: 8510
+Email deletado!
+[216/233] SIS PROV - Erro UID: 8511
+Email deletado!
+[217/233] SIS PROV - Erro UID: 8512
+Email deletado!
+[218/233] SIS PROV - Erro UID: 8513
+Email deletado!
+[219/233] SIS PROV - Erro UID: 8514
+Email deletado!
+[220/233] SIS PROV - Erro UID: 8515
+Email deletado!
+[221/233] SIS PROV - Erro UID: 8516
+Email deletado!
+[222/233] SIS PROV - Erro UID: 8518
+Email deletado!
+[223/233] SIS PROV - Erro UID: 8519
+Email deletado!
+[224/233] SIS PROV - Erro UID: 8520
+Email deletado!
+[225/233] SIS PROV - Erro UID: 8521
+Email deletado!
+[226/233] SIS PROV - Erro UID: 8523
+Email deletado!
+[227/233] SIS PROV - Erro UID: 8524
+Email deletado!
+[228/233] SIS PROV - Erro UID: 8526
+Email deletado!
+[229/233] SIS PROV - Erro UID: 8527
+Email deletado!
+[230/233] SIS PROV - Erro UID: 8528
+Email deletado!
+[231/233] SIS PROV - Erro UID: 8529
+Email deletado!
+[232/233] SIS PROV - Erro UID: 8531
+Email deletado!
+[233/233] SIS PROV - Erro UID: 8534
+Email deletado!
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 233
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+ExpungeMailBox erro: Unrecognized IMAP4 Response Header.
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 233
+[1/233] SIS PROV - Erro UID: 8236
+Email deletado!
+[2/233] SIS PROV - Erro UID: 8238
+Email deletado!
+[3/233] SIS PROV - Erro UID: 8239
+Email deletado!
+[4/233] SIS PROV - Erro UID: 8240
+Email deletado!
+[5/233] SIS PROV - Erro UID: 8241
+Email deletado!
+[6/233] SIS PROV - Erro UID: 8243
+Email deletado!
+[7/233] SIS PROV - Erro UID: 8244
+Email deletado!
+[8/233] SIS PROV - Erro UID: 8245
+Email deletado!
+[9/233] SIS PROV - Erro UID: 8246
+Email deletado!
+[10/233] SIS PROV - Erro UID: 8247
+Email deletado!
+[11/233] SIS PROV - Erro UID: 8248
+Email deletado!
+[12/233] SIS PROV - Erro UID: 8249
+Email deletado!
+[13/233] SIS PROV - Erro UID: 8250
+Email deletado!
+[14/233] SIS PROV - Erro UID: 8251
+Email deletado!
+[15/233] SIS PROV - Erro UID: 8252
+Email deletado!
+[16/233] SIS PROV - Erro UID: 8253
+Email deletado!
+[17/233] SIS PROV - Erro UID: 8254
+Email deletado!
+[18/233] SIS PROV - Erro UID: 8255
+Email deletado!
+[19/233] SIS PROV - Erro UID: 8256
+Email deletado!
+[20/233] SIS PROV - Erro UID: 8257
+Email deletado!
+[21/233] SIS PROV - Erro UID: 8260
+Email deletado!
+[22/233] SIS PROV - Erro UID: 8268
+Email deletado!
+[23/233] SIS PROV - Erro UID: 8269
+Email deletado!
+[24/233] SIS PROV - Erro UID: 8270
+Email deletado!
+[25/233] SIS PROV - Erro UID: 8271
+Email deletado!
+[26/233] SIS PROV - Erro UID: 8273
+Email deletado!
+[27/233] SIS PROV - Erro UID: 8276
+Email deletado!
+[28/233] SIS PROV - Erro UID: 8277
+Email deletado!
+[29/233] SIS PROV - Erro UID: 8279
+Email deletado!
+[30/233] SIS PROV - Erro UID: 8280
+Email deletado!
+[31/233] SIS PROV - Erro UID: 8281
+Email deletado!
+[32/233] SIS PROV - Erro UID: 8286
+Email deletado!
+[33/233] SIS PROV - Erro UID: 8287
+Email deletado!
+[34/233] SIS PROV - Erro UID: 8288
+Email deletado!
+[35/233] SIS PROV - Erro UID: 8290
+Email deletado!
+[36/233] SIS PROV - Erro UID: 8291
+Email deletado!
+[37/233] SIS PROV - Erro UID: 8292
+Email deletado!
+[38/233] SIS PROV - Erro UID: 8293
+Email deletado!
+[39/233] SIS PROV - Erro UID: 8294
+Email deletado!
+[40/233] SIS PROV - Erro UID: 8297
+Email deletado!
+[41/233] SIS PROV - Erro UID: 8299
+Email deletado!
+[42/233] SIS PROV - Erro UID: 8300
+Email deletado!
+[43/233] SIS PROV - Erro UID: 8301
+Email deletado!
+[44/233] SIS PROV - Erro UID: 8302
+Email deletado!
+[45/233] SIS PROV - Erro UID: 8303
+Email deletado!
+[46/233] SIS PROV - Erro UID: 8306
+Email deletado!
+[47/233] SIS PROV - Erro UID: 8308
+Email deletado!
+[48/233] SIS PROV - Erro UID: 8315
+Email deletado!
+[49/233] SIS PROV - Erro UID: 8316
+Email deletado!
+[50/233] SIS PROV - Erro UID: 8317
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[51/233] SIS PROV - Erro UID: 8323
+Email deletado!
+[52/233] SIS PROV - Erro UID: 8324
+Email deletado!
+[53/233] SIS PROV - Erro UID: 8325
+Email deletado!
+[54/233] SIS PROV - Erro UID: 8326
+Email deletado!
+[55/233] SIS PROV - Erro UID: 8327
+Email deletado!
+[56/233] SIS PROV - Erro UID: 8328
+Email deletado!
+[57/233] SIS PROV - Erro UID: 8329
+Email deletado!
+[58/233] SIS PROV - Erro UID: 8330
+Email deletado!
+[59/233] SIS PROV - Erro UID: 8331
+Email deletado!
+[60/233] SIS PROV - Erro UID: 8332
+Email deletado!
+[61/233] SIS PROV - Erro UID: 8333
+Email deletado!
+[62/233] SIS PROV - Erro UID: 8334
+Email deletado!
+[63/233] SIS PROV - Erro UID: 8335
+Email deletado!
+[64/233] SIS PROV - Erro UID: 8336
+Email deletado!
+[65/233] SIS PROV - Erro UID: 8337
+Email deletado!
+[66/233] SIS PROV - Erro UID: 8339
+Email deletado!
+[67/233] SIS PROV - Erro UID: 8341
+Email deletado!
+[68/233] SIS PROV - Erro UID: 8343
+Email deletado!
+[69/233] SIS PROV - Erro UID: 8344
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[70/233] SIS PROV - Erro UID: 8345
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[71/233] SIS PROV - Erro UID: 8349
+Email deletado!
+[72/233] SIS PROV - Erro UID: 8350
+Email deletado!
+[73/233] SIS PROV - Erro UID: 8351
+Email deletado!
+[74/233] SIS PROV - Erro UID: 8352
+Email deletado!
+[75/233] SIS PROV - Erro UID: 8353
+Email deletado!
+[76/233] SIS PROV - Erro UID: 8354
+Email deletado!
+[77/233] SIS PROV - Erro UID: 8355
+Email deletado!
+[78/233] SIS PROV - Erro UID: 8356
+Email deletado!
+[79/233] SIS PROV - Erro UID: 8357
+Email deletado!
+[80/233] SIS PROV - Erro UID: 8358
+Email deletado!
+[81/233] SIS PROV - Erro UID: 8359
+Email deletado!
+[82/233] SIS PROV - Erro UID: 8360
+Email deletado!
+[83/233] SIS PROV - Erro UID: 8361
+Email deletado!
+[84/233] SIS PROV - Erro UID: 8362
+Email deletado!
+[85/233] SIS PROV - Erro UID: 8363
+Email deletado!
+[86/233] SIS PROV - Erro UID: 8364
+Email deletado!
+[87/233] SIS PROV - Erro UID: 8365
+Email deletado!
+[88/233] SIS PROV - Erro UID: 8366
+Email deletado!
+[89/233] SIS PROV - Erro UID: 8367
+Email deletado!
+[90/233] SIS PROV - Erro UID: 8368
+Email deletado!
+[91/233] SIS PROV - Erro UID: 8369
+Email deletado!
+[92/233] SIS PROV - Erro UID: 8370
+Email deletado!
+[93/233] SIS PROV - Erro UID: 8371
+Email deletado!
+[94/233] SIS PROV - Erro UID: 8372
+Email deletado!
+[95/233] SIS PROV - Erro UID: 8375
+Email deletado!
+[96/233] SIS PROV - Erro UID: 8376
+Email deletado!
+[97/233] SIS PROV - Erro UID: 8377
+Email deletado!
+[98/233] SIS PROV - Erro UID: 8378
+Email deletado!
+[99/233] SIS PROV - Erro UID: 8379
+Email deletado!
+[100/233] SIS PROV - Erro UID: 8380
+Email deletado!
+[101/233] SIS PROV - Erro UID: 8381
+Email deletado!
+[102/233] SIS PROV - Erro UID: 8383
+Email deletado!
+[103/233] SIS PROV - Erro UID: 8385
+Email deletado!
+[104/233] SIS PROV - Erro UID: 8392
+Email deletado!
+[105/233] SIS PROV - Erro UID: 8393
+Email deletado!
+[106/233] SIS PROV - Erro UID: 8394
+Email deletado!
+[107/233] SIS PROV - Erro UID: 8395
+Email deletado!
+[108/233] SIS PROV - Erro UID: 8396
+Email deletado!
+[109/233] SIS PROV - Erro UID: 8397
+Email deletado!
+[110/233] SIS PROV - Erro UID: 8398
+Email deletado!
+[111/233] SIS PROV - Erro UID: 8399
+Email deletado!
+[112/233] SIS PROV - Erro UID: 8400
+Email deletado!
+[113/233] SIS PROV - Erro UID: 8401
+Email deletado!
+[114/233] SIS PROV - Erro UID: 8402
+Email deletado!
+[115/233] SIS PROV - Erro UID: 8404
+Email deletado!
+[116/233] SIS PROV - Erro UID: 8405
+Email deletado!
+[117/233] SIS PROV - Erro UID: 8406
+Email deletado!
+[118/233] SIS PROV - Erro UID: 8407
+Email deletado!
+[119/233] SIS PROV - Erro UID: 8408
+Email deletado!
+[120/233] SIS PROV - Erro UID: 8409
+Email deletado!
+[121/233] SIS PROV - Erro UID: 8410
+Email deletado!
+[122/233] SIS PROV - Erro UID: 8411
+Email deletado!
+[123/233] SIS PROV - Erro UID: 8412
+Email deletado!
+[124/233] SIS PROV - Erro UID: 8413
+Email deletado!
+[125/233] SIS PROV - Erro UID: 8414
+Email deletado!
+[126/233] SIS PROV - Erro UID: 8415
+Email deletado!
+[127/233] SIS PROV - Erro UID: 8416
+Email deletado!
+[128/233] SIS PROV - Erro UID: 8417
+Email deletado!
+[129/233] SIS PROV - Erro UID: 8418
+Email deletado!
+[130/233] SIS PROV - Erro UID: 8419
+Email deletado!
+[131/233] SIS PROV - Erro UID: 8420
+Email deletado!
+[132/233] SIS PROV - Erro UID: 8422
+Email deletado!
+[133/233] SIS PROV - Erro UID: 8423
+Email deletado!
+[134/233] SIS PROV - Erro UID: 8424
+Email deletado!
+[135/233] SIS PROV - Erro UID: 8425
+Email deletado!
+[136/233] SIS PROV - Erro UID: 8426
+Email deletado!
+[137/233] SIS PROV - Erro UID: 8427
+Email deletado!
+[138/233] SIS PROV - Erro UID: 8428
+Email deletado!
+[139/233] SIS PROV - Erro UID: 8429
+Email deletado!
+[140/233] SIS PROV - Erro UID: 8430
+Email deletado!
+[141/233] SIS PROV - Erro UID: 8431
+Email deletado!
+[142/233] SIS PROV - Erro UID: 8432
+Email deletado!
+[143/233] SIS PROV - Erro UID: 8433
+Email deletado!
+[144/233] SIS PROV - Erro UID: 8434
+Email deletado!
+[145/233] SIS PROV - Erro UID: 8435
+Email deletado!
+[146/233] SIS PROV - Erro UID: 8436
+Email deletado!
+[147/233] SIS PROV - Erro UID: 8437
+Email deletado!
+[148/233] SIS PROV - Erro UID: 8438
+Email deletado!
+[149/233] SIS PROV - Erro UID: 8439
+Email deletado!
+[150/233] SIS PROV - Erro UID: 8440
+Email deletado!
+[151/233] SIS PROV - Erro UID: 8441
+Email deletado!
+[152/233] SIS PROV - Erro UID: 8442
+Email deletado!
+[153/233] SIS PROV - Erro UID: 8443
+Email deletado!
+[154/233] SIS PROV - Erro UID: 8444
+Email deletado!
+[155/233] SIS PROV - Erro UID: 8445
+Email deletado!
+[156/233] SIS PROV - Erro UID: 8446
+Email deletado!
+[157/233] SIS PROV - Erro UID: 8447
+Email deletado!
+[158/233] SIS PROV - Erro UID: 8448
+Email deletado!
+[159/233] SIS PROV - Erro UID: 8449
+Email deletado!
+[160/233] SIS PROV - Erro UID: 8450
+Email deletado!
+[161/233] SIS PROV - Erro UID: 8451
+Email deletado!
+[162/233] SIS PROV - Erro UID: 8452
+Email deletado!
+[163/233] SIS PROV - Erro UID: 8454
+Email deletado!
+[164/233] SIS PROV - Erro UID: 8455
+Email deletado!
+[165/233] SIS PROV - Erro UID: 8456
+Email deletado!
+[166/233] SIS PROV - Erro UID: 8457
+Email deletado!
+[167/233] SIS PROV - Erro UID: 8458
+Email deletado!
+[168/233] SIS PROV - Erro UID: 8459
+Email deletado!
+[169/233] SIS PROV - Erro UID: 8460
+Email deletado!
+[170/233] SIS PROV - Erro UID: 8461
+Email deletado!
+[171/233] SIS PROV - Erro UID: 8462
+Email deletado!
+[172/233] SIS PROV - Erro UID: 8463
+Email deletado!
+[173/233] SIS PROV - Erro UID: 8464
+Email deletado!
+[174/233] SIS PROV - Erro UID: 8465
+Email deletado!
+[175/233] SIS PROV - Erro UID: 8466
+Email deletado!
+[176/233] SIS PROV - Erro UID: 8467
+Email deletado!
+[177/233] SIS PROV - Erro UID: 8468
+Email deletado!
+[178/233] SIS PROV - Erro UID: 8469
+Email deletado!
+[179/233] SIS PROV - Erro UID: 8470
+Email deletado!
+[180/233] SIS PROV - Erro UID: 8471
+Email deletado!
+[181/233] SIS PROV - Erro UID: 8472
+Email deletado!
+[182/233] SIS PROV - Erro UID: 8473
+Email deletado!
+[183/233] SIS PROV - Erro UID: 8474
+Email deletado!
+[184/233] SIS PROV - Erro UID: 8475
+Email deletado!
+[185/233] SIS PROV - Erro UID: 8476
+Email deletado!
+[186/233] SIS PROV - Erro UID: 8477
+Email deletado!
+[187/233] SIS PROV - Erro UID: 8478
+Email deletado!
+[188/233] SIS PROV - Erro UID: 8479
+Email deletado!
+[189/233] SIS PROV - Erro UID: 8480
+Email deletado!
+[190/233] SIS PROV - Erro UID: 8481
+Email deletado!
+[191/233] SIS PROV - Erro UID: 8482
+Email deletado!
+[192/233] SIS PROV - Erro UID: 8483
+Email deletado!
+[193/233] SIS PROV - Erro UID: 8484
+Email deletado!
+[194/233] SIS PROV - Erro UID: 8485
+Email deletado!
+[195/233] SIS PROV - Erro UID: 8486
+Email deletado!
+[196/233] SIS PROV - Erro UID: 8487
+Email deletado!
+[197/233] SIS PROV - Erro UID: 8488
+Email deletado!
+[198/233] SIS PROV - Erro UID: 8489
+Email deletado!
+[199/233] SIS PROV - Erro UID: 8490
+Email deletado!
+[200/233] SIS PROV - Erro UID: 8491
+Email deletado!
+[201/233] SIS PROV - Erro UID: 8492
+Email deletado!
+[202/233] SIS PROV - Erro UID: 8493
+Email deletado!
+[203/233] SIS PROV - Erro UID: 8494
+Email deletado!
+[204/233] SIS PROV - Erro UID: 8495
+Email deletado!
+[205/233] SIS PROV - Erro UID: 8499
+Email deletado!
+[206/233] SIS PROV - Erro UID: 8500
+Email deletado!
+[207/233] SIS PROV - Erro UID: 8501
+Email deletado!
+[208/233] SIS PROV - Erro UID: 8503
+Email deletado!
+[209/233] SIS PROV - Erro UID: 8504
+Email deletado!
+[210/233] SIS PROV - Erro UID: 8505
+Email deletado!
+[211/233] SIS PROV - Erro UID: 8506
+Email deletado!
+[212/233] SIS PROV - Erro UID: 8507
+Email deletado!
+[213/233] SIS PROV - Erro UID: 8508
+Email deletado!
+[214/233] SIS PROV - Erro UID: 8509
+Email deletado!
+[215/233] SIS PROV - Erro UID: 8510
+Email deletado!
+[216/233] SIS PROV - Erro UID: 8511
+Email deletado!
+[217/233] SIS PROV - Erro UID: 8512
+Email deletado!
+[218/233] SIS PROV - Erro UID: 8513
+Email deletado!
+[219/233] SIS PROV - Erro UID: 8514
+Email deletado!
+[220/233] SIS PROV - Erro UID: 8515
+Email deletado!
+[221/233] SIS PROV - Erro UID: 8516
+Email deletado!
+[222/233] SIS PROV - Erro UID: 8518
+Email deletado!
+[223/233] SIS PROV - Erro UID: 8519
+Email deletado!
+[224/233] SIS PROV - Erro UID: 8520
+Email deletado!
+[225/233] SIS PROV - Erro UID: 8521
+Email deletado!
+[226/233] SIS PROV - Erro UID: 8523
+Email deletado!
+[227/233] SIS PROV - Erro UID: 8524
+Email deletado!
+[228/233] SIS PROV - Erro UID: 8526
+Email deletado!
+[229/233] SIS PROV - Erro UID: 8527
+Email deletado!
+[230/233] SIS PROV - Erro UID: 8528
+Email deletado!
+[231/233] SIS PROV - Erro UID: 8529
+Email deletado!
+[232/233] SIS PROV - Erro UID: 8531
+Email deletado!
+[233/233] SIS PROV - Erro UID: 8534
+Email deletado!
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 0
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 233
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+Erro ao buscar a mensagem no servidor
+ExpungeMailBox erro: Unrecognized IMAP4 Response Header.
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 233
+[1/233] SIS PROV - Erro UID: 8236
+Email deletado!
+[2/233] SIS PROV - Erro UID: 8238
+Email deletado!
+[3/233] SIS PROV - Erro UID: 8239
+Email deletado!
+[4/233] SIS PROV - Erro UID: 8240
+Email deletado!
+[5/233] SIS PROV - Erro UID: 8241
+Email deletado!
+[6/233] SIS PROV - Erro UID: 8243
+Email deletado!
+[7/233] SIS PROV - Erro UID: 8244
+Email deletado!
+[8/233] SIS PROV - Erro UID: 8245
+Email deletado!
+[9/233] SIS PROV - Erro UID: 8246
+Email deletado!
+[10/233] SIS PROV - Erro UID: 8247
+Email deletado!
+[11/233] SIS PROV - Erro UID: 8248
+Email deletado!
+[12/233] SIS PROV - Erro UID: 8249
+Email deletado!
+[13/233] SIS PROV - Erro UID: 8250
+Email deletado!
+[14/233] SIS PROV - Erro UID: 8251
+Email deletado!
+[15/233] SIS PROV - Erro UID: 8252
+Email deletado!
+[16/233] SIS PROV - Erro UID: 8253
+Email deletado!
+[17/233] SIS PROV - Erro UID: 8254
+Email deletado!
+[18/233] SIS PROV - Erro UID: 8255
+Email deletado!
+[19/233] SIS PROV - Erro UID: 8256
+Email deletado!
+[20/233] SIS PROV - Erro UID: 8257
+Email deletado!
+[21/233] SIS PROV - Erro UID: 8260
+Email deletado!
+[22/233] SIS PROV - Erro UID: 8268
+Email deletado!
+[23/233] SIS PROV - Erro UID: 8269
+Email deletado!
+[24/233] SIS PROV - Erro UID: 8270
+Email deletado!
+[25/233] SIS PROV - Erro UID: 8271
+Email deletado!
+[26/233] SIS PROV - Erro UID: 8273
+Email deletado!
+[27/233] SIS PROV - Erro UID: 8276
+Email deletado!
+[28/233] SIS PROV - Erro UID: 8277
+Email deletado!
+[29/233] SIS PROV - Erro UID: 8279
+Email deletado!
+[30/233] SIS PROV - Erro UID: 8280
+Email deletado!
+[31/233] SIS PROV - Erro UID: 8281
+Email deletado!
+[32/233] SIS PROV - Erro UID: 8286
+Email deletado!
+[33/233] SIS PROV - Erro UID: 8287
+Email deletado!
+[34/233] SIS PROV - Erro UID: 8288
+Email deletado!
+[35/233] SIS PROV - Erro UID: 8290
+Email deletado!
+[36/233] SIS PROV - Erro UID: 8291
+Email deletado!
+[37/233] SIS PROV - Erro UID: 8292
+Email deletado!
+[38/233] SIS PROV - Erro UID: 8293
+Email deletado!
+[39/233] SIS PROV - Erro UID: 8294
+Email deletado!
+[40/233] SIS PROV - Erro UID: 8297
+Email deletado!
+[41/233] SIS PROV - Erro UID: 8299
+Email deletado!
+[42/233] SIS PROV - Erro UID: 8300
+Email deletado!
+[43/233] SIS PROV - Erro UID: 8301
+Email deletado!
+[44/233] SIS PROV - Erro UID: 8302
+Email deletado!
+[45/233] SIS PROV - Erro UID: 8303
+Email deletado!
+[46/233] SIS PROV - Erro UID: 8306
+Email deletado!
+[47/233] SIS PROV - Erro UID: 8308
+Email deletado!
+[48/233] SIS PROV - Erro UID: 8315
+Email deletado!
+[49/233] SIS PROV - Erro UID: 8316
+Email deletado!
+[50/233] SIS PROV - Erro UID: 8317
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[51/233] SIS PROV - Erro UID: 8323
+Email deletado!
+[52/233] SIS PROV - Erro UID: 8324
+Email deletado!
+[53/233] SIS PROV - Erro UID: 8325
+Email deletado!
+[54/233] SIS PROV - Erro UID: 8326
+Email deletado!
+[55/233] SIS PROV - Erro UID: 8327
+Email deletado!
+[56/233] SIS PROV - Erro UID: 8328
+Email deletado!
+[57/233] SIS PROV - Erro UID: 8329
+Email deletado!
+[58/233] SIS PROV - Erro UID: 8330
+Email deletado!
+[59/233] SIS PROV - Erro UID: 8331
+Email deletado!
+[60/233] SIS PROV - Erro UID: 8332
+Email deletado!
+[61/233] SIS PROV - Erro UID: 8333
+Email deletado!
+[62/233] SIS PROV - Erro UID: 8334
+Email deletado!
+[63/233] SIS PROV - Erro UID: 8335
+Email deletado!
+[64/233] SIS PROV - Erro UID: 8336
+Email deletado!
+[65/233] SIS PROV - Erro UID: 8337
+Email deletado!
+[66/233] SIS PROV - Erro UID: 8339
+Email deletado!
+[67/233] SIS PROV - Erro UID: 8341
+Email deletado!
+[68/233] SIS PROV - Erro UID: 8343
+Email deletado!
+[69/233] SIS PROV - Erro UID: 8344
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[70/233] SIS PROV - Erro UID: 8345
+Este é um log de atualização, movendo para outra pasta...
+Mensagem movida.
+[71/233] SIS PROV - Erro UID: 8349
+Email deletado!
+[72/233] SIS PROV - Erro UID: 8350
+Email deletado!
+[73/233] SIS PROV - Erro UID: 8351
+Email deletado!
+[74/233] SIS PROV - Erro UID: 8352
+Email deletado!
+[75/233] SIS PROV - Erro UID: 8353
+Email deletado!
+[76/233] SIS PROV - Erro UID: 8354
+Email deletado!
+[77/233] SIS PROV - Erro UID: 8355
+Email deletado!
+[78/233] SIS PROV - Erro UID: 8356
+Email deletado!
+[79/233] SIS PROV - Erro UID: 8357
+Email deletado!
+[80/233] SIS PROV - Erro UID: 8358
+Email deletado!
+[81/233] SIS PROV - Erro UID: 8359
+Email deletado!
+[82/233] SIS PROV - Erro UID: 8360
+Email deletado!
+[83/233] SIS PROV - Erro UID: 8361
+Email deletado!
+[84/233] SIS PROV - Erro UID: 8362
+Email deletado!
+[85/233] SIS PROV - Erro UID: 8363
+Email deletado!
+[86/233] SIS PROV - Erro UID: 8364
+Email deletado!
+[87/233] SIS PROV - Erro UID: 8365
+Email deletado!
+[88/233] SIS PROV - Erro UID: 8366
+Email deletado!
+[89/233] SIS PROV - Erro UID: 8367
+Email deletado!
+[90/233] SIS PROV - Erro UID: 8368
+Email deletado!
+[91/233] SIS PROV - Erro UID: 8369
+Email deletado!
+[92/233] SIS PROV - Erro UID: 8370
+Email deletado!
+[93/233] SIS PROV - Erro UID: 8371
+Email deletado!
+[94/233] SIS PROV - Erro UID: 8372
+Email deletado!
+[95/233] SIS PROV - Erro UID: 8375
+Email deletado!
+[96/233] SIS PROV - Erro UID: 8376
+Email deletado!
+[97/233] SIS PROV - Erro UID: 8377
+Email deletado!
+[98/233] SIS PROV - Erro UID: 8378
+Email deletado!
+[99/233] SIS PROV - Erro UID: 8379
+Email deletado!
+[100/233] SIS PROV - Erro UID: 8380
+Email deletado!
+[101/233] SIS PROV - Erro UID: 8381
+Email deletado!
+[102/233] SIS PROV - Erro UID: 8383
+Email deletado!
+[103/233] SIS PROV - Erro UID: 8385
+Email deletado!
+[104/233] SIS PROV - Erro UID: 8392
+Email deletado!
+[105/233] SIS PROV - Erro UID: 8393
+Email deletado!
+[106/233] SIS PROV - Erro UID: 8394
+Email deletado!
+[107/233] SIS PROV - Erro UID: 8395
+Email deletado!
+[108/233] SIS PROV - Erro UID: 8396
+Email deletado!
+[109/233] SIS PROV - Erro UID: 8397
+Email deletado!
+[110/233] SIS PROV - Erro UID: 8398
+Email deletado!
+[111/233] SIS PROV - Erro UID: 8399
+Email deletado!
+[112/233] SIS PROV - Erro UID: 8400
+Email deletado!
+[113/233] SIS PROV - Erro UID: 8401
+Email deletado!
+[114/233] SIS PROV - Erro UID: 8402
+Email deletado!
+[115/233] SIS PROV - Erro UID: 8404
+Email deletado!
+[116/233] SIS PROV - Erro UID: 8405
+Email deletado!
+[117/233] SIS PROV - Erro UID: 8406
+Email deletado!
+[118/233] SIS PROV - Erro UID: 8407
+Email deletado!
+[119/233] SIS PROV - Erro UID: 8408
+Email deletado!
+[120/233] SIS PROV - Erro UID: 8409
+Email deletado!
+[121/233] SIS PROV - Erro UID: 8410
+Email deletado!
+[122/233] SIS PROV - Erro UID: 8411
+Email deletado!
+[123/233] SIS PROV - Erro UID: 8412
+Email deletado!
+[124/233] SIS PROV - Erro UID: 8413
+Email deletado!
+[125/233] SIS PROV - Erro UID: 8414
+Email deletado!
+[126/233] SIS PROV - Erro UID: 8415
+Email deletado!
+[127/233] SIS PROV - Erro UID: 8416
+Email deletado!
+[128/233] SIS PROV - Erro UID: 8417
+Email deletado!
+[129/233] SIS PROV - Erro UID: 8418
+Email deletado!
+[130/233] SIS PROV - Erro UID: 8419
+Email deletado!
+[131/233] SIS PROV - Erro UID: 8420
+Email deletado!
+[132/233] SIS PROV - Erro UID: 8422
+Email deletado!
+[133/233] SIS PROV - Erro UID: 8423
+Email deletado!
+[134/233] SIS PROV - Erro UID: 8424
+Email deletado!
+[135/233] SIS PROV - Erro UID: 8425
+Email deletado!
+[136/233] SIS PROV - Erro UID: 8426
+Email deletado!
+[137/233] SIS PROV - Erro UID: 8427
+Email deletado!
+[138/233] SIS PROV - Erro UID: 8428
+Email deletado!
+[139/233] SIS PROV - Erro UID: 8429
+Email deletado!
+[140/233] SIS PROV - Erro UID: 8430
+Email deletado!
+[141/233] SIS PROV - Erro UID: 8431
+Email deletado!
+[142/233] SIS PROV - Erro UID: 8432
+Email deletado!
+[143/233] SIS PROV - Erro UID: 8433
+Email deletado!
+[144/233] SIS PROV - Erro UID: 8434
+Email deletado!
+[145/233] SIS PROV - Erro UID: 8435
+Email deletado!
+[146/233] SIS PROV - Erro UID: 8436
+Email deletado!
+[147/233] SIS PROV - Erro UID: 8437
+Email deletado!
+[148/233] SIS PROV - Erro UID: 8438
+Email deletado!
+[149/233] SIS PROV - Erro UID: 8439
+Email deletado!
+[150/233] SIS PROV - Erro UID: 8440
+Email deletado!
+[151/233] SIS PROV - Erro UID: 8441
+Email deletado!
+[152/233] SIS PROV - Erro UID: 8442
+Email deletado!
+[153/233] SIS PROV - Erro UID: 8443
+Email deletado!
+[154/233] SIS PROV - Erro UID: 8444
+Email deletado!
+[155/233] SIS PROV - Erro UID: 8445
+Email deletado!
+[156/233] SIS PROV - Erro UID: 8446
+Email deletado!
+[157/233] SIS PROV - Erro UID: 8447
+Email deletado!
+[158/233] SIS PROV - Erro UID: 8448
+Email deletado!
+[159/233] SIS PROV - Erro UID: 8449
+Email deletado!
+[160/233] SIS PROV - Erro UID: 8450
+Email deletado!
+[161/233] SIS PROV - Erro UID: 8451
+Email deletado!
+[162/233] SIS PROV - Erro UID: 8452
+Email deletado!
+[163/233] SIS PROV - Erro UID: 8454
+Email deletado!
+[164/233] SIS PROV - Erro UID: 8455
+Email deletado!
+[165/233] SIS PROV - Erro UID: 8456
+Email deletado!
+[166/233] SIS PROV - Erro UID: 8457
+Email deletado!
+[167/233] SIS PROV - Erro UID: 8458
+Email deletado!
+[168/233] SIS PROV - Erro UID: 8459
+Email deletado!
+[169/233] SIS PROV - Erro UID: 8460
+Email deletado!
+[170/233] SIS PROV - Erro UID: 8461
+Email deletado!
+[171/233] SIS PROV - Erro UID: 8462
+Email deletado!
+[172/233] SIS PROV - Erro UID: 8463
+Email deletado!
+[173/233] SIS PROV - Erro UID: 8464
+Email deletado!
+[174/233] SIS PROV - Erro UID: 8465
+Email deletado!
+[175/233] SIS PROV - Erro UID: 8466
+Email deletado!
+[176/233] SIS PROV - Erro UID: 8467
+Email deletado!
+[177/233] SIS PROV - Erro UID: 8468
+Email deletado!
+[178/233] SIS PROV - Erro UID: 8469
+Email deletado!
+[179/233] SIS PROV - Erro UID: 8470
+Email deletado!
+[180/233] SIS PROV - Erro UID: 8471
+Email deletado!
+[181/233] SIS PROV - Erro UID: 8472
+Email deletado!
+[182/233] SIS PROV - Erro UID: 8473
+Email deletado!
+[183/233] SIS PROV - Erro UID: 8474
+Email deletado!
+[184/233] SIS PROV - Erro UID: 8475
+Email deletado!
+[185/233] SIS PROV - Erro UID: 8476
+Email deletado!
+[186/233] SIS PROV - Erro UID: 8477
+Email deletado!
+[187/233] SIS PROV - Erro UID: 8478
+Email deletado!
+[188/233] SIS PROV - Erro UID: 8479
+Email deletado!
+[189/233] SIS PROV - Erro UID: 8480
+Email deletado!
+[190/233] SIS PROV - Erro UID: 8481
+Email deletado!
+[191/233] SIS PROV - Erro UID: 8482
+Email deletado!
+[192/233] SIS PROV - Erro UID: 8483
+Email deletado!
+[193/233] SIS PROV - Erro UID: 8484
+Email deletado!
+[194/233] SIS PROV - Erro UID: 8485
+Email deletado!
+[195/233] SIS PROV - Erro UID: 8486
+Email deletado!
+[196/233] SIS PROV - Erro UID: 8487
+Email deletado!
+[197/233] SIS PROV - Erro UID: 8488
+Email deletado!
+[198/233] SIS PROV - Erro UID: 8489
+Email deletado!
+[199/233] SIS PROV - Erro UID: 8490
+Email deletado!
+[200/233] SIS PROV - Erro UID: 8491
+Email deletado!
+[201/233] SIS PROV - Erro UID: 8492
+Email deletado!
+[202/233] SIS PROV - Erro UID: 8493
+Email deletado!
+[203/233] SIS PROV - Erro UID: 8494
+Email deletado!
+[204/233] SIS PROV - Erro UID: 8495
+Email deletado!
+[205/233] SIS PROV - Erro UID: 8499
+Email deletado!
+[206/233] SIS PROV - Erro UID: 8500
+Email deletado!
+[207/233] SIS PROV - Erro UID: 8501
+Email deletado!
+[208/233] SIS PROV - Erro UID: 8503
+Email deletado!
+[209/233] SIS PROV - Erro UID: 8504
+Email deletado!
+[210/233] SIS PROV - Erro UID: 8505
+Email deletado!
+[211/233] SIS PROV - Erro UID: 8506
+Email deletado!
+[212/233] SIS PROV - Erro UID: 8507
+Email deletado!
+[213/233] SIS PROV - Erro UID: 8508
+Email deletado!
+[214/233] SIS PROV - Erro UID: 8509
+Email deletado!
+[215/233] SIS PROV - Erro UID: 8510
+Email deletado!
+[216/233] SIS PROV - Erro UID: 8511
+Email deletado!
+[217/233] SIS PROV - Erro UID: 8512
+Email deletado!
+[218/233] SIS PROV - Erro UID: 8513
+Email deletado!
+[219/233] SIS PROV - Erro UID: 8514
+Email deletado!
+[220/233] SIS PROV - Erro UID: 8515
+Email deletado!
+[221/233] SIS PROV - Erro UID: 8516
+Email deletado!
+[222/233] SIS PROV - Erro UID: 8518
+Email deletado!
+[223/233] SIS PROV - Erro UID: 8519
+Email deletado!
+[224/233] SIS PROV - Erro UID: 8520
+Email deletado!
+[225/233] SIS PROV - Erro UID: 8521
+Email deletado!
+[226/233] SIS PROV - Erro UID: 8523
+Email deletado!
+[227/233] SIS PROV - Erro UID: 8524
+Email deletado!
+[228/233] SIS PROV - Erro UID: 8526
+Email deletado!
+[229/233] SIS PROV - Erro UID: 8527
+Email deletado!
+[230/233] SIS PROV - Erro UID: 8528
+Email deletado!
+[231/233] SIS PROV - Erro UID: 8529
+Email deletado!
+[232/233] SIS PROV - Erro UID: 8531
+Email deletado!
+[233/233] SIS PROV - Erro UID: 8534
+Email deletado!
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 0
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+Conectando no servidor IMAP
+IMAPClientStatus: Connected.
+Abrindo Caixa de Entrada
+Pesquisando mensagens com assunto: SIS PROV - Erro
+Total de mensagens: 0
+IMAPClientStatus: Disconnecting.
+IMAPClientStatus: Disconnected.
+

@@ -1,0 +1,71 @@
+object frmRelatorioWEB: TfrmRelatorioWEB
+  Left = 416
+  Top = 189
+  Width = 350
+  Height = 344
+  Caption = 'Relat'#243'rio'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object mmHTML: TMemo
+    Left = 56
+    Top = 120
+    Width = 137
+    Height = 137
+    Lines.Strings = (
+      'mmHTML')
+    TabOrder = 2
+  end
+  object relatorio: TWebBrowser
+    Left = 0
+    Top = 30
+    Width = 342
+    Height = 280
+    Align = alClient
+    TabOrder = 0
+    ControlData = {
+      4C00000059230000F01C00000000000000000000000000000000000000000000
+      000000004C000000000000000000000001000000E0D057007335CF11AE690800
+      2B2E126208000000000000004C0000000114020000000000C000000000000046
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000100000000000000000000000000000000000000}
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 342
+    Height = 30
+    Align = alTop
+    BevelInner = bvLowered
+    BevelOuter = bvNone
+    Color = clWindow
+    TabOrder = 1
+    object btExcel: TSpeedButton
+      Left = 5
+      Top = 3
+      Width = 23
+      Height = 22
+      Hint = 'Exportar Excel'
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btExcelClick
+    end
+    object Button1: TButton
+      Left = 171
+      Top = 2
+      Width = 89
+      Height = 25
+      Caption = 'Salvar Imagem'
+      TabOrder = 0
+      Visible = False
+      OnClick = Button1Click
+    end
+  end
+end

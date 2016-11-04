@@ -1,0 +1,72 @@
+package SISEDI;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  webdsnap,
+  inetdb,
+  dbrtl,
+  inet,
+  xmlrtl,
+  dsnapcon,
+  dsnap,
+  vclx,
+  vcldb,
+  ibxpress,
+  vclie,
+  VclSmp,
+  RxCtl7,
+  dclusr,
+  dxEdtrD7,
+  dxComnD7,
+  EQTLD7,
+  ECQDBCD7,
+  dxDBEdD7,
+  EQGridD7,
+  vcljpg,
+  designide,
+  vclactnband,
+  dxELibD7,
+  RxDB7,
+  SISFichas,
+  SISScript,
+  ZMstr191D7,
+  phgdelphi7,
+  indy;
+
+contains
+  ufrmEDI in '..\EDI\ufrmEDI.pas' {frmEDI},
+  ufrmMenuEDI in '..\EDI\ufrmMenuEDI.pas' {frmMenuEDI},
+  ufrmEDI_Pen in '..\EDI\ufrmEDI_Pen.pas' {frmEDI_Pen},
+  ufrmProtocoloEnvio in '..\CADASTRO\ufrmProtocoloEnvio.pas' {frmProtocoloEnvio},
+  ufrmConfirmacaoEDI in '..\CADASTRO\ufrmConfirmacaoEDI.pas' {frmConfirmacaoEDI},
+  ufrmSQLWeb in '..\EDI\ufrmSQLWeb.pas' {frmSQL},
+  ufrmCompare in '..\CADASTRO\ufrmCompare.pas' {frmCompare},
+  uEmail in '..\email\uEmail.pas' {frmEmail},
+  ufrmDePara in '..\EDI\ufrmDePara.pas' {frmDePara};
+
+end.

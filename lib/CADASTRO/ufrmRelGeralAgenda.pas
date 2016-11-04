@@ -1,0 +1,449 @@
+unit ufrmRelGeralAgenda;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UfrmRelPad, OleCtrls, SHDocVw, ComCtrls, RpCon, RpConDS, RpBase,
+  RpSystem, RpDefine, RpRave, DB, IBCustomDataSet, IBQuery, StdCtrls,
+  Buttons, ExtCtrls, dxCntner, dxEditor, dxExEdtr, dxEdLib, ugeral,
+  uFrameDashBoard, JPEG, IB_PARSE, RpRenderRTF, RpRenderHTML, RpRender,
+  RpRenderPDF;
+
+type
+  TfrmRelGeralAgenda = class(TfrmRelPad)
+    tsFiltro: TTabSheet;
+    Label7: TLabel;
+    GroupBox3: TGroupBox;
+    Label5: TLabel;
+    Label8: TLabel;
+    dtde: TdxDateEdit;
+    dtate: TdxDateEdit;
+    GroupBox1: TGroupBox;
+    Label2: TLabel;
+    qyDashBoard: TIBQuery;
+    tsGrafico: TTabSheet;
+    frameDashBoard1: TframeDashBoard;
+    ckGrafico: TCheckBox;
+    btLocUnidade: TdxButtonEdit;
+    edUnidade: TdxEdit;
+    ProgressBar1: TProgressBar;
+    procedure btImprimirClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btLocUnidadeButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure btLocUnidadeChange(Sender: TObject);
+    procedure qyGeralBeforeOpen(DataSet: TDataSet);
+    procedure qyGeralAfterOpen(DataSet: TDataSet);
+    procedure btLocUnidadeExit(Sender: TObject);
+    procedure frameDashBoard1btAddColunaClick(Sender: TObject);
+    procedure frameDashBoard1btAddAllClick(Sender: TObject);
+    procedure frameDashBoard1SpeedButton3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure CriaRelatorioWEB;
+    function BMPtoJPG(var BMPpic, JPGpic: string):boolean;
+  end;
+
+var
+  frmRelGeralAgenda: TfrmRelGeralAgenda;
+  sArqWEB, sArqLog, dir:String; sLog:TStringList;
+
+implementation
+
+uses uRelatorioWEB, UGeralSQL, UfrmLocalizar, UDMGERAL, UDM;
+
+{$R *.dfm}
+
+
+procedure TfrmRelGeralAgenda.btImprimirClick(Sender: TObject);
+begin
+  if dtDe.Date < 1 then
+  begin
+    MessageDlg('É necessário, incluir o período INICIO!',mtWarning,[mbOK],0);
+    abort;
+  end;
+  if dtAte.Date < 1 then
+  begin
+    MessageDlg('É necessário, incluir o período FINAL!',mtWarning,[mbOK],0);
+    abort;
+  end;
+
+  if dtde.Date > dtAte.Date then
+  begin
+    MessageDlg('Data FINAL não pode ser menor que a data INICIO!',mtWarning,[mbOK],0);
+    abort;
+  end;
+
+  inherited;
+
+  ProgressBar1.Visible := true;
+  try
+   CriaRelatorioWEB;
+  except
+   on E:Exception do
+     ShowMessage(e.Message);
+  end;
+  //ShowMessage('Gerando Arquivo:'+sArqLog);
+  if DirectoryExists(ExtractFilePath(sArqLog)) then
+    sLog.SaveToFile(sArqLog)
+  else
+    ShowMessage('Erro Arquivo:'+sArqLog);
+  frmRelatorioWEB := TfrmRelatorioWEB.Create(Application);
+  frmRelatorioWEB.relatorio.Navigate(sArqWEB);
+  frmRelatorioWEB.ShowModal;
+  frmRelatorioWEB.Free;
+  ProgressBar1.Visible := false;
+end;
+
+procedure TfrmRelGeralAgenda.CriaRelatorioWEB;
+var Col1,Col2,Col3,Rel:TStrings;
+nTotal, nPerc, nCnt:Real;
+arq, sBMP, sJPG, sStyle, sSQL:String;
+sMunicipio, sUnidade, sProvincia:String;
+begin
+   ProgressBar1.Position := 10;
+   Col1 := TStringList.Create;
+   Col2 := TStringList.Create;
+   Col3 := TStringList.Create;
+   Rel := TStringList.Create;
+   try
+     sMunicipio := 'Todos';
+     sUnidade := 'Todas';
+     sProvincia := 'Todas';
+     ProgressBar1.Position := 20;
+     if (edUnidade.Text<>'') then
+       sUnidade := edUnidade.Text;
+     ProgressBar1.Position := 30;
+     sSQL := qyGeral.Sql.Text;
+     qyGeral.Open;
+     nCnt := qyGeral.FieldByName('TOTAL').AsFloat;
+     qyGeral.Close;
+     sStyle := 'style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"';
+     Rel.Add('<table align="center" ' + sStyle + '>');
+     Rel.Add('<tr>');
+	   Rel.Add('<td height="40" align="right"><input name="" type="button" value="Imprimir" onclick="window.print()"/></td>');
+	   Rel.Add('</tr>');
+     Rel.Add('<tr>');
+     Rel.Add('<th align="center" bgcolor="#EEEEEE" height="25"><b>Relatório demonstrativo geral da Agenda</b></th>');
+     Rel.Add('</tr>');
+     Rel.Add('<tr><td>');
+     Rel.Add('Emitido por : Administrador do Sistema, em ' +
+     FormatDateTime('dd/mm/yyyy - hh:mm:ss', dm.GetDateTime) + '<br />');
+     Rel.Add('Período: <strong>'+dtDe.Text+'</strong> (inicial) -  <strong>'+dtAte.Text+'</strong> (final) <br />');
+     Rel.Add('País: <strong>Angola</strong><br />');
+     Rel.Add('Unidade: <strong>'+sUnidade+'</strong><br />');
+     Rel.Add('Província: <strong>'+sProvincia+'</strong> - Município : <strong>'+sMunicipio+'</strong> <br />');
+     Rel.Add('Casos Agendados = <strong>' + FloatToStr(nCnt)+ '</strong><br />');
+     Rel.Add('</td></tr>');
+     Rel.Add('<tr><td>');
+     Rel.Add('<hr width="100%" size="1" noshade="noshade"/>');
+     Rel.Add('</td></tr>');
+     ProgressBar1.Position := 40;
+     qyDashBoard.Open;
+     while not qyDashBoard.Eof do
+     begin
+       qyGeral.Close;
+       qyGeral.Sql.Text := qyDashBoard['TX_DASHBOARD'];
+       qyGeral.Open;
+
+       nTotal := 0;
+       qyGeral.First;
+       while not qyGeral.Eof do
+       begin
+         nTotal := nTotal + qyGeral.FieldByName('TOTAL').AsFloat;
+         qyGeral.Next;
+       end;
+       ProgressBar1.Position := 50;
+       Rel.Add('<tr><td>' + qyDashBoard['NM_DASHBOARD'] + '</td></tr>');
+       Rel.Add('<tr><td>(Total analisado = ' + FloatToStr(nTotal) + ')</td></tr>');
+       Col1.Clear;
+       Col2.Clear;
+       Col3.Clear;
+       qyGeral.First;
+       while not qyGeral.Eof do
+       begin
+         nPerc :=  (qyGeral.FieldByName('TOTAL').AsFloat / nTotal) * 100;
+         Col1.Add('<th align="center" bgcolor="#EEEEEE">');
+         Col1.Add(qyGeral.FieldByName('ROTULO').AsString);
+         Col1.Add('</th>');
+
+         Col2.Add('<td align="right">');
+         Col2.Add('<strong>' +  FormatFloat('#,###.00',qyGeral.FieldByName('TOTAL').AsFloat) + '</strong>');
+         Col2.Add('</td>');
+
+         Col3.Add('<td align="right">');
+         Col3.Add('<strong>' +  FormatFloat('0.00%',nPerc) + '</strong>');
+         Col3.Add('</td>');
+
+         qyGeral.Next;
+       end;
+       ProgressBar1.Position := 60;
+       qyGeral.Close;
+       Rel.Add('<tr><td>');
+       Rel.Add('<table border="1" align="center" bordercolor="#000000" ' + sStyle + '>');
+       Rel.Add('<tr>' + Col1.Text + '</tr>');
+       Rel.Add('<tr>' + Col2.Text + '</tr>');
+       Rel.Add('<tr>' + Col3.Text + '</tr>');
+       Rel.Add('</table>');
+       Rel.Add('</td></tr>');
+       ProgressBar1.Position := 80;
+       //Grafico
+       if ckGrafico.Checked then
+       begin
+         arq := dir + '\Img' + qyDashBoard.FieldByName('CD_DASHBOARD').AsString;
+         frameDashBoard1.dsDash.AutoEdit := false;
+         frameDashBoard1.View;
+         frameDashBoard1.TB_DASH.Close;
+         frameDashBoard1.TB_DASH.ParamByName('CD_DASHBOARD').AsInteger :=
+           qyDashBoard.FieldByName('CD_DASHBOARD').AsInteger;
+         frameDashBoard1.TB_DASH.Open;
+         frameDashBoard1.qyConsulta.Close;
+         frameDashBoard1.qyConsulta.Open;
+         sBMP := arq+'.bmp';
+         sJPG := arq+'.jpg';
+         frameDashBoard1.grafico.SaveToBitmapFile(sBMP);
+         BMPtoJPG(sBMP,sJPG);
+         frameDashBoard1.qyConsulta.Close;
+         frameDashBoard1.TB_DASH.Close;
+         Rel.Add('<tr><td align="center">');
+         arq := ExtractFileName(sJPG);
+         Rel.Add('<img src="' + arq + '"/>');
+         Rel.Add('</td></tr>');
+       end;
+       qyDashBoard.Next;
+     end;
+     Rel.Add('</table>');
+     Rel.SaveToFile(sArqWEB);
+   finally
+     ProgressBar1.Position := 90;
+     qyGeral.Sql.Text := sSQL;
+     qyDashBoard.Close;
+     FreeAndNil(Col1);
+     FreeAndNil(Col2);
+     FreeAndNil(Col3);
+     FreeAndNil(Rel);
+   end;
+   ProgressBar1.Position := 100;
+end;
+
+procedure TfrmRelGeralAgenda.FormCreate(Sender: TObject);
+begin
+  inherited;
+  dir := sPathGrid + '\Temp';
+  if not DirectoryExists(dir) then
+     MkDir(dir);
+
+  sArqWEB := dir + '\' + FormatDateTime('ddmmyyyyhhniss',Date) + '.html';
+  sArqLog := dir + '\' + FormatDateTime('ddmmyyyyhhniss',Date) + '.txt';
+  tsGrafico.TabVisible := False;
+
+  sLog := TStringList.Create;
+end;
+
+procedure TfrmRelGeralAgenda.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  inherited;
+  if FileExists(sArqWEB) then
+    DeleteFile(sArqWEB);
+
+  FreeAndNil(sLog);
+end;
+
+function TfrmRelGeralAgenda.BMPtoJPG
+   (var BMPpic, JPGpic: string):boolean;
+var Bitmap: TBitmap;
+    JpegImg: TJpegImage;
+begin
+  Result:=False;
+  Bitmap := TBitmap.Create;
+  try
+   Bitmap.LoadFromFile(BMPpic) ;
+   JpegImg := TJpegImage.Create;
+   try
+    JpegImg.Assign(Bitmap) ;
+    JpegImg.SaveToFile(JPGpic) ;
+    Result:=True;
+   finally
+    JpegImg.Free
+   end;
+  finally
+   Bitmap.Free;
+   DeleteFile(BMPpic);
+  end;
+end;
+
+procedure TfrmRelGeralAgenda.btLocUnidadeButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  inherited;
+  frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Unidade';
+  frmLocalizar.qyDados := SelectDadosUnidade;
+
+  try
+    frmLocalizar.Where := false;
+    SetLength(VCampo,2);
+    frmLocalizar.KeyField := 'cd_unidade';
+    VCampo[0].Titulo  := 'Cód.';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'Unidade';
+    VCampo[1].Width := 25;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    btLocUnidade.Text := frmLocalizar.qyDados.FieldByname('cd_unidade').AsString;
+    edUnidade.Text := frmLocalizar.qyDados.FieldByname('ds_unidade').AsString;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+end;
+
+procedure TfrmRelGeralAgenda.btLocUnidadeChange(Sender: TObject);
+begin
+  inherited;
+  if btLocUnidade.Text = '' then
+    edUnidade.Clear
+  else if btLocUnidade.Modified then
+  begin
+    try
+      edUnidade.Text := PegaValor('DS_UNIDADE','UNIDADE',['CD_UNIDADE'],
+        [btLocUnidade.Text]);
+    except
+      begin
+        edUnidade.Clear;
+      end;
+    end;
+  end;
+end;
+
+procedure TfrmRelGeralAgenda.qyGeralBeforeOpen(DataSet: TDataSet);
+var sWhere:TStringList; sSQLWhere, sSQL, sAux, sWA:String; nB,nE:Integer;
+    bCondicao:Boolean;
+begin
+  inherited;
+  sWhere := TStringList.Create;
+  sSQL := qyGeral.SQL.Text;
+  try
+    try
+      GetSQLWhere(sSQL,sSQLWhere,nB,nE);
+      bCondicao := (Pos('/*CONDICAO*/',sSQL)>0);
+      if bCondicao then
+        sWA := 'and '
+      else if (sSQLWhere='') then
+        sWA := 'where '
+      else
+        sWA := 'and ';
+
+      if (dtDe.Text <> '  /  /    ') and (dtAte.Text <> '  /  /    ') then
+      begin
+        sWhere.Add(sWA + 'dt_agenda between :de and :ate');
+        sWA := 'and ';
+      end;
+
+      if (btLocUnidade.Text <> '') then
+      begin
+        sWhere.Add(sWA + 'a.CD_UNIDADE = :CD_UNIDADE');
+        sWA := 'and ';
+      end;
+
+      if (sWhere.Text<>'') then
+      begin
+        sAux := sSQL;
+        if bCondicao then
+          sAux := StringReplace(sAux,'/*CONDICAO*/',sWhere.Text,[rfReplaceAll])
+        else
+        begin
+          sWhere.Insert(0,sSQLWhere);
+          sSQLWhere := sWhere.Text;
+          SetSQLWhere(sAux, sSQLWhere);
+        end;
+        qyGeral.SQL.Text := sAux;
+      end;
+
+      //Parametros
+      if (dtDe.Text <> '  /  /    ') then
+        qyGeral.ParamByName('DE').AsDate := dtDe.Date;
+
+      if (dtAte.Text <> '  /  /    ') then
+        qyGeral.ParamByName('ATE').AsDate := dtAte.Date;
+
+      if (btLocUnidade.Text <> '') then
+        qyGeral.ParamByName('CD_UNIDADE').AsString := btLocUnidade.Text;
+
+     except
+        qyGeral.SQL.Text := sSQL;
+     end;
+   finally
+      FreeAndNil(sWhere);
+   end;
+
+end;
+
+procedure TfrmRelGeralAgenda.qyGeralAfterOpen(DataSet: TDataSet);
+Var i:integer;
+begin
+  inherited;
+  sLog.Add('*********************************');
+  sLog.Add('*************SQL*****************');
+  sLog.Add('Total Registros:' + intToStr(qyGeral.RecordCount));
+  sLog.Add('SQL: ' + qyGeral.SQL.Text);
+  sLog.Add('**********Parametros*************');
+  for i:=0 to qyGeral.ParamCount-1 do
+    sLog.Add('Nome:' + qyGeral.Params[i].Name +
+             'Valor:' + qyGeral.Params[i].AsString);
+
+end;
+
+procedure TfrmRelGeralAgenda.btLocUnidadeExit(Sender: TObject);
+begin
+  inherited;
+  if btLocUnidade.Text <> '' then
+  begin
+    try
+      edUnidade.Text := PegaValor('DS_UNIDADE','UNIDADE',['CD_UNIDADE'],
+        [btLocUnidade.Text]);
+    except
+      begin
+        MessageDlg('Unidade não encontrada!',mtWarning,[mbOK],0);
+        btLocUnidade.Clear;
+        edUnidade.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmRelGeralAgenda.frameDashBoard1btAddColunaClick(
+  Sender: TObject);
+begin
+  inherited;
+  frameDashBoard1.btAddColunaClick(Sender);
+
+end;
+
+procedure TfrmRelGeralAgenda.frameDashBoard1btAddAllClick(
+  Sender: TObject);
+begin
+  inherited;
+  frameDashBoard1.btAddAllClick(Sender);
+
+end;
+
+procedure TfrmRelGeralAgenda.frameDashBoard1SpeedButton3Click(
+  Sender: TObject);
+begin
+  inherited;
+  //frameDashBoard1.SpeedButton3Click(Sender);
+
+end;
+
+end.

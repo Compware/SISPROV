@@ -1,0 +1,182 @@
+unit UfrmRelProdLaboratorio;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UfrmRelPadFast, frxExportImage, frxExportRTF, frxExportHTML,
+  frxExportPDF, frxClass, frxExportXLS, frxDBSet, DB, IBCustomDataSet,
+  IBQuery, StdCtrls, Buttons, ExtCtrls, ComCtrls, Mask, ToolEdit, DBCtrls;
+
+type
+  TfrmRelProdLaboratorio = class(TfrmRelPadFast)
+    pgFiltro: TTabSheet;
+    Label2: TLabel;
+    GroupBox1: TGroupBox;
+    edDataInicio: TDateEdit;
+    edDataFinal: TDateEdit;
+    Label3: TLabel;
+    Label4: TLabel;
+    btGerarRelatorio: TBitBtn;
+    pgRelatorio: TTabSheet;
+    dsRelatorio: TDataSource;
+    qyGeralN_PACIENTES: TIntegerField;
+    lblPeriodo: TLabel;
+    Label5: TLabel;
+    DBText1: TDBText;
+    qyResultados: TIBQuery;
+    dsResultados: TDataSource;
+    qyResultadosCD4_MENOR_350: TIntegerField;
+    qyResultadosCD4_DE_350_A_500: TIntegerField;
+    qyResultadosCD4_MAIOR_500: TIntegerField;
+    qyResultadosCD4_TOTAL: TLargeintField;
+    qyResultadosCV_MENOR_1000: TIntegerField;
+    qyResultadosCV_MAIOR_IGUAL_1000: TIntegerField;
+    qyResultadosCV_LDL: TIntegerField;
+    qyResultadosCV_TOTAL: TLargeintField;
+    qyResultadosDPI_TOTAL: TLargeintField;
+    qyResultadosTOTAL_EXAMES: TLargeintField;
+    Label6: TLabel;
+    Label7: TLabel;
+    DBText2: TDBText;
+    Label8: TLabel;
+    DBText3: TDBText;
+    Label9: TLabel;
+    DBText4: TDBText;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    DBText5: TDBText;
+    DBText6: TDBText;
+    DBText7: TDBText;
+    DBText8: TDBText;
+    Label14: TLabel;
+    Label15: TLabel;
+    DBText9: TDBText;
+    qyResultadosDPI_DETERMINADO: TIntegerField;
+    qyResultadosDPI_INDETERMINADO: TIntegerField;
+    qyResultadosTB_POSITIVO: TIntegerField;
+    qyResultadosTB_NEGATIVO: TIntegerField;
+    qyResultadosTB_TOTAL: TLargeintField;
+    Label16: TLabel;
+    Label17: TLabel;
+    DBText10: TDBText;
+    Label18: TLabel;
+    DBText11: TDBText;
+    DBText13: TDBText;
+    Label20: TLabel;
+    Label19: TLabel;
+    Label21: TLabel;
+    DBText12: TDBText;
+    DBText14: TDBText;
+    Label22: TLabel;
+    Label23: TLabel;
+    DBText15: TDBText;
+    DBText16: TDBText;
+    Label24: TLabel;
+    qyUnidade: TIBQuery;
+    qyUnidadeDS_UNIDADE: TIBStringField;
+    dsUnidade: TDataSource;
+    frxDBUnidade: TfrxDBDataset;
+    frxDBResultados: TfrxDBDataset;
+    procedure btGerarRelatorioClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btImprimirClick(Sender: TObject);
+    procedure edDataFinalKeyPress(Sender: TObject; var Key: Char);
+  private
+    { Private declarations }
+    procedure validaFiltro;
+  public
+    { Public declarations }
+    procedure gerarRelatorio;
+  end;
+
+var
+  frmRelProdLaboratorio: TfrmRelProdLaboratorio;
+
+
+implementation
+
+uses UGeral;
+
+{$R *.dfm}
+
+procedure TfrmRelProdLaboratorio.btGerarRelatorioClick(Sender: TObject);
+begin
+  inherited;
+  validaFiltro;
+  gerarRelatorio;
+
+  pgRelatorio.TabVisible := True;
+  pgFiltro.TabVisible := False;
+  btImprimir.Visible := True;
+end;
+
+procedure TfrmRelProdLaboratorio.validaFiltro;
+begin
+  if edDataInicio.Text = '  /  /    ' then
+  begin
+    ShowMessage('Digite a data de início!');
+    Abort;
+  end;
+
+  if edDataFinal.Text = '  /  /    ' then
+  begin
+    ShowMessage('Digite a data final!');
+    Abort;
+  end;
+
+  if edDataInicio.Date > edDataFinal.Date then
+  begin
+    ShowMessage('A data final deve ser maior que a data início!');
+    Abort;
+  end;
+end;
+
+procedure TfrmRelProdLaboratorio.FormCreate(Sender: TObject);
+begin
+  inherited;
+  pgFiltros.ActivePage := pgFiltro;
+  pgRelatorio.TabVisible := False;
+  edDataInicio.Date := IncMonth(Now, -1);
+  edDataFinal.Date := Now;
+end;
+
+procedure TfrmRelProdLaboratorio.btImprimirClick(Sender: TObject);
+begin
+  inherited;
+  frxReport1.LoadFromFile(sPathLayOut + '\RelProdLaboratorio.fr3');
+  TfrxMemoView(frxReport1.FindObject('MemoPeriodo')).Text  := 'Peíodo de '+edDataInicio.Text + ' até '+ edDataFinal.Text;
+  frxReport1.ShowReport;
+end;
+
+procedure TfrmRelProdLaboratorio.gerarRelatorio;
+begin
+  lblPeriodo.Caption := 'Período: ' + edDataInicio.Text + ' até ' + edDataFinal.Text;
+  qyGeral.Close;
+  qyResultados.Close;
+  qyUnidade.Close;
+
+  qyGeral.ParamByName('data_inicio').AsDateTime := edDataInicio.Date;
+  qyGeral.ParamByName('data_fim').AsDateTime := edDataFinal.Date;
+  qyResultados.ParamByName('data_inicio').AsDateTime := edDataInicio.Date;
+  qyResultados.ParamByName('data_fim').AsDateTime := edDataFinal.Date;
+  qyUnidade.ParamByName('prmUnidade').AsString := prmUnidade;
+
+  qyGeral.Open;
+  qyResultados.Open;
+  qyUnidade.Open;
+end;
+
+procedure TfrmRelProdLaboratorio.edDataFinalKeyPress(Sender: TObject;
+  var Key: Char);
+begin
+  inherited;
+  if Key=#13 then
+  begin
+     btImprimir.Click;
+  end;
+end;
+
+end.

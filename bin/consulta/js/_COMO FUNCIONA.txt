@@ -1,0 +1,17 @@
+Coloca  o texto do <INFO HEAD.TXT> no <head> do html alvo.
+
+dentro do script <calendarioscript/camposcalendario.js>
+editar colocando os campos alvos nas FUNCTIONS
+
+
+
+
+
+
+PARA VALIDAR A DATA
+
+O campo precisa conter:
+
+<input type="text" id="Nome do Campo" name="Nome do Campo" maxlength="10" style="width:98" OnKeyPress="formatar(this, '##/##/####')" onBlur="return doDateVenc(this.id,this.value, 4);" />
+
+Se o campo já existir coloque dentro da tag somente:  OnKeyPress="formatar(this, '##/##/####')" onBlur="return doDateVenc(this.id,this.value, 4);" 

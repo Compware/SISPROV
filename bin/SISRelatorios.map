@@ -1,0 +1,2932 @@
+
+ Start         Length     Name                   Class
+ 0001:00000000 000430A0H .text                   CODE
+ 0002:00000000 00000080H .data                   DATA
+ 0002:00000080 000002C1H .bss                    BSS
+
+
+Detailed map of segments
+
+ 0001:00000000 000001C6 C=CODE     S=.text    G=(none)   M=System   ACBP=A9
+ 0001:000001C8 000001EC C=CODE     S=.text    G=(none)   M=SysInit  ACBP=A9
+ 0001:000003B4 0000000E C=CODE     S=.text    G=(none)   M=Types    ACBP=A9
+ 0001:000003C4 00000050 C=CODE     S=.text    G=(none)   M=Windows  ACBP=A9
+ 0001:00000414 00000038 C=CODE     S=.text    G=(none)   M=Messages ACBP=A9
+ 0001:0000044C 0000000E C=CODE     S=.text    G=(none)   M=SysConst ACBP=A9
+ 0001:0000045C 000000A6 C=CODE     S=.text    G=(none)   M=SysUtils ACBP=A9
+ 0001:00000504 0000000E C=CODE     S=.text    G=(none)   M=VarUtils ACBP=A9
+ 0001:00000514 0000004E C=CODE     S=.text    G=(none)   M=Variants ACBP=A9
+ 0001:00000564 0000000E C=CODE     S=.text    G=(none)   M=ActiveX  ACBP=A9
+ 0001:00000574 0000000E C=CODE     S=.text    G=(none)   M=RTLConsts ACBP=A9
+ 0001:00000584 0000000E C=CODE     S=.text    G=(none)   M=TypInfo  ACBP=A9
+ 0001:00000594 0000005E C=CODE     S=.text    G=(none)   M=Classes  ACBP=A9
+ 0001:000005F4 0000000E C=CODE     S=.text    G=(none)   M=Consts   ACBP=A9
+ 0001:00000604 00000016 C=CODE     S=.text    G=(none)   M=Graphics ACBP=A9
+ 0001:0000061C 0000000E C=CODE     S=.text    G=(none)   M=Math     ACBP=A9
+ 0001:0000062C 0000000E C=CODE     S=.text    G=(none)   M=Contnrs  ACBP=A9
+ 0001:0000063C 00000038 C=CODE     S=.text    G=(none)   M=CommCtrl ACBP=A9
+ 0001:00000674 0000000E C=CODE     S=.text    G=(none)   M=HelpIntfs ACBP=A9
+ 0001:00000684 0000000E C=CODE     S=.text    G=(none)   M=MultiMon ACBP=A9
+ 0001:00000694 00000038 C=CODE     S=.text    G=(none)   M=Imm      ACBP=A9
+ 0001:000006CC 0000000E C=CODE     S=.text    G=(none)   M=SyncObjs ACBP=A9
+ 0001:000006DC 0000000E C=CODE     S=.text    G=(none)   M=UxTheme  ACBP=A9
+ 0001:000006EC 00000038 C=CODE     S=.text    G=(none)   M=UrlMon   ACBP=A9
+ 0001:00000724 00000038 C=CODE     S=.text    G=(none)   M=WinInet  ACBP=A9
+ 0001:0000075C 00000038 C=CODE     S=.text    G=(none)   M=RegStr   ACBP=A9
+ 0001:00000794 00000038 C=CODE     S=.text    G=(none)   M=ShellAPI ACBP=A9
+ 0001:000007CC 00000038 C=CODE     S=.text    G=(none)   M=ShlObj   ACBP=A9
+ 0001:00000804 0000000E C=CODE     S=.text    G=(none)   M=WinHelpViewer ACBP=A9
+ 0001:00000814 00000038 C=CODE     S=.text    G=(none)   M=WinSpool ACBP=A9
+ 0001:0000084C 0000000E C=CODE     S=.text    G=(none)   M=Printers ACBP=A9
+ 0001:0000085C 00000038 C=CODE     S=.text    G=(none)   M=CommDlg  ACBP=A9
+ 0001:00000894 00000038 C=CODE     S=.text    G=(none)   M=Dlgs     ACBP=A9
+ 0001:000008CC 0000002E C=CODE     S=.text    G=(none)   M=Dialogs  ACBP=A9
+ 0001:000008FC 0000000E C=CODE     S=.text    G=(none)   M=StrUtils ACBP=A9
+ 0001:0000090C 0000000E C=CODE     S=.text    G=(none)   M=Clipbrd  ACBP=A9
+ 0001:0000091C 0000000E C=CODE     S=.text    G=(none)   M=StdActns ACBP=A9
+ 0001:0000092C 0000000E C=CODE     S=.text    G=(none)   M=FlatSB   ACBP=A9
+ 0001:0000093C 00000016 C=CODE     S=.text    G=(none)   M=StdCtrls ACBP=A9
+ 0001:00000954 0000000E C=CODE     S=.text    G=(none)   M=ExtCtrls ACBP=A9
+ 0001:00000964 0000000E C=CODE     S=.text    G=(none)   M=ToolWin  ACBP=A9
+ 0001:00000974 00000038 C=CODE     S=.text    G=(none)   M=RichEdit ACBP=A9
+ 0001:000009AC 0000000E C=CODE     S=.text    G=(none)   M=IniFiles ACBP=A9
+ 0001:000009BC 0000000E C=CODE     S=.text    G=(none)   M=Registry ACBP=A9
+ 0001:000009CC 0000000E C=CODE     S=.text    G=(none)   M=Buttons  ACBP=A9
+ 0001:000009DC 0000000E C=CODE     S=.text    G=(none)   M=ExtDlgs  ACBP=A9
+ 0001:000009EC 0000000E C=CODE     S=.text    G=(none)   M=Mapi     ACBP=A9
+ 0001:000009FC 0000000E C=CODE     S=.text    G=(none)   M=ExtActns ACBP=A9
+ 0001:00000A0C 0000000E C=CODE     S=.text    G=(none)   M=ComStrs  ACBP=A9
+ 0001:00000A1C 0000000E C=CODE     S=.text    G=(none)   M=ListActns ACBP=A9
+ 0001:00000A2C 0000005E C=CODE     S=.text    G=(none)   M=ComCtrls ACBP=A9
+ 0001:00000A8C 0000000E C=CODE     S=.text    G=(none)   M=Themes   ACBP=A9
+ 0001:00000A9C 0000000E C=CODE     S=.text    G=(none)   M=Menus    ACBP=A9
+ 0001:00000AAC 00000186 C=CODE     S=.text    G=(none)   M=Forms    ACBP=A9
+ 0001:00000C34 0000000E C=CODE     S=.text    G=(none)   M=ImgList  ACBP=A9
+ 0001:00000C44 0000000E C=CODE     S=.text    G=(none)   M=ActnList ACBP=A9
+ 0001:00000C54 0000016E C=CODE     S=.text    G=(none)   M=Controls ACBP=A9
+ 0001:00000DC4 0000000E C=CODE     S=.text    G=(none)   M=dxUtils  ACBP=A9
+ 0001:00000DD4 0000000E C=CODE     S=.text    G=(none)   M=dxEdStr  ACBP=A9
+ 0001:00000DE4 0000000E C=CODE     S=.text    G=(none)   M=dxCntner ACBP=A9
+ 0001:00000DF4 0000000E C=CODE     S=.text    G=(none)   M=MaskUtils ACBP=A9
+ 0001:00000E04 00000016 C=CODE     S=.text    G=(none)   M=Mask     ACBP=A9
+ 0001:00000E1C 0000002E C=CODE     S=.text    G=(none)   M=dxEditor ACBP=A9
+ 0001:00000E4C 0000000E C=CODE     S=.text    G=(none)   M=dxCommon ACBP=A9
+ 0001:00000E5C 0000000E C=CODE     S=.text    G=(none)   M=dxGrDate ACBP=A9
+ 0001:00000E6C 0000000E C=CODE     S=.text    G=(none)   M=dxCalc   ACBP=A9
+ 0001:00000E7C 0000001E C=CODE     S=.text    G=(none)   M=dxExEdtr ACBP=A9
+ 0001:00000E9C 0000000E C=CODE     S=.text    G=(none)   M=dxEdLib  ACBP=A9
+ 0001:00000EAC 0000000E C=CODE     S=.text    G=(none)   M=DBConsts ACBP=A9
+ 0001:00000EBC 0000000E C=CODE     S=.text    G=(none)   M=FMTBcd   ACBP=A9
+ 0001:00000ECC 0000002E C=CODE     S=.text    G=(none)   M=DateUtils ACBP=A9
+ 0001:00000EFC 0000000E C=CODE     S=.text    G=(none)   M=SqlTimSt ACBP=A9
+ 0001:00000F0C 0000000E C=CODE     S=.text    G=(none)   M=ComConst ACBP=A9
+ 0001:00000F1C 0000000E C=CODE     S=.text    G=(none)   M=ComObj   ACBP=A9
+ 0001:00000F2C 000000EE C=CODE     S=.text    G=(none)   M=DB       ACBP=A9
+ 0001:0000101C 0000000E C=CODE     S=.text    G=(none)   M=VDBConsts ACBP=A9
+ 0001:0000102C 0000000E C=CODE     S=.text    G=(none)   M=DBPWDlg  ACBP=A9
+ 0001:0000103C 0000000E C=CODE     S=.text    G=(none)   M=DBLogDlg ACBP=A9
+ 0001:0000104C 00000016 C=CODE     S=.text    G=(none)   M=DBCtrls  ACBP=A9
+ 0001:00001064 0000000E C=CODE     S=.text    G=(none)   M=dxDBEdtr ACBP=A9
+ 0001:00001074 0000000E C=CODE     S=.text    G=(none)   M=dxDBELib ACBP=A9
+ 0001:00001084 0000000E C=CODE     S=.text    G=(none)   M=rxStrUtils ACBP=A9
+ 0001:00001094 0000000E C=CODE     S=.text    G=(none)   M=DateUtil ACBP=A9
+ 0001:000010A4 0000000E C=CODE     S=.text    G=(none)   M=FileCtrl ACBP=A9
+ 0001:000010B4 0000000E C=CODE     S=.text    G=(none)   M=RXConst  ACBP=A9
+ 0001:000010C4 0000000E C=CODE     S=.text    G=(none)   M=RxHook   ACBP=A9
+ 0001:000010D4 0000000E C=CODE     S=.text    G=(none)   M=RXCConst ACBP=A9
+ 0001:000010E4 0000000E C=CODE     S=.text    G=(none)   M=MaxMin   ACBP=A9
+ 0001:000010F4 0000000E C=CODE     S=.text    G=(none)   M=VCLUtils ACBP=A9
+ 0001:00001104 0000000E C=CODE     S=.text    G=(none)   M=RXProps  ACBP=A9
+ 0001:00001114 00000036 C=CODE     S=.text    G=(none)   M=Grids    ACBP=A9
+ 0001:0000114C 0000000E C=CODE     S=.text    G=(none)   M=Gauges   ACBP=A9
+ 0001:0000115C 0000000E C=CODE     S=.text    G=(none)   M=RxPrgrss ACBP=A9
+ 0001:0000116C 0000000E C=CODE     S=.text    G=(none)   M=FileUtil ACBP=A9
+ 0001:0000117C 0000000E C=CODE     S=.text    G=(none)   M=AppUtils ACBP=A9
+ 0001:0000118C 0000000E C=CODE     S=.text    G=(none)   M=Placemnt ACBP=A9
+ 0001:0000119C 0000000E C=CODE     S=.text    G=(none)   M=RxTimer  ACBP=A9
+ 0001:000011AC 00000016 C=CODE     S=.text    G=(none)   M=RXCtrls  ACBP=A9
+ 0001:000011C4 0000000E C=CODE     S=.text    G=(none)   M=PickDate ACBP=A9
+ 0001:000011D4 0000001E C=CODE     S=.text    G=(none)   M=ToolEdit ACBP=A9
+ 0001:000011F4 0000000E C=CODE     S=.text    G=(none)   M=RxCalc   ACBP=A9
+ 0001:00001204 0000000E C=CODE     S=.text    G=(none)   M=CurrEdit ACBP=A9
+ 0001:00001214 0000000E C=CODE     S=.text    G=(none)   M=DBGrids  ACBP=A9
+ 0001:00001224 0000000E C=CODE     S=.text    G=(none)   M=RXDConst ACBP=A9
+ 0001:00001234 0000000E C=CODE     S=.text    G=(none)   M=DBUtils  ACBP=A9
+ 0001:00001244 0000000E C=CODE     S=.text    G=(none)   M=RXDBCtrl ACBP=A9
+ 0001:00001254 0000000E C=CODE     S=.text    G=(none)   M=dxTLStr  ACBP=A9
+ 0001:00001264 0000003E C=CODE     S=.text    G=(none)   M=dxTL     ACBP=A9
+ 0001:000012A4 0000000E C=CODE     S=.text    G=(none)   M=dxGrFCmn ACBP=A9
+ 0001:000012B4 0000002E C=CODE     S=.text    G=(none)   M=dxDBCtrl ACBP=A9
+ 0001:000012E4 0000001E C=CODE     S=.text    G=(none)   M=dxDBTLCl ACBP=A9
+ 0001:00001304 0000000E C=CODE     S=.text    G=(none)   M=dxFilter ACBP=A9
+ 0001:00001314 0000000E C=CODE     S=.text    G=(none)   M=dxGrExpt ACBP=A9
+ 0001:00001324 0000000E C=CODE     S=.text    G=(none)   M=dxGrFDlg ACBP=A9
+ 0001:00001334 0000000E C=CODE     S=.text    G=(none)   M=dxGrFltr ACBP=A9
+ 0001:00001344 0000001E C=CODE     S=.text    G=(none)   M=dxDBGrid ACBP=A9
+ 0001:00001364 0000000E C=CODE     S=.text    G=(none)   M=dxGrClms ACBP=A9
+ 0001:00001374 0000000E C=CODE     S=.text    G=(none)   M=Midas    ACBP=A9
+ 0001:00001384 0000000E C=CODE     S=.text    G=(none)   M=DBCommon ACBP=A9
+ 0001:00001394 0000000E C=CODE     S=.text    G=(none)   M=MidConst ACBP=A9
+ 0001:000013A4 0000000E C=CODE     S=.text    G=(none)   M=DSIntf   ACBP=A9
+ 0001:000013B4 0000000E C=CODE     S=.text    G=(none)   M=DataBkr  ACBP=A9
+ 0001:000013C4 0000000E C=CODE     S=.text    G=(none)   M=Provider ACBP=A9
+ 0001:000013D4 0000000E C=CODE     S=.text    G=(none)   M=DBClient ACBP=A9
+ 0001:000013E4 0000000E C=CODE     S=.text    G=(none)   M=IBUtils  ACBP=A9
+ 0001:000013F4 0000000E C=CODE     S=.text    G=(none)   M=IBXConst ACBP=A9
+ 0001:00001404 0000000E C=CODE     S=.text    G=(none)   M=IBExternals ACBP=A9
+ 0001:00001414 0000000E C=CODE     S=.text    G=(none)   M=IBInstallHeader ACBP=A9
+ 0001:00001424 0000000E C=CODE     S=.text    G=(none)   M=IBIntf   ACBP=A9
+ 0001:00001434 0000000E C=CODE     S=.text    G=(none)   M=IBHeader ACBP=A9
+ 0001:00001444 0000000E C=CODE     S=.text    G=(none)   M=IB       ACBP=A9
+ 0001:00001454 0000000E C=CODE     S=.text    G=(none)   M=IBErrorCodes ACBP=A9
+ 0001:00001464 0000000E C=CODE     S=.text    G=(none)   M=IBBlob   ACBP=A9
+ 0001:00001474 00000036 C=CODE     S=.text    G=(none)   M=IBCustomDataSet ACBP=A9
+ 0001:000014AC 0000001E C=CODE     S=.text    G=(none)   M=IBSQL    ACBP=A9
+ 0001:000014CC 0000000E C=CODE     S=.text    G=(none)   M=IBDatabaseInfo ACBP=A9
+ 0001:000014DC 0000000E C=CODE     S=.text    G=(none)   M=IBDatabase ACBP=A9
+ 0001:000014EC 0000000E C=CODE     S=.text    G=(none)   M=IBServices ACBP=A9
+ 0001:000014FC 0000000E C=CODE     S=.text    G=(none)   M=IBSQLMonitor ACBP=A9
+ 0001:0000150C 00000036 C=CODE     S=.text    G=(none)   M=IBQuery  ACBP=A9
+ 0001:00001544 0000000E C=CODE     S=.text    G=(none)   M=IBTable  ACBP=A9
+ 0001:00001554 0000000E C=CODE     S=.text    G=(none)   M=StdVCL   ACBP=A9
+ 0001:00001564 0000000E C=CODE     S=.text    G=(none)   M=OleConst ACBP=A9
+ 0001:00001574 0000000E C=CODE     S=.text    G=(none)   M=OleServer ACBP=A9
+ 0001:00001584 0000000E C=CODE     S=.text    G=(none)   M=AxCtrls  ACBP=A9
+ 0001:00001594 0000000E C=CODE     S=.text    G=(none)   M=OleCtrls ACBP=A9
+ 0001:000015A4 0000000E C=CODE     S=.text    G=(none)   M=CHILKATHTTPLib_TLB ACBP=A9
+ 0001:000015B4 0000000E C=CODE     S=.text    G=(none)   M=CHILKATUPLOADLib_TLB ACBP=A9
+ 0001:000015C4 0000000E C=CODE     S=.text    G=(none)   M=uFuncoesWeb ACBP=A9
+ 0001:000015D4 0000000E C=CODE     S=.text    G=(none)   M=ULogSQL  ACBP=A9
+ 0001:000015E4 0000002E C=CODE     S=.text    G=(none)   M=UDM      ACBP=A9
+ 0001:00001614 0000001E C=CODE     S=.text    G=(none)   M=UGeral   ACBP=A9
+ 0001:00001634 0000004E C=CODE     S=.text    G=(none)   M=UGeralSQL ACBP=A9
+ 0001:00001684 0000000E C=CODE     S=.text    G=(none)   M=UDMGERAL ACBP=A9
+ 0001:00001694 0000000E C=CODE     S=.text    G=(none)   M=UfrmLocPad ACBP=A9
+ 0001:000016A4 0000000E C=CODE     S=.text    G=(none)   M=UfrmLocalizar ACBP=A9
+ 0001:000016B4 0000000E C=CODE     S=.text    G=(none)   M=UfrmCadBase ACBP=A9
+ 0001:000016C4 00000016 C=CODE     S=.text    G=(none)   M=SHDocVw  ACBP=A9
+ 0001:000016DC 0000000E C=CODE     S=.text    G=(none)   M=JConsts  ACBP=A9
+ 0001:000016EC 00000016 C=CODE     S=.text    G=(none)   M=jpeg     ACBP=A9
+ 0001:00001704 0000000E C=CODE     S=.text    G=(none)   M=uPermissao ACBP=A9
+ 0001:00001714 0000000E C=CODE     S=.text    G=(none)   M=uFuncaoGrid ACBP=A9
+ 0001:00001724 0000000E C=CODE     S=.text    G=(none)   M=MSHTML   ACBP=A9
+ 0001:00001734 0000000E C=CODE     S=.text    G=(none)   M=uRelatorioWEB ACBP=A9
+ 0001:00001744 0000000E C=CODE     S=.text    G=(none)   M=UfrmCadPad ACBP=A9
+ 0001:00001754 0000001E C=CODE     S=.text    G=(none)   M=RxLookup ACBP=A9
+ 0001:00001774 0000000E C=CODE     S=.text    G=(none)   M=ClipIcon ACBP=A9
+ 0001:00001784 0000000E C=CODE     S=.text    G=(none)   M=RxDBComb ACBP=A9
+ 0001:00001794 0000000E C=CODE     S=.text    G=(none)   M=UDMDIG   ACBP=A9
+ 0001:000017A4 0000000E C=CODE     S=.text    G=(none)   M=RpDefine ACBP=A9
+ 0001:000017B4 0000000E C=CODE     S=.text    G=(none)   M=RpCon    ACBP=A9
+ 0001:000017C4 0000000E C=CODE     S=.text    G=(none)   M=RpConDS  ACBP=A9
+ 0001:000017D4 0000000E C=CODE     S=.text    G=(none)   M=RpFont   ACBP=A9
+ 0001:000017E4 0000000E C=CODE     S=.text    G=(none)   M=RpDevice ACBP=A9
+ 0001:000017F4 0000000E C=CODE     S=.text    G=(none)   M=RpRPTF   ACBP=A9
+ 0001:00001804 0000000E C=CODE     S=.text    G=(none)   M=RpBase   ACBP=A9
+ 0001:00001814 0000000E C=CODE     S=.text    G=(none)   M=RpFiler  ACBP=A9
+ 0001:00001824 0000000E C=CODE     S=.text    G=(none)   M=RpMBCS   ACBP=A9
+ 0001:00001834 0000000E C=CODE     S=.text    G=(none)   M=RpRender ACBP=A9
+ 0001:00001844 0000000E C=CODE     S=.text    G=(none)   M=RpRenderCanvas ACBP=A9
+ 0001:00001854 0000000E C=CODE     S=.text    G=(none)   M=RpRenderPrinter ACBP=A9
+ 0001:00001864 0000000E C=CODE     S=.text    G=(none)   M=RpRenderPreview ACBP=A9
+ 0001:00001874 0000000E C=CODE     S=.text    G=(none)   M=RpFormSetup ACBP=A9
+ 0001:00001884 0000000E C=CODE     S=.text    G=(none)   M=RpFormPreview ACBP=A9
+ 0001:00001894 0000000E C=CODE     S=.text    G=(none)   M=RpFormStatus ACBP=A9
+ 0001:000018A4 0000000E C=CODE     S=.text    G=(none)   M=RpSystem ACBP=A9
+ 0001:000018B4 0000000E C=CODE     S=.text    G=(none)   M=RvDefine ACBP=A9
+ 0001:000018C4 0000000E C=CODE     S=.text    G=(none)   M=RvCmHuff ACBP=A9
+ 0001:000018D4 0000000E C=CODE     S=.text    G=(none)   M=RvSecurity ACBP=A9
+ 0001:000018E4 0000000E C=CODE     S=.text    G=(none)   M=RvDirectDataView ACBP=A9
+ 0001:000018F4 0000000E C=CODE     S=.text    G=(none)   M=RvDataField ACBP=A9
+ 0001:00001904 0000000E C=CODE     S=.text    G=(none)   M=RvData   ACBP=A9
+ 0001:00001914 0000000E C=CODE     S=.text    G=(none)   M=RvProj   ACBP=A9
+ 0001:00001924 0000000E C=CODE     S=.text    G=(none)   M=RvUtil   ACBP=A9
+ 0001:00001934 0000000E C=CODE     S=.text    G=(none)   M=RvClass  ACBP=A9
+ 0001:00001944 0000000E C=CODE     S=.text    G=(none)   M=RpMemo   ACBP=A9
+ 0001:00001954 0000000E C=CODE     S=.text    G=(none)   M=RvCsStd  ACBP=A9
+ 0001:00001964 0000000E C=CODE     S=.text    G=(none)   M=RvCsRpt  ACBP=A9
+ 0001:00001974 0000000E C=CODE     S=.text    G=(none)   M=RvCsDraw ACBP=A9
+ 0001:00001984 0000000E C=CODE     S=.text    G=(none)   M=RvCsData ACBP=A9
+ 0001:00001994 0000000E C=CODE     S=.text    G=(none)   M=RvDLCommon ACBP=A9
+ 0001:000019A4 0000000E C=CODE     S=.text    G=(none)   M=RvDLBase ACBP=A9
+ 0001:000019B4 0000000E C=CODE     S=.text    G=(none)   M=RvDataLink ACBP=A9
+ 0001:000019C4 0000000E C=CODE     S=.text    G=(none)   M=RvDatabase ACBP=A9
+ 0001:000019D4 0000000E C=CODE     S=.text    G=(none)   M=RvDriverDataView ACBP=A9
+ 0001:000019E4 0000000E C=CODE     S=.text    G=(none)   M=RvLEDefine ACBP=A9
+ 0001:000019F4 0000000E C=CODE     S=.text    G=(none)   M=RvLEType ACBP=A9
+ 0001:00001A04 0000000E C=CODE     S=.text    G=(none)   M=RvLERun  ACBP=A9
+ 0001:00001A14 0000000E C=CODE     S=.text    G=(none)   M=RvLEUtil ACBP=A9
+ 0001:00001A24 0000000E C=CODE     S=.text    G=(none)   M=RvLEID   ACBP=A9
+ 0001:00001A34 0000000E C=CODE     S=.text    G=(none)   M=RvLEModule ACBP=A9
+ 0001:00001A44 0000000E C=CODE     S=.text    G=(none)   M=RpBars   ACBP=A9
+ 0001:00001A54 0000000E C=CODE     S=.text    G=(none)   M=RvCsBars ACBP=A9
+ 0001:00001A64 0000000E C=CODE     S=.text    G=(none)   M=RvLESystem ACBP=A9
+ 0001:00001A74 0000001E C=CODE     S=.text    G=(none)   M=RpRave   ACBP=A9
+ 0001:00001A94 0000000E C=CODE     S=.text    G=(none)   M=UCadMedico ACBP=A9
+ 0001:00001AA4 0000000E C=CODE     S=.text    G=(none)   M=uCadInvestigador ACBP=A9
+ 0001:00001AB4 0000000E C=CODE     S=.text    G=(none)   M=frxXML   ACBP=A9
+ 0001:00001AC4 0000000E C=CODE     S=.text    G=(none)   M=frxUnicodeUtils ACBP=A9
+ 0001:00001AD4 0000000E C=CODE     S=.text    G=(none)   M=fs_xml   ACBP=A9
+ 0001:00001AE4 0000000E C=CODE     S=.text    G=(none)   M=fs_iparser ACBP=A9
+ 0001:00001AF4 0000000E C=CODE     S=.text    G=(none)   M=fs_iconst ACBP=A9
+ 0001:00001B04 0000000E C=CODE     S=.text    G=(none)   M=fs_itools ACBP=A9
+ 0001:00001B14 0000000E C=CODE     S=.text    G=(none)   M=fs_isysrtti ACBP=A9
+ 0001:00001B24 0000000E C=CODE     S=.text    G=(none)   M=fs_iexpression ACBP=A9
+ 0001:00001B34 0000000E C=CODE     S=.text    G=(none)   M=fs_idisp ACBP=A9
+ 0001:00001B44 0000000E C=CODE     S=.text    G=(none)   M=fs_iilparser ACBP=A9
+ 0001:00001B54 0000000E C=CODE     S=.text    G=(none)   M=fs_iinterpreter ACBP=A9
+ 0001:00001B64 0000000E C=CODE     S=.text    G=(none)   M=frxAggregate ACBP=A9
+ 0001:00001B74 0000000E C=CODE     S=.text    G=(none)   M=frxDsgnIntf ACBP=A9
+ 0001:00001B84 0000000E C=CODE     S=.text    G=(none)   M=frxDMPClass ACBP=A9
+ 0001:00001B94 0000000E C=CODE     S=.text    G=(none)   M=frxPictureCache ACBP=A9
+ 0001:00001BA4 0000000E C=CODE     S=.text    G=(none)   M=frxPrinter ACBP=A9
+ 0001:00001BB4 0000000E C=CODE     S=.text    G=(none)   M=frxCtrls ACBP=A9
+ 0001:00001BC4 0000000E C=CODE     S=.text    G=(none)   M=frxDock  ACBP=A9
+ 0001:00001BD4 0000000E C=CODE     S=.text    G=(none)   M=frxSearchDialog ACBP=A9
+ 0001:00001BE4 0000000E C=CODE     S=.text    G=(none)   M=frxPreviewPageSettings ACBP=A9
+ 0001:00001BF4 0000000E C=CODE     S=.text    G=(none)   M=frxPreview ACBP=A9
+ 0001:00001C04 0000000E C=CODE     S=.text    G=(none)   M=frxPrintDialog ACBP=A9
+ 0001:00001C14 0000000E C=CODE     S=.text    G=(none)   M=frxPreviewPages ACBP=A9
+ 0001:00001C24 0000000E C=CODE     S=.text    G=(none)   M=frxEngine ACBP=A9
+ 0001:00001C34 0000000E C=CODE     S=.text    G=(none)   M=frxPassw ACBP=A9
+ 0001:00001C44 0000000E C=CODE     S=.text    G=(none)   M=frxGraphicUtils ACBP=A9
+ 0001:00001C54 0000000E C=CODE     S=.text    G=(none)   M=frxDialogForm ACBP=A9
+ 0001:00001C64 0000000E C=CODE     S=.text    G=(none)   M=frxrcClass ACBP=A9
+ 0001:00001C74 0000000E C=CODE     S=.text    G=(none)   M=fs_ievents ACBP=A9
+ 0001:00001C84 0000000E C=CODE     S=.text    G=(none)   M=fs_iclassesrtti ACBP=A9
+ 0001:00001C94 0000000E C=CODE     S=.text    G=(none)   M=fs_igraphicsrtti ACBP=A9
+ 0001:00001CA4 0000000E C=CODE     S=.text    G=(none)   M=fs_iformsrtti ACBP=A9
+ 0001:00001CB4 0000000E C=CODE     S=.text    G=(none)   M=frxZLib  ACBP=A9
+ 0001:00001CC4 0000000E C=CODE     S=.text    G=(none)   M=frxpnglang ACBP=A9
+ 0001:00001CD4 0000000E C=CODE     S=.text    G=(none)   M=frxpngimage ACBP=A9
+ 0001:00001CE4 0000000E C=CODE     S=.text    G=(none)   M=frxClassRTTI ACBP=A9
+ 0001:00001CF4 0000000E C=CODE     S=.text    G=(none)   M=frxInheritError ACBP=A9
+ 0001:00001D04 0000000E C=CODE     S=.text    G=(none)   M=fs_ipascal ACBP=A9
+ 0001:00001D14 0000000E C=CODE     S=.text    G=(none)   M=fs_icpp  ACBP=A9
+ 0001:00001D24 0000000E C=CODE     S=.text    G=(none)   M=fs_ibasic ACBP=A9
+ 0001:00001D34 0000000E C=CODE     S=.text    G=(none)   M=fs_ijs   ACBP=A9
+ 0001:00001D44 0000000E C=CODE     S=.text    G=(none)   M=fs_idialogsrtti ACBP=A9
+ 0001:00001D54 0000000E C=CODE     S=.text    G=(none)   M=fs_iinirtti ACBP=A9
+ 0001:00001D64 0000000E C=CODE     S=.text    G=(none)   M=frxUtils ACBP=A9
+ 0001:00001D74 0000000E C=CODE     S=.text    G=(none)   M=frxChm   ACBP=A9
+ 0001:00001D84 0000000E C=CODE     S=.text    G=(none)   M=frxGZip  ACBP=A9
+ 0001:00001D94 0000000E C=CODE     S=.text    G=(none)   M=frxRes   ACBP=A9
+ 0001:00001DA4 0000000E C=CODE     S=.text    G=(none)   M=frxProgress ACBP=A9
+ 0001:00001DB4 0000000E C=CODE     S=.text    G=(none)   M=frxXMLSerializer ACBP=A9
+ 0001:00001DC4 0000000E C=CODE     S=.text    G=(none)   M=frxVariables ACBP=A9
+ 0001:00001DD4 0000002E C=CODE     S=.text    G=(none)   M=frxClass ACBP=A9
+ 0001:00001E04 0000000E C=CODE     S=.text    G=(none)   M=frxDBSet ACBP=A9
+ 0001:00001E14 0000000E C=CODE     S=.text    G=(none)   M=UfrmRelPad ACBP=A9
+ 0001:00001E24 0000000E C=CODE     S=.text    G=(none)   M=RpRenderPDF ACBP=A9
+ 0001:00001E34 0000000E C=CODE     S=.text    G=(none)   M=RpRenderHTML ACBP=A9
+ 0001:00001E44 0000000E C=CODE     S=.text    G=(none)   M=RpRenderRTF ACBP=A9
+ 0001:00001E54 00000026 C=CODE     S=.text    G=(none)   M=uFrameDashBoard ACBP=A9
+ 0001:00001E7C 0000000E C=CODE     S=.text    G=(none)   M=IB_Constants ACBP=A9
+ 0001:00001E8C 0000000E C=CODE     S=.text    G=(none)   M=IB_Header ACBP=A9
+ 0001:00001E9C 0000000E C=CODE     S=.text    G=(none)   M=Unixpass ACBP=A9
+ 0001:00001EAC 0000000E C=CODE     S=.text    G=(none)   M=IB_MaskInterface ACBP=A9
+ 0001:00001EBC 0000000E C=CODE     S=.text    G=(none)   M=IB_Schema ACBP=A9
+ 0001:00001ECC 0000000E C=CODE     S=.text    G=(none)   M=IB_ParseEx ACBP=A9
+ 0001:00001EDC 0000000E C=CODE     S=.text    G=(none)   M=uRounding ACBP=A9
+ 0001:00001EEC 0000000E C=CODE     S=.text    G=(none)   M=IB_Session ACBP=A9
+ 0001:00001EFC 0000000E C=CODE     S=.text    G=(none)   M=IB_NodeList ACBP=A9
+ 0001:00001F0C 0000000E C=CODE     S=.text    G=(none)   M=IB_Components ACBP=A9
+ 0001:00001F1C 0000000E C=CODE     S=.text    G=(none)   M=IB_Utils ACBP=A9
+ 0001:00001F2C 0000000E C=CODE     S=.text    G=(none)   M=IB_StringList ACBP=A9
+ 0001:00001F3C 0000001E C=CODE     S=.text    G=(none)   M=IB_Parse ACBP=A9
+ 0001:00001F5C 0000000E C=CODE     S=.text    G=(none)   M=TeCanvas ACBP=A9
+ 0001:00001F6C 0000000E C=CODE     S=.text    G=(none)   M=TeeConst ACBP=A9
+ 0001:00001F7C 00000016 C=CODE     S=.text    G=(none)   M=TeeProcs ACBP=A9
+ 0001:00001F94 0000000E C=CODE     S=.text    G=(none)   M=TeEngine ACBP=A9
+ 0001:00001FA4 0000000E C=CODE     S=.text    G=(none)   M=TeeFunci ACBP=A9
+ 0001:00001FB4 0000000E C=CODE     S=.text    G=(none)   M=Chart    ACBP=A9
+ 0001:00001FC4 0000000E C=CODE     S=.text    G=(none)   M=Series   ACBP=A9
+ 0001:00001FD4 0000000E C=CODE     S=.text    G=(none)   M=ValEdit  ACBP=A9
+ 0001:00001FE4 0000000E C=CODE     S=.text    G=(none)   M=DbChart  ACBP=A9
+ 0001:00001FF4 00002550 C=CODE     S=.text    G=(none)   M=ufrmRelGeralAgenda ACBP=A9
+ 0001:00004544 0000000E C=CODE     S=.text    G=(none)   M=DBLocal  ACBP=A9
+ 0001:00004554 0000000E C=CODE     S=.text    G=(none)   M=DBLocalI ACBP=A9
+ 0001:00004564 0000345C C=CODE     S=.text    G=(none)   M=ufrmRelGeralCaracterizacao ACBP=A9
+ 0001:000079C0 000034A0 C=CODE     S=.text    G=(none)   M=ufrmRelGeralNotificacao ACBP=A9
+ 0001:0000AE60 0000000E C=CODE     S=.text    G=(none)   M=uSQLPrograma ACBP=A9
+ 0001:0000AE70 00013628 C=CODE     S=.text    G=(none)   M=ufrmRelGeralPrograma ACBP=A9
+ 0001:0001E498 00000A14 C=CODE     S=.text    G=(none)   M=ufrmRelListagemGeralExames ACBP=A9
+ 0001:0001EEAC 0000000E C=CODE     S=.text    G=(none)   M=UConPad  ACBP=A9
+ 0001:0001EEBC 0000000E C=CODE     S=.text    G=(none)   M=RxGIF    ACBP=A9
+ 0001:0001EECC 0000000E C=CODE     S=.text    G=(none)   M=RxGraph  ACBP=A9
+ 0001:0001EEDC 0000000E C=CODE     S=.text    G=(none)   M=RxGConst ACBP=A9
+ 0001:0001EEEC 0000000E C=CODE     S=.text    G=(none)   M=AniFile  ACBP=A9
+ 0001:0001EEFC 0000000E C=CODE     S=.text    G=(none)   M=IcoList  ACBP=A9
+ 0001:0001EF0C 00000EC4 C=CODE     S=.text    G=(none)   M=UfrmFiltroEsquemaTotal ACBP=A9
+ 0001:0001FDD0 00000358 C=CODE     S=.text    G=(none)   M=UfrmConEsquemaTotal ACBP=A9
+ 0001:00020128 00000EDC C=CODE     S=.text    G=(none)   M=UfrmFiltroEsquemaProcessoTotal ACBP=A9
+ 0001:00021004 000003A4 C=CODE     S=.text    G=(none)   M=UfrmConEsquemaProcessoTotal ACBP=A9
+ 0001:000213A8 0000000E C=CODE     S=.text    G=(none)   M=UfrmConfPad ACBP=A9
+ 0001:000213B8 00000ECC C=CODE     S=.text    G=(none)   M=UfrmConfRelatorio ACBP=A9
+ 0001:00022284 000017BC C=CODE     S=.text    G=(none)   M=ufrmRelSerieCronologica ACBP=A9
+ 0001:00023A40 0000000E C=CODE     S=.text    G=(none)   M=frxRC4   ACBP=A9
+ 0001:00023A50 0000000E C=CODE     S=.text    G=(none)   M=frxFileUtils ACBP=A9
+ 0001:00023A60 0000000E C=CODE     S=.text    G=(none)   M=frxrcExports ACBP=A9
+ 0001:00023A70 0000000E C=CODE     S=.text    G=(none)   M=frxmd5   ACBP=A9
+ 0001:00023A80 0000000E C=CODE     S=.text    G=(none)   M=frxChBoxRTTI ACBP=A9
+ 0001:00023A90 0000000E C=CODE     S=.text    G=(none)   M=frxChBox ACBP=A9
+ 0001:00023AA0 0000000E C=CODE     S=.text    G=(none)   M=frxCrypto ACBP=A9
+ 0001:00023AB0 0000000E C=CODE     S=.text    G=(none)   M=frxExportPDF ACBP=A9
+ 0001:00023AC0 0000000E C=CODE     S=.text    G=(none)   M=frxExportMatrix ACBP=A9
+ 0001:00023AD0 0000000E C=CODE     S=.text    G=(none)   M=frxExportXLS ACBP=A9
+ 0001:00023AE0 00001820 C=CODE     S=.text    G=(none)   M=UfrmRelUnidades ACBP=A9
+ 0001:00025300 0000000E C=CODE     S=.text    G=(none)   M=Animate  ACBP=A9
+ 0001:00025310 0000000E C=CODE     S=.text    G=(none)   M=GIFCtrl  ACBP=A9
+ 0001:00025320 000001E8 C=CODE     S=.text    G=(none)   M=uSplash  ACBP=A9
+ 0001:00025508 00003CCC C=CODE     S=.text    G=(none)   M=UfrmRR   ACBP=A9
+ 0001:000291D4 00002B08 C=CODE     S=.text    G=(none)   M=UfrmPainelAR ACBP=A9
+ 0001:0002BCDC 0000000E C=CODE     S=.text    G=(none)   M=pngimage ACBP=A9
+ 0001:0002BCEC 0000000E C=CODE     S=.text    G=(none)   M=pnglang  ACBP=A9
+ 0001:0002BCFC 0000000E C=CODE     S=.text    G=(none)   M=zlibpas  ACBP=A9
+ 0001:0002BD0C 00006E84 C=CODE     S=.text    G=(none)   M=UfrmAuditoriaRelatorios ACBP=A9
+ 0001:00032B90 00001828 C=CODE     S=.text    G=(none)   M=UfrmRelUnidadesImp ACBP=A9
+ 0001:000343B8 000001FC C=CODE     S=.text    G=(none)   M=UfrmRelMapa ACBP=A9
+ 0001:000345B4 0000001E C=CODE     S=.text    G=(none)   M=CheckLst ACBP=A9
+ 0001:000345D4 0000000E C=CODE     S=.text    G=(none)   M=uCadNotificacao ACBP=A9
+ 0001:000345E4 0000000E C=CODE     S=.text    G=(none)   M=uFrameIntervencaoCirurgica ACBP=A9
+ 0001:000345F4 0000000E C=CODE     S=.text    G=(none)   M=uFrameCircuncisao ACBP=A9
+ 0001:00034604 0000000E C=CODE     S=.text    G=(none)   M=uFrameDentario ACBP=A9
+ 0001:00034614 0000000E C=CODE     S=.text    G=(none)   M=uFramePaciente ACBP=A9
+ 0001:00034624 0000000E C=CODE     S=.text    G=(none)   M=uFrameTatuagem ACBP=A9
+ 0001:00034634 0000000E C=CODE     S=.text    G=(none)   M=uFramePerfuracao ACBP=A9
+ 0001:00034644 0000000E C=CODE     S=.text    G=(none)   M=uFrameTransfusao ACBP=A9
+ 0001:00034654 0000000E C=CODE     S=.text    G=(none)   M=UProcessoExistente ACBP=A9
+ 0001:00034664 0000000E C=CODE     S=.text    G=(none)   M=uFrmLocNotificacao ACBP=A9
+ 0001:00034674 0000000E C=CODE     S=.text    G=(none)   M=UPacienteExistente ACBP=A9
+ 0001:00034684 0000000E C=CODE     S=.text    G=(none)   M=ufrmDlgStatus ACBP=A9
+ 0001:00034694 00002388 C=CODE     S=.text    G=(none)   M=UfrmRelNotificacao ACBP=A9
+ 0001:00036A1C 0000000E C=CODE     S=.text    G=(none)   M=UfrmRelPadFast ACBP=A9
+ 0001:00036A2C 0000000E C=CODE     S=.text    G=(none)   M=GIF      ACBP=A9
+ 0001:00036A3C 0000000E C=CODE     S=.text    G=(none)   M=frxExportImage ACBP=A9
+ 0001:00036A4C 0000000E C=CODE     S=.text    G=(none)   M=frxImageConverter ACBP=A9
+ 0001:00036A5C 0000000E C=CODE     S=.text    G=(none)   M=frxExportHTML ACBP=A9
+ 0001:00036A6C 0000000E C=CODE     S=.text    G=(none)   M=frxGML   ACBP=A9
+ 0001:00036A7C 0000000E C=CODE     S=.text    G=(none)   M=frxExportRTF ACBP=A9
+ 0001:00036A8C 0000082C C=CODE     S=.text    G=(none)   M=UfrmRelMapaMedicoPeriodo ACBP=A9
+ 0001:000372B8 0000067C C=CODE     S=.text    G=(none)   M=UfrmRelExtratoPaciente ACBP=A9
+ 0001:00037934 00000CAC C=CODE     S=.text    G=(none)   M=UframeControleGestante ACBP=A9
+ 0001:000385E0 00000B1C C=CODE     S=.text    G=(none)   M=UfrmRelGestante ACBP=A9
+ 0001:000390FC 000008AC C=CODE     S=.text    G=(none)   M=UfrmRelCriancaExpDPIAlto ACBP=A9
+ 0001:000399A8 00001018 C=CODE     S=.text    G=(none)   M=UfrmRelCriancaExpFechamento ACBP=A9
+ 0001:0003A9C0 00000954 C=CODE     S=.text    G=(none)   M=UfrmControleGestantes ACBP=A9
+ 0001:0003B314 000009D4 C=CODE     S=.text    G=(none)   M=UfrmRelProdFarmacia ACBP=A9
+ 0001:0003BCE8 00000884 C=CODE     S=.text    G=(none)   M=UfrmRelProdAgendas ACBP=A9
+ 0001:0003C56C 00000CA8 C=CODE     S=.text    G=(none)   M=UfrmRelProdLaboratorio ACBP=A9
+ 0001:0003D214 00001850 C=CODE     S=.text    G=(none)   M=UfrmRelQuantitativo ACBP=A9
+ 0001:0003EA64 00003A64 C=CODE     S=.text    G=(none)   M=UfrmRelFixos ACBP=A9
+ 0001:000424C8 00000BD5 C=CODE     S=.text    G=(none)   M=SISRelatorios ACBP=A9
+ 0002:00000000 0000002C C=DATA     S=.data    G=DGROUP   M=SysInit  ACBP=A9
+ 0002:00001000 00000010 C=BSS      S=.bss     G=DGROUP   M=SysInit  ACBP=A9
+ 0002:00001010 00000004 C=BSS      S=.bss     G=DGROUP   M=Windows  ACBP=A9
+ 0002:00001014 00000004 C=BSS      S=.bss     G=DGROUP   M=Messages ACBP=A9
+ 0002:00001018 00000004 C=BSS      S=.bss     G=DGROUP   M=CommCtrl ACBP=A9
+ 0002:0000101C 00000004 C=BSS      S=.bss     G=DGROUP   M=Imm      ACBP=A9
+ 0002:00001020 00000004 C=BSS      S=.bss     G=DGROUP   M=UrlMon   ACBP=A9
+ 0002:00001024 00000004 C=BSS      S=.bss     G=DGROUP   M=WinInet  ACBP=A9
+ 0002:00001028 00000004 C=BSS      S=.bss     G=DGROUP   M=RegStr   ACBP=A9
+ 0002:0000102C 00000004 C=BSS      S=.bss     G=DGROUP   M=ShellAPI ACBP=A9
+ 0002:00001030 00000004 C=BSS      S=.bss     G=DGROUP   M=ShlObj   ACBP=A9
+ 0002:00001034 00000004 C=BSS      S=.bss     G=DGROUP   M=WinSpool ACBP=A9
+ 0002:00001038 00000004 C=BSS      S=.bss     G=DGROUP   M=CommDlg  ACBP=A9
+ 0002:0000103C 00000004 C=BSS      S=.bss     G=DGROUP   M=Dlgs     ACBP=A9
+ 0002:00001040 00000004 C=BSS      S=.bss     G=DGROUP   M=RichEdit ACBP=A9
+ 0002:00001044 00000018 C=BSS      S=.bss     G=DGROUP   M=ufrmRelGeralAgenda ACBP=A9
+ 0002:0000105C 00000018 C=BSS      S=.bss     G=DGROUP   M=ufrmRelGeralCaracterizacao ACBP=A9
+ 0002:00001074 00000018 C=BSS      S=.bss     G=DGROUP   M=ufrmRelGeralNotificacao ACBP=A9
+ 0002:0000108C 00000028 C=BSS      S=.bss     G=DGROUP   M=ufrmRelGeralPrograma ACBP=A9
+ 0002:000010B4 0000000C C=BSS      S=.bss     G=DGROUP   M=ufrmRelListagemGeralExames ACBP=A9
+ 0002:000010C0 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmFiltroEsquemaTotal ACBP=A9
+ 0002:000010C8 0000000C C=BSS      S=.bss     G=DGROUP   M=UfrmConEsquemaTotal ACBP=A9
+ 0002:000010D4 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmFiltroEsquemaProcessoTotal ACBP=A9
+ 0002:000010DC 0000000C C=BSS      S=.bss     G=DGROUP   M=UfrmConEsquemaProcessoTotal ACBP=A9
+ 0002:000010E8 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmConfRelatorio ACBP=A9
+ 0002:000010F0 00000098 C=BSS      S=.bss     G=DGROUP   M=ufrmRelSerieCronologica ACBP=A9
+ 0002:00001188 0000000C C=BSS      S=.bss     G=DGROUP   M=UfrmRelUnidades ACBP=A9
+ 0002:00001194 00000008 C=BSS      S=.bss     G=DGROUP   M=uSplash  ACBP=A9
+ 0002:0000119C 00000028 C=BSS      S=.bss     G=DGROUP   M=UfrmRR   ACBP=A9
+ 0002:000011C4 0000000C C=BSS      S=.bss     G=DGROUP   M=UfrmPainelAR ACBP=A9
+ 0002:000011D0 00000048 C=BSS      S=.bss     G=DGROUP   M=UfrmAuditoriaRelatorios ACBP=A9
+ 0002:00001218 0000000C C=BSS      S=.bss     G=DGROUP   M=UfrmRelUnidadesImp ACBP=A9
+ 0002:00001224 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelMapa ACBP=A9
+ 0002:0000122C 0000001C C=BSS      S=.bss     G=DGROUP   M=UfrmRelNotificacao ACBP=A9
+ 0002:00001248 0000000C C=BSS      S=.bss     G=DGROUP   M=UfrmRelMapaMedicoPeriodo ACBP=A9
+ 0002:00001254 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelExtratoPaciente ACBP=A9
+ 0002:0000125C 00000004 C=BSS      S=.bss     G=DGROUP   M=UframeControleGestante ACBP=A9
+ 0002:00001260 0000001C C=BSS      S=.bss     G=DGROUP   M=UfrmRelGestante ACBP=A9
+ 0002:0000127C 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelCriancaExpDPIAlto ACBP=A9
+ 0002:00001284 0000000C C=BSS      S=.bss     G=DGROUP   M=UfrmRelCriancaExpFechamento ACBP=A9
+ 0002:00001290 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmControleGestantes ACBP=A9
+ 0002:00001298 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelProdFarmacia ACBP=A9
+ 0002:000012A0 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelProdAgendas ACBP=A9
+ 0002:000012A8 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelProdLaboratorio ACBP=A9
+ 0002:000012B0 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelQuantitativo ACBP=A9
+ 0002:000012B8 00000008 C=BSS      S=.bss     G=DGROUP   M=UfrmRelFixos ACBP=A9
+
+
+  Address         Publics by Name
+
+ 0002:00001030       .1
+ 0002:00001008       .1
+ 0002:00001038       .1
+ 0002:0000102C       .1
+ 0002:00001020       .1
+ 0002:00001024       .1
+ 0002:00001018       .1
+ 0002:0000101C       .1
+ 0002:00001028       .1
+ 0002:00001040       .1
+ 0002:00001014       .1
+ 0002:0000103C       .1
+ 0002:0000129C       .2
+ 0002:0000125C       .2
+ 0002:000011C0       .2
+ 0002:000010BC       .2
+ 0002:00001070       .2
+ 0002:00001088       .2
+ 0002:000012B4       .2
+ 0002:000012BC       .2
+ 0002:00001278       .2
+ 0002:000010EC       .2
+ 0002:000010E4       .2
+ 0002:000012AC       .2
+ 0002:000010B0       .2
+ 0002:0000128C       .2
+ 0002:00001058       .2
+ 0002:00001294       .2
+ 0002:00001190       .2
+ 0002:000010D8       .2
+ 0002:00001258       .2
+ 0002:00001214       .2
+ 0002:000010D0       .2
+ 0002:00001250       .2
+ 0002:00001220       .2
+ 0002:000011CC       .2
+ 0002:00001244       .2
+ 0002:000010C4       .2
+ 0002:00001198       .2
+ 0002:00001228       .2
+ 0002:000012A4       .2
+ 0002:00001280       .2
+ 0002:00001034       .3
+ 0002:00001010       .3
+ 0002:00001184       .6
+ 0001:00043078       @GetPackageInfoTable
+ 0001:00000300       @InitPkg
+ 0001:00000364       @PackageLoad
+ 0001:00043080       @PackageLoad
+ 0001:00000370       @PackageUnload
+ 0001:0004308C       @PackageUnload
+ 0001:00000200       AllocTlsBuffer
+ 0002:000011F4       bATV
+ 0002:000011FA       bCOINFECCAO
+ 0002:00001234       bExportando
+ 0002:00001268       bExportando
+ 0002:000011FB       bPROGRAMA
+ 0002:000011F9       bPTV
+ 0002:000011F5       bTARV
+ 0002:000011F6       bTARVACOMP
+ 0002:000011F7       bTARVCD4
+ 0002:000011F8       bTARVESQUEMA
+ 0001:0000066C       CommCtrl
+ 0001:0000088C       CommDlg
+ 0002:00001098       dir
+ 0002:00001068       dir
+ 0002:00001050       dir
+ 0002:00001080       dir
+ 0001:000008C4       Dlgs
+ 0001:000363CC       Excluir
+ 0001:0002A8DC       ExcluirRegistros
+ 0001:0000BA78       Existe
+ 0001:000002AC       ExitProcessTLS
+ 0001:00000284       ExitThreadTLS
+ 0001:0000BB2C       Extenso
+ 0001:0003457C       Finalization
+ 0001:00007968       Finalization
+ 0001:00034374       Finalization
+ 0001:000369BC       Finalization
+ 0001:00032AE8       Finalization
+ 0001:00037274       Finalization
+ 0001:000385A8       Finalization
+ 0001:000044EC       Finalization
+ 0001:0003909C       Finalization
+ 0001:0000AE08       Finalization
+ 0001:00039970       Finalization
+ 0001:0003A97C       Finalization
+ 0001:0003B2DC       Finalization
+ 0001:0003BCB0       Finalization
+ 0001:0002BC98       Finalization
+ 0001:00000974       Finalization
+ 0001:00000894       Finalization
+ 0001:0000085C       Finalization
+ 0001:00000814       Finalization
+ 0001:000007CC       Finalization
+ 0001:0002914C       Finalization
+ 0001:00000794       Finalization
+ 0001:0000075C       Finalization
+ 0001:0003C534       Finalization
+ 0001:00000724       Finalization
+ 0001:000254D0       Finalization
+ 0001:000006EC       Finalization
+ 0001:00000694       Finalization
+ 0001:0000063C       Finalization
+ 0001:000252BC       Finalization
+ 0001:00000414       Finalization
+ 0001:000003DC       Finalization
+ 0001:000239F8       Finalization
+ 0001:0001E440       Finalization
+ 0001:0003D1DC       Finalization
+ 0001:0000037C       Finalization
+ 0001:0001EE68       Finalization
+ 0001:0002224C       Finalization
+ 0001:0003EA2C       Finalization
+ 0001:0001FD98       Finalization
+ 0001:00042490       Finalization
+ 0001:00021364       Finalization
+ 0001:00020FCC       Finalization
+ 0001:000200E4       Finalization
+ 0001:000378FC       Finalization
+ 0001:000001C8       FreeLibrary
+ 0002:000011D0       frmAuditoriaRelatorios
+ 0002:000010DC       frmConEsquemaProcessoTotal
+ 0002:000010C8       frmConEsquemaTotal
+ 0002:000010E8       frmConfRelatorio
+ 0002:00001290       frmControleGestantes
+ 0002:000010D4       frmFiltroEsquemaProcessoTotal
+ 0002:000010C0       frmFiltroEsquemaTotal
+ 0002:000011C4       frmPainelAR
+ 0002:0000127C       frmRelCriancaExpDPIAlto
+ 0002:00001284       frmRelCriancaExpFechamento
+ 0002:00001254       frmRelExtratoPaciente
+ 0002:000012B8       frmRelFixos
+ 0002:00001044       frmRelGeralAgenda
+ 0002:0000105C       frmRelGeralCaracterizacao
+ 0002:00001074       frmRelGeralNotificacao
+ 0002:0000108C       frmRelGeralPrograma
+ 0002:00001260       frmRelGestante
+ 0002:000010B4       frmRelListagemGeralExames
+ 0002:00001224       frmRelMapa
+ 0002:00001248       frmRelMapaMedicoPeriodo
+ 0002:0000122C       frmRelNotificacao
+ 0002:000012A0       frmRelProdAgendas
+ 0002:00001298       frmRelProdFarmacia
+ 0002:000012A8       frmRelProdLaboratorio
+ 0002:000012B0       frmRelQuantitativo
+ 0002:000010F0       frmRelSerieCronologica
+ 0002:00001188       frmRelUnidades
+ 0002:00001218       frmRelUnidadesImp
+ 0002:0000119C       frmRR
+ 0002:00001194       frmSplash
+ 0002:0000124C       fsSQL
+ 0002:000010A8       gdtAte
+ 0002:000010A0       gdtDe
+ 0001:000003C4       GetScrollInfo
+ 0001:0000020C       GetTlsSize
+ 0002:00001004       HInstance
+ 0001:000006C4       Imm
+ 0001:000122D8       IncluirRelatorio
+ 0001:000002D0       InitializeModule
+ 0001:00000258       InitProcessTLS
+ 0001:00000214       InitThreadTLS
+ 0001:000001D0       LocalAlloc
+ 0001:000001D8       LocalFree
+ 0002:000010F8       lsAno
+ 0002:000010F4       lsIndicador
+ 0002:000010FC       lsProvincia
+ 0001:0000C1F8       MesesEntre
+ 0001:00000444       Messages
+ 0002:00000004       Module
+ 0002:00001000       ModuleIsLib
+ 0002:00001001       ModuleIsPackage
+ 0002:00001270       MSQL
+ 0002:0000123C       MSQL
+ 0002:0000120C       MSQL
+ 0002:00001204       Municipio
+ 0001:0000EC98       Ordenar
+ 0001:0000C070       Ordenar
+ 0002:00001104       Posicao
+ 0002:00001200       Provincia
+ 0002:00001208       PSQL
+ 0002:00001238       PSQL
+ 0002:000011C8       PSQL
+ 0002:0000126C       PSQL
+ 0001:0000078C       RegStr
+ 0001:0000C228       Relatorio
+ 0001:0000EE6C       Relatorio2
+ 0001:00010C5C       Relatorio3
+ 0001:000009A4       RichEdit
+ 0001:0000BF18       Round
+ 0002:000011A8       sACOMPSQL
+ 0002:00001064       sArqLog
+ 0002:00001094       sArqLog
+ 0002:0000104C       sArqLog
+ 0002:0000107C       sArqLog
+ 0002:00001060       sArqWEB
+ 0002:00001078       sArqWEB
+ 0002:00001090       sArqWEB
+ 0002:00001048       sArqWEB
+ 0002:000011A0       sATVSQL
+ 0002:000011B4       sCD4SQL
+ 0002:000011B8       sCOINFSQL
+ 0002:000011B0       sESQUEMASQL
+ 0001:000003CC       SetScrollInfo
+ 0001:000003D4       SetScrollPos
+ 0001:000007C4       ShellAPI
+ 0001:000007FC       ShlObj
+ 0001:00043098       SISRelatorios
+ 0002:00001084       sLog
+ 0002:00001054       sLog
+ 0002:0000106C       sLog
+ 0002:0000109C       sLog
+ 0002:000011BC       sPROGRAMASQL
+ 0002:000011A4       sPTVSQL
+ 0002:00001288       sSQL
+ 0002:00001230       sSQL
+ 0002:00001264       sSQL
+ 0002:000010CC       sSQL1
+ 0002:000010E0       sSQL1
+ 0002:000011AC       sTARVSQL
+ 0002:0000118C       strSQL
+ 0002:0000121C       strSQL
+ 0002:000010B8       strSQL
+ 0002:000011D4       strSQLATV
+ 0002:000011EC       strSQLCOINFECCAO
+ 0002:000011F0       strSQLPROGRAMA
+ 0002:000011E8       strSQLPTV
+ 0002:000011D8       strSQLTARV
+ 0002:000011DC       strSQLTARVACOMP
+ 0002:000011E0       strSQLTARVCD4
+ 0002:000011E4       strSQLTARVESQUEMA
+ 0001:000003AC       SysInit
+ 0002:00001100       Tabela
+ 0001:00038278       TframeControleGestante.atualizaFlGestante
+ 0001:00037DCC       TframeControleGestante.btExcluirClick
+ 0001:00037DA4       TframeControleGestante.btInserirClick
+ 0001:0003804C       TframeControleGestante.CalculoDataFim
+ 0001:00038034       TframeControleGestante.CalculoMeses
+ 0001:00038178       TframeControleGestante.Cancelar
+ 0001:00038564       TframeControleGestante.Create
+ 0001:000381C0       TframeControleGestante.Editar
+ 0001:00038230       TframeControleGestante.Gravar
+ 0001:00038538       TframeControleGestante.qyGestanteAfterDelete
+ 0001:00037DFC       TframeControleGestante.qyGestanteAfterInsert
+ 0001:0003847C       TframeControleGestante.qyGestanteAfterPost
+ 0001:00038540       TframeControleGestante.qyGestanteCalcFields
+ 0001:00037F10       TframeControleGestante.qyGestanteDT_FIM_GESTACAOValidate
+ 0001:0003806C       TframeControleGestante.qyGestanteNR_MESESValidate
+ 0001:00038484       TframeControleGestante.verificaSeGestante
+ 0001:0002E9CC       TfrmAuditoriaRelatorios.AbreConsultas
+ 0001:000319D8       TfrmAuditoriaRelatorios.dxDBGrid1CustomDrawCell
+ 0001:00031B88       TfrmAuditoriaRelatorios.dxDBGrid2CustomDrawCell
+ 0001:00031D18       TfrmAuditoriaRelatorios.dxDBGrid3CustomDrawCell
+ 0001:00031EA8       TfrmAuditoriaRelatorios.dxDBGrid4CustomDrawCell
+ 0001:00031FFC       TfrmAuditoriaRelatorios.dxDBGrid5CustomDrawCell
+ 0001:0003218C       TfrmAuditoriaRelatorios.dxDBGrid6CustomDrawCell
+ 0001:000322A8       TfrmAuditoriaRelatorios.dxDBGrid7CustomDrawCell
+ 0001:00032A58       TfrmAuditoriaRelatorios.dxDBGrid8CustomDrawCell
+ 0001:0002EB8C       TfrmAuditoriaRelatorios.FormCreate
+ 0001:0002EE08       TfrmAuditoriaRelatorios.leMunicipioClick
+ 0001:0002ECE0       TfrmAuditoriaRelatorios.leProvinciaChange
+ 0001:0002F118       TfrmAuditoriaRelatorios.leUnidadeButtonClick
+ 0001:0002EF2C       TfrmAuditoriaRelatorios.leUnidadeChange
+ 0001:0002F294       TfrmAuditoriaRelatorios.qyATVBeforeOpen
+ 0001:00031914       TfrmAuditoriaRelatorios.qyATVCalcFields
+ 0001:00031384       TfrmAuditoriaRelatorios.qyCoinfeccaoBeforeOpen
+ 0001:0003221C       TfrmAuditoriaRelatorios.qyCoinfeccaoCalcFields
+ 0001:00032338       TfrmAuditoriaRelatorios.qyProgramaBeforeOpen
+ 0001:000328B8       TfrmAuditoriaRelatorios.qyProgramaCalcFields
+ 0001:0002F804       TfrmAuditoriaRelatorios.qyPTVBeforeOpen
+ 0001:00031A68       TfrmAuditoriaRelatorios.qyPTVCalcFields
+ 0001:000302E4       TfrmAuditoriaRelatorios.qyTARVAcompBeforeOpen
+ 0001:00031DA8       TfrmAuditoriaRelatorios.qyTARVAcompCalcFields
+ 0001:0002FD74       TfrmAuditoriaRelatorios.qyTARVBeforeOpen
+ 0001:00031C18       TfrmAuditoriaRelatorios.qyTARVCalcFields
+ 0001:00030E04       TfrmAuditoriaRelatorios.qyTARVCD4BeforeOpen
+ 0001:0003208C       TfrmAuditoriaRelatorios.qyTARVCD4CalcFields
+ 0001:00030874       TfrmAuditoriaRelatorios.qyTARVEsquemaBeforeOpen
+ 0001:00031F38       TfrmAuditoriaRelatorios.qyTARVEsquemaCalcFields
+ 0001:0002EA94       TfrmAuditoriaRelatorios.SpeedButton1Click
+ 0001:0002F258       TfrmAuditoriaRelatorios.SpeedButton5Click
+ 0001:000212A0       TfrmConEsquemaProcessoTotal.btPesquisarClick
+ 0001:00021294       TfrmConEsquemaProcessoTotal.FormClose
+ 0001:0002130C       TfrmConEsquemaProcessoTotal.FormCreate
+ 0001:00020020       TfrmConEsquemaTotal.btPesquisarClick
+ 0001:00020014       TfrmConEsquemaTotal.FormClose
+ 0001:0002008C       TfrmConEsquemaTotal.FormCreate
+ 0001:000221A4       TfrmConfRelatorio.btCancelarClick
+ 0001:0002222C       TfrmConfRelatorio.btClearImagemClick
+ 0001:000221B8       TfrmConfRelatorio.btConfirmarClick
+ 0001:000221C8       TfrmConfRelatorio.btImagemClick
+ 0001:0002198C       TfrmConfRelatorio.edPessoaButtonClick
+ 0001:00022198       TfrmConfRelatorio.FormClose
+ 0001:000220E0       TfrmConfRelatorio.FormShow
+ 0001:00021944       TfrmConfRelatorio.tbConfRelatorioAfterDelete
+ 0001:00021964       TfrmConfRelatorio.tbConfRelatorioAfterInsert
+ 0001:00021954       TfrmConfRelatorio.tbConfRelatorioAfterPost
+ 0001:0003B1CC       TfrmControleGestantes.btCancelarClick
+ 0001:0003B1E4       TfrmControleGestantes.btEditarClick
+ 0001:0003B21C       TfrmControleGestantes.btGravarClick
+ 0001:0003AE8C       TfrmControleGestantes.btPesquisarClick
+ 0001:0003B240       TfrmControleGestantes.btRelatorioClick
+ 0001:0003B1C4       TfrmControleGestantes.FormCreate
+ 0001:0003B234       TfrmControleGestantes.frameControleGestante1btInserirClick
+ 0001:0003B198       TfrmControleGestantes.inicializaControles
+ 0001:0003AE60       TfrmControleGestantes.qyProcuraPacienteAfterOpen
+ 0001:00020414       TfrmFiltroEsquemaProcessoTotal.BitBtn1Click
+ 0001:00020FB8       TfrmFiltroEsquemaProcessoTotal.SpeedButton3Click
+ 0001:00020C70       TfrmFiltroEsquemaProcessoTotal.SpeedButton4Click
+ 0001:0001F1E0       TfrmFiltroEsquemaTotal.BitBtn1Click
+ 0001:0001FD84       TfrmFiltroEsquemaTotal.SpeedButton3Click
+ 0001:0001FA3C       TfrmFiltroEsquemaTotal.SpeedButton4Click
+ 0001:0002BAB0       TfrmPainelAR.FormCreate
+ 0001:0002BB70       TfrmPainelAR.leProvinciaChange
+ 0001:0002A0DC       TfrmPainelAR.qyATVBeforeOpen
+ 0001:0002A6DC       TfrmPainelAR.qyCoinfeccaoBeforeOpen
+ 0001:0002BA1C       TfrmPainelAR.qyGridBeforeOpen
+ 0001:0002A7DC       TfrmPainelAR.qyProgramaBeforeOpen
+ 0001:0002A1DC       TfrmPainelAR.qyPTVBeforeOpen
+ 0001:0002A3DC       TfrmPainelAR.qyTARVAcompBeforeOpen
+ 0001:0002A2DC       TfrmPainelAR.qyTARVBeforeOpen
+ 0001:0002A5DC       TfrmPainelAR.qyTARVCD4BeforeOpen
+ 0001:0002A4DC       TfrmPainelAR.qyTARVEsquemaBeforeOpen
+ 0001:0002A9E4       TfrmPainelAR.SpeedButton1Click
+ 0001:00039600       TfrmRelCriancaExpDPIAlto.btImprimirClick
+ 0001:000395CC       TfrmRelCriancaExpDPIAlto.FormCreate
+ 0001:0003994C       TfrmRelCriancaExpDPIAlto.qyRelCriancaExpCalcFields
+ 0001:00039F78       TfrmRelCriancaExpFechamento.btImprimirClick
+ 0001:0003A924       TfrmRelCriancaExpFechamento.FormCreate
+ 0001:00039F80       TfrmRelCriancaExpFechamento.GerarRelatorio
+ 0001:0003A784       TfrmRelCriancaExpFechamento.qyRelCriancaExpCalcFields
+ 0001:000377C4       TfrmRelExtratoPaciente.btImprimirClick
+ 0001:00037508       TfrmRelExtratoPaciente.btLocUtenteButtonClick
+ 0001:00037888       TfrmRelExtratoPaciente.qyGeralBeforeOpen
+ 0001:0003F018       TfrmRelFixos.btImprimirClick
+ 0001:0003EF54       TfrmRelFixos.FormCreate
+ 0001:0003F804       TfrmRelFixos.frxReport1BeforePrint
+ 0001:0003F160       TfrmRelFixos.PreparaSQL
+ 0001:000400B4       TfrmRelFixos.SqlAbandono
+ 0001:000416B0       TfrmRelFixos.sqlCargaViralMenos1000
+ 0001:00041DDC       TfrmRelFixos.SqlCargaViralSem
+ 0001:0003F928       TfrmRelFixos.SqlCasoNovoTraferenciaEntrada
+ 0001:0004101C       TfrmRelFixos.SqlCD4menoreigual500
+ 0001:00040D28       TfrmRelFixos.SqlCriancasMenores10
+ 0001:00041354       TfrmRelFixos.SqlEstadio3e4semTarv
+ 0001:0003FB3C       TfrmRelFixos.SqlEvolucao
+ 0001:00040A38       TfrmRelFixos.SqlGestantes
+ 0001:0004056C       TfrmRelFixos.SqlTARV
+ 0001:00040694       TfrmRelFixos.SqlTraferenciaSaida
+ 0001:0003EDF4       TfrmRelFixos.validaFiltro
+ 0001:0000385C       TfrmRelGeralAgenda.BMPtoJPG
+ 0001:000023D0       TfrmRelGeralAgenda.btImprimirClick
+ 0001:00003914       TfrmRelGeralAgenda.btLocUnidadeButtonClick
+ 0001:00003B58       TfrmRelGeralAgenda.btLocUnidadeChange
+ 0001:00004320       TfrmRelGeralAgenda.btLocUnidadeExit
+ 0001:00002688       TfrmRelGeralAgenda.CriaRelatorioWEB
+ 0001:00003838       TfrmRelGeralAgenda.FormClose
+ 0001:000036DC       TfrmRelGeralAgenda.FormCreate
+ 0001:000044DC       TfrmRelGeralAgenda.frameDashBoard1btAddAllClick
+ 0001:000044D0       TfrmRelGeralAgenda.frameDashBoard1btAddColunaClick
+ 0001:000044E8       TfrmRelGeralAgenda.frameDashBoard1SpeedButton3Click
+ 0001:00004104       TfrmRelGeralAgenda.qyGeralAfterOpen
+ 0001:00003CE8       TfrmRelGeralAgenda.qyGeralBeforeOpen
+ 0001:000064B4       TfrmRelGeralCaracterizacao.BMPtoJPG
+ 0001:00004B2C       TfrmRelGeralCaracterizacao.btImprimirClick
+ 0001:00006A14       TfrmRelGeralCaracterizacao.btLocMunicipioButtonClick
+ 0001:00006FD8       TfrmRelGeralCaracterizacao.btLocMunicipioChange
+ 0001:000077A8       TfrmRelGeralCaracterizacao.btLocMunicipioExit
+ 0001:000067B0       TfrmRelGeralCaracterizacao.btLocProvinciaButtonClick
+ 0001:00006E20       TfrmRelGeralCaracterizacao.btLocProvinciaChange
+ 0001:000075E8       TfrmRelGeralCaracterizacao.btLocProvinciaExit
+ 0001:0000656C       TfrmRelGeralCaracterizacao.btLocUnidadeButtonClick
+ 0001:00006C90       TfrmRelGeralCaracterizacao.btLocUnidadeChange
+ 0001:00007438       TfrmRelGeralCaracterizacao.btLocUnidadeExit
+ 0001:00004CC4       TfrmRelGeralCaracterizacao.CriaRelatorioWEB
+ 0001:00006490       TfrmRelGeralCaracterizacao.FormClose
+ 0001:00006334       TfrmRelGeralCaracterizacao.FormCreate
+ 0001:0000721C       TfrmRelGeralCaracterizacao.qyGeralAfterOpen
+ 0001:000071F4       TfrmRelGeralCaracterizacao.qyGeralBeforeOpen
+ 0001:000093B4       TfrmRelGeralNotificacao.BMPtoJPG
+ 0001:00007EBC       TfrmRelGeralNotificacao.btImprimirClick
+ 0001:00009914       TfrmRelGeralNotificacao.btLocMunicipioButtonClick
+ 0001:00009ED8       TfrmRelGeralNotificacao.btLocMunicipioChange
+ 0001:0000AC2C       TfrmRelGeralNotificacao.btLocMunicipioExit
+ 0001:000096B0       TfrmRelGeralNotificacao.btLocProvinciaButtonClick
+ 0001:00009D20       TfrmRelGeralNotificacao.btLocProvinciaChange
+ 0001:0000AA6C       TfrmRelGeralNotificacao.btLocProvinciaExit
+ 0001:0000946C       TfrmRelGeralNotificacao.btLocUnidadeButtonClick
+ 0001:00009B90       TfrmRelGeralNotificacao.btLocUnidadeChange
+ 0001:0000A8BC       TfrmRelGeralNotificacao.btLocUnidadeExit
+ 0001:00008174       TfrmRelGeralNotificacao.CriaRelatorioWEB
+ 0001:00009390       TfrmRelGeralNotificacao.FormClose
+ 0001:00009234       TfrmRelGeralNotificacao.FormCreate
+ 0001:0000ADF8       TfrmRelGeralNotificacao.frameDashBoard1btAddAllClick
+ 0001:0000ADEC       TfrmRelGeralNotificacao.frameDashBoard1btAddColunaClick
+ 0001:0000AE04       TfrmRelGeralNotificacao.frameDashBoard1SpeedButton3Click
+ 0001:0000A6A0       TfrmRelGeralNotificacao.qyGeralAfterOpen
+ 0001:0000A0F4       TfrmRelGeralNotificacao.qyGeralBeforeOpen
+ 0001:0001C9D8       TfrmRelGeralPrograma.BMPtoJPG
+ 0001:0000B8AC       TfrmRelGeralPrograma.btImprimirClick
+ 0001:0001E2E8       TfrmRelGeralPrograma.btImpVersaoClick
+ 0001:0001E270       TfrmRelGeralPrograma.btIncVersaoClick
+ 0001:0001CF38       TfrmRelGeralPrograma.btLocMunicipioButtonClick
+ 0001:0001D4FC       TfrmRelGeralPrograma.btLocMunicipioChange
+ 0001:0001DA88       TfrmRelGeralPrograma.btLocMunicipioExit
+ 0001:0001CCD4       TfrmRelGeralPrograma.btLocProvinciaButtonClick
+ 0001:0001D344       TfrmRelGeralPrograma.btLocProvinciaChange
+ 0001:0001D8C8       TfrmRelGeralPrograma.btLocProvinciaExit
+ 0001:0001CA90       TfrmRelGeralPrograma.btLocUnidadeButtonClick
+ 0001:0001D1B4       TfrmRelGeralPrograma.btLocUnidadeChange
+ 0001:0001D718       TfrmRelGeralPrograma.btLocUnidadeExit
+ 0001:0001E3F8       TfrmRelGeralPrograma.btSalvarVersaoClick
+ 0001:0000B778       TfrmRelGeralPrograma.CarregaComboMesAno
+ 0001:00012494       TfrmRelGeralPrograma.CriaRelatorioWEB
+ 0001:0001DC48       TfrmRelGeralPrograma.DefineFiltro
+ 0001:0001E04C       TfrmRelGeralPrograma.DefineTipo
+ 0001:0001E41C       TfrmRelGeralPrograma.dsVersaoStateChange
+ 0001:0001C9B4       TfrmRelGeralPrograma.FormClose
+ 0001:0001C84C       TfrmRelGeralPrograma.FormCreate
+ 0001:0000B554       TfrmRelGeralPrograma.verificarPeriodo
+ 0001:00038F8C       TfrmRelGestante.BitBtn1Click
+ 0001:00038F54       TfrmRelGestante.btCancelarClick
+ 0001:00038F1C       TfrmRelGestante.btEditarClick
+ 0001:00038F6C       TfrmRelGestante.btGravarClick
+ 0001:00038C14       TfrmRelGestante.btPesquisarClick
+ 0001:00038DE0       TfrmRelGestante.FormCreate
+ 0001:00038E90       TfrmRelGestante.FormShow
+ 0001:00038EF0       TfrmRelGestante.inicializaControles
+ 0001:00038EC4       TfrmRelGestante.qyGestantesAfterOpen
+ 0001:00038F84       TfrmRelGestante.qyGestantesBeforeScroll
+ 0001:00039078       TfrmRelGestante.qyGestantesCalcFields
+ 0001:0001E998       TfrmRelListagemGeralExames.btImprimirClick
+ 0001:0001EDC0       TfrmRelListagemGeralExames.FormCreate
+ 0001:00036FB0       TfrmRelMapaMedicoPeriodo.btImprimirClick
+ 0001:00036D38       TfrmRelMapaMedicoPeriodo.btLocMedicoButtonClick
+ 0001:0003721C       TfrmRelMapaMedicoPeriodo.FormCreate
+ 0001:000370F4       TfrmRelMapaMedicoPeriodo.qyGeralBeforeOpen
+ 0001:00036110       TfrmRelNotificacao.AbreConsultas
+ 0001:00036850       TfrmRelNotificacao.Abrir1Click
+ 0001:00035234       TfrmRelNotificacao.btCamposClick
+ 0001:000355B0       TfrmRelNotificacao.btCsvClick
+ 0001:00035900       TfrmRelNotificacao.btExcelClick
+ 0001:00036208       TfrmRelNotificacao.btLimparClick
+ 0001:00034E4C       TfrmRelNotificacao.btPesquisarClick
+ 0001:00035308       TfrmRelNotificacao.ckCamposClick
+ 0001:00036378       TfrmRelNotificacao.Desmarcar2Click
+ 0001:000362D0       TfrmRelNotificacao.DesmarcarTodos1Click
+ 0001:000365BC       TfrmRelNotificacao.Excluir1Click
+ 0001:000361D8       TfrmRelNotificacao.FechaConsultas
+ 0001:00036200       TfrmRelNotificacao.FormClose
+ 0001:00035394       TfrmRelNotificacao.FormCreate
+ 0001:00036238       TfrmRelNotificacao.FormShow
+ 0001:00035CC0       TfrmRelNotificacao.leMunicipioChange
+ 0001:00035B98       TfrmRelNotificacao.leProvinciaChange
+ 0001:00035FD0       TfrmRelNotificacao.leUnidadeButtonClick
+ 0001:00035DE4       TfrmRelNotificacao.leUnidadeChange
+ 0001:00036324       TfrmRelNotificacao.Marcar2Click
+ 0001:0003627C       TfrmRelNotificacao.MarcarTodos1Click
+ 0001:000359D8       TfrmRelNotificacao.qyNotificacaoAfterScroll
+ 0001:00036910       TfrmRelNotificacao.qyNotificacaoCalcFields
+ 0001:00035AA8       TfrmRelNotificacao.SpeedButton1Click
+ 0001:00035B20       TfrmRelNotificacao.SpeedButton2Click
+ 0001:0003C130       TfrmRelProdAgendas.btGerarRelatorioClick
+ 0001:0003C2F4       TfrmRelProdAgendas.btImprimirClick
+ 0001:0003C444       TfrmRelProdAgendas.edDataFinalKeyPress
+ 0001:0003C294       TfrmRelProdAgendas.FormCreate
+ 0001:0003C45C       TfrmRelProdAgendas.gerarRelatorio
+ 0001:0003C134       TfrmRelProdAgendas.validaFiltro
+ 0001:0003B7E0       TfrmRelProdFarmacia.btGerarRelatorioClick
+ 0001:0003B9A4       TfrmRelProdFarmacia.btImprimirClick
+ 0001:0003BC98       TfrmRelProdFarmacia.edDataFinalKeyPress
+ 0001:0003B944       TfrmRelProdFarmacia.FormCreate
+ 0001:0003BAF8       TfrmRelProdFarmacia.geraRelatorio
+ 0001:0003B7E4       TfrmRelProdFarmacia.validaFiltro
+ 0001:0003CCC0       TfrmRelProdLaboratorio.btGerarRelatorioClick
+ 0001:0003CE84       TfrmRelProdLaboratorio.btImprimirClick
+ 0001:0003D1C4       TfrmRelProdLaboratorio.edDataFinalKeyPress
+ 0001:0003CE24       TfrmRelProdLaboratorio.FormCreate
+ 0001:0003CFD8       TfrmRelProdLaboratorio.gerarRelatorio
+ 0001:0003CCC4       TfrmRelProdLaboratorio.validaFiltro
+ 0001:0003E484       TfrmRelQuantitativo.btImprimirClick
+ 0001:0003E3C0       TfrmRelQuantitativo.FormCreate
+ 0001:0003E498       TfrmRelQuantitativo.gerarRelatorio
+ 0001:0003E260       TfrmRelQuantitativo.validaFiltro
+ 0001:00023460       TfrmRelSerieCronologica.Button1Click
+ 0001:000238F4       TfrmRelSerieCronologica.Button2Click
+ 0001:00022858       TfrmRelSerieCronologica.CarregaDados
+ 0001:000236C8       TfrmRelSerieCronologica.CarregaGrid
+ 0001:00023468       TfrmRelSerieCronologica.FormCreate
+ 0001:000225CC       TfrmRelSerieCronologica.Inicializar
+ 0001:00023498       TfrmRelSerieCronologica.MontaGrid
+ 0001:000238B4       TfrmRelSerieCronologica.ScrollBar1Scroll
+ 0001:0002347C       TfrmRelSerieCronologica.sgDadosDrawCell
+ 0001:000236AC       TfrmRelSerieCronologica.TabControl1Change
+ 0001:0002415C       TfrmRelUnidades.btImprimirClick
+ 0001:00024BBC       TfrmRelUnidades.btLocMunicipioButtonClick
+ 0001:00024E38       TfrmRelUnidades.btLocMunicipioChange
+ 0001:00025054       TfrmRelUnidades.btLocMunicipioExit
+ 0001:000245E0       TfrmRelUnidades.btLocProvinciaButtonClick
+ 0001:00024844       TfrmRelUnidades.btLocProvinciaChange
+ 0001:000249FC       TfrmRelUnidades.btLocProvinciaExit
+ 0001:0002526C       TfrmRelUnidades.cbAtivasClick
+ 0001:00025294       TfrmRelUnidades.cbInativasClick
+ 0001:00024094       TfrmRelUnidades.cbTodosClick
+ 0001:00025214       TfrmRelUnidades.FormCreate
+ 0001:00033214       TfrmRelUnidadesImp.btImprimirClick
+ 0001:00033C74       TfrmRelUnidadesImp.btLocMunicipioButtonClick
+ 0001:00033EF0       TfrmRelUnidadesImp.btLocMunicipioChange
+ 0001:0003410C       TfrmRelUnidadesImp.btLocMunicipioExit
+ 0001:00033698       TfrmRelUnidadesImp.btLocProvinciaButtonClick
+ 0001:000338FC       TfrmRelUnidadesImp.btLocProvinciaChange
+ 0001:00033AB4       TfrmRelUnidadesImp.btLocProvinciaExit
+ 0001:00034324       TfrmRelUnidadesImp.cbAtivasClick
+ 0001:0003434C       TfrmRelUnidadesImp.cbInativasClick
+ 0001:0003314C       TfrmRelUnidadesImp.cbTodosClick
+ 0001:000342CC       TfrmRelUnidadesImp.FormCreate
+ 0001:00028724       TfrmRR.btLocProvinciaButtonClick
+ 0001:00028B70       TfrmRR.btLocProvinciaChange
+ 0001:00028D0C       TfrmRR.btLocProvinciaExit
+ 0001:00027578       TfrmRR.btSairClick
+ 0001:00028B10       TfrmRR.FormClose
+ 0001:000285B8       TfrmRR.FormCreate
+ 0001:00027580       TfrmRR.SpeedButton1Click
+ 0001:0002896C       TfrmRR.SpeedButton2Click
+ 0001:00028ECC       TfrmRR.SpeedButton3Click
+ 0001:000001E0       TlsAlloc
+ 0002:0000100C       tlsBuffer
+ 0001:000001E8       TlsFree
+ 0001:000001F0       TlsGetValue
+ 0002:00000000       TlsIndex
+ 0002:FFBBB000       TlsLast
+ 0002:0000001C       TlsProc
+ 0001:000001F8       TlsSetValue
+ 0001:000385D8       UframeControleGestante
+ 0001:00032B88       UfrmAuditoriaRelatorios
+ 0001:000213A0       UfrmConEsquemaProcessoTotal
+ 0001:00020120       UfrmConEsquemaTotal
+ 0001:0002227C       UfrmConfRelatorio
+ 0001:0003B30C       UfrmControleGestantes
+ 0001:00020FFC       UfrmFiltroEsquemaProcessoTotal
+ 0001:0001FDC8       UfrmFiltroEsquemaTotal
+ 0001:0002BCD4       UfrmPainelAR
+ 0001:000399A0       UfrmRelCriancaExpDPIAlto
+ 0001:0003A9B8       UfrmRelCriancaExpFechamento
+ 0001:0003792C       UfrmRelExtratoPaciente
+ 0001:000424C0       UfrmRelFixos
+ 0001:0000453C       ufrmRelGeralAgenda
+ 0001:000079B8       ufrmRelGeralCaracterizacao
+ 0001:0000AE58       ufrmRelGeralNotificacao
+ 0001:0001E490       ufrmRelGeralPrograma
+ 0001:000390F4       UfrmRelGestante
+ 0001:0001EEA4       ufrmRelListagemGeralExames
+ 0001:000345AC       UfrmRelMapa
+ 0001:000372B0       UfrmRelMapaMedicoPeriodo
+ 0001:00036A14       UfrmRelNotificacao
+ 0001:0003C564       UfrmRelProdAgendas
+ 0001:0003BCE0       UfrmRelProdFarmacia
+ 0001:0003D20C       UfrmRelProdLaboratorio
+ 0001:0003EA5C       UfrmRelQuantitativo
+ 0001:00023A38       ufrmRelSerieCronologica
+ 0001:000252F8       UfrmRelUnidades
+ 0001:000343B0       UfrmRelUnidadesImp
+ 0001:000291CC       UfrmRR
+ 0002:000011FC       Unidade
+ 0001:000002DC       UninitializeModule
+ 0001:0000071C       UrlMon
+ 0001:00025500       uSplash
+ 0002:00001210       USQL
+ 0002:00001274       USQL
+ 0002:00001240       USQL
+ 0001:0000040C       Windows
+ 0001:00000754       WinInet
+ 0001:00000844       WinSpool
+
+
+  Address         Publics by Value
+
+ 0002:FFBBB000       TlsLast
+ 0001:000001C8       FreeLibrary
+ 0001:000001D0       LocalAlloc
+ 0001:000001D8       LocalFree
+ 0001:000001E0       TlsAlloc
+ 0001:000001E8       TlsFree
+ 0001:000001F0       TlsGetValue
+ 0001:000001F8       TlsSetValue
+ 0001:00000200       AllocTlsBuffer
+ 0001:0000020C       GetTlsSize
+ 0001:00000214       InitThreadTLS
+ 0001:00000258       InitProcessTLS
+ 0001:00000284       ExitThreadTLS
+ 0001:000002AC       ExitProcessTLS
+ 0001:000002D0       InitializeModule
+ 0001:000002DC       UninitializeModule
+ 0001:00000300       @InitPkg
+ 0001:00000364       @PackageLoad
+ 0001:00000370       @PackageUnload
+ 0001:0000037C       Finalization
+ 0001:000003AC       SysInit
+ 0001:000003C4       GetScrollInfo
+ 0001:000003CC       SetScrollInfo
+ 0001:000003D4       SetScrollPos
+ 0001:000003DC       Finalization
+ 0001:0000040C       Windows
+ 0001:00000414       Finalization
+ 0001:00000444       Messages
+ 0001:0000063C       Finalization
+ 0001:0000066C       CommCtrl
+ 0001:00000694       Finalization
+ 0001:000006C4       Imm
+ 0001:000006EC       Finalization
+ 0001:0000071C       UrlMon
+ 0001:00000724       Finalization
+ 0001:00000754       WinInet
+ 0001:0000075C       Finalization
+ 0001:0000078C       RegStr
+ 0001:00000794       Finalization
+ 0001:000007C4       ShellAPI
+ 0001:000007CC       Finalization
+ 0001:000007FC       ShlObj
+ 0001:00000814       Finalization
+ 0001:00000844       WinSpool
+ 0001:0000085C       Finalization
+ 0001:0000088C       CommDlg
+ 0001:00000894       Finalization
+ 0001:000008C4       Dlgs
+ 0001:00000974       Finalization
+ 0001:000009A4       RichEdit
+ 0001:000023D0       TfrmRelGeralAgenda.btImprimirClick
+ 0001:00002688       TfrmRelGeralAgenda.CriaRelatorioWEB
+ 0001:000036DC       TfrmRelGeralAgenda.FormCreate
+ 0001:00003838       TfrmRelGeralAgenda.FormClose
+ 0001:0000385C       TfrmRelGeralAgenda.BMPtoJPG
+ 0001:00003914       TfrmRelGeralAgenda.btLocUnidadeButtonClick
+ 0001:00003B58       TfrmRelGeralAgenda.btLocUnidadeChange
+ 0001:00003CE8       TfrmRelGeralAgenda.qyGeralBeforeOpen
+ 0001:00004104       TfrmRelGeralAgenda.qyGeralAfterOpen
+ 0001:00004320       TfrmRelGeralAgenda.btLocUnidadeExit
+ 0001:000044D0       TfrmRelGeralAgenda.frameDashBoard1btAddColunaClick
+ 0001:000044DC       TfrmRelGeralAgenda.frameDashBoard1btAddAllClick
+ 0001:000044E8       TfrmRelGeralAgenda.frameDashBoard1SpeedButton3Click
+ 0001:000044EC       Finalization
+ 0001:0000453C       ufrmRelGeralAgenda
+ 0001:00004B2C       TfrmRelGeralCaracterizacao.btImprimirClick
+ 0001:00004CC4       TfrmRelGeralCaracterizacao.CriaRelatorioWEB
+ 0001:00006334       TfrmRelGeralCaracterizacao.FormCreate
+ 0001:00006490       TfrmRelGeralCaracterizacao.FormClose
+ 0001:000064B4       TfrmRelGeralCaracterizacao.BMPtoJPG
+ 0001:0000656C       TfrmRelGeralCaracterizacao.btLocUnidadeButtonClick
+ 0001:000067B0       TfrmRelGeralCaracterizacao.btLocProvinciaButtonClick
+ 0001:00006A14       TfrmRelGeralCaracterizacao.btLocMunicipioButtonClick
+ 0001:00006C90       TfrmRelGeralCaracterizacao.btLocUnidadeChange
+ 0001:00006E20       TfrmRelGeralCaracterizacao.btLocProvinciaChange
+ 0001:00006FD8       TfrmRelGeralCaracterizacao.btLocMunicipioChange
+ 0001:000071F4       TfrmRelGeralCaracterizacao.qyGeralBeforeOpen
+ 0001:0000721C       TfrmRelGeralCaracterizacao.qyGeralAfterOpen
+ 0001:00007438       TfrmRelGeralCaracterizacao.btLocUnidadeExit
+ 0001:000075E8       TfrmRelGeralCaracterizacao.btLocProvinciaExit
+ 0001:000077A8       TfrmRelGeralCaracterizacao.btLocMunicipioExit
+ 0001:00007968       Finalization
+ 0001:000079B8       ufrmRelGeralCaracterizacao
+ 0001:00007EBC       TfrmRelGeralNotificacao.btImprimirClick
+ 0001:00008174       TfrmRelGeralNotificacao.CriaRelatorioWEB
+ 0001:00009234       TfrmRelGeralNotificacao.FormCreate
+ 0001:00009390       TfrmRelGeralNotificacao.FormClose
+ 0001:000093B4       TfrmRelGeralNotificacao.BMPtoJPG
+ 0001:0000946C       TfrmRelGeralNotificacao.btLocUnidadeButtonClick
+ 0001:000096B0       TfrmRelGeralNotificacao.btLocProvinciaButtonClick
+ 0001:00009914       TfrmRelGeralNotificacao.btLocMunicipioButtonClick
+ 0001:00009B90       TfrmRelGeralNotificacao.btLocUnidadeChange
+ 0001:00009D20       TfrmRelGeralNotificacao.btLocProvinciaChange
+ 0001:00009ED8       TfrmRelGeralNotificacao.btLocMunicipioChange
+ 0001:0000A0F4       TfrmRelGeralNotificacao.qyGeralBeforeOpen
+ 0001:0000A6A0       TfrmRelGeralNotificacao.qyGeralAfterOpen
+ 0001:0000A8BC       TfrmRelGeralNotificacao.btLocUnidadeExit
+ 0001:0000AA6C       TfrmRelGeralNotificacao.btLocProvinciaExit
+ 0001:0000AC2C       TfrmRelGeralNotificacao.btLocMunicipioExit
+ 0001:0000ADEC       TfrmRelGeralNotificacao.frameDashBoard1btAddColunaClick
+ 0001:0000ADF8       TfrmRelGeralNotificacao.frameDashBoard1btAddAllClick
+ 0001:0000AE04       TfrmRelGeralNotificacao.frameDashBoard1SpeedButton3Click
+ 0001:0000AE08       Finalization
+ 0001:0000AE58       ufrmRelGeralNotificacao
+ 0001:0000B554       TfrmRelGeralPrograma.verificarPeriodo
+ 0001:0000B778       TfrmRelGeralPrograma.CarregaComboMesAno
+ 0001:0000B8AC       TfrmRelGeralPrograma.btImprimirClick
+ 0001:0000BA78       Existe
+ 0001:0000BB2C       Extenso
+ 0001:0000BF18       Round
+ 0001:0000C070       Ordenar
+ 0001:0000C1F8       MesesEntre
+ 0001:0000C228       Relatorio
+ 0001:0000EC98       Ordenar
+ 0001:0000EE6C       Relatorio2
+ 0001:00010C5C       Relatorio3
+ 0001:000122D8       IncluirRelatorio
+ 0001:00012494       TfrmRelGeralPrograma.CriaRelatorioWEB
+ 0001:0001C84C       TfrmRelGeralPrograma.FormCreate
+ 0001:0001C9B4       TfrmRelGeralPrograma.FormClose
+ 0001:0001C9D8       TfrmRelGeralPrograma.BMPtoJPG
+ 0001:0001CA90       TfrmRelGeralPrograma.btLocUnidadeButtonClick
+ 0001:0001CCD4       TfrmRelGeralPrograma.btLocProvinciaButtonClick
+ 0001:0001CF38       TfrmRelGeralPrograma.btLocMunicipioButtonClick
+ 0001:0001D1B4       TfrmRelGeralPrograma.btLocUnidadeChange
+ 0001:0001D344       TfrmRelGeralPrograma.btLocProvinciaChange
+ 0001:0001D4FC       TfrmRelGeralPrograma.btLocMunicipioChange
+ 0001:0001D718       TfrmRelGeralPrograma.btLocUnidadeExit
+ 0001:0001D8C8       TfrmRelGeralPrograma.btLocProvinciaExit
+ 0001:0001DA88       TfrmRelGeralPrograma.btLocMunicipioExit
+ 0001:0001DC48       TfrmRelGeralPrograma.DefineFiltro
+ 0001:0001E04C       TfrmRelGeralPrograma.DefineTipo
+ 0001:0001E270       TfrmRelGeralPrograma.btIncVersaoClick
+ 0001:0001E2E8       TfrmRelGeralPrograma.btImpVersaoClick
+ 0001:0001E3F8       TfrmRelGeralPrograma.btSalvarVersaoClick
+ 0001:0001E41C       TfrmRelGeralPrograma.dsVersaoStateChange
+ 0001:0001E440       Finalization
+ 0001:0001E490       ufrmRelGeralPrograma
+ 0001:0001E998       TfrmRelListagemGeralExames.btImprimirClick
+ 0001:0001EDC0       TfrmRelListagemGeralExames.FormCreate
+ 0001:0001EE68       Finalization
+ 0001:0001EEA4       ufrmRelListagemGeralExames
+ 0001:0001F1E0       TfrmFiltroEsquemaTotal.BitBtn1Click
+ 0001:0001FA3C       TfrmFiltroEsquemaTotal.SpeedButton4Click
+ 0001:0001FD84       TfrmFiltroEsquemaTotal.SpeedButton3Click
+ 0001:0001FD98       Finalization
+ 0001:0001FDC8       UfrmFiltroEsquemaTotal
+ 0001:00020014       TfrmConEsquemaTotal.FormClose
+ 0001:00020020       TfrmConEsquemaTotal.btPesquisarClick
+ 0001:0002008C       TfrmConEsquemaTotal.FormCreate
+ 0001:000200E4       Finalization
+ 0001:00020120       UfrmConEsquemaTotal
+ 0001:00020414       TfrmFiltroEsquemaProcessoTotal.BitBtn1Click
+ 0001:00020C70       TfrmFiltroEsquemaProcessoTotal.SpeedButton4Click
+ 0001:00020FB8       TfrmFiltroEsquemaProcessoTotal.SpeedButton3Click
+ 0001:00020FCC       Finalization
+ 0001:00020FFC       UfrmFiltroEsquemaProcessoTotal
+ 0001:00021294       TfrmConEsquemaProcessoTotal.FormClose
+ 0001:000212A0       TfrmConEsquemaProcessoTotal.btPesquisarClick
+ 0001:0002130C       TfrmConEsquemaProcessoTotal.FormCreate
+ 0001:00021364       Finalization
+ 0001:000213A0       UfrmConEsquemaProcessoTotal
+ 0001:00021944       TfrmConfRelatorio.tbConfRelatorioAfterDelete
+ 0001:00021954       TfrmConfRelatorio.tbConfRelatorioAfterPost
+ 0001:00021964       TfrmConfRelatorio.tbConfRelatorioAfterInsert
+ 0001:0002198C       TfrmConfRelatorio.edPessoaButtonClick
+ 0001:000220E0       TfrmConfRelatorio.FormShow
+ 0001:00022198       TfrmConfRelatorio.FormClose
+ 0001:000221A4       TfrmConfRelatorio.btCancelarClick
+ 0001:000221B8       TfrmConfRelatorio.btConfirmarClick
+ 0001:000221C8       TfrmConfRelatorio.btImagemClick
+ 0001:0002222C       TfrmConfRelatorio.btClearImagemClick
+ 0001:0002224C       Finalization
+ 0001:0002227C       UfrmConfRelatorio
+ 0001:000225CC       TfrmRelSerieCronologica.Inicializar
+ 0001:00022858       TfrmRelSerieCronologica.CarregaDados
+ 0001:00023460       TfrmRelSerieCronologica.Button1Click
+ 0001:00023468       TfrmRelSerieCronologica.FormCreate
+ 0001:0002347C       TfrmRelSerieCronologica.sgDadosDrawCell
+ 0001:00023498       TfrmRelSerieCronologica.MontaGrid
+ 0001:000236AC       TfrmRelSerieCronologica.TabControl1Change
+ 0001:000236C8       TfrmRelSerieCronologica.CarregaGrid
+ 0001:000238B4       TfrmRelSerieCronologica.ScrollBar1Scroll
+ 0001:000238F4       TfrmRelSerieCronologica.Button2Click
+ 0001:000239F8       Finalization
+ 0001:00023A38       ufrmRelSerieCronologica
+ 0001:00024094       TfrmRelUnidades.cbTodosClick
+ 0001:0002415C       TfrmRelUnidades.btImprimirClick
+ 0001:000245E0       TfrmRelUnidades.btLocProvinciaButtonClick
+ 0001:00024844       TfrmRelUnidades.btLocProvinciaChange
+ 0001:000249FC       TfrmRelUnidades.btLocProvinciaExit
+ 0001:00024BBC       TfrmRelUnidades.btLocMunicipioButtonClick
+ 0001:00024E38       TfrmRelUnidades.btLocMunicipioChange
+ 0001:00025054       TfrmRelUnidades.btLocMunicipioExit
+ 0001:00025214       TfrmRelUnidades.FormCreate
+ 0001:0002526C       TfrmRelUnidades.cbAtivasClick
+ 0001:00025294       TfrmRelUnidades.cbInativasClick
+ 0001:000252BC       Finalization
+ 0001:000252F8       UfrmRelUnidades
+ 0001:000254D0       Finalization
+ 0001:00025500       uSplash
+ 0001:00027578       TfrmRR.btSairClick
+ 0001:00027580       TfrmRR.SpeedButton1Click
+ 0001:000285B8       TfrmRR.FormCreate
+ 0001:00028724       TfrmRR.btLocProvinciaButtonClick
+ 0001:0002896C       TfrmRR.SpeedButton2Click
+ 0001:00028B10       TfrmRR.FormClose
+ 0001:00028B70       TfrmRR.btLocProvinciaChange
+ 0001:00028D0C       TfrmRR.btLocProvinciaExit
+ 0001:00028ECC       TfrmRR.SpeedButton3Click
+ 0001:0002914C       Finalization
+ 0001:000291CC       UfrmRR
+ 0001:0002A0DC       TfrmPainelAR.qyATVBeforeOpen
+ 0001:0002A1DC       TfrmPainelAR.qyPTVBeforeOpen
+ 0001:0002A2DC       TfrmPainelAR.qyTARVBeforeOpen
+ 0001:0002A3DC       TfrmPainelAR.qyTARVAcompBeforeOpen
+ 0001:0002A4DC       TfrmPainelAR.qyTARVEsquemaBeforeOpen
+ 0001:0002A5DC       TfrmPainelAR.qyTARVCD4BeforeOpen
+ 0001:0002A6DC       TfrmPainelAR.qyCoinfeccaoBeforeOpen
+ 0001:0002A7DC       TfrmPainelAR.qyProgramaBeforeOpen
+ 0001:0002A8DC       ExcluirRegistros
+ 0001:0002A9E4       TfrmPainelAR.SpeedButton1Click
+ 0001:0002BA1C       TfrmPainelAR.qyGridBeforeOpen
+ 0001:0002BAB0       TfrmPainelAR.FormCreate
+ 0001:0002BB70       TfrmPainelAR.leProvinciaChange
+ 0001:0002BC98       Finalization
+ 0001:0002BCD4       UfrmPainelAR
+ 0001:0002E9CC       TfrmAuditoriaRelatorios.AbreConsultas
+ 0001:0002EA94       TfrmAuditoriaRelatorios.SpeedButton1Click
+ 0001:0002EB8C       TfrmAuditoriaRelatorios.FormCreate
+ 0001:0002ECE0       TfrmAuditoriaRelatorios.leProvinciaChange
+ 0001:0002EE08       TfrmAuditoriaRelatorios.leMunicipioClick
+ 0001:0002EF2C       TfrmAuditoriaRelatorios.leUnidadeChange
+ 0001:0002F118       TfrmAuditoriaRelatorios.leUnidadeButtonClick
+ 0001:0002F258       TfrmAuditoriaRelatorios.SpeedButton5Click
+ 0001:0002F294       TfrmAuditoriaRelatorios.qyATVBeforeOpen
+ 0001:0002F804       TfrmAuditoriaRelatorios.qyPTVBeforeOpen
+ 0001:0002FD74       TfrmAuditoriaRelatorios.qyTARVBeforeOpen
+ 0001:000302E4       TfrmAuditoriaRelatorios.qyTARVAcompBeforeOpen
+ 0001:00030874       TfrmAuditoriaRelatorios.qyTARVEsquemaBeforeOpen
+ 0001:00030E04       TfrmAuditoriaRelatorios.qyTARVCD4BeforeOpen
+ 0001:00031384       TfrmAuditoriaRelatorios.qyCoinfeccaoBeforeOpen
+ 0001:00031914       TfrmAuditoriaRelatorios.qyATVCalcFields
+ 0001:000319D8       TfrmAuditoriaRelatorios.dxDBGrid1CustomDrawCell
+ 0001:00031A68       TfrmAuditoriaRelatorios.qyPTVCalcFields
+ 0001:00031B88       TfrmAuditoriaRelatorios.dxDBGrid2CustomDrawCell
+ 0001:00031C18       TfrmAuditoriaRelatorios.qyTARVCalcFields
+ 0001:00031D18       TfrmAuditoriaRelatorios.dxDBGrid3CustomDrawCell
+ 0001:00031DA8       TfrmAuditoriaRelatorios.qyTARVAcompCalcFields
+ 0001:00031EA8       TfrmAuditoriaRelatorios.dxDBGrid4CustomDrawCell
+ 0001:00031F38       TfrmAuditoriaRelatorios.qyTARVEsquemaCalcFields
+ 0001:00031FFC       TfrmAuditoriaRelatorios.dxDBGrid5CustomDrawCell
+ 0001:0003208C       TfrmAuditoriaRelatorios.qyTARVCD4CalcFields
+ 0001:0003218C       TfrmAuditoriaRelatorios.dxDBGrid6CustomDrawCell
+ 0001:0003221C       TfrmAuditoriaRelatorios.qyCoinfeccaoCalcFields
+ 0001:000322A8       TfrmAuditoriaRelatorios.dxDBGrid7CustomDrawCell
+ 0001:00032338       TfrmAuditoriaRelatorios.qyProgramaBeforeOpen
+ 0001:000328B8       TfrmAuditoriaRelatorios.qyProgramaCalcFields
+ 0001:00032A58       TfrmAuditoriaRelatorios.dxDBGrid8CustomDrawCell
+ 0001:00032AE8       Finalization
+ 0001:00032B88       UfrmAuditoriaRelatorios
+ 0001:0003314C       TfrmRelUnidadesImp.cbTodosClick
+ 0001:00033214       TfrmRelUnidadesImp.btImprimirClick
+ 0001:00033698       TfrmRelUnidadesImp.btLocProvinciaButtonClick
+ 0001:000338FC       TfrmRelUnidadesImp.btLocProvinciaChange
+ 0001:00033AB4       TfrmRelUnidadesImp.btLocProvinciaExit
+ 0001:00033C74       TfrmRelUnidadesImp.btLocMunicipioButtonClick
+ 0001:00033EF0       TfrmRelUnidadesImp.btLocMunicipioChange
+ 0001:0003410C       TfrmRelUnidadesImp.btLocMunicipioExit
+ 0001:000342CC       TfrmRelUnidadesImp.FormCreate
+ 0001:00034324       TfrmRelUnidadesImp.cbAtivasClick
+ 0001:0003434C       TfrmRelUnidadesImp.cbInativasClick
+ 0001:00034374       Finalization
+ 0001:000343B0       UfrmRelUnidadesImp
+ 0001:0003457C       Finalization
+ 0001:000345AC       UfrmRelMapa
+ 0001:00034E4C       TfrmRelNotificacao.btPesquisarClick
+ 0001:00035234       TfrmRelNotificacao.btCamposClick
+ 0001:00035308       TfrmRelNotificacao.ckCamposClick
+ 0001:00035394       TfrmRelNotificacao.FormCreate
+ 0001:000355B0       TfrmRelNotificacao.btCsvClick
+ 0001:00035900       TfrmRelNotificacao.btExcelClick
+ 0001:000359D8       TfrmRelNotificacao.qyNotificacaoAfterScroll
+ 0001:00035AA8       TfrmRelNotificacao.SpeedButton1Click
+ 0001:00035B20       TfrmRelNotificacao.SpeedButton2Click
+ 0001:00035B98       TfrmRelNotificacao.leProvinciaChange
+ 0001:00035CC0       TfrmRelNotificacao.leMunicipioChange
+ 0001:00035DE4       TfrmRelNotificacao.leUnidadeChange
+ 0001:00035FD0       TfrmRelNotificacao.leUnidadeButtonClick
+ 0001:00036110       TfrmRelNotificacao.AbreConsultas
+ 0001:000361D8       TfrmRelNotificacao.FechaConsultas
+ 0001:00036200       TfrmRelNotificacao.FormClose
+ 0001:00036208       TfrmRelNotificacao.btLimparClick
+ 0001:00036238       TfrmRelNotificacao.FormShow
+ 0001:0003627C       TfrmRelNotificacao.MarcarTodos1Click
+ 0001:000362D0       TfrmRelNotificacao.DesmarcarTodos1Click
+ 0001:00036324       TfrmRelNotificacao.Marcar2Click
+ 0001:00036378       TfrmRelNotificacao.Desmarcar2Click
+ 0001:000363CC       Excluir
+ 0001:000365BC       TfrmRelNotificacao.Excluir1Click
+ 0001:00036850       TfrmRelNotificacao.Abrir1Click
+ 0001:00036910       TfrmRelNotificacao.qyNotificacaoCalcFields
+ 0001:000369BC       Finalization
+ 0001:00036A14       UfrmRelNotificacao
+ 0001:00036D38       TfrmRelMapaMedicoPeriodo.btLocMedicoButtonClick
+ 0001:00036FB0       TfrmRelMapaMedicoPeriodo.btImprimirClick
+ 0001:000370F4       TfrmRelMapaMedicoPeriodo.qyGeralBeforeOpen
+ 0001:0003721C       TfrmRelMapaMedicoPeriodo.FormCreate
+ 0001:00037274       Finalization
+ 0001:000372B0       UfrmRelMapaMedicoPeriodo
+ 0001:00037508       TfrmRelExtratoPaciente.btLocUtenteButtonClick
+ 0001:000377C4       TfrmRelExtratoPaciente.btImprimirClick
+ 0001:00037888       TfrmRelExtratoPaciente.qyGeralBeforeOpen
+ 0001:000378FC       Finalization
+ 0001:0003792C       UfrmRelExtratoPaciente
+ 0001:00037DA4       TframeControleGestante.btInserirClick
+ 0001:00037DCC       TframeControleGestante.btExcluirClick
+ 0001:00037DFC       TframeControleGestante.qyGestanteAfterInsert
+ 0001:00037F10       TframeControleGestante.qyGestanteDT_FIM_GESTACAOValidate
+ 0001:00038034       TframeControleGestante.CalculoMeses
+ 0001:0003804C       TframeControleGestante.CalculoDataFim
+ 0001:0003806C       TframeControleGestante.qyGestanteNR_MESESValidate
+ 0001:00038178       TframeControleGestante.Cancelar
+ 0001:000381C0       TframeControleGestante.Editar
+ 0001:00038230       TframeControleGestante.Gravar
+ 0001:00038278       TframeControleGestante.atualizaFlGestante
+ 0001:0003847C       TframeControleGestante.qyGestanteAfterPost
+ 0001:00038484       TframeControleGestante.verificaSeGestante
+ 0001:00038538       TframeControleGestante.qyGestanteAfterDelete
+ 0001:00038540       TframeControleGestante.qyGestanteCalcFields
+ 0001:00038564       TframeControleGestante.Create
+ 0001:000385A8       Finalization
+ 0001:000385D8       UframeControleGestante
+ 0001:00038C14       TfrmRelGestante.btPesquisarClick
+ 0001:00038DE0       TfrmRelGestante.FormCreate
+ 0001:00038E90       TfrmRelGestante.FormShow
+ 0001:00038EC4       TfrmRelGestante.qyGestantesAfterOpen
+ 0001:00038EF0       TfrmRelGestante.inicializaControles
+ 0001:00038F1C       TfrmRelGestante.btEditarClick
+ 0001:00038F54       TfrmRelGestante.btCancelarClick
+ 0001:00038F6C       TfrmRelGestante.btGravarClick
+ 0001:00038F84       TfrmRelGestante.qyGestantesBeforeScroll
+ 0001:00038F8C       TfrmRelGestante.BitBtn1Click
+ 0001:00039078       TfrmRelGestante.qyGestantesCalcFields
+ 0001:0003909C       Finalization
+ 0001:000390F4       UfrmRelGestante
+ 0001:000395CC       TfrmRelCriancaExpDPIAlto.FormCreate
+ 0001:00039600       TfrmRelCriancaExpDPIAlto.btImprimirClick
+ 0001:0003994C       TfrmRelCriancaExpDPIAlto.qyRelCriancaExpCalcFields
+ 0001:00039970       Finalization
+ 0001:000399A0       UfrmRelCriancaExpDPIAlto
+ 0001:00039F78       TfrmRelCriancaExpFechamento.btImprimirClick
+ 0001:00039F80       TfrmRelCriancaExpFechamento.GerarRelatorio
+ 0001:0003A784       TfrmRelCriancaExpFechamento.qyRelCriancaExpCalcFields
+ 0001:0003A924       TfrmRelCriancaExpFechamento.FormCreate
+ 0001:0003A97C       Finalization
+ 0001:0003A9B8       UfrmRelCriancaExpFechamento
+ 0001:0003AE60       TfrmControleGestantes.qyProcuraPacienteAfterOpen
+ 0001:0003AE8C       TfrmControleGestantes.btPesquisarClick
+ 0001:0003B198       TfrmControleGestantes.inicializaControles
+ 0001:0003B1C4       TfrmControleGestantes.FormCreate
+ 0001:0003B1CC       TfrmControleGestantes.btCancelarClick
+ 0001:0003B1E4       TfrmControleGestantes.btEditarClick
+ 0001:0003B21C       TfrmControleGestantes.btGravarClick
+ 0001:0003B234       TfrmControleGestantes.frameControleGestante1btInserirClick
+ 0001:0003B240       TfrmControleGestantes.btRelatorioClick
+ 0001:0003B2DC       Finalization
+ 0001:0003B30C       UfrmControleGestantes
+ 0001:0003B7E0       TfrmRelProdFarmacia.btGerarRelatorioClick
+ 0001:0003B7E4       TfrmRelProdFarmacia.validaFiltro
+ 0001:0003B944       TfrmRelProdFarmacia.FormCreate
+ 0001:0003B9A4       TfrmRelProdFarmacia.btImprimirClick
+ 0001:0003BAF8       TfrmRelProdFarmacia.geraRelatorio
+ 0001:0003BC98       TfrmRelProdFarmacia.edDataFinalKeyPress
+ 0001:0003BCB0       Finalization
+ 0001:0003BCE0       UfrmRelProdFarmacia
+ 0001:0003C130       TfrmRelProdAgendas.btGerarRelatorioClick
+ 0001:0003C134       TfrmRelProdAgendas.validaFiltro
+ 0001:0003C294       TfrmRelProdAgendas.FormCreate
+ 0001:0003C2F4       TfrmRelProdAgendas.btImprimirClick
+ 0001:0003C444       TfrmRelProdAgendas.edDataFinalKeyPress
+ 0001:0003C45C       TfrmRelProdAgendas.gerarRelatorio
+ 0001:0003C534       Finalization
+ 0001:0003C564       UfrmRelProdAgendas
+ 0001:0003CCC0       TfrmRelProdLaboratorio.btGerarRelatorioClick
+ 0001:0003CCC4       TfrmRelProdLaboratorio.validaFiltro
+ 0001:0003CE24       TfrmRelProdLaboratorio.FormCreate
+ 0001:0003CE84       TfrmRelProdLaboratorio.btImprimirClick
+ 0001:0003CFD8       TfrmRelProdLaboratorio.gerarRelatorio
+ 0001:0003D1C4       TfrmRelProdLaboratorio.edDataFinalKeyPress
+ 0001:0003D1DC       Finalization
+ 0001:0003D20C       UfrmRelProdLaboratorio
+ 0001:0003E260       TfrmRelQuantitativo.validaFiltro
+ 0001:0003E3C0       TfrmRelQuantitativo.FormCreate
+ 0001:0003E484       TfrmRelQuantitativo.btImprimirClick
+ 0001:0003E498       TfrmRelQuantitativo.gerarRelatorio
+ 0001:0003EA2C       Finalization
+ 0001:0003EA5C       UfrmRelQuantitativo
+ 0001:0003EDF4       TfrmRelFixos.validaFiltro
+ 0001:0003EF54       TfrmRelFixos.FormCreate
+ 0001:0003F018       TfrmRelFixos.btImprimirClick
+ 0001:0003F160       TfrmRelFixos.PreparaSQL
+ 0001:0003F804       TfrmRelFixos.frxReport1BeforePrint
+ 0001:0003F928       TfrmRelFixos.SqlCasoNovoTraferenciaEntrada
+ 0001:0003FB3C       TfrmRelFixos.SqlEvolucao
+ 0001:000400B4       TfrmRelFixos.SqlAbandono
+ 0001:0004056C       TfrmRelFixos.SqlTARV
+ 0001:00040694       TfrmRelFixos.SqlTraferenciaSaida
+ 0001:00040A38       TfrmRelFixos.SqlGestantes
+ 0001:00040D28       TfrmRelFixos.SqlCriancasMenores10
+ 0001:0004101C       TfrmRelFixos.SqlCD4menoreigual500
+ 0001:00041354       TfrmRelFixos.SqlEstadio3e4semTarv
+ 0001:000416B0       TfrmRelFixos.sqlCargaViralMenos1000
+ 0001:00041DDC       TfrmRelFixos.SqlCargaViralSem
+ 0001:00042490       Finalization
+ 0001:000424C0       UfrmRelFixos
+ 0001:00043078       @GetPackageInfoTable
+ 0001:00043080       @PackageLoad
+ 0001:0004308C       @PackageUnload
+ 0001:00043098       SISRelatorios
+ 0002:00000000       TlsIndex
+ 0002:00000004       Module
+ 0002:0000001C       TlsProc
+ 0002:00001000       ModuleIsLib
+ 0002:00001001       ModuleIsPackage
+ 0002:00001004       HInstance
+ 0002:00001008       .1
+ 0002:0000100C       tlsBuffer
+ 0002:00001010       .3
+ 0002:00001014       .1
+ 0002:00001018       .1
+ 0002:0000101C       .1
+ 0002:00001020       .1
+ 0002:00001024       .1
+ 0002:00001028       .1
+ 0002:0000102C       .1
+ 0002:00001030       .1
+ 0002:00001034       .3
+ 0002:00001038       .1
+ 0002:0000103C       .1
+ 0002:00001040       .1
+ 0002:00001044       frmRelGeralAgenda
+ 0002:00001048       sArqWEB
+ 0002:0000104C       sArqLog
+ 0002:00001050       dir
+ 0002:00001054       sLog
+ 0002:00001058       .2
+ 0002:0000105C       frmRelGeralCaracterizacao
+ 0002:00001060       sArqWEB
+ 0002:00001064       sArqLog
+ 0002:00001068       dir
+ 0002:0000106C       sLog
+ 0002:00001070       .2
+ 0002:00001074       frmRelGeralNotificacao
+ 0002:00001078       sArqWEB
+ 0002:0000107C       sArqLog
+ 0002:00001080       dir
+ 0002:00001084       sLog
+ 0002:00001088       .2
+ 0002:0000108C       frmRelGeralPrograma
+ 0002:00001090       sArqWEB
+ 0002:00001094       sArqLog
+ 0002:00001098       dir
+ 0002:0000109C       sLog
+ 0002:000010A0       gdtDe
+ 0002:000010A8       gdtAte
+ 0002:000010B0       .2
+ 0002:000010B4       frmRelListagemGeralExames
+ 0002:000010B8       strSQL
+ 0002:000010BC       .2
+ 0002:000010C0       frmFiltroEsquemaTotal
+ 0002:000010C4       .2
+ 0002:000010C8       frmConEsquemaTotal
+ 0002:000010CC       sSQL1
+ 0002:000010D0       .2
+ 0002:000010D4       frmFiltroEsquemaProcessoTotal
+ 0002:000010D8       .2
+ 0002:000010DC       frmConEsquemaProcessoTotal
+ 0002:000010E0       sSQL1
+ 0002:000010E4       .2
+ 0002:000010E8       frmConfRelatorio
+ 0002:000010EC       .2
+ 0002:000010F0       frmRelSerieCronologica
+ 0002:000010F4       lsIndicador
+ 0002:000010F8       lsAno
+ 0002:000010FC       lsProvincia
+ 0002:00001100       Tabela
+ 0002:00001104       Posicao
+ 0002:00001184       .6
+ 0002:00001188       frmRelUnidades
+ 0002:0000118C       strSQL
+ 0002:00001190       .2
+ 0002:00001194       frmSplash
+ 0002:00001198       .2
+ 0002:0000119C       frmRR
+ 0002:000011A0       sATVSQL
+ 0002:000011A4       sPTVSQL
+ 0002:000011A8       sACOMPSQL
+ 0002:000011AC       sTARVSQL
+ 0002:000011B0       sESQUEMASQL
+ 0002:000011B4       sCD4SQL
+ 0002:000011B8       sCOINFSQL
+ 0002:000011BC       sPROGRAMASQL
+ 0002:000011C0       .2
+ 0002:000011C4       frmPainelAR
+ 0002:000011C8       PSQL
+ 0002:000011CC       .2
+ 0002:000011D0       frmAuditoriaRelatorios
+ 0002:000011D4       strSQLATV
+ 0002:000011D8       strSQLTARV
+ 0002:000011DC       strSQLTARVACOMP
+ 0002:000011E0       strSQLTARVCD4
+ 0002:000011E4       strSQLTARVESQUEMA
+ 0002:000011E8       strSQLPTV
+ 0002:000011EC       strSQLCOINFECCAO
+ 0002:000011F0       strSQLPROGRAMA
+ 0002:000011F4       bATV
+ 0002:000011F5       bTARV
+ 0002:000011F6       bTARVACOMP
+ 0002:000011F7       bTARVCD4
+ 0002:000011F8       bTARVESQUEMA
+ 0002:000011F9       bPTV
+ 0002:000011FA       bCOINFECCAO
+ 0002:000011FB       bPROGRAMA
+ 0002:000011FC       Unidade
+ 0002:00001200       Provincia
+ 0002:00001204       Municipio
+ 0002:00001208       PSQL
+ 0002:0000120C       MSQL
+ 0002:00001210       USQL
+ 0002:00001214       .2
+ 0002:00001218       frmRelUnidadesImp
+ 0002:0000121C       strSQL
+ 0002:00001220       .2
+ 0002:00001224       frmRelMapa
+ 0002:00001228       .2
+ 0002:0000122C       frmRelNotificacao
+ 0002:00001230       sSQL
+ 0002:00001234       bExportando
+ 0002:00001238       PSQL
+ 0002:0000123C       MSQL
+ 0002:00001240       USQL
+ 0002:00001244       .2
+ 0002:00001248       frmRelMapaMedicoPeriodo
+ 0002:0000124C       fsSQL
+ 0002:00001250       .2
+ 0002:00001254       frmRelExtratoPaciente
+ 0002:00001258       .2
+ 0002:0000125C       .2
+ 0002:00001260       frmRelGestante
+ 0002:00001264       sSQL
+ 0002:00001268       bExportando
+ 0002:0000126C       PSQL
+ 0002:00001270       MSQL
+ 0002:00001274       USQL
+ 0002:00001278       .2
+ 0002:0000127C       frmRelCriancaExpDPIAlto
+ 0002:00001280       .2
+ 0002:00001284       frmRelCriancaExpFechamento
+ 0002:00001288       sSQL
+ 0002:0000128C       .2
+ 0002:00001290       frmControleGestantes
+ 0002:00001294       .2
+ 0002:00001298       frmRelProdFarmacia
+ 0002:0000129C       .2
+ 0002:000012A0       frmRelProdAgendas
+ 0002:000012A4       .2
+ 0002:000012A8       frmRelProdLaboratorio
+ 0002:000012AC       .2
+ 0002:000012B0       frmRelQuantitativo
+ 0002:000012B4       .2
+ 0002:000012B8       frmRelFixos
+ 0002:000012BC       .2
+
+
+Line numbers for SysInit(SysInit.pas) segment .text
+
+    93 0001:000001C8   102 0001:000001D0   105 0001:000001D8   108 0001:000001E0
+   111 0001:000001E8   114 0001:000001F0   117 0001:000001F8   128 0001:00000200
+   129 0001:00000208   285 0001:0000020C   286 0001:00000211   293 0001:00000214
+   294 0001:00000215   295 0001:0000021C   299 0001:00000220   300 0001:00000233
+   301 0001:0000023A   302 0001:0000023E   304 0001:0000024A   305 0001:00000256
+   310 0001:00000258   312 0001:00000261   313 0001:0000026B   314 0001:00000270
+   315 0001:00000280   321 0001:00000284   323 0001:0000028D   324 0001:00000296
+   325 0001:000002A1   326 0001:000002A5   328 0001:000002AB   332 0001:000002AC
+   334 0001:000002B5   335 0001:000002BA   336 0001:000002C3   337 0001:000002CE
+   423 0001:000002D0   424 0001:000002DA   428 0001:000002DC   429 0001:000002E6
+   430 0001:000002F7   431 0001:000002FD   495 0001:00000300   496 0001:0000030B
+   497 0001:00000312   498 0001:00000319   499 0001:0000031E   500 0001:00000326
+   501 0001:0000032E   502 0001:00000333   503 0001:0000033C   504 0001:00000345
+   505 0001:0000034A   506 0001:00000351   507 0001:00000355   508 0001:0000035A
+   509 0001:0000035D   540 0001:00000364   541 0001:0000036E   545 0001:00000370
+   546 0001:0000037A   840 0001:000003AC   840 0001:000003B3
+
+Line numbers for ufrmRelGeralAgenda(..\CADASTRO\ufrmRelGeralAgenda.pas) segment .text
+
+    63 0001:000023D0    64 0001:000023F5    66 0001:0000240E    67 0001:00002423
+    69 0001:00002428    71 0001:00002441    72 0001:00002456    75 0001:0000245B
+    77 0001:00002483    78 0001:00002498    83 0001:0000249D    84 0001:000024AD
+    85 0001:000024BB    88 0001:000024DE    91 0001:000024EB    92 0001:00002504
+    94 0001:00002516    95 0001:00002531    96 0001:0000254D    97 0001:00002570
+    98 0001:0000257F    99 0001:0000258B   100 0001:000025C5   107 0001:00002688
+   108 0001:000026AA   109 0001:000026BD   110 0001:000026CC   111 0001:000026DB
+   112 0001:000026EA   113 0001:000026F9   114 0001:00002707   115 0001:00002714
+   116 0001:00002721   117 0001:0000272E   118 0001:00002741   119 0001:00002758
+   120 0001:00002769   121 0001:0000277C   122 0001:00002793   123 0001:000027A1
+   124 0001:000027BD   125 0001:000027CB   126 0001:000027D8   127 0001:000027FD
+   128 0001:0000280A   129 0001:00002817   130 0001:00002824   131 0001:00002831
+   132 0001:0000283E   133 0001:0000284B   134 0001:00002858   136 0001:0000289D
+   137 0001:000028EC   138 0001:000028F9   139 0001:0000291E   140 0001:0000294B
+   141 0001:00002982   142 0001:0000298F   143 0001:0000299C   144 0001:000029A9
+   145 0001:000029B6   146 0001:000029C9   149 0001:000029DC   150 0001:000029EA
+   151 0001:00002A28   153 0001:00002A36   154 0001:00002A3E   157 0001:00002A4E
+   158 0001:00002A66   155 0001:00002A74   160 0001:00002A86   161 0001:00002A99
+   162 0001:00002B17   163 0001:00002B5A   164 0001:00002B62   165 0001:00002B6A
+   166 0001:00002B72   169 0001:00002B85   170 0001:00002BA3   171 0001:00002BB0
+   172 0001:00002BDC   174 0001:00002BE9   175 0001:00002BF6   176 0001:00002C53
+   178 0001:00002C60   179 0001:00002C6D   180 0001:00002CB5   182 0001:00002CC2
+   167 0001:00002CD0   184 0001:00002CE6   185 0001:00002CF9   186 0001:00002D07
+   187 0001:00002D14   188 0001:00002D3F   189 0001:00002D7B   190 0001:00002DB7
+   191 0001:00002DF3   192 0001:00002E00   193 0001:00002E0D   195 0001:00002E20
+   197 0001:00002E39   198 0001:00002E75   199 0001:00002E88   200 0001:00002E8D
+   201 0001:00002EA1   203 0001:00002ED9   204 0001:00002EED   205 0001:00002F01
+   206 0001:00002F15   207 0001:00002F25   208 0001:00002F35   209 0001:00002F4C
+   210 0001:00002F5A   211 0001:00002F6E   212 0001:00002F82   213 0001:00002F8F
+   214 0001:00002F9A   215 0001:00002FC5   217 0001:00002FD2   147 0001:00002FE0
+   219 0001:00002FF6   220 0001:00003003   222 0001:0000301E   223 0001:00003031
+   224 0001:00003048   225 0001:00003056   226 0001:0000305E   227 0001:00003066
+   228 0001:0000306E   230 0001:0000307E   231 0001:00003104   234 0001:000036DC
+   236 0001:000036F4   237 0001:0000370B   238 0001:00003719   240 0001:00003728
+   241 0001:00003763   242 0001:0000379E   244 0001:000037AB   245 0001:000037DE
+   251 0001:00003838   252 0001:00003846   254 0001:00003850   255 0001:0000385A
+   261 0001:0000385C   263 0001:00003868   264 0001:00003877   265 0001:00003885
+   266 0001:00003892   267 0001:000038A1   268 0001:000038AF   269 0001:000038BA
+   270 0001:000038C4   272 0001:000038D5   275 0001:000038F2   276 0001:000038FA
+   278 0001:0000390F   282 0001:00003914   284 0001:00003939   285 0001:00003955
+   286 0001:00003966   288 0001:0000397E   289 0001:0000398C   290 0001:0000399A
+   291 0001:000039B1   292 0001:000039C7   293 0001:000039D6   294 0001:000039DF
+   295 0001:000039EE   296 0001:000039F7   297 0001:000039FD   299 0001:00003A12
+   301 0001:00003A3A   303 0001:00003A4C   304 0001:00003A7C   306 0001:00003AAC
+   307 0001:00003ABE   308 0001:00003AEA   311 0001:00003B58   313 0001:00003B7B
+   314 0001:00003B92   315 0001:00003BA5   317 0001:00003BBE   318 0001:00003BCC
+   322 0001:00003C54   326 0001:00003CA9   331 0001:00003CE8   333 0001:00003D0B
+   334 0001:00003D1A   335 0001:00003D31   336 0001:00003D3F   337 0001:00003D4D
+   338 0001:00003D61   339 0001:00003D73   340 0001:00003D77   341 0001:00003D86
+   342 0001:00003D8C   344 0001:00003D9B   346 0001:00003DA8   348 0001:00003DE8
+   349 0001:00003E03   352 0001:00003E10   354 0001:00003E27   355 0001:00003E42
+   358 0001:00003E4F   360 0001:00003E60   361 0001:00003E6B   362 0001:00003E6F
+   365 0001:00003EA1   366 0001:00003EAE   367 0001:00003EB9   369 0001:00003EC7
+   373 0001:00003EDE   374 0001:00003EFE   376 0001:00003F2B   377 0001:00003F4B
+   379 0001:00003F78   380 0001:00003F8F   383 0001:00003FCC   386 0001:00003FF5
+   389 0001:00004034   393 0001:00004104   395 0001:00004122   396 0001:00004131
+   397 0001:00004140   398 0001:00004173   399 0001:000041A4   400 0001:000041B3
+   401 0001:000041C9   402 0001:00004221   400 0001:00004222   404 0001:00004247
+   407 0001:00004320   409 0001:00004343   411 0001:0000435E   412 0001:0000436C
+   416 0001:000043F4   417 0001:00004409   418 0001:00004417   423 0001:0000446C
+   429 0001:000044D0   431 0001:000044DB   437 0001:000044DC   439 0001:000044E7
+   447 0001:000044E8   449 0001:0000453C   449 0001:00004543
+
+Line numbers for ufrmRelGeralCaracterizacao(..\CADASTRO\ufrmRelGeralCaracterizacao.pas) segment .text
+
+    87 0001:00004B2C    89 0001:00004B49    90 0001:00004B59    91 0001:00004B67
+    94 0001:00004B8A    97 0001:00004B97    98 0001:00004BB0   100 0001:00004BC2
+   101 0001:00004BDD   102 0001:00004BF9   103 0001:00004C1C   104 0001:00004C2B
+   105 0001:00004C37   106 0001:00004C71   114 0001:00004CC4   115 0001:00004CE7
+   116 0001:00004CFA   117 0001:00004D09   118 0001:00004D18   119 0001:00004D27
+   120 0001:00004D36   121 0001:00004D45   122 0001:00004D53   123 0001:00004D60
+   124 0001:00004D6D   125 0001:00004D7A   126 0001:00004D8D   127 0001:00004DA4
+   128 0001:00004DB5   129 0001:00004DCC   130 0001:00004DDD   131 0001:00004DF4
+   132 0001:00004E05   133 0001:00004E18   137 0001:00004E2F   138 0001:00004E3C
+   139 0001:00004E61   140 0001:00004E6E   141 0001:00004E7B   142 0001:00004E88
+   143 0001:00004E95   144 0001:00004EA2   145 0001:00004EAF   146 0001:00004EBC
+   148 0001:00004F01   149 0001:00004F50   150 0001:00004F5D   151 0001:00004F82
+   152 0001:00004FAF   153 0001:00004FF2   154 0001:00004FFF   155 0001:0000500C
+   156 0001:00005019   157 0001:00005026   158 0001:00005039   161 0001:0000504C
+   162 0001:0000505A   163 0001:0000509E   164 0001:000050AC   165 0001:000050C4
+   166 0001:000050D0   168 0001:000050E7   171 0001:000050F7   172 0001:0000510F
+   169 0001:0000511D   175 0001:0000512F   176 0001:00005142   177 0001:000051C0
+   178 0001:000051CE   180 0001:00005211   181 0001:00005219   182 0001:00005221
+   183 0001:00005229   184 0001:00005231   186 0001:0000523F   188 0001:00005291
+   190 0001:000052AC   191 0001:000052B9   192 0001:000052D7   193 0001:000052E4
+   188 0001:000052E5   194 0001:000052E8   195 0001:000052F5   196 0001:00005311
+   199 0001:0000531E   204 0001:0000534B   206 0001:0000539D   208 0001:000053B8
+   210 0001:000053DD   211 0001:000053EA   212 0001:00005416   214 0001:00005423
+   215 0001:00005430   216 0001:0000548D   218 0001:0000549A   219 0001:000054A7
+   220 0001:000054EF   225 0001:00005501   227 0001:00005520   230 0001:00005539
+   231 0001:00005546   232 0001:00005592   237 0001:000055A4   238 0001:000055B1
+   239 0001:0000560E   241 0001:0000561B   243 0001:00005640   225 0001:00005641
+   244 0001:00005648   245 0001:00005655   246 0001:00005671   247 0001:0000567E
+   249 0001:00005686   202 0001:00005694   253 0001:000056AA   255 0001:000056FC
+   256 0001:00005704   258 0001:0000570C   260 0001:0000572B   262 0001:00005744
+   267 0001:00005753   268 0001:00005760   269 0001:000057AB   276 0001:000057B8
+   258 0001:000057B9   278 0001:000057C0   279 0001:000057CD   280 0001:000057E9
+   288 0001:000057FB   289 0001:00005837   290 0001:00005873   293 0001:000058AF
+   294 0001:000058C2   295 0001:000058D0   296 0001:000058DD   297 0001:00005908
+   298 0001:00005924   299 0001:00005931   300 0001:0000593E   302 0001:00005951
+   304 0001:0000596A   305 0001:000059A6   306 0001:000059B9   307 0001:000059BE
+   308 0001:000059D2   310 0001:00005A0A   311 0001:00005A1E   312 0001:00005A32
+   313 0001:00005A46   314 0001:00005A56   315 0001:00005A66   316 0001:00005A7D
+   317 0001:00005A8B   318 0001:00005A9F   319 0001:00005AB3   320 0001:00005AC0
+   321 0001:00005ACB   322 0001:00005AF6   324 0001:00005B03   159 0001:00005B11
+   326 0001:00005B27   327 0001:00005B34   329 0001:00005B4F   330 0001:00005B62
+   331 0001:00005B79   332 0001:00005B87   333 0001:00005B8F   334 0001:00005B97
+   335 0001:00005B9F   336 0001:00005BA7   338 0001:00005BB7   339 0001:00005CC3
+   342 0001:00006334   344 0001:0000634C   345 0001:00006363   346 0001:00006371
+   348 0001:00006380   349 0001:000063BB   350 0001:000063F6   352 0001:00006403
+   353 0001:00006436   359 0001:00006490   360 0001:0000649E   362 0001:000064A8
+   363 0001:000064B2   369 0001:000064B4   371 0001:000064C0   372 0001:000064CF
+   373 0001:000064DD   374 0001:000064EA   375 0001:000064F9   376 0001:00006507
+   377 0001:00006512   378 0001:0000651C   380 0001:0000652D   383 0001:0000654A
+   384 0001:00006552   386 0001:00006567   390 0001:0000656C   392 0001:00006591
+   393 0001:000065AD   394 0001:000065BE   396 0001:000065D6   397 0001:000065E4
+   398 0001:000065F2   399 0001:00006609   400 0001:0000661F   401 0001:0000662E
+   402 0001:00006637   403 0001:00006646   404 0001:0000664F   405 0001:00006655
+   407 0001:0000666A   409 0001:00006692   411 0001:000066A4   412 0001:000066D4
+   414 0001:00006704   415 0001:00006716   416 0001:00006742   420 0001:000067B0
+   422 0001:000067D5   423 0001:000067F1   424 0001:00006802   425 0001:00006815
+   426 0001:00006823   427 0001:00006831   428 0001:00006848   429 0001:0000685E
+   430 0001:0000686D   431 0001:00006876   432 0001:00006885   433 0001:0000688E
+   434 0001:00006894   436 0001:000068A9   438 0001:000068D1   440 0001:000068E3
+   441 0001:00006913   442 0001:00006943   443 0001:00006951   445 0001:0000695F
+   446 0001:00006971   447 0001:0000699D   451 0001:00006A14   453 0001:00006A3D
+   454 0001:00006A59   455 0001:00006A6A   456 0001:00006A78   458 0001:00006A8F
+   459 0001:00006ABB   461 0001:00006AC9   462 0001:00006AE0   463 0001:00006AF6
+   464 0001:00006B05   465 0001:00006B0E   466 0001:00006B1D   467 0001:00006B26
+   468 0001:00006B2C   470 0001:00006B41   472 0001:00006B69   474 0001:00006B7B
+   475 0001:00006BAB   477 0001:00006BDB   478 0001:00006BED   479 0001:00006C19
+   482 0001:00006C90   484 0001:00006CB3   485 0001:00006CCA   486 0001:00006CDD
+   488 0001:00006CF6   489 0001:00006D04   493 0001:00006D8C   497 0001:00006DE1
+   500 0001:00006E20   502 0001:00006E43   503 0001:00006E5A   504 0001:00006E6D
+   506 0001:00006E86   507 0001:00006E94   511 0001:00006F1C   514 0001:00006F2F
+   515 0001:00006F3D   518 0001:00006F8D   521 0001:00006FD8   523 0001:00006FFC
+   524 0001:00007013   525 0001:00007026   527 0001:0000703F   529 0001:0000705A
+   530 0001:00007068   534 0001:000070F0   540 0001:00007105   541 0001:00007113
+   542 0001:00007121   546 0001:00007178   551 0001:000071F4   627 0001:0000721A
+   631 0001:0000721C   633 0001:0000723A   634 0001:00007249   635 0001:00007258
+   636 0001:0000728B   637 0001:000072BC   638 0001:000072CB   639 0001:000072E1
+   640 0001:00007339   638 0001:0000733A   642 0001:0000735F   645 0001:00007438
+   647 0001:0000745B   649 0001:00007476   650 0001:00007484   654 0001:0000750C
+   655 0001:00007521   656 0001:0000752F   661 0001:00007584   664 0001:000075E8
+   666 0001:0000760B   668 0001:00007626   669 0001:00007634   673 0001:000076BC
+   674 0001:000076D1   675 0001:000076DF   680 0001:00007734   683 0001:000077A8
+   685 0001:000077CB   687 0001:000077E6   688 0001:000077F4   692 0001:0000787C
+   693 0001:00007891   694 0001:0000789F   699 0001:000078F4   701 0001:000079B8
+   701 0001:000079BF
+
+Line numbers for ufrmRelGeralNotificacao(..\CADASTRO\ufrmRelGeralNotificacao.pas) segment .text
+
+    77 0001:00007EBC    78 0001:00007EE1    80 0001:00007EFA    81 0001:00007F0F
+    83 0001:00007F14    85 0001:00007F2D    86 0001:00007F42    89 0001:00007F47
+    91 0001:00007F6F    92 0001:00007F84    97 0001:00007F89    98 0001:00007F99
+    99 0001:00007FA7   102 0001:00007FCA   105 0001:00007FD7   106 0001:00007FF0
+   108 0001:00008002   109 0001:0000801D   110 0001:00008039   111 0001:0000805C
+   112 0001:0000806B   113 0001:00008077   114 0001:000080B1   121 0001:00008174
+   122 0001:00008196   123 0001:000081A9   124 0001:000081B8   125 0001:000081C7
+   126 0001:000081D6   127 0001:000081E5   128 0001:000081F3   129 0001:00008200
+   130 0001:0000820D   131 0001:0000821A   132 0001:0000822D   133 0001:00008244
+   134 0001:00008255   135 0001:0000826C   136 0001:0000827D   137 0001:00008294
+   138 0001:000082A5   139 0001:000082B8   140 0001:000082CF   141 0001:000082DD
+   142 0001:000082F9   143 0001:00008307   144 0001:00008314   145 0001:00008339
+   146 0001:00008346   147 0001:00008353   148 0001:00008360   149 0001:0000836D
+   150 0001:0000837A   151 0001:00008387   152 0001:00008394   154 0001:000083D9
+   155 0001:00008428   156 0001:00008435   157 0001:0000845A   158 0001:00008487
+   159 0001:000084C4   160 0001:000084D1   161 0001:000084DE   162 0001:000084EB
+   163 0001:000084F8   164 0001:0000850B   167 0001:0000851E   168 0001:0000852C
+   169 0001:00008570   171 0001:0000857E   172 0001:00008586   175 0001:00008596
+   176 0001:000085AE   173 0001:000085BC   178 0001:000085CE   179 0001:000085E1
+   180 0001:0000865F   181 0001:000086A2   182 0001:000086AA   183 0001:000086B2
+   184 0001:000086BA   187 0001:000086CD   188 0001:000086EB   189 0001:000086F8
+   190 0001:00008724   192 0001:00008731   193 0001:0000873E   194 0001:0000879B
+   196 0001:000087A8   197 0001:000087B5   198 0001:000087FD   200 0001:0000880A
+   185 0001:00008818   202 0001:0000882E   203 0001:00008841   204 0001:0000884F
+   205 0001:0000885C   206 0001:00008887   207 0001:000088C3   208 0001:000088FF
+   209 0001:0000893B   210 0001:00008948   211 0001:00008955   213 0001:00008968
+   215 0001:00008981   216 0001:000089BD   217 0001:000089D0   218 0001:000089D5
+   219 0001:000089E9   221 0001:00008A21   222 0001:00008A35   223 0001:00008A49
+   224 0001:00008A5D   225 0001:00008A6D   226 0001:00008A7D   227 0001:00008A94
+   228 0001:00008AA2   229 0001:00008AB6   230 0001:00008ACA   231 0001:00008AD7
+   232 0001:00008AE2   233 0001:00008B0D   235 0001:00008B1A   165 0001:00008B28
+   237 0001:00008B3E   238 0001:00008B4B   240 0001:00008B66   241 0001:00008B79
+   242 0001:00008B90   243 0001:00008B9E   244 0001:00008BA6   245 0001:00008BAE
+   246 0001:00008BB6   248 0001:00008BC6   249 0001:00008C54   252 0001:00009234
+   254 0001:0000924C   255 0001:00009263   256 0001:00009271   258 0001:00009280
+   259 0001:000092BB   260 0001:000092F6   262 0001:00009303   263 0001:00009336
+   269 0001:00009390   270 0001:0000939E   272 0001:000093A8   273 0001:000093B2
+   279 0001:000093B4   281 0001:000093C0   282 0001:000093CF   283 0001:000093DD
+   284 0001:000093EA   285 0001:000093F9   286 0001:00009407   287 0001:00009412
+   288 0001:0000941C   290 0001:0000942D   293 0001:0000944A   294 0001:00009452
+   296 0001:00009467   300 0001:0000946C   302 0001:00009491   303 0001:000094AD
+   304 0001:000094BE   306 0001:000094D6   307 0001:000094E4   308 0001:000094F2
+   309 0001:00009509   310 0001:0000951F   311 0001:0000952E   312 0001:00009537
+   313 0001:00009546   314 0001:0000954F   315 0001:00009555   317 0001:0000956A
+   319 0001:00009592   321 0001:000095A4   322 0001:000095D4   324 0001:00009604
+   325 0001:00009616   326 0001:00009642   330 0001:000096B0   332 0001:000096D5
+   333 0001:000096F1   334 0001:00009702   335 0001:00009715   336 0001:00009723
+   337 0001:00009731   338 0001:00009748   339 0001:0000975E   340 0001:0000976D
+   341 0001:00009776   342 0001:00009785   343 0001:0000978E   344 0001:00009794
+   346 0001:000097A9   348 0001:000097D1   350 0001:000097E3   351 0001:00009813
+   352 0001:00009843   353 0001:00009851   355 0001:0000985F   356 0001:00009871
+   357 0001:0000989D   361 0001:00009914   363 0001:0000993D   364 0001:00009959
+   365 0001:0000996A   366 0001:00009978   368 0001:0000998F   369 0001:000099BB
+   371 0001:000099C9   372 0001:000099E0   373 0001:000099F6   374 0001:00009A05
+   375 0001:00009A0E   376 0001:00009A1D   377 0001:00009A26   378 0001:00009A2C
+   380 0001:00009A41   382 0001:00009A69   384 0001:00009A7B   385 0001:00009AAB
+   387 0001:00009ADB   388 0001:00009AED   389 0001:00009B19   392 0001:00009B90
+   394 0001:00009BB3   395 0001:00009BCA   396 0001:00009BDD   398 0001:00009BF6
+   399 0001:00009C04   403 0001:00009C8C   407 0001:00009CE1   410 0001:00009D20
+   412 0001:00009D43   413 0001:00009D5A   414 0001:00009D6D   416 0001:00009D86
+   417 0001:00009D94   421 0001:00009E1C   424 0001:00009E2F   425 0001:00009E3D
+   428 0001:00009E8D   431 0001:00009ED8   433 0001:00009EFC   434 0001:00009F13
+   435 0001:00009F26   437 0001:00009F3F   439 0001:00009F5A   440 0001:00009F68
+   444 0001:00009FF0   450 0001:0000A005   451 0001:0000A013   452 0001:0000A021
+   456 0001:0000A078   461 0001:0000A0F4   463 0001:0000A117   464 0001:0000A126
+   465 0001:0000A13D   466 0001:0000A14B   467 0001:0000A159   468 0001:0000A16D
+   469 0001:0000A17F   470 0001:0000A183   471 0001:0000A192   472 0001:0000A198
+   474 0001:0000A1A7   476 0001:0000A1B4   478 0001:0000A1F4   479 0001:0000A20F
+   482 0001:0000A21C   484 0001:0000A233   485 0001:0000A24E   488 0001:0000A25B
+   490 0001:0000A272   491 0001:0000A28D   494 0001:0000A29A   496 0001:0000A2B1
+   497 0001:0000A2CC   500 0001:0000A2D9   502 0001:0000A2EA   503 0001:0000A2F5
+   504 0001:0000A2F9   507 0001:0000A32B   508 0001:0000A338   509 0001:0000A343
+   511 0001:0000A351   515 0001:0000A368   516 0001:0000A388   518 0001:0000A3B5
+   519 0001:0000A3D5   521 0001:0000A402   522 0001:0000A419   524 0001:0000A447
+   525 0001:0000A45E   527 0001:0000A48C   528 0001:0000A4A3   531 0001:0000A4E0
+   534 0001:0000A509   537 0001:0000A548   541 0001:0000A6A0   543 0001:0000A6BE
+   544 0001:0000A6CD   545 0001:0000A6DC   546 0001:0000A70F   547 0001:0000A740
+   548 0001:0000A74F   549 0001:0000A765   550 0001:0000A7BD   548 0001:0000A7BE
+   552 0001:0000A7E3   555 0001:0000A8BC   557 0001:0000A8DF   559 0001:0000A8FA
+   560 0001:0000A908   564 0001:0000A990   565 0001:0000A9A5   566 0001:0000A9B3
+   571 0001:0000AA08   574 0001:0000AA6C   576 0001:0000AA8F   578 0001:0000AAAA
+   579 0001:0000AAB8   583 0001:0000AB40   584 0001:0000AB55   585 0001:0000AB63
+   590 0001:0000ABB8   593 0001:0000AC2C   595 0001:0000AC4F   597 0001:0000AC6A
+   598 0001:0000AC78   602 0001:0000AD00   603 0001:0000AD15   604 0001:0000AD23
+   609 0001:0000AD78   615 0001:0000ADEC   617 0001:0000ADF7   623 0001:0000ADF8
+   625 0001:0000AE03   633 0001:0000AE04   635 0001:0000AE58   635 0001:0000AE5F
+
+Line numbers for ufrmRelGeralPrograma(..\CADASTRO\ufrmRelGeralPrograma.pas) segment .text
+
+   120 0001:0000B554   121 0001:0000B577   123 0001:0000B594   124 0001:0000B5A9
+   126 0001:0000B5AE   128 0001:0000B5CB   129 0001:0000B5E0   131 0001:0000B5E5
+   132 0001:0000B5EB   133 0001:0000B619   134 0001:0000B647   136 0001:0000B663
+   137 0001:0000B691   138 0001:0000B6BF   139 0001:0000B6FD   143 0001:0000B778
+   144 0001:0000B796   145 0001:0000B7A6   146 0001:0000B7CD   147 0001:0000B7F4
+   149 0001:0000B7F9   150 0001:0000B832   151 0001:0000B86B   147 0001:0000B86C
+   152 0001:0000B893   156 0001:0000B8AC   157 0001:0000B8C9   160 0001:0000B8D1
+   161 0001:0000B8E1   162 0001:0000B8EF   163 0001:0000B914   164 0001:0000B924
+   167 0001:0000B947   170 0001:0000B954   171 0001:0000B96D   173 0001:0000B97F
+   174 0001:0000B99A   175 0001:0000B9B6   176 0001:0000B9D9   177 0001:0000B9E8
+   178 0001:0000B9F4   179 0001:0000BA2E   201 0001:0000BA78   202 0001:0000BAC1
+   203 0001:0000BAC8   204 0001:0000BAD5   206 0001:0000BAE1   207 0001:0000BAE4
+   208 0001:0000BAE6   203 0001:0000BAEA   209 0001:0000BB1F   212 0001:0000BB2C
+   213 0001:0000BB4F   214 0001:0000BB59   220 0001:0000BB9F   221 0001:0000BBEB
+   222 0001:0000BBFC   223 0001:0000BC0D   224 0001:0000BC1E   225 0001:0000BC2F
+   226 0001:0000BC40   227 0001:0000BC51   228 0001:0000BC62   229 0001:0000BC73
+   230 0001:0000BC84   231 0001:0000BC95   232 0001:0000BCA6   234 0001:0000BCB7
+   244 0001:0000BCC3   245 0001:0000BCD6   246 0001:0000BCE7   247 0001:0000BCF8
+   249 0001:0000BD09   253 0001:0000BD12   254 0001:0000BD22   255 0001:0000BD30
+   257 0001:0000BD3E   261 0001:0000BD47   262 0001:0000BD5A   263 0001:0000BD68
+   264 0001:0000BD76   266 0001:0000BD84   269 0001:0000BDA8   273 0001:0000BF18
+   274 0001:0000BF37   275 0001:0000BF43   276 0001:0000BF4F   277 0001:0000BF6B
+   278 0001:0000BF75   279 0001:0000BF82   280 0001:0000BF8E   281 0001:0000BF9D
+   282 0001:0000BFCC   369 0001:0000C070   370 0001:0000C09B   372 0001:0000C0B1
+   374 0001:0000C0C7   375 0001:0000C0DB   376 0001:0000C0EF   378 0001:0000C0FE
+   379 0001:0000C10F   380 0001:0000C121   381 0001:0000C135   382 0001:0000C14C
+   383 0001:0000C165   384 0001:0000C183   385 0001:0000C194   386 0001:0000C1A6
+   388 0001:0000C1BA   372 0001:0000C1BB   389 0001:0000C1C4   370 0001:0000C1C5
+   390 0001:0000C1F1   394 0001:0000C1F8   395 0001:0000C1FC   397 0001:0000C201
+   398 0001:0000C202   399 0001:0000C216   400 0001:0000C221   401 0001:0000C223
+   403 0001:0000C228   404 0001:0000C26D   405 0001:0000C27C   406 0001:0000C28B
+   407 0001:0000C299   408 0001:0000C29F   410 0001:0000C2C3   411 0001:0000C2D1
+   412 0001:0000C2DD   413 0001:0000C2F7   414 0001:0000C303   416 0001:0000C30E
+   417 0001:0000C314   419 0001:0000C324   421 0001:0000C346   426 0001:0000C369
+   427 0001:0000C36F   429 0001:0000C3CC   431 0001:0000C419   432 0001:0000C41F
+   433 0001:0000C47B   434 0001:0000C483   436 0001:0000C4DD   437 0001:0000C4EE
+   438 0001:0000C532   439 0001:0000C543   442 0001:0000C559   443 0001:0000C567
+   444 0001:0000C575   445 0001:0000C5B3   447 0001:0000C5B9   448 0001:0000C5DB
+   449 0001:0000C5E6   452 0001:0000C61B   453 0001:0000C659   455 0001:0000C663
+   456 0001:0000C685   457 0001:0000C6A7   458 0001:0000C6B2   461 0001:0000C6E7
+   463 0001:0000C6EF   464 0001:0000C723   466 0001:0000C74E   468 0001:0000C756
+   469 0001:0000C78A   471 0001:0000C7B5   473 0001:0000C7C1   474 0001:0000C7F5
+   475 0001:0000C82A   477 0001:0000C864   479 0001:0000C86C   480 0001:0000C8A0
+   482 0001:0000C8DA   485 0001:0000C8F1   486 0001:0000C925   490 0001:0000C95C
+   491 0001:0000C990   494 0001:0000C9C5   499 0001:0000C9DD   500 0001:0000CA05
+   503 0001:0000CA57   505 0001:0000CA5D   508 0001:0000CA98   510 0001:0000CAA4
+   511 0001:0000CACB   514 0001:0000CB32   517 0001:0000CB59   518 0001:0000CB7C
+   523 0001:0000CBF9   524 0001:0000CBFB   528 0001:0000CC62   440 0001:0000CC7B
+   531 0001:0000CC94   533 0001:0000CCA5   534 0001:0000CCB2   535 0001:0000CCBF
+   536 0001:0000CCCC   538 0001:0000CCF7   539 0001:0000CD04   540 0001:0000CD11
+   541 0001:0000CD32   543 0001:0000CD3F   544 0001:0000CD6A   545 0001:0000CD77
+   547 0001:0000CD84   549 0001:0000CD89   551 0001:0000CD8F   552 0001:0000CD9C
+   555 0001:0000CDA8   557 0001:0000CDAE   558 0001:0000CDBB   561 0001:0000CDC7
+   563 0001:0000CDCD   564 0001:0000CDDA   567 0001:0000CDE6   569 0001:0000CDEC
+   570 0001:0000CDF9   573 0001:0000CE05   575 0001:0000CE0B   576 0001:0000CE18
+   579 0001:0000CE24   581 0001:0000CE2A   582 0001:0000CE37   585 0001:0000CE43
+   587 0001:0000CE49   588 0001:0000CE56   591 0001:0000CE62   593 0001:0000CE68
+   594 0001:0000CE75   597 0001:0000CE7E   599 0001:0000CE84   600 0001:0000CE91
+   603 0001:0000CE9A   605 0001:0000CEA0   606 0001:0000CEAD   610 0001:0000CEB6
+   612 0001:0000CEC3   613 0001:0000CEE3   614 0001:0000CEE9   617 0001:0000CEEC
+   618 0001:0000CF2F   619 0001:0000CF3C   620 0001:0000CF4A   622 0001:0000CF61
+   623 0001:0000CF6E   625 0001:0000CF7B   626 0001:0000CF91   629 0001:0000CFEC
+   630 0001:0000D03B   620 0001:0000D03E   631 0001:0000D047   635 0001:0000D063
+   637 0001:0000D068   638 0001:0000D075   640 0001:0000D07B   644 0001:0000D08A
+   646 0001:0000D090   650 0001:0000D09F   652 0001:0000D0AA   658 0001:0000D0B9
+   663 0001:0000D0C6   664 0001:0000D0D8   668 0001:0000D0E5   669 0001:0000D0EB
+   673 0001:0000D0F8   674 0001:0000D0FE   678 0001:0000D10B   679 0001:0000D111
+   683 0001:0000D11E   684 0001:0000D124   688 0001:0000D131   689 0001:0000D137
+   693 0001:0000D144   694 0001:0000D14A   698 0001:0000D157   699 0001:0000D15D
+   703 0001:0000D16A   704 0001:0000D170   708 0001:0000D17D   709 0001:0000D189
+   708 0001:0000D194   710 0001:0000D199   711 0001:0000D1A4   713 0001:0000D1B1
+   714 0001:0000D1BF   715 0001:0000D1C7   716 0001:0000D1CF   717 0001:0000D1D7
+   718 0001:0000D1F9   720 0001:0000D214   721 0001:0000D221   722 0001:0000D25C
+   723 0001:0000D264   724 0001:0000D26C   725 0001:0000D274   727 0001:0000D28C
+   729 0001:0000D295   730 0001:0000D2A2   731 0001:0000D2F6   732 0001:0000D34B
+   733 0001:0000D358   735 0001:0000D3AD   737 0001:0000D3B9   738 0001:0000D3C0
+   742 0001:0000D3CD   743 0001:0000D3E9   744 0001:0000D406   745 0001:0000D420
+   747 0001:0000D43D   750 0001:0000D452   751 0001:0000D46F   757 0001:0000D48E
+   758 0001:0000D49B   759 0001:0000D4A8   760 0001:0000D4B5   761 0001:0000D4BC
+   763 0001:0000D4C4   725 0001:0000D4C8   765 0001:0000D4D1   766 0001:0000D4DE
+   767 0001:0000D520   768 0001:0000D562   770 0001:0000D56F   775 0001:0000D584
+   776 0001:0000D596   779 0001:0000D5A8   782 0001:0000D5BF   784 0001:0000D5CD
+   786 0001:0000D5DF   788 0001:0000D5E7   790 0001:0000D5F3   792 0001:0000D5FB
+   793 0001:0000D609   796 0001:0000D619   799 0001:0000D65B   800 0001:0000D668
+   801 0001:0000D6AC   802 0001:0000D6CB   803 0001:0000D6F8   804 0001:0000D712
+   805 0001:0000D720   807 0001:0000D731   808 0001:0000D73E   718 0001:0000D741
+   810 0001:0000D765   811 0001:0000D768   814 0001:0000D796   815 0001:0000D7A3
+   817 0001:0000D7B9   818 0001:0000D7C2   820 0001:0000D7CC   821 0001:0000D7D4
+   823 0001:0000D7DE   824 0001:0000D7EB   825 0001:0000D82C   826 0001:0000D86E
+   831 0001:0000D886   832 0001:0000D898   834 0001:0000D8BD   836 0001:0000D8C5
+   838 0001:0000D8D0   840 0001:0000D8D8   841 0001:0000D8E5   843 0001:0000D907
+   845 0001:0000D91E   846 0001:0000D92B   848 0001:0000D94B   849 0001:0000D958
+   850 0001:0000D99A   815 0001:0000D99D   853 0001:0000D9A6   854 0001:0000D9B3
+   855 0001:0000D9F5   856 0001:0000DA37   857 0001:0000DA44   862 0001:0000DA5C
+   863 0001:0000DA6A   865 0001:0000DA7C   867 0001:0000DA84   869 0001:0000DA90
+   871 0001:0000DA98   872 0001:0000DAA6   874 0001:0000DAB6   875 0001:0000DAF8
+   878 0001:0000DB05   902 0001:0000DB11   903 0001:0000DB1E   904 0001:0000DB2B
+   906 0001:0000DB38   908 0001:0000DB50   909 0001:0000DB58   910 0001:0000DB60
+   911 0001:0000DB78   912 0001:0000DB90   913 0001:0000DBA8   915 0001:0000DC74
+   933 0001:0000EC98   934 0001:0000ECBF   936 0001:0000ECDA   938 0001:0000ECF5
+   939 0001:0000ED0E   940 0001:0000ED27   942 0001:0000ED36   943 0001:0000ED4C
+   944 0001:0000ED63   945 0001:0000ED7C   946 0001:0000ED9D   947 0001:0000EDC0
+   948 0001:0000EDE8   949 0001:0000EDFE   950 0001:0000EE15   952 0001:0000EE2E
+   936 0001:0000EE2F   953 0001:0000EE38   934 0001:0000EE39   954 0001:0000EE65
+   956 0001:0000EE6C   957 0001:0000EECC   958 0001:0000EEDB   959 0001:0000EEEA
+   960 0001:0000EEF8   961 0001:0000EF06   962 0001:0000EF0C   963 0001:0000EF30
+   965 0001:0000EF3E   966 0001:0000EF4A   967 0001:0000EF64   968 0001:0000EF70
+   970 0001:0000EF7B   971 0001:0000EF81   973 0001:0000EF91   975 0001:0000EFB3
+   976 0001:0000EFC2   977 0001:0000EFD1   978 0001:0000EFE0   981 0001:0000EFED
+   982 0001:0000EFF4   983 0001:0000F004   985 0001:0000F00B   986 0001:0000F01C
+   987 0001:0000F022   989 0001:0000F07B   990 0001:0000F0BF   991 0001:0000F0D0
+   994 0001:0000F0E6   995 0001:0000F0F4   996 0001:0000F102   997 0001:0000F13F
+   999 0001:0000F144  1000 0001:0000F166  1001 0001:0000F170  1004 0001:0000F1A2
+  1005 0001:0000F1DF  1007 0001:0000F1E8  1008 0001:0000F20A  1009 0001:0000F22C
+  1010 0001:0000F236  1013 0001:0000F268  1014 0001:0000F293  1019 0001:0000F2B5
+  1021 0001:0000F2C7   992 0001:0000F2E0  1024 0001:0000F2F9  1026 0001:0000F30A
+  1027 0001:0000F31A  1028 0001:0000F32A  1029 0001:0000F33A  1031 0001:0000F368
+  1032 0001:0000F378  1033 0001:0000F388  1034 0001:0000F3AC  1035 0001:0000F3BC
+  1036 0001:0000F3EA  1037 0001:0000F3FA  1038 0001:0000F40A  1039 0001:0000F417
+  1040 0001:0000F45D  1041 0001:0000F4A3  1042 0001:0000F4E9  1043 0001:0000F526
+  1045 0001:0000F563  1046 0001:0000F571  1048 0001:0000F581  1051 0001:0000F58F
+  1052 0001:0000F5AA  1054 0001:0000F5BB  1055 0001:0000F5C8  1057 0001:0000F5D8
+  1058 0001:0000F5EE  1059 0001:0000F647  1060 0001:0000F652  1061 0001:0000F65F
+  1062 0001:0000F6B8  1066 0001:0000F6D5  1067 0001:0000F721  1068 0001:0000F72C
+  1069 0001:0000F739  1070 0001:0000F785  1072 0001:0000F797  1052 0001:0000F798
+  1074 0001:0000F7A1  1078 0001:0000F7BD  1080 0001:0000F7C2  1081 0001:0000F7DE
+  1082 0001:0000F7FA  1083 0001:0000F816  1084 0001:0000F829  1086 0001:0000F83C
+  1087 0001:0000F856  1088 0001:0000F863  1089 0001:0000F86E  1088 0001:0000F879
+  1090 0001:0000F87E  1091 0001:0000F889  1093 0001:0000F896  1095 0001:0000F8A4
+  1096 0001:0000F8C4  1099 0001:0000F8E6  1100 0001:0000F8EE  1101 0001:0000F8F6
+  1104 0001:0000F90C  1105 0001:0000F921  1107 0001:0000F927  1109 0001:0000F940
+  1110 0001:0000F957  1104 0001:0000F95D  1111 0001:0000F962  1112 0001:0000F972
+  1113 0001:0000F97C  1114 0001:0000F984  1101 0001:0000F985  1116 0001:0000F98A
+  1118 0001:0000F9A0  1119 0001:0000F9AD  1121 0001:0000F9E5  1123 0001:0000F9FB
+  1125 0001:0000FA05  1126 0001:0000FA12  1127 0001:0000FA63  1129 0001:0000FA70
+  1130 0001:0000FA81  1131 0001:0000FAAD  1135 0001:0000FAFE  1136 0001:0000FB0B
+  1138 0001:0000FB18  1121 0001:0000FB1B  1140 0001:0000FB24  1141 0001:0000FB31
+  1142 0001:0000FB76  1143 0001:0000FB83  1144 0001:0000FB96  1147 0001:0000FBD8
+  1148 0001:0000FBE5  1149 0001:0000FC25  1150 0001:0000FC44  1151 0001:0000FC71
+  1152 0001:0000FC8B  1153 0001:0000FC99  1155 0001:0000FCAA  1156 0001:0000FCB7
+  1116 0001:0000FCB8  1160 0001:0000FCD0  1163 0001:0000FCD5  1164 0001:0000FCE2
+  1166 0001:0000FCFB  1167 0001:0000FD08  1168 0001:0000FD49  1169 0001:0000FD56
+  1170 0001:0000FD5E  1171 0001:0000FD6C  1172 0001:0000FD7B  1173 0001:0000FDBD
+  1174 0001:0000FDD2  1175 0001:0000FDDF  1176 0001:0000FE20  1177 0001:0000FE4D
+  1178 0001:0000FE5C  1164 0001:0000FE62  1181 0001:0000FE6B  1182 0001:0000FE78
+  1183 0001:0000FEBA  1184 0001:0000FEC7  1185 0001:0000FECF  1186 0001:0000FEDD
+  1187 0001:0000FEED  1190 0001:0000FF2F  1193 0001:0000FF38  1194 0001:0000FF40
+  1195 0001:0000FF4D  1196 0001:0000FF5A  1197 0001:0000FF6C  1196 0001:0000FF80
+  1198 0001:0000FF85  1200 0001:0000FF92  1201 0001:0000FF9F  1202 0001:0000FFAC
+  1203 0001:0000FFBE  1202 0001:0000FFD1  1204 0001:0000FFD6  1217 0001:0000FFE3
+  1218 0001:0000FFEB  1219 0001:0000FFF8  1220 0001:00010005  1221 0001:00010017
+  1220 0001:0001002A  1222 0001:0001002F  1224 0001:0001003C  1225 0001:00010049
+  1226 0001:00010056  1227 0001:00010068  1226 0001:0001007C  1228 0001:00010081
+  1241 0001:0001008E  1242 0001:000100B0  1244 0001:000100C1  1245 0001:000100C9
+  1246 0001:000100D6  1247 0001:000100E3  1248 0001:000100F5  1247 0001:00010109
+  1249 0001:0001010E  1251 0001:0001011B  1252 0001:00010128  1253 0001:00010135
+  1254 0001:00010147  1253 0001:0001015A  1255 0001:0001015F  1267 0001:0001016C
+  1268 0001:00010179  1269 0001:00010186  1271 0001:00010193  1273 0001:000101B9
+  1274 0001:000101BB  1277 0001:000101F3  1278 0001:000101FB  1279 0001:00010203
+  1280 0001:0001021B  1281 0001:00010233  1282 0001:0001024B  1283 0001:00010263
+  1284 0001:0001027B  1285 0001:00010293  1287 0001:0001036D  1301 0001:00010C5C
+  1302 0001:00010CA9  1303 0001:00010CB8  1304 0001:00010CC4  1305 0001:00010CD2
+  1306 0001:00010CE0  1307 0001:00010CE6  1308 0001:00010D0A  1310 0001:00010D18
+  1311 0001:00010D24  1312 0001:00010D3E  1313 0001:00010D4A  1315 0001:00010D55
+  1316 0001:00010D5B  1319 0001:00010D6B  1321 0001:00010D8D  1323 0001:00010D94
+  1324 0001:00010DA5  1325 0001:00010DE9  1326 0001:00010DFA  1329 0001:00010E10
+  1330 0001:00010E1E  1331 0001:00010E2C  1332 0001:00010E6A  1334 0001:00010E70
+  1335 0001:00010E92  1336 0001:00010E9D  1339 0001:00010ED2  1340 0001:00010F10
+  1342 0001:00010F1A  1343 0001:00010F3C  1344 0001:00010F5E  1345 0001:00010F80
+  1346 0001:00010F8B  1349 0001:00010FC0  1350 0001:00010FF4  1351 0001:0001101A
+  1352 0001:00011040  1354 0001:00011066  1355 0001:0001108B  1356 0001:000110A4
+  1357 0001:000110BD  1359 0001:000110D6  1360 0001:000110EE  1361 0001:00011110
+  1362 0001:00011132  1365 0001:0001116F  1366 0001:00011171  1370 0001:000111E0
+  1327 0001:000111F9  1373 0001:00011212  1375 0001:00011223  1376 0001:00011233
+  1377 0001:00011243  1378 0001:00011253  1380 0001:00011281  1381 0001:00011291
+  1382 0001:000112A1  1383 0001:000112C5  1384 0001:000112D5  1385 0001:00011303
+  1386 0001:00011313  1387 0001:00011323  1388 0001:00011330  1389 0001:0001133E
+  1391 0001:0001134E  1393 0001:0001135C  1395 0001:0001136D  1396 0001:0001137A
+  1398 0001:00011386  1399 0001:0001139C  1400 0001:000113F5  1404 0001:00011402
+  1405 0001:0001144E  1407 0001:00011459  1393 0001:0001145A  1409 0001:00011463
+  1411 0001:0001148B  1412 0001:0001148D  1415 0001:000114B8  1419 0001:000114C5
+  1420 0001:000114D2  1421 0001:000114DD  1420 0001:000114E8  1422 0001:000114ED
+  1423 0001:000114F8  1425 0001:00011505  1426 0001:00011513  1428 0001:00011529
+  1429 0001:00011536  1431 0001:0001156E  1433 0001:00011580  1435 0001:00011589
+  1436 0001:00011596  1437 0001:000115EB  1438 0001:00011641  1439 0001:00011697
+  1443 0001:000116F2  1444 0001:000116FF  1445 0001:00011749  1446 0001:00011794
+  1447 0001:000117DF  1449 0001:0001182A  1431 0001:0001182B  1450 0001:00011834
+  1451 0001:00011841  1426 0001:00011842  1453 0001:00011866  1454 0001:00011868
+  1458 0001:00011893  1459 0001:000118A0  1460 0001:000118AD  1462 0001:000118C2
+  1463 0001:000118CB  1464 0001:000118D5  1465 0001:000118DF  1467 0001:000118E9
+  1468 0001:0001192A  1469 0001:0001196C  1470 0001:000119AE  1471 0001:000119F0
+  1460 0001:000119F3  1472 0001:000119FC  1473 0001:00011A3E  1474 0001:00011A80
+  1475 0001:00011AC2  1476 0001:00011B04  1478 0001:00011B11  1479 0001:00011B1E
+  1480 0001:00011B2B  1482 0001:00011B38  1484 0001:00011B5E  1485 0001:00011B60
+  1488 0001:00011B98  1489 0001:00011BA0  1490 0001:00011BB8  1491 0001:00011BD0
+  1492 0001:00011BE8  1494 0001:00011CA1  1498 0001:000122D8  1499 0001:000122DD
+  1500 0001:0001235D  1501 0001:00012367  1502 0001:00012371  1503 0001:0001237B
+  1504 0001:00012385  1506 0001:0001238F  1507 0001:00012399  1508 0001:000123A3
+  1510 0001:000123AD  1511 0001:000123B4  1513 0001:000123BB  1514 0001:000123C2
+  1515 0001:000123C9  1516 0001:000123D0  1517 0001:000123D7  1518 0001:000123DE
+  1519 0001:000123E5  1520 0001:000123EC  1521 0001:000123F3  1522 0001:000123FA
+  1523 0001:00012401  1524 0001:00012408  1525 0001:0001240F  1526 0001:00012416
+  1527 0001:0001241D  1528 0001:00012424  1529 0001:0001242B  1531 0001:00012430
+  1532 0001:00012450  1533 0001:0001245C  1534 0001:00012490  1538 0001:00012494
+  1539 0001:000124B8  1540 0001:000124C7  1541 0001:000124D6  1542 0001:000124E4
+  1543 0001:000124EF  1544 0001:000124F4  1545 0001:000124FC  1546 0001:00012509
+  1547 0001:00012516  1548 0001:00012523  1549 0001:00012530  1550 0001:0001253D
+  1551 0001:0001254A  1552 0001:00012557  1553 0001:00012564  1554 0001:00012571
+  1555 0001:0001257E  1556 0001:0001258B  1557 0001:00012598  1558 0001:000125A5
+  1559 0001:000125B2  1560 0001:000125BF  1561 0001:000125CC  1562 0001:000125D9
+  1563 0001:000125E6  1564 0001:000125F3  1569 0001:00012641  1570 0001:0001264E
+  1571 0001:0001265C  1573 0001:0001266C  1574 0001:00012691  1579 0001:000126AB
+  1582 0001:000126B0  1583 0001:000126BD  1584 0001:000126CB  1586 0001:000126DB
+  1587 0001:00012700  1592 0001:0001271A  1594 0001:0001271F  1595 0001:0001272C
+  1596 0001:0001273A  1598 0001:0001274A  1599 0001:0001276F  1604 0001:00012789
+  1606 0001:0001278E  1607 0001:0001279B  1608 0001:000127A9  1610 0001:000127B9
+  1611 0001:000127DE  1616 0001:000127F8  1618 0001:000127FD  1619 0001:0001280A
+  1620 0001:00012818  1622 0001:00012828  1623 0001:00012850  1628 0001:0001286A
+  1630 0001:0001286F  1631 0001:0001287C  1632 0001:0001288A  1634 0001:0001289A
+  1635 0001:000128C2  1640 0001:000128DC  1642 0001:000128E1  1643 0001:000128EE
+  1644 0001:000128FC  1646 0001:0001290C  1647 0001:00012934  1652 0001:0001294E
+  1654 0001:00012953  1655 0001:00012960  1656 0001:0001296E  1658 0001:0001297E
+  1659 0001:000129A7  1664 0001:000129C1  1666 0001:000129C6  1667 0001:000129D3
+  1668 0001:000129E1  1670 0001:000129F1  1671 0001:00012A13  1676 0001:00012A2D
+  1693 0001:00012A32  1694 0001:00012A3F  1695 0001:00012A4D  1697 0001:00012A5D
+  1698 0001:00012A88  1703 0001:00012AA2  1705 0001:00012AA7  1706 0001:00012AB4
+  1707 0001:00012AC2  1709 0001:00012AD2  1710 0001:00012AF4  1715 0001:00012B0E
+  1717 0001:00012B13  1718 0001:00012B20  1719 0001:00012B2E  1721 0001:00012B3E
+  1722 0001:00012B60  1727 0001:00012B7A  1729 0001:00012B7F  1730 0001:00012B8C
+  1731 0001:00012B9A  1733 0001:00012BAA  1734 0001:00012BCC  1739 0001:00012BE6
+  1741 0001:00012BEB  1742 0001:00012BF8  1743 0001:00012C06  1745 0001:00012C16
+  1746 0001:00012C38  1751 0001:00012C52  1753 0001:00012C57  1754 0001:00012C64
+  1755 0001:00012C72  1757 0001:00012C82  1758 0001:00012CA4  1763 0001:00012CBE
+  1765 0001:00012CC3  1766 0001:00012CD0  1767 0001:00012CDE  1769 0001:00012CEE
+  1770 0001:00012D13  1775 0001:00012D2D  1777 0001:00012D32  1778 0001:00012D3F
+  1779 0001:00012D4D  1781 0001:00012D5D  1782 0001:00012D82  1787 0001:00012D9C
+  1789 0001:00012DA1  1790 0001:00012DAE  1791 0001:00012DBC  1793 0001:00012DCC
+  1794 0001:00012DEE  1799 0001:00012E08  1801 0001:00012E0D  1802 0001:00012E1A
+  1803 0001:00012E28  1805 0001:00012E38  1806 0001:00012E5A  1811 0001:00012E74
+  1813 0001:00012E79  1814 0001:00012E86  1815 0001:00012E94  1817 0001:00012EA4
+  1818 0001:00012EC6  1823 0001:00012EE0  1825 0001:00012EE5  1826 0001:00012EF2
+  1827 0001:00012F00  1829 0001:00012F10  1830 0001:00012F32  1835 0001:00012F4C
+  1837 0001:00012F51  1838 0001:00012F5E  1839 0001:00012F6C  1841 0001:00012F7C
+  1842 0001:00012F9E  1847 0001:00012FB8  1849 0001:00012FBD  1850 0001:00012FCA
+  1851 0001:00012FD8  1853 0001:00012FE8  1854 0001:00013010  1859 0001:0001302A
+  1861 0001:0001302F  1862 0001:0001303C  1863 0001:0001304A  1865 0001:0001305A
+  1866 0001:00013082  1871 0001:0001309C  1897 0001:000130A1  1898 0001:000130AE
+  1899 0001:000130BB  1901 0001:000130C8  1904 0001:000130F7  1905 0001:00013105
+  1906 0001:0001310D  1908 0001:0001314A  1911 0001:0001C84C  1913 0001:0001C864
+  1914 0001:0001C89B  1915 0001:0001C8D2  1916 0001:0001C8DF  1917 0001:0001C8F0
+  1920 0001:0001C8F7  1921 0001:0001C909  1922 0001:0001C92A  1923 0001:0001C95E
+  1930 0001:0001C9B4  1931 0001:0001C9C2  1933 0001:0001C9CC  1934 0001:0001C9D6
+  1940 0001:0001C9D8  1942 0001:0001C9E4  1943 0001:0001C9F3  1944 0001:0001CA01
+  1945 0001:0001CA0E  1946 0001:0001CA1D  1947 0001:0001CA2B  1948 0001:0001CA36
+  1949 0001:0001CA40  1951 0001:0001CA51  1954 0001:0001CA6E  1955 0001:0001CA76
+  1957 0001:0001CA8B  1961 0001:0001CA90  1963 0001:0001CAB5  1964 0001:0001CAD1
+  1965 0001:0001CAE2  1967 0001:0001CAFA  1968 0001:0001CB08  1969 0001:0001CB16
+  1970 0001:0001CB2D  1971 0001:0001CB43  1972 0001:0001CB52  1973 0001:0001CB5B
+  1974 0001:0001CB6A  1975 0001:0001CB73  1976 0001:0001CB79  1978 0001:0001CB8E
+  1980 0001:0001CBB6  1982 0001:0001CBC8  1983 0001:0001CBF8  1985 0001:0001CC28
+  1986 0001:0001CC3A  1987 0001:0001CC66  1991 0001:0001CCD4  1993 0001:0001CCF9
+  1994 0001:0001CD15  1995 0001:0001CD26  1996 0001:0001CD39  1997 0001:0001CD47
+  1998 0001:0001CD55  1999 0001:0001CD6C  2000 0001:0001CD82  2001 0001:0001CD91
+  2002 0001:0001CD9A  2003 0001:0001CDA9  2004 0001:0001CDB2  2005 0001:0001CDB8
+  2007 0001:0001CDCD  2009 0001:0001CDF5  2011 0001:0001CE07  2012 0001:0001CE37
+  2013 0001:0001CE67  2014 0001:0001CE75  2016 0001:0001CE83  2017 0001:0001CE95
+  2018 0001:0001CEC1  2022 0001:0001CF38  2024 0001:0001CF61  2025 0001:0001CF7D
+  2026 0001:0001CF8E  2027 0001:0001CF9C  2029 0001:0001CFB3  2030 0001:0001CFDF
+  2032 0001:0001CFED  2033 0001:0001D004  2034 0001:0001D01A  2035 0001:0001D029
+  2036 0001:0001D032  2037 0001:0001D041  2038 0001:0001D04A  2039 0001:0001D050
+  2041 0001:0001D065  2043 0001:0001D08D  2045 0001:0001D09F  2046 0001:0001D0CF
+  2048 0001:0001D0FF  2049 0001:0001D111  2050 0001:0001D13D  2053 0001:0001D1B4
+  2055 0001:0001D1D7  2056 0001:0001D1EE  2057 0001:0001D201  2059 0001:0001D21A
+  2060 0001:0001D228  2064 0001:0001D2B0  2068 0001:0001D305  2071 0001:0001D344
+  2073 0001:0001D367  2074 0001:0001D37E  2075 0001:0001D391  2077 0001:0001D3AA
+  2078 0001:0001D3B8  2082 0001:0001D440  2085 0001:0001D453  2086 0001:0001D461
+  2089 0001:0001D4B1  2092 0001:0001D4FC  2094 0001:0001D520  2095 0001:0001D537
+  2096 0001:0001D54A  2098 0001:0001D563  2100 0001:0001D57E  2101 0001:0001D58C
+  2105 0001:0001D614  2111 0001:0001D629  2112 0001:0001D637  2113 0001:0001D645
+  2116 0001:0001D69C  2119 0001:0001D718  2121 0001:0001D73B  2123 0001:0001D756
+  2124 0001:0001D764  2128 0001:0001D7EC  2129 0001:0001D801  2130 0001:0001D80F
+  2134 0001:0001D864  2137 0001:0001D8C8  2139 0001:0001D8EB  2141 0001:0001D906
+  2142 0001:0001D914  2146 0001:0001D99C  2147 0001:0001D9B1  2148 0001:0001D9BF
+  2153 0001:0001DA14  2156 0001:0001DA88  2158 0001:0001DAAB  2160 0001:0001DAC6
+  2161 0001:0001DAD4  2165 0001:0001DB5C  2166 0001:0001DB71  2167 0001:0001DB7F
+  2171 0001:0001DBD4  2176 0001:0001DC48  2177 0001:0001DC6B  2179 0001:0001DC7F
+  2180 0001:0001DC9D  2183 0001:0001DCAA  2185 0001:0001DCBE  2186 0001:0001DCE4
+  2189 0001:0001DCF1  2191 0001:0001DD05  2192 0001:0001DD2B  2195 0001:0001DD38
+  2196 0001:0001DD7A  2198 0001:0001DDA5  2206 0001:0001DDDB  2209 0001:0001DE59
+  2213 0001:0001DEDC  2215 0001:0001DF08  2220 0001:0001E04C  2222 0001:0001E07B
+  2223 0001:0001E08A  2224 0001:0001E098  2225 0001:0001E0A0  2260 0001:0001E0A8
+  2261 0001:0001E0C0  2262 0001:0001E0D8  2263 0001:0001E0F0  2264 0001:0001E108
+  2265 0001:0001E120  2268 0001:0001E138  2269 0001:0001E143  2270 0001:0001E14D
+  2272 0001:0001E153  2273 0001:0001E16D  2274 0001:0001E173  2276 0001:0001E18D
+  2278 0001:0001E198  2281 0001:0001E1AF  2284 0001:0001E1EE  2289 0001:0001E270
+  2290 0001:0001E282  2291 0001:0001E29C  2292 0001:0001E2B7  2293 0001:0001E2CF
+  2294 0001:0001E2E4  2297 0001:0001E2E8  2299 0001:0001E2FD  2300 0001:0001E319
+  2301 0001:0001E327  2302 0001:0001E349  2303 0001:0001E361  2304 0001:0001E384
+  2306 0001:0001E3A0  2307 0001:0001E3AC  2308 0001:0001E3BA  2310 0001:0001E3F1
+  2313 0001:0001E3F8  2315 0001:0001E3F9  2316 0001:0001E410  2317 0001:0001E41A
+  2322 0001:0001E41C  2323 0001:0001E43F  2325 0001:0001E490  2325 0001:0001E497
+
+Line numbers for ufrmRelListagemGeralExames(..\CADASTRO\ufrmRelListagemGeralExames.pas) segment .text
+
+    81 0001:0001E998    82 0001:0001E9C0    84 0001:0001E9D9    85 0001:0001E9EE
+    87 0001:0001E9F3    89 0001:0001EA0C    90 0001:0001EA21    93 0001:0001EA26
+    95 0001:0001EA4E    96 0001:0001EA63   100 0001:0001EA68   101 0001:0001EA76
+   102 0001:0001EA84   103 0001:0001EA9E   104 0001:0001EAB7   105 0001:0001EAE4
+   107 0001:0001EB11   108 0001:0001EB15   109 0001:0001EB17   110 0001:0001EB2D
+   111 0001:0001EB4A   112 0001:0001EB6F   114 0001:0001EB75   115 0001:0001EBBC
+   119 0001:0001EBC0   120 0001:0001EC07   121 0001:0001EC0B   122 0001:0001EC0D
+   109 0001:0001EC0E   124 0001:0001EC15   125 0001:0001EC19   127 0001:0001EC32
+   128 0001:0001EC40   131 0001:0001EC5B   136 0001:0001EC93   139 0001:0001EDC0
+   141 0001:0001EDD8   142 0001:0001EDF9   143 0001:0001EE3E   145 0001:0001EEA4
+   145 0001:0001EEAB
+
+Line numbers for UfrmFiltroEsquemaTotal(..\DIG\UfrmFiltroEsquemaTotal.pas) segment .text
+
+    46 0001:0001F1E0    47 0001:0001F202    48 0001:0001F21F    49 0001:0001F22C
+    51 0001:0001F247    53 0001:0001F25B    75 0001:0001F273    76 0001:0001F29D
+    79 0001:0001F2C7    81 0001:0001F309    82 0001:0001F332    83 0001:0001F35B
+    84 0001:0001F384    87 0001:0001F3AD    88 0001:0001F3E9    91 0001:0001FA3C
+    92 0001:0001FA62    93 0001:0001FA7E    94 0001:0001FA8F    96 0001:0001FAA2
+    97 0001:0001FAB0    98 0001:0001FABE    99 0001:0001FAD5   100 0001:0001FAEB
+   101 0001:0001FAFA   102 0001:0001FB03   103 0001:0001FB12   104 0001:0001FB1B
+   105 0001:0001FB2A   106 0001:0001FB33   107 0001:0001FB42   108 0001:0001FB4B
+   109 0001:0001FB5A   110 0001:0001FB63   111 0001:0001FB69   112 0001:0001FB6F
+   113 0001:0001FB75   114 0001:0001FB7B   116 0001:0001FB90   118 0001:0001FBB8
+   120 0001:0001FBCE   121 0001:0001FBE5   123 0001:0001FC3B   125 0001:0001FC6B
+   126 0001:0001FC7D   128 0001:0001FCC0   131 0001:0001FD84   132 0001:0001FD87
+   133 0001:0001FD95   135 0001:0001FDC8   135 0001:0001FDCF
+
+Line numbers for UfrmConEsquemaTotal(..\DIG\UfrmConEsquemaTotal.pas) segment .text
+
+    41 0001:00020014    43 0001:0002001F    46 0001:00020020    48 0001:00020023
+    49 0001:00020040    50 0001:00020056    51 0001:00020065    53 0001:00020071
+    56 0001:0002008C    58 0001:000200A2    59 0001:000200E0    61 0001:00020120
+    61 0001:00020127
+
+Line numbers for UfrmFiltroEsquemaProcessoTotal(..\DIG\UfrmFiltroEsquemaProcessoTotal.pas) segment .text
+
+    45 0001:00020414    46 0001:00020436    47 0001:00020453    48 0001:00020460
+    50 0001:0002047B    52 0001:0002048F    74 0001:000204A7    75 0001:000204D1
+    78 0001:000204FB    80 0001:0002053D    81 0001:00020566    82 0001:0002058F
+    83 0001:000205B8    87 0001:000205E1    88 0001:0002061D    92 0001:00020C70
+    93 0001:00020C96    94 0001:00020CB2    95 0001:00020CC3    97 0001:00020CD6
+    98 0001:00020CE4    99 0001:00020CF2   100 0001:00020D09   101 0001:00020D1F
+   102 0001:00020D2E   103 0001:00020D37   104 0001:00020D46   105 0001:00020D4F
+   106 0001:00020D5E   107 0001:00020D67   108 0001:00020D76   109 0001:00020D7F
+   110 0001:00020D8E   111 0001:00020D97   112 0001:00020D9D   113 0001:00020DA3
+   114 0001:00020DA9   115 0001:00020DAF   117 0001:00020DC4   119 0001:00020DEC
+   121 0001:00020E02   122 0001:00020E19   124 0001:00020E6F   126 0001:00020E9F
+   127 0001:00020EB1   129 0001:00020EF4   133 0001:00020FB8   134 0001:00020FBB
+   135 0001:00020FC9   137 0001:00020FFC   137 0001:00021003
+
+Line numbers for UfrmConEsquemaProcessoTotal(..\DIG\UfrmConEsquemaProcessoTotal.pas) segment .text
+
+    41 0001:00021294    42 0001:0002129F    45 0001:000212A0    47 0001:000212A3
+    48 0001:000212C0    49 0001:000212D6    50 0001:000212E5    52 0001:000212F1
+    55 0001:0002130C    57 0001:00021322    58 0001:00021360    60 0001:000213A0
+    60 0001:000213A7
+
+Line numbers for UfrmConfRelatorio(..\GERAL\UfrmConfRelatorio.pas) segment .text
+
+    77 0001:00021944    78 0001:00021950    83 0001:00021954    84 0001:00021960
+    87 0001:00021964    90 0001:00021967    92 0001:00021989    96 0001:0002198C
+    98 0001:000219B9    99 0001:000219D5   100 0001:000219E6   101 0001:00021A03
+   102 0001:00021A20   103 0001:00021A3D   104 0001:00021A5A   105 0001:00021A77
+   107 0001:00021A94   108 0001:00021AA2   109 0001:00021AB0   110 0001:00021AC6
+   111 0001:00021ADD   112 0001:00021AEC   113 0001:00021AFB   114 0001:00021B0A
+   115 0001:00021B19   116 0001:00021B28   117 0001:00021B39   118 0001:00021B4A
+   119 0001:00021B5B   120 0001:00021B61   121 0001:00021B67   122 0001:00021B6D
+   123 0001:00021B73   124 0001:00021B79   125 0001:00021B82   126 0001:00021B8B
+   129 0001:00021BA3   131 0001:00021BCB   133 0001:00021BE1   134 0001:00021C10
+   135 0001:00021C43   136 0001:00021C76   137 0001:00021CA9   138 0001:00021CDC
+   139 0001:00021D0F   141 0001:00021D42   142 0001:00021D54   144 0001:00021D80
+   147 0001:000220E0   149 0001:000220FB   150 0001:00022106   151 0001:00022144
+   153 0001:00022151   155 0001:00022179   161 0001:00022198   162 0001:000221A3
+   165 0001:000221A4   167 0001:000221A7   168 0001:000221B5   173 0001:000221B8
+   174 0001:000221C6   177 0001:000221C8   179 0001:000221DE   180 0001:000221ED
+   182 0001:00022226   185 0001:0002222C   187 0001:0002222F   188 0001:0002223D
+   190 0001:0002224A   192 0001:0002227C   192 0001:00022283
+
+Line numbers for ufrmRelSerieCronologica(..\RELATORIOS\ufrmRelSerieCronologica.pas) segment .text
+
+    59 0001:000225CC    60 0001:000225ED    61 0001:000225FB    62 0001:0002260C
+    64 0001:0002261D    65 0001:00022633    68 0001:00022640    69 0001:0002266C
+    66 0001:00022677    71 0001:00022686    73 0001:00022691    74 0001:0002269D
+    75 0001:000226A9    76 0001:000226B5    77 0001:000226C1    78 0001:000226CD
+    79 0001:000226D9    81 0001:000226E5    82 0001:00022707    81 0001:0002271F
+    84 0001:00022722    86 0001:00022745    87 0001:0002274F    88 0001:0002275D
+    89 0001:0002276D    90 0001:0002279F    94 0001:00022858    95 0001:00022889
+    96 0001:00022897    97 0001:000228AB    98 0001:000228C7    99 0001:000228DE
+   107 0001:000228F1   108 0001:0002290A   110 0001:00022925   111 0001:0002294B
+   112 0001:0002295B   113 0001:00022961   114 0001:00022971   115 0001:00022974
+   116 0001:0002298E   117 0001:000229D4   118 0001:00022A14   121 0001:00022A52
+   122 0001:00022A6C   124 0001:00022A71   125 0001:00022A92   126 0001:00022ABF
+   127 0001:00022AF0   122 0001:00022AF1   127 0001:00022AFA   121 0001:00022AFB
+   129 0001:00022B04   101 0001:00022B12   132 0001:00022B52   136 0001:00023460
+   137 0001:00023465   140 0001:00023468   141 0001:0002346B   142 0001:00023472
+   143 0001:00023479   148 0001:0002347C   197 0001:0002348E   201 0001:00023498
+   202 0001:000234B6   203 0001:000234CC   202 0001:000234F1   205 0001:000234F6
+   206 0001:0002350D   207 0001:00023526   208 0001:0002353D   209 0001:00023554
+   211 0001:0002356B   213 0001:00023585   214 0001:000235AB   215 0001:000235D2
+   216 0001:000235F9   217 0001:00023620   211 0001:00023621   219 0001:0002362A
+   220 0001:0002365E   223 0001:000236AC   224 0001:000236AF   225 0001:000236C3
+   229 0001:000236C8   231 0001:000236ED   233 0001:00023700   234 0001:00023706
+   237 0001:00023738   238 0001:00023756   239 0001:0002376F   238 0001:00023784
+   239 0001:00023787   237 0001:00023788   242 0001:0002378D   243 0001:000237A7
+   245 0001:000237C0   246 0001:000237F7   247 0001:0002382E   249 0001:00023865
+   243 0001:00023866   249 0001:0002386D   242 0001:0002386E   250 0001:00023899
+   254 0001:000238B4   256 0001:000238BE   257 0001:000238D6   258 0001:000238EE
+   264 0001:000238F4   266 0001:000238F9   268 0001:000238FF   269 0001:00023907
+   270 0001:0002390F   271 0001:00023923   272 0001:0002392B   273 0001:00023937
+   274 0001:00023944   275 0001:00023948   277 0001:00023966   279 0001:0002396F
+   281 0001:0002397D   282 0001:00023991   283 0001:0002399E   284 0001:000239A4
+   288 0001:000239B1   289 0001:000239B7   290 0001:000239BF   295 0001:000239C5
+   297 0001:000239DB   299 0001:00023A38   299 0001:00023A3F
+
+Line numbers for UfrmRelUnidades(..\RELATORIOS\UfrmRelUnidades.pas) segment .text
+
+    77 0001:00024094    79 0001:00024097    81 0001:000240A9    82 0001:000240B4
+    83 0001:000240C1    84 0001:000240CC    85 0001:000240D9    86 0001:000240E9
+    87 0001:000240F6    88 0001:00024106    91 0001:00024113    93 0001:00024125
+    94 0001:00024132    95 0001:0002413F    96 0001:0002414C    99 0001:00024159
+   106 0001:0002415C   108 0001:0002417F   109 0001:0002418E   110 0001:000241A8
+   111 0001:000241BF   112 0001:000241CD   113 0001:000241DB   114 0001:000241EF
+   116 0001:00024201   117 0001:00024207   119 0001:00024216   121 0001:00024223
+   123 0001:0002423A   124 0001:00024255   127 0001:00024262   129 0001:00024279
+   130 0001:00024294   133 0001:000242A1   135 0001:000242B6   136 0001:000242D1
+   139 0001:000242DE   141 0001:000242F3   142 0001:0002430E   146 0001:0002431B
+   148 0001:0002432C   150 0001:00024337   151 0001:0002433B   153 0001:0002436B
+   157 0001:00024382   158 0001:00024399   160 0001:000243C7   161 0001:000243DE
+   164 0001:0002441B   167 0001:00024444   170 0001:00024454   171 0001:00024462
+   172 0001:0002448A   173 0001:0002449B   174 0001:000244D8   178 0001:000245E0
+   180 0001:00024605   181 0001:00024621   182 0001:00024632   183 0001:00024645
+   184 0001:00024653   185 0001:00024661   186 0001:00024678   187 0001:0002468E
+   188 0001:0002469D   189 0001:000246A6   190 0001:000246B5   191 0001:000246BE
+   192 0001:000246C4   194 0001:000246D9   196 0001:00024701   198 0001:00024713
+   199 0001:00024743   200 0001:00024773   201 0001:00024781   203 0001:0002478F
+   204 0001:000247A1   205 0001:000247CD   208 0001:00024844   210 0001:00024867
+   211 0001:0002487E   212 0001:00024891   214 0001:000248AA   215 0001:000248B8
+   219 0001:00024940   222 0001:00024953   223 0001:00024961   225 0001:000249B1
+   228 0001:000249FC   230 0001:00024A1F   232 0001:00024A3A   233 0001:00024A48
+   237 0001:00024AD0   238 0001:00024AE5   239 0001:00024AF3   243 0001:00024B48
+   247 0001:00024BBC   249 0001:00024BE5   250 0001:00024C01   251 0001:00024C12
+   252 0001:00024C20   254 0001:00024C37   255 0001:00024C63   257 0001:00024C71
+   258 0001:00024C88   259 0001:00024C9E   260 0001:00024CAD   261 0001:00024CB6
+   262 0001:00024CC5   263 0001:00024CCE   264 0001:00024CD4   266 0001:00024CE9
+   268 0001:00024D11   270 0001:00024D23   271 0001:00024D53   273 0001:00024D83
+   274 0001:00024D95   275 0001:00024DC1   278 0001:00024E38   280 0001:00024E5C
+   281 0001:00024E73   282 0001:00024E86   284 0001:00024E9F   286 0001:00024EBA
+   287 0001:00024EC8   291 0001:00024F50   297 0001:00024F65   298 0001:00024F73
+   299 0001:00024F81   303 0001:00024FD8   306 0001:00025054   308 0001:00025077
+   310 0001:00025092   311 0001:000250A0   315 0001:00025128   316 0001:0002513D
+   317 0001:0002514B   321 0001:000251A0   324 0001:00025214   326 0001:0002522A
+   327 0001:00025268   330 0001:0002526C   332 0001:0002526F   333 0001:00025281
+   335 0001:00025291   338 0001:00025294   340 0001:00025297   341 0001:000252A9
+   342 0001:000252B9   344 0001:000252F8   344 0001:000252FF
+
+Line numbers for uSplash(..\RELATORIOS\uSplash.pas) segment .text
+
+    28 0001:00025500    28 0001:00025507
+
+Line numbers for UfrmRR(..\RELATORIOS\UfrmRR.pas) segment .text
+
+   389 0001:00027578   390 0001:0002757D   395 0001:00027580   396 0001:000275A0
+   398 0001:000275BD   399 0001:000275D2   400 0001:000275E0   403 0001:000275E5
+   405 0001:000275F9   406 0001:0002760E   407 0001:0002761C   410 0001:00027621
+   412 0001:0002762D   413 0001:0002763A   414 0001:00027647   415 0001:00027654
+   416 0001:00027661   417 0001:0002766E   418 0001:0002767B   419 0001:00027688
+   420 0001:00027695   421 0001:000276A2   422 0001:000276AF   423 0001:000276BC
+   425 0001:000276C9   426 0001:000276E2   427 0001:000276FB   428 0001:00027714
+   429 0001:0002772D   430 0001:00027746   431 0001:0002775F   432 0001:00027778
+   433 0001:00027791   434 0001:000277AA   435 0001:000277C3   436 0001:000277DC
+   439 0001:000277F5   440 0001:00027800   441 0001:00027817   442 0001:0002782F
+   443 0001:00027847   444 0001:0002785F   445 0001:00027877   446 0001:0002788F
+   447 0001:000278A7   448 0001:000278BF   449 0001:000278D7   450 0001:000278EF
+   451 0001:00027907   452 0001:0002791F   453 0001:00027937   454 0001:0002795F
+   456 0001:0002796A   457 0001:00027975   458 0001:0002798C   459 0001:000279A4
+   460 0001:000279BC   461 0001:000279D4   462 0001:000279EC   463 0001:00027A04
+   464 0001:00027A1C   465 0001:00027A34   466 0001:00027A4C   467 0001:00027A64
+   468 0001:00027A7C   469 0001:00027A94   470 0001:00027AAC   471 0001:00027AD4
+   473 0001:00027ADF   474 0001:00027AEA   475 0001:00027B01   476 0001:00027B19
+   477 0001:00027B31   478 0001:00027B49   479 0001:00027B61   480 0001:00027B79
+   481 0001:00027B91   482 0001:00027BA9   483 0001:00027BC1   484 0001:00027BD9
+   485 0001:00027BF1   486 0001:00027C09   487 0001:00027C21   488 0001:00027C49
+   490 0001:00027C54   491 0001:00027C5F   492 0001:00027C76   493 0001:00027C8E
+   494 0001:00027CA6   495 0001:00027CBE   496 0001:00027CD6   497 0001:00027CEE
+   498 0001:00027D06   499 0001:00027D1E   500 0001:00027D36   501 0001:00027D4E
+   502 0001:00027D66   503 0001:00027D7E   504 0001:00027D96   505 0001:00027DBE
+   507 0001:00027DC9   508 0001:00027DD4   509 0001:00027DEB   510 0001:00027E03
+   511 0001:00027E1B   512 0001:00027E33   513 0001:00027E4B   514 0001:00027E63
+   515 0001:00027E7B   516 0001:00027E93   517 0001:00027EAB   518 0001:00027EC3
+   519 0001:00027EDB   520 0001:00027EF3   521 0001:00027F0B   522 0001:00027F33
+   524 0001:00027F3E   525 0001:00027F49   526 0001:00027F60   527 0001:00027F78
+   528 0001:00027F90   529 0001:00027FA8   530 0001:00027FC0   531 0001:00027FD8
+   532 0001:00027FF0   533 0001:00028008   534 0001:00028020   535 0001:00028038
+   536 0001:00028050   537 0001:00028068   538 0001:00028080   539 0001:000280A8
+   541 0001:000280B3   542 0001:000280BE   543 0001:000280D5   544 0001:000280ED
+   545 0001:00028105   546 0001:0002811D   547 0001:00028135   548 0001:0002814D
+   549 0001:00028165   550 0001:0002817D   551 0001:00028195   552 0001:000281AD
+   553 0001:000281C5   554 0001:000281DD   555 0001:000281F5   556 0001:00028223
+   558 0001:0002822E   559 0001:00028239   560 0001:00028250   561 0001:00028268
+   562 0001:00028280   563 0001:00028298   564 0001:000282B0   565 0001:000282C8
+   566 0001:000282E0   567 0001:000282F8   568 0001:00028310   569 0001:00028328
+   570 0001:00028340   571 0001:00028358   572 0001:00028370   573 0001:0002839E
+   575 0001:000283A9   576 0001:000283DA   579 0001:000285B8   580 0001:000285D6
+   581 0001:000285F2   582 0001:00028613   583 0001:00028634   584 0001:00028655
+   585 0001:00028676   586 0001:00028697   587 0001:000286B8   588 0001:000286D9
+   590 0001:0002871C   594 0001:00028724   595 0001:00028749   596 0001:00028765
+   597 0001:00028776   598 0001:00028789   599 0001:00028797   600 0001:000287A5
+   601 0001:000287BC   602 0001:000287D2   603 0001:000287E1   604 0001:000287EA
+   605 0001:000287F9   606 0001:00028802   607 0001:00028808   609 0001:0002881D
+   611 0001:00028845   613 0001:00028857   614 0001:00028887   616 0001:000288B7
+   617 0001:000288C9   619 0001:000288F5   622 0001:0002896C   624 0001:00028987
+   625 0001:000289CB   627 0001:000289DE   628 0001:000289F1   630 0001:00028A14
+   632 0001:00028A23   634 0001:00028A7B   637 0001:00028B10   638 0001:00028B13
+   640 0001:00028B2D   641 0001:00028B34   644 0001:00028B70   645 0001:00028B93
+   646 0001:00028BAA   647 0001:00028BBD   649 0001:00028BD6   650 0001:00028BE4
+   654 0001:00028C6C   659 0001:00028CC1   662 0001:00028D0C   663 0001:00028D2F
+   665 0001:00028D4A   666 0001:00028D58   670 0001:00028DE0   671 0001:00028DF5
+   672 0001:00028E03   677 0001:00028E58   680 0001:00028ECC   681 0001:00028EF1
+   682 0001:00028F10   684 0001:00028F1E   685 0001:00028F3D   687 0001:00028F4B
+   688 0001:00028F6A   690 0001:00028F78   691 0001:00028F97   693 0001:00028FA5
+   694 0001:00028FC4   696 0001:00028FD2   697 0001:00028FF1   699 0001:00028FFF
+   700 0001:0002901E   702 0001:0002902C   703 0001:0002904B   704 0001:0002907B
+   706 0001:000291CC   706 0001:000291D3
+
+Line numbers for UfrmPainelAR(..\RELATORIOS\UfrmPainelAR.pas) segment .text
+
+   154 0001:0002A0DC   155 0001:0002A0F7   156 0001:0002A10B   158 0001:0002A133
+   159 0001:0002A147   160 0001:0002A1A9   163 0001:0002A1DC   164 0001:0002A1F7
+   165 0001:0002A20B   167 0001:0002A233   168 0001:0002A247   170 0001:0002A2A9
+   173 0001:0002A2DC   174 0001:0002A2F7   175 0001:0002A30B   177 0001:0002A333
+   178 0001:0002A347   180 0001:0002A3A9   183 0001:0002A3DC   184 0001:0002A3F7
+   185 0001:0002A40B   187 0001:0002A433   188 0001:0002A447   190 0001:0002A4A9
+   193 0001:0002A4DC   194 0001:0002A4F7   195 0001:0002A50B   197 0001:0002A533
+   198 0001:0002A547   200 0001:0002A5A9   203 0001:0002A5DC   204 0001:0002A5F7
+   205 0001:0002A60B   207 0001:0002A633   208 0001:0002A647   210 0001:0002A6A9
+   213 0001:0002A6DC   214 0001:0002A6F7   215 0001:0002A70B   217 0001:0002A733
+   218 0001:0002A747   220 0001:0002A7A9   223 0001:0002A7DC   224 0001:0002A7F7
+   225 0001:0002A80B   227 0001:0002A833   228 0001:0002A847   230 0001:0002A8A9
+   235 0001:0002A8DC   236 0001:0002A8FF   238 0001:0002A90F   239 0001:0002A920
+   240 0001:0002A93E   241 0001:0002A970   242 0001:0002A977   243 0001:0002A97E
+   245 0001:0002A9A7   246 0001:0002A9E4   248 0001:0002AA10   249 0001:0002AA1C
+   250 0001:0002AA28   251 0001:0002AA34   252 0001:0002AA40   253 0001:0002AA4C
+   254 0001:0002AA58   255 0001:0002AA64   257 0001:0002AA70   258 0001:0002AA7D
+   259 0001:0002AA8A   260 0001:0002AA97   263 0001:0002AAA9   264 0001:0002AAB6
+   265 0001:0002AAD5   266 0001:0002AAF4   267 0001:0002AB13   268 0001:0002AB36
+   269 0001:0002AB55   270 0001:0002AB74   271 0001:0002AB93   272 0001:0002ABB2
+   273 0001:0002ABC2   261 0001:0002ABCF   275 0001:0002ABE4   276 0001:0002ABF1
+   277 0001:0002ABFE   279 0001:0002AC0B   280 0001:0002AC18   281 0001:0002AC25
+   282 0001:0002AC32   285 0001:0002AC44   286 0001:0002AC51   287 0001:0002AC70
+   288 0001:0002AC8F   289 0001:0002ACAE   290 0001:0002ACD1   291 0001:0002ACF0
+   292 0001:0002AD0F   293 0001:0002AD2E   294 0001:0002AD4D   295 0001:0002AD6C
+   296 0001:0002AD8B   297 0001:0002ADAA   298 0001:0002ADBA   283 0001:0002ADC7
+   300 0001:0002ADDC   301 0001:0002ADE9   302 0001:0002ADF6   304 0001:0002AE03
+   305 0001:0002AE10   306 0001:0002AE1D   307 0001:0002AE2A   310 0001:0002AE3C
+   311 0001:0002AE49   312 0001:0002AE68   313 0001:0002AE87   314 0001:0002AEA6
+   316 0001:0002AEC9   317 0001:0002AEE8   318 0001:0002AF07   319 0001:0002AF26
+   320 0001:0002AF45   321 0001:0002AF64   323 0001:0002AF83   324 0001:0002AF93
+   308 0001:0002AFA0   326 0001:0002AFB5   327 0001:0002AFC2   328 0001:0002AFCF
+   330 0001:0002AFDC   331 0001:0002AFE9   332 0001:0002AFF6   333 0001:0002B003
+   336 0001:0002B015   337 0001:0002B022   338 0001:0002B041   339 0001:0002B060
+   340 0001:0002B07F   342 0001:0002B0A2   343 0001:0002B0C1   344 0001:0002B0E0
+   345 0001:0002B0FF   346 0001:0002B11E   347 0001:0002B13D   349 0001:0002B15C
+   350 0001:0002B16C   334 0001:0002B179   352 0001:0002B18E   353 0001:0002B19B
+   354 0001:0002B1A8   356 0001:0002B1B5   357 0001:0002B1C2   358 0001:0002B1CF
+   359 0001:0002B1DC   362 0001:0002B1EE   363 0001:0002B1FB   364 0001:0002B21A
+   365 0001:0002B239   366 0001:0002B258   368 0001:0002B27B   369 0001:0002B29A
+   370 0001:0002B2B9   371 0001:0002B2D8   373 0001:0002B2F7   374 0001:0002B307
+   360 0001:0002B314   376 0001:0002B329   377 0001:0002B336   378 0001:0002B343
+   380 0001:0002B350   381 0001:0002B35D   382 0001:0002B36A   383 0001:0002B377
+   386 0001:0002B389   387 0001:0002B396   388 0001:0002B3B5   389 0001:0002B3D4
+   390 0001:0002B3F3   392 0001:0002B416   393 0001:0002B435   394 0001:0002B454
+   395 0001:0002B473   396 0001:0002B492   397 0001:0002B4B1   399 0001:0002B4D0
+   400 0001:0002B4E0   384 0001:0002B4ED   402 0001:0002B502   403 0001:0002B50F
+   404 0001:0002B51C   406 0001:0002B529   407 0001:0002B536   408 0001:0002B543
+   409 0001:0002B550   412 0001:0002B562   413 0001:0002B56F   414 0001:0002B58E
+   415 0001:0002B5AD   416 0001:0002B5CC   418 0001:0002B5EF   419 0001:0002B60E
+   421 0001:0002B62D   422 0001:0002B63D   410 0001:0002B64A   424 0001:0002B65F
+   425 0001:0002B66C   426 0001:0002B679   428 0001:0002B686   429 0001:0002B693
+   430 0001:0002B6A0   431 0001:0002B6AD   434 0001:0002B6BF   435 0001:0002B6CC
+   436 0001:0002B6EB   437 0001:0002B70A   438 0001:0002B729   440 0001:0002B74C
+   441 0001:0002B76B   442 0001:0002B78A   443 0001:0002B7A9   444 0001:0002B7C8
+   445 0001:0002B7E7   446 0001:0002B806   447 0001:0002B825   448 0001:0002B844
+   449 0001:0002B863   450 0001:0002B882   452 0001:0002B8A1   453 0001:0002B8B1
+   432 0001:0002B8BE   455 0001:0002B8D3   456 0001:0002B8E0   457 0001:0002B8ED
+   458 0001:0002B91C   461 0001:0002BA1C   462 0001:0002BA34   463 0001:0002BA48
+   465 0001:0002BA95   468 0001:0002BAB0   469 0001:0002BAC8   470 0001:0002BAE9
+   471 0001:0002BAF4   472 0001:0002BB06   473 0001:0002BB29   474 0001:0002BB3B
+   476 0001:0002BB68   479 0001:0002BB70   480 0001:0002BB8A   482 0001:0002BB99
+   483 0001:0002BBA4   484 0001:0002BBBB   485 0001:0002BC02   489 0001:0002BC0F
+   490 0001:0002BC26   493 0001:0002BC5B   495 0001:0002BCD4   495 0001:0002BCDB
+
+Line numbers for UfrmAuditoriaRelatorios(..\RELATORIOS\UfrmAuditoriaRelatorios.pas) segment .text
+
+   472 0001:0002E9CC   473 0001:0002E9E6   474 0001:0002EA07   475 0001:0002EA28
+   476 0001:0002EA49   477 0001:0002EA54   478 0001:0002EA5F   479 0001:0002EA8C
+   483 0001:0002EA94   485 0001:0002EA97   486 0001:0002EAB3   488 0001:0002EABF
+   489 0001:0002EACA   490 0001:0002EAD5   491 0001:0002EAE0   492 0001:0002EAEB
+   493 0001:0002EAF6   494 0001:0002EB01   495 0001:0002EB0C   496 0001:0002EB17
+   497 0001:0002EB22   498 0001:0002EB2D   499 0001:0002EB38   500 0001:0002EB43
+   501 0001:0002EB4E   502 0001:0002EB59   503 0001:0002EB64   505 0001:0002EB6F
+   506 0001:0002EB7B   508 0001:0002EB87   511 0001:0002EB8C   512 0001:0002EBAA
+   513 0001:0002EBCB   514 0001:0002EBEC   515 0001:0002EC0D   516 0001:0002EC2E
+   517 0001:0002EC4F   518 0001:0002EC70   519 0001:0002EC91   521 0001:0002ECB2
+   522 0001:0002ECDB   525 0001:0002ECE0   526 0001:0002ECFA   528 0001:0002ED09
+   529 0001:0002ED14   530 0001:0002ED2B   531 0001:0002ED72   535 0001:0002ED7F
+   536 0001:0002ED96   539 0001:0002EDCB   542 0001:0002EE08   543 0001:0002EE22
+   545 0001:0002EE31   546 0001:0002EE3C   547 0001:0002EE53   548 0001:0002EE9A
+   552 0001:0002EEA7   553 0001:0002EEBE   556 0001:0002EEF3   559 0001:0002EF2C
+   560 0001:0002EF49   562 0001:0002EF5C   563 0001:0002EF67   564 0001:0002EF7E
+   566 0001:0002EFC5   567 0001:0002EFDB   571 0001:0002EFEB   572 0001:0002F002
+   573 0001:0002F016   575 0001:0002F05D   576 0001:0002F073   579 0001:0002F0C2
+   582 0001:0002F118   583 0001:0002F132   584 0001:0002F13D   585 0001:0002F154
+   586 0001:0002F168   588 0001:0002F1AF   589 0001:0002F1C5   591 0001:0002F202
+   594 0001:0002F258   595 0001:0002F25B   596 0001:0002F269   597 0001:0002F277
+   598 0001:0002F285   599 0001:0002F290   606 0001:0002F294   608 0001:0002F2B7
+   609 0001:0002F2C6   610 0001:0002F2E0   611 0001:0002F2F7   612 0001:0002F305
+   613 0001:0002F313   614 0001:0002F327   616 0001:0002F339   617 0001:0002F33F
+   619 0001:0002F34E   621 0001:0002F35B   623 0001:0002F372   624 0001:0002F38D
+   627 0001:0002F39A   629 0001:0002F3B1   630 0001:0002F3CC   633 0001:0002F3D9
+   635 0001:0002F3F0   636 0001:0002F40B   639 0001:0002F418   641 0001:0002F42F
+   642 0001:0002F44A   645 0001:0002F457   647 0001:0002F468   649 0001:0002F473
+   650 0001:0002F477   652 0001:0002F4A7   656 0001:0002F4BE   657 0001:0002F4D5
+   659 0001:0002F503   660 0001:0002F51A   662 0001:0002F548   663 0001:0002F55F
+   665 0001:0002F58D   666 0001:0002F5A4   669 0001:0002F5F1   672 0001:0002F61A
+   675 0001:0002F6B6   682 0001:0002F804   684 0001:0002F827   685 0001:0002F836
+   686 0001:0002F850   687 0001:0002F867   688 0001:0002F875   689 0001:0002F883
+   690 0001:0002F897   692 0001:0002F8A9   693 0001:0002F8AF   695 0001:0002F8BE
+   697 0001:0002F8CB   699 0001:0002F8E2   700 0001:0002F8FD   703 0001:0002F90A
+   705 0001:0002F921   706 0001:0002F93C   709 0001:0002F949   711 0001:0002F960
+   712 0001:0002F97B   715 0001:0002F988   717 0001:0002F99F   718 0001:0002F9BA
+   721 0001:0002F9C7   723 0001:0002F9D8   725 0001:0002F9E3   726 0001:0002F9E7
+   728 0001:0002FA17   732 0001:0002FA2E   733 0001:0002FA45   735 0001:0002FA73
+   736 0001:0002FA8A   738 0001:0002FAB8   739 0001:0002FACF   741 0001:0002FAFD
+   742 0001:0002FB14   745 0001:0002FB61   748 0001:0002FB8A   751 0001:0002FC26
+   758 0001:0002FD74   760 0001:0002FD97   761 0001:0002FDA6   762 0001:0002FDC0
+   763 0001:0002FDD7   764 0001:0002FDE5   765 0001:0002FDF3   766 0001:0002FE07
+   768 0001:0002FE19   769 0001:0002FE1F   771 0001:0002FE2E   773 0001:0002FE3B
+   775 0001:0002FE52   776 0001:0002FE6D   779 0001:0002FE7A   781 0001:0002FE91
+   782 0001:0002FEAC   785 0001:0002FEB9   787 0001:0002FED0   788 0001:0002FEEB
+   791 0001:0002FEF8   793 0001:0002FF0F   794 0001:0002FF2A   797 0001:0002FF37
+   799 0001:0002FF48   801 0001:0002FF53   802 0001:0002FF57   804 0001:0002FF87
+   808 0001:0002FF9E   809 0001:0002FFB5   811 0001:0002FFE3   812 0001:0002FFFA
+   814 0001:00030028   815 0001:0003003F   817 0001:0003006D   818 0001:00030084
+   821 0001:000300D1   824 0001:000300FA   827 0001:00030196   835 0001:000302E4
+   837 0001:00030307   838 0001:00030316   839 0001:00030330   840 0001:00030347
+   841 0001:00030355   842 0001:00030363   843 0001:00030377   845 0001:00030389
+   846 0001:0003038F   848 0001:0003039E   850 0001:000303AB   852 0001:000303C2
+   853 0001:000303DD   856 0001:000303EA   858 0001:00030401   859 0001:0003041C
+   862 0001:00030429   864 0001:00030440   865 0001:0003045B   868 0001:00030468
+   870 0001:0003047F   871 0001:0003049A   874 0001:000304A7   876 0001:000304B8
+   878 0001:000304C3   879 0001:000304C7   881 0001:000304F7   885 0001:0003050E
+   886 0001:00030525   888 0001:00030553   889 0001:0003056A   891 0001:00030598
+   892 0001:000305AF   894 0001:000305DD   895 0001:000305F4   898 0001:00030641
+   901 0001:0003066A   904 0001:00030706   912 0001:00030874   914 0001:00030897
+   915 0001:000308A6   916 0001:000308C0   917 0001:000308D7   918 0001:000308E5
+   919 0001:000308F3   920 0001:00030907   922 0001:00030919   923 0001:0003091F
+   925 0001:0003092E   927 0001:0003093B   929 0001:00030952   930 0001:0003096D
+   933 0001:0003097A   935 0001:00030991   936 0001:000309AC   939 0001:000309B9
+   941 0001:000309D0   942 0001:000309EB   945 0001:000309F8   947 0001:00030A0F
+   948 0001:00030A2A   951 0001:00030A37   953 0001:00030A48   955 0001:00030A53
+   956 0001:00030A57   958 0001:00030A87   962 0001:00030A9E   963 0001:00030AB5
+   965 0001:00030AE3   966 0001:00030AFA   968 0001:00030B28   969 0001:00030B3F
+   971 0001:00030B6D   972 0001:00030B84   975 0001:00030BD1   978 0001:00030BFA
+   981 0001:00030C96   989 0001:00030E04   991 0001:00030E27   992 0001:00030E36
+   993 0001:00030E50   994 0001:00030E67   995 0001:00030E75   996 0001:00030E83
+   997 0001:00030E97   999 0001:00030EA9  1000 0001:00030EAF  1002 0001:00030EBE
+  1004 0001:00030ECB  1006 0001:00030EE2  1007 0001:00030EFD  1010 0001:00030F0A
+  1012 0001:00030F21  1013 0001:00030F3C  1016 0001:00030F49  1018 0001:00030F60
+  1019 0001:00030F7B  1022 0001:00030F88  1024 0001:00030F9F  1025 0001:00030FBA
+  1028 0001:00030FC7  1030 0001:00030FD8  1032 0001:00030FE3  1033 0001:00030FE7
+  1035 0001:00031017  1039 0001:0003102E  1040 0001:00031045  1042 0001:00031073
+  1043 0001:0003108A  1045 0001:000310B8  1046 0001:000310CF  1048 0001:000310FD
+  1049 0001:00031114  1052 0001:00031161  1055 0001:0003118A  1058 0001:00031226
+  1066 0001:00031384  1068 0001:000313A7  1069 0001:000313B6  1070 0001:000313D0
+  1071 0001:000313E7  1072 0001:000313F5  1073 0001:00031403  1074 0001:00031417
+  1076 0001:00031429  1077 0001:0003142F  1079 0001:0003143E  1081 0001:0003144B
+  1083 0001:00031462  1084 0001:0003147D  1087 0001:0003148A  1089 0001:000314A1
+  1090 0001:000314BC  1093 0001:000314C9  1095 0001:000314E0  1096 0001:000314FB
+  1099 0001:00031508  1101 0001:0003151F  1102 0001:0003153A  1105 0001:00031547
+  1107 0001:00031558  1109 0001:00031563  1110 0001:00031567  1112 0001:00031597
+  1116 0001:000315AE  1117 0001:000315C5  1119 0001:000315F3  1120 0001:0003160A
+  1122 0001:00031638  1123 0001:0003164F  1125 0001:0003167D  1126 0001:00031694
+  1129 0001:000316E1  1132 0001:0003170A  1135 0001:000317A6  1138 0001:00031914
+  1139 0001:00031918  1143 0001:00031988  1145 0001:0003199E  1147 0001:000319B1
+  1154 0001:000319D8  1155 0001:00031A03  1156 0001:00031A20  1158 0001:00031A28
+  1159 0001:00031A4B  1162 0001:00031A68  1163 0001:00031A6C  1170 0001:00031B38
+  1172 0001:00031B4E  1174 0001:00031B61  1181 0001:00031B88  1182 0001:00031BB3
+  1183 0001:00031BD0  1185 0001:00031BD8  1187 0001:00031BFB  1190 0001:00031C18
+  1191 0001:00031C1C  1197 0001:00031CC8  1199 0001:00031CDE  1200 0001:00031CF1
+  1207 0001:00031D18  1208 0001:00031D43  1209 0001:00031D60  1211 0001:00031D68
+  1213 0001:00031D8B  1216 0001:00031DA8  1217 0001:00031DAC  1223 0001:00031E58
+  1225 0001:00031E6E  1227 0001:00031E81  1234 0001:00031EA8  1235 0001:00031ED3
+  1236 0001:00031EF0  1238 0001:00031EF8  1240 0001:00031F1B  1244 0001:00031F38
+  1245 0001:00031F3C  1249 0001:00031FAC  1251 0001:00031FC2  1253 0001:00031FD5
+  1260 0001:00031FFC  1261 0001:00032027  1262 0001:00032044  1264 0001:0003204C
+  1266 0001:0003206F  1269 0001:0003208C  1270 0001:00032090  1276 0001:0003213C
+  1278 0001:00032152  1280 0001:00032165  1287 0001:0003218C  1288 0001:000321B7
+  1289 0001:000321D4  1291 0001:000321DC  1293 0001:000321FF  1297 0001:0003221C
+  1298 0001:00032220  1300 0001:00032258  1302 0001:0003226E  1304 0001:00032281
+  1311 0001:000322A8  1312 0001:000322D3  1313 0001:000322F0  1315 0001:000322F8
+  1317 0001:0003231B  1324 0001:00032338  1325 0001:0003235B  1326 0001:0003236A
+  1327 0001:00032384  1328 0001:0003239B  1329 0001:000323A9  1330 0001:000323B7
+  1331 0001:000323CB  1333 0001:000323DD  1334 0001:000323E3  1336 0001:000323F2
+  1338 0001:000323FF  1340 0001:00032416  1341 0001:00032431  1344 0001:0003243E
+  1346 0001:00032455  1347 0001:00032470  1350 0001:0003247D  1352 0001:00032494
+  1353 0001:000324AF  1356 0001:000324BC  1358 0001:000324D3  1359 0001:000324EE
+  1362 0001:000324FB  1364 0001:0003250C  1366 0001:00032517  1367 0001:0003251B
+  1369 0001:0003254B  1373 0001:00032562  1374 0001:00032579  1376 0001:000325A7
+  1377 0001:000325BE  1379 0001:000325EC  1380 0001:00032603  1382 0001:00032631
+  1383 0001:00032648  1386 0001:00032695  1389 0001:000326BE  1392 0001:0003275A
+  1395 0001:000328B8  1396 0001:000328BC  1407 0001:00032A08  1409 0001:00032A1E
+  1411 0001:00032A31  1418 0001:00032A58  1419 0001:00032A83  1420 0001:00032AA0
+  1422 0001:00032AA8  1425 0001:00032ACB  1427 0001:00032B88  1427 0001:00032B8F
+
+Line numbers for UfrmRelUnidadesImp(..\RELATORIOS\UfrmRelUnidadesImp.pas) segment .text
+
+    77 0001:0003314C    79 0001:0003314F    81 0001:00033161    82 0001:0003316C
+    83 0001:00033179    84 0001:00033184    85 0001:00033191    86 0001:000331A1
+    87 0001:000331AE    88 0001:000331BE    91 0001:000331CB    93 0001:000331DD
+    94 0001:000331EA    95 0001:000331F7    96 0001:00033204    99 0001:00033211
+   106 0001:00033214   108 0001:00033237   109 0001:00033246   110 0001:00033260
+   111 0001:00033277   112 0001:00033285   113 0001:00033293   114 0001:000332A7
+   116 0001:000332B9   117 0001:000332BF   119 0001:000332CE   121 0001:000332DB
+   123 0001:000332F2   124 0001:0003330D   127 0001:0003331A   129 0001:00033331
+   130 0001:0003334C   133 0001:00033359   135 0001:0003336E   136 0001:00033389
+   139 0001:00033396   141 0001:000333AB   142 0001:000333C6   146 0001:000333D3
+   148 0001:000333E4   150 0001:000333EF   151 0001:000333F3   153 0001:00033423
+   157 0001:0003343A   158 0001:00033451   160 0001:0003347F   161 0001:00033496
+   164 0001:000334D3   167 0001:000334FC   170 0001:0003350C   171 0001:0003351A
+   172 0001:00033542   173 0001:00033553   174 0001:00033590   178 0001:00033698
+   180 0001:000336BD   181 0001:000336D9   182 0001:000336EA   183 0001:000336FD
+   184 0001:0003370B   185 0001:00033719   186 0001:00033730   187 0001:00033746
+   188 0001:00033755   189 0001:0003375E   190 0001:0003376D   191 0001:00033776
+   192 0001:0003377C   194 0001:00033791   196 0001:000337B9   198 0001:000337CB
+   199 0001:000337FB   200 0001:0003382B   201 0001:00033839   203 0001:00033847
+   204 0001:00033859   205 0001:00033885   208 0001:000338FC   210 0001:0003391F
+   211 0001:00033936   212 0001:00033949   214 0001:00033962   215 0001:00033970
+   219 0001:000339F8   222 0001:00033A0B   223 0001:00033A19   225 0001:00033A69
+   228 0001:00033AB4   230 0001:00033AD7   232 0001:00033AF2   233 0001:00033B00
+   237 0001:00033B88   238 0001:00033B9D   239 0001:00033BAB   243 0001:00033C00
+   247 0001:00033C74   249 0001:00033C9D   250 0001:00033CB9   251 0001:00033CCA
+   252 0001:00033CD8   254 0001:00033CEF   255 0001:00033D1B   257 0001:00033D29
+   258 0001:00033D40   259 0001:00033D56   260 0001:00033D65   261 0001:00033D6E
+   262 0001:00033D7D   263 0001:00033D86   264 0001:00033D8C   266 0001:00033DA1
+   268 0001:00033DC9   270 0001:00033DDB   271 0001:00033E0B   273 0001:00033E3B
+   274 0001:00033E4D   275 0001:00033E79   278 0001:00033EF0   280 0001:00033F14
+   281 0001:00033F2B   282 0001:00033F3E   284 0001:00033F57   286 0001:00033F72
+   287 0001:00033F80   291 0001:00034008   297 0001:0003401D   298 0001:0003402B
+   299 0001:00034039   303 0001:00034090   306 0001:0003410C   308 0001:0003412F
+   310 0001:0003414A   311 0001:00034158   315 0001:000341E0   316 0001:000341F5
+   317 0001:00034203   321 0001:00034258   324 0001:000342CC   326 0001:000342E2
+   327 0001:00034320   330 0001:00034324   332 0001:00034327   333 0001:00034339
+   335 0001:00034349   338 0001:0003434C   340 0001:0003434F   341 0001:00034361
+   342 0001:00034371   344 0001:000343B0   344 0001:000343B7
+
+Line numbers for UfrmRelMapa(..\RELATORIOS\UfrmRelMapa.pas) segment .text
+
+    29 0001:000345AC    29 0001:000345B3
+
+Line numbers for UfrmRelNotificacao(..\RELATORIOS\UfrmRelNotificacao.pas) segment .text
+
+   113 0001:00034E4C   114 0001:00034E6D   115 0001:00034E78   116 0001:00034E8E
+   123 0001:00034EA3   125 0001:00034EA8   126 0001:00034EBA   128 0001:00034ECF
+   129 0001:00034EE1   131 0001:00034EF6   132 0001:00034F0A   134 0001:00034F1F
+   135 0001:00034F33   137 0001:00034F48   138 0001:00034F5C   140 0001:00034F71
+   141 0001:00034F85   142 0001:00034FB2   143 0001:00034FC6   144 0001:00034FF3
+   145 0001:00035007   147 0001:00035034   149 0001:00035046   150 0001:0003506D
+   152 0001:00035094   153 0001:000350A4   154 0001:000350AF   155 0001:000350DC
+   159 0001:00035234   160 0001:00035252   161 0001:00035263   162 0001:0003526F
+   164 0001:00035289   166 0001:000352A5   167 0001:000352DD   164 0001:000352DE
+   168 0001:00035300   172 0001:00035308   173 0001:00035325   174 0001:00035335
+   175 0001:00035345   176 0001:0003538E   181 0001:00035394   182 0001:000353B2
+   183 0001:000353D2   184 0001:000353DD   185 0001:000353F7   187 0001:0003541C
+   188 0001:0003542C   190 0001:00035452   191 0001:00035465   192 0001:00035473
+   195 0001:00035481   196 0001:00035494   197 0001:000354B8   198 0001:000354D9
+   199 0001:000354EB   200 0001:000354F8   185 0001:000354FB   201 0001:00035504
+   203 0001:0003550B   204 0001:00035556   208 0001:000355B0   209 0001:000355F5
+   210 0001:00035610   213 0001:00035623   214 0001:0003562E   215 0001:00035650
+   217 0001:00035660   218 0001:00035675   219 0001:0003568B   217 0001:000356C4
+   220 0001:000356C7   221 0001:000356DF   222 0001:000356E7   223 0001:000356F4
+   224 0001:0003570F   227 0001:0003571F   228 0001:00035736   229 0001:0003574B
+   230 0001:00035761   228 0001:0003579F   231 0001:000357A2   232 0001:000357BA
+   233 0001:000357C2   234 0001:000357CD   235 0001:00035836   225 0001:00035842
+   237 0001:00035855   238 0001:00035865   240 0001:000358A8   243 0001:00035900
+   244 0001:00035919   245 0001:00035928   247 0001:00035931   248 0001:0003593C
+   249 0001:00035947   250 0001:00035962   252 0001:00035971   253 0001:00035978
+   255 0001:00035996   256 0001:000359BA   259 0001:000359D8   260 0001:000359F2
+   262 0001:000359FB   264 0001:00035A52   266 0001:00035A80   269 0001:00035AA8
+   270 0001:00035ABE   271 0001:00035B04   274 0001:00035B20   275 0001:00035B36
+   276 0001:00035B7C   279 0001:00035B98   280 0001:00035BB2   282 0001:00035BC1
+   283 0001:00035BCC   284 0001:00035BE3   285 0001:00035C2A   289 0001:00035C37
+   290 0001:00035C4E   292 0001:00035C83   295 0001:00035CC0   296 0001:00035CDA
+   298 0001:00035CE9   299 0001:00035CF4   300 0001:00035D0B   301 0001:00035D52
+   305 0001:00035D5F   306 0001:00035D76   308 0001:00035DAB   311 0001:00035DE4
+   312 0001:00035E01   314 0001:00035E14   315 0001:00035E1F   316 0001:00035E36
+   319 0001:00035E7D   320 0001:00035E93   324 0001:00035EA3   325 0001:00035EBA
+   326 0001:00035ECE   330 0001:00035F15   331 0001:00035F2B   333 0001:00035F7A
+   336 0001:00035FD0   337 0001:00035FEA   338 0001:00035FF5   339 0001:0003600C
+   340 0001:00036020   344 0001:00036067   345 0001:0003607D   346 0001:000360BA
+   349 0001:00036110   350 0001:0003612A   351 0001:0003614B   352 0001:0003616C
+   353 0001:0003618D   354 0001:00036198   355 0001:000361A3   356 0001:000361D0
+   359 0001:000361D8   360 0001:000361DB   361 0001:000361E6   362 0001:000361F1
+   363 0001:000361FC   368 0001:00036200   369 0001:00036205   372 0001:00036208
+   373 0001:0003620B   374 0001:00036219   375 0001:00036227   376 0001:00036235
+   379 0001:00036238   380 0001:0003623B   381 0001:0003624C   382 0001:00036263
+   383 0001:0003627A   387 0001:0003627C   388 0001:00036284   390 0001:0003629C
+   391 0001:000362AB   392 0001:000362BB   393 0001:000362C4   388 0001:000362C5
+   394 0001:000362C8   398 0001:000362D0   399 0001:000362D8   401 0001:000362F0
+   402 0001:000362FF   403 0001:0003630F   404 0001:00036318   399 0001:00036319
+   405 0001:0003631C   408 0001:00036324   409 0001:00036327   410 0001:00036332
+   411 0001:0003634F   412 0001:0003635D   415 0001:00036378   416 0001:0003637B
+   417 0001:00036386   418 0001:000363A3   419 0001:000363B1   424 0001:000363CC
+   425 0001:000363F7   426 0001:00036405   427 0001:00036415   428 0001:00036438
+   429 0001:0003644D   430 0001:00036462   431 0001:0003646C   433 0001:000364A3
+   435 0001:000364DA   438 0001:000364FF   440 0001:0003652E   442 0001:000365BC
+   443 0001:000365E4   444 0001:000365FA   445 0001:00036606   446 0001:00036625
+   447 0001:0003662C   450 0001:0003663E   451 0001:00036657   452 0001:00036663
+   454 0001:00036690   455 0001:0003669C   456 0001:000366A8   457 0001:000366B4
+   458 0001:000366C0   459 0001:000366CC   460 0001:000366D8   461 0001:000366E4
+   462 0001:000366F0   463 0001:000366FD   466 0001:00036713   448 0001:00036720
+   468 0001:00036735   469 0001:00036759   472 0001:00036850   473 0001:00036866
+   474 0001:00036882   475 0001:000368AE   476 0001:000368BC   477 0001:000368CB
+   478 0001:000368F4   481 0001:00036910   482 0001:00036913   485 0001:0003696A
+   487 0001:00036A14   487 0001:00036A1B
+
+Line numbers for UfrmRelMapaMedicoPeriodo(..\RELATORIOS\UfrmRelMapaMedicoPeriodo.pas) segment .text
+
+    44 0001:00036D38    46 0001:00036D5D    47 0001:00036D79    48 0001:00036D8A
+    51 0001:00036DA7    52 0001:00036DB5    53 0001:00036DC3    54 0001:00036DDA
+    55 0001:00036DF0    56 0001:00036DFF    57 0001:00036E08    58 0001:00036E17
+    59 0001:00036E20    60 0001:00036E26    62 0001:00036E3B    64 0001:00036E63
+    66 0001:00036E75    67 0001:00036EA5    69 0001:00036ED5    70 0001:00036EE7
+    71 0001:00036F13    75 0001:00036FB0    77 0001:00036FCA    78 0001:00036FDE
+    80 0001:00037010    81 0001:0003701B    82 0001:00037028    83 0001:0003704B
+    84 0001:0003707B    87 0001:000370F4    89 0001:0003710C    90 0001:00037120
+    92 0001:00037148    93 0001:0003715E    94 0001:00037185    95 0001:0003719B
+    96 0001:000371E4    99 0001:0003721C   101 0001:00037232   102 0001:00037270
+   104 0001:000372B0   104 0001:000372B7
+
+Line numbers for UfrmRelExtratoPaciente(..\RELATORIOS\UfrmRelExtratoPaciente.pas) segment .text
+
+    38 0001:00037508    40 0001:0003752D    41 0001:00037549    42 0001:0003755A
+    45 0001:00037577    46 0001:00037585    47 0001:00037593    48 0001:000375AA
+    49 0001:000375C0    50 0001:000375CF    51 0001:000375D8    52 0001:000375E7
+    53 0001:000375F0    54 0001:000375FF    55 0001:00037608    56 0001:0003760E
+    57 0001:00037614    59 0001:00037629    61 0001:00037651    63 0001:00037663
+    64 0001:00037693    66 0001:000376C3    67 0001:000376D5    68 0001:00037701
+    72 0001:000377C4    74 0001:000377DE    76 0001:000377F2    77 0001:000377FD
+    78 0001:0003780A    79 0001:0003782D    81 0001:0003785D    84 0001:00037888
+    86 0001:0003789E    87 0001:000378E3    89 0001:0003792C    89 0001:00037933
+
+Line numbers for UframeControleGestante(..\RELATORIOS\UframeControleGestante.pas) segment .text
+
+    63 0001:00037DA4    64 0001:00037DA7    66 0001:00037DB3    67 0001:00037DBB
+    70 0001:00037DC9    73 0001:00037DCC    74 0001:00037DCF    75 0001:00037DEA
+    76 0001:00037DF8    79 0001:00037DFC    80 0001:00037DFF    81 0001:00037E39
+    82 0001:00037E73    83 0001:00037E9F    84 0001:00037EBC    90 0001:00037F10
+    91 0001:00037F16    94 0001:00037F42    95 0001:00037F5B    96 0001:00037F69
+    97 0001:00037F7F   100 0001:00037FBC   101 0001:00037FF1   102 0001:00038001
+   104 0001:00038014   107 0001:0003802D   110 0001:00038034   111 0001:00038037
+   112 0001:00038048   115 0001:0003804C   116 0001:00038052   117 0001:00038066
+   123 0001:0003806C   124 0001:00038073   128 0001:000380A9   131 0001:000380DC
+   134 0001:00038104   135 0001:0003811D   137 0001:0003812B   138 0001:0003815A
+   140 0001:00038173   143 0001:00038178   144 0001:0003817C   145 0001:00038191
+   146 0001:0003819B   147 0001:000381B0   148 0001:000381BA   151 0001:000381C0
+   152 0001:000381C4   154 0001:000381E4   155 0001:000381F9   156 0001:0003820B
+   157 0001:00038219   160 0001:00038226   161 0001:0003822B   164 0001:00038230
+   165 0001:00038234   166 0001:00038249   167 0001:00038253   168 0001:00038268
+   169 0001:00038272   175 0001:00038278   176 0001:000382A0   177 0001:000382B1
+   180 0001:000382BF   181 0001:000382D1   182 0001:000382E3   183 0001:000382F6
+   184 0001:00038309   186 0001:00038391   187 0001:00038399   190 0001:000383E7
+   194 0001:0003847C   195 0001:00038481   201 0001:00038484   202 0001:00038489
+   203 0001:0003848B   205 0001:0003849A   206 0001:000384AA   210 0001:000384B7
+   211 0001:000384C5   212 0001:000384CA   208 0001:000384D5   215 0001:000384E4
+   217 0001:000384F4   218 0001:0003851F   222 0001:00038538   223 0001:0003853D
+   226 0001:00038540   227 0001:00038543   228 0001:00038561   231 0001:00038564
+   232 0001:00038576   233 0001:0003857F   234 0001:000385A2   236 0001:000385D8
+   236 0001:000385DF
+
+Line numbers for UfrmRelGestante(..\RELATORIOS\UfrmRelGestante.pas) segment .text
+
+    87 0001:00038C14    88 0001:00038C1A    89 0001:00038C25    91 0001:00038C3B
+    92 0001:00038C4D    94 0001:00038C62    95 0001:00038C74    97 0001:00038C89
+    99 0001:00038C9E   101 0001:00038CB0   102 0001:00038CE6   105 0001:00038D1C
+   106 0001:00038D2C   108 0001:00038D37   111 0001:00038DE0   112 0001:00038DF6
+   113 0001:00038DFD   114 0001:00038E1D   116 0001:00038E28   117 0001:00038E6E
+   120 0001:00038E90   121 0001:00038E93   122 0001:00038EAA   123 0001:00038EC1
+   127 0001:00038EC4   128 0001:00038EC7   129 0001:00038EDC   130 0001:00038EED
+   133 0001:00038EF0   134 0001:00038EF3   135 0001:00038F00   136 0001:00038F0D
+   137 0001:00038F1A   140 0001:00038F1C   141 0001:00038F1F   142 0001:00038F2A
+   143 0001:00038F37   144 0001:00038F44   145 0001:00038F51   148 0001:00038F54
+   149 0001:00038F57   150 0001:00038F62   151 0001:00038F69   154 0001:00038F6C
+   155 0001:00038F6F   156 0001:00038F7A   157 0001:00038F81   162 0001:00038F84
+   163 0001:00038F8B   167 0001:00038F8C   168 0001:00038FA4   169 0001:00038FAF
+   170 0001:00038FCC   172 0001:00038FD7   173 0001:00038FE4   174 0001:00039007
+   176 0001:00039015   177 0001:00039042   180 0001:00039078   181 0001:0003907B
+   182 0001:00039099   184 0001:000390F4   184 0001:000390FB
+
+Line numbers for UfrmRelCriancaExpDPIAlto(..\RELATORIOS\UfrmRelCriancaExpDPIAlto.pas) segment .text
+
+    62 0001:000395CC    63 0001:000395CF    64 0001:000395E6    65 0001:000395FD
+    69 0001:00039600    70 0001:00039625    72 0001:0003963E    73 0001:00039653
+    75 0001:00039658    77 0001:00039671    78 0001:00039686    81 0001:0003968B
+    83 0001:000396B3    84 0001:000396C8    86 0001:000396CD    87 0001:000396DB
+    89 0001:000396E4    90 0001:000396EB    91 0001:00039711    92 0001:00039737
+    93 0001:00039750    95 0001:00039757    96 0001:00039765    97 0001:00039785
+    99 0001:00039793   100 0001:000397A0   101 0001:000397C6   103 0001:000397D7
+   104 0001:000397E5   107 0001:000397FB   109 0001:00039849   113 0001:0003994C
+   114 0001:0003994F   115 0001:0003996D   117 0001:000399A0   117 0001:000399A7
+
+Line numbers for UfrmRelCriancaExpFechamento(..\RELATORIOS\UfrmRelCriancaExpFechamento.pas) segment .text
+
+    75 0001:00039F78    76 0001:00039F7D    82 0001:00039F80    83 0001:00039FA3
+    84 0001:00039FB1    85 0001:00039FC3    87 0001:00039FCF    88 0001:00039FE6
+    90 0001:00039FF2    91 0001:0003A009    93 0001:0003A015    94 0001:0003A035
+    96 0001:0003A041    97 0001:0003A058    99 0001:0003A064   100 0001:0003A07B
+   102 0001:0003A087   103 0001:0003A0A7   105 0001:0003A0B3   106 0001:0003A0C1
+   108 0001:0003A0CA   110 0001:0003A0D1   111 0001:0003A10E   113 0001:0003A11C
+   114 0001:0003A12E   116 0001:0003A163   117 0001:0003A17A   119 0001:0003A1CD
+   120 0001:0003A1E4   122 0001:0003A212   123 0001:0003A232   125 0001:0003A25F
+   126 0001:0003A276   128 0001:0003A2C9   129 0001:0003A2E0   131 0001:0003A30E
+   132 0001:0003A32E   134 0001:0003A35B   136 0001:0003A362   137 0001:0003A370
+   138 0001:0003A390   140 0001:0003A39E   141 0001:0003A3AB   142 0001:0003A3D1
+   144 0001:0003A3E2   145 0001:0003A3F0   148 0001:0003A406   150 0001:0003A4D2
+   154 0001:0003A784   155 0001:0003A787   156 0001:0003A7A5   157 0001:0003A7E0
+   158 0001:0003A7F5   159 0001:0003A80A   160 0001:0003A81F   161 0001:0003A834
+   162 0001:0003A849   163 0001:0003A85E   165 0001:0003A871   168 0001:0003A924
+   169 0001:0003A93A   170 0001:0003A978   172 0001:0003A9B8   172 0001:0003A9BF
+
+Line numbers for UfrmControleGestantes(D:\DESENVOLVIMENTO\SISPROV\lib\RELATORIOS\UfrmControleGestantes.pas) segment .text
+
+    62 0001:0003AE60    63 0001:0003AE63    64 0001:0003AE78    65 0001:0003AE89
+    68 0001:0003AE8C    69 0001:0003AEB1    70 0001:0003AEBF    71 0001:0003AEC7
+    72 0001:0003AED5    73 0001:0003AEDF    74 0001:0003AEFB    75 0001:0003AF0C
+    77 0001:0003AF1F    78 0001:0003AF2D    79 0001:0003AF3B    80 0001:0003AF52
+    81 0001:0003AF68    82 0001:0003AF77    83 0001:0003AF80    84 0001:0003AF8F
+    85 0001:0003AF98    86 0001:0003AFA7    87 0001:0003AFB0    88 0001:0003AFBF
+    89 0001:0003AFC8    90 0001:0003AFD7    91 0001:0003AFE0    92 0001:0003AFE6
+    93 0001:0003AFEC    94 0001:0003AFF2    95 0001:0003AFF8    97 0001:0003B00D
+    99 0001:0003B035   101 0001:0003B047   102 0001:0003B055   103 0001:0003B08B
+   106 0001:0003B0A6   107 0001:0003B0B8   110 0001:0003B0E7   114 0001:0003B198
+   115 0001:0003B19B   116 0001:0003B1A8   117 0001:0003B1B5   118 0001:0003B1C2
+   122 0001:0003B1C4   123 0001:0003B1C9   126 0001:0003B1CC   127 0001:0003B1CF
+   128 0001:0003B1DA   129 0001:0003B1E1   132 0001:0003B1E4   133 0001:0003B1E7
+   134 0001:0003B1F2   135 0001:0003B1FF   136 0001:0003B20C   137 0001:0003B219
+   140 0001:0003B21C   141 0001:0003B21F   142 0001:0003B22A   143 0001:0003B231
+   148 0001:0003B234   150 0001:0003B23F   154 0001:0003B240   155 0001:0003B258
+   156 0001:0003B265   157 0001:0003B288   158 0001:0003B2B8   160 0001:0003B30C
+   160 0001:0003B313
+
+Line numbers for UfrmRelProdFarmacia(..\RELATORIOS\UfrmRelProdFarmacia.pas) segment .text
+
+    78 0001:0003B7E0    81 0001:0003B7E4    82 0001:0003B803    84 0001:0003B820
+    85 0001:0003B82A    88 0001:0003B82F    90 0001:0003B84C    91 0001:0003B856
+    94 0001:0003B85B    96 0001:0003B87D    97 0001:0003B887    99 0001:0003B8AE
+   102 0001:0003B944   104 0001:0003B947   105 0001:0003B958   106 0001:0003B965
+   107 0001:0003B98B   108 0001:0003B9A2   111 0001:0003B9A4   113 0001:0003B9BF
+   114 0001:0003B9C6   116 0001:0003B9CD   117 0001:0003B9F2   118 0001:0003BA50
+   119 0001:0003BA98   122 0001:0003BAF8   124 0001:0003BAFB   125 0001:0003BB06
+   126 0001:0003BB11   127 0001:0003BB1C   129 0001:0003BB27   130 0001:0003BB4E
+   131 0001:0003BB75   132 0001:0003BB9C   133 0001:0003BBC3   134 0001:0003BBEA
+   135 0001:0003BC11   137 0001:0003BC2E   138 0001:0003BC39   139 0001:0003BC44
+   140 0001:0003BC4F   141 0001:0003BC5A   145 0001:0003BC98   147 0001:0003BC99
+   149 0001:0003BC9E   151 0001:0003BCAD   153 0001:0003BCE0   153 0001:0003BCE7
+
+Line numbers for UfrmRelProdAgendas(..\RELATORIOS\UfrmRelProdAgendas.pas) segment .text
+
+    71 0001:0003C130    74 0001:0003C134    75 0001:0003C153    77 0001:0003C170
+    78 0001:0003C17A    81 0001:0003C17F    83 0001:0003C19C    84 0001:0003C1A6
+    87 0001:0003C1AB    89 0001:0003C1CD    90 0001:0003C1D7    92 0001:0003C1FE
+    95 0001:0003C294    97 0001:0003C297    98 0001:0003C2A8    99 0001:0003C2B5
+   100 0001:0003C2DB   101 0001:0003C2F2   104 0001:0003C2F4   106 0001:0003C30F
+   107 0001:0003C316   109 0001:0003C31D   110 0001:0003C342   111 0001:0003C3A0
+   112 0001:0003C3E8   116 0001:0003C444   118 0001:0003C445   120 0001:0003C44A
+   122 0001:0003C459   125 0001:0003C45C   127 0001:0003C45F   128 0001:0003C46A
+   130 0001:0003C475   131 0001:0003C49C   132 0001:0003C4C3   134 0001:0003C4E0
+   135 0001:0003C4EB   136 0001:0003C4F6   138 0001:0003C564   138 0001:0003C56B
+
+Line numbers for UfrmRelProdLaboratorio(..\RELATORIOS\UfrmRelProdLaboratorio.pas) segment .text
+
+   114 0001:0003CCC0   117 0001:0003CCC4   118 0001:0003CCE3   120 0001:0003CD00
+   121 0001:0003CD0A   124 0001:0003CD0F   126 0001:0003CD2C   127 0001:0003CD36
+   130 0001:0003CD3B   132 0001:0003CD5D   133 0001:0003CD67   135 0001:0003CD8E
+   138 0001:0003CE24   140 0001:0003CE27   141 0001:0003CE38   142 0001:0003CE45
+   143 0001:0003CE6B   144 0001:0003CE82   147 0001:0003CE84   149 0001:0003CE9F
+   150 0001:0003CEA6   152 0001:0003CEAD   153 0001:0003CED2   154 0001:0003CF30
+   155 0001:0003CF78   158 0001:0003CFD8   159 0001:0003CFF2   160 0001:0003D039
+   161 0001:0003D044   162 0001:0003D04F   164 0001:0003D05A   165 0001:0003D081
+   166 0001:0003D0A8   167 0001:0003D0CF   168 0001:0003D0F6   170 0001:0003D113
+   171 0001:0003D11E   172 0001:0003D129   173 0001:0003D15E   177 0001:0003D1C4
+   179 0001:0003D1C5   181 0001:0003D1CA   183 0001:0003D1D9   185 0001:0003D20C
+   185 0001:0003D213
+
+Line numbers for UfrmRelQuantitativo(..\RELATORIOS\UfrmRelQuantitativo.pas) segment .text
+
+   147 0001:0003E260   148 0001:0003E27F   150 0001:0003E29C   151 0001:0003E2A6
+   154 0001:0003E2AB   156 0001:0003E2C8   157 0001:0003E2D2   160 0001:0003E2D7
+   162 0001:0003E2F9   163 0001:0003E303   165 0001:0003E32A   168 0001:0003E3C0
+   170 0001:0003E3DA   171 0001:0003E400   172 0001:0003E417   173 0001:0003E441
+   174 0001:0003E469   177 0001:0003E484   179 0001:0003E487   180 0001:0003E48E
+   182 0001:0003E495   185 0001:0003E498   187 0001:0003E4B9   189 0001:0003E4BE
+   190 0001:0003E4C9   191 0001:0003E4D4   192 0001:0003E4DF   193 0001:0003E4EA
+   195 0001:0003E4F5   196 0001:0003E51C   197 0001:0003E543   198 0001:0003E56A
+   199 0001:0003E591   200 0001:0003E5B8   201 0001:0003E5DF   202 0001:0003E606
+   203 0001:0003E62D   205 0001:0003E654   206 0001:0003E65F   207 0001:0003E66A
+   208 0001:0003E675   209 0001:0003E680   211 0001:0003E68B   212 0001:0003E6B0
+   213 0001:0003E70E   214 0001:0003E76C   215 0001:0003E7CA   216 0001:0003E828
+   217 0001:0003E886   218 0001:0003E945   220 0001:0003EA5C   220 0001:0003EA63
+
+Line numbers for UfrmRelFixos(..\RELATORIOS\UfrmRelFixos.pas) segment .text
+
+    83 0001:0003EDF4    84 0001:0003EE13    86 0001:0003EE30    87 0001:0003EE3A
+    90 0001:0003EE3F    92 0001:0003EE5C    93 0001:0003EE66    96 0001:0003EE6B
+    98 0001:0003EE8D    99 0001:0003EE97   101 0001:0003EEBE   104 0001:0003EF54
+   106 0001:0003EF6E   107 0001:0003EF94   108 0001:0003EFAB   109 0001:0003EFD5
+   110 0001:0003EFFD   114 0001:0003F018   117 0001:0003F01C   118 0001:0003F023
+   119 0001:0003F03F   120 0001:0003F05B   121 0001:0003F077   122 0001:0003F093
+   123 0001:0003F0AF   124 0001:0003F0C8   125 0001:0003F0E1   126 0001:0003F0FA
+   127 0001:0003F113   128 0001:0003F12C   130 0001:0003F143   132 0001:0003F14C
+   133 0001:0003F15A   136 0001:0003F160   137 0001:0003F183   138 0001:0003F18E
+   140 0001:0003F19F   141 0001:0003F200   142 0001:0003F223   143 0001:0003F246
+   144 0001:0003F269   145 0001:0003F28C   147 0001:0003F2AF   148 0001:0003F2CD
+   150 0001:0003F2D7   151 0001:0003F2F7   152 0001:0003F317   153 0001:0003F337
+   154 0001:0003F357   157 0001:0003F375   158 0001:0003F38A   160 0001:0003F3A1
+   162 0001:0003F3C8   163 0001:0003F3EF   165 0001:0003F3FA   166 0001:0003F459
+   167 0001:0003F483   168 0001:0003F4AD   169 0001:0003F4D7   170 0001:0003F501
+   171 0001:0003F52B   172 0001:0003F555   173 0001:0003F57F   174 0001:0003F5A6
+   175 0001:0003F5CD   176 0001:0003F5F4   178 0001:0003F63B   182 0001:0003F804
+   184 0001:0003F820   185 0001:0003F863   186 0001:0003F8EB   189 0001:0003F928
+   190 0001:0003F92B   199 0001:0003F937   202 0001:0003FB3C   204 0001:0003FB3F
+   221 0001:0003FB4B   224 0001:000400B4   226 0001:000400B7   246 0001:000400C3
+   249 0001:0004056C   251 0001:0004056F   256 0001:0004057B   261 0001:00040694
+   262 0001:00040697   277 0001:000406A3   280 0001:00040A38   281 0001:00040A3B
+   298 0001:00040A47   301 0001:00040D28   302 0001:00040D2B   329 0001:00040D37
+   332 0001:0004101C   333 0001:0004101F   361 0001:0004102B   364 0001:00041354
+   365 0001:00041357   393 0001:00041363   396 0001:000416B0   397 0001:000416B3
+   448 0001:000416BF   451 0001:00041DDC   452 0001:00041DDF   497 0001:00041DEB
+   499 0001:000424C0   499 0001:000424C7
+
+Line numbers for SISRelatorios(Q:\lib\Pacotes\SISRelatorios.dpk) segment .text
+
+    97 0001:00043098
+
+Bound resource files
+
+q:\lib\cadastro\ufrmRelGeralAgenda.dfm
+q:\lib\cadastro\ufrmRelGeralCaracterizacao.dfm
+q:\lib\cadastro\ufrmRelGeralNotificacao.dfm
+q:\lib\cadastro\ufrmRelGeralPrograma.dfm
+q:\lib\cadastro\ufrmRelListagemGeralExames.dfm
+UfrmFiltroEsquemaTotal.dfm
+UfrmConEsquemaTotal.dfm
+UfrmFiltroEsquemaProcessoTotal.dfm
+UfrmConEsquemaProcessoTotal.dfm
+UfrmConfRelatorio.dfm
+q:\lib\relatorios\ufrmRelSerieCronologica.dfm
+q:\lib\relatorios\UfrmRelUnidades.dfm
+q:\lib\relatorios\uSplash.dfm
+q:\lib\relatorios\UfrmRR.dfm
+q:\lib\relatorios\UfrmPainelAR.dfm
+q:\lib\relatorios\UfrmAuditoriaRelatorios.dfm
+q:\lib\relatorios\UfrmRelUnidadesImp.dfm
+q:\lib\relatorios\UfrmRelMapa.dfm
+q:\lib\relatorios\UfrmRelNotificacao.dfm
+q:\lib\relatorios\UfrmRelMapaMedicoPeriodo.dfm
+q:\lib\relatorios\UfrmRelExtratoPaciente.dfm
+q:\lib\relatorios\UframeControleGestante.dfm
+q:\lib\relatorios\UfrmRelGestante.dfm
+q:\lib\relatorios\UfrmRelCriancaExpDPIAlto.dfm
+q:\lib\relatorios\UfrmRelCriancaExpFechamento.dfm
+q:\lib\relatorios\UfrmControleGestantes.dfm
+q:\lib\relatorios\UfrmRelProdFarmacia.dfm
+q:\lib\relatorios\UfrmRelProdAgendas.dfm
+q:\lib\relatorios\UfrmRelProdLaboratorio.dfm
+q:\lib\relatorios\UfrmRelQuantitativo.dfm
+q:\lib\relatorios\UfrmRelFixos.dfm
+SISRelatorios.res
+SISRelatorios.drf
+
+
+Program entry point at 0001:00043098

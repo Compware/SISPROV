@@ -1,0 +1,254 @@
+object frmCorrecao2: TfrmCorrecao2
+  Left = 297
+  Top = 120
+  Width = 909
+  Height = 472
+  Caption = 'Corre'#231#227'o da Duplicidade dos Pacientes'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 24
+    Width = 44
+    Height = 13
+    Caption = 'Processo'
+  end
+  object btPesquisar: TSpeedButton
+    Left = 160
+    Top = 40
+    Width = 23
+    Height = 22
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      0400000000008000000000000000000000001000000000000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00D877DDDDDDDD
+      DDDD88777DDDDDDDDDDDD8B777DDDDDDDDDDDD8B778DDDDDDDDDDDD7B7777777
+      DDDDD6668778FFF7474DD8FFF888FFFF7F7DD8F8888888FF777DD8F88888888F
+      877DD8F88888888F787DD8F8888F88887F7DD8F8888888878F7DD8F88888788F
+      FF7DD8F88FFFFFFFFF7DD66666666666674DD66666666666667D}
+    OnClick = btPesquisarClick
+  end
+  object Memo1: TMemo
+    Left = 32
+    Top = 184
+    Width = 857
+    Height = 185
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 544
+    Top = 392
+    Width = 75
+    Height = 25
+    Caption = '&Fechar'
+    TabOrder = 1
+    Kind = bkClose
+  end
+  object BitBtn2: TBitBtn
+    Left = 232
+    Top = 392
+    Width = 75
+    Height = 25
+    Caption = 'Corrigir'
+    Default = True
+    TabOrder = 2
+    OnClick = BitBtn2Click
+    Glyph.Data = {
+      DE010000424DDE01000000000000760000002800000024000000120000000100
+      0400000000006801000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333330000333333333333333333333333F33333333333
+      00003333344333333333333333388F3333333333000033334224333333333333
+      338338F3333333330000333422224333333333333833338F3333333300003342
+      222224333333333383333338F3333333000034222A22224333333338F338F333
+      8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+      33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+      0000333333333A222433333333333338F338F33300003333333333A222433333
+      333333338F338F33000033333333333A222433333333333338F338F300003333
+      33333333A222433333333333338F338F00003333333333333A22433333333333
+      3338F38F000033333333333333A223333333333333338F830000333333333333
+      333A333333333333333338330000333333333333333333333333333333333333
+      0000}
+    NumGlyphs = 2
+  end
+  object edProcesso: TEdit
+    Left = 32
+    Top = 40
+    Width = 121
+    Height = 21
+    TabOrder = 3
+  end
+  object grDados: TdxDBGrid
+    Left = 32
+    Top = 72
+    Width = 857
+    Height = 105
+    Bands = <
+      item
+      end>
+    DefaultLayout = False
+    HeaderPanelRowCount = 1
+    KeyField = 'CD_PACIENTE'
+    SummaryGroups = <>
+    SummarySeparator = ', '
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    DataSource = DataSource1
+    Filter.Criteria = {00000000}
+    OptionsBehavior = [edgoAutoSort, edgoDragScroll, edgoEditing, edgoEnterShowEditor, edgoImmediateEditor, edgoStoreToIniFile, edgoTabThrough, edgoVertThrough]
+    OptionsView = [edgoBandHeaderWidth, edgoRowSelect, edgoUseBitmap]
+    object grDadosCD_PACIENTE: TdxDBGridMaskColumn
+      Caption = 'C'#243'digo'
+      Width = 42
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'CD_PACIENTE'
+    end
+    object grDadosNM_PACIENTE: TdxDBGridMaskColumn
+      Caption = 'Nome'
+      Width = 136
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'NM_PACIENTE'
+    end
+    object grDadosNM_MAE: TdxDBGridMaskColumn
+      Caption = 'Nome da Mae'
+      Width = 156
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'NM_MAE'
+    end
+    object grDadosIDADE: TdxDBGridMaskColumn
+      Caption = 'Idade'
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'IDADE'
+    end
+    object grDadosFARMACIA: TdxDBGridMaskColumn
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'FARMACIA'
+    end
+    object grDadosLABORATORIO: TdxDBGridMaskColumn
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'LABORATORIO'
+    end
+    object grDadosMEDICO: TdxDBGridMaskColumn
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'MEDICO'
+    end
+    object grDadosRAPIDO: TdxDBGridMaskColumn
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'RAPIDO'
+    end
+    object grDadosAGENDA: TdxDBGridMaskColumn
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'AGENDA'
+    end
+    object grDadosNOTIFICACAO: TdxDBGridMaskColumn
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'NOTIFICACAO'
+    end
+  end
+  object qyPaciente: TIBQuery
+    Database = DM.DB
+    Transaction = DM.TS
+    BufferChunks = 1000
+    CachedUpdates = False
+    SQL.Strings = (
+      'SELECT '
+      '  CD_PACIENTE, '
+      '  NM_PACIENTE, '
+      '  NM_MAE, '
+      '  IDADE ,'
+      '  (select count(*) from MAPA_FARMACIA_LINHA MF'
+      '   where MF.CD_PACIENTE = P.CD_PACIENTE) Farmacia,'
+      '  (select count(*) from MAPA_LAB_PACIENTE ML'
+      '   where ML.CD_PACIENTE = P.CD_PACIENTE) Laboratorio,'
+      '  (select count(*) from MAPA_MEDICO_LINHA M'
+      '   where M.CD_PACIENTE = P.CD_PACIENTE) Medico,'
+      '  (select count(*) from MAPA_TESTE_RAPIDO_PACIENTE MR'
+      '   where MR.CD_PACIENTE = P.CD_PACIENTE) Rapido,'
+      '  (select count(*) from AGENDA A'
+      '   where A.CD_PACIENTE = P.CD_PACIENTE) Agenda,'
+      '  (select count(*) from NOTIFICACAO N'
+      '   where N.CD_PACIENTE = P.CD_PACIENTE) Notificacao'
+      'FROM PACIENTE P'
+      'WHERE   NR_PROCESSO = :NR_PROCESSO')
+    Left = 368
+    Top = 8
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'NR_PROCESSO'
+        ParamType = ptUnknown
+      end>
+    object qyPacienteCD_PACIENTE: TIntegerField
+      FieldName = 'CD_PACIENTE'
+      Origin = 'PACIENTE.CD_PACIENTE'
+      Required = True
+    end
+    object qyPacienteNM_PACIENTE: TIBStringField
+      FieldName = 'NM_PACIENTE'
+      Origin = 'PACIENTE.NM_PACIENTE'
+      Required = True
+      Size = 50
+    end
+    object qyPacienteNM_MAE: TIBStringField
+      FieldName = 'NM_MAE'
+      Origin = 'PACIENTE.NM_MAE'
+      Required = True
+      Size = 50
+    end
+    object qyPacienteIDADE: TSmallintField
+      FieldName = 'IDADE'
+      Origin = 'PACIENTE.IDADE'
+      Required = True
+    end
+    object qyPacienteFARMACIA: TIntegerField
+      FieldName = 'FARMACIA'
+    end
+    object qyPacienteLABORATORIO: TIntegerField
+      FieldName = 'LABORATORIO'
+    end
+    object qyPacienteMEDICO: TIntegerField
+      FieldName = 'MEDICO'
+    end
+    object qyPacienteRAPIDO: TIntegerField
+      FieldName = 'RAPIDO'
+    end
+    object qyPacienteAGENDA: TIntegerField
+      FieldName = 'AGENDA'
+    end
+    object qyPacienteNOTIFICACAO: TIntegerField
+      FieldName = 'NOTIFICACAO'
+    end
+  end
+  object IBSQL1: TIBSQL
+    Database = DM.DB
+    ParamCheck = False
+    Transaction = DM.TS
+    Left = 408
+    Top = 8
+  end
+  object DataSource1: TDataSource
+    DataSet = qyPaciente
+    Left = 200
+    Top = 32
+  end
+end

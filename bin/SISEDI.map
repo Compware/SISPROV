@@ -1,0 +1,1932 @@
+
+ Start         Length     Name                   Class
+ 0001:00000000 0001E5A4H .text                   CODE
+ 0002:00000000 00000714H .data                   DATA
+ 0002:00000714 0000223DH .bss                    BSS
+
+
+Detailed map of segments
+
+ 0001:00000000 0000028E C=CODE     S=.text    G=(none)   M=System   ACBP=A9
+ 0001:00000290 0000022C C=CODE     S=.text    G=(none)   M=SysInit  ACBP=A9
+ 0001:000004BC 0000000E C=CODE     S=.text    G=(none)   M=SysConst ACBP=A9
+ 0001:000004CC 0000000E C=CODE     S=.text    G=(none)   M=Types    ACBP=A9
+ 0001:000004DC 000001C0 C=CODE     S=.text    G=(none)   M=Windows  ACBP=A9
+ 0001:0000069C 000000FE C=CODE     S=.text    G=(none)   M=SysUtils ACBP=A9
+ 0001:0000079C 0000000E C=CODE     S=.text    G=(none)   M=VarUtils ACBP=A9
+ 0001:000007AC 00000046 C=CODE     S=.text    G=(none)   M=Variants ACBP=A9
+ 0001:000007F4 00000038 C=CODE     S=.text    G=(none)   M=Messages ACBP=A9
+ 0001:0000082C 0000000E C=CODE     S=.text    G=(none)   M=ActiveX  ACBP=A9
+ 0001:0000083C 0000000E C=CODE     S=.text    G=(none)   M=RTLConsts ACBP=A9
+ 0001:0000084C 0000000E C=CODE     S=.text    G=(none)   M=TypInfo  ACBP=A9
+ 0001:0000085C 00000096 C=CODE     S=.text    G=(none)   M=Classes  ACBP=A9
+ 0001:000008F4 0000000E C=CODE     S=.text    G=(none)   M=DBConsts ACBP=A9
+ 0001:00000904 0000000E C=CODE     S=.text    G=(none)   M=Math     ACBP=A9
+ 0001:00000914 00000016 C=CODE     S=.text    G=(none)   M=DateUtils ACBP=A9
+ 0001:0000092C 0000000E C=CODE     S=.text    G=(none)   M=SqlTimSt ACBP=A9
+ 0001:0000093C 0000000E C=CODE     S=.text    G=(none)   M=FMTBcd   ACBP=A9
+ 0001:0000094C 0000000E C=CODE     S=.text    G=(none)   M=MaskUtils ACBP=A9
+ 0001:0000095C 0000000E C=CODE     S=.text    G=(none)   M=ComConst ACBP=A9
+ 0001:0000096C 0000000E C=CODE     S=.text    G=(none)   M=ComObj   ACBP=A9
+ 0001:0000097C 000000DE C=CODE     S=.text    G=(none)   M=DB       ACBP=A9
+ 0001:00000A5C 0000000E C=CODE     S=.text    G=(none)   M=DBCommon ACBP=A9
+ 0001:00000A6C 0000000E C=CODE     S=.text    G=(none)   M=IBUtils  ACBP=A9
+ 0001:00000A7C 0000000E C=CODE     S=.text    G=(none)   M=IBXConst ACBP=A9
+ 0001:00000A8C 0000000E C=CODE     S=.text    G=(none)   M=IBExternals ACBP=A9
+ 0001:00000A9C 0000000E C=CODE     S=.text    G=(none)   M=IBInstallHeader ACBP=A9
+ 0001:00000AAC 0000000E C=CODE     S=.text    G=(none)   M=IBIntf   ACBP=A9
+ 0001:00000ABC 0000000E C=CODE     S=.text    G=(none)   M=IBHeader ACBP=A9
+ 0001:00000ACC 0000000E C=CODE     S=.text    G=(none)   M=IB       ACBP=A9
+ 0001:00000ADC 0000000E C=CODE     S=.text    G=(none)   M=IBErrorCodes ACBP=A9
+ 0001:00000AEC 0000000E C=CODE     S=.text    G=(none)   M=IBBlob   ACBP=A9
+ 0001:00000AFC 0000007E C=CODE     S=.text    G=(none)   M=IBCustomDataSet ACBP=A9
+ 0001:00000B7C 0000000E C=CODE     S=.text    G=(none)   M=Contnrs  ACBP=A9
+ 0001:00000B8C 0000000E C=CODE     S=.text    G=(none)   M=IBServices ACBP=A9
+ 0001:00000B9C 0000000E C=CODE     S=.text    G=(none)   M=IBSQLMonitor ACBP=A9
+ 0001:00000BAC 0000002E C=CODE     S=.text    G=(none)   M=IBSQL    ACBP=A9
+ 0001:00000BDC 0000000E C=CODE     S=.text    G=(none)   M=IBDatabaseInfo ACBP=A9
+ 0001:00000BEC 00000016 C=CODE     S=.text    G=(none)   M=IBDatabase ACBP=A9
+ 0001:00000C04 00000026 C=CODE     S=.text    G=(none)   M=IBQuery  ACBP=A9
+ 0001:00000C2C 00000038 C=CODE     S=.text    G=(none)   M=UrlMon   ACBP=A9
+ 0001:00000C64 00000038 C=CODE     S=.text    G=(none)   M=WinInet  ACBP=A9
+ 0001:00000C9C 00000038 C=CODE     S=.text    G=(none)   M=RegStr   ACBP=A9
+ 0001:00000CD4 00000038 C=CODE     S=.text    G=(none)   M=ShellAPI ACBP=A9
+ 0001:00000D0C 00000038 C=CODE     S=.text    G=(none)   M=CommCtrl ACBP=A9
+ 0001:00000D44 00000038 C=CODE     S=.text    G=(none)   M=ShlObj   ACBP=A9
+ 0001:00000D7C 0000000E C=CODE     S=.text    G=(none)   M=Consts   ACBP=A9
+ 0001:00000D8C 0000003E C=CODE     S=.text    G=(none)   M=Graphics ACBP=A9
+ 0001:00000DCC 0000000E C=CODE     S=.text    G=(none)   M=HelpIntfs ACBP=A9
+ 0001:00000DDC 0000000E C=CODE     S=.text    G=(none)   M=MultiMon ACBP=A9
+ 0001:00000DEC 00000038 C=CODE     S=.text    G=(none)   M=Imm      ACBP=A9
+ 0001:00000E24 0000000E C=CODE     S=.text    G=(none)   M=SyncObjs ACBP=A9
+ 0001:00000E34 0000000E C=CODE     S=.text    G=(none)   M=UxTheme  ACBP=A9
+ 0001:00000E44 0000000E C=CODE     S=.text    G=(none)   M=WinHelpViewer ACBP=A9
+ 0001:00000E54 00000038 C=CODE     S=.text    G=(none)   M=WinSpool ACBP=A9
+ 0001:00000E8C 0000000E C=CODE     S=.text    G=(none)   M=Printers ACBP=A9
+ 0001:00000E9C 00000038 C=CODE     S=.text    G=(none)   M=CommDlg  ACBP=A9
+ 0001:00000ED4 00000038 C=CODE     S=.text    G=(none)   M=Dlgs     ACBP=A9
+ 0001:00000F0C 0000000E C=CODE     S=.text    G=(none)   M=StrUtils ACBP=A9
+ 0001:00000F1C 0000000E C=CODE     S=.text    G=(none)   M=Clipbrd  ACBP=A9
+ 0001:00000F2C 0000000E C=CODE     S=.text    G=(none)   M=StdActns ACBP=A9
+ 0001:00000F3C 0000000E C=CODE     S=.text    G=(none)   M=FlatSB   ACBP=A9
+ 0001:00000F4C 0000001E C=CODE     S=.text    G=(none)   M=ExtCtrls ACBP=A9
+ 0001:00000F6C 0000000E C=CODE     S=.text    G=(none)   M=ToolWin  ACBP=A9
+ 0001:00000F7C 00000038 C=CODE     S=.text    G=(none)   M=RichEdit ACBP=A9
+ 0001:00000FB4 00000016 C=CODE     S=.text    G=(none)   M=IniFiles ACBP=A9
+ 0001:00000FCC 0000000E C=CODE     S=.text    G=(none)   M=Registry ACBP=A9
+ 0001:00000FDC 0000000E C=CODE     S=.text    G=(none)   M=Buttons  ACBP=A9
+ 0001:00000FEC 0000000E C=CODE     S=.text    G=(none)   M=ExtDlgs  ACBP=A9
+ 0001:00000FFC 0000000E C=CODE     S=.text    G=(none)   M=Mapi     ACBP=A9
+ 0001:0000100C 0000000E C=CODE     S=.text    G=(none)   M=ExtActns ACBP=A9
+ 0001:0000101C 0000000E C=CODE     S=.text    G=(none)   M=ComStrs  ACBP=A9
+ 0001:0000102C 0000000E C=CODE     S=.text    G=(none)   M=ListActns ACBP=A9
+ 0001:0000103C 0000004E C=CODE     S=.text    G=(none)   M=ComCtrls ACBP=A9
+ 0001:0000108C 0000000E C=CODE     S=.text    G=(none)   M=Themes   ACBP=A9
+ 0001:0000109C 0000000E C=CODE     S=.text    G=(none)   M=Menus    ACBP=A9
+ 0001:000010AC 0000011E C=CODE     S=.text    G=(none)   M=Controls ACBP=A9
+ 0001:000011CC 0000016E C=CODE     S=.text    G=(none)   M=Forms    ACBP=A9
+ 0001:0000133C 00000016 C=CODE     S=.text    G=(none)   M=ImgList  ACBP=A9
+ 0001:00001354 0000000E C=CODE     S=.text    G=(none)   M=ActnList ACBP=A9
+ 0001:00001364 00000016 C=CODE     S=.text    G=(none)   M=StdCtrls ACBP=A9
+ 0001:0000137C 0000001E C=CODE     S=.text    G=(none)   M=Dialogs  ACBP=A9
+ 0001:0000139C 0000000E C=CODE     S=.text    G=(none)   M=IBTable  ACBP=A9
+ 0001:000013AC 00000046 C=CODE     S=.text    G=(none)   M=UDM      ACBP=A9
+ 0001:000013F4 0000001E C=CODE     S=.text    G=(none)   M=UGeral   ACBP=A9
+ 0001:00001414 00000026 C=CODE     S=.text    G=(none)   M=UGeralSQL ACBP=A9
+ 0001:0000143C 0000000E C=CODE     S=.text    G=(none)   M=Mask     ACBP=A9
+ 0001:0000144C 0000000E C=CODE     S=.text    G=(none)   M=Grids    ACBP=A9
+ 0001:0000145C 0000000E C=CODE     S=.text    G=(none)   M=VDBConsts ACBP=A9
+ 0001:0000146C 0000000E C=CODE     S=.text    G=(none)   M=DBPWDlg  ACBP=A9
+ 0001:0000147C 0000000E C=CODE     S=.text    G=(none)   M=DBLogDlg ACBP=A9
+ 0001:0000148C 0000000E C=CODE     S=.text    G=(none)   M=DBCtrls  ACBP=A9
+ 0001:0000149C 0000000E C=CODE     S=.text    G=(none)   M=DBGrids  ACBP=A9
+ 0001:000014AC 0000000E C=CODE     S=.text    G=(none)   M=Midas    ACBP=A9
+ 0001:000014BC 0000000E C=CODE     S=.text    G=(none)   M=MidConst ACBP=A9
+ 0001:000014CC 0000000E C=CODE     S=.text    G=(none)   M=DSIntf   ACBP=A9
+ 0001:000014DC 0000000E C=CODE     S=.text    G=(none)   M=DataBkr  ACBP=A9
+ 0001:000014EC 0000000E C=CODE     S=.text    G=(none)   M=Provider ACBP=A9
+ 0001:000014FC 0000001E C=CODE     S=.text    G=(none)   M=DBClient ACBP=A9
+ 0001:0000151C 0000000E C=CODE     S=.text    G=(none)   M=StdVCL   ACBP=A9
+ 0001:0000152C 0000000E C=CODE     S=.text    G=(none)   M=OleConst ACBP=A9
+ 0001:0000153C 0000000E C=CODE     S=.text    G=(none)   M=OleServer ACBP=A9
+ 0001:0000154C 0000000E C=CODE     S=.text    G=(none)   M=AxCtrls  ACBP=A9
+ 0001:0000155C 00000026 C=CODE     S=.text    G=(none)   M=OleCtrls ACBP=A9
+ 0001:00001584 00000026 C=CODE     S=.text    G=(none)   M=CHILKATHTTPLib_TLB ACBP=A9
+ 0001:000015AC 0000001E C=CODE     S=.text    G=(none)   M=CHILKATUPLOADLib_TLB ACBP=A9
+ 0001:000015CC 0000000E C=CODE     S=.text    G=(none)   M=uFuncoesWeb ACBP=A9
+ 0001:000015DC 0000000E C=CODE     S=.text    G=(none)   M=ULogSQL  ACBP=A9
+ 0001:000015EC 00000016 C=CODE     S=.text    G=(none)   M=UDMGERAL ACBP=A9
+ 0001:00001604 00000016 C=CODE     S=.text    G=(none)   M=DBLocal  ACBP=A9
+ 0001:0000161C 00000016 C=CODE     S=.text    G=(none)   M=DBLocalI ACBP=A9
+ 0001:00001634 0000000E C=CODE     S=.text    G=(none)   M=xmldom   ACBP=A9
+ 0001:00001644 0000000E C=CODE     S=.text    G=(none)   M=XMLConst ACBP=A9
+ 0001:00001654 0000000E C=CODE     S=.text    G=(none)   M=msxmldom ACBP=A9
+ 0001:00001664 0000000E C=CODE     S=.text    G=(none)   M=msxml    ACBP=A9
+ 0001:00001674 0000000E C=CODE     S=.text    G=(none)   M=Xmlxform ACBP=A9
+ 0001:00001684 0000000E C=CODE     S=.text    G=(none)   M=xmlutil  ACBP=A9
+ 0001:00001694 0000000E C=CODE     S=.text    G=(none)   M=IBUpdateSQL ACBP=A9
+ 0001:000016A4 00000026 C=CODE     S=.text    G=(none)   M=FileCtrl ACBP=A9
+ 0001:000016CC 0000000E C=CODE     S=.text    G=(none)   M=uConstanteScript ACBP=A9
+ 0001:000016DC 00000016 C=CODE     S=.text    G=(none)   M=SHDocVw  ACBP=A9
+ 0001:000016F4 0000000E C=CODE     S=.text    G=(none)   M=RXConst  ACBP=A9
+ 0001:00001704 0000000E C=CODE     S=.text    G=(none)   M=RxHook   ACBP=A9
+ 0001:00001714 0000000E C=CODE     S=.text    G=(none)   M=RXCConst ACBP=A9
+ 0001:00001724 0000000E C=CODE     S=.text    G=(none)   M=MaxMin   ACBP=A9
+ 0001:00001734 0000000E C=CODE     S=.text    G=(none)   M=VCLUtils ACBP=A9
+ 0001:00001744 0000000E C=CODE     S=.text    G=(none)   M=rxStrUtils ACBP=A9
+ 0001:00001754 0000000E C=CODE     S=.text    G=(none)   M=RXProps  ACBP=A9
+ 0001:00001764 0000000E C=CODE     S=.text    G=(none)   M=Gauges   ACBP=A9
+ 0001:00001774 0000000E C=CODE     S=.text    G=(none)   M=RxPrgrss ACBP=A9
+ 0001:00001784 0000000E C=CODE     S=.text    G=(none)   M=DateUtil ACBP=A9
+ 0001:00001794 0000000E C=CODE     S=.text    G=(none)   M=FileUtil ACBP=A9
+ 0001:000017A4 0000000E C=CODE     S=.text    G=(none)   M=AppUtils ACBP=A9
+ 0001:000017B4 0000000E C=CODE     S=.text    G=(none)   M=Placemnt ACBP=A9
+ 0001:000017C4 0000000E C=CODE     S=.text    G=(none)   M=RxTimer  ACBP=A9
+ 0001:000017D4 0000000E C=CODE     S=.text    G=(none)   M=RXCtrls  ACBP=A9
+ 0001:000017E4 0000000E C=CODE     S=.text    G=(none)   M=JConsts  ACBP=A9
+ 0001:000017F4 0000000E C=CODE     S=.text    G=(none)   M=jpeg     ACBP=A9
+ 0001:00001804 0000000E C=CODE     S=.text    G=(none)   M=pngimage ACBP=A9
+ 0001:00001814 0000000E C=CODE     S=.text    G=(none)   M=pnglang  ACBP=A9
+ 0001:00001824 0000000E C=CODE     S=.text    G=(none)   M=zlibpas  ACBP=A9
+ 0001:00001834 0000000E C=CODE     S=.text    G=(none)   M=pngextra ACBP=A9
+ 0001:00001844 0000002E C=CODE     S=.text    G=(none)   M=ZipMstr  ACBP=A9
+ 0001:00001874 0000000E C=CODE     S=.text    G=(none)   M=ZMStructs ACBP=A9
+ 0001:00001884 0000000E C=CODE     S=.text    G=(none)   M=ZMXcpt   ACBP=A9
+ 0001:00001894 0000000E C=CODE     S=.text    G=(none)   M=ZMUTF8   ACBP=A9
+ 0001:000018A4 0000000E C=CODE     S=.text    G=(none)   M=ZMCenDir ACBP=A9
+ 0001:000018B4 0000000E C=CODE     S=.text    G=(none)   M=ZMCore   ACBP=A9
+ 0001:000018C4 0000000E C=CODE     S=.text    G=(none)   M=ZMCompat ACBP=A9
+ 0001:000018D4 0000000E C=CODE     S=.text    G=(none)   M=ZMDelZip ACBP=A9
+ 0001:000018E4 0000000E C=CODE     S=.text    G=(none)   M=ZMWFuncs ACBP=A9
+ 0001:000018F4 0000000E C=CODE     S=.text    G=(none)   M=ZMMsgStr ACBP=A9
+ 0001:00001904 0000000E C=CODE     S=.text    G=(none)   M=ZMInflt  ACBP=A9
+ 0001:00001914 0000000E C=CODE     S=.text    G=(none)   M=ZMUtils  ACBP=A9
+ 0001:00001924 0000000E C=CODE     S=.text    G=(none)   M=ZMMsg    ACBP=A9
+ 0001:00001934 0000000E C=CODE     S=.text    G=(none)   M=ZMSFXInt ACBP=A9
+ 0001:00001944 0000000E C=CODE     S=.text    G=(none)   M=ZMDefMsgs ACBP=A9
+ 0001:00001954 0000000E C=CODE     S=.text    G=(none)   M=ZMMatch  ACBP=A9
+ 0001:00001964 0000000E C=CODE     S=.text    G=(none)   M=ZMCtx    ACBP=A9
+ 0001:00001974 0000000E C=CODE     S=.text    G=(none)   M=ZMDlg    ACBP=A9
+ 0001:00001984 0000000E C=CODE     S=.text    G=(none)   M=ZMIRec   ACBP=A9
+ 0001:00001994 0000000E C=CODE     S=.text    G=(none)   M=ZMCentral ACBP=A9
+ 0001:000019A4 0000000E C=CODE     S=.text    G=(none)   M=ZMEOC    ACBP=A9
+ 0001:000019B4 0000000E C=CODE     S=.text    G=(none)   M=ZMWZip   ACBP=A9
+ 0001:000019C4 0000000E C=CODE     S=.text    G=(none)   M=ZMDrv    ACBP=A9
+ 0001:000019D4 0000000E C=CODE     S=.text    G=(none)   M=ZMWorkFile ACBP=A9
+ 0001:000019E4 0000000E C=CODE     S=.text    G=(none)   M=ZMZipFile ACBP=A9
+ 0001:000019F4 0000000E C=CODE     S=.text    G=(none)   M=ZMHash   ACBP=A9
+ 0001:00001A04 0000000E C=CODE     S=.text    G=(none)   M=ZMDllLoad ACBP=A9
+ 0001:00001A14 0000000E C=CODE     S=.text    G=(none)   M=ZMFileOpr ACBP=A9
+ 0001:00001A24 0000000E C=CODE     S=.text    G=(none)   M=ZMLister ACBP=A9
+ 0001:00001A34 0000000E C=CODE     S=.text    G=(none)   M=ZMModOpr ACBP=A9
+ 0001:00001A44 0000000E C=CODE     S=.text    G=(none)   M=ZMDllOpr ACBP=A9
+ 0001:00001A54 0000000E C=CODE     S=.text    G=(none)   M=ZMZippedOpr ACBP=A9
+ 0001:00001A64 0000000E C=CODE     S=.text    G=(none)   M=ZMArgSplit ACBP=A9
+ 0001:00001A74 0000039C C=CODE     S=.text    G=(none)   M=ExcMagicUtils ACBP=A9
+ 0001:00001E10 00000694 C=CODE     S=.text    G=(none)   M=ExcMemMap ACBP=A9
+ 0001:000024A4 00002F10 C=CODE     S=.text    G=(none)   M=ExcUnmangle ACBP=A9
+ 0001:000053B4 00000400 C=CODE     S=.text    G=(none)   M=ExcStackTracer ACBP=A9
+ 0001:000057B4 000007AC C=CODE     S=.text    G=(none)   M=ExcMagicPatch ACBP=A9
+ 0001:00005F60 000007C0 C=CODE     S=.text    G=(none)   M=ExcMagicDlg ACBP=A9
+ 0001:00006720 000007C0 C=CODE     S=.text    G=(none)   M=ExcMagicDefaultFilter ACBP=A9
+ 0001:00006EE0 000039A8 C=CODE     S=.text    G=(none)   M=ExcMagic ACBP=A9
+ 0001:0000A888 000003F8 C=CODE     S=.text    G=(none)   M=ufrmSQLWeb ACBP=A9
+ 0001:0000AC80 0000000E C=CODE     S=.text    G=(none)   M=dxCommon ACBP=A9
+ 0001:0000AC90 0000000E C=CODE     S=.text    G=(none)   M=dxUtils  ACBP=A9
+ 0001:0000ACA0 0000000E C=CODE     S=.text    G=(none)   M=dxEdStr  ACBP=A9
+ 0001:0000ACB0 0000000E C=CODE     S=.text    G=(none)   M=dxCntner ACBP=A9
+ 0001:0000ACC0 0000000E C=CODE     S=.text    G=(none)   M=dxGrDate ACBP=A9
+ 0001:0000ACD0 0000000E C=CODE     S=.text    G=(none)   M=dxCalc   ACBP=A9
+ 0001:0000ACE0 0000001E C=CODE     S=.text    G=(none)   M=dxEditor ACBP=A9
+ 0001:0000AD00 0000000E C=CODE     S=.text    G=(none)   M=dxExEdtr ACBP=A9
+ 0001:0000AD10 0000000E C=CODE     S=.text    G=(none)   M=dxTLStr  ACBP=A9
+ 0001:0000AD20 0000000E C=CODE     S=.text    G=(none)   M=dxTL     ACBP=A9
+ 0001:0000AD30 0000000E C=CODE     S=.text    G=(none)   M=dxGrFCmn ACBP=A9
+ 0001:0000AD40 0000000E C=CODE     S=.text    G=(none)   M=dxDBEdtr ACBP=A9
+ 0001:0000AD50 0000000E C=CODE     S=.text    G=(none)   M=dxDBCtrl ACBP=A9
+ 0001:0000AD60 0000000E C=CODE     S=.text    G=(none)   M=dxFilter ACBP=A9
+ 0001:0000AD70 0000000E C=CODE     S=.text    G=(none)   M=dxGrExpt ACBP=A9
+ 0001:0000AD80 0000000E C=CODE     S=.text    G=(none)   M=dxGrFDlg ACBP=A9
+ 0001:0000AD90 0000000E C=CODE     S=.text    G=(none)   M=dxGrFltr ACBP=A9
+ 0001:0000ADA0 0000000E C=CODE     S=.text    G=(none)   M=dxDBGrid ACBP=A9
+ 0001:0000ADB0 0000000E C=CODE     S=.text    G=(none)   M=dxDBTLCl ACBP=A9
+ 0001:0000ADC0 0000000E C=CODE     S=.text    G=(none)   M=dxGrClms ACBP=A9
+ 0001:0000ADD0 0000000E C=CODE     S=.text    G=(none)   M=MSHTML   ACBP=A9
+ 0001:0000ADE0 0000000E C=CODE     S=.text    G=(none)   M=uRelatorioWEB ACBP=A9
+ 0001:0000ADF0 00000F9C C=CODE     S=.text    G=(none)   M=ufrmProtocoloEnvio ACBP=A9
+ 0001:0000BD8C 0000000E C=CODE     S=.text    G=(none)   M=CheckLst ACBP=A9
+ 0001:0000BD9C 00000E20 C=CODE     S=.text    G=(none)   M=ufrmDePara ACBP=A9
+ 0001:0000CBBC 0000000E C=CODE     S=.text    G=(none)   M=IdComponent ACBP=A9
+ 0001:0000CBCC 0000000E C=CODE     S=.text    G=(none)   M=IdResourceStrings ACBP=A9
+ 0001:0000CBDC 0000000E C=CODE     S=.text    G=(none)   M=IdStack  ACBP=A9
+ 0001:0000CBEC 0000000E C=CODE     S=.text    G=(none)   M=IdGlobal ACBP=A9
+ 0001:0000CBFC 0000000E C=CODE     S=.text    G=(none)   M=IdException ACBP=A9
+ 0001:0000CC0C 0000000E C=CODE     S=.text    G=(none)   M=IdURI    ACBP=A9
+ 0001:0000CC1C 0000000E C=CODE     S=.text    G=(none)   M=IdStackConsts ACBP=A9
+ 0001:0000CC2C 0000000E C=CODE     S=.text    G=(none)   M=IdWinSock2 ACBP=A9
+ 0001:0000CC3C 0000000E C=CODE     S=.text    G=(none)   M=IdStackWindows ACBP=A9
+ 0001:0000CC4C 0000000E C=CODE     S=.text    G=(none)   M=IdBaseComponent ACBP=A9
+ 0001:0000CC5C 0000000E C=CODE     S=.text    G=(none)   M=IdAntiFreezeBase ACBP=A9
+ 0001:0000CC6C 0000000E C=CODE     S=.text    G=(none)   M=IdTCPConnection ACBP=A9
+ 0001:0000CC7C 0000000E C=CODE     S=.text    G=(none)   M=IdIOHandlerSocket ACBP=A9
+ 0001:0000CC8C 0000000E C=CODE     S=.text    G=(none)   M=IdIOHandler ACBP=A9
+ 0001:0000CC9C 0000000E C=CODE     S=.text    G=(none)   M=IdSocketHandle ACBP=A9
+ 0001:0000CCAC 0000000E C=CODE     S=.text    G=(none)   M=IdSocks  ACBP=A9
+ 0001:0000CCBC 0000000E C=CODE     S=.text    G=(none)   M=IdAssignedNumbers ACBP=A9
+ 0001:0000CCCC 0000000E C=CODE     S=.text    G=(none)   M=IdRFCReply ACBP=A9
+ 0001:0000CCDC 0000000E C=CODE     S=.text    G=(none)   M=IdIntercept ACBP=A9
+ 0001:0000CCEC 0000000E C=CODE     S=.text    G=(none)   M=IdStream ACBP=A9
+ 0001:0000CCFC 0000000E C=CODE     S=.text    G=(none)   M=IdTCPStream ACBP=A9
+ 0001:0000CD0C 0000000E C=CODE     S=.text    G=(none)   M=IdTCPClient ACBP=A9
+ 0001:0000CD1C 0000000E C=CODE     S=.text    G=(none)   M=IdMessageClient ACBP=A9
+ 0001:0000CD2C 0000000E C=CODE     S=.text    G=(none)   M=IdHeaderList ACBP=A9
+ 0001:0000CD3C 0000001E C=CODE     S=.text    G=(none)   M=IdMessage ACBP=A9
+ 0001:0000CD5C 0000000E C=CODE     S=.text    G=(none)   M=IdCoderHeader ACBP=A9
+ 0001:0000CD6C 00000016 C=CODE     S=.text    G=(none)   M=IdEMailAddress ACBP=A9
+ 0001:0000CD84 0000000E C=CODE     S=.text    G=(none)   M=IdStrings ACBP=A9
+ 0001:0000CD94 0000000E C=CODE     S=.text    G=(none)   M=IdIOHandlerStream ACBP=A9
+ 0001:0000CDA4 0000000E C=CODE     S=.text    G=(none)   M=IdMessageCoder ACBP=A9
+ 0001:0000CDB4 0000000E C=CODE     S=.text    G=(none)   M=IdCoder3to4 ACBP=A9
+ 0001:0000CDC4 0000000E C=CODE     S=.text    G=(none)   M=IdCoder  ACBP=A9
+ 0001:0000CDD4 0000000E C=CODE     S=.text    G=(none)   M=IdMessageCoderXXE ACBP=A9
+ 0001:0000CDE4 0000000E C=CODE     S=.text    G=(none)   M=IdMessageCoderUUE ACBP=A9
+ 0001:0000CDF4 0000000E C=CODE     S=.text    G=(none)   M=IdCoderXXE ACBP=A9
+ 0001:0000CE04 0000000E C=CODE     S=.text    G=(none)   M=IdCoderUUE ACBP=A9
+ 0001:0000CE14 0000000E C=CODE     S=.text    G=(none)   M=IdMessageCoderMIME ACBP=A9
+ 0001:0000CE24 0000000E C=CODE     S=.text    G=(none)   M=IdCoderQuotedPrintable ACBP=A9
+ 0001:0000CE34 0000000E C=CODE     S=.text    G=(none)   M=IdCoderMIME ACBP=A9
+ 0001:0000CE44 0000000E C=CODE     S=.text    G=(none)   M=IdSMTP   ACBP=A9
+ 0001:0000CE54 000006D4 C=CODE     S=.text    G=(none)   M=uEmail   ACBP=A9
+ 0001:0000D528 00003D5C C=CODE     S=.text    G=(none)   M=ufrmMenuEDI ACBP=A9
+ 0001:00011284 000043B8 C=CODE     S=.text    G=(none)   M=ufrmEDI  ACBP=A9
+ 0001:0001563C 00000A24 C=CODE     S=.text    G=(none)   M=ufrmEDI_Pen ACBP=A9
+ 0001:00016060 0000000E C=CODE     S=.text    G=(none)   M=dxEdLib  ACBP=A9
+ 0001:00016070 0000000E C=CODE     S=.text    G=(none)   M=dxDBELib ACBP=A9
+ 0001:00016080 0000000E C=CODE     S=.text    G=(none)   M=PickDate ACBP=A9
+ 0001:00016090 0000000E C=CODE     S=.text    G=(none)   M=ToolEdit ACBP=A9
+ 0001:000160A0 0000000E C=CODE     S=.text    G=(none)   M=RXDBCtrl ACBP=A9
+ 0001:000160B0 0000000E C=CODE     S=.text    G=(none)   M=CurrEdit ACBP=A9
+ 0001:000160C0 0000000E C=CODE     S=.text    G=(none)   M=RxCalc   ACBP=A9
+ 0001:000160D0 0000000E C=CODE     S=.text    G=(none)   M=RXDConst ACBP=A9
+ 0001:000160E0 0000000E C=CODE     S=.text    G=(none)   M=DBUtils  ACBP=A9
+ 0001:000160F0 00000016 C=CODE     S=.text    G=(none)   M=uCadPROGRAMA ACBP=A9
+ 0001:00016108 0000000E C=CODE     S=.text    G=(none)   M=UfrmCadBase ACBP=A9
+ 0001:00016118 0000000E C=CODE     S=.text    G=(none)   M=uPermissao ACBP=A9
+ 0001:00016128 0000000E C=CODE     S=.text    G=(none)   M=uFuncaoGrid ACBP=A9
+ 0001:00016138 0000000E C=CODE     S=.text    G=(none)   M=UfrmCadPad ACBP=A9
+ 0001:00016148 0000000E C=CODE     S=.text    G=(none)   M=UfrmCadPadSG ACBP=A9
+ 0001:00016158 0000000E C=CODE     S=.text    G=(none)   M=IB_Constants ACBP=A9
+ 0001:00016168 0000000E C=CODE     S=.text    G=(none)   M=IB_Header ACBP=A9
+ 0001:00016178 0000000E C=CODE     S=.text    G=(none)   M=Unixpass ACBP=A9
+ 0001:00016188 0000000E C=CODE     S=.text    G=(none)   M=IB_MaskInterface ACBP=A9
+ 0001:00016198 0000000E C=CODE     S=.text    G=(none)   M=IB_Schema ACBP=A9
+ 0001:000161A8 0000000E C=CODE     S=.text    G=(none)   M=IB_ParseEx ACBP=A9
+ 0001:000161B8 0000000E C=CODE     S=.text    G=(none)   M=uRounding ACBP=A9
+ 0001:000161C8 0000000E C=CODE     S=.text    G=(none)   M=IB_Session ACBP=A9
+ 0001:000161D8 0000000E C=CODE     S=.text    G=(none)   M=IB_NodeList ACBP=A9
+ 0001:000161E8 0000000E C=CODE     S=.text    G=(none)   M=IB_Components ACBP=A9
+ 0001:000161F8 0000000E C=CODE     S=.text    G=(none)   M=IB_Utils ACBP=A9
+ 0001:00016208 0000000E C=CODE     S=.text    G=(none)   M=IB_StringList ACBP=A9
+ 0001:00016218 0000000E C=CODE     S=.text    G=(none)   M=IB_Parse ACBP=A9
+ 0001:00016228 0000000E C=CODE     S=.text    G=(none)   M=MidasLib ACBP=A9
+ 0001:00016238 0000000E C=CODE     S=.text    G=(none)   M=crtl     ACBP=A9
+ 0001:00016248 0000000E C=CODE     S=.text    G=(none)   M=RpDefine ACBP=A9
+ 0001:00016258 0000000E C=CODE     S=.text    G=(none)   M=RpFont   ACBP=A9
+ 0001:00016268 0000000E C=CODE     S=.text    G=(none)   M=RpDevice ACBP=A9
+ 0001:00016278 0000000E C=CODE     S=.text    G=(none)   M=RpRPTF   ACBP=A9
+ 0001:00016288 0000000E C=CODE     S=.text    G=(none)   M=RpBase   ACBP=A9
+ 0001:00016298 0000000E C=CODE     S=.text    G=(none)   M=RvDefine ACBP=A9
+ 0001:000162A8 0000000E C=CODE     S=.text    G=(none)   M=RvCmHuff ACBP=A9
+ 0001:000162B8 0000000E C=CODE     S=.text    G=(none)   M=RpFiler  ACBP=A9
+ 0001:000162C8 0000000E C=CODE     S=.text    G=(none)   M=RpMBCS   ACBP=A9
+ 0001:000162D8 0000000E C=CODE     S=.text    G=(none)   M=RpRender ACBP=A9
+ 0001:000162E8 0000000E C=CODE     S=.text    G=(none)   M=RpRenderCanvas ACBP=A9
+ 0001:000162F8 0000000E C=CODE     S=.text    G=(none)   M=RpRenderPrinter ACBP=A9
+ 0001:00016308 0000000E C=CODE     S=.text    G=(none)   M=RpRenderPreview ACBP=A9
+ 0001:00016318 0000000E C=CODE     S=.text    G=(none)   M=RpFormSetup ACBP=A9
+ 0001:00016328 0000000E C=CODE     S=.text    G=(none)   M=RpFormPreview ACBP=A9
+ 0001:00016338 0000000E C=CODE     S=.text    G=(none)   M=RpFormStatus ACBP=A9
+ 0001:00016348 0000000E C=CODE     S=.text    G=(none)   M=RpSystem ACBP=A9
+ 0001:00016358 0000000E C=CODE     S=.text    G=(none)   M=RvSecurity ACBP=A9
+ 0001:00016368 0000000E C=CODE     S=.text    G=(none)   M=RpCon    ACBP=A9
+ 0001:00016378 0000000E C=CODE     S=.text    G=(none)   M=RvDirectDataView ACBP=A9
+ 0001:00016388 0000000E C=CODE     S=.text    G=(none)   M=RvDataField ACBP=A9
+ 0001:00016398 0000000E C=CODE     S=.text    G=(none)   M=RvData   ACBP=A9
+ 0001:000163A8 0000000E C=CODE     S=.text    G=(none)   M=RvProj   ACBP=A9
+ 0001:000163B8 0000000E C=CODE     S=.text    G=(none)   M=RvUtil   ACBP=A9
+ 0001:000163C8 0000000E C=CODE     S=.text    G=(none)   M=RvClass  ACBP=A9
+ 0001:000163D8 0000000E C=CODE     S=.text    G=(none)   M=RpMemo   ACBP=A9
+ 0001:000163E8 0000000E C=CODE     S=.text    G=(none)   M=RvCsStd  ACBP=A9
+ 0001:000163F8 0000000E C=CODE     S=.text    G=(none)   M=RvCsRpt  ACBP=A9
+ 0001:00016408 0000000E C=CODE     S=.text    G=(none)   M=RvCsDraw ACBP=A9
+ 0001:00016418 0000000E C=CODE     S=.text    G=(none)   M=RvCsData ACBP=A9
+ 0001:00016428 0000000E C=CODE     S=.text    G=(none)   M=RvDLCommon ACBP=A9
+ 0001:00016438 0000000E C=CODE     S=.text    G=(none)   M=RvDLBase ACBP=A9
+ 0001:00016448 0000000E C=CODE     S=.text    G=(none)   M=RvDataLink ACBP=A9
+ 0001:00016458 0000000E C=CODE     S=.text    G=(none)   M=RvDatabase ACBP=A9
+ 0001:00016468 0000000E C=CODE     S=.text    G=(none)   M=RvDriverDataView ACBP=A9
+ 0001:00016478 0000000E C=CODE     S=.text    G=(none)   M=RvLEDefine ACBP=A9
+ 0001:00016488 0000000E C=CODE     S=.text    G=(none)   M=RvLEType ACBP=A9
+ 0001:00016498 0000000E C=CODE     S=.text    G=(none)   M=RvLERun  ACBP=A9
+ 0001:000164A8 0000000E C=CODE     S=.text    G=(none)   M=RvLEUtil ACBP=A9
+ 0001:000164B8 0000000E C=CODE     S=.text    G=(none)   M=RvLEID   ACBP=A9
+ 0001:000164C8 0000000E C=CODE     S=.text    G=(none)   M=RvLEModule ACBP=A9
+ 0001:000164D8 0000000E C=CODE     S=.text    G=(none)   M=RpBars   ACBP=A9
+ 0001:000164E8 0000000E C=CODE     S=.text    G=(none)   M=RvCsBars ACBP=A9
+ 0001:000164F8 0000000E C=CODE     S=.text    G=(none)   M=RvLESystem ACBP=A9
+ 0001:00016508 0000000E C=CODE     S=.text    G=(none)   M=RpRave   ACBP=A9
+ 0001:00016518 0000000E C=CODE     S=.text    G=(none)   M=RpConDS  ACBP=A9
+ 0001:00016528 0000000E C=CODE     S=.text    G=(none)   M=RxDBComb ACBP=A9
+ 0001:00016538 0000000E C=CODE     S=.text    G=(none)   M=ClipIcon ACBP=A9
+ 0001:00016548 00000016 C=CODE     S=.text    G=(none)   M=RxLookup ACBP=A9
+ 0001:00016560 0000000E C=CODE     S=.text    G=(none)   M=UfrmCadPadFichas ACBP=A9
+ 0001:00016570 0000000E C=CODE     S=.text    G=(none)   M=uFuncaoContraSenha ACBP=A9
+ 0001:00016580 00000016 C=CODE     S=.text    G=(none)   M=uCadTARV ACBP=A9
+ 0001:00016598 00000016 C=CODE     S=.text    G=(none)   M=uCadATV  ACBP=A9
+ 0001:000165B0 00000016 C=CODE     S=.text    G=(none)   M=uCadPTV  ACBP=A9
+ 0001:000165C8 00000016 C=CODE     S=.text    G=(none)   M=uCadTARVCD4 ACBP=A9
+ 0001:000165E0 00000016 C=CODE     S=.text    G=(none)   M=uCadTARVACOMP ACBP=A9
+ 0001:000165F8 00000016 C=CODE     S=.text    G=(none)   M=uCadTARVESQUEMA ACBP=A9
+ 0001:00016610 00000016 C=CODE     S=.text    G=(none)   M=uCadCOINFECCAO ACBP=A9
+ 0001:00016628 0000030C C=CODE     S=.text    G=(none)   M=ufrmCompare ACBP=A9
+ 0001:00016934 0000000E C=CODE     S=.text    G=(none)   M=UfrmLocalizar ACBP=A9
+ 0001:00016944 0000000E C=CODE     S=.text    G=(none)   M=UfrmLocPad ACBP=A9
+ 0001:00016954 00007150 C=CODE     S=.text    G=(none)   M=ufrmConfirmacaoEDI ACBP=A9
+ 0001:0001DAA4 00000AFD C=CODE     S=.text    G=(none)   M=SISEDI   ACBP=A9
+ 0002:00000000 0000002C C=DATA     S=.data    G=DGROUP   M=SysInit  ACBP=A9
+ 0002:0000002C 00000004 C=DATA     S=.data    G=DGROUP   M=ExcMagicUtils ACBP=A9
+ 0002:00000030 00000038 C=DATA     S=.data    G=DGROUP   M=ExcMemMap ACBP=A9
+ 0002:00000068 000004D8 C=DATA     S=.data    G=DGROUP   M=ExcUnmangle ACBP=A9
+ 0002:00000540 00000014 C=DATA     S=.data    G=DGROUP   M=ExcMagicDlg ACBP=A9
+ 0002:00000554 00000014 C=DATA     S=.data    G=DGROUP   M=ExcMagicDefaultFilter ACBP=A9
+ 0002:00000568 000000F0 C=DATA     S=.data    G=DGROUP   M=ExcMagic ACBP=A9
+ 0002:00001000 00000010 C=BSS      S=.bss     G=DGROUP   M=SysInit  ACBP=A9
+ 0002:00001010 00000004 C=BSS      S=.bss     G=DGROUP   M=Windows  ACBP=A9
+ 0002:00001014 00000004 C=BSS      S=.bss     G=DGROUP   M=Messages ACBP=A9
+ 0002:00001018 00000004 C=BSS      S=.bss     G=DGROUP   M=UrlMon   ACBP=A9
+ 0002:0000101C 00000004 C=BSS      S=.bss     G=DGROUP   M=WinInet  ACBP=A9
+ 0002:00001020 00000004 C=BSS      S=.bss     G=DGROUP   M=RegStr   ACBP=A9
+ 0002:00001024 00000004 C=BSS      S=.bss     G=DGROUP   M=ShellAPI ACBP=A9
+ 0002:00001028 00000004 C=BSS      S=.bss     G=DGROUP   M=CommCtrl ACBP=A9
+ 0002:0000102C 00000004 C=BSS      S=.bss     G=DGROUP   M=ShlObj   ACBP=A9
+ 0002:00001030 00000004 C=BSS      S=.bss     G=DGROUP   M=Imm      ACBP=A9
+ 0002:00001034 00000004 C=BSS      S=.bss     G=DGROUP   M=WinSpool ACBP=A9
+ 0002:00001038 00000004 C=BSS      S=.bss     G=DGROUP   M=CommDlg  ACBP=A9
+ 0002:0000103C 00000004 C=BSS      S=.bss     G=DGROUP   M=Dlgs     ACBP=A9
+ 0002:00001040 00000004 C=BSS      S=.bss     G=DGROUP   M=RichEdit ACBP=A9
+ 0002:00001044 00000004 C=BSS      S=.bss     G=DGROUP   M=ExcMagicUtils ACBP=A9
+ 0002:00001048 00000004 C=BSS      S=.bss     G=DGROUP   M=ExcMemMap ACBP=A9
+ 0002:0000104C 00002140 C=BSS      S=.bss     G=DGROUP   M=ExcUnmangle ACBP=A9
+ 0002:0000318C 00000004 C=BSS      S=.bss     G=DGROUP   M=ExcStackTracer ACBP=A9
+ 0002:00003190 00000004 C=BSS      S=.bss     G=DGROUP   M=ExcMagicPatch ACBP=A9
+ 0002:00003194 00000004 C=BSS      S=.bss     G=DGROUP   M=ExcMagicDlg ACBP=A9
+ 0002:00003198 00000004 C=BSS      S=.bss     G=DGROUP   M=ExcMagicDefaultFilter ACBP=A9
+ 0002:0000319C 00000048 C=BSS      S=.bss     G=DGROUP   M=ExcMagic ACBP=A9
+ 0002:000031E4 00000008 C=BSS      S=.bss     G=DGROUP   M=ufrmSQLWeb ACBP=A9
+ 0002:000031EC 00000008 C=BSS      S=.bss     G=DGROUP   M=ufrmProtocoloEnvio ACBP=A9
+ 0002:000031F4 00000008 C=BSS      S=.bss     G=DGROUP   M=ufrmDePara ACBP=A9
+ 0002:000031FC 00000008 C=BSS      S=.bss     G=DGROUP   M=uEmail   ACBP=A9
+ 0002:00003204 0000000C C=BSS      S=.bss     G=DGROUP   M=ufrmMenuEDI ACBP=A9
+ 0002:00003210 00000014 C=BSS      S=.bss     G=DGROUP   M=ufrmEDI  ACBP=A9
+ 0002:00003224 00000008 C=BSS      S=.bss     G=DGROUP   M=ufrmEDI_Pen ACBP=A9
+ 0002:0000322C 00000008 C=BSS      S=.bss     G=DGROUP   M=ufrmCompare ACBP=A9
+ 0002:00003234 00000008 C=BSS      S=.bss     G=DGROUP   M=ufrmConfirmacaoEDI ACBP=A9
+
+
+  Address         Publics by Name
+
+ 0002:00000068       ..
+ 0002:00001050       ..
+ 0001:000025C0       ..
+ 0002:00001018       .1
+ 0002:00001028       .1
+ 0002:00001008       .1
+ 0002:00001014       .1
+ 0002:00003194       .1
+ 0002:0000102C       .1
+ 0002:00001030       .1
+ 0002:00001038       .1
+ 0002:0000103C       .1
+ 0002:00001040       .1
+ 0002:00001044       .1
+ 0002:0000104C       .1
+ 0002:0000101C       .1
+ 0002:00001024       .1
+ 0002:00001020       .1
+ 0002:00003198       .2
+ 0002:0000318C       .2
+ 0002:000031F0       .2
+ 0002:000031F8       .2
+ 0002:00003200       .2
+ 0002:00003228       .2
+ 0002:00003230       .2
+ 0002:00003220       .2
+ 0002:00003238       .2
+ 0002:000031E8       .2
+ 0002:00001034       .3
+ 0002:00001010       .3
+ 0002:00001048       .3
+ 0002:0000320C       .3
+ 0002:00003190       .6
+ 0002:000031A0       .6
+ 0001:0001E57C       @GetPackageInfoTable
+ 0001:00000398       @GetTls
+ 0001:00000408       @InitPkg
+ 0001:0000046C       @PackageLoad
+ 0001:0001E584       @PackageLoad
+ 0001:0001E590       @PackageUnload
+ 0001:00000478       @PackageUnload
+ 0002:00000030       AccessMode
+ 0002:00000564       ADDITIONAL_TITLE
+ 0001:00008260       AddStackItemForAddress
+ 0001:00005F78       AllocDialogInstanceData
+ 0001:000002C8       AllocTlsBuffer
+ 0002:00003216       bAtualizar
+ 0002:00003214       bExportar
+ 0002:00003215       bImportar
+ 0002:00003217       bValidarCampoChave
+ 0002:000005D0       CCPPExcHand
+ 0002:00000610       CCPPExcHand4
+ 0002:00000628       CCPPExcHand4_DLL
+ 0002:000005F0       CCPPExcHandMask
+ 0002:0000061C       CCPPExcHandMask4
+ 0002:00000640       CCPPExcHandMask4_DLL
+ 0002:00000580       CCPPHandlerCode
+ 0002:00000598       CCPPHandlerNewCode
+ 0002:000005A0       CDoneExceptCode
+ 0002:000005AC       CDoneExceptMask
+ 0002:000005B8       CDonePatch
+ 0002:000005C4       CDonePatchMask
+ 0002:00000568       CHandlerCode
+ 0001:000004DC       CloseHandle
+ 0002:00000574       CNewHandlerCode
+ 0001:00000D3C       CommCtrl
+ 0001:00000ECC       CommDlg
+ 0001:00001B44       CompareMem
+ 0001:0001D598       ConfirmarAR
+ 0001:00008DB4       CopyContextAndLog
+ 0001:000004E4       CopyFile
+ 0001:000004EC       CreateFile
+ 0001:000004F4       CreateFileMapping
+ 0001:000005CC       CreateFont
+ 0002:00000560       CRLF
+ 0002:00000554       DEFAULT_EXCEPTION_MSG_BRIEF
+ 0002:00000558       DEFAULT_EXCEPTION_MSG_FULL
+ 0001:000004FC       DeleteCriticalSection
+ 0001:000005D4       DeleteObject
+ 0001:000074D4       DemoWarning
+ 0002:0000005C       DesiredAccess
+ 0002:00000540       DetailTexts
+ 0001:000005DC       DialogBoxParam
+ 0001:00005FC0       DlgDataPtr
+ 0001:00000F04       Dlgs
+ 0001:00008D5C       DoneExceptBody
+ 0001:00001B84       DumpBytes
+ 0002:00003208       EDIERRO
+ 0001:00005B00       EMPatchCheckTemplate
+ 0001:000005E4       EndDialog
+ 0001:00000504       EnterCriticalSection
+ 0001:00006250       ExceptionDialogProc
+ 0002:0000319C       ExceptionHook
+ 0001:0000A880       ExcMagic
+ 0001:00006ED8       ExcMagicDefaultFilter
+ 0001:00006718       ExcMagicDlg
+ 0001:000065C8       ExcMagicErrorDlg
+ 0002:000031CC       ExcMagicLock
+ 0001:00005F58       ExcMagicPatch
+ 0001:00001E08       ExcMagicUtils
+ 0001:0000249C       ExcMemMap
+ 0001:000057AC       ExcStackTracer
+ 0001:000053AC       ExcUnmangle
+ 0001:00000374       ExitProcessTLS
+ 0001:0000034C       ExitThreadTLS
+ 0001:00000E54       Finalization
+ 0001:0001124C       Finalization
+ 0001:00000E9C       Finalization
+ 0001:00000ED4       Finalization
+ 0001:00005F28       Finalization
+ 0001:00000F7C       Finalization
+ 0001:0001DA6C       Finalization
+ 0001:0000BD54       Finalization
+ 0001:000168FC       Finalization
+ 0001:0000577C       Finalization
+ 0001:00000484       Finalization
+ 0001:00016028       Finalization
+ 0001:0000537C       Finalization
+ 0001:0000A850       Finalization
+ 0001:0000246C       Finalization
+ 0001:00001DCC       Finalization
+ 0001:000155F8       Finalization
+ 0001:0000AC48       Finalization
+ 0001:00000C9C       Finalization
+ 0001:00000DEC       Finalization
+ 0001:00006E94       Finalization
+ 0001:0000CB84       Finalization
+ 0001:00000D44       Finalization
+ 0001:00000664       Finalization
+ 0001:000007F4       Finalization
+ 0001:00000D0C       Finalization
+ 0001:000066E8       Finalization
+ 0001:00000C2C       Finalization
+ 0001:00000CD4       Finalization
+ 0001:00000C64       Finalization
+ 0001:0000D4F0       Finalization
+ 0001:00005FA8       FreeDialogInstanceData
+ 0001:00000290       FreeLibrary
+ 0002:0000322C       frmCompare
+ 0002:00003234       frmConfirmacaoEDI
+ 0002:000031F4       frmDePara
+ 0002:00003210       frmEDI
+ 0002:00003224       frmEDI_Pen
+ 0002:000031FC       frmEmail
+ 0002:00003204       frmMenuEDI
+ 0002:000031EC       frmProtocoloEnvio
+ 0002:000031E4       frmSQL
+ 0001:0000050C       GetCurrentProcess
+ 0001:00000514       GetCurrentThreadId
+ 0001:000005EC       GetDlgItem
+ 0001:00001DAC       GetEBP
+ 0001:00001DB0       GetESP
+ 0001:0000051C       GetFileSize
+ 0001:00000524       GetLastError
+ 0001:0000052C       GetLocalTime
+ 0001:00000534       GetModuleFileName
+ 0001:000075BC       GetModuleName
+ 0001:00007508       GetRealExceptionInfo
+ 0001:0000755C       GetRealExceptionObject
+ 0001:00001DC4       GetStackBase
+ 0001:00001DBC       GetStackTop
+ 0001:0000053C       GetSystemInfo
+ 0001:000002D4       GetTlsSize
+ 0001:00001DB4       GetTopOfSEH
+ 0001:000005F4       GetWindowLong
+ 0001:000005FC       GetWindowRect
+ 0001:00000544       GlobalMemoryStatus
+ 0002:00000548       Heights
+ 0002:0000002C       HEX_DIGITS
+ 0002:00001004       HInstance
+ 0001:00008CF0       HookedAppShowException
+ 0001:00008E4C       HookedCPPExcHandler
+ 0001:00008E60       HookedCPPExcHandler_CB4
+ 0001:00008D60       HookedDoneExcept
+ 0001:00008778       HookedExceptionErrorMessage
+ 0001:00008D78       HookedRaiseExcept
+ 0001:00008B04       HookedShowException
+ 0001:00000E1C       Imm
+ 0001:000061A4       InitControlForTab
+ 0001:0000054C       InitializeCriticalSection
+ 0001:000003D8       InitializeModule
+ 0001:00000320       InitProcessTLS
+ 0001:000002DC       InitThreadTLS
+ 0001:000060F8       InsertTab
+ 0001:00000554       IsBadReadPtr
+ 0001:000054B0       IsGoodCodePtr
+ 0001:0000055C       LeaveCriticalSection
+ 0001:00000604       LoadIcon
+ 0001:0000060C       LoadImage
+ 0001:00000298       LocalAlloc
+ 0001:000002A0       LocalFree
+ 0001:00001C7C       LocalTimeStr
+ 0001:00001A74       LogAsAnsiString
+ 0001:00008E14       MagicHandleAllExceptions
+ 0001:00008E2C       MagicHandleCPPExceptions
+ 0002:00000050       MapProtect
+ 0001:00000564       MapViewOfFile
+ 0001:00000614       MessageBox
+ 0001:00000824       Messages
+ 0002:00000004       Module
+ 0002:00001000       ModuleIsLib
+ 0002:00001001       ModuleIsPackage
+ 0001:0000056C       MoveFile
+ 0002:00003218       nTempo
+ 0002:000031BC       Patch_AppShow
+ 0002:000031C8       Patch_CPPExcHandler
+ 0002:000031C4       Patch_Done
+ 0002:000031A4       Patch_ExcHandler
+ 0002:000031A8       Patch_HandleAny
+ 0002:000031B0       Patch_HandleAuto
+ 0002:000031AC       Patch_HandleOn
+ 0002:000031B4       Patch_Message
+ 0002:000031C0       Patch_Raise
+ 0002:000031B8       Patch_Show
+ 0001:0000ED48       PegaNome
+ 0001:00002500       RaiseDelphiUnmangleException
+ 0001:00000574       RaiseException
+ 0001:00008D6C       RaiseHandlerBody
+ 0001:00001B14       ReadMem
+ 0001:0000057C       ReadProcessMemory
+ 0001:00008E74       RealAddr
+ 0001:00000CCC       RegStr
+ 0001:00007598       ReleaseRealExceptionObject
+ 0001:00012100       RetiraNumero
+ 0001:00000FAC       RichEdit
+ 0001:0000061C       SendDlgItemMessage
+ 0001:00000624       SendMessage
+ 0001:0000062C       SetDlgItemText
+ 0001:00000584       SetFilePointer
+ 0001:00000634       SetFocus
+ 0001:0000063C       SetWindowLong
+ 0001:00000644       SetWindowPos
+ 0001:0000064C       SetWindowText
+ 0002:0000003C       ShareMode
+ 0001:00000D04       ShellAPI
+ 0001:00000D74       ShlObj
+ 0001:00005FDC       ShowControlForTab
+ 0001:000061F0       ShowDetails
+ 0001:0000601C       ShowTab
+ 0001:00000654       ShowWindow
+ 0001:0001E59C       SISEDI
+ 0002:0000321C       sSqlArquivoEDI
+ 0001:00001D20       StrChar2Char
+ 0001:000004B4       SysInit
+ 0001:000068C4       TDefaultExcMagicFilter.ExceptionMessage
+ 0001:00006AC8       TDefaultExcMagicFilter.LogException
+ 0001:00006CEC       TDefaultExcMagicFilter.ShowException
+ 0001:0000058C       TerminateProcess
+ 0001:00008220       TExcCallStack.Clear
+ 0001:000081B4       TExcCallStack.Create
+ 0001:000081F4       TExcCallStack.Destroy
+ 0001:00008418       TExcCallStack.Dump
+ 0001:000083E8       TExcCallStack.Generate
+ 0001:00008334       TExcCallStack.GenerateFromAddr
+ 0001:00008238       TExcCallStack.GetItem
+ 0001:00005670       TExcGenericStackTracer.Initialize
+ 0001:00005500       TExcGenericStackTracer.IsValidCaller
+ 0001:000054F8       TExcGenericStackTracer.IsValidCodeAddr
+ 0001:000054A0       TExcGenericStackTracer.IsValidStackAddr
+ 0001:00005690       TExcGenericStackTracer.Next
+ 0001:00009190       TExcMagic.CleanUpLists
+ 0001:00008EC8       TExcMagic.Create
+ 0001:00009268       TExcMagic.CreatePatches
+ 0001:0000A57C       TExcMagic.DefaultErrorDialog
+ 0001:00009108       TExcMagic.Destroy
+ 0001:000095E8       TExcMagic.DestroyPatches
+ 0001:0000A284       TExcMagic.DumpAll
+ 0001:00009CD0       TExcMagic.DumpContext
+ 0001:0000A704       TExcMagic.EnableExceptionFilter
+ 0001:0000A820       TExcMagic.ExceptionFilterMatch
+ 0001:000099E0       TExcMagic.FindDebugModule
+ 0001:00009B3C       TExcMagic.GetAddressSourceInfo
+ 0001:00009C84       TExcMagic.GetAddressSourceInfoRec
+ 0001:00009810       TExcMagic.GetContext
+ 0001:00009850       TExcMagic.GetExceptionInfo
+ 0001:00009830       TExcMagic.GetExceptionRec
+ 0001:00009650       TExcMagic.GetExcMagicAbout
+ 0001:000096B8       TExcMagic.GetExcMagicVersion
+ 0001:00009C54       TExcMagic.GetSourceInfo
+ 0001:00009C9C       TExcMagic.GetSourceInfoRec
+ 0001:0000A790       TExcMagic.IsExceptionFilterEnabled
+ 0001:0000A2C8       TExcMagic.Log
+ 0001:0000A4D0       TExcMagic.LogException
+ 0001:0000A3F4       TExcMagic.LogExceptionData
+ 0001:0000A620       TExcMagic.RegisterExceptionFilter
+ 0001:00009870       TExcMagic.SetEnabled
+ 0001:0000994C       TExcMagic.UnMangle
+ 0001:0000A678       TExcMagic.UnRegisterExceptionFilter
+ 0001:00005E30       TExcMagicCallSubstPatch.Create
+ 0001:00005D4C       TExcMagicGenericPatch.Create
+ 0001:00005DB4       TExcMagicJumpCallPatch.Create
+ 0001:00005BCC       TExcMagicPatch.Apply
+ 0001:00005B54       TExcMagicPatch.Create
+ 0001:00005B98       TExcMagicPatch.Destroy
+ 0001:00005C28       TExcMagicPatch.Lock
+ 0001:00005BF8       TExcMagicPatch.Remove
+ 0001:00005C24       TExcMagicPatch.Reset
+ 0001:00005CB4       TExcMagicPatch.SetupPatch
+ 0001:00005C48       TExcMagicPatch.SetupTemplate
+ 0001:00005C38       TExcMagicPatch.UnLock
+ 0001:000168D8       TfrmCompare.FormShow
+ 0001:0001689C       TfrmCompare.sbDireitaResize
+ 0001:00016860       TfrmCompare.sbEsquerdaResize
+ 0001:00017FBC       TfrmConfirmacaoEDI.Aceitar1Click
+ 0001:0001B480       TfrmConfirmacaoEDI.BitBtn1Click
+ 0001:0001B44C       TfrmConfirmacaoEDI.BitBtn2Click
+ 0001:0001B468       TfrmConfirmacaoEDI.BitBtn3Click
+ 0001:0001B470       TfrmConfirmacaoEDI.BitBtn4Click
+ 0001:0001B478       TfrmConfirmacaoEDI.BitBtn5Click
+ 0001:0001D124       TfrmConfirmacaoEDI.btAtualizarClick
+ 0001:0001D0CC       TfrmConfirmacaoEDI.btCancelarClick
+ 0001:0001D24C       TfrmConfirmacaoEDI.btEditarClick
+ 0001:0001B508       TfrmConfirmacaoEDI.btgravarClick
+ 0001:0001B4B4       TfrmConfirmacaoEDI.btIncluirClick
+ 0001:0001B804       TfrmConfirmacaoEDI.btLocMunicipioButtonClick
+ 0001:0001B57C       TfrmConfirmacaoEDI.btLocProvinciaButtonClick
+ 0001:0001BB58       TfrmConfirmacaoEDI.btLocUnidadeButtonClick
+ 0001:0001D27C       TfrmConfirmacaoEDI.btSalvarClick
+ 0001:0001AA18       TfrmConfirmacaoEDI.Comparar1Click
+ 0001:0001D7EC       TfrmConfirmacaoEDI.Confirmar1Click
+ 0001:0001D1F8       TfrmConfirmacaoEDI.dsDadosDataChange
+ 0001:0001AE54       TfrmConfirmacaoEDI.Excluir1Click
+ 0001:00018C98       TfrmConfirmacaoEDI.FormCreate
+ 0001:00018E48       TfrmConfirmacaoEDI.FormDestroy
+ 0001:0001D154       TfrmConfirmacaoEDI.PageControl1Change
+ 0001:00018220       TfrmConfirmacaoEDI.Processar1Click
+ 0001:00018E44       TfrmConfirmacaoEDI.ProcessarExclusao
+ 0001:00018E68       TfrmConfirmacaoEDI.ProcessaTodos
+ 0001:0001B2D0       TfrmConfirmacaoEDI.StatusBar1DrawPanel
+ 0001:00018E64       TfrmConfirmacaoEDI.TB_REGISTROSBeforeOpen
+ 0001:00018D08       TfrmConfirmacaoEDI.TB_REGISTROSCalcFields
+ 0001:0001B1C0       TfrmConfirmacaoEDI.Timer1Timer
+ 0001:00019554       TfrmConfirmacaoEDI.VisualizaAtv
+ 0001:0001A6A0       TfrmConfirmacaoEDI.VisualizaCOINFECCAO
+ 0001:00018E6C       TfrmConfirmacaoEDI.VisualizaPrograma
+ 0001:000198C4       TfrmConfirmacaoEDI.VisualizaPtv
+ 0001:00018D50       TfrmConfirmacaoEDI.Visualizar1Click
+ 0001:000191E4       TfrmConfirmacaoEDI.VisualizaTarv
+ 0001:00019C34       TfrmConfirmacaoEDI.VisualizaTarvAcomp
+ 0001:00019FAC       TfrmConfirmacaoEDI.VisualizaTarvCD4
+ 0001:0001A324       TfrmConfirmacaoEDI.VisualizaTarvEsquema
+ 0001:0000C344       TfrmDePara.btAbrirClick
+ 0001:0000C99C       TfrmDePara.btCompararClick
+ 0001:0000C210       TfrmDePara.btDeClick
+ 0001:0000C700       TfrmDePara.btDelParaClick
+ 0001:0000C774       TfrmDePara.btDeParaClick
+ 0001:0000C2A8       TfrmDePara.btParaClick
+ 0001:00011788       TfrmEDI.btExportarClick
+ 0001:000121AC       TfrmEDI.btImportarClick
+ 0001:000120F8       TfrmEDI.btLimparDtExpClick
+ 0001:00011738       TfrmEDI.btOrdemClick
+ 0001:00014454       TfrmEDI.CarregaArquivosEDI
+ 0001:00014D64       TfrmEDI.CopiaValor
+ 0001:000151B8       TfrmEDI.FormCreate
+ 0001:00013430       TfrmEDI.Importar
+ 0001:000154F0       TfrmEDI.lstArquivosClick
+ 0001:000155B4       TfrmEDI.lstArquivosDblClick
+ 0001:000147F8       TfrmEDI.MontaDataSet
+ 0001:00011F88       TfrmEDI.MudaTodasDatasExp
+ 0001:00014F14       TfrmEDI.ValidaCamposEDI
+ 0001:00015AD4       TfrmEDI_Pen.btEnviarClick
+ 0001:00015D00       TfrmEDI_Pen.btReceberClick
+ 0001:00015DA8       TfrmEDI_Pen.CopiarArquivoPen
+ 0001:00015864       TfrmEDI_Pen.EnviarArquivoPen
+ 0001:00015CE4       TfrmEDI_Pen.FormClose
+ 0001:00015CB0       TfrmEDI_Pen.FormCreate
+ 0001:0000D120       TfrmEmail.AddAttachment
+ 0001:0000D188       TfrmEmail.AddBody
+ 0001:0000D21C       TfrmEmail.AddBodyHtml
+ 0001:0000D2BC       TfrmEmail.btEnviarClick
+ 0001:0000D2C4       TfrmEmail.Enviar
+ 0001:0000FE88       TfrmMenuEDI.Aplicao1Click
+ 0001:0000FA68       TfrmMenuEDI.AtualizaStatus
+ 0001:00011120       TfrmMenuEDI.AtualizaUpdate
+ 0001:0000E154       TfrmMenuEDI.btnEnviarArquivoClick
+ 0001:0000E928       TfrmMenuEDI.btnReceberArquivoClick
+ 0001:0000DF48       TfrmMenuEDI.DeleteRefEDI_UNIDADE
+ 0001:000110D8       TfrmMenuEDI.DePara1Click
+ 0001:0000DE7C       TfrmMenuEDI.Descompactar
+ 0001:0000F704       TfrmMenuEDI.Enviar1Click
+ 0001:0000E354       TfrmMenuEDI.EnviarArquivo
+ 0001:0000E5F8       TfrmMenuEDI.EnviarArquivoProtocolo
+ 0001:00010FEC       TfrmMenuEDI.este1Click
+ 0001:0000F238       TfrmMenuEDI.Exportar1Click
+ 0001:0001123C       TfrmMenuEDI.FormClose
+ 0001:0000F970       TfrmMenuEDI.FormCreate
+ 0001:0000FC10       TfrmMenuEDI.FormShow
+ 0001:0000EBFC       TfrmMenuEDI.Get
+ 0001:0000F094       TfrmMenuEDI.Importar1Click
+ 0001:000102D8       TfrmMenuEDI.Juntar
+ 0001:0000F964       TfrmMenuEDI.Maximizar1Click
+ 0001:0000F954       TfrmMenuEDI.Minimizar1Click
+ 0001:00011104       TfrmMenuEDI.PNGButton1Click
+ 0001:000110E8       TfrmMenuEDI.PNGButton2Click
+ 0001:00010518       TfrmMenuEDI.Protocolo1Click
+ 0001:0000F4AC       TfrmMenuEDI.Receber1Click
+ 0001:0000EE08       TfrmMenuEDI.ReceberArquivo
+ 0001:0000F94C       TfrmMenuEDI.Sair1Click
+ 0001:0000FBDC       TfrmMenuEDI.SQL1Click
+ 0001:0000F9F8       TfrmMenuEDI.StatusBar1DrawPanel
+ 0001:0000F33C       TfrmMenuEDI.tmEDITimer
+ 0001:0001122C       TfrmMenuEDI.VersaoUnidades1Click
+ 0001:0000B634       TfrmProtocoloEnvio.Aceitar1Click
+ 0001:0000BD38       TfrmProtocoloEnvio.BitBtn1Click
+ 0001:0000BD30       TfrmProtocoloEnvio.BitBtn3Click
+ 0001:0000B700       TfrmProtocoloEnvio.FormCreate
+ 0001:0000BBA0       TfrmProtocoloEnvio.FormDestroy
+ 0001:0000B684       TfrmProtocoloEnvio.Processar1Click
+ 0001:0000B8C4       TfrmProtocoloEnvio.ProcessarExclusao
+ 0001:0000BCC0       TfrmProtocoloEnvio.ProcessaTodos
+ 0001:0000BBBC       TfrmProtocoloEnvio.TB_PROTOCOLO_ENVIOBeforeOpen
+ 0001:0000B764       TfrmProtocoloEnvio.TB_PROTOCOLO_ENVIOCalcFields
+ 0001:0000B78C       TfrmProtocoloEnvio.Visualizar1Click
+ 0001:0000AA90       TfrmSQL.btExecutarClick
+ 0001:000002A8       TlsAlloc
+ 0002:0000100C       tlsBuffer
+ 0001:000002B0       TlsFree
+ 0001:000002B8       TlsGetValue
+ 0002:00000000       TlsIndex
+ 0002:FFBE0254       TlsLast
+ 0002:0000001C       TlsProc
+ 0001:000002C0       TlsSetValue
+ 0001:00001F38       TMMFileStream.Create
+ 0001:000021AC       TMMFileStream.Destroy
+ 0001:00002324       TMMFileStream.GetRawData
+ 0001:00002334       TMMFileStream.MapData
+ 0001:0000239C       TMMFileStream.Read
+ 0001:000023D0       TMMFileStream.ReadByte
+ 0001:000023F4       TMMFileStream.ReadDword
+ 0001:00002418       TMMFileStream.ReadPointer
+ 0001:00002444       TMMFileStream.ReadWord
+ 0001:000021F0       TMMFileStream.ReView
+ 0001:00002370       TMMFileStream.Seek
+ 0001:00002358       TMMFileStream.UnMapData
+ 0001:00002394       TMMFileStream.Write
+ 0001:000075EC       TModuleDebugInfo.Create
+ 0001:000077B0       TModuleDebugInfo.CreateNamesArray
+ 0001:0000765C       TModuleDebugInfo.Destroy
+ 0001:00007908       TModuleDebugInfo.EntryOffset
+ 0001:00007924       TModuleDebugInfo.FindProc
+ 0001:000076E4       TModuleDebugInfo.GetConvertedAddress
+ 0001:000077A4       TModuleDebugInfo.GetIsDelphi
+ 0001:000076C8       TModuleDebugInfo.GetLogicalAddr
+ 0001:0000772C       TModuleDebugInfo.GetModuleName
+ 0001:00007860       TModuleDebugInfo.GetName
+ 0001:00007A50       TModuleDebugInfo.GetProcName
+ 0001:00007B50       TModuleDebugInfo.GetSourceLine
+ 0001:00007688       TModuleDebugInfo.IsInCode
+ 0001:000080E8       TModuleDebugInfo.LoadDebugInfo
+ 0001:00007FE0       TModuleDebugInfo.LoadTDS
+ 0001:00007F40       TModuleDebugInfo.LoadTDS2
+ 0001:00007E6C       TModuleDebugInfo.LoadTDS3
+ 0001:00007E40       TModuleDebugInfo.ProcName
+ 0001:00007F34       TModuleDebugInfo.SeekToDebugSection
+ 0001:00007E14       TModuleDebugInfo.SourceLine
+ 0001:0000816C       TModuleDebugInfo.UnLoadDebugInfo
+ 0001:0000DBB4       TNewDialogFilter.ExceptionMessage
+ 0001:0000DBE4       TNewDialogFilter.LogException
+ 0001:0000DBEC       TNewDialogFilter.ShowException
+ 0001:0000D520       uEmail
+ 0001:0001692C       ufrmCompare
+ 0001:0001DA9C       ufrmConfirmacaoEDI
+ 0001:0000CBB4       ufrmDePara
+ 0001:00015634       ufrmEDI
+ 0001:00016058       ufrmEDI_Pen
+ 0001:0001127C       ufrmMenuEDI
+ 0001:0000BD84       ufrmProtocoloEnvio
+ 0001:0000AC78       ufrmSQLWeb
+ 0001:000003E4       UninitializeModule
+ 0002:0000055C       UNKNOWN
+ 0001:00000594       UnmapViewOfFile
+ 0001:00000C5C       UrlMon
+ 0001:0001337C       ValidaCamposChaves
+ 0001:0000059C       VirtualLock
+ 0001:000005A4       VirtualQuery
+ 0001:000005AC       VirtualUnlock
+ 0002:00000550       Width
+ 0001:00000694       Windows
+ 0001:000005B4       WinExec
+ 0001:00000C94       WinInet
+ 0001:00000E84       WinSpool
+ 0001:000005BC       WriteFile
+ 0001:00001AE4       WriteMem
+ 0001:000005C4       WriteProcessMemory
+ 0001:0000065C       ZeroMemory
+ 0001:00002564       _UnMangle
+ 0001:00005374       __rtl_setUnmangleMode
+ 0001:00004E49       __rtl_unmangle
+
+
+  Address         Publics by Value
+
+ 0002:FFBE0254       TlsLast
+ 0001:00000290       FreeLibrary
+ 0001:00000298       LocalAlloc
+ 0001:000002A0       LocalFree
+ 0001:000002A8       TlsAlloc
+ 0001:000002B0       TlsFree
+ 0001:000002B8       TlsGetValue
+ 0001:000002C0       TlsSetValue
+ 0001:000002C8       AllocTlsBuffer
+ 0001:000002D4       GetTlsSize
+ 0001:000002DC       InitThreadTLS
+ 0001:00000320       InitProcessTLS
+ 0001:0000034C       ExitThreadTLS
+ 0001:00000374       ExitProcessTLS
+ 0001:00000398       @GetTls
+ 0001:000003D8       InitializeModule
+ 0001:000003E4       UninitializeModule
+ 0001:00000408       @InitPkg
+ 0001:0000046C       @PackageLoad
+ 0001:00000478       @PackageUnload
+ 0001:00000484       Finalization
+ 0001:000004B4       SysInit
+ 0001:000004DC       CloseHandle
+ 0001:000004E4       CopyFile
+ 0001:000004EC       CreateFile
+ 0001:000004F4       CreateFileMapping
+ 0001:000004FC       DeleteCriticalSection
+ 0001:00000504       EnterCriticalSection
+ 0001:0000050C       GetCurrentProcess
+ 0001:00000514       GetCurrentThreadId
+ 0001:0000051C       GetFileSize
+ 0001:00000524       GetLastError
+ 0001:0000052C       GetLocalTime
+ 0001:00000534       GetModuleFileName
+ 0001:0000053C       GetSystemInfo
+ 0001:00000544       GlobalMemoryStatus
+ 0001:0000054C       InitializeCriticalSection
+ 0001:00000554       IsBadReadPtr
+ 0001:0000055C       LeaveCriticalSection
+ 0001:00000564       MapViewOfFile
+ 0001:0000056C       MoveFile
+ 0001:00000574       RaiseException
+ 0001:0000057C       ReadProcessMemory
+ 0001:00000584       SetFilePointer
+ 0001:0000058C       TerminateProcess
+ 0001:00000594       UnmapViewOfFile
+ 0001:0000059C       VirtualLock
+ 0001:000005A4       VirtualQuery
+ 0001:000005AC       VirtualUnlock
+ 0001:000005B4       WinExec
+ 0001:000005BC       WriteFile
+ 0001:000005C4       WriteProcessMemory
+ 0001:000005CC       CreateFont
+ 0001:000005D4       DeleteObject
+ 0001:000005DC       DialogBoxParam
+ 0001:000005E4       EndDialog
+ 0001:000005EC       GetDlgItem
+ 0001:000005F4       GetWindowLong
+ 0001:000005FC       GetWindowRect
+ 0001:00000604       LoadIcon
+ 0001:0000060C       LoadImage
+ 0001:00000614       MessageBox
+ 0001:0000061C       SendDlgItemMessage
+ 0001:00000624       SendMessage
+ 0001:0000062C       SetDlgItemText
+ 0001:00000634       SetFocus
+ 0001:0000063C       SetWindowLong
+ 0001:00000644       SetWindowPos
+ 0001:0000064C       SetWindowText
+ 0001:00000654       ShowWindow
+ 0001:0000065C       ZeroMemory
+ 0001:00000664       Finalization
+ 0001:00000694       Windows
+ 0001:000007F4       Finalization
+ 0001:00000824       Messages
+ 0001:00000C2C       Finalization
+ 0001:00000C5C       UrlMon
+ 0001:00000C64       Finalization
+ 0001:00000C94       WinInet
+ 0001:00000C9C       Finalization
+ 0001:00000CCC       RegStr
+ 0001:00000CD4       Finalization
+ 0001:00000D04       ShellAPI
+ 0001:00000D0C       Finalization
+ 0001:00000D3C       CommCtrl
+ 0001:00000D44       Finalization
+ 0001:00000D74       ShlObj
+ 0001:00000DEC       Finalization
+ 0001:00000E1C       Imm
+ 0001:00000E54       Finalization
+ 0001:00000E84       WinSpool
+ 0001:00000E9C       Finalization
+ 0001:00000ECC       CommDlg
+ 0001:00000ED4       Finalization
+ 0001:00000F04       Dlgs
+ 0001:00000F7C       Finalization
+ 0001:00000FAC       RichEdit
+ 0001:00001A74       LogAsAnsiString
+ 0001:00001AE4       WriteMem
+ 0001:00001B14       ReadMem
+ 0001:00001B44       CompareMem
+ 0001:00001B84       DumpBytes
+ 0001:00001C7C       LocalTimeStr
+ 0001:00001D20       StrChar2Char
+ 0001:00001DAC       GetEBP
+ 0001:00001DB0       GetESP
+ 0001:00001DB4       GetTopOfSEH
+ 0001:00001DBC       GetStackTop
+ 0001:00001DC4       GetStackBase
+ 0001:00001DCC       Finalization
+ 0001:00001E08       ExcMagicUtils
+ 0001:00001F38       TMMFileStream.Create
+ 0001:000021AC       TMMFileStream.Destroy
+ 0001:000021F0       TMMFileStream.ReView
+ 0001:00002324       TMMFileStream.GetRawData
+ 0001:00002334       TMMFileStream.MapData
+ 0001:00002358       TMMFileStream.UnMapData
+ 0001:00002370       TMMFileStream.Seek
+ 0001:00002394       TMMFileStream.Write
+ 0001:0000239C       TMMFileStream.Read
+ 0001:000023D0       TMMFileStream.ReadByte
+ 0001:000023F4       TMMFileStream.ReadDword
+ 0001:00002418       TMMFileStream.ReadPointer
+ 0001:00002444       TMMFileStream.ReadWord
+ 0001:0000246C       Finalization
+ 0001:0000249C       ExcMemMap
+ 0001:00002500       RaiseDelphiUnmangleException
+ 0001:00002564       _UnMangle
+ 0001:000025C0       ..
+ 0001:00004E49       __rtl_unmangle
+ 0001:00005374       __rtl_setUnmangleMode
+ 0001:0000537C       Finalization
+ 0001:000053AC       ExcUnmangle
+ 0001:000054A0       TExcGenericStackTracer.IsValidStackAddr
+ 0001:000054B0       IsGoodCodePtr
+ 0001:000054F8       TExcGenericStackTracer.IsValidCodeAddr
+ 0001:00005500       TExcGenericStackTracer.IsValidCaller
+ 0001:00005670       TExcGenericStackTracer.Initialize
+ 0001:00005690       TExcGenericStackTracer.Next
+ 0001:0000577C       Finalization
+ 0001:000057AC       ExcStackTracer
+ 0001:00005B00       EMPatchCheckTemplate
+ 0001:00005B54       TExcMagicPatch.Create
+ 0001:00005B98       TExcMagicPatch.Destroy
+ 0001:00005BCC       TExcMagicPatch.Apply
+ 0001:00005BF8       TExcMagicPatch.Remove
+ 0001:00005C24       TExcMagicPatch.Reset
+ 0001:00005C28       TExcMagicPatch.Lock
+ 0001:00005C38       TExcMagicPatch.UnLock
+ 0001:00005C48       TExcMagicPatch.SetupTemplate
+ 0001:00005CB4       TExcMagicPatch.SetupPatch
+ 0001:00005D4C       TExcMagicGenericPatch.Create
+ 0001:00005DB4       TExcMagicJumpCallPatch.Create
+ 0001:00005E30       TExcMagicCallSubstPatch.Create
+ 0001:00005F28       Finalization
+ 0001:00005F58       ExcMagicPatch
+ 0001:00005F78       AllocDialogInstanceData
+ 0001:00005FA8       FreeDialogInstanceData
+ 0001:00005FC0       DlgDataPtr
+ 0001:00005FDC       ShowControlForTab
+ 0001:0000601C       ShowTab
+ 0001:000060F8       InsertTab
+ 0001:000061A4       InitControlForTab
+ 0001:000061F0       ShowDetails
+ 0001:00006250       ExceptionDialogProc
+ 0001:000065C8       ExcMagicErrorDlg
+ 0001:000066E8       Finalization
+ 0001:00006718       ExcMagicDlg
+ 0001:000068C4       TDefaultExcMagicFilter.ExceptionMessage
+ 0001:00006AC8       TDefaultExcMagicFilter.LogException
+ 0001:00006CEC       TDefaultExcMagicFilter.ShowException
+ 0001:00006E94       Finalization
+ 0001:00006ED8       ExcMagicDefaultFilter
+ 0001:000074D4       DemoWarning
+ 0001:00007508       GetRealExceptionInfo
+ 0001:0000755C       GetRealExceptionObject
+ 0001:00007598       ReleaseRealExceptionObject
+ 0001:000075BC       GetModuleName
+ 0001:000075EC       TModuleDebugInfo.Create
+ 0001:0000765C       TModuleDebugInfo.Destroy
+ 0001:00007688       TModuleDebugInfo.IsInCode
+ 0001:000076C8       TModuleDebugInfo.GetLogicalAddr
+ 0001:000076E4       TModuleDebugInfo.GetConvertedAddress
+ 0001:0000772C       TModuleDebugInfo.GetModuleName
+ 0001:000077A4       TModuleDebugInfo.GetIsDelphi
+ 0001:000077B0       TModuleDebugInfo.CreateNamesArray
+ 0001:00007860       TModuleDebugInfo.GetName
+ 0001:00007908       TModuleDebugInfo.EntryOffset
+ 0001:00007924       TModuleDebugInfo.FindProc
+ 0001:00007A50       TModuleDebugInfo.GetProcName
+ 0001:00007B50       TModuleDebugInfo.GetSourceLine
+ 0001:00007E14       TModuleDebugInfo.SourceLine
+ 0001:00007E40       TModuleDebugInfo.ProcName
+ 0001:00007E6C       TModuleDebugInfo.LoadTDS3
+ 0001:00007F34       TModuleDebugInfo.SeekToDebugSection
+ 0001:00007F40       TModuleDebugInfo.LoadTDS2
+ 0001:00007FE0       TModuleDebugInfo.LoadTDS
+ 0001:000080E8       TModuleDebugInfo.LoadDebugInfo
+ 0001:0000816C       TModuleDebugInfo.UnLoadDebugInfo
+ 0001:000081B4       TExcCallStack.Create
+ 0001:000081F4       TExcCallStack.Destroy
+ 0001:00008220       TExcCallStack.Clear
+ 0001:00008238       TExcCallStack.GetItem
+ 0001:00008260       AddStackItemForAddress
+ 0001:00008334       TExcCallStack.GenerateFromAddr
+ 0001:000083E8       TExcCallStack.Generate
+ 0001:00008418       TExcCallStack.Dump
+ 0001:00008778       HookedExceptionErrorMessage
+ 0001:00008B04       HookedShowException
+ 0001:00008CF0       HookedAppShowException
+ 0001:00008D5C       DoneExceptBody
+ 0001:00008D60       HookedDoneExcept
+ 0001:00008D6C       RaiseHandlerBody
+ 0001:00008D78       HookedRaiseExcept
+ 0001:00008DB4       CopyContextAndLog
+ 0001:00008E14       MagicHandleAllExceptions
+ 0001:00008E2C       MagicHandleCPPExceptions
+ 0001:00008E4C       HookedCPPExcHandler
+ 0001:00008E60       HookedCPPExcHandler_CB4
+ 0001:00008E74       RealAddr
+ 0001:00008EC8       TExcMagic.Create
+ 0001:00009108       TExcMagic.Destroy
+ 0001:00009190       TExcMagic.CleanUpLists
+ 0001:00009268       TExcMagic.CreatePatches
+ 0001:000095E8       TExcMagic.DestroyPatches
+ 0001:00009650       TExcMagic.GetExcMagicAbout
+ 0001:000096B8       TExcMagic.GetExcMagicVersion
+ 0001:00009810       TExcMagic.GetContext
+ 0001:00009830       TExcMagic.GetExceptionRec
+ 0001:00009850       TExcMagic.GetExceptionInfo
+ 0001:00009870       TExcMagic.SetEnabled
+ 0001:0000994C       TExcMagic.UnMangle
+ 0001:000099E0       TExcMagic.FindDebugModule
+ 0001:00009B3C       TExcMagic.GetAddressSourceInfo
+ 0001:00009C54       TExcMagic.GetSourceInfo
+ 0001:00009C84       TExcMagic.GetAddressSourceInfoRec
+ 0001:00009C9C       TExcMagic.GetSourceInfoRec
+ 0001:00009CD0       TExcMagic.DumpContext
+ 0001:0000A284       TExcMagic.DumpAll
+ 0001:0000A2C8       TExcMagic.Log
+ 0001:0000A3F4       TExcMagic.LogExceptionData
+ 0001:0000A4D0       TExcMagic.LogException
+ 0001:0000A57C       TExcMagic.DefaultErrorDialog
+ 0001:0000A620       TExcMagic.RegisterExceptionFilter
+ 0001:0000A678       TExcMagic.UnRegisterExceptionFilter
+ 0001:0000A704       TExcMagic.EnableExceptionFilter
+ 0001:0000A790       TExcMagic.IsExceptionFilterEnabled
+ 0001:0000A820       TExcMagic.ExceptionFilterMatch
+ 0001:0000A850       Finalization
+ 0001:0000A880       ExcMagic
+ 0001:0000AA90       TfrmSQL.btExecutarClick
+ 0001:0000AC48       Finalization
+ 0001:0000AC78       ufrmSQLWeb
+ 0001:0000B634       TfrmProtocoloEnvio.Aceitar1Click
+ 0001:0000B684       TfrmProtocoloEnvio.Processar1Click
+ 0001:0000B700       TfrmProtocoloEnvio.FormCreate
+ 0001:0000B764       TfrmProtocoloEnvio.TB_PROTOCOLO_ENVIOCalcFields
+ 0001:0000B78C       TfrmProtocoloEnvio.Visualizar1Click
+ 0001:0000B8C4       TfrmProtocoloEnvio.ProcessarExclusao
+ 0001:0000BBA0       TfrmProtocoloEnvio.FormDestroy
+ 0001:0000BBBC       TfrmProtocoloEnvio.TB_PROTOCOLO_ENVIOBeforeOpen
+ 0001:0000BCC0       TfrmProtocoloEnvio.ProcessaTodos
+ 0001:0000BD30       TfrmProtocoloEnvio.BitBtn3Click
+ 0001:0000BD38       TfrmProtocoloEnvio.BitBtn1Click
+ 0001:0000BD54       Finalization
+ 0001:0000BD84       ufrmProtocoloEnvio
+ 0001:0000C210       TfrmDePara.btDeClick
+ 0001:0000C2A8       TfrmDePara.btParaClick
+ 0001:0000C344       TfrmDePara.btAbrirClick
+ 0001:0000C700       TfrmDePara.btDelParaClick
+ 0001:0000C774       TfrmDePara.btDeParaClick
+ 0001:0000C99C       TfrmDePara.btCompararClick
+ 0001:0000CB84       Finalization
+ 0001:0000CBB4       ufrmDePara
+ 0001:0000D120       TfrmEmail.AddAttachment
+ 0001:0000D188       TfrmEmail.AddBody
+ 0001:0000D21C       TfrmEmail.AddBodyHtml
+ 0001:0000D2BC       TfrmEmail.btEnviarClick
+ 0001:0000D2C4       TfrmEmail.Enviar
+ 0001:0000D4F0       Finalization
+ 0001:0000D520       uEmail
+ 0001:0000DBB4       TNewDialogFilter.ExceptionMessage
+ 0001:0000DBE4       TNewDialogFilter.LogException
+ 0001:0000DBEC       TNewDialogFilter.ShowException
+ 0001:0000DE7C       TfrmMenuEDI.Descompactar
+ 0001:0000DF48       TfrmMenuEDI.DeleteRefEDI_UNIDADE
+ 0001:0000E154       TfrmMenuEDI.btnEnviarArquivoClick
+ 0001:0000E354       TfrmMenuEDI.EnviarArquivo
+ 0001:0000E5F8       TfrmMenuEDI.EnviarArquivoProtocolo
+ 0001:0000E928       TfrmMenuEDI.btnReceberArquivoClick
+ 0001:0000EBFC       TfrmMenuEDI.Get
+ 0001:0000ED48       PegaNome
+ 0001:0000EE08       TfrmMenuEDI.ReceberArquivo
+ 0001:0000F094       TfrmMenuEDI.Importar1Click
+ 0001:0000F238       TfrmMenuEDI.Exportar1Click
+ 0001:0000F33C       TfrmMenuEDI.tmEDITimer
+ 0001:0000F4AC       TfrmMenuEDI.Receber1Click
+ 0001:0000F704       TfrmMenuEDI.Enviar1Click
+ 0001:0000F94C       TfrmMenuEDI.Sair1Click
+ 0001:0000F954       TfrmMenuEDI.Minimizar1Click
+ 0001:0000F964       TfrmMenuEDI.Maximizar1Click
+ 0001:0000F970       TfrmMenuEDI.FormCreate
+ 0001:0000F9F8       TfrmMenuEDI.StatusBar1DrawPanel
+ 0001:0000FA68       TfrmMenuEDI.AtualizaStatus
+ 0001:0000FBDC       TfrmMenuEDI.SQL1Click
+ 0001:0000FC10       TfrmMenuEDI.FormShow
+ 0001:0000FE88       TfrmMenuEDI.Aplicao1Click
+ 0001:000102D8       TfrmMenuEDI.Juntar
+ 0001:00010518       TfrmMenuEDI.Protocolo1Click
+ 0001:00010FEC       TfrmMenuEDI.este1Click
+ 0001:000110D8       TfrmMenuEDI.DePara1Click
+ 0001:000110E8       TfrmMenuEDI.PNGButton2Click
+ 0001:00011104       TfrmMenuEDI.PNGButton1Click
+ 0001:00011120       TfrmMenuEDI.AtualizaUpdate
+ 0001:0001122C       TfrmMenuEDI.VersaoUnidades1Click
+ 0001:0001123C       TfrmMenuEDI.FormClose
+ 0001:0001124C       Finalization
+ 0001:0001127C       ufrmMenuEDI
+ 0001:00011738       TfrmEDI.btOrdemClick
+ 0001:00011788       TfrmEDI.btExportarClick
+ 0001:00011F88       TfrmEDI.MudaTodasDatasExp
+ 0001:000120F8       TfrmEDI.btLimparDtExpClick
+ 0001:00012100       RetiraNumero
+ 0001:000121AC       TfrmEDI.btImportarClick
+ 0001:0001337C       ValidaCamposChaves
+ 0001:00013430       TfrmEDI.Importar
+ 0001:00014454       TfrmEDI.CarregaArquivosEDI
+ 0001:000147F8       TfrmEDI.MontaDataSet
+ 0001:00014D64       TfrmEDI.CopiaValor
+ 0001:00014F14       TfrmEDI.ValidaCamposEDI
+ 0001:000151B8       TfrmEDI.FormCreate
+ 0001:000154F0       TfrmEDI.lstArquivosClick
+ 0001:000155B4       TfrmEDI.lstArquivosDblClick
+ 0001:000155F8       Finalization
+ 0001:00015634       ufrmEDI
+ 0001:00015864       TfrmEDI_Pen.EnviarArquivoPen
+ 0001:00015AD4       TfrmEDI_Pen.btEnviarClick
+ 0001:00015CB0       TfrmEDI_Pen.FormCreate
+ 0001:00015CE4       TfrmEDI_Pen.FormClose
+ 0001:00015D00       TfrmEDI_Pen.btReceberClick
+ 0001:00015DA8       TfrmEDI_Pen.CopiarArquivoPen
+ 0001:00016028       Finalization
+ 0001:00016058       ufrmEDI_Pen
+ 0001:00016860       TfrmCompare.sbEsquerdaResize
+ 0001:0001689C       TfrmCompare.sbDireitaResize
+ 0001:000168D8       TfrmCompare.FormShow
+ 0001:000168FC       Finalization
+ 0001:0001692C       ufrmCompare
+ 0001:00017FBC       TfrmConfirmacaoEDI.Aceitar1Click
+ 0001:00018220       TfrmConfirmacaoEDI.Processar1Click
+ 0001:00018C98       TfrmConfirmacaoEDI.FormCreate
+ 0001:00018D08       TfrmConfirmacaoEDI.TB_REGISTROSCalcFields
+ 0001:00018D50       TfrmConfirmacaoEDI.Visualizar1Click
+ 0001:00018E44       TfrmConfirmacaoEDI.ProcessarExclusao
+ 0001:00018E48       TfrmConfirmacaoEDI.FormDestroy
+ 0001:00018E64       TfrmConfirmacaoEDI.TB_REGISTROSBeforeOpen
+ 0001:00018E68       TfrmConfirmacaoEDI.ProcessaTodos
+ 0001:00018E6C       TfrmConfirmacaoEDI.VisualizaPrograma
+ 0001:000191E4       TfrmConfirmacaoEDI.VisualizaTarv
+ 0001:00019554       TfrmConfirmacaoEDI.VisualizaAtv
+ 0001:000198C4       TfrmConfirmacaoEDI.VisualizaPtv
+ 0001:00019C34       TfrmConfirmacaoEDI.VisualizaTarvAcomp
+ 0001:00019FAC       TfrmConfirmacaoEDI.VisualizaTarvCD4
+ 0001:0001A324       TfrmConfirmacaoEDI.VisualizaTarvEsquema
+ 0001:0001A6A0       TfrmConfirmacaoEDI.VisualizaCOINFECCAO
+ 0001:0001AA18       TfrmConfirmacaoEDI.Comparar1Click
+ 0001:0001AE54       TfrmConfirmacaoEDI.Excluir1Click
+ 0001:0001B1C0       TfrmConfirmacaoEDI.Timer1Timer
+ 0001:0001B2D0       TfrmConfirmacaoEDI.StatusBar1DrawPanel
+ 0001:0001B44C       TfrmConfirmacaoEDI.BitBtn2Click
+ 0001:0001B468       TfrmConfirmacaoEDI.BitBtn3Click
+ 0001:0001B470       TfrmConfirmacaoEDI.BitBtn4Click
+ 0001:0001B478       TfrmConfirmacaoEDI.BitBtn5Click
+ 0001:0001B480       TfrmConfirmacaoEDI.BitBtn1Click
+ 0001:0001B4B4       TfrmConfirmacaoEDI.btIncluirClick
+ 0001:0001B508       TfrmConfirmacaoEDI.btgravarClick
+ 0001:0001B57C       TfrmConfirmacaoEDI.btLocProvinciaButtonClick
+ 0001:0001B804       TfrmConfirmacaoEDI.btLocMunicipioButtonClick
+ 0001:0001BB58       TfrmConfirmacaoEDI.btLocUnidadeButtonClick
+ 0001:0001D0CC       TfrmConfirmacaoEDI.btCancelarClick
+ 0001:0001D124       TfrmConfirmacaoEDI.btAtualizarClick
+ 0001:0001D154       TfrmConfirmacaoEDI.PageControl1Change
+ 0001:0001D1F8       TfrmConfirmacaoEDI.dsDadosDataChange
+ 0001:0001D24C       TfrmConfirmacaoEDI.btEditarClick
+ 0001:0001D27C       TfrmConfirmacaoEDI.btSalvarClick
+ 0001:0001D598       ConfirmarAR
+ 0001:0001D7EC       TfrmConfirmacaoEDI.Confirmar1Click
+ 0001:0001DA6C       Finalization
+ 0001:0001DA9C       ufrmConfirmacaoEDI
+ 0001:0001E57C       @GetPackageInfoTable
+ 0001:0001E584       @PackageLoad
+ 0001:0001E590       @PackageUnload
+ 0001:0001E59C       SISEDI
+ 0002:00000000       TlsIndex
+ 0002:00000004       Module
+ 0002:0000001C       TlsProc
+ 0002:0000002C       HEX_DIGITS
+ 0002:00000030       AccessMode
+ 0002:0000003C       ShareMode
+ 0002:00000050       MapProtect
+ 0002:0000005C       DesiredAccess
+ 0002:00000068       ..
+ 0002:00000540       DetailTexts
+ 0002:00000548       Heights
+ 0002:00000550       Width
+ 0002:00000554       DEFAULT_EXCEPTION_MSG_BRIEF
+ 0002:00000558       DEFAULT_EXCEPTION_MSG_FULL
+ 0002:0000055C       UNKNOWN
+ 0002:00000560       CRLF
+ 0002:00000564       ADDITIONAL_TITLE
+ 0002:00000568       CHandlerCode
+ 0002:00000574       CNewHandlerCode
+ 0002:00000580       CCPPHandlerCode
+ 0002:00000598       CCPPHandlerNewCode
+ 0002:000005A0       CDoneExceptCode
+ 0002:000005AC       CDoneExceptMask
+ 0002:000005B8       CDonePatch
+ 0002:000005C4       CDonePatchMask
+ 0002:000005D0       CCPPExcHand
+ 0002:000005F0       CCPPExcHandMask
+ 0002:00000610       CCPPExcHand4
+ 0002:0000061C       CCPPExcHandMask4
+ 0002:00000628       CCPPExcHand4_DLL
+ 0002:00000640       CCPPExcHandMask4_DLL
+ 0002:00001000       ModuleIsLib
+ 0002:00001001       ModuleIsPackage
+ 0002:00001004       HInstance
+ 0002:00001008       .1
+ 0002:0000100C       tlsBuffer
+ 0002:00001010       .3
+ 0002:00001014       .1
+ 0002:00001018       .1
+ 0002:0000101C       .1
+ 0002:00001020       .1
+ 0002:00001024       .1
+ 0002:00001028       .1
+ 0002:0000102C       .1
+ 0002:00001030       .1
+ 0002:00001034       .3
+ 0002:00001038       .1
+ 0002:0000103C       .1
+ 0002:00001040       .1
+ 0002:00001044       .1
+ 0002:00001048       .3
+ 0002:0000104C       .1
+ 0002:00001050       ..
+ 0002:0000318C       .2
+ 0002:00003190       .6
+ 0002:00003194       .1
+ 0002:00003198       .2
+ 0002:0000319C       ExceptionHook
+ 0002:000031A0       .6
+ 0002:000031A4       Patch_ExcHandler
+ 0002:000031A8       Patch_HandleAny
+ 0002:000031AC       Patch_HandleOn
+ 0002:000031B0       Patch_HandleAuto
+ 0002:000031B4       Patch_Message
+ 0002:000031B8       Patch_Show
+ 0002:000031BC       Patch_AppShow
+ 0002:000031C0       Patch_Raise
+ 0002:000031C4       Patch_Done
+ 0002:000031C8       Patch_CPPExcHandler
+ 0002:000031CC       ExcMagicLock
+ 0002:000031E4       frmSQL
+ 0002:000031E8       .2
+ 0002:000031EC       frmProtocoloEnvio
+ 0002:000031F0       .2
+ 0002:000031F4       frmDePara
+ 0002:000031F8       .2
+ 0002:000031FC       frmEmail
+ 0002:00003200       .2
+ 0002:00003204       frmMenuEDI
+ 0002:00003208       EDIERRO
+ 0002:0000320C       .3
+ 0002:00003210       frmEDI
+ 0002:00003214       bExportar
+ 0002:00003215       bImportar
+ 0002:00003216       bAtualizar
+ 0002:00003217       bValidarCampoChave
+ 0002:00003218       nTempo
+ 0002:0000321C       sSqlArquivoEDI
+ 0002:00003220       .2
+ 0002:00003224       frmEDI_Pen
+ 0002:00003228       .2
+ 0002:0000322C       frmCompare
+ 0002:00003230       .2
+ 0002:00003234       frmConfirmacaoEDI
+ 0002:00003238       .2
+
+
+Line numbers for SysInit(SysInit.pas) segment .text
+
+    93 0001:00000290   102 0001:00000298   105 0001:000002A0   108 0001:000002A8
+   111 0001:000002B0   114 0001:000002B8   117 0001:000002C0   128 0001:000002C8
+   129 0001:000002D0   285 0001:000002D4   286 0001:000002D9   293 0001:000002DC
+   294 0001:000002DD   295 0001:000002E4   299 0001:000002E8   300 0001:000002FB
+   301 0001:00000302   302 0001:00000306   304 0001:00000312   305 0001:0000031E
+   310 0001:00000320   312 0001:00000329   313 0001:00000333   314 0001:00000338
+   315 0001:00000348   321 0001:0000034C   323 0001:00000355   324 0001:0000035E
+   325 0001:00000369   326 0001:0000036D   328 0001:00000373   332 0001:00000374
+   334 0001:0000037D   335 0001:00000382   336 0001:0000038B   337 0001:00000396
+   359 0001:00000398   360 0001:0000039E   361 0001:000003A3   362 0001:000003A5
+   363 0001:000003A7   364 0001:000003AE   365 0001:000003B1   368 0001:000003B2
+   369 0001:000003B7   370 0001:000003BC   371 0001:000003BD   372 0001:000003C2
+   373 0001:000003C4   374 0001:000003C6   377 0001:000003C7   378 0001:000003CC
+   381 0001:000003CD   382 0001:000003CE   383 0001:000003D3   384 0001:000003D5
+   385 0001:000003D7   423 0001:000003D8   424 0001:000003E2   428 0001:000003E4
+   429 0001:000003EE   430 0001:000003FF   431 0001:00000405   495 0001:00000408
+   496 0001:00000413   497 0001:0000041A   498 0001:00000421   499 0001:00000426
+   500 0001:0000042E   501 0001:00000436   502 0001:0000043B   503 0001:00000444
+   504 0001:0000044D   505 0001:00000452   506 0001:00000459   507 0001:0000045D
+   508 0001:00000462   509 0001:00000465   540 0001:0000046C   541 0001:00000476
+   545 0001:00000478   546 0001:00000482   840 0001:000004B4   840 0001:000004BB
+
+Line numbers for ufrmSQLWeb(ufrmSQLWeb.pas) segment .text
+
+    36 0001:0000AA90    37 0001:0000AAAF    38 0001:0000AABD    39 0001:0000AACF
+    40 0001:0000AADC    41 0001:0000AAEE    43 0001:0000AAFB    44 0001:0000AB0A
+    46 0001:0000AB59    47 0001:0000AB6E    48 0001:0000AB79    50 0001:0000ABA1
+    52 0001:0000ABED    54 0001:0000AC78    54 0001:0000AC7F
+
+Line numbers for ufrmProtocoloEnvio(ufrmProtocoloEnvio.pas) segment .text
+
+    91 0001:0000B634    92 0001:0000B637    93 0001:0000B642    94 0001:0000B655
+    95 0001:0000B663    96 0001:0000B675    99 0001:0000B684   101 0001:0000B687
+   103 0001:0000B699   107 0001:0000B6A2   108 0001:0000B6BE   109 0001:0000B6DA
+   110 0001:0000B6E6   111 0001:0000B6F2   114 0001:0000B6FE   117 0001:0000B700
+   118 0001:0000B716   119 0001:0000B737   120 0001:0000B75F   124 0001:0000B764
+   125 0001:0000B767   127 0001:0000B78A   131 0001:0000B78C   132 0001:0000B7A6
+   133 0001:0000B7C2   134 0001:0000B7D0   135 0001:0000B805   136 0001:0000B813
+   137 0001:0000B833   139 0001:0000B84F   140 0001:0000B85B   142 0001:0000B895
+   146 0001:0000B8C4   147 0001:0000B8E1   149 0001:0000B902   150 0001:0000B91F
+   151 0001:0000B92A   157 0001:0000B967   158 0001:0000B98F   159 0001:0000B9B7
+   160 0001:0000B9DF   161 0001:0000BA07   163 0001:0000BA12   164 0001:0000BA1D
+   165 0001:0000BA30   167 0001:0000BA3E   169 0001:0000BA72   172 0001:0000BBA0
+   173 0001:0000BBA3   174 0001:0000BBB9   178 0001:0000BBBC   179 0001:0000BBD2
+   180 0001:0000BBE5   184 0001:0000BC36   187 0001:0000BCC0   188 0001:0000BCC3
+   189 0001:0000BCCE   192 0001:0000BCDB   193 0001:0000BCE4   194 0001:0000BCF6
+   195 0001:0000BCFD   190 0001:0000BD08   197 0001:0000BD17   198 0001:0000BD22
+   199 0001:0000BD2B   203 0001:0000BD30   204 0001:0000BD35   207 0001:0000BD38
+   208 0001:0000BD3B   209 0001:0000BD46   210 0001:0000BD51   212 0001:0000BD84
+   212 0001:0000BD8B
+
+Line numbers for ufrmDePara(ufrmDePara.pas) segment .text
+
+    77 0001:0000C210    78 0001:0000C226    79 0001:0000C231    80 0001:0000C24D
+    81 0001:0000C258    82 0001:0000C28B    85 0001:0000C2A8    86 0001:0000C2BE
+    87 0001:0000C2C9    88 0001:0000C2E5    89 0001:0000C2F0    90 0001:0000C323
+    94 0001:0000C344    95 0001:0000C365    98 0001:0000C38D    99 0001:0000C3A1
+   102 0001:0000C3C7   103 0001:0000C3DB   106 0001:0000C406   107 0001:0000C41A
+   110 0001:0000C440   111 0001:0000C454   114 0001:0000C47A   115 0001:0000C48E
+   118 0001:0000C4B4   119 0001:0000C4BF   120 0001:0000C4D2   121 0001:0000C4DD
+   123 0001:0000C4E8   124 0001:0000C4F3   125 0001:0000C516   126 0001:0000C529
+   127 0001:0000C534   129 0001:0000C53F   133 0001:0000C5F9   136 0001:0000C700
+   137 0001:0000C703   139 0001:0000C710   138 0001:0000C715   140 0001:0000C724
+   141 0001:0000C736   142 0001:0000C74C   147 0001:0000C774   148 0001:0000C794
+   149 0001:0000C7A2   152 0001:0000C7C8   153 0001:0000C7D6   154 0001:0000C7E4
+   155 0001:0000C7FC   154 0001:0000C849   156 0001:0000C84C   157 0001:0000C85D
+   158 0001:0000C87E   159 0001:0000C88C   161 0001:0000C8BF   163 0001:0000C8C1
+   164 0001:0000C90E   165 0001:0000C91F   150 0001:0000C932   169 0001:0000C972
+   172 0001:0000C99C   173 0001:0000C9A2   174 0001:0000C9B2   175 0001:0000C9BB
+   176 0001:0000C9CB   177 0001:0000C9D4   178 0001:0000C9E4   179 0001:0000C9ED
+   180 0001:0000C9FD   181 0001:0000CA06   182 0001:0000CA16   183 0001:0000CA1F
+   184 0001:0000CA2F   185 0001:0000CA38   186 0001:0000CA48   187 0001:0000CA51
+   188 0001:0000CA61   189 0001:0000CA6A   190 0001:0000CA7A   191 0001:0000CA83
+   193 0001:0000CBB4   193 0001:0000CBBB
+
+Line numbers for uEmail(Q:\lib\email\uEmail.pas) segment .text
+
+    49 0001:0000D120    50 0001:0000D140    51 0001:0000D14C    52 0001:0000D182
+    55 0001:0000D188    56 0001:0000D1A8    57 0001:0000D1BC    58 0001:0000D1D3
+    59 0001:0000D203    63 0001:0000D21C    65 0001:0000D23C    70 0001:0000D248
+    71 0001:0000D25C    72 0001:0000D273    93 0001:0000D2A3    97 0001:0000D2BC
+    98 0001:0000D2C1   101 0001:0000D2C4   102 0001:0000D2E5   103 0001:0000D311
+   104 0001:0000D336   105 0001:0000D35D   106 0001:0000D384   107 0001:0000D3A1
+   108 0001:0000D3C9   109 0001:0000D3F1   110 0001:0000D40D   111 0001:0000D41B
+   112 0001:0000D42D   113 0001:0000D443   114 0001:0000D45D   115 0001:0000D47A
+   117 0001:0000D47C   118 0001:0000D4A5   121 0001:0000D4D8   197 0001:0000D520
+   197 0001:0000D527
+
+Line numbers for ufrmMenuEDI(..\EDI\ufrmMenuEDI.pas) segment .text
+
+    18 0001:0000D528   111 0001:0000DBB4   113 0001:0000DBDD   118 0001:0000DBE4
+   120 0001:0000DBE7   125 0001:0000DBEC   126 0001:0000DC11   128 0001:0000DC28
+   129 0001:0000DC3E   130 0001:0000DC56   131 0001:0000DC78   132 0001:0000DCA8
+   133 0001:0000DCD8   134 0001:0000DD08   135 0001:0000DD38   136 0001:0000DD68
+   137 0001:0000DD7E   138 0001:0000DD8E   140 0001:0000DD9F   141 0001:0000DDC1
+   143 0001:0000DDF9   146 0001:0000DE7C   147 0001:0000DEAB   148 0001:0000DEB9
+   150 0001:0000DEBF   151 0001:0000DEC9   152 0001:0000DED1   154 0001:0000DEDB
+   155 0001:0000DEEE   156 0001:0000DEFA   159 0001:0000DF11   161 0001:0000DF3C
+   167 0001:0000DF48   168 0001:0000DF77   169 0001:0000DF87   170 0001:0000DF98
+   173 0001:0000DFA9   174 0001:0000DFB5   176 0001:0000DFB8   177 0001:0000DFF7
+   183 0001:0000DFF9   184 0001:0000E02E   185 0001:0000E053   187 0001:0000E09A
+   191 0001:0000E154   192 0001:0000E173   193 0001:0000E18A   194 0001:0000E198
+   195 0001:0000E1A2   196 0001:0000E1B5   198 0001:0000E1CF   199 0001:0000E1E2
+   200 0001:0000E1FE   201 0001:0000E233   202 0001:0000E23F   203 0001:0000E247
+   204 0001:0000E260   207 0001:0000E27C   208 0001:0000E290   210 0001:0000E2A7
+   196 0001:0000E2A8   212 0001:0000E2BE   214 0001:0000E2FD   220 0001:0000E354
+   223 0001:0000E387   227 0001:0000E397   228 0001:0000E3B6   229 0001:0000E3C7
+   230 0001:0000E3D8   233 0001:0000E3E9   239 0001:0000E403   240 0001:0000E40A
+   242 0001:0000E40D   243 0001:0000E44C   249 0001:0000E45B   250 0001:0000E490
+   251 0001:0000E4B5   253 0001:0000E509   260 0001:0000E5F8   263 0001:0000E62C
+   267 0001:0000E63C   269 0001:0000E65B   270 0001:0000E66C   271 0001:0000E67D
+   274 0001:0000E68E   280 0001:0000E6A8   281 0001:0000E6AF   283 0001:0000E6B2
+   284 0001:0000E6F1   288 0001:0000E703   289 0001:0000E731   290 0001:0000E745
+   292 0001:0000E75C   293 0001:0000E762   296 0001:0000E7A2   297 0001:0000E7C7
+   299 0001:0000E823   303 0001:0000E928   306 0001:0000E94A   307 0001:0000E959
+   313 0001:0000E991   314 0001:0000E9A6   315 0001:0000E9B1   318 0001:0000E9C4
+   319 0001:0000E9D9   321 0001:0000E9F7   322 0001:0000EA1E   323 0001:0000EA45
+   324 0001:0000EA5D   329 0001:0000EA7B   333 0001:0000EAC8   316 0001:0000EAD3
+   335 0001:0000EAE6   336 0001:0000EB18   342 0001:0000EBFC   343 0001:0000EC28
+   344 0001:0000EC38   345 0001:0000EC49   348 0001:0000EC5A   350 0001:0000EC66
+   352 0001:0000EC69   353 0001:0000ECA8   356 0001:0000ECAA   367 0001:0000ECFB
+   378 0001:0000ED48   379 0001:0000ED65   381 0001:0000ED7B   383 0001:0000ED8A
+   384 0001:0000ED98   387 0001:0000EDA2   388 0001:0000EDBA   379 0001:0000EDBB
+   389 0001:0000EDBE   390 0001:0000EDC4   392 0001:0000EDD2   393 0001:0000EDFF
+   395 0001:0000EE08   396 0001:0000EE3A   397 0001:0000EE4B   398 0001:0000EE5D
+   401 0001:0000EE6F   402 0001:0000EE7C   404 0001:0000EE7F   405 0001:0000EEBF
+   409 0001:0000EEC4   410 0001:0000EED3   411 0001:0000EEE1   413 0001:0000EF03
+   417 0001:0000EF13   418 0001:0000EF4C   420 0001:0000EF4F   426 0001:0000EF91
+   427 0001:0000EF9C   429 0001:0000F023   432 0001:0000F094   433 0001:0000F098
+   435 0001:0000F0A5   436 0001:0000F0AC   437 0001:0000F0B3   439 0001:0000F0C3
+   440 0001:0000F0D4   441 0001:0000F0E4   442 0001:0000F0F4   443 0001:0000F0FB
+   444 0001:0000F114   445 0001:0000F11B   447 0001:0000F122   448 0001:0000F130
+   450 0001:0000F140   451 0001:0000F151   452 0001:0000F161   453 0001:0000F171
+   454 0001:0000F178   455 0001:0000F191   456 0001:0000F198   458 0001:0000F19F
+   459 0001:0000F1A6   463 0001:0000F1AD   466 0001:0000F238   467 0001:0000F23C
+   469 0001:0000F249   470 0001:0000F250   471 0001:0000F257   472 0001:0000F265
+   474 0001:0000F275   475 0001:0000F286   476 0001:0000F296   477 0001:0000F2A6
+   478 0001:0000F2AD   479 0001:0000F2C6   480 0001:0000F2CD   482 0001:0000F2D4
+   483 0001:0000F2DB   485 0001:0000F2E2   489 0001:0000F33C   490 0001:0000F35B
+   491 0001:0000F36B   492 0001:0000F379   494 0001:0000F383   495 0001:0000F38E
+   498 0001:0000F399   500 0001:0000F3A3   501 0001:0000F3AE   506 0001:0000F3B9
+   508 0001:0000F3D1   509 0001:0000F3E1   510 0001:0000F406   512 0001:0000F479
+   515 0001:0000F4AC   516 0001:0000F4AF   518 0001:0000F4C3   520 0001:0000F4D3
+   521 0001:0000F4E4   522 0001:0000F4F4   523 0001:0000F504   524 0001:0000F50B
+   525 0001:0000F524   526 0001:0000F52B   528 0001:0000F532   529 0001:0000F539
+   531 0001:0000F551   534 0001:0000F553   536 0001:0000F560   537 0001:0000F567
+   538 0001:0000F56E   539 0001:0000F57A   540 0001:0000F583   541 0001:0000F58A
+   542 0001:0000F591   544 0001:0000F5A1   545 0001:0000F5B2   546 0001:0000F5C2
+   547 0001:0000F5D2   548 0001:0000F5D9   549 0001:0000F5F2   550 0001:0000F5F9
+   553 0001:0000F600   556 0001:0000F704   557 0001:0000F707   559 0001:0000F71B
+   561 0001:0000F72B   562 0001:0000F73C   563 0001:0000F74C   564 0001:0000F75C
+   565 0001:0000F763   566 0001:0000F77C   567 0001:0000F783   569 0001:0000F78A
+   570 0001:0000F791   572 0001:0000F7A9   575 0001:0000F7AB   577 0001:0000F7B8
+   578 0001:0000F7BF   579 0001:0000F7C6   581 0001:0000F7CF   582 0001:0000F7D6
+   583 0001:0000F7DD   585 0001:0000F7ED   586 0001:0000F7FE   587 0001:0000F80E
+   588 0001:0000F81E   589 0001:0000F825   590 0001:0000F83E   591 0001:0000F845
+   594 0001:0000F84C   598 0001:0000F94C   599 0001:0000F951   603 0001:0000F954
+   604 0001:0000F960   608 0001:0000F964   609 0001:0000F96E   612 0001:0000F970
+   613 0001:0000F973   614 0001:0000F987   615 0001:0000F9A7   617 0001:0000F9C1
+   618 0001:0000F9DB   622 0001:0000F9F8   623 0001:0000F9FF   625 0001:0000FA05
+   628 0001:0000FA11   629 0001:0000FA1A   631 0001:0000FA29   632 0001:0000FA36
+   633 0001:0000FA43   637 0001:0000FA51   645 0001:0000FA5B   648 0001:0000FA68
+   649 0001:0000FA6B   650 0001:0000FA74   651 0001:0000FA99   652 0001:0000FAA2
+   653 0001:0000FAC4   654 0001:0000FACD   655 0001:0000FAEF   656 0001:0000FAF8
+   658 0001:0000FB1A   659 0001:0000FB37   660 0001:0000FB67   661 0001:0000FB71
+   662 0001:0000FB7B   666 0001:0000FBDC   667 0001:0000FBF2   668 0001:0000FC01
+   669 0001:0000FC0D   672 0001:0000FC10   674 0001:0000FC2F   675 0001:0000FC56
+   676 0001:0000FC6B   677 0001:0000FC80   679 0001:0000FCC4   681 0001:0000FCE4
+   682 0001:0000FCFB   684 0001:0000FD1E   687 0001:0000FD25   688 0001:0000FD2E
+   693 0001:0000FD37   694 0001:0000FD40   695 0001:0000FD49   698 0001:0000FD52
+   700 0001:0000FD62   701 0001:0000FD73   702 0001:0000FD83   703 0001:0000FD93
+   704 0001:0000FD9A   705 0001:0000FDB3   706 0001:0000FDBA   709 0001:0000FDE3
+   713 0001:0000FE88   715 0001:0000FEAA   716 0001:0000FEB9   717 0001:0000FEFC
+   718 0001:0000FF11   719 0001:0000FF1C   720 0001:0000FF2A   723 0001:0000FF4A
+   724 0001:0000FF5E   725 0001:0000FF99   726 0001:0000FFA4   727 0001:0000FFB0
+   729 0001:0000FFC8   730 0001:0000FFEF   731 0001:00010016   732 0001:0001002E
+   734 0001:00010041   736 0001:0001006B   738 0001:00010092   739 0001:000100D3
+   740 0001:000100EF   743 0001:000100F7   744 0001:0001011E   747 0001:0001012E
+   721 0001:00010139   749 0001:0001014C   750 0001:00010154   751 0001:0001015B
+   752 0001:000101AA   756 0001:000102D8   757 0001:00010318   758 0001:00010332
+   759 0001:0001034A   761 0001:0001035A   762 0001:00010370   763 0001:0001037B
+   764 0001:00010395   765 0001:000103A3   766 0001:000103AF   767 0001:000103B7
+   768 0001:000103D0   769 0001:000103DE   771 0001:0001040F   772 0001:0001042C
+   773 0001:0001043C   775 0001:0001044C   777 0001:0001045B   778 0001:00010466
+   780 0001:000104A0   784 0001:00010518   785 0001:00010541   786 0001:0001054F
+   787 0001:0001055F   800 0001:00010574   801 0001:0001057E   803 0001:00010590
+   804 0001:000105A6   805 0001:000105BC   806 0001:000105D2   807 0001:000105E8
+   808 0001:000105FE   809 0001:00010614   810 0001:0001062A   811 0001:00010640
+   812 0001:00010656   816 0001:00010671   819 0001:000106BE   820 0001:000106EA
+   822 0001:0001070D   823 0001:0001071F   825 0001:00010757   827 0001:0001078F
+   829 0001:000107C7   831 0001:000107FF   833 0001:00010837   834 0001:00010849
+   836 0001:0001085F   837 0001:00010871   838 0001:0001088B   839 0001:000108A0
+   841 0001:000108B2   842 0001:000108C8   843 0001:00010911   844 0001:00010956
+   845 0001:0001099B   846 0001:000109E0   847 0001:00010A25   848 0001:00010A6A
+   849 0001:00010A98   850 0001:00010AAE   814 0001:00010AB8   852 0001:00010ACA
+   853 0001:00010AE0   855 0001:00010B21   856 0001:00010B48   860 0001:00010B8D
+   864 0001:00010FEC   870 0001:00011001   871 0001:00011028   872 0001:0001103D
+   874 0001:00011049   875 0001:00011075   879 0001:000110D8   880 0001:000110E7
+   883 0001:000110E8   884 0001:000110EE   885 0001:000110F7   886 0001:00011100
+   889 0001:00011104   890 0001:0001110A   891 0001:00011113   893 0001:0001111C
+   897 0001:00011120   898 0001:00011139   899 0001:00011163   900 0001:00011174
+   901 0001:0001119A   902 0001:000111B3   903 0001:000111DC   908 0001:0001122C
+   909 0001:00011238   913 0001:0001123C   914 0001:00011248   916 0001:0001127C
+   916 0001:00011283
+
+Line numbers for ufrmEDI(..\EDI\ufrmEDI.pas) segment .text
+
+   109 0001:00011738   110 0001:0001173F   111 0001:0001174D   114 0001:00011760
+   122 0001:0001176E   126 0001:00011788   128 0001:000117AB   131 0001:000117B6
+   132 0001:000117CF   133 0001:000117DD   134 0001:000117EB   135 0001:00011810
+   138 0001:00011829   139 0001:00011849   141 0001:0001185C   142 0001:0001186A
+   143 0001:00011876   144 0001:0001189B   145 0001:000118B7   147 0001:000118D3
+   148 0001:000118DE   149 0001:000118E4   151 0001:000118EF   153 0001:00011930
+   163 0001:0001193B   164 0001:00011954   165 0001:0001197E   166 0001:0001198A
+   168 0001:00011992   169 0001:0001199F   170 0001:000119AB   172 0001:000119B3
+   174 0001:000119EE   176 0001:00011A07   177 0001:00011A1B   178 0001:00011A50
+   179 0001:00011A5E   181 0001:00011A77   182 0001:00011A85   183 0001:00011AC5
+   187 0001:00011AD8   189 0001:00011AE6   190 0001:00011AEB   191 0001:00011B0C
+   192 0001:00011B3A   193 0001:00011B5B   194 0001:00011B7E   195 0001:00011BAC
+   198 0001:00011BBD   199 0001:00011BCB   200 0001:00011BE3   199 0001:00011C27
+   201 0001:00011C2A   202 0001:00011C3B   204 0001:00011C64   206 0001:00011C66
+   207 0001:00011CA3   185 0001:00011CB6   213 0001:00011CCC   214 0001:00011CDF
+   215 0001:00011CF8   217 0001:00011D06   218 0001:00011D29   220 0001:00011D52
+   222 0001:00011D54   223 0001:00011D91   224 0001:00011DAA   136 0001:00011DBD
+   230 0001:00011DE0   233 0001:00011DFC   235 0001:00011E5F   239 0001:00011F88
+   240 0001:00011FAD   241 0001:00011FC6   242 0001:00011FD0   245 0001:00011FE3
+   246 0001:00011FF1   247 0001:0001200D   248 0001:0001203E   249 0001:0001204C
+   251 0001:00012069   243 0001:0001207C   254 0001:00012092   255 0001:000120CD
+   259 0001:000120F8   260 0001:000120FD   275 0001:00012100   276 0001:00012134
+   277 0001:0001213E   278 0001:00012158   279 0001:00012165   277 0001:0001217F
+   280 0001:000121A4   291 0001:000121AC   293 0001:000121D3   294 0001:000121E5
+   295 0001:000121F3   296 0001:00012202   297 0001:0001220D   298 0001:00012227
+   299 0001:00012237   300 0001:0001225E   301 0001:0001228F   306 0001:0001229F
+   307 0001:000122A7   308 0001:000122AF   310 0001:000122B7   311 0001:000122C5
+   312 0001:000122EA   315 0001:00012303   316 0001:00012323   318 0001:00012336
+   319 0001:00012344   320 0001:0001235D   321 0001:0001237F   322 0001:000123A1
+   323 0001:000123AC   324 0001:000123BA   326 0001:000123C5   327 0001:000123CB
+   329 0001:000123D6   332 0001:00012415   334 0001:00012420   335 0001:00012434
+   336 0001:00012448   337 0001:0001246F   339 0001:000124B6   341 0001:000124D7
+   342 0001:000124E3   343 0001:000124FD   344 0001:0001250B   345 0001:00012535
+   348 0001:00012546   351 0001:000125AD   353 0001:000125BE   354 0001:000125CC
+   358 0001:000125F5   359 0001:0001261E   360 0001:00012632   362 0001:0001264B
+   364 0001:00012672   365 0001:0001269B   366 0001:000126AF   369 0001:000126BE
+   370 0001:000126E5   371 0001:000126ED   375 0001:000126FD   376 0001:0001271E
+   378 0001:00012735   381 0001:00012749   382 0001:00012755   383 0001:0001275E
+   388 0001:0001284E   390 0001:0001285C   391 0001:00012864   392 0001:0001287C
+   393 0001:00012894   394 0001:000128AC   395 0001:000128C4   427 0001:000128DC
+   429 0001:000128EB   430 0001:00012929   431 0001:00012956   435 0001:00012963
+   436 0001:000129A1   437 0001:000129CE   438 0001:000129FB   440 0001:00012A03
+   441 0001:00012A1C   443 0001:00012A2B   444 0001:00012A33   448 0001:00012A38
+   449 0001:00012A40   453 0001:00012A43   454 0001:00012A55   453 0001:00012A87
+   456 0001:00012A8A   457 0001:00012ACA   462 0001:00012AF2   464 0001:00012AFD
+   465 0001:00012B16   467 0001:00012B1E   470 0001:00012B44   472 0001:00012B46
+   473 0001:00012B49   474 0001:00012B52   480 0001:00012C36   482 0001:00012C3E
+   379 0001:00012C4B   487 0001:00012C5B   492 0001:00012CC7   493 0001:00012CF0
+   494 0001:00012D04   496 0001:00012D1B   498 0001:00012D32   500 0001:00012D82
+   501 0001:00012D8D   503 0001:00012D95   339 0001:00012D98   504 0001:00012DA2
+   505 0001:00012DC5   506 0001:00012DD3   508 0001:00012E07   510 0001:00012E09
+   513 0001:00012E5B   313 0001:00012E6E   518 0001:00012E84   519 0001:00012E97
+   520 0001:00012EBE   522 0001:00012ECE   523 0001:00012EDF   524 0001:00012EEF
+   525 0001:00012EFF   526 0001:00012F06   527 0001:00012F1F   528 0001:00012F26
+   530 0001:00012F2D   532 0001:00012F50   534 0001:00012F52   535 0001:00012F8F
+   538 0001:00012F9C   539 0001:0001302E   558 0001:0001337C   559 0001:0001337F
+   564 0001:000133D5   565 0001:00013430   567 0001:00013454   569 0001:0001345C
+   570 0001:0001346E   571 0001:0001347C   572 0001:0001348B   574 0001:00013496
+   575 0001:000134A4   576 0001:000134C9   579 0001:000134E2   580 0001:00013502
+   582 0001:00013515   583 0001:00013523   584 0001:0001353C   585 0001:00013558
+   586 0001:00013563   587 0001:00013571   588 0001:00013585   590 0001:000135C6
+   592 0001:000135FB   593 0001:0001360D   595 0001:00013645   599 0001:0001365C
+   600 0001:00013668   601 0001:0001367D   603 0001:000136B4   604 0001:000136C5
+   605 0001:000136ED   606 0001:0001370B   607 0001:0001370F   610 0001:00013724
+   612 0001:00013732   613 0001:00013734   614 0001:00013738   617 0001:00013773
+   618 0001:00013775   620 0001:0001378A   624 0001:000137E7   625 0001:000137F9
+   627 0001:0001382F   629 0001:00013841   631 0001:00013876   636 0001:000138AC
+   637 0001:000138B0   639 0001:000138B4   642 0001:000138C6   643 0001:000138D4
+   644 0001:000138DB   646 0001:000138E3   647 0001:00013927   648 0001:0001395A
+   649 0001:0001398D   650 0001:000139C0   651 0001:000139F3   652 0001:00013A01
+   653 0001:00013A0F   654 0001:00013A1D   659 0001:00013A36   660 0001:00013A4F
+   662 0001:00013A5F   657 0001:00013A6D   665 0001:00013A7F   669 0001:00013A92
+   670 0001:00013AD6   671 0001:00013B09   672 0001:00013B3C   673 0001:00013B4A
+   674 0001:00013B63   675 0001:00013B78   677 0001:00013B88   680 0001:00013B96
+   681 0001:00013BA8   680 0001:00013BE0   683 0001:00013BE3   684 0001:00013BFA
+   686 0001:00013C1B   689 0001:00013C2C   690 0001:00013C3E   692 0001:00013C7A
+   694 0001:00013CB6   696 0001:00013CF2   698 0001:00013D2E   700 0001:00013D6A
+   701 0001:00013D7C   703 0001:00013D92   704 0001:00013DA4   705 0001:00013DBE
+   707 0001:00013DE7   710 0001:00013DFC   712 0001:00013E15   714 0001:00013E38
+   716 0001:00013E3A   717 0001:00013E3E   718 0001:00013E6C   608 0001:00013E79
+   723 0001:00013E89   725 0001:00013E8F   726 0001:00013EA1   727 0001:00013EBB
+   730 0001:00013ED0   731 0001:00013EE2   733 0001:00013EF9   734 0001:00013F0E
+   735 0001:00013F16   736 0001:00013F2E   737 0001:00013F39   597 0001:00013F41
+   740 0001:00013F5B   741 0001:00013F7E   742 0001:00013F8C   744 0001:00013FC0
+   746 0001:00013FC2   749 0001:00014014   577 0001:00014027   754 0001:0001403D
+   755 0001:00014064   756 0001:0001406C   758 0001:00014099   760 0001:0001409B
+   761 0001:000140D8   764 0001:000140E5   765 0001:00014195   769 0001:00014454
+   770 0001:00014477   771 0001:00014485   772 0001:0001449F   773 0001:000144AC
+   774 0001:000144D3   777 0001:000144DB   778 0001:000144ED   779 0001:00014501
+   780 0001:00014514   782 0001:00014535   783 0001:00014543   784 0001:0001454F
+   785 0001:00014569   786 0001:0001457B   787 0001:00014593   788 0001:000145A8
+   790 0001:000145BD   791 0001:000145E0   792 0001:000145F4   794 0001:0001461A
+   796 0001:00014634   798 0001:00014680   780 0001:00014683   799 0001:0001468D
+   800 0001:000146B4   801 0001:000146CD   803 0001:000146FA   805 0001:000146FC
+   808 0001:00014767   814 0001:000147F8   815 0001:0001482C   816 0001:0001483A
+   817 0001:00014845   818 0001:00014870   819 0001:0001487B   820 0001:0001488A
+   822 0001:000148A0   823 0001:000148BA   824 0001:000148D4   825 0001:000148EE
+   826 0001:00014908   827 0001:00014910   828 0001:00014918   829 0001:00014920
+   831 0001:00014928   832 0001:0001493C   834 0001:00014950   835 0001:00014957
+   836 0001:00014966   837 0001:00014974   838 0001:00014982   839 0001:00014990
+   841 0001:00014997   843 0001:000149AE   844 0001:000149C3   845 0001:000149CE
+   847 0001:000149E6   849 0001:00014A01   851 0001:00014A0E   852 0001:00014A1B
+   853 0001:00014A28   855 0001:00014A42   841 0001:00014A43   860 0001:00014A4E
+   861 0001:00014A67   862 0001:00014A82   863 0001:00014A8D   865 0001:00014A9C
+   858 0001:00014AB6   869 0001:00014AC5   870 0001:00014ACC   871 0001:00014B05
+   872 0001:00014B3E   874 0001:00014B85   875 0001:00014B87   877 0001:00014C09
+   880 0001:00014D64   881 0001:00014D8D   884 0001:00014DB2   885 0001:00014E0E
+   886 0001:00014E2A   887 0001:00014E42   888 0001:00014E5B   889 0001:00014E75
+   891 0001:00014E8F   892 0001:00014E9A   894 0001:00014EAB   897 0001:00014EB9
+   899 0001:00014F0D   903 0001:00014F14   904 0001:00014F47   905 0001:00014F52
+   906 0001:00014F7D   907 0001:00014F88   910 0001:00014FA0   911 0001:00014FAE
+   912 0001:00014FDC   915 0001:00014FE7   916 0001:00014FFD   917 0001:0001500B
+   918 0001:00015046   921 0001:00015051   924 0001:00015065   925 0001:00015073
+   926 0001:000150A1   928 0001:000150DE   932 0001:000151B8   933 0001:000151D9
+   934 0001:000151F3   935 0001:00015200   936 0001:00015212   937 0001:0001521E
+   938 0001:00015230   939 0001:0001523C   940 0001:0001524E   941 0001:0001525A
+   942 0001:00015270   943 0001:00015280   944 0001:000152A7   945 0001:000152D1
+   946 0001:000152E2   947 0001:0001530F   948 0001:0001533C   949 0001:00015369
+   950 0001:00015370   951 0001:00015388   952 0001:00015392   954 0001:000153AE
+   961 0001:000153D4   962 0001:000153FD   966 0001:000154F0   967 0001:0001550B
+   968 0001:00015546   969 0001:00015552   971 0001:00015562   972 0001:000155A2
+   976 0001:000155B4   977 0001:000155BC   979 0001:000155D4   980 0001:000155E3
+   981 0001:000155EC   977 0001:000155ED   982 0001:000155F0   984 0001:00015634
+   984 0001:0001563B
+
+Line numbers for ufrmEDI_Pen(..\EDI\ufrmEDI_Pen.pas) segment .text
+
+    39 0001:00015864    40 0001:00015892    41 0001:000158A9    42 0001:000158B7
+    43 0001:000158C1    44 0001:000158D4    45 0001:000158EF    47 0001:00015909
+    48 0001:00015916    49 0001:00015929    50 0001:00015945    51 0001:00015968
+    52 0001:0001599D    53 0001:000159A9    54 0001:000159B1    55 0001:000159CA
+    58 0001:000159E9    60 0001:000159F8    45 0001:000159F9    61 0001:00015A02
+    62 0001:00015A0C    64 0001:00015A26    66 0001:00015A65    70 0001:00015AD4
+    71 0001:00015AF6    72 0001:00015B1A    73 0001:00015B22    74 0001:00015B30
+    76 0001:00015B3A    77 0001:00015B68    78 0001:00015B79    79 0001:00015B92
+    81 0001:00015B99    82 0001:00015BC3    83 0001:00015BE7    84 0001:00015C22
+    87 0001:00015CB0    88 0001:00015CB3    89 0001:00015CC9    90 0001:00015CDF
+    94 0001:00015CE4    95 0001:00015CF0    96 0001:00015CFC   100 0001:00015D00
+   101 0001:00015D1B   102 0001:00015D3F   104 0001:00015D4B   105 0001:00015D55
+   107 0001:00015D85   111 0001:00015DA8   112 0001:00015DD6   113 0001:00015DED
+   114 0001:00015DFB   115 0001:00015E05   116 0001:00015E13   117 0001:00015E2E
+   119 0001:00015E48   120 0001:00015E55   121 0001:00015E68   122 0001:00015E84
+   123 0001:00015EA7   124 0001:00015EDD   125 0001:00015EE9   126 0001:00015EF1
+   127 0001:00015F0A   128 0001:00015F1D   131 0001:00015F3C   133 0001:00015F4B
+   117 0001:00015F4C   134 0001:00015F55   135 0001:00015F5F   137 0001:00015F79
+   139 0001:00015FB8   141 0001:00016058   141 0001:0001605F
+
+Line numbers for ufrmCompare(ufrmCompare.pas) segment .text
+
+    37 0001:00016860    38 0001:00016863    39 0001:0001687E    40 0001:00016899
+    43 0001:0001689C    44 0001:0001689F    45 0001:000168BA    46 0001:000168D5
+    49 0001:000168D8    50 0001:000168DB    51 0001:000168F6    53 0001:0001692C
+    53 0001:00016933
+
+Line numbers for ufrmConfirmacaoEDI(..\CADASTRO\ufrmConfirmacaoEDI.pas) segment .text
+
+   288 0001:00017FBC   289 0001:00017FD9   291 0001:00017FE9   292 0001:00017FF4
+   293 0001:00018007   294 0001:0001801B   296 0001:00018029   297 0001:00018034
+   298 0001:0001805C   299 0001:00018084   300 0001:000180AC   301 0001:000180D4
+   302 0001:000180EE   303 0001:0001811D   304 0001:00018138   306 0001:00018143
+   307 0001:00018177   312 0001:00018220   314 0001:00018247   316 0001:00018264
+   322 0001:00018271   326 0001:0001828E   327 0001:000182A2   328 0001:000182CA
+   329 0001:000182F2   330 0001:0001831A   331 0001:00018342   347 0001:0001834D
+   352 0001:00018377   353 0001:0001838B   354 0001:000183B3   355 0001:000183DB
+   356 0001:00018403   360 0001:0001842B   362 0001:00018436   364 0001:00018446
+   365 0001:00018451   366 0001:00018464   367 0001:00018478   369 0001:00018486
+   370 0001:00018491   371 0001:000184B9   372 0001:000184E1   373 0001:00018509
+   374 0001:00018531   375 0001:0001854B   376 0001:00018566   378 0001:00018571
+   379 0001:000185B0   380 0001:000185C6   381 0001:000185D9   382 0001:000185EC
+   383 0001:000185FF   384 0001:00018612   385 0001:00018625   386 0001:00018638
+   389 0001:00018649   390 0001:00018656   391 0001:0001867A   392 0001:0001869E
+   393 0001:000186C2   394 0001:000186EC   395 0001:00018710   397 0001:0001871D
+   399 0001:0001872E   400 0001:0001873B   403 0001:00018755   405 0001:00018762
+   406 0001:0001877F   407 0001:00018791   408 0001:000187AE   409 0001:000187CB
+   410 0001:000187E8   411 0001:00018809   412 0001:00018818   413 0001:0001882B
+   414 0001:00018840   415 0001:00018855   416 0001:0001886A   417 0001:0001887A
+   418 0001:0001888A   419 0001:000188AE   420 0001:000188D1   423 0001:000188E1
+   427 0001:000188FE   428 0001:00018912   429 0001:0001893A   430 0001:00018962
+   431 0001:0001898A   435 0001:000189B2   451 0001:000189BD   455 0001:000189DA
+   456 0001:000189EE   457 0001:00018A16   458 0001:00018A3E   459 0001:00018A66
+   463 0001:00018A8E   465 0001:00018A99   467 0001:00018ADA   470 0001:00018C98
+   471 0001:00018CAE   472 0001:00018CCF   473 0001:00018CDA   474 0001:00018D02
+   478 0001:00018D08   479 0001:00018D0B   482 0001:00018D2E   483 0001:00018D4C
+   487 0001:00018D50   501 0001:00018D66   502 0001:00018DA5   503 0001:00018DB5
+   504 0001:00018DC5   505 0001:00018DD5   506 0001:00018DE5   507 0001:00018DF5
+   508 0001:00018E05   509 0001:00018E15   511 0001:00018E40   540 0001:00018E44
+   543 0001:00018E48   544 0001:00018E4B   545 0001:00018E61   555 0001:00018E64
+   572 0001:00018E68   575 0001:00018E6C   576 0001:00018E9E   577 0001:00018EB5
+   578 0001:00018EC4   579 0001:00018EEA   580 0001:00018F10   581 0001:00018F36
+   582 0001:00018F5C   583 0001:00018F72   584 0001:00018F78   585 0001:00018F8C
+   587 0001:00018F9A   589 0001:00018FA2   590 0001:00018FBE   591 0001:00018FCC
+   592 0001:0001900B   593 0001:00019025   594 0001:00019034   595 0001:0001905A
+   596 0001:00019068   598 0001:00019084   599 0001:00019090   600 0001:000190A2
+   605 0001:000190B8   606 0001:000190F7   607 0001:00019107   608 0001:00019121
+   610 0001:00019130   611 0001:00019176   614 0001:000191E4   615 0001:00019216
+   616 0001:0001922D   617 0001:0001923C   618 0001:00019262   619 0001:00019288
+   620 0001:000192AE   621 0001:000192D4   622 0001:000192EA   623 0001:000192F0
+   624 0001:00019304   626 0001:00019312   628 0001:0001931A   629 0001:00019336
+   630 0001:00019344   631 0001:00019383   632 0001:0001939D   633 0001:000193AC
+   634 0001:000193D2   635 0001:000193E0   637 0001:000193FC   638 0001:00019408
+   639 0001:0001941A   644 0001:00019430   645 0001:0001946F   646 0001:0001947F
+   647 0001:00019499   649 0001:000194A8   650 0001:000194EE   653 0001:00019554
+   654 0001:00019586   655 0001:0001959D   656 0001:000195AC   657 0001:000195D2
+   658 0001:000195F8   659 0001:0001961E   660 0001:00019644   661 0001:0001965A
+   662 0001:00019660   663 0001:00019674   665 0001:00019682   667 0001:0001968A
+   668 0001:000196A6   669 0001:000196B4   670 0001:000196F3   671 0001:0001970D
+   672 0001:0001971C   673 0001:00019742   674 0001:00019750   676 0001:0001976C
+   677 0001:00019778   678 0001:0001978A   683 0001:000197A0   684 0001:000197DF
+   685 0001:000197EF   686 0001:00019809   688 0001:00019818   689 0001:0001985E
+   692 0001:000198C4   693 0001:000198F6   694 0001:0001990D   695 0001:0001991C
+   696 0001:00019942   697 0001:00019968   698 0001:0001998E   699 0001:000199B4
+   700 0001:000199CA   701 0001:000199D0   702 0001:000199E4   704 0001:000199F2
+   706 0001:000199FA   707 0001:00019A16   708 0001:00019A24   709 0001:00019A63
+   710 0001:00019A7D   711 0001:00019A8C   712 0001:00019AB2   713 0001:00019AC0
+   715 0001:00019ADC   716 0001:00019AE8   717 0001:00019AFA   722 0001:00019B10
+   723 0001:00019B4F   724 0001:00019B5F   725 0001:00019B79   727 0001:00019B88
+   728 0001:00019BCE   732 0001:00019C34   733 0001:00019C66   734 0001:00019C7D
+   735 0001:00019C8C   736 0001:00019CB2   737 0001:00019CD8   738 0001:00019CFE
+   739 0001:00019D24   740 0001:00019D3A   741 0001:00019D40   742 0001:00019D54
+   744 0001:00019D62   746 0001:00019D6A   747 0001:00019D86   748 0001:00019D94
+   749 0001:00019DD3   750 0001:00019DED   751 0001:00019DFC   752 0001:00019E22
+   753 0001:00019E30   755 0001:00019E4C   756 0001:00019E58   757 0001:00019E6A
+   762 0001:00019E80   763 0001:00019EBF   764 0001:00019ECF   765 0001:00019EE9
+   767 0001:00019EF8   768 0001:00019F3E   772 0001:00019FAC   773 0001:00019FDE
+   774 0001:00019FF5   775 0001:0001A004   776 0001:0001A02A   777 0001:0001A050
+   778 0001:0001A076   779 0001:0001A09C   780 0001:0001A0B2   781 0001:0001A0B8
+   782 0001:0001A0CC   784 0001:0001A0DA   786 0001:0001A0E2   787 0001:0001A0FE
+   788 0001:0001A10C   789 0001:0001A14B   790 0001:0001A165   791 0001:0001A174
+   792 0001:0001A19A   793 0001:0001A1A8   795 0001:0001A1C4   796 0001:0001A1D0
+   797 0001:0001A1E2   802 0001:0001A1F8   803 0001:0001A237   804 0001:0001A247
+   805 0001:0001A261   807 0001:0001A270   808 0001:0001A2B6   812 0001:0001A324
+   813 0001:0001A356   814 0001:0001A36D   815 0001:0001A37C   816 0001:0001A3A2
+   817 0001:0001A3C8   818 0001:0001A3EE   819 0001:0001A414   820 0001:0001A42A
+   821 0001:0001A430   822 0001:0001A444   824 0001:0001A452   826 0001:0001A45A
+   827 0001:0001A476   828 0001:0001A484   829 0001:0001A4C3   830 0001:0001A4DD
+   831 0001:0001A4EC   832 0001:0001A512   833 0001:0001A520   835 0001:0001A53C
+   836 0001:0001A548   837 0001:0001A55A   842 0001:0001A570   843 0001:0001A5AF
+   844 0001:0001A5BF   845 0001:0001A5D9   847 0001:0001A5E8   848 0001:0001A62E
+   852 0001:0001A6A0   853 0001:0001A6D2   854 0001:0001A6E9   855 0001:0001A6F8
+   856 0001:0001A71E   857 0001:0001A744   858 0001:0001A76A   859 0001:0001A790
+   860 0001:0001A7A6   861 0001:0001A7AC   862 0001:0001A7C0   864 0001:0001A7CE
+   866 0001:0001A7D6   867 0001:0001A7F2   868 0001:0001A800   869 0001:0001A83F
+   870 0001:0001A859   871 0001:0001A868   872 0001:0001A88E   873 0001:0001A89C
+   875 0001:0001A8B8   876 0001:0001A8C4   877 0001:0001A8D6   882 0001:0001A8EC
+   883 0001:0001A92B   884 0001:0001A93B   885 0001:0001A955   887 0001:0001A964
+   888 0001:0001A9AA   892 0001:0001AA18   894 0001:0001AA34   895 0001:0001AA39
+   896 0001:0001AA3E   897 0001:0001AA5A   898 0001:0001AA68   900 0001:0001AAA7
+   901 0001:0001AAB5   902 0001:0001AABF   905 0001:0001AAD5   906 0001:0001AAE3
+   907 0001:0001AAED   910 0001:0001AB03   911 0001:0001AB11   912 0001:0001AB1B
+   915 0001:0001AB31   916 0001:0001AB3F   917 0001:0001AB49   920 0001:0001AB5F
+   921 0001:0001AB6D   922 0001:0001AB77   925 0001:0001AB8A   926 0001:0001AB98
+   927 0001:0001ABA2   930 0001:0001ABB5   931 0001:0001ABC3   932 0001:0001ABCD
+   935 0001:0001ABE0   936 0001:0001ABEE   937 0001:0001ABF8   941 0001:0001AC09
+   942 0001:0001AC20   943 0001:0001AC37   944 0001:0001AC41   945 0001:0001AC4B
+   946 0001:0001AC55   947 0001:0001AC5F   948 0001:0001AC7B   949 0001:0001AC97
+   950 0001:0001ACAC   951 0001:0001ACC1   952 0001:0001ACC9   953 0001:0001ACD1
+   954 0001:0001ACDF   956 0001:0001ACFB   957 0001:0001AD03   958 0001:0001AD0B
+   959 0001:0001AD17   960 0001:0001AD23   961 0001:0001AD2B   962 0001:0001AD37
+   964 0001:0001AD76   968 0001:0001AE54   969 0001:0001AE75   970 0001:0001AE92
+   976 0001:0001AE9F   980 0001:0001AEBC   981 0001:0001AED0   982 0001:0001AEF8
+   983 0001:0001AF20   984 0001:0001AF48   985 0001:0001AF70   987 0001:0001AF7B
+   991 0001:0001AF98   992 0001:0001AFAC   993 0001:0001AFD4   994 0001:0001AFFC
+   995 0001:0001B024   996 0001:0001B04C   998 0001:0001B057   999 0001:0001B062
+  1000 0001:0001B096  1003 0001:0001B1C0  1004 0001:0001B1DA  1005 0001:0001B21D
+  1007 0001:0001B285  1011 0001:0001B2D0  1012 0001:0001B2F4  1014 0001:0001B300
+  1016 0001:0001B309  1017 0001:0001B316  1020 0001:0001B323  1025 0001:0001B34F
+  1026 0001:0001B35C  1028 0001:0001B395  1029 0001:0001B3A2  1033 0001:0001B3FD
+  1036 0001:0001B44C  1037 0001:0001B452  1038 0001:0001B45B  1039 0001:0001B464
+  1043 0001:0001B468  1044 0001:0001B46D  1048 0001:0001B470  1049 0001:0001B475
+  1053 0001:0001B478  1054 0001:0001B47D  1057 0001:0001B480  1058 0001:0001B483
+  1059 0001:0001B48E  1060 0001:0001B499  1061 0001:0001B4A4  1062 0001:0001B4AF
+  1065 0001:0001B4B4  1066 0001:0001B4B7  1067 0001:0001B4C5  1068 0001:0001B4D2
+  1069 0001:0001B4DF  1070 0001:0001B4EC  1071 0001:0001B4F9  1073 0001:0001B506
+  1076 0001:0001B508  1077 0001:0001B50E  1078 0001:0001B51B  1079 0001:0001B528
+  1080 0001:0001B539  1081 0001:0001B546  1082 0001:0001B553  1083 0001:0001B560
+  1084 0001:0001B56D  1085 0001:0001B576  1089 0001:0001B57C  1090 0001:0001B594
+  1092 0001:0001B5AD  1093 0001:0001B5C9  1094 0001:0001B5DA  1096 0001:0001B5ED
+  1097 0001:0001B5FB  1098 0001:0001B609  1099 0001:0001B623  1100 0001:0001B639
+  1101 0001:0001B64D  1102 0001:0001B65B  1103 0001:0001B66F  1104 0001:0001B67D
+  1105 0001:0001B688  1107 0001:0001B6A2  1109 0001:0001B6CA  1111 0001:0001B6DC
+  1112 0001:0001B70F  1114 0001:0001B746  1115 0001:0001B758  1118 0001:0001B784
+  1122 0001:0001B804  1123 0001:0001B824  1125 0001:0001B855  1126 0001:0001B871
+  1127 0001:0001B882  1128 0001:0001B890  1130 0001:0001B8B1  1131 0001:0001B8DC
+  1133 0001:0001B8EA  1134 0001:0001B904  1135 0001:0001B91A  1136 0001:0001B92E
+  1137 0001:0001B93C  1138 0001:0001B950  1139 0001:0001B95E  1140 0001:0001B969
+  1142 0001:0001B983  1144 0001:0001B9AB  1146 0001:0001B9BD  1147 0001:0001B9F0
+  1149 0001:0001BA27  1150 0001:0001BA39  1153 0001:0001BA45  1154 0001:0001BA59
+  1155 0001:0001BA90  1159 0001:0001BB58  1160 0001:0001BB84  1162 0001:0001BBB5
+  1163 0001:0001BBD1  1164 0001:0001BBE2  1165 0001:0001BBFA  1198 0001:0001BC17
+  1201 0001:0001BC4B  1202 0001:0001BC59  1203 0001:0001BC67  1204 0001:0001BC7E
+  1205 0001:0001BC94  1206 0001:0001BCA3  1207 0001:0001BCAC  1208 0001:0001BCBB
+  1209 0001:0001BCC4  1210 0001:0001BCCA  1211 0001:0001BCD0  1212 0001:0001BCD6
+  1213 0001:0001BCDC  1214 0001:0001BCE5  1215 0001:0001BCEE  1216 0001:0001BCF7
+  1217 0001:0001BD00  1218 0001:0001BD09  1219 0001:0001BD12  1220 0001:0001BD1B
+  1221 0001:0001BD24  1222 0001:0001BD2D  1223 0001:0001BD36  1224 0001:0001BD3F
+  1226 0001:0001BD57  1228 0001:0001BD7F  1230 0001:0001BD95  1231 0001:0001BDC8
+  1232 0001:0001BDFF  1233 0001:0001BE32  1234 0001:0001BE69  1235 0001:0001BE9C
+  1236 0001:0001BED3  1237 0001:0001BF0A  1238 0001:0001BF3D  1239 0001:0001BF70
+  1240 0001:0001BFA3  1241 0001:0001BFD6  1242 0001:0001C009  1243 0001:0001C040
+  1244 0001:0001C077  1245 0001:0001C0AE  1246 0001:0001C0E5  1248 0001:0001C11C
+  1249 0001:0001C12E  1252 0001:0001C13A  1253 0001:0001C14E  1254 0001:0001C185
+  1257 0001:0001D0CC  1258 0001:0001D0CF  1259 0001:0001D0E0  1260 0001:0001D0ED
+  1261 0001:0001D0FA  1262 0001:0001D107  1263 0001:0001D114  1264 0001:0001D121
+  1267 0001:0001D124  1268 0001:0001D127  1270 0001:0001D13E  1271 0001:0001D143
+  1273 0001:0001D151  1276 0001:0001D154  1278 0001:0001D15A  1280 0001:0001D179
+  1282 0001:0001D187  1283 0001:0001D190  1286 0001:0001D19D  1287 0001:0001D1AC
+  1289 0001:0001D1B9  1290 0001:0001D1C9  1292 0001:0001D1D6  1293 0001:0001D1E6
+  1295 0001:0001D1F3  1299 0001:0001D1F8  1300 0001:0001D20E  1301 0001:0001D247
+  1304 0001:0001D24C  1305 0001:0001D24F  1306 0001:0001D25C  1307 0001:0001D26C
+  1308 0001:0001D27A  1312 0001:0001D27C  1314 0001:0001D29C  1316 0001:0001D2B9
+  1322 0001:0001D2C6  1327 0001:0001D309  1328 0001:0001D31D  1329 0001:0001D345
+  1330 0001:0001D36D  1331 0001:0001D395  1332 0001:0001D3BD  1334 0001:0001D3C8
+  1335 0001:0001D3D6  1336 0001:0001D3E1  1337 0001:0001D3F2  1340 0001:0001D400
+  1341 0001:0001D40D  1343 0001:0001D454  1350 0001:0001D598  1352 0001:0001D5C8
+  1356 0001:0001D5E6  1357 0001:0001D5FB  1358 0001:0001D627  1361 0001:0001D634
+  1366 0001:0001D65F  1367 0001:0001D674  1368 0001:0001D6A0  1371 0001:0001D6AD
+  1375 0001:0001D6CB  1376 0001:0001D6E0  1377 0001:0001D70C  1379 0001:0001D73B
+  1380 0001:0001D7EC  1381 0001:0001D809  1383 0001:0001D846  1384 0001:0001D85B
+  1387 0001:0001D860  1389 0001:0001D872  1390 0001:0001D87E  1391 0001:0001D88A
+  1392 0001:0001D896  1393 0001:0001D8A2  1394 0001:0001D8AE  1395 0001:0001D8BA
+  1396 0001:0001D8C6  1397 0001:0001D8D2  1398 0001:0001D8E0  1400 0001:0001D913
+  1402 0001:0001DA9C  1402 0001:0001DAA3
+
+Line numbers for SISEDI(Q:\lib\Pacotes\SISEDI.dpk) segment .text
+
+    72 0001:0001E59C
+
+Bound resource files
+
+D:\DESENVOLVIMENTO\Componentes\Exception\Unit\D7\ExcMagic.RES
+Q:\lib\EDI\ufrmSQLWeb.dfm
+q:\lib\cadastro\ufrmProtocoloEnvio.dfm
+Q:\lib\EDI\ufrmDePara.dfm
+uEmail.dfm
+Q:\lib\EDI\ufrmMenuEDI.DFM
+Q:\lib\EDI\ufrmEDI.dfm
+Q:\lib\EDI\ufrmEDI_Pen.dfm
+q:\lib\cadastro\ufrmCompare.dfm
+q:\lib\cadastro\ufrmConfirmacaoEDI.dfm
+SISEDI.res
+SISEDI.drf
+
+
+Program entry point at 0001:0001E59C

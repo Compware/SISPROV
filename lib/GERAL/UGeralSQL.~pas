@@ -1,0 +1,576 @@
+unit UGeralSQL;
+
+interface
+
+uses UGeral, IBQuery, SysUtils, IBDatabase, Windows, Variants;
+
+function SelectDadosPais:TIBQuery;
+function SelectDadosProvincia:TIBQuery;
+function SelectDadosMunicipio(pcdProvincia:Integer):TIBQuery;
+function SelectDadosOcupacao:TIBQuery;
+function SelectDadosMedico:TIBQuery;
+function SelectDadosInvestigador:TIBQuery;
+function SelectDadosPaciente:TIBQuery;
+function SelectDadosPacienteNotificado:TIBQuery;
+function SelectDadosEsquema:TIBQuery;
+function SelectDadosForma:TIBQuery;
+function SelectDadosNotificacao:TIBQuery;
+function SelectDadosPacienteUnidade:TIBQuery;
+function SelectNomeUnidadeParametro:String;
+function SelectDadosPessoaAtiva(pKey:Boolean=False):TIBQuery;
+function SelectDadosUnidade(pCD_PROVINCIA:integer=-999):TIBQuery;
+function SelectDadosUsuario:TIBQuery;
+
+function PegaValor(Valor,Tabela:String;
+                   const ValorChave: array of Variant;
+                   const Values: array of Variant;
+                   DB:TIbDatabase=nil):Variant;
+function ExecutaSQL(qy:TIBQuery;
+                   const vParams: array of Variant;
+                   const Values: array of Variant):TIBQuery;
+
+function ZeroEsq(S: String; Max: Integer): String;
+
+function VerificaUtenteAbandono(cd_paciente: Integer): Boolean;
+procedure AtualizaTodosAbandono;
+function VerificaPermissao(nPermissao: Integer): Boolean;
+procedure AtualizaPacienteIdade(cd_paciente: Integer);
+
+procedure InicializaDados;
+
+implementation
+
+uses UDM, DB, IBCustomDataSet;
+
+
+procedure InicializaDados;
+begin
+  sUnidadeDefautDescricao := PegaValor('DS_UNIDADE','UNIDADE',['CD_UNIDADE'], [prmUnidade],nil);
+end;
+
+function SelectDadosPais:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select P.CD_PAIS, P.DS_PAIS');
+    sql.add('from PAIS P');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosProvincia:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_PROVINCIA, DS_PROVINCIA');
+    sql.add('from PROVINCIA');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosMunicipio(pcdProvincia:Integer):TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_MUNICIPIO, DS_MUNICIPIO');
+    sql.add('from MUNICIPIO');
+    if (pcdProvincia<>NUMERO_INDEFINIDO) then
+    begin
+      sql.add('where CD_PROVINCIA = :CD_PROVINCIA');
+      ParamByName('CD_PROVINCIA').AsInteger := pcdProvincia;
+    end;
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosOcupacao:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_OCUPACAO, DS_OCUPACAO ');
+    sql.add('from OCUPACAO');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosMedico:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_MEDICO, NM_MEDICO, NR_TELEFONE');
+    sql.add('from MEDICO');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosInvestigador:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_INVESTIGADOR, NM_INVESTIGADOR, NM_FUNCAO, NR_TELEFONE');
+    sql.add('from INVESTIGADOR');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosEsquema:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select cd_esquema, ds_nome_medicamento, ds_sigla, ds_apresentacao,');
+    sql.add('fl_componente, ds_nome_comercial, vl_arv');
+    sql.add('from esquema');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosForma:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select cd_forma, ds_forma');
+    sql.add('from forma');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosPessoaAtiva(pKey:Boolean=False):TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_PESSOA, NM_PESSOA from PESSOA');
+    sql.add('where FL_ATIVO = '+QuotedStr(cvSim));
+    sql.add('and TP_PESSOA = :TP_PESSOA');
+
+    if (pkey) then
+       sql.add('and CD_PESSOA = :CD_PESSOA');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosUnidade(pCD_PROVINCIA:integer=-999):TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_UNIDADE, DS_UNIDADE from UNIDADE');
+    if (pCD_PROVINCIA<>NUMERO_INDEFINIDO) then
+    begin
+     sql.add('where CD_PROVINCIA = '+ intToStr(pCD_PROVINCIA));
+    end;
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosUsuario:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_USUARIO, NM_USUARIO, NM_LOGIN from USUARIO_CMP');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosPaciente:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('select CD_PACIENTE, NM_PACIENTE, NM_MAE, DT_NASCIMENTO, NR_PROCESSO from PACIENTE');
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosPacienteNotificado:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('SELECT N.CD_FICHA,N.CD_PACIENTE,N.CD_UNIDADE,P.CD_PROVINCIA,P.CD_MUNICIPIO,P.NM_PACIENTE,');
+    sql.add('(SELECT DS_UNIDADE FROM UNIDADE WHERE CD_UNIDADE = N.CD_UNIDADE)DS_UNIDADE,');
+    sql.add('(SELECT DS_PROVINCIA FROM PROVINCIA WHERE CD_PROVINCIA = P.CD_PROVINCIA)DS_PROVINCIA,');
+    sql.add('(SELECT DS_MUNICIPIO FROM MUNICIPIO WHERE CD_MUNICIPIO = P.CD_MUNICIPIO)DS_MUNICIPIO');
+    sql.add(' FROM NOTIFICACAO N, PACIENTE P WHERE P.CD_PACIENTE = N.CD_PACIENTE');
+  end;
+  result := ibSelect;
+end;
+
+function ExecutaSQL(qy:TIBQuery;
+                   const vParams: array of Variant;
+                   const Values: array of Variant):TIBQuery;
+var i:Integer;
+begin
+  try
+    qy.Prepare;
+
+    for I := 0 to High(Values) do
+      qy.ParamByName(vParams[I]).Value := Values[I];
+
+    qy.Open;
+    result := QY;
+  except
+    result := NIL;
+  end;
+end;
+
+function PegaValor(Valor,Tabela:String;
+  const ValorChave: array of Variant;
+  const Values: array of Variant;
+  DB:TIbDatabase=nil):Variant;
+var ibSelect:TIBQuery; i:Integer;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    try
+      try
+        if (db<>nil) then
+          DataBase := DB
+        else
+          DataBase := DM.DB;
+        sql.add('select '+Valor+' from '+Tabela);
+        if  High(ValorChave)>-1 then
+          sql.add('where '+ValorChave[0]+' = :P0');
+
+        for I := 1 to High(Values) do
+         sql.add('and '+ValorChave[I]+' = :P'+intToStr(I));
+
+        Prepare;
+        for I := 0 to High(Values) do
+          ParamByName('P'+intToStr(I)).Value := Values[I];
+
+        Open;
+        Result := Fields[0].Value;
+        Close;
+      except
+        Result := Null;
+        Raise ;
+      end;
+    finally
+      Free;
+    end;
+  end;
+end;
+
+function ZeroEsq(S: String; Max: Integer): String;
+var
+  NumZeros, I: Integer;
+begin
+  NumZeros := Max - Length(Trim(S));
+
+  for I := 1 to NumZeros do
+  begin
+    S := Concat('0', S);
+  end;
+  ZeroEsq := Trim(S);
+end;
+
+function SelectDadosNotificacao:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('SELECT N.NR_NOTIFICACAO,N.DT_NOTIFICACAO,P.NM_PACIENTE,P.DT_NASCIMENTO,P.IDADE,P.NM_MAE,P.NR_PROCESSO,N.CD_FICHA');
+    sql.add(' FROM NOTIFICACAO N, PACIENTE P WHERE P.CD_PACIENTE = N.CD_PACIENTE');
+    sql.add(' AND P.CD_UND = N.CD_UND');
+    sql.add(' AND N.CD_UND = '+ prmUnidade);
+  end;
+  result := ibSelect;
+end;
+
+function SelectDadosPacienteUnidade:TIBQuery;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  With ibSelect do
+  begin
+    DataBase := DM.DB;
+    sql.add('SELECT NR_PROCESSO,NM_PACIENTE,DT_NASCIMENTO,NM_MAE,CD_PACIENTE');
+    sql.add(' FROM PACIENTE WHERE NR_PROCESSO IS NOT NULL');
+    sql.add(' AND CD_UND = '+ prmUnidade);
+  end;
+  result := ibSelect;
+end;
+
+function SelectNomeUnidadeParametro:String;
+var ibSelect:TIBQuery;
+begin
+  ibSelect:=TIbQuery.Create(nil);
+  try
+    With ibSelect do
+    begin
+      DataBase := DM.DB;
+      sql.add('select (cd_unidade||''-''||ds_unidade) Nome ');
+      sql.add('from unidade                              ');
+      sql.add('where cd_unidade in (                     ');
+      sql.add('select valor from parametro               ');
+      sql.add('where cd_parametro = 1)                   ');
+      Open;
+      result := Fields[0].AsString;
+    end;
+  finally
+    FreeAndNil(ibSelect);
+  end;
+end;
+
+function VerificaPermissao(nPermissao: Integer): Boolean;
+begin
+  Result := False;
+
+  if DM.qyLoginNM_LOGIN.AsString = 'ADMIN' then
+  begin
+    Result := True;
+    Exit;
+  end;
+  
+  if PegaValor('CD_PERMISSAO', 'PERMISSAO_USUARIO', ['CD_PERMISSAO', 'CD_USUARIO'],
+   [nPermissao, DM.qyLoginCD_USUARIO.AsInteger]) = nPermissao then
+   Result := True;
+end;
+
+function VerificaUtenteAbandono(cd_paciente: Integer): Boolean;
+var ibSelect:TIBQuery;
+begin
+  Result := false;
+  if cd_paciente = 0 then
+    Exit;
+  ibSelect:=TIbQuery.Create(nil);
+
+  try
+    With ibSelect do
+    begin
+      DataBase := DM.DB;
+      Transaction := DM.TS;
+      // primeio verifica se esta marcado como abandono
+      SQL.add('SELECT CD_EVOLUCAO    ');
+      SQL.add('FROM NOTIFICACAO  ');
+      SQL.add('WHERE CD_UND = :CD_UND AND CD_PACIENTE = :CD_PACIENTE');
+      ParamByName('CD_UND').AsString := prmUnidade;
+      ParamByName('CD_PACIENTE').AsInteger := cd_paciente;
+      Open;
+
+      if not IsEmpty then
+        if FieldByName('CD_EVOLUCAO').AsInteger = 4 then
+        begin
+          Result := true;
+          Exit;
+        end;
+      Close;
+
+      //verifica se deve ser ser marcado como abandono
+      SQL.Clear;
+      SQL.Add('select A.DT_AGENDA                                                                ');
+      SQL.Add(' ,(SELECT DT_EVOLUCAO_2 FROM NOTIFICACAO WHERE CD_PACIENTE = A.CD_PACIENTE)DT_EVOLUCAO_2');
+      SQL.Add('from AGENDA A                                                           ');
+      SQL.Add('join PACIENTE                                                           ');
+      SQL.Add('  on PACIENTE.cd_paciente = A.cd_paciente                               ');
+      SQL.Add('  and PACIENTE.cd_und = A.cd_und                                        ');
+      SQL.Add('where (A.fl_realizado = 0                                               ');
+      SQL.Add('and ((A.fl_parecer = 0) or (A.fl_parecer is null))                      ');
+      SQL.Add('and ((A.fl_remarcado = 0) or (A.fl_remarcado is null)))                 ');
+      SQL.Add('and  not exists(select 1 from agenda X                                  ');
+      SQL.Add('  where X.cd_paciente = A.cd_paciente                                   ');
+      SQL.Add('  and X.dt_agenda > A.dt_agenda)                                        ');
+      SQL.Add('and PACIENTE.cd_unidade = :CD_UND                                       ');
+      SQL.Add('and trunc(cast(''now'' as timestamp) - A.DT_AGENDA) >0                  ');
+      SQL.Add('and trunc(cast(''now'' as timestamp) - A.DT_AGENDA) >= :nDiasAbandono   ');
+      SQL.Add('and PACIENTE.CD_PACIENTE = :CD_PACIENTE                                 ');
+      ParamByName('CD_UND').AsString := prmUnidade;
+      ParamByName('CD_PACIENTE').AsInteger := cd_paciente;
+      ParamByName('nDiasAbandono').AsInteger := nDiasAbandono;
+      Open;
+
+      if IsEmpty then  // não deve ser marcado como abandono
+      begin
+        Result := False;
+        Exit;
+      end
+      else
+      begin
+        if FieldByName('DT_EVOLUCAO_2').AsDateTime >= FieldByName('DT_AGENDA').AsDateTime then
+        begin
+          Result := False;
+        end
+        else
+        begin
+          Close;
+          SQL.Clear;
+          SQL.Text:='UPDATE NOTIFICACAO '
+                    + chr(13) +' SET CD_EVOLUCAO = 4, '
+                    + chr(13) +'	DT_EVOLUCAO_2 = (SELECT FIRST 1 (A.DT_AGENDA/*+nDiasAbandono*/) nr_dias FROM AGENDA A                '
+                    + chr(13) + '						join PACIENTE                                                      '
+                   + chr(13) + '					  on PACIENTE.cd_paciente = A.cd_paciente                              '
+                   + chr(13) +  '					  and PACIENTE.cd_und = A.cd_und                                       '
+                   + chr(13) + '					where (A.fl_realizado = 0                                              '
+                   + chr(13) +  '					and ((A.fl_parecer = 0) or (A.fl_parecer is null))                     '
+                   + chr(13) +  '					and ((A.fl_remarcado = 0) or (A.fl_remarcado is null)))                '
+                   + chr(13) +'					and  not exists(select 1 from agenda X                                 '
+                   + chr(13) +'					  where X.cd_paciente = A.cd_paciente                                  '
+                   + chr(13) +'					  and X.dt_agenda > A.dt_agenda)                                       '
+                   + chr(13) +'					and PACIENTE.cd_unidade = :CD_UND2                                  '
+                   + chr(13) +'					AND PACIENTE.cd_paciente = NOTIFICACAO.CD_PACIENTE                     '
+                   + chr(13) +'					and  A.DT_AGENDA < (cast(''now'' as timestamp)-1)                        '
+                   + chr(13) +'					and A.DT_AGENDA <= (cast(''now'' as timestamp)/*-nDiasAbandono*/))       '
+                   + chr(13) +' WHERE CD_UND = :CD_UND AND CD_PACIENTE = :CD_PACIENTE';
+          SQL.Text := StringReplace(SQL.Text, '/*+nDiasAbandono*/', '+'+IntToStr(nDiasAbandono), [rfReplaceAll]);
+          SQL.Text := StringReplace(SQL.Text, '/*-nDiasAbandono*/', '-'+IntToStr(nDiasAbandono), [rfReplaceAll]);
+          ParamByName('CD_UND').AsString := prmUnidade;
+          ParamByName('CD_UND2').AsString := prmUnidade;
+          ParamByName('CD_PACIENTE').AsInteger := cd_paciente;
+          ExecSQL;
+          DM.Commit(ibSelect);
+          Result := True;
+        end;
+      end;
+
+    end;
+  finally
+    ibSelect.Close;
+    FreeAndNil(ibSelect);
+  end;
+
+end;
+
+procedure AtualizaPacienteIdade(cd_paciente: Integer);
+var
+  ibQuery:TIBQuery;
+  idade, meses : Integer;
+begin
+  if cd_paciente = 0 then
+    Exit;
+
+  meses := 0;
+  idade := 0;
+
+  ibQuery:=TIbQuery.Create(nil);
+
+  try
+    With ibQuery do
+    begin
+      Database := DM.DB;
+      Transaction := DM.TS;
+      SQL.Text := 'SELECT DT_NASCIMENTO FROM PACIENTE WHERE CD_PACIENTE =:CD_PACIENTE';
+      ParamByName('CD_PACIENTE').AsInteger := cd_paciente;
+      Open;
+
+      if ibQuery.RecordCount = 1 then
+      begin
+        idade := CalculoIdade(FieldByName('DT_NASCIMENTO').AsDateTime);
+        if idade = 0 then
+        begin
+          meses := CalculoMeses(FieldByName('DT_NASCIMENTO').AsDateTime);
+        end
+        else
+          meses := 0;
+      end;
+
+      Close;
+      SQL.Text := 'UPDATE PACIENTE SET IDADE=:IDADE, MESES=:MESES WHERE CD_PACIENTE=:CD_PACIENTE';
+      ParamByName('CD_PACIENTE').AsInteger := cd_paciente;
+      ParamByName('IDADE').AsInteger := idade;
+      ParamByName('MESES').AsInteger := meses;
+      ExecSQL;
+      DM.Commit(ibQuery);
+    end;
+  finally
+    ibQuery.Close;
+    FreeAndNil(ibQuery);
+  end;
+end;
+
+procedure AtualizaTodosAbandono;
+var
+  ibQuery:TIBQuery;
+begin
+  ibQuery:=TIbQuery.Create(nil);
+  try
+    With ibQuery do
+    begin
+      Database := DM.DB;
+      Transaction := DM.TS;
+      SQL.Text := 'UPDATE NOTIFICACAO                                                                       '
+                  +'SET CD_EVOLUCAO = 4,                                                                     '
+                  +'	DT_EVOLUCAO_2 = (SELECT FIRST 1 (A.DT_AGENDA/*+nDiasAbandono*/) nr_dias FROM AGENDA A                '
+                  +'						join PACIENTE                                                      '
+                  +'					  on PACIENTE.cd_paciente = A.cd_paciente                              '
+                  +'					  and PACIENTE.cd_und = A.cd_und                                       '
+                  +'					where (A.fl_realizado = 0                                              '
+                  +'					and ((A.fl_parecer = 0) or (A.fl_parecer is null))                     '
+                  +'					and ((A.fl_remarcado = 0) or (A.fl_remarcado is null)))                '
+                  +'					and  not exists(select 1 from agenda X                                 '
+                  +'					  where X.cd_paciente = A.cd_paciente                                  '
+                  +'					  and X.dt_agenda > A.dt_agenda)                                       '
+                  +'					and PACIENTE.cd_unidade = :CD_UND                                  '
+                  +'					AND PACIENTE.cd_paciente = NOTIFICACAO.CD_PACIENTE                     '
+                  +'					and  A.DT_AGENDA < (cast(''now'' as timestamp)-1)                        '
+                  +'					and A.DT_AGENDA <= (cast(''now'' as timestamp)/*-nDiasAbandono*/))       '
+                  +'WHERE CD_PACIENTE in(select                                                              '
+                  +'		PACIENTE.cd_paciente                                                               '
+                  +'	from AGENDA A                                                                          '
+                  +'	join PACIENTE                                                                          '
+                  +'		on PACIENTE.cd_paciente = A.cd_paciente                                            '
+                  +'		and PACIENTE.cd_und = A.cd_und                                                     '
+                  +'	where (A.fl_realizado = 0                                                              '
+                  +'		and ((A.fl_parecer = 0) or (A.fl_parecer is null))                                 '
+                  +'		and ((A.fl_remarcado = 0) or (A.fl_remarcado is null)))                            '
+                  +'		and  not exists(select 1 from agenda X                                             '
+                  +'			where X.cd_paciente = A.cd_paciente                                            '
+                  +'			and X.dt_agenda > A.dt_agenda)                                                 '
+                  +'		and  A.DT_AGENDA < (cast(''now'' as timestamp)-1)                                    '
+                  +'		and A.DT_AGENDA <= (cast(''now'' as timestamp)/*-nDiasAbandono*/)                    '
+                  +') and CD_UND = (SELECT CD_UND FROM PACIENTE WHERE CD_PACIENTE = NOTIFICACAO.CD_PACIENTE) ';
+
+
+
+      SQL.Text := StringReplace(SQL.Text, '/*+nDiasAbandono*/', '+'+IntToStr(nDiasAbandono), [rfReplaceAll]);
+      SQL.Text := StringReplace(SQL.Text, '/*-nDiasAbandono*/', '-'+IntToStr(nDiasAbandono), [rfReplaceAll]);
+
+      ParamByName('CD_UND').AsString := prmUnidade;
+      ExecSQL;
+      DM.Commit(ibQuery);
+    end;
+  finally
+    ibQuery.Close;
+    FreeAndNil(ibQuery);
+  end;
+end;
+
+end.

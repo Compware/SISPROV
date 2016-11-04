@@ -1,0 +1,57 @@
+package SISGeral;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vcljpg,
+  RxCtl7,
+  vclx,
+  VclSmp,
+  dbrtl,
+  vcldb,
+  ibxpress,
+  dsnap,
+  dxEdtrD7,
+  dxComnD7,
+  EQTLD7,
+  ECQDBCD7,
+  dxDBEdD7,
+  EQGridD7,
+  vclie,
+  SISDM;
+
+contains
+  uFuncaoContraSenha in '..\ContraSenha\uFuncaoContraSenha.pas',
+  UfrmStatus in '..\GERAL\UfrmStatus.pas' {frmStatus},
+  ufrmDlgStatus in '..\DIG\ufrmDlgStatus.pas' {frmDlgStatus},
+  WBFuncs in '..\GERAL\WBFuncs.pas',
+  uRelatorioWEB in '..\CADASTRO\uRelatorioWEB.pas' {frmRelatorioWEB},
+  uFuncaoGrid in '..\GERAL\uFuncaoGrid.pas',
+  uPermissao in '..\CADASTRO\uPermissao.pas' {frmPermissao},
+  UTraduzFiltroDxDBGrid in '..\GERAL\UTraduzFiltroDxDBGrid.pas';
+
+end.

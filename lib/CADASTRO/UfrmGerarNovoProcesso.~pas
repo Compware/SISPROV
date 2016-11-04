@@ -1,0 +1,131 @@
+unit UfrmGerarNovoProcesso;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Mask, DBCtrls, DB, IBCustomDataSet, IBQuery, ComCtrls,
+  ExtCtrls, Buttons;
+
+type
+  TfrmGerarNovoProcesso = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    StatusBar1: TStatusBar;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    DBEdit5: TDBEdit;
+    Label6: TLabel;
+    DBEdit6: TDBEdit;
+    DBEdit7: TDBEdit;
+    Label7: TLabel;
+    btNotificacao: TSpeedButton;
+    btGerarNr: TSpeedButton;
+    btConfirmar: TBitBtn;
+    Cancelar: TBitBtn;
+    dsPaciente: TDataSource;
+    dsNotificacao: TDataSource;
+    procedure btNotificacaoClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btGerarNrClick(Sender: TObject);
+    procedure dsPacienteStateChange(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmGerarNovoProcesso: TfrmGerarNovoProcesso;
+
+implementation
+
+Uses
+  UDM, UDMGeral, UGeral, UGeralSQL, UfrmLocalizar, UfrmLocPad;
+{$R *.dfm}
+
+procedure TfrmGerarNovoProcesso.btNotificacaoClick(Sender: TObject);
+begin
+  frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Notificação';
+  frmLocalizar.qyDados := SelectDadosNotificacao;
+
+  try
+    frmLocalizar.Where := true;
+    SetLength(VCampo,8);
+    frmLocalizar.KeyField := 'nr_notificacao';
+    VCampo[0].Titulo  := 'Nr. Notificação';
+    VCampo[0].Width := 10;
+    VCampo[1].Titulo  := 'Dt. Notificação';
+    VCampo[1].Width := 10;
+    VCampo[2].Titulo  := 'Paciente';
+    VCampo[2].Width := 30;
+    VCampo[3].Titulo  := 'Dt. Nascimento';
+    VCampo[3].Width := 10;
+    VCampo[4].Titulo  := 'Idade';
+    VCampo[4].Width := 3;
+    VCampo[5].Titulo  := 'Mãe';
+    VCampo[5].Width := 30;
+    VCampo[6].Titulo  := 'Nr. Processo';
+    VCampo[6].Width := 10;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+    VCampo[2].Visivel := True;
+    VCampo[3].Visivel := True;
+    VCampo[4].Visivel := True;
+    VCampo[5].Visivel := True;
+    VCampo[6].Visivel := True;
+    VCampo[7].Visivel := False;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    DMGERAL.TB_NOTIFICACAO.Close;
+    DMGERAL.TB_NOTIFICACAO.ParamByName('CD_FICHA').AsInteger :=
+      frmLocalizar.qyDados.FieldByname('cd_ficha').AsInteger;
+    DMGERAL.TB_NOTIFICACAO.ParamByName('CD_UND').AsString := prmUnidade;
+    DMGERAL.TB_NOTIFICACAO.Open;
+
+    DMGERAL.TB_PACIENTE.Cancel;
+    DMGERAL.TB_PACIENTE.Close;
+    DMGERAL.TB_PACIENTE.DataSource := dsNotificacao;
+    DMGERAL.TB_PACIENTE.Open;
+
+  end;
+  frmLocalizar.qyDados.Close;
+  frmLocalizar.Free;
+
+end;
+
+procedure TfrmGerarNovoProcesso.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  DMGERAL.TB_NOTIFICACAO.Close;
+end;
+
+procedure TfrmGerarNovoProcesso.btGerarNrClick(Sender: TObject);
+begin
+  if (DMGERAL.TB_PACIENTENR_PROCESSO.AsInteger >= 1)  then
+     MessageDlg('Existe um processo vinculado a este Utente.',mtInformation,[mbOK],0)
+  else
+    begin
+      DMGERAL.TB_PACIENTE.Edit;
+      DMGERAL.TB_PACIENTENR_PROCESSO.AsInteger := StrToInt(prmUltimoNrProcesso) + 1;
+    end;
+
+end;
+
+procedure TfrmGerarNovoProcesso.dsPacienteStateChange(Sender: TObject);
+begin
+  btConfirmar.Enabled := (dsPaciente.State in [dsEdit]);
+end;
+
+end.

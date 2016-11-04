@@ -1,0 +1,10 @@
+
+{                                                                              }
+{  IB_Session.pbl                                                              }
+{                                                                              }
+
+{$IFNDEF HELPSCAN}
+
+public
+
+{$ENDIF}

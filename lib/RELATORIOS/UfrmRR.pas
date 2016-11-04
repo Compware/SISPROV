@@ -1,0 +1,706 @@
+unit UfrmRR;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, dxExEdtr, Buttons, dxCntner, dxTL, dxDBCtrl, dxDBGrid, dxEdLib,
+  dxEditor, StdCtrls, ComCtrls, ExtCtrls, DB, IBCustomDataSet, IBQuery,ComObj,
+  Animate, GIFCtrl, frxClass, frxExportPDF, frxDBSet;
+
+type
+  TfrmRR = class(TForm)
+    panel1: TPanel;
+    Panel2: TPanel;
+    StatusBar1: TStatusBar;
+    GroupBox2: TGroupBox;
+    Label6: TLabel;
+    cbAno: TdxPickEdit;
+    GroupBox1: TGroupBox;
+    Label3: TLabel;
+    btLocProvincia: TdxButtonEdit;
+    edProvincia: TdxEdit;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    btSair: TSpeedButton;
+    dlgSalvar: TSaveDialog;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet6: TTabSheet;
+    TabSheet7: TTabSheet;
+    TabSheet8: TTabSheet;
+    gridRR: TdxDBGrid;
+    dxDBGrid1: TdxDBGrid;
+    dxDBGridMaskColumn1: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn2: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn3: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn21: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn22: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn23: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn24: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn25: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn26: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn27: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn28: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn29: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn30: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn31: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn32: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn33: TdxDBGridMaskColumn;
+    dxDBGrid6: TdxDBGrid;
+    dxDBGridMaskColumn556: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn557: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn558: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn641: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn642: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn643: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn644: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn645: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn646: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn647: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn648: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn649: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn650: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn651: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn652: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn653: TdxDBGridMaskColumn;
+    dxDBGrid7: TdxDBGrid;
+    dxDBGridMaskColumn667: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn668: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn669: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn765: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn766: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn767: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn768: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn769: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn770: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn771: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn772: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn773: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn774: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn775: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn776: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn777: TdxDBGridMaskColumn;
+    dxDBGrid2: TdxDBGrid;
+    dxDBGridMaskColumn7: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn8: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn9: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn53: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn54: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn55: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn56: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn57: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn58: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn59: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn60: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn61: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn62: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn63: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn64: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn65: TdxDBGridMaskColumn;
+    qyATV: TIBQuery;
+    qyPTV: TIBQuery;
+    qyACOMP: TIBQuery;
+    qyCOINF: TIBQuery;
+    qyPROGRAMA: TIBQuery;
+    dsATV: TDataSource;
+    dsPTV: TDataSource;
+    dsACOMP: TDataSource;
+    dsCOINF: TDataSource;
+    dsPROGRAMA: TDataSource;
+    dxDBGrid1Column17: TdxDBGridMaskColumn;
+    dxDBGrid2Column56: TdxDBGridMaskColumn;
+    dxDBGrid2Column57: TdxDBGridMaskColumn;
+    dxDBGrid6Column17: TdxDBGridMaskColumn;
+    dxDBGrid7Column17: TdxDBGridMaskColumn;
+    dxDBGrid7Column18: TdxDBGridMaskColumn;
+    dxDBGrid7Column19: TdxDBGridMaskColumn;
+    dxDBGrid7Column20: TdxDBGridMaskColumn;
+    dxDBGrid7Column21: TdxDBGridMaskColumn;
+    qyATVCOD_PROVINCIA: TIntegerField;
+    qyATVMUNICIPIO: TIBStringField;
+    qyATVUNIDADE: TIBStringField;
+    qyATVATIP: TIBStringField;
+    qyATVATV_1: TIBStringField;
+    qyATVJan_1: TIBStringField;
+    qyATVFev_1: TIBStringField;
+    qyATVMar_1: TIBStringField;
+    qyATVAbr_1: TIBStringField;
+    qyATVMai_1: TIBStringField;
+    qyATVJun_1: TIBStringField;
+    qyATVJul_1: TIBStringField;
+    qyATVAgo_1: TIBStringField;
+    qyATVSet_1: TIBStringField;
+    qyATVOut_1: TIBStringField;
+    qyATVNov_1: TIBStringField;
+    qyATVDez_1: TIBStringField;
+    qyPTVCOD_PROVINCIA: TIntegerField;
+    qyPTVMUNICIPIO: TIBStringField;
+    qyPTVUNIDADE: TIBStringField;
+    qyPTVPTV: TIBStringField;
+    qyPTVPTV_2: TIBStringField;
+    qyPTVJan_2: TIBStringField;
+    qyPTVFev_2: TIBStringField;
+    qyPTVMar_2: TIBStringField;
+    qyPTVAbr_2: TIBStringField;
+    qyPTVMai_2: TIBStringField;
+    qyPTVJun_2: TIBStringField;
+    qyPTVJul_2: TIBStringField;
+    qyPTVAgo_2: TIBStringField;
+    qyPTVSet_2: TIBStringField;
+    qyPTVOut_2: TIBStringField;
+    qyPTVNov_2: TIBStringField;
+    qyPTVDez_2: TIBStringField;
+    qyACOMPCOD_PROVINCIA: TIntegerField;
+    qyACOMPMUNICIPIO: TIBStringField;
+    qyACOMPUNIDADE: TIBStringField;
+    qyACOMPTINF: TIBStringField;
+    qyACOMPTADU: TIBStringField;
+    qyACOMPACOMP_3: TIBStringField;
+    qyACOMPJan_3: TIBStringField;
+    qyACOMPFev_3: TIBStringField;
+    qyACOMPMar_3: TIBStringField;
+    qyACOMPAbr_3: TIBStringField;
+    qyACOMPMai_3: TIBStringField;
+    qyACOMPJun_3: TIBStringField;
+    qyACOMPJul_3: TIBStringField;
+    qyACOMPAgo_3: TIBStringField;
+    qyACOMPSet_3: TIBStringField;
+    qyACOMPOut_3: TIBStringField;
+    qyACOMPNov_3: TIBStringField;
+    qyACOMPDez_3: TIBStringField;
+    qyCOINFCOD_PROVINCIA: TIntegerField;
+    qyCOINFMUNICIPIO: TIBStringField;
+    qyCOINFUNIDADE: TIBStringField;
+    qyCOINFCOINF: TIBStringField;
+    qyCOINFCOINFEC_7: TIBStringField;
+    qyCOINFJan_7: TIBStringField;
+    qyCOINFFev_7: TIBStringField;
+    qyCOINFMar_7: TIBStringField;
+    qyCOINFAbr_7: TIBStringField;
+    qyCOINFMar_71: TIBStringField;
+    qyCOINFJun_7: TIBStringField;
+    qyCOINFJul_7: TIBStringField;
+    qyCOINFAgo_7: TIBStringField;
+    qyCOINFSet_7: TIBStringField;
+    qyCOINFOut_7: TIBStringField;
+    qyCOINFNov_7: TIBStringField;
+    qyCOINFDez_7: TIBStringField;
+    qyPROGRAMACOD_PROVINCIA: TIntegerField;
+    qyPROGRAMAMUNICIPIO: TIBStringField;
+    qyPROGRAMAUNIDADE: TIBStringField;
+    qyPROGRAMAATIP: TIBStringField;
+    qyPROGRAMAPTV: TIBStringField;
+    qyPROGRAMATINF: TIBStringField;
+    qyPROGRAMATADU: TIBStringField;
+    qyPROGRAMACOINF: TIBStringField;
+    qyPROGRAMAPROGRAMA_8: TIBStringField;
+    qyPROGRAMAJan_8: TIBStringField;
+    qyPROGRAMAFev_8: TIBStringField;
+    qyPROGRAMAMar_8: TIBStringField;
+    qyPROGRAMAAbr_8: TIBStringField;
+    qyPROGRAMAMai_8: TIBStringField;
+    qyPROGRAMAJun_8: TIBStringField;
+    qyPROGRAMAJul_8: TIBStringField;
+    qyPROGRAMAAgo_8: TIBStringField;
+    qyPROGRAMASet_8: TIBStringField;
+    qyPROGRAMAOut_8: TIBStringField;
+    qyPROGRAMANov_8: TIBStringField;
+    qyPROGRAMADez_8: TIBStringField;
+    gridRRCOD_PROVINCIA: TdxDBGridMaskColumn;
+    gridRRMUNICIPIO: TdxDBGridMaskColumn;
+    gridRRUNIDADE: TdxDBGridMaskColumn;
+    gridRRATIP: TdxDBGridMaskColumn;
+    gridRRATV_1: TdxDBGridMaskColumn;
+    gridRRJan_1: TdxDBGridMaskColumn;
+    gridRRFev_1: TdxDBGridMaskColumn;
+    gridRRMar_1: TdxDBGridMaskColumn;
+    gridRRAbr_1: TdxDBGridMaskColumn;
+    gridRRMai_1: TdxDBGridMaskColumn;
+    gridRRJun_1: TdxDBGridMaskColumn;
+    gridRRJul_1: TdxDBGridMaskColumn;
+    gridRRAgo_1: TdxDBGridMaskColumn;
+    gridRRSet_1: TdxDBGridMaskColumn;
+    gridRROut_1: TdxDBGridMaskColumn;
+    gridRRNov_1: TdxDBGridMaskColumn;
+    gridRRDez_1: TdxDBGridMaskColumn;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    TabSheet5: TTabSheet;
+    dxDBGrid3: TdxDBGrid;
+    dxDBGridMaskColumn4: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn5: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn6: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn36: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn37: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn38: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn39: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn40: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn41: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn42: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn43: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn44: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn45: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn46: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn47: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn48: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn127: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn128: TdxDBGridMaskColumn;
+    dxDBGrid4: TdxDBGrid;
+    dxDBGridMaskColumn129: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn130: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn131: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn158: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn159: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn160: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn161: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn162: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn163: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn164: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn165: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn166: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn167: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn168: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn169: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn170: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn184: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn185: TdxDBGridMaskColumn;
+    dxDBGrid5: TdxDBGrid;
+    dxDBGridMaskColumn186: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn187: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn228: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn229: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn230: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn231: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn232: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn233: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn234: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn235: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn236: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn237: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn238: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn239: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn240: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn241: TdxDBGridMaskColumn;
+    dxDBGridMaskColumn242: TdxDBGridMaskColumn;
+    qyTARV: TIBQuery;
+    IntegerField1: TIntegerField;
+    IBStringField1: TIBStringField;
+    IBStringField2: TIBStringField;
+    IBStringField3: TIBStringField;
+    IBStringField4: TIBStringField;
+    IBStringField18: TIBStringField;
+    IBStringField19: TIBStringField;
+    IBStringField20: TIBStringField;
+    IBStringField21: TIBStringField;
+    IBStringField22: TIBStringField;
+    IBStringField23: TIBStringField;
+    IBStringField24: TIBStringField;
+    IBStringField25: TIBStringField;
+    IBStringField26: TIBStringField;
+    IBStringField27: TIBStringField;
+    IBStringField28: TIBStringField;
+    IBStringField29: TIBStringField;
+    IBStringField30: TIBStringField;
+    dsTARV: TDataSource;
+    qyESQUEMA: TIBQuery;
+    IntegerField2: TIntegerField;
+    IBStringField57: TIBStringField;
+    IBStringField58: TIBStringField;
+    IBStringField59: TIBStringField;
+    IBStringField60: TIBStringField;
+    IBStringField88: TIBStringField;
+    IBStringField89: TIBStringField;
+    IBStringField90: TIBStringField;
+    IBStringField91: TIBStringField;
+    IBStringField92: TIBStringField;
+    IBStringField93: TIBStringField;
+    IBStringField94: TIBStringField;
+    IBStringField95: TIBStringField;
+    IBStringField97: TIBStringField;
+    IBStringField98: TIBStringField;
+    IBStringField99: TIBStringField;
+    dsESQUEMA: TDataSource;
+    qyCD4: TIBQuery;
+    IntegerField3: TIntegerField;
+    IBStringField113: TIBStringField;
+    IBStringField114: TIBStringField;
+    IBStringField115: TIBStringField;
+    IBStringField116: TIBStringField;
+    IBStringField156: TIBStringField;
+    IBStringField157: TIBStringField;
+    IBStringField158: TIBStringField;
+    IBStringField159: TIBStringField;
+    IBStringField160: TIBStringField;
+    IBStringField161: TIBStringField;
+    IBStringField162: TIBStringField;
+    IBStringField164: TIBStringField;
+    IBStringField165: TIBStringField;
+    IBStringField166: TIBStringField;
+    IBStringField167: TIBStringField;
+    IBStringField168: TIBStringField;
+    dsCD4: TDataSource;
+    fxATV: TfrxReport;
+    fxdbATV: TfrxDBDataset;
+    frxPDFExport1: TfrxPDFExport;
+    fxdbPTV: TfrxDBDataset;
+    fxdbACOMP: TfrxDBDataset;
+    fxdbTARV: TfrxDBDataset;
+    fxdbESQUEMA: TfrxDBDataset;
+    fxdbCD4: TfrxDBDataset;
+    fxdbCOINF: TfrxDBDataset;
+    fxdbPrograma: TfrxDBDataset;
+    SpeedButton3: TSpeedButton;
+    fxPTV: TfrxReport;
+    fxACOMP: TfrxReport;
+    fxTARV: TfrxReport;
+    fxESQUEMA: TfrxReport;
+    fxCD4: TfrxReport;
+    fxCOINF: TfrxReport;
+    fxPrograma: TfrxReport;
+    procedure btSairClick(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btLocProvinciaButtonClick(Sender: TObject;
+      AbsoluteIndex: Integer);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btLocProvinciaChange(Sender: TObject);
+    procedure btLocProvinciaExit(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRR: TfrmRR;
+  sATVSQL,sPTVSQL,sACOMPSQL,sTARVSQL,sESQUEMASQL,sCD4SQL,sCOINFSQL,sPROGRAMASQL:String;
+implementation
+
+uses UDM, UDMGeral,Ugeral,UGeralSQL,UfrmLocalizar, uSplash;
+
+{$R *.dfm}
+
+procedure TfrmRR.btSairClick(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TfrmRR.SpeedButton1Click(Sender: TObject);
+var
+  JANEIRO,FEVEREIRO,MARCO,ABRIL,MAIO,JUNHO,JULHO,AGOSTO,SETEMBRO,OUTUBRO,NOVEMBRO,DEZEMBRO:String;
+begin
+  if cbAno.Text = '    ' then
+  begin
+   MessageDlg('É necessário informar o Ano',mtInformation,[mbOK],0);
+   cbAno.SetFocus;
+   abort;
+  end;
+
+  if btLocProvincia.Text = '' then
+  begin
+   MessageDlg('É necessário informar a Província',mtInformation,[mbOK],0);
+   btLocProvincia.SetFocus;
+   abort;
+  end;
+
+  frmSplash.Show;
+
+  JANEIRO := '01/';
+  FEVEREIRO:= '02/';
+  MARCO:= '03/';
+  ABRIL:= '04/';
+  MAIO:= '05/';
+  JUNHO:= '06/';
+  JULHO:= '07/';
+  AGOSTO:= '08/';
+  SETEMBRO:= '09/';
+  OUTUBRO:= '10/';
+  NOVEMBRO:= '11/';
+  DEZEMBRO:= '12/';
+
+  JANEIRO := JANEIRO + cbAno.Text;
+  FEVEREIRO := FEVEREIRO + cbAno.Text;
+  MARCO := MARCO + cbAno.Text;
+  ABRIL := ABRIL + cbAno.Text;
+  MAIO := MAIO + cbAno.Text;
+  JUNHO := JUNHO + cbAno.Text;
+  JULHO := JULHO + cbAno.Text;
+  AGOSTO := AGOSTO + cbAno.Text;
+  SETEMBRO := SETEMBRO + cbAno.Text;
+  OUTUBRO := OUTUBRO + cbAno.Text;
+  NOVEMBRO := NOVEMBRO + cbAno.Text;
+  DEZEMBRO := DEZEMBRO + cbAno.Text;
+
+
+  qyATV.Close;
+  qyATV.SQL.Text:=sATVSQL;
+  qyATV.ParamByName('JANEIRO').AsString := JANEIRO;
+  qyATV.ParamByName('FEVEREIRO').AsString := FEVEREIRO;
+  qyATV.ParamByName('MARCO').AsString := MARCO;
+  qyATV.ParamByName('ABRIL').AsString := ABRIL;
+  qyATV.ParamByName('MAIO').AsString := MAIO;
+  qyATV.ParamByName('JUNHO').AsString := JUNHO;
+  qyATV.ParamByName('JULHO').AsString := JULHO;
+  qyATV.ParamByName('AGOSTO').AsString := AGOSTO;
+  qyATV.ParamByName('SETEMBRO').AsString := SETEMBRO;
+  qyATV.ParamByName('OUTUBRO').AsString := OUTUBRO;
+  qyATV.ParamByName('NOVEMBRO').AsString := NOVEMBRO;
+  qyATV.ParamByName('DEZEMBRO').AsString := DEZEMBRO;
+  qyATV.ParamByName('PROVINCIA').AsString := btLocProvincia.Text;
+  qyATV.Open;
+
+  qyPTV.Close;
+  qyPTV.SQL.Text:=sPTVSQL;
+  qyPTV.ParamByName('JANEIRO').AsString := JANEIRO;
+  qyPTV.ParamByName('FEVEREIRO').AsString := FEVEREIRO;
+  qyPTV.ParamByName('MARCO').AsString := MARCO;
+  qyPTV.ParamByName('ABRIL').AsString := ABRIL;
+  qyPTV.ParamByName('MAIO').AsString := MAIO;
+  qyPTV.ParamByName('JUNHO').AsString := JUNHO;
+  qyPTV.ParamByName('JULHO').AsString := JULHO;
+  qyPTV.ParamByName('AGOSTO').AsString := AGOSTO;
+  qyPTV.ParamByName('SETEMBRO').AsString := SETEMBRO;
+  qyPTV.ParamByName('OUTUBRO').AsString := OUTUBRO;
+  qyPTV.ParamByName('NOVEMBRO').AsString := NOVEMBRO;
+  qyPTV.ParamByName('DEZEMBRO').AsString := DEZEMBRO;
+  qyPTV.ParamByName('PROVINCIA').AsString := btLocProvincia.Text;
+  qyPTV.Open;
+
+  qyACOMP.Close;
+  qyACOMP.SQL.Text:=sACOMPSQL;
+  qyACOMP.ParamByName('JANEIRO').AsString := JANEIRO;
+  qyACOMP.ParamByName('FEVEREIRO').AsString := FEVEREIRO;
+  qyACOMP.ParamByName('MARCO').AsString := MARCO;
+  qyACOMP.ParamByName('ABRIL').AsString := ABRIL;
+  qyACOMP.ParamByName('MAIO').AsString := MAIO;
+  qyACOMP.ParamByName('JUNHO').AsString := JUNHO;
+  qyACOMP.ParamByName('JULHO').AsString := JULHO;
+  qyACOMP.ParamByName('AGOSTO').AsString := AGOSTO;
+  qyACOMP.ParamByName('SETEMBRO').AsString := SETEMBRO;
+  qyACOMP.ParamByName('OUTUBRO').AsString := OUTUBRO;
+  qyACOMP.ParamByName('NOVEMBRO').AsString := NOVEMBRO;
+  qyACOMP.ParamByName('DEZEMBRO').AsString := DEZEMBRO;
+  qyACOMP.ParamByName('PROVINCIA').AsString := btLocProvincia.Text;
+  qyACOMP.Open;
+
+  qyTARV.Close;
+  qyTARV.SQL.Text:=sTARVSQL;
+  qyTARV.ParamByName('JANEIRO').AsString := JANEIRO;
+  qyTARV.ParamByName('FEVEREIRO').AsString := FEVEREIRO;
+  qyTARV.ParamByName('MARCO').AsString := MARCO;
+  qyTARV.ParamByName('ABRIL').AsString := ABRIL;
+  qyTARV.ParamByName('MAIO').AsString := MAIO;
+  qyTARV.ParamByName('JUNHO').AsString := JUNHO;
+  qyTARV.ParamByName('JULHO').AsString := JULHO;
+  qyTARV.ParamByName('AGOSTO').AsString := AGOSTO;
+  qyTARV.ParamByName('SETEMBRO').AsString := SETEMBRO;
+  qyTARV.ParamByName('OUTUBRO').AsString := OUTUBRO;
+  qyTARV.ParamByName('NOVEMBRO').AsString := NOVEMBRO;
+  qyTARV.ParamByName('DEZEMBRO').AsString := DEZEMBRO;
+  qyTARV.ParamByName('PROVINCIA').AsString := btLocProvincia.Text;
+  qyTARV.Open;
+
+  qyESQUEMA.Close;
+  qyESQUEMA.SQL.Text:=sESQUEMASQL;
+  qyESQUEMA.ParamByName('JANEIRO').AsString := JANEIRO;
+  qyESQUEMA.ParamByName('FEVEREIRO').AsString := FEVEREIRO;
+  qyESQUEMA.ParamByName('MARCO').AsString := MARCO;
+  qyESQUEMA.ParamByName('ABRIL').AsString := ABRIL;
+  qyESQUEMA.ParamByName('MAIO').AsString := MAIO;
+  qyESQUEMA.ParamByName('JUNHO').AsString := JUNHO;
+  qyESQUEMA.ParamByName('JULHO').AsString := JULHO;
+  qyESQUEMA.ParamByName('AGOSTO').AsString := AGOSTO;
+  qyESQUEMA.ParamByName('SETEMBRO').AsString := SETEMBRO;
+  qyESQUEMA.ParamByName('OUTUBRO').AsString := OUTUBRO;
+  qyESQUEMA.ParamByName('NOVEMBRO').AsString := NOVEMBRO;
+  qyESQUEMA.ParamByName('DEZEMBRO').AsString := DEZEMBRO;
+  qyESQUEMA.ParamByName('PROVINCIA').AsString := btLocProvincia.Text;
+  qyESQUEMA.Open;
+
+  qyCD4.Close;
+  qyCD4.SQL.Text:=sCD4SQL;
+  qyCD4.ParamByName('JANEIRO').AsString := JANEIRO;
+  qyCD4.ParamByName('FEVEREIRO').AsString := FEVEREIRO;
+  qyCD4.ParamByName('MARCO').AsString := MARCO;
+  qyCD4.ParamByName('ABRIL').AsString := ABRIL;
+  qyCD4.ParamByName('MAIO').AsString := MAIO;
+  qyCD4.ParamByName('JUNHO').AsString := JUNHO;
+  qyCD4.ParamByName('JULHO').AsString := JULHO;
+  qyCD4.ParamByName('AGOSTO').AsString := AGOSTO;
+  qyCD4.ParamByName('SETEMBRO').AsString := SETEMBRO;
+  qyCD4.ParamByName('OUTUBRO').AsString := OUTUBRO;
+  qyCD4.ParamByName('NOVEMBRO').AsString := NOVEMBRO;
+  qyCD4.ParamByName('DEZEMBRO').AsString := DEZEMBRO;
+  qyCD4.ParamByName('PROVINCIA').AsString := btLocProvincia.Text;
+  qyCD4.Open;
+
+  qyCOINF.Close;
+  qyCOINF.SQL.Text:=sCOINFSQL;
+  qyCOINF.ParamByName('JANEIRO').AsString := JANEIRO;
+  qyCOINF.ParamByName('FEVEREIRO').AsString := FEVEREIRO;
+  qyCOINF.ParamByName('MARCO').AsString := MARCO;
+  qyCOINF.ParamByName('ABRIL').AsString := ABRIL;
+  qyCOINF.ParamByName('MAIO').AsString := MAIO;
+  qyCOINF.ParamByName('JUNHO').AsString := JUNHO;
+  qyCOINF.ParamByName('JULHO').AsString := JULHO;
+  qyCOINF.ParamByName('AGOSTO').AsString := AGOSTO;
+  qyCOINF.ParamByName('SETEMBRO').AsString := SETEMBRO;
+  qyCOINF.ParamByName('OUTUBRO').AsString := OUTUBRO;
+  qyCOINF.ParamByName('NOVEMBRO').AsString := NOVEMBRO;
+  qyCOINF.ParamByName('DEZEMBRO').AsString := DEZEMBRO;
+  qyCOINF.ParamByName('PROVINCIA').AsString := btLocProvincia.Text;
+  qyCOINF.Open;
+
+  qyPROGRAMA.Close;
+  qyPROGRAMA.SQL.Text:=sPROGRAMASQL;
+  qyPROGRAMA.ParamByName('JANEIRO').AsString := JANEIRO;
+  qyPROGRAMA.ParamByName('FEVEREIRO').AsString := FEVEREIRO;
+  qyPROGRAMA.ParamByName('MARCO').AsString := MARCO;
+  qyPROGRAMA.ParamByName('ABRIL').AsString := ABRIL;
+  qyPROGRAMA.ParamByName('MAIO').AsString := MAIO;
+  qyPROGRAMA.ParamByName('JUNHO').AsString := JUNHO;
+  qyPROGRAMA.ParamByName('JULHO').AsString := JULHO;
+  qyPROGRAMA.ParamByName('AGOSTO').AsString := AGOSTO;
+  qyPROGRAMA.ParamByName('SETEMBRO').AsString := SETEMBRO;
+  qyPROGRAMA.ParamByName('OUTUBRO').AsString := OUTUBRO;
+  qyPROGRAMA.ParamByName('NOVEMBRO').AsString := NOVEMBRO;
+  qyPROGRAMA.ParamByName('DEZEMBRO').AsString := DEZEMBRO;
+  qyPROGRAMA.ParamByName('PROVINCIA').AsString := btLocProvincia.Text;
+  qyPROGRAMA.Open;
+
+  frmSplash.Hide;
+end;
+
+procedure TfrmRR.FormCreate(Sender: TObject);
+begin
+  frmSplash := TfrmSplash.Create(Application);
+  sATVSQL:=qyATV.SQL.Text;
+  sPTVSQL:=qyPTV.SQL.Text;
+  sACOMPSQL:=qyACOMP.SQL.Text;
+  sTARVSQL:=qyTARV.SQL.Text;
+  sESQUEMASQL:=qyESQUEMA.SQL.Text;
+  sCD4SQL:=qyCD4.SQL.Text;
+  sCOINFSQL:=qyCOINF.SQL.Text;
+  sPROGRAMASQL:=qyPROGRAMA.SQL.Text;
+
+end;
+
+procedure TfrmRR.btLocProvinciaButtonClick(Sender: TObject;
+  AbsoluteIndex: Integer);
+begin
+  frmLocalizar := TfrmLocalizar.Create(application);
+  frmLocalizar.Caption := 'Localizar Provincia';
+  frmLocalizar.qyDados := SelectDadosProvincia;
+  try
+    frmLocalizar.Where := false;
+    SetLength(VCampo,2);
+    frmLocalizar.KeyField := 'cd_provincia';
+    VCampo[0].Titulo  := 'Cód.';
+    VCampo[0].Width := 5;
+    VCampo[1].Titulo  := 'Provincia';
+    VCampo[1].Width := 25;
+    VCampo[0].Visivel := True;
+    VCampo[1].Visivel := True;
+  except
+    ShowMessage(frmLocalizar.qyDados.Sql.Text);
+  end;
+  if frmLocalizar.ShowModal=mrok then
+  begin
+    btLocProvincia.text := frmLocalizar.qyDados.FieldByname('cd_provincia').AsString;
+    edProvincia.text := frmLocalizar.qyDados.FieldByname('ds_provincia').AsString;
+  end;
+  frmLocalizar.qyDados.Close;
+  FreeAndNil(frmLocalizar);
+
+end;
+
+procedure TfrmRR.SpeedButton2Click(Sender: TObject);
+begin
+
+    dlgSalvar.FileName   := 'RR ' + cbAno.Text + ' de ' + edProvincia.Text + '.xls';
+   dlgSalvar.Filter :=
+    'Excel (*.xls) |*.xls|Arquivo Texto (*.txt) |*.txt|Página Web (*.html)|*.html';
+   dlgSalvar.DefaultExt:= 'xls';
+   dlgSalvar.InitialDir := ExtractFilePath(ParamStr(0));
+
+  if dlgSalvar.execute then
+  begin
+    gridRR.SaveToXLS(dlgSalvar.FileName, true);
+  end
+end;
+
+procedure TfrmRR.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  if MessageDlg('Deseja fechar o Relatórios dos Relatórios?',mtConfirmation,
+    [mbYes,mbNo], 0) = mrYes then
+    close;
+end;
+
+procedure TfrmRR.btLocProvinciaChange(Sender: TObject);
+begin
+  if btLocProvincia.Text = '' then
+    edProvincia.Clear
+  else if btLocProvincia.Modified then
+  begin
+    try
+      edProvincia.Text := PegaValor('DS_PROVINCIA','PROVINCIA',['CD_PROVINCIA'],
+        [btLocProvincia.Text],nil);
+    except
+      begin
+        edProvincia.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmRR.btLocProvinciaExit(Sender: TObject);
+begin
+  if btLocProvincia.Text <> '' then
+  begin
+    try
+      edProvincia.Text := PegaValor('DS_PROVINCIA','PROVINCIA',['CD_PROVINCIA'],
+        [btLocProvincia.Text],nil);
+    except
+      begin
+        MessageDlg('Provincia não encontrada!',mtWarning,[mbOK],0);
+        btLocProvincia.Clear;
+        edProvincia.Clear;
+      end;
+    end;
+  end;
+
+end;
+
+procedure TfrmRR.SpeedButton3Click(Sender: TObject);
+begin
+  fxATV.LoadFromFile(sPathLayOut + '\RelRRATV.fr3');
+  fxATV.ShowReport;
+
+  fxPTV.LoadFromFile(sPathLayOut + '\RelRRPTV.fr3');
+  fxPTV.ShowReport;
+
+  fxACOMP.LoadFromFile(sPathLayOut + '\RelRRACOMP.fr3');
+  fxACOMP.ShowReport;
+
+  fxTARV.LoadFromFile(sPathLayOut + '\RelRRTARV.fr3');
+  fxTARV.ShowReport;
+
+  fxESQUEMA.LoadFromFile(sPathLayOut + '\RelRRESQUEMA.fr3');
+  fxESQUEMA.ShowReport;
+
+  fxCD4.LoadFromFile(sPathLayOut + '\RelRRCD4.fr3');
+  fxCD4.ShowReport;
+
+  fxCOINF.LoadFromFile(sPathLayOut + '\RelRRCOINF.fr3');
+  fxCOINF.ShowReport;
+
+  fxPrograma.LoadFromFile(sPathLayOut + '\RelRRPROGRAMA.fr3');
+  fxPrograma.ShowReport;
+end;
+
+end.

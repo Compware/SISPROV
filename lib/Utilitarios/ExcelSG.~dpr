@@ -1,0 +1,15 @@
+program ExcelSG;
+
+uses
+  Forms,
+  ufrmGridFilter in '..\temp\ufrmGridFilter.pas' {frmGridFilter},
+  UDM in '..\DM\UDM.pas' {DM: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TfrmGridFilter, frmGridFilter);
+  Application.Run;
+end.

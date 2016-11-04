@@ -1,0 +1,54 @@
+package IBO40CRT_D7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'IB Objects Core Runtime'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vclx;
+
+contains
+  IB_Header in 'IB_Header.pas',
+  IB_Session in 'IB_Session.pas',
+  IB_Constants in 'IB_Constants.pas',
+  IB_Components in 'IB_Components.pas',
+  IB_Utils in 'IB_Utils.pas',
+  IB_Parse in 'IB_Parse.pas',
+  uRounding in 'uRounding.pas',
+  Unixpass in 'Unixpass.pas',
+  IB_Schema in 'IB_Schema.pas',
+  IB_ConnectionSource in 'IB_ConnectionSource.pas',
+  IB_TransactionSource in 'IB_TransactionSource.pas',
+  IB_SessionProps in 'IB_SessionProps.pas',
+  IB_StatementSource in 'IB_StatementSource.pas',
+  IB_NodeList in 'IB_NodeList.pas',
+  IB_MaskInterface in 'IB_MaskInterface.pas',
+  IB_LogFiles in 'IB_LogFiles.pas',
+  IB_ParseEx in 'IB_ParseEx.pas',
+  IB_StringList in 'IB_StringList.pas';
+
+end.

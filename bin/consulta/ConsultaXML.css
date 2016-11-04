@@ -1,0 +1,84 @@
+BODY {
+	font-size: 11px; margin: 0px; font-family: Verdana, Arial, Helvetica, Sans-serif
+}
+INPUT {
+	font-size: 10px; font-family: Verdana, Arial, Helvetica, Sans-serif
+}
+SELECT {
+	font-size: 10px; font-family: Verdana, Arial, Helvetica, Sans-serif
+}
+TABLE {
+	font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif
+}
+TEXTAREA {
+	font-size: 10px; font-family: Verdana, Arial, Helvetica, Sans-serif
+}
+TEXTAREA {
+	font-size: 10px; font-family: Verdana, Arial, Helvetica, Sans-serif
+}
+.TabTit {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; font-weight: bold; text-indent: 5px; color: #FFFFFF; background-color: #006493
+}	
+.TabSubTit {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; font-weight: bold; text-indent: 5px; color: #0000FF; background-color: #EEEEEE
+}	
+.TabCabVaz {
+	height: 0; background-color: #EEEEEE; 
+}	
+.TabCabDes {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; color: #666666; background-color: #EEEEEE; text-align: right
+}
+.TabCabVal {
+	height: 20: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; font-weight: bold; background-color: #EEEEEE
+}
+.TabCabVlr {
+	height: 20: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; font-weight: bold; background-color: #EEEEEE; text-align: right
+}
+.ExpTit {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; font-weight: bold 
+}	
+.ExpSubTit {
+	height: 15; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; font-weight: bold; color: #0000FF; background-color: #EEEEEE
+}
+.ExpCabVaz {
+	height: 0 
+}
+.ExpCabBrc {
+	height: 0; background-color: #FFFFFF; 
+}
+.ExpCabDes {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; font-weight: bold; color: #0000FF; text-align: right
+}
+.ExpCabVal {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif
+}	
+.ExpCabLn1 {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: #FCFCFC
+}
+.ExpCabLn2 {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: #FEFFF2; text-align: right
+}
+.ExpCabLn3 {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: #FBFEFE
+}
+.ExpCabLn4 {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: #FBFEF1
+}
+.ExpCabLn5 {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: #FCFCFC
+}
+.ExpCabLn6 {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: #FEFFF2
+}
+.ExpCabLn7 {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: #FBFEFE
+}
+.ExpCabLn8 {
+	height: 20; font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; background-color: #FBFEF1
+}
+.Link {
+	font-size: 11px; font-family: Verdana, Arial, Helvetica, Sans-serif; color: #0000FF;
+}
+.Negrito {
+	font-weight: bold;
+}	

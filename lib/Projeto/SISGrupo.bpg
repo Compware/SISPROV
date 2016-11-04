@@ -1,0 +1,93 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = SISDM.bpl SISGeral.bpl SISDIG.bpl SISPadrao.bpl SISCadastros.bpl \
+  SISFichas.bpl SISServicos.bpl SISNotificacao.bpl SISAgenda.bpl SISBI.bpl \
+  SISRelatorios.bpl SISMapas.bpl SISScript.bpl SISEDI.bpl IBO40CRT_D7.bpl \
+  SincPen.exe MetaDados.exe FTP.exe EDI.exe NovaBase.exe SISCompware.exe \
+  ExcelSG.exe GBack.exe GerenciadorErros.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+SISCompware.exe: SISCompware.dpr
+  $(DCC)
+
+SISCadastros.bpl: ..\Pacotes\SISCadastros.dpk
+  $(DCC)
+
+SISAgenda.bpl: ..\Pacotes\SISAgenda.dpk
+  $(DCC)
+
+SISDM.bpl: ..\Pacotes\SISDM.dpk
+  $(DCC)
+
+SISGeral.bpl: ..\Pacotes\SISGeral.dpk
+  $(DCC)
+
+SISPadrao.bpl: ..\Pacotes\SISPadrao.dpk
+  $(DCC)
+
+SISScript.bpl: ..\Pacotes\SISScript.dpk
+  $(DCC)
+
+SISNotificacao.bpl: ..\Pacotes\SISNotificacao.dpk
+  $(DCC)
+
+SISDIG.bpl: ..\Pacotes\SISDIG.dpk
+  $(DCC)
+
+SISBI.bpl: ..\Pacotes\SISBI.dpk
+  $(DCC)
+
+SISEDI.bpl: ..\Pacotes\SISEDI.dpk
+  $(DCC)
+
+SISFichas.bpl: ..\Pacotes\SISFichas.dpk
+  $(DCC)
+
+SISServicos.bpl: ..\Pacotes\SISServicos.dpk
+  $(DCC)
+
+SISRelatorios.bpl: ..\Pacotes\SISRelatorios.dpk
+  $(DCC)
+
+EDI.exe: EDI.dpr
+  $(DCC)
+
+SincPen.exe: SincPen.dpr
+  $(DCC)
+
+MetaDados.exe: ..\MetaDados\MetaDados.dpr
+  $(DCC)
+
+FTP.exe: ..\ftp\FTP.dpr
+  $(DCC)
+
+IBO40CRT_D7.bpl: ..\IBO4\IBO40CRT_D7.dpk
+  $(DCC)
+
+NovaBase.exe: ..\Utilitarios\NovaBase.dpr
+  $(DCC)
+
+SISMApas.bpl: ..\Pacotes\SISMApas.dpk
+  $(DCC)
+
+ExcelSG.exe: ..\Utilitarios\ExcelSG.dpr
+  $(DCC)
+
+GBack.exe: ..\Utilitarios\GBACK\GBack.dpr
+  $(DCC)
+
+GerenciadorErros.exe: ..\Utilitarios\GerenciadorErros\GerenciadorErros.dpr
+  $(DCC)
+
+

@@ -1,0 +1,216 @@
+object frmMySqlFTP: TfrmMySqlFTP
+  Left = 454
+  Top = 208
+  Width = 387
+  Height = 349
+  Caption = 'MySQL - FTP (LocaWeb)'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pgGeral: TPageControl
+    Left = 0
+    Top = 0
+    Width = 379
+    Height = 315
+    ActivePage = tabFTP
+    Align = alClient
+    TabOrder = 0
+    object tabFTP: TTabSheet
+      Caption = 'FTP'
+      ImageIndex = 2
+      object Label1: TLabel
+        Left = 8
+        Top = 64
+        Width = 22
+        Height = 13
+        Caption = 'Host'
+      end
+      object Label2: TLabel
+        Left = 8
+        Top = 88
+        Width = 36
+        Height = 13
+        Caption = 'Usuario'
+      end
+      object Label7: TLabel
+        Left = 8
+        Top = 112
+        Width = 31
+        Height = 13
+        Caption = 'Senha'
+      end
+      object ckFTP: TCheckBox
+        Left = 176
+        Top = 17
+        Width = 77
+        Height = 17
+        Caption = 'Conectado'
+        TabOrder = 0
+      end
+      object btConFTP: TButton
+        Left = 280
+        Top = 8
+        Width = 75
+        Height = 25
+        Caption = 'Conectar'
+        TabOrder = 1
+        OnClick = btConFTPClick
+      end
+      object edHostFtp: TEdit
+        Left = 64
+        Top = 56
+        Width = 121
+        Height = 21
+        TabOrder = 2
+        Text = 'ftp.vertrou.info'
+      end
+      object edUsuFTP: TEdit
+        Left = 64
+        Top = 80
+        Width = 121
+        Height = 21
+        TabOrder = 3
+        Text = 'vertrou'
+      end
+      object edSenhaFTP: TEdit
+        Left = 64
+        Top = 104
+        Width = 121
+        Height = 21
+        PasswordChar = '*'
+        TabOrder = 4
+        Text = 'lilian'
+      end
+    end
+    object tabConexao: TTabSheet
+      Caption = 'MySQL'
+      ImageIndex = 1
+      object Label3: TLabel
+        Left = 8
+        Top = 64
+        Width = 22
+        Height = 13
+        Caption = 'Host'
+      end
+      object Label4: TLabel
+        Left = 8
+        Top = 88
+        Width = 36
+        Height = 13
+        Caption = 'Usuario'
+      end
+      object Label5: TLabel
+        Left = 8
+        Top = 112
+        Width = 31
+        Height = 13
+        Caption = 'Senha'
+      end
+      object Label6: TLabel
+        Left = 8
+        Top = 136
+        Width = 24
+        Height = 13
+        Caption = 'Base'
+      end
+      object btCon: TButton
+        Left = 280
+        Top = 8
+        Width = 75
+        Height = 25
+        Caption = 'Conectar'
+        TabOrder = 0
+        OnClick = btConClick
+      end
+      object ckDB: TCheckBox
+        Left = 176
+        Top = 17
+        Width = 77
+        Height = 17
+        Caption = 'Conectado'
+        TabOrder = 1
+      end
+      object edHost: TEdit
+        Left = 64
+        Top = 56
+        Width = 121
+        Height = 21
+        TabOrder = 2
+        Text = '187.45.196.214'
+      end
+      object edUsu: TEdit
+        Left = 64
+        Top = 80
+        Width = 121
+        Height = 21
+        TabOrder = 3
+        Text = 'vertrou'
+      end
+      object edSenha: TEdit
+        Left = 64
+        Top = 104
+        Width = 121
+        Height = 21
+        PasswordChar = '*'
+        TabOrder = 4
+        Text = 'lilian'
+      end
+      object edBase: TEdit
+        Left = 64
+        Top = 128
+        Width = 121
+        Height = 21
+        TabOrder = 5
+        Text = 'vertrou'
+      end
+    end
+  end
+  object Connection: TZConnection
+    Protocol = 'mysql'
+    HostName = '187.45.196.214'
+    Database = 'vertrou'
+    User = 'vertrou'
+    Password = 'lilian'
+    TransactIsolationLevel = tiReadCommitted
+    AfterConnect = ConnectionAfterConnect
+    Left = 242
+    Top = 176
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 176
+    Top = 176
+  end
+  object ZQuery1: TZQuery
+    Connection = Connection
+    Params = <>
+    Left = 208
+    Top = 176
+  end
+  object ZQuery2: TZQuery
+    Connection = Connection
+    Params = <>
+    Left = 208
+    Top = 208
+  end
+  object DataSource2: TDataSource
+    DataSet = ZQuery2
+    Left = 176
+    Top = 208
+  end
+  object FTP: TIdFTP
+    MaxLineAction = maException
+    ReadTimeout = 20000
+    Passive = True
+    ProxySettings.ProxyType = fpcmNone
+    ProxySettings.Port = 0
+    Left = 240
+    Top = 208
+  end
+end

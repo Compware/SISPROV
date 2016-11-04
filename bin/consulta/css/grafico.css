@@ -1,0 +1,88 @@
+table.grafico td.value {
+	background-image: url(../imagens/gridline58.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	padding:0;
+	border-bottom: none;
+	background-color:transparent;
+}
+
+table.grafico td {
+	padding: 4px 6px;
+	border-bottom:1px solid #e5e5e5;
+	border-left:1px solid #e5e5e5;
+	background-color:#fff;
+}
+
+body.grafico {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+
+table.grafico td.value img {
+	vertical-align: middle;	
+	margin: 0px 0px 0px 0;
+}
+
+table.grafico th {
+	text-align: left;
+	vertical-align:top;
+}
+
+table.grafico td.last {
+	border-bottom:1px solid #e5e5e5;
+}
+
+table.grafico td.first {
+	border-top:1px solid #e5e5e5;
+}
+
+.auraltext{
+	position: absolute;
+	font-size: 0;
+	left: -1000px;
+}
+
+table.grafico  {
+	background-image:url(../imagens/bg_fade.png);
+	background-repeat:repeat-x;
+	background-position:left top;
+	width: 33em;
+}
+
+caption.grafico {
+	font-size:90%;
+	font-style:italic;
+}
+
+.rotulo{
+    color: #000000;  
+	font-weight: bold;
+    text-align: center;
+	position:relative;
+}
+
+.gradient {	  
+    position:absolute;
+    color: #FFFFFF;  
+	font-weight: bold;
+    text-align: center;
+	background-: #999; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2E9AFE', endColorstr='#0B0B61'); /* for IE */
+	background-: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
+	background-: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */ 
+}
+/*http://html-color-codes.info/Codigos-de-Cores-HTML/
+ http://color.shawnolson.net/
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2E9AFE', endColorstr='#0B0B61'); /* for IE */
+*/
+.gradientx {
+	width: 200px;
+	height: 16px;
+	background: #999; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */ 
+}
