@@ -238,7 +238,6 @@ begin
   except
     on E: Exception do
     begin
-      db.ForceClose;
       MessageDlg(E.Message, mtError, [mbOK], 0);
       Application.Terminate;
     end;
