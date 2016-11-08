@@ -139,7 +139,7 @@ var
 
 implementation
 
-uses UGeral, UGeralSQL;
+uses UGeral, UGeralSQL, DateUtils;
 
 {$R *.dfm}
 

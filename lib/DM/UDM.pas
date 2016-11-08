@@ -239,7 +239,8 @@ begin
     on E: Exception do
     begin
       MessageDlg(E.Message, mtError, [mbOK], 0);
-      Application.Terminate;
+      halt;
+      //Application.Terminate;
     end;
   end;
   ts.Active := true;

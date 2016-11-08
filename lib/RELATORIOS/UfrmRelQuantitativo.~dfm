@@ -88,6 +88,14 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           TabOrder = 1
         end
       end
+      object Button1: TButton
+        Left = 32
+        Top = 144
+        Width = 75
+        Height = 25
+        Caption = 'Button1'
+        TabOrder = 1
+      end
     end
   end
   inherited Panel2: TPanel
@@ -1231,7 +1239,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
   end
   inherited frxReport1: TfrxReport
     ReportOptions.CreateDate = 41894.334857743100000000
-    ReportOptions.LastChange = 42675.298722974530000000
+    ReportOptions.LastChange = 42676.140018587960000000
     Left = 72
     Top = 360
     Datasets = <
@@ -5184,7 +5192,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           VAlign = vaCenter
         end
         object Shape44: TfrxShapeView
-          Left = 773.291338582677200000
+          Left = 773.291338582677000000
           Width = 54.803149610000000000
           Height = 45.354360000000000000
           ShowHint = False
@@ -5208,7 +5216,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           VAlign = vaCenter
         end
         object Shape45: TfrxShapeView
-          Left = 828.094488188976400000
+          Left = 828.094488188976000000
           Width = 54.803149610000000000
           Height = 45.354360000000000000
           ShowHint = False
@@ -5232,7 +5240,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           VAlign = vaCenter
         end
         object Shape46: TfrxShapeView
-          Left = 882.897637795275600000
+          Left = 882.897637795276000000
           Width = 54.803149610000000000
           Height = 45.354360000000000000
           ShowHint = False
@@ -5256,7 +5264,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           VAlign = vaCenter
         end
         object Shape47: TfrxShapeView
-          Left = 937.700787401574800000
+          Left = 937.700787401575000000
           Width = 54.803149610000000000
           Height = 45.354360000000000000
           ShowHint = False
@@ -5391,9 +5399,9 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo98: TfrxMemoView
-          Left = 136.062992125984300000
+          Left = 136.062992125984000000
           Top = 1.889763780000000000
-          Width = 90.708661417322830000
+          Width = 90.708661417322800000
           Height = 11.338590000000000000
           ShowHint = False
           DataField = 'PACIENTES_COM_1_CONSULTA'
@@ -5410,9 +5418,9 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo99: TfrxMemoView
-          Left = 226.771653543307100000
+          Left = 226.771653543307000000
           Top = 1.889763780000000000
-          Width = 90.708661417322830000
+          Width = 90.708661417322800000
           Height = 11.338590000000000000
           ShowHint = False
           DataField = 'PACIENTES_COM_1_CONSULTA_E_TARV'
@@ -5429,9 +5437,9 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo100: TfrxMemoView
-          Left = 408.188976377952800000
+          Left = 408.188976377953000000
           Top = 1.889763780000000000
-          Width = 90.708661417322830000
+          Width = 90.708661417322800000
           Height = 11.338590000000000000
           ShowHint = False
           DataField = 'PACIENTES_COM_1_CONSULTA_SEM_TA'
@@ -5448,7 +5456,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo101: TfrxMemoView
-          Left = 498.897637795275600000
+          Left = 498.897637795276000000
           Top = 1.889763780000000000
           Width = 54.803149610000000000
           Height = 11.338590000000000000
@@ -5467,7 +5475,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo102: TfrxMemoView
-          Left = 554.078740157480300000
+          Left = 554.078740157480000000
           Top = 1.889763780000000000
           Width = 54.803149610000000000
           Height = 11.338590000000000000
@@ -5486,7 +5494,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo103: TfrxMemoView
-          Left = 608.881889763779500000
+          Left = 608.881889763780000000
           Top = 1.889763780000000000
           Width = 54.803149610000000000
           Height = 11.338590000000000000
@@ -5505,7 +5513,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo104: TfrxMemoView
-          Left = 663.685039370078700000
+          Left = 663.685039370079000000
           Top = 1.889763780000000000
           Width = 54.803149610000000000
           Height = 11.338590000000000000
@@ -5543,7 +5551,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo106: TfrxMemoView
-          Left = 773.291338582677200000
+          Left = 773.291338582677000000
           Top = 1.889763780000000000
           Width = 54.803149610000000000
           Height = 11.338590000000000000
@@ -5562,7 +5570,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo107: TfrxMemoView
-          Left = 828.094488188976400000
+          Left = 828.094488188976000000
           Top = 1.889763780000000000
           Width = 54.803149610000000000
           Height = 11.338590000000000000
@@ -5581,7 +5589,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo108: TfrxMemoView
-          Left = 882.897637795275600000
+          Left = 882.897637795276000000
           Top = 1.889763780000000000
           Width = 54.803149610000000000
           Height = 11.338590000000000000
@@ -5600,7 +5608,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           ParentFont = False
         end
         object Memo109: TfrxMemoView
-          Left = 937.700787401574800000
+          Left = 937.700787401575000000
           Top = 1.889763780000000000
           Width = 54.803149610000000000
           Height = 11.338590000000000000
@@ -9481,7 +9489,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           Font.Style = []
           HAlign = haCenter
           Memo.UTF8 = (
-            'CV'
+            'DPI'
             'DET')
           ParentFont = False
           VAlign = vaCenter
@@ -9505,7 +9513,7 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
           Font.Style = []
           HAlign = haCenter
           Memo.UTF8 = (
-            'CV'
+            'DPI'
             'IND')
           ParentFont = False
           VAlign = vaCenter
@@ -14515,18 +14523,20 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
       '        FROM'
       '            (SELECT DISTINCT'
       '                N.CD_PACIENTE,'
-      '                MML.NR_IDADE_ANOS NR_IDADE,'
+      '                MCEL.NR_IDADE_MESES NR_IDADE,'
       '                FL_SEXO'
       '            FROM notificacao N'
-      '            INNER JOIN MAPA_MEDICO_LINHA MML'
-      '                ON N.CD_PACIENTE = MML.CD_PACIENTE'
-      '            INNER JOIN MAPA_MEDICO MM'
-      '                ON MM.CD_MAPA = MML.CD_MAPA'
+      '            INNER JOIN MAPA_CRIANCA_EXPOSTA_LINHA MCEL'
+      '                ON N.CD_PACIENTE = MCEL.CD_PACIENTE'
+      '            INNER JOIN MAPA_CRIANCA_EXPOSTA MCE'
+      
+        '                ON MCE.CD_MAPA_CRIANCA_EXPOSTA = MCEL.CD_MAPA_CR' +
+        'IANCA_EXPOSTA'
       '            WHERE'
       
-        '                MM.DT_MAPA >= :DATA_INICIO AND MM.DT_MAPA <= :DA' +
-        'TA_FIM'
-      '                AND TRIM(VL_CV_UC) = '#39'DETERMINADO'#39
+        '                MCE.DT_MAPA >= :DATA_INICIO AND MCE.DT_MAPA <= :' +
+        'DATA_FIM'
+      '                AND TRIM(VL_DPI_UC) = '#39'DETERMINADO'#39
       '            ORDER BY DT_MAPA ASC)'
       '        GROUP BY NR_IDADE, FL_SEXO'
       '        UNION ALL'
@@ -14560,18 +14570,20 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
       '        FROM'
       '            (SELECT DISTINCT'
       '                N.CD_PACIENTE,'
-      '                MML.NR_IDADE_ANOS NR_IDADE,'
+      '                MCEL.NR_IDADE_MESES NR_IDADE,'
       '                FL_SEXO'
       '            FROM notificacao N'
-      '            INNER JOIN MAPA_MEDICO_LINHA MML'
-      '                ON N.CD_PACIENTE = MML.CD_PACIENTE'
-      '            INNER JOIN MAPA_MEDICO MM'
-      '                ON MM.CD_MAPA = MML.CD_MAPA'
+      '            INNER JOIN MAPA_CRIANCA_EXPOSTA_LINHA MCEL'
+      '                ON N.CD_PACIENTE = MCEL.CD_PACIENTE'
+      '            INNER JOIN MAPA_CRIANCA_EXPOSTA MCE'
+      
+        '                ON MCE.CD_MAPA_CRIANCA_EXPOSTA = MCEL.CD_MAPA_CR' +
+        'IANCA_EXPOSTA'
       '            WHERE'
       
-        '                MM.DT_MAPA >= :DATA_INICIO AND MM.DT_MAPA <= :DA' +
-        'TA_FIM'
-      '                AND TRIM(VL_CV_UC) = '#39'INDETERMINADO'#39
+        '                MCE.DT_MAPA >= :DATA_INICIO AND MCE.DT_MAPA <= :' +
+        'DATA_FIM'
+      '                AND TRIM(VL_DPI_UC) = '#39'INDETERMINADO'#39
       '            ORDER BY DT_MAPA ASC)'
       '        GROUP BY NR_IDADE, FL_SEXO'
       '        UNION ALL'
@@ -15593,5 +15605,74 @@ inherited frmRelQuantitativo: TfrmRelQuantitativo
     BCDToCurrency = False
     Left = 104
     Top = 200
+  end
+  object IBQuery1: TIBQuery
+    Database = DM.DB
+    Transaction = DM.TS
+    BufferChunks = 1000
+    CachedUpdates = False
+    SQL.Strings = (
+      'SELECT CD_EVOLUCAO ,'
+      '    DT_EVOLUCAO_2'
+      'FROM NOTIFICACAO'
+      
+        'WHERE CD_PACIENTE in(select                                     ' +
+        '                        '
+      
+        '        PACIENTE.cd_paciente                                    ' +
+        '                        '
+      
+        '    from AGENDA A                                               ' +
+        '                        '
+      
+        '    join PACIENTE                                               ' +
+        '                        '
+      
+        '        on PACIENTE.cd_paciente = A.cd_paciente                 ' +
+        '                        '
+      
+        '        and PACIENTE.cd_und = A.cd_und                          ' +
+        '                        '
+      
+        '    where (A.fl_realizado = 0                                   ' +
+        '                        '
+      
+        '        and ((A.fl_parecer = 0) or (A.fl_parecer is null))      ' +
+        '                        '
+      
+        '        and ((A.fl_remarcado = 0) or (A.fl_remarcado is null))) ' +
+        '                        '
+      
+        '        and A.DT_AGENDA = (SELECT FIRST 1 X.DT_AGENDA FROM AGEND' +
+        'A X'
+      
+        '                WHERE X.CD_PACIENTE = A.CD_PACIENTE ORDER BY X.D' +
+        'T_AGENDA DESC) '
+      
+        '            /*not exists(select 1 from agenda X                 ' +
+        '                         '
+      
+        '            where X.cd_paciente = A.cd_paciente                 ' +
+        '                        '
+      
+        '            and X.dt_agenda > A.dt_agenda)  */                  ' +
+        '                          '
+      '        --and  A.DT_AGENDA < (cast('#39'now'#39' as timestamp)-1)'
+      
+        '        and A.DT_AGENDA <= dateadd(DAY, -180, timestamp '#39'now'#39')--' +
+        '(cast('#39'now'#39' as timestamp)-180)'
+      
+        ') and CD_UND = (SELECT CD_UND FROM PACIENTE WHERE CD_PACIENTE = ' +
+        'NOTIFICACAO.CD_PACIENTE)')
+    Left = 24
+    Top = 144
+    object IBQuery1CD_EVOLUCAO: TSmallintField
+      FieldName = 'CD_EVOLUCAO'
+      Origin = 'NOTIFICACAO.CD_EVOLUCAO'
+    end
+    object IBQuery1DT_EVOLUCAO_2: TDateField
+      FieldName = 'DT_EVOLUCAO_2'
+      Origin = 'NOTIFICACAO.DT_EVOLUCAO_2'
+    end
   end
 end

@@ -123,6 +123,10 @@ type
     qyAcumuladosPCTS_TRANSFERIDOS: TLargeintField;
     qyAcumuladosPCTS_COM_TARV: TLargeintField;
     qyAcumuladosPCTS_PRE_TARV: TLargeintField;
+    IBQuery1: TIBQuery;
+    Button1: TButton;
+    IBQuery1CD_EVOLUCAO: TSmallintField;
+    IBQuery1DT_EVOLUCAO_2: TDateField;
     procedure FormCreate(Sender: TObject);
     procedure btImprimirClick(Sender: TObject);
   private
@@ -139,7 +143,7 @@ var
 
 implementation
 
-uses UGeral, UGeralSQL;
+uses UGeral, UGeralSQL, DateUtils;
 
 {$R *.dfm}
 
